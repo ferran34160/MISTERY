@@ -19,6 +19,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - **70 escenaris amb 3 casos cadascun** (210 casos). Només canvien el fons, els noms de les sales i els objectes.
 - **Controls:** tocar una casella = nota; mantenir premut = col·locar; arrossegar = pintar notes; X (descarta), goma (premut = buida-ho tot), desfés, revisa. Les caselles de la fila i columna d'un sospitós es marquen soles amb una X suau (desactivable).
 - **Retrats:** fotogràfics (carpeta `retrats/`, 32 imatges que l'usuari va aportar) per a les lletres A-E, H, J i V; les lletres F, G i I fan servir una cara SVG dibuixada fins que l'usuari aporti més retrats.
+- **Objectes:** il·lustracions (carpeta `objectes/`, 44 imatges que l'usuari va aportar, retallades i amb el fons tret); si un objecte no té imatge es fa servir la icona SVG de `index.html`.
 - Les persones tenen un nom que comença per la lletra del personatge (A, B, C... V) i canvia a cada cas.
 
 ## 3. Propostes de Claude (pendents de confirmar)
@@ -54,6 +55,8 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 | `construeix.py` | Llegeix `casos_final.json`, assigna noms de cas (`noms.json`), escriu `casos.js` (casos + `SCEN_META`) i `joc.html` (tot en un fitxer, amb les fotos incloses). |
 | `index.html`, `sw.js` | La pàgina (carrega `casos.js`, sense dependències) i el service worker. |
 | `retrats/` | 32 retrats (jpg) dels personatges. |
+| `objectes/` | 44 imatges (png transparent) dels objectes. |
+| `PROMPTS_IMATGES.md` | Textos per demanar a un generador d'imatges els objectes, terres, logotip, sobre, targeta i retrats F/G/I. |
 | `*.json` | Lots de casos generats (font d'estructures): `lot*.json`, `niv*.json`, `casos_*.json`. |
 
 ### Flux de treball
@@ -81,7 +84,7 @@ Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alt
 1. **9x9 nous:** el generador és molt lent a 9x9 (hores per cas) i només n'hi ha 9, tots de lots antics. Generar-ne més és el coll d'ampolla (la verificació ja no ho és).
 2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
 3. **Retrats F, G, I:** falten imatges fotogràfiques per a aquestes lletres (noms: Ferran, Francesca, Felip, Fina, Gerard, Griselda, Guerau, Glòria, Ivo, Irene, Ignasi, Isabel).
-4. **Objectes:** només hi ha icones SVG pròpies; si l'usuari vol més qualitat pot aportar una imatge amb els objectes i es retallen com els retrats.
+4. **Terres, logotip, sobre i targeta:** encara són CSS/SVG propis; es poden substituir per imatges amb els prompts de `PROMPTS_IMATGES.md`.
 5. **Objectes de reserva:** si un escenari té pocs objectes d'un tipus, `reskin.py` en pren un d'un altre escenari (pot quedar poc coherent).
 6. **Publicació:** no s'ha publicat res (GitHub Pages no està activat; cal preguntar abans). L'usuari prova la versió amb `joc.html`.
 7. Atributs ocults i més tipus de pista; tutorial més complet; el mode fosc i el francès només s'han provat poc.
