@@ -21,7 +21,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - **Retrats:** imatges de l'usuari (carpeta `retrats/`, 50): fotogràfics per a les lletres A-E, H, J i V i d'estil il·lustrat per a F, G i I (6 noms per aquestes tres lletres; la resta en tenen 4). Si un nom no té imatge es dibuixa una cara SVG.
 - **Objectes:** il·lustracions (carpeta `objectes/`, 44 imatges que l'usuari va aportar, retallades i amb el fons tret); si un objecte no té imatge es fa servir la icona SVG de `index.html`.
 - **Terres de les sales:** 9 textures fotogràfiques (carpeta `terres/`, aportades per l'usuari) que `index.html` tria segons el nom de la sala (`TEX`) i barreja amb el color de la sala.
-- **Logotip, sobre i targeta de paper:** imatges aportades per l'usuari (`logo.png`, `sobre.png`, `paper.png`; la xinxeta és un SVG propi). El logotip diu «MISTERY MURDER» (amb «Mistery», que és una errada d'«Mystery»): pendent de decidir si es manté o es regenera.
+- **Logotip, sobre i targeta de paper:** imatges aportades per l'usuari (`logo.png`, `sobre.png`, `paper.png`; la xinxeta és un SVG propi). El logotip diu «MISTERY MURDER» (amb «Mistery», que és una errada d'«Mystery»): **l'usuari ha decidit deixar-lo així**.
 - Les persones tenen un nom que comença per la lletra del personatge (A, B, C... V) i canvia a cada cas.
 
 ## 3. Propostes de Claude (pendents de confirmar)
@@ -87,7 +87,7 @@ Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alt
 1. **9x9 nous:** el generador és molt lent a 9x9 (hores per cas) i només n'hi ha 9, tots de lots antics. Generar-ne més és el coll d'ampolla (la verificació ja no ho és).
 2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
 3. **Estil dels retrats:** els de F, G i I són il·lustrats i la resta fotogràfics; si es vol coherència caldria tornar a generar-los amb el mateix estil.
-4. **Logotip:** el text del logotip és «MISTERY MURDER» (errada ortogràfica en anglès). Decidir si es manté o es demana de nou.
+4. **Retrats F, G, I:** l'usuari regenerarà aquests 18 retrats en estil fotogràfic; quan els passi, substituir els fitxers de `retrats/` (els 18 nous noms ja hi són).
 5. **Objectes de reserva:** si un escenari té pocs objectes d'un tipus, `reskin.py` en pren un d'un altre escenari (pot quedar poc coherent).
 6. **Publicació:** no s'ha publicat res (GitHub Pages no està activat; cal preguntar abans). L'usuari prova la versió amb `joc.html`.
 7. Atributs ocults i més tipus de pista; tutorial més complet; el mode fosc i el francès només s'han provat poc.
