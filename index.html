@@ -89,6 +89,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell svg.obj{position:absolute;inset:8%;width:84%;height:84%;pointer-events:none}
 .cell.free svg.obj{inset:auto 1px 1px auto;width:56%;height:56%}
 .cell.placed svg.obj{opacity:.3}
+.mark.auto{color:var(--muted);opacity:.5;font-weight:400}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
 .notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
 .tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg{width:100%;height:100%;display:block;border-radius:50%}.cell .tok{height:auto;aspect-ratio:1;flex:none}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
@@ -164,19 +165,19 @@ const T={
  ca:{title:"Misteri",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
   genh:"Pistes generals",ok:"Tot correcte fins ara!",errs:n=>n+(n==1?" error marcat en vermell":" errors marcats en vermell"),pickfirst:"Tria primer un sospitós.",victim:"Víctima",
   win:"Cas resolt!",culp:"L'assassí és",in:"Era a la mateixa sala que la víctima, i era l'únic.",time:"Temps",again:"Llista de casos",next:"Cas següent",close:"Tanca",
-  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",clearall:"Vols buidar totes les caselles?",
+  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",clearall:"Vols buidar totes les caselles?",autox:"Marca ✕ automàtica",
   rules:`<p><b>Objectiu.</b> Descobreix qui va matar la víctima (V). L'assassí és l'<b>únic sospitós que és a la mateixa sala que la víctima</b>.</p>
   <p><b>Regles.</b></p><ul><li>Hi ha una persona a cada fila i a cada columna.</li><li>Només es pot posar gent a caselles lliures: els objectes grossos (taula, tonell, pou…) bloquegen la casella; banc, carro o cadira, no.</li><li>Cada targeta té una pista; també n'hi ha de generals. Cada cas té una única solució.</li></ul>
-  <p><b>Controls.</b></p><ul><li><b>Toca un sospitós</b> (a les targetes) per triar-lo.</li><li><b>Toca una casella</b>: hi apuntes o hi treus una nota (la lletra del sospitós en minúscula).</li><li><b>Mantén premuda una casella</b>: hi col·loques el sospitós (cara i lletra grans). Si ja hi és, el treus.</li><li><b>Arrossega el dit</b> per diverses caselles: les omples (o les buides) de notes d'un sol cop.</li><li>Quan poses un sospitós, la seva fila i columna s'enfosqueixen.</li></ul>
+  <p><b>Controls.</b></p><ul><li><b>Toca un sospitós</b> (a les targetes) per triar-lo.</li><li><b>Toca una casella</b>: hi apuntes o hi treus una nota (la lletra del sospitós en minúscula).</li><li><b>Mantén premuda una casella</b>: hi col·loques el sospitós (cara i lletra grans). Si ja hi és, el treus.</li><li><b>Arrossega el dit</b> per diverses caselles: les omples (o les buides) de notes d'un sol cop.</li><li>Quan poses un sospitós, la resta de la seva fila i columna es marquen soles amb una ✕ suau (es pot desactivar a l'ajuda).</li></ul>
   <p><b>Eines.</b></p><ul><li><b>✕ Descarta</b>: activa-la i toca (o arrossega) per marcar caselles impossibles. Torna-la a tocar per tornar a les notes.</li><li><b>⌫ Goma</b>: activa-la i toca per buidar una casella. <b>Mantén-la premuda</b> per buidar-ho tot.</li><li><b>↶ Desfés</b>: desfà l'última acció.</li><li><b>✔ Revisa</b>: marca en vermell els sospitosos mal col·locats.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li></ul>
   <p><b>Truc.</b> Si una fila o columna només té una casella lliure, hi va algú; si dues persones només caben a dues files, ningú més hi pot anar.</p>`},
  fr:{title:"Mystère",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
   genh:"Indices généraux",ok:"Tout est correct jusqu'ici !",errs:n=>n+(n==1?" erreur marquée en rouge":" erreurs marquées en rouge"),pickfirst:"Choisis d'abord un suspect.",victim:"Victime",
   win:"Affaire résolue !",culp:"Le coupable est",in:"Il était dans la même pièce que la victime, et il était le seul.",time:"Temps",again:"Liste des cas",next:"Cas suivant",close:"Fermer",
-  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",clearall:"Vider toutes les cases ?",
+  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",clearall:"Vider toutes les cases ?",autox:"✕ automatique",
   rules:`<p><b>But.</b> Découvre qui a tué la victime (V). Le coupable est le <b>seul suspect dans la même pièce que la victime</b>.</p>
   <p><b>Règles.</b></p><ul><li>Une personne par ligne et par colonne.</li><li>On ne place les gens que sur des cases libres : les gros objets (table, tonneau, puits…) bloquent la case ; banc, charrette ou chaise, non.</li><li>Chaque carte a un indice ; il y en a aussi des généraux. Chaque cas a une seule solution.</li></ul>
-  <p><b>Commandes.</b></p><ul><li><b>Touche un suspect</b> (sur les cartes) pour le choisir.</li><li><b>Touche une case</b> : tu y ajoutes ou retires une note (la lettre du suspect en minuscule).</li><li><b>Appui long sur une case</b> : tu y places le suspect (grand visage et grande lettre). S'il y est déjà, tu le retires.</li><li><b>Fais glisser le doigt</b> sur plusieurs cases : tu les remplis (ou vides) de notes d'un seul geste.</li><li>Quand un suspect est placé, sa ligne et sa colonne s'assombrissent.</li></ul>
+  <p><b>Commandes.</b></p><ul><li><b>Touche un suspect</b> (sur les cartes) pour le choisir.</li><li><b>Touche une case</b> : tu y ajoutes ou retires une note (la lettre du suspect en minuscule).</li><li><b>Appui long sur une case</b> : tu y places le suspect (grand visage et grande lettre). S'il y est déjà, tu le retires.</li><li><b>Fais glisser le doigt</b> sur plusieurs cases : tu les remplis (ou vides) de notes d'un seul geste.</li><li>Quand un suspect est placé, le reste de sa ligne et de sa colonne se marque tout seul d'une ✕ discrète (désactivable dans l'aide).</li></ul>
   <p><b>Outils.</b></p><ul><li><b>✕ Écarter</b> : active-le puis touche (ou glisse) pour marquer des cases impossibles. Retouche-le pour revenir aux notes.</li><li><b>⌫ Gomme</b> : active-la puis touche pour vider une case. <b>Appui long</b> pour tout vider.</li><li><b>↶ Annuler</b> : annule la dernière action.</li><li><b>✔ Vérifier</b> : marque en rouge les suspects mal placés.</li><li>Touche un indice pour le barrer quand tu l'as exploité.</li></ul>
   <p><b>Astuce.</b> Si une ligne ou colonne n'a qu'une case libre, quelqu'un y est ; si deux personnes ne tiennent que sur deux lignes, personne d'autre ne peut y aller.</p>`}
 };
@@ -226,6 +227,7 @@ const save=(k,v)=>{try{localStorage.setItem("misteri:"+k,JSON.stringify(v))}catc
 const load=(k,d)=>{try{const v=localStorage.getItem("misteri:"+k);return v?JSON.parse(v):d}catch(e){return d}};
 
 let lang=load("lang",(navigator.language||"ca").startsWith("fr")?"fr":"ca");if(lang!=="ca"&&lang!=="fr")lang="ca";
+let auto=load("auto",true);
 let prog=load("prog",{});          // id -> {solved,best}
 let cur=null, st=null, tool="note", sel=null, timerH=null, undo=[];
 const t=k=>T[lang][k];
@@ -380,6 +382,7 @@ function renderBoard(){
     if(!seen.has(s)){seen.add(s);inner+=`<span class="rn">${cur.sales[s][lang]}</span>`}
     if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
+    else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
     if(cell.p)inner+=`<span class="tok">${tokHtml(cell.p)}</span>`;
     h+=`<div class="${cls}" data-r="${r}" data-c="${c}" style="background-color:${COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
@@ -544,7 +547,7 @@ function helpHtml(tab){
   return `<button class="close" id="mc">${t("close")}</button><h3>${t("help")}</h3>
   <div class="tabs"><button data-tab="r" class="${tab==="r"?"on":""}">${t("help")}</button><button data-tab="k" class="${tab==="k"?"on":""}">${t("kwtab")}</button></div>
   ${tab==="r"?t("rules"):kwHtml()}
-  <div class="row"><button id="mth">${t("theme")}</button>${cur?`<button id="mrs">${t("reset")}</button>`:""}</div>`}
+  <div class="row"><button id="mth">${t("theme")}</button><button id="mau">${t("autox")}: ${auto?"✔":"✕"}</button>${cur?`<button id="mrs">${t("reset")}</button>`:""}</div>`}
 
 /* ---------- modals i capçalera ---------- */
 function modal(h){$("#sheet").innerHTML=h;$("#modal").classList.remove("hidden")}
@@ -554,6 +557,7 @@ function showHelp(tab){
   modal(helpHtml(tab));
   $("#mc").onclick=closeModal;
   document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showHelp(b.dataset.tab));
+  $("#mau").onclick=()=>{auto=!auto;save("auto",auto);if(cur)renderBoard();showHelp(tab)};
   $("#mth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);if(cur)renderBoard();renderCards()};
   if(cur)$("#mrs").onclick=()=>{if(confirm(t("reset")+"?")){st=blank(cur);undo=[];save("st:"+cur.id,st);const pr=prog[cur.id];if(pr){delete pr.solved;save("prog",prog)}closeModal();render();startTimer()}};
 }
