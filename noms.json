@@ -1,0 +1,542 @@
+{
+"mas-6-7-3": {
+"ca": "L'escala fosca",
+"fr": "L'échelle sombre"
+},
+"mas-6-23-9": {
+"ca": "El llindar llunyà",
+"fr": "Le seuil lointain"
+},
+"mas-6-23-12": {
+"ca": "L'hort mut",
+"fr": "Le potager muet"
+},
+"mas-6-61-1": {
+"ca": "El trull fosc",
+"fr": "Le pressoir sombre"
+},
+"mas-6-61-2": {
+"ca": "La pastera amagada",
+"fr": "Le pétrin caché"
+},
+"mas-6-61-3": {
+"ca": "L'hort llunyà",
+"fr": "Le potager lointain"
+},
+"mas-6-61-4": {
+"ca": "La sorra muda",
+"fr": "Le sable muet"
+},
+"mas-6-61-5": {
+"ca": "El graner perdut",
+"fr": "Le grenier perdu"
+},
+"mas-6-61-6": {
+"ca": "El graner buit",
+"fr": "Le grenier vide"
+},
+"mas-6-7-1": {
+"ca": "El cistell trencat",
+"fr": "Le panier brisé"
+},
+"mas-6-21-6": {
+"ca": "El candeler fosc",
+"fr": "Le chandelier sombre"
+},
+"mas-6-21-7": {
+"ca": "El tonell llunyà",
+"fr": "Le tonneau lointain"
+},
+"mas-6-22-8": {
+"ca": "La llavor amagada",
+"fr": "La graine cachée"
+},
+"mas-6-23-10": {
+"ca": "El testament trencat",
+"fr": "Le testament brisé"
+},
+"mas-6-24-8": {
+"ca": "El tonell fosc",
+"fr": "Le tonneau sombre"
+},
+"mas-6-11-1": {
+"ca": "El forn tardà",
+"fr": "Le four tardif"
+},
+"mas-6-11-2": {
+"ca": "El forn buit",
+"fr": "Le four vide"
+},
+"mas-6-11-3": {
+"ca": "El celler perdut",
+"fr": "Le cellier perdu"
+},
+"mas-6-21-11": {
+"ca": "La campana llunyana",
+"fr": "La cloche lointaine"
+},
+"mas-6-23-1": {
+"ca": "El porxo mut",
+"fr": "Le porche muet"
+},
+"mas-6-23-7": {
+"ca": "El testament tardà",
+"fr": "Le testament tardif"
+},
+"mas-6-24-1": {
+"ca": "El testament buit",
+"fr": "Le testament vide"
+},
+"mas-6-64-1": {
+"ca": "La figuera perduda",
+"fr": "Le figuier perdu"
+},
+"mas-6-64-2": {
+"ca": "El tonell perdut",
+"fr": "Le tonneau perdu"
+},
+"mas-6-64-3": {
+"ca": "El galliner llunyà",
+"fr": "Le poulailler lointain"
+},
+"mas-6-64-4": {
+"ca": "La campana amagada",
+"fr": "La cloche cachée"
+},
+"mas-6-64-5": {
+"ca": "El pou buit",
+"fr": "Le puits vide"
+},
+"mas-6-64-6": {
+"ca": "La clau amagada",
+"fr": "La clé cachée"
+},
+"mas-6-68-1": {
+"ca": "El cistell mut",
+"fr": "Le panier muet"
+},
+"mas-6-68-2": {
+"ca": "La bassa tardana",
+"fr": "La mare tardive"
+},
+"mas-6-68-3": {
+"ca": "El pou llunyà",
+"fr": "Le puits lointain"
+},
+"mas-6-68-4": {
+"ca": "La llavor trencada",
+"fr": "La graine brisée"
+},
+"mas-6-68-5": {
+"ca": "L'escala tardana",
+"fr": "L'échelle tardive"
+},
+"mas-6-68-6": {
+"ca": "El porxo llunyà",
+"fr": "Le porche lointain"
+},
+"mas-6-7-2": {
+"ca": "El rebost mut",
+"fr": "Le garde-manger muet"
+},
+"mas-6-7-4": {
+"ca": "El celler tardà",
+"fr": "Le cellier tardif"
+},
+"mas-6-7-5": {
+"ca": "El rellotge llunyà",
+"fr": "L'horloge lointaine"
+},
+"mas-6-7-6": {
+"ca": "La vinya muda",
+"fr": "La vigne muette"
+},
+"mas-6-7-7": {
+"ca": "La xemeneia llunyana",
+"fr": "La cheminée lointaine"
+},
+"mas-6-7-8": {
+"ca": "La llavor muda",
+"fr": "La graine muette"
+},
+"mas-6-7-9": {
+"ca": "La clau perduda",
+"fr": "La clé perdue"
+},
+"mas-6-7-10": {
+"ca": "La sorra llunyana",
+"fr": "Le sable lointain"
+},
+"mas-6-21-1": {
+"ca": "La pastera muda",
+"fr": "Le pétrin muet"
+},
+"mas-6-21-2": {
+"ca": "El llindar amagat",
+"fr": "Le seuil caché"
+},
+"mas-6-21-3": {
+"ca": "El carro trencat",
+"fr": "La charrette brisée"
+},
+"mas-6-21-4": {
+"ca": "La pastera tardana",
+"fr": "Le pétrin tardif"
+},
+"mas-6-21-5": {
+"ca": "El carro mut",
+"fr": "La charrette muette"
+},
+"mas-6-21-8": {
+"ca": "La xemeneia tardana",
+"fr": "La cheminée tardive"
+},
+"mas-6-21-9": {
+"ca": "La pastera fosca",
+"fr": "Le pétrin sombre"
+},
+"mas-6-21-10": {
+"ca": "El llindar tardà",
+"fr": "Le seuil tardif"
+},
+"mas-6-21-12": {
+"ca": "La vinya amagada",
+"fr": "La vigne cachée"
+},
+"mas-6-22-1": {
+"ca": "El tonell tardà",
+"fr": "Le tonneau tardif"
+},
+"mas-6-22-2": {
+"ca": "La bassa amagada",
+"fr": "La mare cachée"
+},
+"mas-6-22-3": {
+"ca": "El rebost trencat",
+"fr": "Le garde-manger brisé"
+},
+"mas-6-22-4": {
+"ca": "El molí trencat",
+"fr": "Le moulin brisé"
+},
+"mas-6-22-5": {
+"ca": "La bassa muda",
+"fr": "La mare muette"
+},
+"mas-6-22-6": {
+"ca": "La sorra tardana",
+"fr": "Le sable tardif"
+},
+"mas-6-22-7": {
+"ca": "El testament mut",
+"fr": "Le testament muet"
+},
+"mas-6-22-9": {
+"ca": "El forn perdut",
+"fr": "Le four perdu"
+},
+"mas-6-22-10": {
+"ca": "El rebost llunyà",
+"fr": "Le garde-manger lointain"
+},
+"mas-6-22-11": {
+"ca": "El trull llunyà",
+"fr": "Le pressoir lointain"
+},
+"mas-6-22-12": {
+"ca": "La campana muda",
+"fr": "La cloche muette"
+},
+"mas-6-23-2": {
+"ca": "L'hort fosc",
+"fr": "Le potager sombre"
+},
+"mas-6-23-3": {
+"ca": "El rellotge trencat",
+"fr": "L'horloge brisée"
+},
+"mas-6-23-4": {
+"ca": "La sínia trencada",
+"fr": "La noria brisée"
+},
+"mas-6-23-5": {
+"ca": "El llindar perdut",
+"fr": "Le seuil perdu"
+},
+"mas-6-23-6": {
+"ca": "El testament perdut",
+"fr": "Le testament perdu"
+},
+"mas-6-23-8": {
+"ca": "El molí llunyà",
+"fr": "Le moulin lointain"
+},
+"mas-6-23-11": {
+"ca": "El rellotge perdut",
+"fr": "L'horloge perdue"
+},
+"mas-6-24-2": {
+"ca": "El tonell trencat",
+"fr": "Le tonneau brisé"
+},
+"mas-6-24-3": {
+"ca": "El testament amagat",
+"fr": "Le testament caché"
+},
+"mas-6-24-4": {
+"ca": "La vinya trencada",
+"fr": "La vigne brisée"
+},
+"mas-6-24-5": {
+"ca": "La clau buida",
+"fr": "La clé vide"
+},
+"mas-6-24-6": {
+"ca": "L'hort trencat",
+"fr": "Le potager brisé"
+},
+"mas-6-24-7": {
+"ca": "L'escala amagada",
+"fr": "L'échelle cachée"
+},
+"mas-6-24-9": {
+"ca": "El molí amagat",
+"fr": "Le moulin caché"
+},
+"mas-6-24-10": {
+"ca": "El carro amagat",
+"fr": "La charrette cachée"
+},
+"mas-6-24-11": {
+"ca": "El celler buit",
+"fr": "Le cellier vide"
+},
+"mas-6-24-12": {
+"ca": "El rellotge mut",
+"fr": "L'horloge muette"
+},
+"mas-7-62-1": {
+"ca": "La sínia fosca",
+"fr": "La noria sombre"
+},
+"mas-7-62-2": {
+"ca": "La llavor perduda",
+"fr": "La graine perdue"
+},
+"mas-7-62-3": {
+"ca": "La bassa trencada",
+"fr": "La mare brisée"
+},
+"mas-7-62-4": {
+"ca": "La figuera muda",
+"fr": "Le figuier muet"
+},
+"mas-7-62-5": {
+"ca": "El testament llunyà",
+"fr": "Le testament lointain"
+},
+"mas-7-31-1": {
+"ca": "La xemeneia perduda",
+"fr": "La cheminée perdue"
+},
+"mas-7-31-2": {
+"ca": "El porxo amagat",
+"fr": "Le porche caché"
+},
+"mas-7-31-4": {
+"ca": "El celler llunyà",
+"fr": "Le cellier lointain"
+},
+"mas-7-31-8": {
+"ca": "El forn llunyà",
+"fr": "Le four lointain"
+},
+"mas-7-31-9": {
+"ca": "La xemeneia buida",
+"fr": "La cheminée vide"
+},
+"mas-7-32-1": {
+"ca": "El carro buit",
+"fr": "La charrette vide"
+},
+"mas-7-32-3": {
+"ca": "La vinya fosca",
+"fr": "La vigne sombre"
+},
+"mas-7-32-6": {
+"ca": "La figuera llunyana",
+"fr": "Le figuier lointain"
+},
+"mas-7-32-8": {
+"ca": "El cistell perdut",
+"fr": "Le panier perdu"
+},
+"mas-7-31-6": {
+"ca": "La sorra amagada",
+"fr": "Le sable caché"
+},
+"mas-7-31-10": {
+"ca": "El pou tardà",
+"fr": "Le puits tardif"
+},
+"mas-7-32-2": {
+"ca": "El candeler perdut",
+"fr": "Le chandelier perdu"
+},
+"mas-7-32-9": {
+"ca": "El fanal perdut",
+"fr": "La lanterne perdue"
+},
+"mas-7-32-7": {
+"ca": "La bassa buida",
+"fr": "La mare vide"
+},
+"mas-7-65-1": {
+"ca": "La xemeneia fosca",
+"fr": "La cheminée sombre"
+},
+"mas-7-65-2": {
+"ca": "El rebost perdut",
+"fr": "Le garde-manger perdu"
+},
+"mas-7-65-3": {
+"ca": "El rellotge fosc",
+"fr": "L'horloge sombre"
+},
+"mas-7-65-4": {
+"ca": "El galliner perdut",
+"fr": "Le poulailler perdu"
+},
+"mas-7-65-5": {
+"ca": "L'escala buida",
+"fr": "L'échelle vide"
+},
+"mas-7-67-1": {
+"ca": "El rebost amagat",
+"fr": "Le garde-manger caché"
+},
+"mas-7-67-2": {
+"ca": "La sorra trencada",
+"fr": "Le sable brisé"
+},
+"mas-7-67-3": {
+"ca": "La sínia amagada",
+"fr": "La noria cachée"
+},
+"mas-7-67-4": {
+"ca": "El porxo trencat",
+"fr": "Le porche brisé"
+},
+"mas-7-67-5": {
+"ca": "El galliner fosc",
+"fr": "Le poulailler sombre"
+},
+"mas-7-31-3": {
+"ca": "L'era trencada",
+"fr": "L'aire brisée"
+},
+"mas-7-31-5": {
+"ca": "El cistell tardà",
+"fr": "Le panier tardif"
+},
+"mas-7-31-7": {
+"ca": "El celler trencat",
+"fr": "Le cellier brisé"
+},
+"mas-7-32-4": {
+"ca": "El forn amagat",
+"fr": "Le four caché"
+},
+"mas-7-32-5": {
+"ca": "El rebost buit",
+"fr": "Le garde-manger vide"
+},
+"mas-7-32-10": {
+"ca": "La bassa fosca",
+"fr": "La mare sombre"
+},
+"mas-8-41-1": {
+"ca": "El fanal mut",
+"fr": "La lanterne muette"
+},
+"mas-8-41-3": {
+"ca": "El molí buit",
+"fr": "Le moulin vide"
+},
+"mas-8-42-1": {
+"ca": "El porxo perdut",
+"fr": "Le porche perdu"
+},
+"mas-8-42-2": {
+"ca": "El llindar trencat",
+"fr": "Le seuil brisé"
+},
+"mas-8-42-3": {
+"ca": "El galliner trencat",
+"fr": "Le poulailler brisé"
+},
+"mas-8-42-4": {
+"ca": "El forn mut",
+"fr": "Le four muet"
+},
+"mas-8-43-1": {
+"ca": "El candeler mut",
+"fr": "Le chandelier muet"
+},
+"mas-8-43-3": {
+"ca": "El pou amagat",
+"fr": "Le puits caché"
+},
+"mas-8-41-4": {
+"ca": "L'era perduda",
+"fr": "L'aire perdue"
+},
+"mas-8-43-4": {
+"ca": "El celler mut",
+"fr": "Le cellier muet"
+},
+"mas-8-41-2": {
+"ca": "El llindar fosc",
+"fr": "Le seuil sombre"
+},
+"mas-8-43-2": {
+"ca": "El pou mut",
+"fr": "Le puits muet"
+},
+"mas-9-53-1": {
+"ca": "El graner trencat",
+"fr": "Le grenier brisé"
+},
+"mas-9-51-1": {
+"ca": "La figuera tardana",
+"fr": "Le figuier tardif"
+},
+"mas-9-51-2": {
+"ca": "La campana buida",
+"fr": "La cloche vide"
+},
+"mas-9-51-3": {
+"ca": "El trull tardà",
+"fr": "Le pressoir tardif"
+},
+"mas-9-53-3": {
+"ca": "El trull amagat",
+"fr": "Le pressoir caché"
+},
+"mas-9-52-1": {
+"ca": "El trull perdut",
+"fr": "Le pressoir perdu"
+},
+"mas-9-52-2": {
+"ca": "El carro llunyà",
+"fr": "La charrette lointaine"
+},
+"mas-9-52-3": {
+"ca": "La llavor fosca",
+"fr": "La graine sombre"
+},
+"mas-9-53-2": {
+"ca": "L'escala muda",
+"fr": "L'échelle muette"
+}
+}

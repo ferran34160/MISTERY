@@ -38,6 +38,46 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .lvl i{width:8px;height:8px;border-radius:50%;background:var(--cellgrid)}
 .lvl i.on{background:var(--accent)}
 
+
+/* llista estil col·lecció */
+.hero{max-width:520px;margin:0 auto;padding:14px 12px 4px}
+.hero .top{display:flex;align-items:center;gap:8px}
+.logo{flex:1;font-weight:900;font-size:1.7rem;letter-spacing:.14em;line-height:1}
+.logo b{color:var(--accent)}.logo small{display:block;font-size:.62rem;letter-spacing:.12em;font-weight:600;color:var(--muted);margin-top:3px}
+.hero select{font:inherit;color:inherit;background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:7px 8px}
+.alfa{display:flex;gap:10px;align-items:center;margin:12px 0 6px;font-size:.8rem;color:var(--muted)}
+.alfa i{font-style:normal;font-weight:800;color:var(--ok);border:2px solid var(--ok);border-radius:6px;padding:3px 6px;font-size:.7rem;letter-spacing:.08em}
+.sum{text-align:center;font-size:.95rem;margin:6px 0 10px}
+.tabs2{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none}.tabs2::-webkit-scrollbar{display:none}
+.tabs2 button{flex:none;padding:6px 11px;font-size:.85rem;border-radius:9px;box-shadow:0 2px 0 var(--line)}
+.tabs2 button.on{background:var(--accent);color:#fff;border-color:var(--line)}
+.sortrow{display:flex;gap:8px;align-items:center;font-size:.85rem;color:var(--muted);margin:2px 0 10px}
+.sortrow select{flex:1}.sortrow button{padding:7px 10px;font-size:.8rem}
+#home.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 12px;padding-top:6px}
+.pc{position:relative;border:2px solid var(--line);border-radius:14px;background:var(--panel);padding:16px 8px 10px;text-align:center;box-shadow:0 3px 0 var(--line);cursor:pointer;display:block;width:100%;font:inherit;color:inherit}
+.pc:before{content:"";position:absolute;top:-7px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--line)}
+.pc .nm{display:block;font-weight:700;font-size:.9rem;margin:8px 0 5px;line-height:1.15}
+.pill{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:6px;border:1.5px solid currentColor}
+.l1{color:#2f8a4e;background:#2f8a4e1f}.l2{color:#4d8f2a;background:#4d8f2a1f}.l3{color:#b57a14;background:#b57a141f}.l4{color:#c0502a;background:#c0502a1f}.l5{color:#8b3fa8;background:#8b3fa81f}
+.pc .sz{display:block;font-size:.78rem;color:var(--muted);margin-top:5px;font-weight:600}
+.pc .tag{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:700}
+.th{display:block;width:84%;margin:0 auto;aspect-ratio:1;position:relative}
+.th svg{width:100%;height:100%;display:block;border-radius:4px}
+.pc.done .th svg{opacity:.78}
+.pc .seal{position:absolute;left:4%;right:4%;top:32%;transform:rotate(-14deg);border:3px solid var(--ok);color:var(--ok);background:color-mix(in srgb,var(--panel) 70%,transparent);font-weight:900;letter-spacing:.06em;font-size:1.05rem;line-height:1.05;border-radius:8px;padding:4px 2px}
+.pc .chk{position:absolute;right:6px;top:6px;width:22px;height:22px;border-radius:50%;background:var(--ok);color:#fff;font-size:.8rem;line-height:22px;font-weight:800}
+.pc.env .env,.env .paper,.env .body,.env .flap{display:block}.pc.env .env{position:relative;width:88%;margin:0 auto;aspect-ratio:1.05}
+.env .paper{position:absolute;left:12%;right:12%;top:6%;height:56%;overflow:hidden;border-radius:4px 4px 0 0;background:var(--bg);border:1.5px solid var(--cellgrid);transition:transform .35s}
+.env .paper svg{width:100%;display:block}
+.env .body{position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(var(--panel),color-mix(in srgb,var(--panel) 80%,var(--muted)));border:2px solid var(--line);border-radius:0 0 8px 8px}
+.env .flap{position:absolute;left:0;right:0;top:20%;height:46%;background:color-mix(in srgb,var(--panel) 84%,var(--muted));clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .35s}
+.env .flapl{position:absolute;left:0;right:0;top:20%;height:46%;z-index:3;pointer-events:none}
+.env .lens{position:absolute;left:50%;top:44%;transform:translateX(-50%);white-space:nowrap;z-index:4;display:flex;gap:4px;align-items:center;background:var(--panel);border:2px solid var(--line);border-radius:20px;padding:3px 12px;font-weight:800;font-size:.95rem;box-shadow:0 2px 0 var(--line)}
+.pc.env.open .flap{transform:rotateX(180deg)}.pc.env.open .paper{transform:translateY(-14%)}
+.pc.prog .chk{background:var(--accent)}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
+.nws{display:none}
+
 /* tauler */
 .bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
 #board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:manipulation}
@@ -98,7 +138,8 @@ h2{font-size:.95rem;margin:16px 0 6px}
   <button class="ib" id="lang">FR</button>
 </header>
 <main>
-  <section id="home" class="list"><p id="boot">Carregant… (si això no canvia, el JavaScript no s'executa)</p></section>
+  <section id="hero" class="hero"></section>
+  <section id="home" class="grid"><p id="boot" class="empty">Carregant… (si això no canvia, el JavaScript no s'executa)</p></section>
   <section id="game" class="hidden">
     <div class="bar"><span id="info"></span><span id="timer">0:00</span></div>
     <div id="board"></div>
@@ -164,15 +205,69 @@ function fmt(s){return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
 function dots(n){return '<span class="lvl">'+[1,2,3,4,5].map(i=>`<i class="${i<=n?"on":""}"></i>`).join("")+"</span>"}
 
 /* ---------- llista ---------- */
+const H={
+ ca:{lv:["Tots","Molt fàcil","Fàcil","Mitjà","Difícil","Expert"],pz:"enigmes",dn:"completats",sort:"Ordena per:",sd:"Dificultat",ss:"Mida",sn:"Nom",hide:"Amaga els completats",show:"Mostra els completats",
+  alfa:"Benvingut a la versió alfa: és un projecte en curs. Les funcions poden canviar.",seal:"CAS<br>RESOLT",none:"Cap cas amb aquests filtres.",sub:"Puzles de lògica de crims"},
+ fr:{lv:["Tous","Très facile","Facile","Moyen","Difficile","Expert"],pz:"énigmes",dn:"résolues",sort:"Trier par :",sd:"Difficulté",ss:"Taille",sn:"Nom",hide:"Masquer les résolues",show:"Afficher les résolues",
+  alfa:"Bienvenue dans la version alpha : un projet en cours. Les fonctions peuvent changer.",seal:"AFFAIRE<br>RÉSOLUE",none:"Aucun cas avec ces filtres.",sub:"Énigmes de logique criminelle"}};
+let hf=load("hf",0),hs=load("hs","d"),hh=load("hh",false);
+const caseName=c=>(c.nom&&c.nom[lang])||c.titol[lang];
+function thumb(c,mode){
+  const n=c.n,k=10,dk=dark(),sv=mode==="closed"?null:load("st:"+c.id,null);
+  let o=`<svg viewBox="0 0 ${n*k} ${n*k}" aria-hidden="true">`;
+  const dn=(r,q)=>r>=0&&q>=0&&r<n&&q<n&&c.pla[r][q];
+  for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q])continue;
+    o+=`<rect x="${q*k}" y="${r*k}" width="${k}" height="${k}" fill="${COLORS(c.sala[r][q],dk)}"/>`;
+    const ob=c.obj[r][q];if(ob&&c.objectes[ob].bloqueja)o+=`<rect x="${q*k+2.5}" y="${r*k+2.5}" width="5" height="5" rx="1" fill="${dk?"#f1e6d3":"#2b2118"}" opacity=".55"/>`;}
+  const sol=mode==="solved";
+  if(sol||sv){for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q])continue;
+    const ce=sv&&sv.cells[r][q],x=q*k+5,y=r*k+5;
+    let pid=null;if(sol){for(const p of c.persones){const s2=c.solucio[p.id];if(s2[0]===r&&s2[1]===q)pid=p.id}}else if(ce&&ce.p)pid=ce.p;
+    if(pid){const i=c.persones.findIndex(p=>p.id===pid);o+=`<circle cx="${x}" cy="${y}" r="4.1" fill="hsl(${PERSONHUE[i%10]} 55% 40%)"/><text x="${x}" y="${y+.4}" font-size="5.2" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central">${pid}</text>`}
+    else if(sol||(ce&&ce.x))o+=`<path d="M${x-2.4} ${y-2.4}L${x+2.4} ${y+2.4}M${x+2.4} ${y-2.4}L${x-2.4} ${y+2.4}" stroke="${dk?"#f1e6d3":"#2b2118"}" stroke-width="1" opacity=".5"/>`}}
+  const w=dk?"#f1e6d3":"#2b2118";
+  for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q])continue;const s0=c.sala[r][q];
+    if(!dn(r-1,q)||c.sala[r-1][q]!==s0)o+=`<line x1="${q*k}" y1="${r*k}" x2="${q*k+k}" y2="${r*k}" stroke="${w}" stroke-width="1.3"/>`;
+    if(!dn(r+1,q)||c.sala[r+1][q]!==s0)o+=`<line x1="${q*k}" y1="${r*k+k}" x2="${q*k+k}" y2="${r*k+k}" stroke="${w}" stroke-width="1.3"/>`;
+    if(!dn(r,q-1)||c.sala[r][q-1]!==s0)o+=`<line x1="${q*k}" y1="${r*k}" x2="${q*k}" y2="${r*k+k}" stroke="${w}" stroke-width="1.3"/>`;
+    if(!dn(r,q+1)||c.sala[r][q+1]!==s0)o+=`<line x1="${q*k+k}" y1="${r*k}" x2="${q*k+k}" y2="${r*k+k}" stroke="${w}" stroke-width="1.3"/>`}
+  return o+"</svg>"}
+function pcCard(c,i){
+  const p=prog[c.id]||{},h=H[lang],started=!!load("st:"+c.id,null),nm=caseName(c),
+   meta=`<span class="pill l${c.nivell}">${h.lv[c.nivell]}</span><span class="sz">${c.n}×${c.n}${p.best?" · ⏱ "+fmt(p.best):""}</span>`;
+  if(p.solved)return `<button class="pc done" data-i="${i}"><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
+  if(started)return `<button class="pc prog" data-i="${i}"><span class="chk">…</span><span class="th">${thumb(c,"prog")}</span><span class="nm">${nm}</span>${meta}</button>`;
+  const nc=c.textos.ca.length;
+  return `<button class="pc env" data-i="${i}"><span class="env"><span class="paper">${thumb(c,"closed")}</span><span class="body"></span><span class="flap"></span><span class="lens">🔍 ${nc}</span></span><span class="nm">${nm}</span>${meta}</button>`}
 function home(){
   stopTimer();cur=null;
+  $("header").classList.add("hidden");
   $("#game").classList.add("hidden");$("#home").classList.remove("hidden");$("#back").classList.add("hidden");
-  $("#title").innerHTML=t("title");
-  $("#home").innerHTML=CASOS.map((c,i)=>{
-    const p=prog[c.id]||{};
-    return `<button class="case" data-i="${i}"><span class="num">${i+1}</span><span class="meta"><b>${t("cas")} ${i+1} · ${c.n}×${c.n}</b><span>${t("lvl")} ${dots(c.nivell)}${p.best?" · "+t("best")+" "+fmt(p.best):""}</span></span>${p.solved?`<span class="stamp">${t("solved")}</span>`:""}</button>`}).join("");
+  document.title=t("title");
+  const h=H[lang],done=CASOS.filter(c=>(prog[c.id]||{}).solved).length;
+  let idx=CASOS.map((c,i)=>i).filter(i=>(hf===0||CASOS[i].nivell===hf)&&!(hh&&(prog[CASOS[i].id]||{}).solved));
+  idx.sort((a,b)=>{const A=CASOS[a],B=CASOS[b];
+    if(hs==="m")return A.n-B.n||A.nivell-B.nivell||a-b;
+    if(hs==="n")return caseName(A).localeCompare(caseName(B),lang);
+    return A.nivell-B.nivell||A.n-B.n||a-b});
+  $("#hero").innerHTML=`<div class="top"><div class="logo">MIST<b>E</b>RI<small>${h.sub}</small></div>
+   <select id="hl" aria-label="Idioma"><option value="ca"${lang==="ca"?" selected":""}>Català</option><option value="fr"${lang==="fr"?" selected":""}>Français</option></select>
+   <button class="ib" id="hth" aria-label="${t("theme")}">${dark()?"☀":"☾"}</button><button class="ib" id="hq">?</button></div>
+   <div class="alfa"><i>ALFA</i><span>${h.alfa}</span></div>
+   <div class="sum"><b>${CASOS.length}</b> ${h.pz} · <b>${done}</b> ${h.dn}</div>
+   <div class="tabs2">${h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}</div>
+   <div class="sortrow"><span>${h.sort}</span><select id="hsel"><option value="d"${hs==="d"?" selected":""}>${h.sd}</option><option value="m"${hs==="m"?" selected":""}>${h.ss}</option><option value="n"${hs==="n"?" selected":""}>${h.sn}</option></select><button id="hhd">${hh?h.show:h.hide}</button></div>`;
+  $("#home").innerHTML=idx.length?idx.map(i=>pcCard(CASOS[i],i)).join(""):`<p class="empty">${h.none}</p>`;
+  $("#hero").classList.remove("hidden");
+  $("#hl").onchange=e=>{lang=e.target.value;save("lang",lang);home()};
+  $("#hth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);home()};
+  $("#hq").onclick=()=>showHelp("r");
+  $("#hsel").onchange=e=>{hs=e.target.value;save("hs",hs);home()};
+  $("#hhd").onclick=()=>{hh=!hh;save("hh",hh);home()};
+  document.querySelectorAll(".tabs2 button").forEach(b=>b.onclick=()=>{hf=+b.dataset.f;save("hf",hf);home()});
 }
-$("#home").onclick=e=>{const b=e.target.closest(".case");if(b)obreCas(+b.dataset.i)};
+$("#home").onclick=e=>{const b=e.target.closest(".pc");if(!b)return;const i=+b.dataset.i;
+  if(b.classList.contains("env")){b.classList.add("open");setTimeout(()=>obreCas(i),380)}else obreCas(i)};
 
 /* ---------- partida ---------- */
 function blank(c){return {cells:Array.from({length:c.n},()=>Array.from({length:c.n},()=>({p:null,x:false,nt:[]}))),time:0,done:false,crossed:[]}}
@@ -180,7 +275,7 @@ function obreCas(i){
   cur=CASOS[i];cur._i=i;
   st=load("st:"+cur.id,null)||blank(cur);undo=[];
   sel=cur.persones[0].id;tool="place";
-  $("#home").classList.add("hidden");$("#game").classList.remove("hidden");$("#back").classList.remove("hidden");
+  $("#home").classList.add("hidden");$("#hero").classList.add("hidden");$("header").classList.remove("hidden");$("#game").classList.remove("hidden");$("#back").classList.remove("hidden");
   render();startTimer();
 }
 const isBlocked=(r,c)=>{const o=cur.obj[r][c];return !!o&&cur.objectes[o].bloqueja};
@@ -190,7 +285,7 @@ const tokStyle=id=>`background:hsl(${PERSONHUE[pIdx(id)%10]} 55% ${dark()?42:40}
 
 function render(){
   document.documentElement.lang=lang;document.title=t("title");
-  $("#title").innerHTML=`${t("cas")} ${cur._i+1}<small>${lang==="fr"?cur.titol.fr:cur.titol.ca}</small>`;
+  $("#title").innerHTML=`${caseName(cur)}<small>${cur.titol[lang]} · ${t("cas")} ${cur._i+1}</small>`;
   $("#info").innerHTML=`${t("lvl")} ${dots(cur.nivell)} · ${cur.n}×${cur.n}`;
   renderBoard();renderTools();renderCards();
 }
