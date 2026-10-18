@@ -132,6 +132,31 @@ h2{font-size:.95rem;margin:16px 0 6px}
 .gen li{background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:8px 10px;font-size:.88rem}
 .gen li.done{text-decoration:line-through;opacity:.6}
 
+
+/* volum i animacions */
+button{box-shadow:0 2px 0 var(--line);transition:transform .08s,box-shadow .08s}
+button:active{box-shadow:0 0 0 var(--line)}
+#board{filter:drop-shadow(0 5px 6px rgba(43,33,24,.35)) drop-shadow(0 1px 1px rgba(43,33,24,.4))}
+.cell{box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(0,0,0,.07)}
+.cell svg.obj{filter:drop-shadow(0 2px 1.5px rgba(0,0,0,.38))}
+.tok{box-shadow:0 3px 5px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.35)}
+.tok.pop{animation:pop .34s cubic-bezier(.3,1.7,.5,1)}
+@keyframes pop{0%{transform:scale(.2) translateY(-10px);opacity:0}70%{transform:scale(1.18)}100%{transform:scale(1);opacity:1}}
+.card{box-shadow:0 2px 0 var(--line)}
+.card.sel{animation:selp .25s ease-out}
+@keyframes selp{0%{transform:scale(.97)}60%{transform:scale(1.02)}100%{transform:scale(1)}}
+.pc{animation:cin .45s both;animation-delay:calc(var(--d,0)*35ms)}
+@keyframes cin{from{opacity:0;translate:0 14px}to{opacity:1;translate:0 0}}
+.pc.slam .seal{animation:slam .55s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes slam{0%{transform:rotate(-16deg) scale(3);opacity:0}60%{transform:rotate(-16deg) scale(.92);opacity:1}100%{transform:rotate(-16deg) scale(1);opacity:1}}
+.win .stampw{display:inline-block;margin:6px auto 2px;border:4px double var(--ok);color:var(--ok);border-radius:10px;padding:4px 14px;font-weight:900;letter-spacing:.12em;font-size:1.25rem;transform:rotate(-7deg);animation:slamw .6s cubic-bezier(.2,1.4,.4,1) both .15s}
+@keyframes slamw{0%{transform:rotate(-7deg) scale(3.2);opacity:0}60%{transform:rotate(-7deg) scale(.9);opacity:1}100%{transform:rotate(-7deg) scale(1);opacity:1}}
+.win .culprit .tok{animation:pop .5s cubic-bezier(.3,1.7,.5,1) .35s both}
+.conf{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:30}
+.conf i{position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;opacity:.95;animation:fall linear forwards}
+@keyframes fall{to{transform:translate3d(var(--dx),105vh,0) rotate(var(--rot))}}
+@media (prefers-reduced-motion:reduce){.tok.pop,.pc,.card.sel,.pc.slam .seal,.win .stampw,.win .culprit .tok{animation:none!important}.conf{display:none}}
+
 /* modals */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center;z-index:10}
 .sheet{background:var(--panel);border:2px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-width:520px;max-height:88vh;overflow:auto;padding:16px 16px 28px}
@@ -325,7 +350,7 @@ function pcCard(c,i){
   const p=prog[c.id]||{},h=H[lang],started=!!load("st:"+c.id,null),nm=caseName(c),
    meta=`<span class="pill l${c.nivell}">${h.lv[c.nivell]}</span><span class="sz">${c.n}×${c.n}${p.best?" · ⏱ "+fmt(p.best):""}</span><span class="tag">${scen(c.escenari).tag[lang]}</span>`,
    sty=` style="--sc:hsl(${scen(c.escenari).col} 45% 42%)"`;
-  if(p.solved)return `<button class="pc done" data-i="${i}"${sty}><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
+  if(p.solved)return `<button class="pc done${c.id===justSolved?" slam":""}" data-i="${i}"${sty}><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
   if(started)return `<button class="pc prog" data-i="${i}"${sty}><span class="chk">…</span><span class="th">${thumb(c,"prog")}</span><span class="nm">${nm}</span>${meta}</button>`;
   const fl=`color-mix(in srgb,#efe6d2 70%,hsl(${scen(c.escenari).col} 45% 50%))`,fb=`color-mix(in srgb,#cdbf9f 70%,hsl(${scen(c.escenari).col} 45% 40%))`,ff=`color-mix(in srgb,#e8dcc1 78%,hsl(${scen(c.escenari).col} 45% 55%))`;
   return `<button class="pc env" data-i="${i}"${sty}><span class="env"><svg class="eb" viewBox="0 0 120 100" aria-hidden="true"><ellipse cx="60" cy="96" rx="52" ry="3.5" fill="#0003"/><path d="M6 44L60 4L114 44V90H6Z" fill="${fb}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="paper">${thumb(c,"closed")}</span><svg class="ef" viewBox="0 0 120 100" aria-hidden="true"><path d="M6 44L60 56L114 44V90Q114 95 109 95H11Q6 95 6 90Z" fill="${ff}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 44L60 56L114 44" fill="none" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="rev"><b>${h.avail}</b><i>${h.reveal}</i></span></span><span class="nm">${nm}</span>${meta}</button>`}
@@ -348,6 +373,8 @@ function home(){
    <div class="tabs2">${h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}</div>
    <div class="sortrow"><span>${h.sort}</span><select id="hsel"><option value="d"${hs==="d"?" selected":""}>${h.sd}</option><option value="m"${hs==="m"?" selected":""}>${h.ss}</option><option value="n"${hs==="n"?" selected":""}>${h.sn}</option></select><button id="hhd">${hh?h.show:h.hide}</button></div>`;
   $("#home").innerHTML=idx.length?idx.map(i=>pcCard(CASOS[i],i)).join(""):`<p class="empty">${h.none}</p>`;
+  document.querySelectorAll("#home .pc").forEach((el,k)=>{if(k<14)el.style.setProperty("--d",k);else el.style.animation="none"});
+  justSolved=null;
   $("#hero").classList.remove("hidden");
   $("#hl").onchange=e=>{lang=e.target.value;save("lang",lang);home()};
   $("#hth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);home()};
@@ -478,6 +505,7 @@ function renderLegend(){
   const f=lang==="fr",ks=Object.entries(cur.objectes);
   $("#legend").innerHTML=`<details class="lgd"${load("lgopen",false)?" open":""}><summary>${f?"Objets":"Objectes"} <em>(${ks.length})</em></summary><div class="legend">${ks.map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}</div></details>`;
   $("#legend details").ontoggle=e=>save("lgopen",e.target.open)}
+let popKey=null,justSolved=null;
 function renderBoard(){
   const texCache={};
   const n=cur.n,b=$("#board"),dk=dark();
@@ -500,10 +528,10 @@ function renderBoard(){
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
-    if(cell.p)inner+=`<span class="tok">${tokHtml(cell.p)}</span>`;
+    if(cell.p)inner+=`<span class="tok${popKey===r+","+c?" pop":""}">${tokHtml(cell.p)}</span>`;
     h+=`<div class="${cls} ${tx.c}" data-r="${r}" data-c="${c}" style="background-color:${tx.t?`color-mix(in srgb,${COLORS(s,dk,cur.escenari)} ${Math.round((1-tx.p)*100)}%,${tx.t})`:COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
   }
-  b.innerHTML=h;
+  b.innerHTML=h;popKey=null;
 }
 function renderTools(){
   const L=[["mark","✕",t("mark")],["erase","⌫",t("erase")],["undo","↶",t("undo")],["check","✔",t("check")]];
@@ -542,7 +570,7 @@ function apply(r,c,how,force){
     if(cell.p===sel){cell.p=null}
     else{ // un sospitós només pot estar en un lloc
       st.cells.forEach(row=>row.forEach(x=>{if(x.p===sel)x.p=null}));
-      cell.p=sel;cell.x=false;
+      cell.p=sel;cell.x=false;popKey=r+","+c;
     }
   }else if(how==="mark"){cell.x=force==="on"?true:force==="off"?false:!cell.x;if(cell.x)cell.p=null}
   else if(how==="note"){
@@ -583,12 +611,24 @@ function checkWin(){
   }
   st.done=true;persist();stopTimer();
   const pr=prog[cur.id]||{};pr.solved=true;if(!pr.best||st.time<pr.best)pr.best=st.time;prog[cur.id]=pr;save("prog",prog);
+  justSolved=cur.id;
   setTimeout(winModal,350);
 }
+function confeti(){
+  if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+  const d=document.createElement("div");d.className="conf";
+  const cols=["#e8761e","#3a6ea5","#3c8a4a","#d9a441","#b5302a","#8b3fa8","#2fa7a0"];
+  for(let i=0;i<46;i++){const e=document.createElement("i");
+    e.style.left=Math.random()*100+"%";e.style.background=cols[i%cols.length];
+    e.style.setProperty("--dx",(Math.random()*160-80)+"px");e.style.setProperty("--rot",(360+Math.random()*540)+"deg");
+    e.style.animationDuration=(1.8+Math.random()*1.6)+"s";e.style.animationDelay=(Math.random()*.5)+"s";
+    d.appendChild(e)}
+  document.body.appendChild(d);setTimeout(()=>d.remove(),4200)}
 function winModal(){
   const a=cur.assassi,next=CASOS[cur._i+1];
-  modal(`<div class="win"><div class="big">🔍</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok">${tokHtml(a)}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p>
+  modal(`<div class="win"><div class="big">🔍</div><div class="stampw">${H[lang].seal.replace("<br>"," ")}</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok">${tokHtml(a)}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p>
   <div class="row"><button id="mhome">${t("again")}</button>${next?`<button id="mnext">${t("next")}</button>`:""}</div></div>`);
+  confeti();
   $("#mhome").onclick=()=>{closeModal();home()};
   if(next)$("#mnext").onclick=()=>{closeModal();obreCas(cur._i+1)};
 }
