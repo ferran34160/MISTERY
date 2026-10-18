@@ -263,12 +263,12 @@ const scen=id=>(window.SCEN_META&&SCEN_META[id])||SCEN[id]||SCEN.mas;
 
 /* tipus de terra segons el nom de la sala (en català) */
 const TEX=[
- ["water",/piscina|resclosa|dàrsena|\bmoll\b|\bfont\b|sauna|rentat/,"#6fb7e0",.5],
+ ["water",/piscina|resclosa|dàrsena|\bfont\b/,"#6fb7e0",.5],
  ["metal",/màquines|locomotora|motors|torpedes|caldera|impremta|hangar|fossat|control|\btaller\b/,"#b8bdc6",.45],
  ["tiles",/cuina|galera|cafeteria|cafè|obrador|laboratori|fleca|\bforn\b|peixateria|vestuari|fruita|bany|lavabo|cambra freda/,null,0],
  ["grass",/jardí|\bhort\b|vinya|\bcamp\b|passeig|foguera|hivernacle/,"#7bbf6a",.5],
  ["sand",/pista|quadra|corral|estable|carrusel|tenda|campament|hipòdrom/,"#e6cf9a",.5],
- ["pavers",/terrassa|porxada|\bpati\b|plaça|entrada|plataforma|coberta/,"#d8c8b0",.4],
+ ["pavers",/terrassa|porxada|\bpati\b|plaça|entrada|plataforma|coberta|\bmoll\b|solàrium|mirador/,"#d8c8b0",.4],
  ["stone",/celler|bodega|calabós|cripta|claustre|torre|soterrani|capella|santuari|estàtues|cuirassada|forta|armeria|magatzem|cobert|galeria|passadís|trull|campanar|presó/,"#b7b0a4",.4],
  ["carpet",/despatx|oficina|recepció|vestíbul|espera|platea|tribuna|reunions|redacció|arxiu|privada|joc|saló|estudi|sala de proves|emprovador|massatges/,null,0]];
 function roomTex(nom){

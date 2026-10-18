@@ -475,10 +475,6 @@
 "ca": "El tamboret mut",
 "fr": "Le tabouret muet"
 },
-"mercat-6-201-7": {
-"ca": "El rentat tardà",
-"fr": "Le bac tardif"
-},
 "museu-6-201-2": {
 "ca": "El banc tardà",
 "fr": "Le banc tardif"
@@ -1075,10 +1071,6 @@
 "ca": "El barril tardà",
 "fr": "Le tonneau tardif"
 },
-"teatre-6-101-4": {
-"ca": "La resclosa buida",
-"fr": "L'écluse vide"
-},
 "estacio-7-104-6": {
 "ca": "El quadre perdut",
 "fr": "Le tableau perdu"
@@ -1211,10 +1203,6 @@
 "ca": "L'escriptori mut",
 "fr": "Le bureau muet"
 },
-"mas-8-43-4": {
-"ca": "El rentat trencat",
-"fr": "Le bac brisé"
-},
 "mas-8-41-2": {
 "ca": "El pati tardà",
 "fr": "La cour tardive"
@@ -1226,10 +1214,6 @@
 "mas-9-53-1": {
 "ca": "El pou fosc",
 "fr": "Le puits sombre"
-},
-"mas-9-51-1": {
-"ca": "La piscina trencada",
-"fr": "La piscine brisée"
 },
 "mas-9-51-2": {
 "ca": "L'escenari mut",
@@ -1258,5 +1242,21 @@
 "mas-9-53-2": {
 "ca": "La caixa forta tardana",
 "fr": "Le coffre tardif"
+},
+"mercat-6-201-7": {
+"ca": "El reflector amagat",
+"fr": "Le projecteur caché"
+},
+"teatre-6-101-4": {
+"ca": "L'era buida",
+"fr": "L'aire de battage vide"
+},
+"mas-8-43-4": {
+"ca": "La sala d'espera tardana",
+"fr": "La salle d'attente tardive"
+},
+"mas-9-51-1": {
+"ca": "El solàrium trencat",
+"fr": "Le solarium brisé"
 }
 }

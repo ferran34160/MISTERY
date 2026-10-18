@@ -11825,8 +11825,8 @@
   ],
   "sales": {
    "0": {
-    "ca": "resclosa",
-    "fr": "écluse"
+    "ca": "era",
+    "fr": "aire de battage"
    },
    "1": {
     "ca": "graner",
@@ -34345,8 +34345,8 @@
     "fr": "potager"
    },
    "2": {
-    "ca": "resclosa",
-    "fr": "écluse"
+    "ca": "era",
+    "fr": "aire de battage"
    },
    "3": {
     "ca": "sala de les moles",
@@ -39296,8 +39296,8 @@
   ],
   "sales": {
    "0": {
-    "ca": "rentat",
-    "fr": "bac"
+    "ca": "sala d'espera",
+    "fr": "salle d'attente"
    },
    "1": {
     "ca": "sala",
@@ -74159,8 +74159,8 @@
     "fr": "sauna"
    },
    "1": {
-    "ca": "piscina",
-    "fr": "piscine"
+    "ca": "solàrium",
+    "fr": "solarium"
    },
    "2": {
     "ca": "recepció",
@@ -74418,7 +74418,7 @@
   "textos": {
    "ca": [
     "Tenia una planta a tocar.",
-    "Era a la piscina.",
+    "Era al solàrium.",
     "Era a l'est de Carla.",
     "Era a la mateixa diagonal que Carla.",
     "Tenia una taula a tocar.",
@@ -74430,7 +74430,7 @@
    ],
    "fr": [
     "Elle avait une plante tout près.",
-    "Elle se trouvait dans la piscine.",
+    "Elle se trouvait dans le solarium.",
     "Elle était à l'est de Carla.",
     "Il était sur la même diagonale que Carla.",
     "Il était à côté d'une table.",
@@ -75237,8 +75237,8 @@
     "fr": "remise"
    },
    "1": {
-    "ca": "font",
-    "fr": "fontaine"
+    "ca": "mirador",
+    "fr": "belvédère"
    },
    "2": {
     "ca": "despatx",

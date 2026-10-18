@@ -65,7 +65,7 @@ botiga de llibres;La llibreria;La librairie;l'establiment;l'établissement;f bot
  ;;;;;m despatx|m bureau|escriptori,arxivador,cadira
  ;;;;;m soterrani|m sous-sol|barril,bagul,escala
  ;;;;;m aparador|f vitrine|vitrina,mirall,tamboret
-spa;El balneari;Le spa;l'edifici;l'édifice;f piscina|f piscine|banc,planta,pou
+spa;El balneari;Le spa;l'edifici;l'édifice;m solàrium|m solarium|banc,planta,pou
  ;;;;;f sauna|m sauna|banc,estufa,barril
  ;;;;;f recepció|f réception|barra,sofa,planta
  ;;;;;f sala de massatges|f salle de massage|llit,mirall,tamboret
@@ -129,7 +129,7 @@ moli;El molí;Le moulin;el molí;le moulin;f sala de les moles|f salle des meule
  ;;;;;m graner|m grenier|caixa,escala,bagul
  ;;;;;f cuina|f cuisine|llar,taula,cadira
  ;;;;;m dormitori|f chambre|llit,armari,bagul
- ;;;;;f resclosa|f écluse|pou,banc,carro
+ ;;;;;f era|f aire de battage|pou,banc,carro
  ;;;;;m hort|m potager|planta,figuera,banc
 xocolata;La fàbrica de xocolata;La chocolaterie;l'edifici;l'édifice;f cuina|f cuisine|estufa,taula,barril
  ;;;;;m magatzem|m entrepôt|caixa,carreto,escala
@@ -312,7 +312,7 @@ sastreria;La sastreria;La couturière;l'establiment;l'établissement;f botiga|f 
  ;;;;;m despatx|m bureau|escriptori,arxivador,cadira
  ;;;;;f golfa|m grenier|bagul,escala,caixa
 perruqueria;La perruqueria;Le salon de coiffure;l'establiment;l'établissement;f sala|m salon|mirall,butaca,tamboret
- ;;;;;m rentat|m bac|banc,barril,tamboret
+ ;;;;;f sala d'espera|f salle d'attente|banc,barril,tamboret
  ;;;;;f recepció|f réception|barra,sofa,planta
  ;;;;;m magatzem|f réserve|armari,caixa,escala
  ;;;;;m despatx|m bureau|escriptori,arxivador,cadira
@@ -322,7 +322,7 @@ jardi;El jardí botànic;Le jardin botanique;el recinte;l'enceinte;m hivernacle|
  ;;;;;m cobert|f remise|caixa,carro,escala
  ;;;;;m despatx|m bureau|escriptori,arxivador,cadira
  ;;;;;f cafeteria|f cafétéria|barra,tamboret,taula
- ;;;;;f font|f fontaine|pou,banc,estatua
+ ;;;;;m mirador|m belvédère|pou,banc,estatua
 atic;L'àtic;L'attique;l'edifici;l'édifice;m saló|m salon|sofa,piano,butaca
  ;;;;;f cuina|f cuisine|estufa,taula,cadira
  ;;;;;m dormitori|f chambre|llit,armari,mirall
