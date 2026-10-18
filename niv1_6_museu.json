@@ -1,0 +1,961 @@
+[
+ {
+  "id": "museu-6-202-1",
+  "escenari": "museu",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    1,
+    3,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    1,
+    3,
+    3,
+    2
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    3,
+    2
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    3,
+    2
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    3,
+    2
+   ],
+   [
+    0,
+    0,
+    3,
+    3,
+    3,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "despatx",
+    "fr": "bureau"
+   },
+   "1": {
+    "ca": "sala d'estàtues",
+    "fr": "salle des statues"
+   },
+   "2": {
+    "ca": "magatzem",
+    "fr": "réserve"
+   },
+   "3": {
+    "ca": "vestíbul",
+    "fr": "hall"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    "estatua",
+    null,
+    "carreto",
+    "caixa"
+   ],
+   [
+    "arxivador",
+    null,
+    null,
+    "planta",
+    null,
+    null
+   ],
+   [
+    "arxivador",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "estatua",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "arxivador": {
+    "bloqueja": true,
+    "ca": "arxivador",
+    "fr": "classeur"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
+   "estatua": {
+    "bloqueja": true,
+    "ca": "estàtua",
+    "fr": "statue"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "caixa"
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 0
+   },
+   {
+    "t": "sol_amb",
+    "p": "A",
+    "q": "E"
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 1
+   },
+   {
+    "t": "en_sala",
+    "p": "C",
+    "sala": 2
+   },
+   {
+    "t": "diag",
+    "p": "D",
+    "q": "A"
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "E"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva columna hi havia una caixa.",
+    "Estava al despatx.",
+    "Només ella i Eulàlia eren a la seva habitació.",
+    "Era a la sala d'estàtues.",
+    "Estava al magatzem.",
+    "Era a la mateixa diagonal que Anna.",
+    "Era a la mateixa diagonal que Eulàlia."
+   ],
+   "fr": [
+    "Dans sa colonne se trouvait une caisse.",
+    "Elle se trouvait dans le bureau.",
+    "Seuls elle et Eulàlia étaient dans sa pièce.",
+    "Il se trouvait dans la salle des statues.",
+    "Il était dans la réserve.",
+    "Elle était sur la même diagonale qu'Anna.",
+    "Elle était sur la même diagonale qu'Eulàlia."
+   ]
+  },
+  "solucio": {
+   "A": [
+    5,
+    1
+   ],
+   "B": [
+    3,
+    3
+   ],
+   "C": [
+    0,
+    4
+   ],
+   "D": [
+    1,
+    5
+   ],
+   "E": [
+    4,
+    0
+   ],
+   "V": [
+    2,
+    2
+   ]
+  },
+  "assassi": "B"
+ },
+ {
+  "id": "museu-6-202-2",
+  "escenari": "museu",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    3,
+    3,
+    3,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   [
+    3,
+    1,
+    1,
+    1,
+    0,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    2
+   ],
+   [
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "galeria",
+    "fr": "galerie"
+   },
+   "1": {
+    "ca": "vestíbul",
+    "fr": "hall"
+   },
+   "2": {
+    "ca": "sala d'estàtues",
+    "fr": "salle des statues"
+   },
+   "3": {
+    "ca": "magatzem",
+    "fr": "réserve"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "bagul",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "banc",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "vitrina"
+   ],
+   [
+    null,
+    "planta",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "banc",
+    "quadre",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
+   },
+   "quadre": {
+    "bloqueja": true,
+    "ca": "quadre",
+    "fr": "tableau"
+   },
+   "vitrina": {
+    "bloqueja": true,
+    "ca": "vitrina",
+    "fr": "vitrine"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Clara",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "vora",
+    "p": "E"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "A",
+    "obj": "bagul"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "A"
+   },
+   {
+    "t": "prop_obj",
+    "p": "D",
+    "obj": "banc"
+   },
+   {
+    "t": "nord",
+    "p": "V",
+    "q": "D"
+   },
+   {
+    "t": "fila_obj",
+    "p": "C",
+    "obj": "quadre"
+   },
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "banc"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una paret exterior de l'edifici.",
+    "Era sobre el bagul.",
+    "Era a la mateixa diagonal que Anna.",
+    "Tenia un banc a tocar.",
+    "Era al nord de Dídac.",
+    "A la seva fila hi havia un quadre.",
+    "A la seva fila hi havia un banc."
+   ],
+   "fr": [
+    "Elle était contre un mur extérieur de l'édifice.",
+    "Elle était sur la malle.",
+    "Il était sur la même diagonale qu'Anna.",
+    "Il était à côté d'un banc.",
+    "Elle était au nord de Dídac.",
+    "Sur sa ligne se trouvait un tableau.",
+    "Sur sa ligne se trouvait un banc."
+   ]
+  },
+  "solucio": {
+   "A": [
+    1,
+    3
+   ],
+   "B": [
+    2,
+    4
+   ],
+   "C": [
+    5,
+    5
+   ],
+   "D": [
+    3,
+    2
+   ],
+   "E": [
+    4,
+    0
+   ],
+   "V": [
+    0,
+    1
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "museu-6-202-3",
+  "escenari": "museu",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    3,
+    1,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    1,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    1,
+    2,
+    2,
+    0
+   ],
+   [
+    3,
+    3,
+    1,
+    0,
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    1,
+    0,
+    0,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "despatx",
+    "fr": "bureau"
+   },
+   "1": {
+    "ca": "galeria",
+    "fr": "galerie"
+   },
+   "2": {
+    "ca": "sala d'estàtues",
+    "fr": "salle des statues"
+   },
+   "3": {
+    "ca": "taller de restauració",
+    "fr": "atelier"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "banc"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "caixa",
+    null,
+    "cadira",
+    null,
+    null
+   ],
+   [
+    "vitrina",
+    null,
+    null,
+    null,
+    null,
+    "cadira"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "vitrina": {
+    "bloqueja": true,
+    "ca": "vitrina",
+    "fr": "vitrine"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aleix",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "est",
+    "p": "A",
+    "q": "B"
+   },
+   {
+    "t": "col_obj",
+    "p": "E",
+    "obj": "vitrina"
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 2
+   },
+   {
+    "t": "cavall",
+    "p": "V",
+    "q": "E"
+   },
+   {
+    "t": "sud",
+    "p": "C",
+    "q": "A"
+   },
+   {
+    "t": "sud",
+    "p": "V",
+    "q": "A"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "V",
+    "sala": 1
+   },
+   {
+    "t": "est",
+    "p": "B",
+    "q": "D"
+   },
+   {
+    "t": "diag",
+    "p": "D",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a l'est de Bruna.",
+    "A la seva columna hi havia una vitrina.",
+    "Era a la sala d'estàtues.",
+    "Era a un salt de cavall d'Eudald (com als escacs).",
+    "Era al sud d'Aleix.",
+    "Era al sud d'Aleix.",
+    "No era a la galeria.",
+    "Era a l'est de Delfina.",
+    "Era a la mateixa diagonal que Bruna."
+   ],
+   "fr": [
+    "Il était à l'est de Bruna.",
+    "Dans sa colonne se trouvait une vitrine.",
+    "Elle se trouvait dans la salle des statues.",
+    "Il était à un saut de cavalier d'Eudald (comme aux échecs).",
+    "Il était au sud d'Aleix.",
+    "Il était au sud d'Aleix.",
+    "Il n'était pas dans la galerie.",
+    "Elle était à l'est de Delfina.",
+    "Elle était sur la même diagonale que Bruna."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    5
+   ],
+   "B": [
+    2,
+    4
+   ],
+   "C": [
+    5,
+    3
+   ],
+   "D": [
+    4,
+    2
+   ],
+   "E": [
+    3,
+    0
+   ],
+   "V": [
+    1,
+    1
+   ]
+  },
+  "assassi": "E"
+ }
+]

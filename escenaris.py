@@ -122,3 +122,112 @@ NOMS_LLETRA = {
     "J": [("Jaume", "m"), ("Júlia", "f"), ("Jordi", "m"), ("Judit", "f")],
     "V": [("Valentí", "m"), ("Violant", "f"), ("Vicenç", "m"), ("Vera", "f")],
 }
+
+
+# ---------------------------------------------------------------------------
+# Escenaris addicionals (definits de forma compacta). Cada objecte té un nom
+# genèric (ca, gènere ca, fr, gènere fr, bloqueja) i una icona a index.html.
+# ---------------------------------------------------------------------------
+_OBJ = {
+    "taula": ("taula", "f", "table", "f", True), "cadira": ("cadira", "f", "chaise", "f", False),
+    "banc": ("banc", "m", "banc", "m", False), "barril": ("barril", "m", "tonneau", "m", True),
+    "caixa": ("caixa", "f", "caisse", "f", True), "bagul": ("bagul", "m", "malle", "f", False),
+    "escala": ("escala", "f", "échelle", "f", True), "armari": ("armari", "m", "armoire", "f", True),
+    "estufa": ("estufa", "f", "poêle", "m", True), "llar": ("llar de foc", "f", "cheminée", "f", True),
+    "escriptori": ("escriptori", "m", "bureau", "m", True), "arxivador": ("arxivador", "m", "classeur", "m", True),
+    "maleta": ("maleta", "f", "valise", "f", False), "sofa": ("sofà", "m", "canapé", "m", False),
+    "butaca": ("butaca", "f", "fauteuil", "m", False), "mirall": ("mirall", "m", "miroir", "m", True),
+    "piano": ("piano", "m", "piano", "m", True), "tamboret": ("tamboret", "m", "tabouret", "m", False),
+    "barra": ("barra", "f", "comptoir", "m", True), "carreto": ("carretó", "m", "chariot", "m", False),
+    "carro": ("carro", "m", "charrette", "f", False), "reflector": ("reflector", "m", "projecteur", "m", True),
+    "finestreta": ("finestreta", "f", "guichet", "m", True), "pou": ("pou", "m", "puits", "m", True),
+    "figuera": ("arbre", "m", "arbre", "m", True), "maniqui": ("maniquí", "m", "mannequin", "m", True),
+    "fanal": ("fanal", "m", "lampadaire", "m", True), "tel": ("teló", "m", "rideau", "m", True),
+    "timo": ("timó", "m", "barre", "f", True), "ancora": ("àncora", "f", "ancre", "f", True),
+    "llit": ("llit", "m", "lit", "m", False), "planta": ("planta", "f", "plante", "f", True),
+    "llibreria": ("llibreria", "f", "bibliothèque", "f", True), "quadre": ("quadre", "m", "tableau", "m", True),
+    "vitrina": ("vitrina", "f", "vitrine", "f", True), "estatua": ("estàtua", "f", "statue", "f", True),
+    "tron": ("tron", "m", "trône", "m", False), "torxa": ("torxa", "f", "torche", "f", True),
+    "armadura": ("armadura", "f", "armure", "f", True), "pupitre": ("pupitre", "m", "pupitre", "m", False),
+    "pissarra": ("pissarra", "f", "tableau noir", "m", True), "pilota": ("pilota", "f", "ballon", "m", False),
+    "bola": ("bola d'equilibri", "f", "boule d'équilibre", "f", False),
+}
+
+
+def _registra(clau, titol, lloc, sales):
+    """sales: llista de (clau, (gca, ca), (gfr, fr), [objectes])."""
+    usats = {o for s in sales for o in s[3]}
+    ESCENARIS[clau] = {
+        "titol": {"ca": titol[0], "fr": titol[1]},
+        "lloc": {"ca": lloc[0], "fr": lloc[1]},
+        "sales": {k: {"nom": {"ca": ca, "fr": fr}, "objs": objs} for k, ca, fr, objs in sales},
+        "objectes": {k: {"bloqueja": _OBJ[k][4],
+                         "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
+                     for k in sorted(usats)},
+        "persones": [],
+    }
+
+
+_registra("vaixell", ("Crim al vaixell", "Crime sur le navire"), ("la nau", "la nef"), [
+    ("coberta", ("f", "coberta"), ("m", "pont"), ["timo", "ancora", "barril"]),
+    ("camarot", ("m", "camarot"), ("f", "cabine"), ["llit", "bagul", "cadira"]),
+    ("galera", ("f", "galera"), ("f", "cambuse"), ["taula", "estufa", "caixa"]),
+    ("bodega", ("f", "bodega"), ("f", "cale"), ["barril", "caixa", "bagul"]),
+    ("passarella", ("f", "passarel·la"), ("f", "passerelle"), ["timo", "escriptori", "cadira"]),
+    ("maquines", ("f", "sala de màquines"), ("f", "salle des machines"), ["estufa", "escala", "carreto"])])
+_registra("hotel", ("Crim a l'hotel", "Crime à l'hôtel"), ("l'hotel", "l'hôtel"), [
+    ("recepcio", ("f", "recepció"), ("f", "réception"), ["barra", "maleta", "sofa"]),
+    ("habitacio", ("f", "habitació"), ("f", "chambre"), ["llit", "armari", "cadira"]),
+    ("bar", ("m", "bar"), ("m", "bar"), ["barra", "tamboret", "mirall"]),
+    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["taula", "estufa", "caixa"]),
+    ("terrassa", ("f", "terrassa"), ("f", "terrasse"), ["banc", "planta", "taula"]),
+    ("biblioteca", ("f", "biblioteca"), ("f", "bibliothèque"), ["llibreria", "butaca", "escala"])])
+_registra("museu", ("Crim al museu", "Crime au musée"), ("l'edifici", "l'édifice"), [
+    ("vestibul", ("m", "vestíbul"), ("m", "hall"), ["banc", "planta", "finestreta"]),
+    ("galeria", ("f", "galeria"), ("f", "galerie"), ["quadre", "vitrina", "banc"]),
+    ("estatues", ("f", "sala d'estàtues"), ("f", "salle des statues"), ["estatua", "banc", "vitrina"]),
+    ("taller", ("m", "taller de restauració"), ("m", "atelier"), ["taula", "escala", "caixa"]),
+    ("magatzem", ("m", "magatzem"), ("f", "réserve"), ["caixa", "bagul", "carreto"]),
+    ("despatx", ("m", "despatx"), ("m", "bureau"), ["escriptori", "arxivador", "cadira"])])
+_registra("castell", ("Crim al castell", "Crime au château"), ("la fortalesa", "la forteresse"), [
+    ("tron", ("f", "sala del tron"), ("f", "salle du trône"), ["tron", "taula", "torxa"]),
+    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["llar", "taula", "barril"]),
+    ("calabos", ("m", "calabós"), ("m", "cachot"), ["torxa", "banc", "caixa"]),
+    ("torre", ("f", "torre"), ("f", "tour"), ["escala", "torxa", "bagul"]),
+    ("jardi", ("m", "jardí"), ("m", "jardin"), ["pou", "banc", "figuera"]),
+    ("armeria", ("f", "armeria"), ("f", "armurerie"), ["armadura", "caixa", "taula"])])
+_registra("escola", ("Crim a l'escola", "Crime à l'école"), ("l'escola", "l'école"), [
+    ("aula", ("f", "aula"), ("f", "classe"), ["pupitre", "pissarra", "cadira"]),
+    ("gimnas", ("m", "gimnàs"), ("m", "gymnase"), ["pilota", "banc", "caixa"]),
+    ("biblioteca", ("f", "biblioteca"), ("f", "bibliothèque"), ["llibreria", "taula", "escala"]),
+    ("menjador", ("m", "menjador"), ("m", "réfectoire"), ["taula", "banc", "barra"]),
+    ("pati", ("m", "pati"), ("f", "cour"), ["figuera", "banc", "pou"]),
+    ("despatx", ("m", "despatx"), ("m", "bureau"), ["escriptori", "arxivador", "cadira"])])
+_registra("restaurant", ("Crim al restaurant", "Crime au restaurant"), ("l'establiment", "l'établissement"), [
+    ("menjador", ("m", "menjador"), ("f", "salle"), ["taula", "cadira", "planta"]),
+    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["estufa", "taula", "caixa"]),
+    ("terrassa", ("f", "terrassa"), ("f", "terrasse"), ["tamboret", "taula", "planta"]),
+    ("celler", ("m", "celler"), ("m", "cellier"), ["barril", "caixa", "escala"]),
+    ("bar", ("m", "bar"), ("m", "bar"), ["barra", "tamboret", "mirall"]),
+    ("despatx", ("m", "despatx"), ("m", "bureau"), ["escriptori", "arxivador", "cadira"])])
+_registra("circ", ("Crim al circ", "Crime au cirque"), ("la carpa", "la tente"), [
+    ("pista", ("f", "pista"), ("f", "piste"), ["bola", "reflector", "tamboret"]),
+    ("tribuna", ("f", "tribuna"), ("f", "tribune"), ["banc", "butaca", "planta"]),
+    ("caravana", ("f", "caravana"), ("f", "roulotte"), ["llit", "armari", "taula"]),
+    ("quadra", ("f", "quadra"), ("f", "écurie"), ["caixa", "carro", "barril"]),
+    ("taquilla", ("f", "taquilla"), ("f", "billetterie"), ["finestreta", "cadira", "banc"]),
+    ("magatzem", ("m", "magatzem"), ("m", "entrepôt"), ["bagul", "maniqui", "escala"])])
+_registra("mansio", ("Crim a la mansió", "Crime au manoir"), ("la mansió", "la demeure"), [
+    ("vestibul", ("m", "vestíbul"), ("m", "vestibule"), ["mirall", "planta", "banc"]),
+    ("menjador", ("m", "menjador"), ("f", "salle à manger"), ["taula", "cadira", "llar"]),
+    ("saloo", ("m", "saló"), ("m", "salon"), ["piano", "sofa", "butaca"]),
+    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["estufa", "taula", "caixa"]),
+    ("estudi", ("m", "estudi"), ("m", "cabinet"), ["escriptori", "llibreria", "arxivador"]),
+    ("jardi", ("m", "jardí d'hivern"), ("m", "jardin d'hiver"), ["planta", "figuera", "banc"])])
+_registra("mercat", ("Crim al mercat", "Crime au marché"), ("la plaça", "la place"), [
+    ("fruita", ("f", "parada de fruita"), ("m", "étal de fruits"), ["caixa", "taula", "tamboret"]),
+    ("peix", ("f", "peixateria"), ("f", "poissonnerie"), ["barra", "barril", "caixa"]),
+    ("forn", ("m", "forn"), ("f", "boulangerie"), ["estufa", "taula", "cadira"]),
+    ("cafe", ("m", "cafè"), ("m", "café"), ["barra", "tamboret", "mirall"]),
+    ("magatzem", ("m", "magatzem"), ("m", "entrepôt"), ["carro", "caixa", "bagul"]),
+    ("oficina", ("f", "oficina"), ("m", "bureau"), ["escriptori", "arxivador", "cadira"])])

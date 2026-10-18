@@ -1,0 +1,987 @@
+[
+ {
+  "id": "castell-6-202-1",
+  "escenari": "castell",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    1,
+    3,
+    3,
+    3
+   ],
+   [
+    0,
+    1,
+    1,
+    3,
+    3,
+    3
+   ],
+   [
+    1,
+    1,
+    1,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    2,
+    2,
+    3,
+    3,
+    2
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "armeria",
+    "fr": "armurerie"
+   },
+   "1": {
+    "ca": "sala del tron",
+    "fr": "salle du trône"
+   },
+   "2": {
+    "ca": "calabós",
+    "fr": "cachot"
+   },
+   "3": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    "taula",
+    null,
+    null
+   ],
+   [
+    "taula",
+    "taula",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "llar",
+    "barril",
+    null
+   ],
+   [
+    "torxa",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "banc",
+    null,
+    "torxa",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "torxa"
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 0
+   },
+   {
+    "t": "sobre_obj",
+    "p": "C",
+    "obj": "banc"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "D",
+    "q": "C"
+   },
+   {
+    "t": "sud",
+    "p": "A",
+    "q": "E"
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "col_obj",
+    "p": "B",
+    "obj": "taula"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia una torxa.",
+    "Estava a l'armeria.",
+    "Era sobre el banc.",
+    "Era a la mateixa habitació que Carla.",
+    "Era al sud d'Eudald.",
+    "Era a la mateixa diagonal que Carla.",
+    "A la seva columna hi havia una taula."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait une torche.",
+    "Il se trouvait dans l'armurerie.",
+    "Elle était sur le banc.",
+    "Il était dans la même pièce que Carla.",
+    "Elle était au sud d'Eudald.",
+    "Il était sur la même diagonale que Carla.",
+    "Dans sa colonne se trouvait une table."
+   ]
+  },
+  "solucio": {
+   "A": [
+    2,
+    5
+   ],
+   "B": [
+    4,
+    3
+   ],
+   "C": [
+    5,
+    0
+   ],
+   "D": [
+    3,
+    2
+   ],
+   "E": [
+    0,
+    1
+   ],
+   "V": [
+    1,
+    4
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "castell-6-202-2",
+  "escenari": "castell",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    2,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    4,
+    1,
+    1,
+    3,
+    3
+   ],
+   [
+    2,
+    4,
+    1,
+    1,
+    1,
+    3
+   ],
+   [
+    2,
+    4,
+    4,
+    4,
+    1,
+    0
+   ],
+   [
+    2,
+    4,
+    4,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    0,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "jardí",
+    "fr": "jardin"
+   },
+   "2": {
+    "ca": "sala del tron",
+    "fr": "salle du trône"
+   },
+   "3": {
+    "ca": "calabós",
+    "fr": "cachot"
+   },
+   "4": {
+    "ca": "armeria",
+    "fr": "armurerie"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    "banc",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "caixa",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "armadura",
+    null,
+    null,
+    "figuera",
+    null
+   ],
+   [
+    "tron",
+    null,
+    null,
+    null,
+    null,
+    "taula"
+   ],
+   [
+    null,
+    "torxa",
+    null,
+    null,
+    "llar",
+    null
+   ]
+  ],
+  "objectes": {
+   "armadura": {
+    "bloqueja": true,
+    "ca": "armadura",
+    "fr": "armure"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "arbre",
+    "fr": "arbre"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
+   },
+   "tron": {
+    "bloqueja": false,
+    "ca": "tron",
+    "fr": "trône"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "oest",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "llar"
+   },
+   {
+    "t": "prop_obj",
+    "p": "E",
+    "obj": "armadura"
+   },
+   {
+    "t": "col_obj",
+    "p": "B",
+    "obj": "armadura"
+   },
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "taula"
+   },
+   {
+    "t": "sud",
+    "p": "C",
+    "q": "B"
+   },
+   {
+    "t": "raco",
+    "p": "V"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 1,
+    "k": 0
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "E",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a l'oest de Cesc.",
+    "A la seva columna hi havia una llar de foc.",
+    "Tenia una armadura a tocar.",
+    "A la seva columna hi havia una armadura.",
+    "A la seva fila hi havia una taula.",
+    "Era al sud de Bruna.",
+    "Era en un racó d'una habitació.",
+    "El jardí estava buida: ni un sol cos.",
+    "Era a la mateixa habitació que Bruna."
+   ],
+   "fr": [
+    "Elle était à l'ouest de Cesc.",
+    "Dans sa colonne se trouvait une cheminée.",
+    "Il avait une armure tout près.",
+    "Dans sa colonne se trouvait une armure.",
+    "Sur sa ligne se trouvait une table.",
+    "Il était au sud de Bruna.",
+    "Elle était dans un coin d'une pièce.",
+    "Personne n'était dans le jardin, pas même la victime.",
+    "Il était dans la même pièce que Bruna."
+   ]
+  },
+  "solucio": {
+   "A": [
+    2,
+    0
+   ],
+   "B": [
+    1,
+    1
+   ],
+   "C": [
+    5,
+    5
+   ],
+   "D": [
+    0,
+    4
+   ],
+   "E": [
+    3,
+    2
+   ],
+   "V": [
+    4,
+    3
+   ]
+  },
+  "assassi": "C"
+ },
+ {
+  "id": "castell-6-202-3",
+  "escenari": "castell",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    2,
+    2
+   ],
+   [
+    0,
+    2,
+    2,
+    2,
+    2,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    4,
+    4,
+    1
+   ],
+   [
+    -1,
+    -1,
+    3,
+    4,
+    4,
+    1
+   ],
+   [
+    -1,
+    -1,
+    3,
+    3,
+    3,
+    1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "torre",
+    "fr": "tour"
+   },
+   "1": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "2": {
+    "ca": "sala del tron",
+    "fr": "salle du trône"
+   },
+   "3": {
+    "ca": "jardí",
+    "fr": "jardin"
+   },
+   "4": {
+    "ca": "calabós",
+    "fr": "cachot"
+   }
+  },
+  "obj": [
+   [
+    "bagul",
+    "torxa",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "taula",
+    null,
+    null,
+    "llar"
+   ],
+   [
+    null,
+    "banc",
+    "pou",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "torxa",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aleix",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "E",
+    "obj": "banc"
+   },
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "bagul"
+   },
+   {
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "pou"
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 1
+   },
+   {
+    "t": "cavall",
+    "p": "D",
+    "q": "E"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "C",
+    "sala": 4
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Tenia un banc a tocar.",
+    "A la seva fila hi havia un bagul.",
+    "Era al costat d'un pou.",
+    "Era a la cuina.",
+    "Era a un salt de cavall d'Eudald (com als escacs).",
+    "No era al calabós."
+   ],
+   "fr": [
+    "Il avait un banc tout près.",
+    "Sur sa ligne se trouvait une malle.",
+    "Il était à côté d'un puits.",
+    "Il se trouvait dans la cuisine.",
+    "Il était à un saut de cavalier d'Eudald (comme aux échecs).",
+    "Il n'était pas dans le cachot."
+   ]
+  },
+  "solucio": {
+   "A": [
+    5,
+    5
+   ],
+   "B": [
+    0,
+    3
+   ],
+   "C": [
+    2,
+    4
+   ],
+   "D": [
+    1,
+    1
+   ],
+   "E": [
+    3,
+    0
+   ],
+   "V": [
+    4,
+    2
+   ]
+  },
+  "assassi": "E"
+ }
+]

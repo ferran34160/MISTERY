@@ -188,6 +188,21 @@ const T={
 const ROOMHUE=[28,205,95,330,50,265,175,10];
 const PERSONHUE=[8,210,130,280,35,175,320,60,95,245];
 const ICONS={
+ llit:'<rect x="3" y="12" width="18" height="6" rx="1" fill="#c68a4e"/><rect x="3" y="8" width="3" height="13" fill="#8a5a2e"/><rect x="18" y="10" width="3" height="11" fill="#8a5a2e"/><rect x="6.5" y="9" width="7" height="4" rx="1.8" fill="#ffffff"/><rect x="6" y="12.5" width="12" height="4.5" fill="#3a6ea5"/>',
+ timo:'<path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19" fill="none" stroke="#8a5a2e" stroke-width="1.8"/><circle cx="12" cy="12" r="6.6" fill="none" stroke="#8a5a2e" stroke-width="2.6"/><circle cx="12" cy="12" r="2.4" fill="#c68a4e"/>',
+ ancora:'<circle cx="12" cy="5" r="2.2" fill="none" stroke="#4c4f56" stroke-width="1.8"/><path d="M12 7.2V20M7 11h10M4 14c0 5 4 6 8 6s8-1 8-6" fill="none" stroke="#4c4f56" stroke-width="2.1"/><path d="M4 14l-1.6 2M20 14l1.6 2" fill="none" stroke="#4c4f56" stroke-width="2"/>',
+ planta:'<path d="M7 15h10l-1.5 7h-7z" fill="#c0603a"/><path d="M12 15C12 8 8 6 5 7c0 4 3 7 7 8z" fill="#4a9a4f"/><path d="M12 15c0-7 4-9 7-8 0 4-3 7-7 8z" fill="#3c8a4a"/><path d="M12 15V4" stroke="#3c8a4a" stroke-width="1.5" fill="none"/>',
+ llibreria:'<rect x="3" y="2.5" width="18" height="19" fill="#a8683a"/><path d="M3 8.8h18M3 15h18" fill="none"/><rect x="5" y="4" width="2.2" height="4.6" fill="#b5302a"/><rect x="7.6" y="4.6" width="2.2" height="4" fill="#3a6ea5"/><rect x="10.2" y="4" width="2.2" height="4.6" fill="#e6b422"/><rect x="13" y="4.5" width="2.4" height="4.1" fill="#3c8a4a"/><rect x="16" y="4" width="2.2" height="4.6" fill="#8b3fa8"/><rect x="5" y="10.4" width="2.6" height="4.2" fill="#3c8a4a"/><rect x="8.2" y="10" width="2.2" height="4.6" fill="#b5302a"/><rect x="11" y="10.6" width="2.4" height="4" fill="#e6b422"/><rect x="5.5" y="16.6" width="3" height="4" fill="#3a6ea5"/><rect x="9.2" y="16.2" width="2.2" height="4.4" fill="#8b3fa8"/>',
+ quadre:'<rect x="3" y="4" width="18" height="15" fill="#d9a441"/><rect x="5.5" y="6.5" width="13" height="10" fill="#9cc7e8"/><path d="M5.5 16.5l4-5 3 3 3-4 3 6z" fill="#4a9a4f"/><circle cx="16" cy="9.5" r="1.4" fill="#f5d35a"/>',
+ vitrina:'<rect x="5" y="3" width="14" height="14" fill="#d6ebf8"/><rect x="5" y="17" width="14" height="5" fill="#8a5a2e"/><path d="M8 13l4-7 4 7z" fill="#e6b422"/><path d="M7 5l3-1.5" stroke="#ffffff" stroke-width="1.2" fill="none"/>',
+ estatua:'<rect x="6.5" y="19" width="11" height="3" fill="#b9b5ab"/><rect x="9" y="12" width="6" height="7" fill="#d8d4c8"/><circle cx="12" cy="7" r="3.4" fill="#d8d4c8"/><path d="M9 12L6 16.5M15 12L18 16.5" fill="none" stroke="#d8d4c8" stroke-width="2.3"/>',
+ tron:'<rect x="6" y="2.5" width="12" height="11" rx="2" fill="#a8212b"/><rect x="4" y="12" width="16" height="4" fill="#f0c43a"/><rect x="4" y="9" width="3" height="9" fill="#d9a441"/><rect x="17" y="9" width="3" height="9" fill="#d9a441"/><rect x="6" y="16" width="2.4" height="5.5" fill="#8a5a2e"/><rect x="15.6" y="16" width="2.4" height="5.5" fill="#8a5a2e"/>',
+ torxa:'<path d="M12 2.5c-3.4 3-3.4 5.6 0 7.8 3.4-2.2 3.4-4.8 0-7.8z" fill="#f08a1e"/><path d="M12 5c-1.6 1.6-1.2 3 0 4.2 1.2-1.2 1.6-2.6 0-4.2z" fill="#ffd35a"/><rect x="10.6" y="10" width="2.8" height="11.5" fill="#8a5a2e"/><path d="M9 10.2h6" stroke="#4c4f56" stroke-width="2" fill="none"/>',
+ armadura:'<circle cx="12" cy="5" r="3.2" fill="#9aa2ad"/><rect x="9.8" y="4.4" width="4.4" height="1.3" fill="#2b2118"/><path d="M7 9h10l-1 8H8z" fill="#8d96a3"/><path d="M5 9l2 6.5M19 9l-2 6.5" fill="none" stroke="#8d96a3" stroke-width="2.5"/><rect x="9" y="17" width="2.6" height="5" fill="#8d96a3"/><rect x="12.4" y="17" width="2.6" height="5" fill="#8d96a3"/>',
+ pupitre:'<rect x="9" y="2.5" width="6" height="4" fill="#ffffff"/><path d="M3.5 7h17l-2 4.5H5.5z" fill="#c68a4e"/><rect x="6" y="11.5" width="12" height="2" fill="#a8683a"/><path d="M8 13.5V21M16 13.5V21M8 18h8" stroke="#6b6e75" stroke-width="1.6" fill="none"/>',
+ pissarra:'<rect x="2.5" y="3.5" width="19" height="13.5" fill="#2f5d46" stroke="#a8683a" stroke-width="1.8"/><path d="M6 8.5h8M6 11.5h5" stroke="#ffffff" stroke-width="1.1" fill="none"/><path d="M4 20.5h16" stroke="#a8683a" stroke-width="2" fill="none"/><rect x="15" y="18.8" width="3" height="1.6" fill="#ffffff"/>',
+ pilota:'<circle cx="12" cy="12" r="8.8" fill="#e8761e"/><path d="M3.2 12h17.6M12 3.2v17.6M6 6c3 3.2 3 8.8 0 12M18 6c-3 3.2-3 8.8 0 12" fill="none" stroke="#2b2118" stroke-width=".9"/><circle cx="8.6" cy="8" r="1.8" fill="#ffffff" opacity=".4" stroke="none"/>',
+ bola:'<path d="M5 22h14" stroke="#2b2118" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="8.4" fill="#3a6ea5"/><path d="M3.6 12h16.8M12 3.6v16.8" fill="none" stroke="#f5d35a" stroke-width="1.7"/><circle cx="9" cy="8.4" r="2" fill="#ffffff" opacity=".4" stroke="none"/>',
  taula:'<rect x="2.5" y="9" width="19" height="3" rx="1" fill="#c68a4e"/><rect x="5" y="12" width="2.2" height="9" fill="#8a5a2e"/><rect x="16.8" y="12" width="2.2" height="9" fill="#8a5a2e"/><ellipse cx="12" cy="7.5" rx="3.5" ry="1.3" fill="#f1e3c0"/><path d="M8.5 7.5c0 3 7 3 7 0" fill="#f1e3c0"/>',
  llar:'<rect x="2.5" y="3" width="19" height="18" fill="#9a948a"/><path d="M6.5 21V12a5.5 5.5 0 0111 0v9z" fill="#2b2118"/><path d="M12 20c-3.2 0-3.6-3.2-1.4-5.4.2 1.8 1.6 1.8 1.6 0 2.4 1.2 3.4 5.4-.2 5.4z" fill="#f08a1e"/><path d="M2.5 9h19M2.5 15h4M17.5 15h4" fill="none"/>',
  barril:'<path d="M6 3h12c2.4 4 2.4 14 0 18H6c-2.4-4-2.4-14 0-18z" fill="#b5763c"/><path d="M5.6 8h12.8M5.2 16h13.6" fill="none" stroke-width="1.6"/><circle cx="12" cy="12" r="1.2" fill="#2b2118"/>',
@@ -222,7 +237,16 @@ const icon=(o,cls)=>`<svg class="${cls||"obj"}" viewBox="0 0 24 24" stroke="#2b2
 const SCEN={
  mas:{tag:{ca:"El mas",fr:"Le mas"},hue:ROOMHUE,sat:60,col:28},
  estacio:{tag:{ca:"L'estació",fr:"La gare"},hue:[205,35,160,260,10,95,330,50],sat:42,col:205},
- teatre:{tag:{ca:"El teatre",fr:"Le théâtre"},hue:[350,265,40,175,320,15,215,95],sat:52,col:350}};
+ teatre:{tag:{ca:"El teatre",fr:"Le théâtre"},hue:[350,265,40,175,320,15,215,95],sat:52,col:350},
+ vaixell:{tag:{ca:"El vaixell",fr:"Le navire"},hue:[200,185,35,215,10,160,50,260],sat:45,col:205},
+ hotel:{tag:{ca:"L'hotel",fr:"L'hôtel"},hue:[20,45,340,150,200,280,60,10],sat:40,col:25},
+ museu:{tag:{ca:"El museu",fr:"Le musée"},hue:[45,210,0,160,270,30,95,330],sat:35,col:270},
+ castell:{tag:{ca:"El castell",fr:"Le château"},hue:[10,30,120,0,90,45,210,330],sat:38,col:355},
+ escola:{tag:{ca:"L'escola",fr:"L'école"},hue:[50,120,210,10,330,170,265,30],sat:55,col:125},
+ restaurant:{tag:{ca:"El restaurant",fr:"Le restaurant"},hue:[5,35,150,20,60,200,330,95],sat:50,col:12},
+ circ:{tag:{ca:"El circ",fr:"Le cirque"},hue:[350,50,200,120,280,20,170,320],sat:62,col:330},
+ mansio:{tag:{ca:"La mansió",fr:"Le manoir"},hue:[30,270,150,350,200,60,320,10],sat:36,col:290},
+ mercat:{tag:{ca:"El mercat",fr:"Le marché"},hue:[95,35,10,200,55,160,320,270],sat:55,col:95}};
 const scen=id=>SCEN[id]||SCEN.mas;
 const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/1.8):z.sat}% ${dark?34:84}%)`};
 const $=s=>document.querySelector(s);
