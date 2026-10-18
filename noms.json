@@ -538,5 +538,245 @@
 "mas-9-53-2": {
 "ca": "L'escala muda",
 "fr": "L'échelle muette"
+},
+"estacio-6-101-2": {
+"ca": "El pou trencat",
+"fr": "Le puits brisé"
+},
+"estacio-6-101-7": {
+"ca": "L'era llunyana",
+"fr": "L'aire lointaine"
+},
+"estacio-6-101-10": {
+"ca": "El molí tardà",
+"fr": "Le moulin tardif"
+},
+"estacio-6-101-13": {
+"ca": "La vinya perduda",
+"fr": "La vigne perdue"
+},
+"teatre-6-101-2": {
+"ca": "El tonell mut",
+"fr": "Le tonneau muet"
+},
+"teatre-6-101-9": {
+"ca": "La campana tardana",
+"fr": "La cloche tardive"
+},
+"teatre-6-101-14": {
+"ca": "La vinya llunyana",
+"fr": "La vigne lointaine"
+},
+"estacio-6-102-1": {
+"ca": "La sínia muda",
+"fr": "La noria muette"
+},
+"estacio-6-102-2": {
+"ca": "La sorra perduda",
+"fr": "Le sable perdu"
+},
+"estacio-6-102-3": {
+"ca": "El galliner mut",
+"fr": "Le poulailler muet"
+},
+"estacio-6-102-4": {
+"ca": "El fanal tardà",
+"fr": "La lanterne tardive"
+},
+"teatre-6-102-1": {
+"ca": "La clau fosca",
+"fr": "La clé sombre"
+},
+"teatre-6-102-2": {
+"ca": "El galliner tardà",
+"fr": "Le poulailler tardif"
+},
+"teatre-6-102-3": {
+"ca": "La figuera trencada",
+"fr": "Le figuier brisé"
+},
+"teatre-6-102-4": {
+"ca": "L'hort perdut",
+"fr": "Le potager perdu"
+},
+"estacio-6-101-3": {
+"ca": "La vinya tardana",
+"fr": "La vigne tardive"
+},
+"estacio-6-101-4": {
+"ca": "El graner amagat",
+"fr": "Le grenier caché"
+},
+"estacio-6-101-5": {
+"ca": "El trull trencat",
+"fr": "Le pressoir brisé"
+},
+"estacio-6-101-6": {
+"ca": "El molí mut",
+"fr": "Le moulin muet"
+},
+"estacio-6-101-8": {
+"ca": "El forn fosc",
+"fr": "Le four sombre"
+},
+"estacio-6-101-9": {
+"ca": "El fanal amagat",
+"fr": "La lanterne cachée"
+},
+"estacio-6-101-11": {
+"ca": "La pastera buida",
+"fr": "Le pétrin vide"
+},
+"estacio-6-101-14": {
+"ca": "La bassa perduda",
+"fr": "La mare perdue"
+},
+"teatre-6-101-10": {
+"ca": "L'escala trencada",
+"fr": "L'échelle brisée"
+},
+"teatre-6-101-11": {
+"ca": "El porxo buit",
+"fr": "Le porche vide"
+},
+"teatre-6-101-13": {
+"ca": "L'escala perduda",
+"fr": "L'échelle perdue"
+},
+"estacio-6-101-1": {
+"ca": "L'era tardana",
+"fr": "L'aire tardive"
+},
+"estacio-6-101-12": {
+"ca": "El molí perdut",
+"fr": "Le moulin perdu"
+},
+"teatre-6-101-1": {
+"ca": "La figuera buida",
+"fr": "Le figuier vide"
+},
+"teatre-6-101-6": {
+"ca": "L'era amagada",
+"fr": "L'aire cachée"
+},
+"estacio-6-103-1": {
+"ca": "La llavor llunyana",
+"fr": "La graine lointaine"
+},
+"estacio-6-103-2": {
+"ca": "La campana fosca",
+"fr": "La cloche sombre"
+},
+"estacio-6-103-3": {
+"ca": "L'era fosca",
+"fr": "L'aire sombre"
+},
+"estacio-6-103-4": {
+"ca": "La campana perduda",
+"fr": "La cloche perdue"
+},
+"teatre-6-103-1": {
+"ca": "El molí fosc",
+"fr": "Le moulin sombre"
+},
+"teatre-6-103-2": {
+"ca": "La pastera llunyana",
+"fr": "Le pétrin lointain"
+},
+"teatre-6-103-3": {
+"ca": "El graner fosc",
+"fr": "Le grenier sombre"
+},
+"teatre-6-103-4": {
+"ca": "La sínia llunyana",
+"fr": "La noria lointaine"
+},
+"teatre-6-101-3": {
+"ca": "La sínia tardana",
+"fr": "La noria tardive"
+},
+"teatre-6-101-4": {
+"ca": "El cistell buit",
+"fr": "Le panier vide"
+},
+"teatre-6-101-5": {
+"ca": "El cistell llunyà",
+"fr": "Le panier lointain"
+},
+"teatre-6-101-7": {
+"ca": "El galliner amagat",
+"fr": "Le poulailler caché"
+},
+"teatre-6-101-8": {
+"ca": "La llavor buida",
+"fr": "La graine vide"
+},
+"teatre-6-101-12": {
+"ca": "El forn trencat",
+"fr": "Le four brisé"
+},
+"estacio-7-104-6": {
+"ca": "El carro fosc",
+"fr": "La charrette sombre"
+},
+"teatre-7-104-7": {
+"ca": "L'hort tardà",
+"fr": "Le potager tardif"
+},
+"estacio-7-104-4": {
+"ca": "El graner mut",
+"fr": "Le grenier muet"
+},
+"estacio-7-104-5": {
+"ca": "El trull mut",
+"fr": "Le pressoir muet"
+},
+"estacio-7-104-8": {
+"ca": "La clau llunyana",
+"fr": "La clé lointaine"
+},
+"teatre-7-104-3": {
+"ca": "El candeler trencat",
+"fr": "Le chandelier brisé"
+},
+"teatre-7-104-2": {
+"ca": "La bassa llunyana",
+"fr": "La mare lointaine"
+},
+"teatre-7-104-6": {
+"ca": "El rebost fosc",
+"fr": "Le garde-manger sombre"
+},
+"estacio-7-104-1": {
+"ca": "El carro tardà",
+"fr": "La charrette tardive"
+},
+"estacio-7-104-2": {
+"ca": "El llindar buit",
+"fr": "Le seuil vide"
+},
+"estacio-7-104-3": {
+"ca": "El fanal llunyà",
+"fr": "La lanterne lointaine"
+},
+"estacio-7-104-7": {
+"ca": "El rellotge tardà",
+"fr": "L'horloge tardive"
+},
+"teatre-7-104-1": {
+"ca": "El rebost tardà",
+"fr": "Le garde-manger tardif"
+},
+"teatre-7-104-4": {
+"ca": "El candeler tardà",
+"fr": "Le chandelier tardif"
+},
+"teatre-7-104-5": {
+"ca": "El rellotge amagat",
+"fr": "L'horloge cachée"
+},
+"teatre-7-104-8": {
+"ca": "El tonell buit",
+"fr": "Le tonneau vide"
 }
 }

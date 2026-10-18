@@ -1,0 +1,1310 @@
+[
+ {
+  "id": "teatre-6-102-1",
+  "escenari": "teatre",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    3,
+    3,
+    3,
+    4
+   ],
+   [
+    1,
+    2,
+    3,
+    3,
+    3,
+    4
+   ],
+   [
+    1,
+    2,
+    3,
+    3,
+    4,
+    4
+   ],
+   [
+    2,
+    2,
+    3,
+    4,
+    4,
+    4
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    4,
+    -1
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "escenari",
+    "fr": "scène"
+   },
+   "1": {
+    "ca": "vestíbul",
+    "fr": "foyer"
+   },
+   "2": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "3": {
+    "ca": "platea",
+    "fr": "parterre"
+   },
+   "4": {
+    "ca": "tramoia",
+    "fr": "coulisse"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "bagul",
+    null,
+    null,
+    null,
+    "escala"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "butaca",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "maniqui",
+    null,
+    null,
+    null,
+    null,
+    "escala"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "piano",
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
+   },
+   "escala": {
+    "bloqueja": true,
+    "ca": "escala",
+    "fr": "échelle"
+   },
+   "maniqui": {
+    "bloqueja": true,
+    "ca": "maniquí",
+    "fr": "mannequin"
+   },
+   "piano": {
+    "bloqueja": true,
+    "ca": "piano",
+    "fr": "piano"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Júlia",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Lluc",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Roc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Maia",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Mercè",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "sud",
+    "p": "D",
+    "q": "B"
+   },
+   {
+    "t": "est",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "escala"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "C",
+    "sala": 3
+   },
+   {
+    "t": "oest",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "maniqui"
+   },
+   {
+    "t": "sud",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "sud",
+    "p": "B",
+    "q": "A"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al sud de Lluc.",
+    "Era a l'est de Roc.",
+    "A la seva fila hi havia una escala.",
+    "No era a la platea.",
+    "Era a l'oest de Roc.",
+    "A la seva columna hi havia un maniquí.",
+    "Era al sud de Roc.",
+    "Era al sud de Júlia."
+   ],
+   "fr": [
+    "Elle était au sud de Lluc.",
+    "Elle était à l'est de Roc.",
+    "Sur sa ligne se trouvait une échelle.",
+    "Il n'était pas dans le parterre.",
+    "Elle était à l'ouest de Roc.",
+    "Dans sa colonne se trouvait un mannequin.",
+    "Elle était au sud de Roc.",
+    "Il était au sud de Júlia."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    4
+   ],
+   "B": [
+    1,
+    5
+   ],
+   "C": [
+    4,
+    3
+   ],
+   "D": [
+    2,
+    0
+   ],
+   "E": [
+    3,
+    1
+   ],
+   "V": [
+    5,
+    2
+   ]
+  },
+  "assassi": "C"
+ },
+ {
+  "id": "teatre-6-102-2",
+  "escenari": "teatre",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    3,
+    3,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    3,
+    3
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "escenari",
+    "fr": "scène"
+   },
+   "1": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "2": {
+    "ca": "vestíbul",
+    "fr": "foyer"
+   },
+   "3": {
+    "ca": "tramoia",
+    "fr": "coulisse"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "mirall",
+    null,
+    null,
+    null,
+    "piano"
+   ],
+   [
+    null,
+    null,
+    null,
+    "maniqui",
+    null,
+    "tel"
+   ],
+   [
+    null,
+    "tamboret",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "escala",
+    null,
+    "tel"
+   ],
+   [
+    null,
+    null,
+    "bagul",
+    null,
+    null,
+    null
+   ],
+   [
+    "bagul",
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "escala": {
+    "bloqueja": true,
+    "ca": "escala",
+    "fr": "échelle"
+   },
+   "maniqui": {
+    "bloqueja": true,
+    "ca": "maniquí",
+    "fr": "mannequin"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
+   "piano": {
+    "bloqueja": true,
+    "ca": "piano",
+    "fr": "piano"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   },
+   "tel": {
+    "bloqueja": true,
+    "ca": "teló",
+    "fr": "rideau"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Júlia",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Violant",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Lluc",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Xavi",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Ivo",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 1
+   },
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "maniqui"
+   },
+   {
+    "t": "oest",
+    "p": "V",
+    "q": "E"
+   },
+   {
+    "t": "nord",
+    "p": "C",
+    "q": "B"
+   },
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "escala"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "A",
+    "sala": 2
+   },
+   {
+    "t": "cavall",
+    "p": "E",
+    "q": "C"
+   },
+   {
+    "t": "nord",
+    "p": "D",
+    "q": "E"
+   },
+   {
+    "t": "vora",
+    "p": "V"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Estava al camerino.",
+    "A la seva fila hi havia un maniquí.",
+    "Era a l'oest de Xavi.",
+    "Era al nord de Violant.",
+    "A la seva fila hi havia una escala.",
+    "No era al vestíbul.",
+    "Era a un salt de cavall d'Eudald (com als escacs).",
+    "Era al nord de Xavi.",
+    "Era al costat d'una paret exterior de l'edifici."
+   ],
+   "fr": [
+    "Il était dans la loge.",
+    "Sur sa ligne se trouvait un mannequin.",
+    "Il était à l'ouest de Xavi.",
+    "Il était au nord de Violant.",
+    "Sur sa ligne se trouvait une échelle.",
+    "Elle n'était pas dans le foyer.",
+    "Il était à un saut de cavalier d'Eudald (comme aux échecs).",
+    "Il était au nord de Xavi.",
+    "Il était contre un mur extérieur de l'édifice."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    5
+   ],
+   "B": [
+    3,
+    1
+   ],
+   "C": [
+    2,
+    2
+   ],
+   "D": [
+    0,
+    0
+   ],
+   "E": [
+    1,
+    4
+   ],
+   "V": [
+    5,
+    3
+   ]
+  },
+  "assassi": "B"
+ },
+ {
+  "id": "teatre-6-102-3",
+  "escenari": "teatre",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    -1
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    -1
+   ],
+   [
+    2,
+    3,
+    3,
+    3,
+    1,
+    1
+   ],
+   [
+    2,
+    3,
+    3,
+    0,
+    0,
+    1
+   ],
+   [
+    2,
+    3,
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    3,
+    3,
+    0,
+    0,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "escenari",
+    "fr": "scène"
+   },
+   "1": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "2": {
+    "ca": "platea",
+    "fr": "parterre"
+   },
+   "3": {
+    "ca": "vestíbul",
+    "fr": "foyer"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "sofa",
+    "tamboret",
+    null,
+    "tamboret",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "bagul",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "maniqui"
+   ],
+   [
+    null,
+    "sofa",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "tel",
+    "tel",
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "maniqui": {
+    "bloqueja": true,
+    "ca": "maniquí",
+    "fr": "mannequin"
+   },
+   "sofa": {
+    "bloqueja": false,
+    "ca": "sofà",
+    "fr": "canapé"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   },
+   "tel": {
+    "bloqueja": true,
+    "ca": "teló",
+    "fr": "rideau"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Lluc",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Maia",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Roc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Júlia",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "est",
+    "p": "V",
+    "q": "A"
+   },
+   {
+    "t": "oest",
+    "p": "E",
+    "q": "D"
+   },
+   {
+    "t": "vora",
+    "p": "D"
+   },
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "bagul"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "tel"
+   },
+   {
+    "t": "cavall",
+    "p": "B",
+    "q": "C"
+   },
+   {
+    "t": "cavall",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "D"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a l'est de Lluc.",
+    "Era a l'oest d'Eudald.",
+    "Era al costat d'una paret exterior de l'edifici.",
+    "Tenia un bagul a tocar.",
+    "Tenia un teló a tocar.",
+    "Era a un salt de cavall de Roc (com als escacs).",
+    "Era a un salt de cavall de Roc (com als escacs).",
+    "Era a la mateixa diagonal que Eudald."
+   ],
+   "fr": [
+    "Elle était à l'est de Lluc.",
+    "Elle était à l'ouest d'Eudald.",
+    "Il était contre un mur extérieur de l'édifice.",
+    "Elle était à côté d'une malle.",
+    "Il était à côté d'un rideau.",
+    "Elle était à un saut de cavalier de Roc (comme aux échecs).",
+    "Il était à un saut de cavalier de Roc (comme aux échecs).",
+    "Elle était sur la même diagonale qu'Eudald."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    2
+   ],
+   "B": [
+    2,
+    3
+   ],
+   "C": [
+    4,
+    4
+   ],
+   "D": [
+    0,
+    1
+   ],
+   "E": [
+    1,
+    0
+   ],
+   "V": [
+    5,
+    5
+   ]
+  },
+  "assassi": "C"
+ },
+ {
+  "id": "teatre-6-102-4",
+  "escenari": "teatre",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    0,
+    0,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    0,
+    0,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    3,
+    3,
+    0,
+    1,
+    1,
+    -1
+   ],
+   [
+    3,
+    0,
+    0,
+    1,
+    1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "escenari",
+    "fr": "scène"
+   },
+   "1": {
+    "ca": "platea",
+    "fr": "parterre"
+   },
+   "2": {
+    "ca": "cabina de llum",
+    "fr": "cabine technique"
+   },
+   "3": {
+    "ca": "vestíbul",
+    "fr": "foyer"
+   }
+  },
+  "obj": [
+   [
+    "sofa",
+    null,
+    null,
+    "tamboret",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "piano",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "piano",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "bagul",
+    null,
+    null,
+    null,
+    "butaca",
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
+   },
+   "piano": {
+    "bloqueja": true,
+    "ca": "piano",
+    "fr": "piano"
+   },
+   "sofa": {
+    "bloqueja": false,
+    "ca": "sofà",
+    "fr": "canapé"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Roc",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Ivo",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Maia",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Xavi",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "A",
+    "obj": "piano"
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "butaca"
+   },
+   {
+    "t": "est",
+    "p": "B",
+    "q": "C"
+   },
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 1
+   },
+   {
+    "t": "prop_obj",
+    "p": "D",
+    "obj": "tamboret"
+   },
+   {
+    "t": "est",
+    "p": "E",
+    "q": "A"
+   },
+   {
+    "t": "cavall",
+    "p": "E",
+    "q": "D"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia un piano.",
+    "A la seva columna hi havia una butaca.",
+    "Era a l'est d'Ivo.",
+    "Era a la platea.",
+    "Era al costat d'un tamboret.",
+    "Era a l'est de Roc.",
+    "Era a un salt de cavall de Maia (com als escacs)."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait un piano.",
+    "Dans sa colonne se trouvait un fauteuil.",
+    "Elle était à l'est d'Ivo.",
+    "Il était dans le parterre.",
+    "Elle avait un tabouret tout près.",
+    "Il était à l'est de Roc.",
+    "Il était à un saut de cavalier de Maia (comme aux échecs)."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    0
+   ],
+   "B": [
+    1,
+    5
+   ],
+   "C": [
+    4,
+    4
+   ],
+   "D": [
+    0,
+    2
+   ],
+   "E": [
+    2,
+    1
+   ],
+   "V": [
+    5,
+    3
+   ]
+  },
+  "assassi": "C"
+ }
+]

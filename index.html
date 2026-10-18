@@ -60,7 +60,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .pill{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:6px;border:1.5px solid currentColor}
 .l1{color:#2f8a4e;background:#2f8a4e1f}.l2{color:#4d8f2a;background:#4d8f2a1f}.l3{color:#b57a14;background:#b57a141f}.l4{color:#c0502a;background:#c0502a1f}.l5{color:#8b3fa8;background:#8b3fa81f}
 .pc .sz{display:block;font-size:.78rem;color:var(--muted);margin-top:5px;font-weight:600}
-.pc .tag{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:700}
+.pc .tag{display:block;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sc,var(--muted));margin-top:4px;font-weight:700}
 .th{display:block;width:84%;margin:0 auto;aspect-ratio:1;position:relative}
 .th svg{width:100%;height:100%;display:block;border-radius:4px}
 .pc.done .th svg{opacity:.78}
@@ -69,8 +69,8 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .pc.env .env,.env .paper,.env .body,.env .flap{display:block}.pc.env .env{position:relative;width:88%;margin:0 auto;aspect-ratio:1.05}
 .env .paper{position:absolute;left:12%;right:12%;top:6%;height:56%;overflow:hidden;border-radius:4px 4px 0 0;background:var(--bg);border:1.5px solid var(--cellgrid);transition:transform .35s}
 .env .paper svg{width:100%;display:block}
-.env .body{position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(var(--panel),color-mix(in srgb,var(--panel) 80%,var(--muted)));border:2px solid var(--line);border-radius:0 0 8px 8px}
-.env .flap{position:absolute;left:0;right:0;top:20%;height:46%;background:color-mix(in srgb,var(--panel) 84%,var(--muted));clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .35s}
+.env .body{position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(var(--panel),color-mix(in srgb,var(--panel) 78%,var(--sc,var(--muted))));border:2px solid var(--line);border-radius:0 0 8px 8px}
+.env .flap{position:absolute;left:0;right:0;top:20%;height:46%;background:color-mix(in srgb,var(--panel) 70%,var(--sc,var(--muted)));clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .35s}
 .env .flapl{position:absolute;left:0;right:0;top:20%;height:46%;z-index:3;pointer-events:none}
 .env .lens{position:absolute;left:50%;top:44%;transform:translateX(-50%);white-space:nowrap;z-index:4;display:flex;gap:4px;align-items:center;background:var(--panel);border:2px solid var(--line);border-radius:20px;padding:3px 12px;font-weight:800;font-size:.95rem;box-shadow:0 2px 0 var(--line)}
 .pc.env.open .flap{transform:rotateX(180deg)}.pc.env.open .paper{transform:translateY(-14%)}
@@ -159,7 +159,7 @@ window.addEventListener("error",function(e){var m=(e.message||("No es pot carreg
 <script>
 "use strict";
 const T={
- ca:{title:"El crim del mas",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
+ ca:{title:"Misteri",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
   genh:"Pistes generals",ok:"Tot correcte fins ara!",errs:n=>n+(n==1?" error marcat en vermell":" errors marcats en vermell"),pickfirst:"Tria primer un sospitós.",victim:"Víctima",
   win:"Cas resolt!",culp:"L'assassí és",in:"Era a la mateixa sala que la víctima, i era l'únic.",time:"Temps",again:"Llista de casos",next:"Cas següent",close:"Tanca",
   help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",
@@ -167,7 +167,7 @@ const T={
   <p><b>Regles.</b></p><ul><li>Hi ha una persona a cada fila i a cada columna.</li><li>Només es pot posar gent a caselles lliures: els objectes grossos (taula, tonell, pou…) bloquegen la casella; banc, carro o cadira, no.</li><li>Cada targeta té una pista; també n'hi ha de generals. Cada cas té una única solució.</li></ul>
   <p><b>Controls.</b></p><ul><li>Toca un sospitós per triar-lo.</li><li>Eina <b>Col·loca</b>: toca una casella per posar-hi el sospitós. Mantenir premut una casella també el col·loca, sigui quina sigui l'eina.</li><li><b>Descarta</b> (✕): marca una casella impossible. <b>Nota</b>: hi apunta la lletra del sospitós. <b>Goma</b>: buida la casella.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li><li>Quan poses un sospitós, la seva fila i columna s'enfosqueixen.</li></ul>
   <p><b>Truc.</b> Si una fila o columna només té una casella lliure, hi va algú; si dues persones només caben a dues files, ningú més hi pot anar.</p>`},
- fr:{title:"Le crime du mas",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
+ fr:{title:"Mystère",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
   genh:"Indices généraux",ok:"Tout est correct jusqu'ici !",errs:n=>n+(n==1?" erreur marquée en rouge":" erreurs marquées en rouge"),pickfirst:"Choisis d'abord un suspect.",victim:"Victime",
   win:"Affaire résolue !",culp:"Le coupable est",in:"Il était dans la même pièce que la victime, et il était le seul.",time:"Temps",again:"Liste des cas",next:"Cas suivant",close:"Fermer",
   help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",
@@ -179,6 +179,25 @@ const T={
 const ROOMHUE=[28,205,95,330,50,265,175,10];
 const PERSONHUE=[8,210,130,280,35,175,320,60,95,245];
 const ICONS={
+ fanal:'<path d="M12 3v18M8 21h8M8 6h8l-1 5H9z"/>',
+ carreto:'<path d="M4 6h3l2 9h9l2-6H8"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/>',
+ finestreta:'<rect x="4" y="5" width="16" height="12" rx="1"/><path d="M4 12h16M8 20h8"/>',
+ estufa:'<rect x="6" y="6" width="12" height="14" rx="2"/><path d="M12 6V3M9 12h6"/>',
+ maleta:'<rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 8V5h6v3M4 14h16"/>',
+ barra:'<path d="M3 10h18M5 10v10M19 10v10M3 6h18"/>',
+ tamboret:'<ellipse cx="12" cy="8" rx="6" ry="2"/><path d="M7 9l-1 11M17 9l1 11M12 10v10"/>',
+ caixa:'<rect x="4" y="7" width="16" height="13"/><path d="M4 12h16M10 12v3h4v-3"/>',
+ escriptori:'<rect x="3" y="8" width="18" height="3"/><path d="M5 11v9M19 11v9M9 11v5h6v-5"/>',
+ arxivador:'<rect x="6" y="3" width="12" height="18" rx="1"/><path d="M6 9h12M6 15h12M11 6h2M11 12h2M11 18h2"/>',
+ piano:'<path d="M3 9h18v10H3zM7 9v10M11 9v10M15 9v10M19 9v10M6 9l1-4h10l1 4"/>',
+ tel:'<path d="M3 4h18M5 4c0 6 0 10-2 16M19 4c0 6 0 10 2 16M12 4v16M8 4c1 6 1 10 0 16M16 4c-1 6-1 10 0 16"/>',
+ butaca:'<path d="M6 12V8a3 3 0 013-3h6a3 3 0 013 3v4M4 12h16v5H4zM6 17v3M18 17v3"/>',
+ sofa:'<path d="M4 12v-2a2 2 0 012-2h12a2 2 0 012 2v2M3 12h18v5H3zM5 17v3M19 17v3"/>',
+ mirall:'<ellipse cx="12" cy="10" rx="6" ry="8"/><path d="M12 18v3M9 21h6"/>',
+ maniqui:'<path d="M12 3v3M9 6h6l2 4-2 2v9M9 6L7 10l2 2v9M9 21h6"/>',
+ bagul:'<rect x="4" y="8" width="16" height="11" rx="1"/><path d="M4 12h16M10 12v3h4v-3M4 8c0-3 16-3 16 0"/>',
+ escala:'<path d="M8 3v18M16 3v18M8 7h8M8 12h8M8 17h8"/>',
+ reflector:'<path d="M7 5h10l2 6H5zM12 11v3M8 21h8M12 14v7M3 8l2 1M21 8l-2 1"/>',
  taula:'<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M6 12v8M18 12v8"/>',
  llar:'<path d="M3 21V8l9-5 9 5v13zM9 21v-6h6v6"/><path d="M12 13c-2-2 0-3 0-5 2 1 3 4 0 5z"/>',
  barril:'<ellipse cx="12" cy="12" rx="7" ry="9"/><path d="M5.5 8c4 2 9 2 13 0M5.5 16c4-2 9-2 13 0"/>',
@@ -190,7 +209,12 @@ const ICONS={
  balanci:'<path d="M7 3l2 12h8M9 9h7"/><path d="M4 19c4 3 12 3 16 0"/>',
  cadira:'<path d="M7 3v18M7 12h10v9M17 12V8"/>'
 };
-const COLORS=(i,dark)=>`hsl(${ROOMHUE[i%8]} ${dark?22:60}% ${dark?25:84}%)`;
+const SCEN={
+ mas:{tag:{ca:"El mas",fr:"Le mas"},hue:ROOMHUE,sat:60,col:28},
+ estacio:{tag:{ca:"L'estació",fr:"La gare"},hue:[205,35,160,260,10,95,330,50],sat:42,col:205},
+ teatre:{tag:{ca:"El teatre",fr:"Le théâtre"},hue:[350,265,40,175,320,15,215,95],sat:52,col:350}};
+const scen=id=>SCEN[id]||SCEN.mas;
+const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/2.7):z.sat}% ${dark?25:84}%)`};
 const $=s=>document.querySelector(s);
 const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
 const save=(k,v)=>{try{localStorage.setItem("misteri:"+k,JSON.stringify(v))}catch(e){}};
@@ -217,7 +241,7 @@ function thumb(c,mode){
   let o=`<svg viewBox="0 0 ${n*k} ${n*k}" aria-hidden="true">`;
   const dn=(r,q)=>r>=0&&q>=0&&r<n&&q<n&&c.pla[r][q];
   for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q])continue;
-    o+=`<rect x="${q*k}" y="${r*k}" width="${k}" height="${k}" fill="${COLORS(c.sala[r][q],dk)}"/>`;
+    o+=`<rect x="${q*k}" y="${r*k}" width="${k}" height="${k}" fill="${COLORS(c.sala[r][q],dk,c.escenari)}"/>`;
     const ob=c.obj[r][q];if(ob&&c.objectes[ob].bloqueja)o+=`<rect x="${q*k+2.5}" y="${r*k+2.5}" width="5" height="5" rx="1" fill="${dk?"#f1e6d3":"#2b2118"}" opacity=".55"/>`;}
   const sol=mode==="solved";
   if(sol||sv){for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q])continue;
@@ -234,11 +258,12 @@ function thumb(c,mode){
   return o+"</svg>"}
 function pcCard(c,i){
   const p=prog[c.id]||{},h=H[lang],started=!!load("st:"+c.id,null),nm=caseName(c),
-   meta=`<span class="pill l${c.nivell}">${h.lv[c.nivell]}</span><span class="sz">${c.n}×${c.n}${p.best?" · ⏱ "+fmt(p.best):""}</span>`;
-  if(p.solved)return `<button class="pc done" data-i="${i}"><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
-  if(started)return `<button class="pc prog" data-i="${i}"><span class="chk">…</span><span class="th">${thumb(c,"prog")}</span><span class="nm">${nm}</span>${meta}</button>`;
+   meta=`<span class="pill l${c.nivell}">${h.lv[c.nivell]}</span><span class="sz">${c.n}×${c.n}${p.best?" · ⏱ "+fmt(p.best):""}</span><span class="tag">${scen(c.escenari).tag[lang]}</span>`,
+   sty=` style="--sc:hsl(${scen(c.escenari).col} 45% 42%)"`;
+  if(p.solved)return `<button class="pc done" data-i="${i}"${sty}><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
+  if(started)return `<button class="pc prog" data-i="${i}"${sty}><span class="chk">…</span><span class="th">${thumb(c,"prog")}</span><span class="nm">${nm}</span>${meta}</button>`;
   const nc=c.textos.ca.length;
-  return `<button class="pc env" data-i="${i}"><span class="env"><span class="paper">${thumb(c,"closed")}</span><span class="body"></span><span class="flap"></span><span class="lens">🔍 ${nc}</span></span><span class="nm">${nm}</span>${meta}</button>`}
+  return `<button class="pc env" data-i="${i}"${sty}><span class="env"><span class="paper">${thumb(c,"closed")}</span><span class="body"></span><span class="flap"></span><span class="lens">🔍 ${nc}</span></span><span class="nm">${nm}</span>${meta}</button>`}
 function home(){
   stopTimer();cur=null;
   $("header").classList.add("hidden");
@@ -310,7 +335,7 @@ function renderBoard(){
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
     if(cell.p)inner+=`<span class="tok" style="${tokStyle(cell.p)}">${cell.p}</span>`;
-    h+=`<div class="${cls}" data-r="${r}" data-c="${c}" style="background-color:${COLORS(s,dk)};${bw}">${inner}</div>`;
+    h+=`<div class="${cls}" data-r="${r}" data-c="${c}" style="background-color:${COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
   }
   b.innerHTML=h;
 }

@@ -1,0 +1,1283 @@
+[
+ {
+  "id": "estacio-6-102-1",
+  "escenari": "estacio",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    0,
+    0,
+    3,
+    3,
+    3,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   [
+    1,
+    1,
+    3,
+    3,
+    3,
+    2
+   ],
+   [
+    1,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "taquilla",
+    "fr": "guichet"
+   },
+   "1": {
+    "ca": "cafeteria",
+    "fr": "buvette"
+   },
+   "2": {
+    "ca": "andana",
+    "fr": "quai"
+   },
+   "3": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "carreto",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "barra",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "banc",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "barra": {
+    "bloqueja": true,
+    "ca": "barra",
+    "fr": "comptoir"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Pau",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Nil",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Oriol",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Berta",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "no_en_sala",
+    "p": "V",
+    "sala": 3
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 0
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 3
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 2
+   },
+   {
+    "t": "sobre_obj",
+    "p": "C",
+    "obj": "banc"
+   },
+   {
+    "t": "nord",
+    "p": "E",
+    "q": "B"
+   },
+   {
+    "t": "oest",
+    "p": "A",
+    "q": "V"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "No era al magatzem.",
+    "Era a la taquilla.",
+    "Estava al magatzem.",
+    "Estava a l'andana.",
+    "Era sobre el banc.",
+    "Era al nord de Pau.",
+    "Era a l'oest de Berta."
+   ],
+   "fr": [
+    "Elle n'était pas dans l'entrepôt.",
+    "Il était dans le guichet.",
+    "Il se trouvait dans l'entrepôt.",
+    "Il était dans la quai.",
+    "Il était sur le banc.",
+    "Il était au nord de Pau.",
+    "Il était à l'ouest de Berta."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    1
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "C": [
+    5,
+    2
+   ],
+   "D": [
+    1,
+    0
+   ],
+   "E": [
+    2,
+    5
+   ],
+   "V": [
+    0,
+    3
+   ]
+  },
+  "assassi": "D"
+ },
+ {
+  "id": "estacio-6-102-2",
+  "escenari": "estacio",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    -1
+   ],
+   [
+    0,
+    0,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   },
+   "1": {
+    "ca": "sala d'espera",
+    "fr": "salle d'attente"
+   },
+   "2": {
+    "ca": "andana",
+    "fr": "quai"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    "carreto",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "carreto",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "caixa",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "estufa",
+    null,
+    "banc"
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Oriol",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Pau",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Gal·la",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Laia",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "vora",
+    "p": "B"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "estufa"
+   },
+   {
+    "t": "sud",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "E",
+    "sala": 0
+   },
+   {
+    "t": "nord",
+    "p": "A",
+    "q": "E"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "D",
+    "sala": 0
+   },
+   {
+    "t": "est",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "vora",
+    "p": "E"
+   },
+   {
+    "t": "diag",
+    "p": "A",
+    "q": "D"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una paret exterior de l'estació.",
+    "Era al costat d'una estufa.",
+    "Era al sud de Pau.",
+    "No era al magatzem.",
+    "Era al nord de Gal·la.",
+    "No era al magatzem.",
+    "Era a l'est de Berta.",
+    "Era al costat d'una paret exterior de l'estació.",
+    "Era a la mateixa diagonal que Berta."
+   ],
+   "fr": [
+    "Il était contre un mur extérieur de la gare.",
+    "Il avait un poêle tout près.",
+    "Elle était au sud de Pau.",
+    "Elle n'était pas dans l'entrepôt.",
+    "Il était au nord de Gal·la.",
+    "Elle n'était pas dans l'entrepôt.",
+    "Il était à l'est de Berta.",
+    "Elle était contre un mur extérieur de la gare.",
+    "Il était sur la même diagonale que Berta."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    4
+   ],
+   "B": [
+    3,
+    0
+   ],
+   "C": [
+    4,
+    3
+   ],
+   "D": [
+    2,
+    2
+   ],
+   "E": [
+    1,
+    5
+   ],
+   "V": [
+    5,
+    1
+   ]
+  },
+  "assassi": "C"
+ },
+ {
+  "id": "estacio-6-102-3",
+  "escenari": "estacio",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    1,
+    1,
+    0,
+    2,
+    2,
+    2
+   ],
+   [
+    1,
+    1,
+    0,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    3,
+    0
+   ],
+   [
+    -1,
+    -1,
+    3,
+    3,
+    3,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "andana",
+    "fr": "quai"
+   },
+   "1": {
+    "ca": "taquilla",
+    "fr": "guichet"
+   },
+   "2": {
+    "ca": "cafeteria",
+    "fr": "buvette"
+   },
+   "3": {
+    "ca": "despatx",
+    "fr": "bureau"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    "finestreta",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "cadira",
+    null,
+    "tamboret",
+    null,
+    null
+   ],
+   [
+    null,
+    "fanal",
+    null,
+    null,
+    "banc",
+    null
+   ],
+   [
+    "escriptori",
+    "arxivador",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "arxivador": {
+    "bloqueja": true,
+    "ca": "arxivador",
+    "fr": "classeur"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
+   "fanal": {
+    "bloqueja": true,
+    "ca": "fanal",
+    "fr": "lampadaire"
+   },
+   "finestreta": {
+    "bloqueja": true,
+    "ca": "finestreta",
+    "fr": "guichet"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Mireia",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Gal·la",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Pau",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Arnau",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "finestreta"
+   },
+   {
+    "t": "col_obj",
+    "p": "E",
+    "obj": "fanal"
+   },
+   {
+    "t": "oest",
+    "p": "C",
+    "q": "D"
+   },
+   {
+    "t": "nord",
+    "p": "D",
+    "q": "B"
+   },
+   {
+    "t": "col_obj",
+    "p": "A",
+    "obj": "banc"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "A"
+   },
+   {
+    "t": "raco",
+    "p": "E"
+   },
+   {
+    "t": "sud",
+    "p": "B",
+    "q": "A"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una finestreta.",
+    "A la seva columna hi havia un fanal.",
+    "Era a l'oest de Gal·la.",
+    "Era al nord de Mireia.",
+    "A la seva columna hi havia un banc.",
+    "Era a la mateixa diagonal que Carla.",
+    "Era en un racó d'una habitació.",
+    "Era al sud de Carla."
+   ],
+   "fr": [
+    "Il était à côté d'un guichet.",
+    "Dans sa colonne se trouvait un lampadaire.",
+    "Il était à l'ouest de Gal·la.",
+    "Elle était au nord de Mireia.",
+    "Dans sa colonne se trouvait un banc.",
+    "Elle était sur la même diagonale que Carla.",
+    "Il était dans un coin d'une pièce.",
+    "Elle était au sud de Carla."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    4
+   ],
+   "B": [
+    5,
+    3
+   ],
+   "C": [
+    3,
+    0
+   ],
+   "D": [
+    1,
+    5
+   ],
+   "E": [
+    2,
+    1
+   ],
+   "V": [
+    0,
+    2
+   ]
+  },
+  "assassi": "E"
+ },
+ {
+  "id": "estacio-6-102-4",
+  "escenari": "estacio",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    3,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    3,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    3,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    2,
+    2,
+    2,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cafeteria",
+    "fr": "buvette"
+   },
+   "1": {
+    "ca": "sala d'espera",
+    "fr": "salle d'attente"
+   },
+   "2": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   },
+   "3": {
+    "ca": "andana",
+    "fr": "quai"
+   }
+  },
+  "obj": [
+   [
+    "carreto",
+    null,
+    "barra",
+    "barra",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "estufa"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "maleta",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "caixa",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "barra": {
+    "bloqueja": true,
+    "ca": "barra",
+    "fr": "comptoir"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Laia",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Mireia",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Nil",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Carla",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "estufa"
+   },
+   {
+    "t": "col_obj",
+    "p": "V",
+    "obj": "estufa"
+   },
+   {
+    "t": "col_obj",
+    "p": "B",
+    "obj": "barra"
+   },
+   {
+    "t": "raco",
+    "p": "C"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 3,
+    "k": 0
+   },
+   {
+    "t": "fila_obj",
+    "p": "A",
+    "obj": "barra"
+   },
+   {
+    "t": "nord",
+    "p": "D",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia una estufa.",
+    "A la seva columna hi havia una estufa.",
+    "A la seva columna hi havia una barra.",
+    "Era en un racó d'una habitació.",
+    "L'andana estava buida: ni un sol cos.",
+    "A la seva fila hi havia una barra.",
+    "Era al nord de Mireia."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait un poêle.",
+    "Dans sa colonne se trouvait un poêle.",
+    "Dans sa colonne se trouvait un comptoir.",
+    "Il était dans un coin d'une pièce.",
+    "Personne n'était dans la quai, pas même la victime.",
+    "Sur sa ligne se trouvait un comptoir.",
+    "Elle était au nord de Mireia."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    1
+   ],
+   "B": [
+    5,
+    3
+   ],
+   "C": [
+    3,
+    0
+   ],
+   "D": [
+    1,
+    2
+   ],
+   "E": [
+    2,
+    4
+   ],
+   "V": [
+    4,
+    5
+   ]
+  },
+  "assassi": "E"
+ }
+]
