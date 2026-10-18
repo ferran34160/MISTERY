@@ -92,7 +92,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .mark.auto{color:var(--muted);opacity:.5;font-weight:400}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
 .notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
-.tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg{width:100%;height:100%;display:block;border-radius:50%}.cell .tok{height:auto;aspect-ratio:1;flex:none}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
+.tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg{width:100%;height:100%;display:block;border-radius:50%}.cell .tok{position:absolute;left:11%;top:11%;width:78%;height:78%}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
 /* eines */
@@ -220,7 +220,7 @@ const SCEN={
  estacio:{tag:{ca:"L'estació",fr:"La gare"},hue:[205,35,160,260,10,95,330,50],sat:42,col:205},
  teatre:{tag:{ca:"El teatre",fr:"Le théâtre"},hue:[350,265,40,175,320,15,215,95],sat:52,col:350}};
 const scen=id=>SCEN[id]||SCEN.mas;
-const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/2.7):z.sat}% ${dark?25:84}%)`};
+const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/1.8):z.sat}% ${dark?34:84}%)`};
 const $=s=>document.querySelector(s);
 const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
 const save=(k,v)=>{try{localStorage.setItem("misteri:"+k,JSON.stringify(v))}catch(e){}};
@@ -365,7 +365,7 @@ function renderLegend(){
   $("#legend").innerHTML=Object.entries(cur.objectes).map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}
 function renderBoard(){
   const n=cur.n,b=$("#board"),dk=dark();
-  b.style.gridTemplateColumns=`repeat(${n},1fr)`;
+  b.style.gridTemplateColumns=`repeat(${n},minmax(0,1fr))`;b.style.gridTemplateRows=`repeat(${n},minmax(0,1fr))`;
   // files/columnes amb sospitós col·locat
   const rowsU=new Set(),colsU=new Set();
   st.cells.forEach((row,r)=>row.forEach((c,k)=>{if(c.p){rowsU.add(r);colsU.add(k)}}));
@@ -565,7 +565,7 @@ $("#help").onclick=()=>showHelp("r");
 $("#back").onclick=home;
 $("#lang").onclick=()=>{lang=lang==="ca"?"fr":"ca";save("lang",lang);$("#lang").textContent=lang==="ca"?"FR":"CA";cur?render():home()};
 document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur&&st)persist()});
-{const th=load("theme",null);if(th)document.documentElement.dataset.theme=th}
+{const th=load("theme",null);document.documentElement.dataset.theme=th||"light"}
 $("#lang").textContent=lang==="ca"?"FR":"CA";
 if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
 try{home()}catch(e){document.body.insertAdjacentHTML('afterbegin','<pre style=\"padding:12px;white-space:pre-wrap\">Error: '+e.message+'</pre>')}
