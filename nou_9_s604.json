@@ -1,0 +1,544 @@
+[
+ {
+  "id": "mas-9-604-1",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 5,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   [
+    -1,
+    2,
+    2,
+    2,
+    3,
+    2,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    0,
+    0,
+    0,
+    1,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "1": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "2": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "3": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "barril",
+    null,
+    null,
+    "cadira",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "llar"
+   ],
+   [
+    "carro",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "figuera",
+    null,
+    "pou",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "pou",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "figuera",
+    "fr": "figuier"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aleix",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Fina",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Griselda",
+    "genere": "f"
+   },
+   {
+    "id": "H",
+    "nom": "Helena",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "H",
+    "obj": "figuera"
+   },
+   {
+    "t": "raco",
+    "p": "G"
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "carro"
+   },
+   {
+    "t": "col_obj",
+    "p": "A",
+    "obj": "pou"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "cadira"
+   },
+   {
+    "t": "oest",
+    "p": "B",
+    "q": "D"
+   },
+   {
+    "t": "col_obj",
+    "p": "V",
+    "obj": "llar"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "E",
+    "q": "F"
+   },
+   {
+    "t": "sud",
+    "p": "B",
+    "q": "E"
+   },
+   {
+    "t": "nord",
+    "p": "F",
+    "q": "A"
+   },
+   {
+    "t": "vora",
+    "p": "D"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 2,
+    "k": 3
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "F"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva columna hi havia una figuera.",
+    "Era en un racó d'una habitació.",
+    "A la seva columna hi havia un carro.",
+    "A la seva columna hi havia un pou.",
+    "A la seva columna hi havia una cadira.",
+    "Era a l'oest de Dolors.",
+    "A la seva columna hi havia una llar de foc.",
+    "Era a la mateixa habitació que Fina.",
+    "Era al sud d'Enric.",
+    "Era al nord d'Aleix.",
+    "Era al costat d'una paret exterior de la finca.",
+    "Hi havia exactament 3 persones al corral, víctima inclosa.",
+    "Era a la mateixa diagonal que Fina."
+   ],
+   "fr": [
+    "Dans sa colonne se trouvait un figuier.",
+    "Elle était dans un coin d'une pièce.",
+    "Dans sa colonne se trouvait une charrette.",
+    "Dans sa colonne se trouvait un puits.",
+    "Dans sa colonne se trouvait une chaise.",
+    "Elle était à l'ouest de Dolors.",
+    "Dans sa colonne se trouvait une cheminée.",
+    "Il était dans la même pièce que Fina.",
+    "Elle était au sud d'Enric.",
+    "Elle était au nord d'Aleix.",
+    "Elle était contre un mur extérieur de la propriété.",
+    "Il y avait exactement 3 personnes dans la basse-cour, victime comprise.",
+    "Elle était sur la même diagonale que Fina."
+   ]
+  },
+  "solucio": {
+   "A": [
+    8,
+    6
+   ],
+   "B": [
+    7,
+    1
+   ],
+   "C": [
+    4,
+    0
+   ],
+   "D": [
+    0,
+    5
+   ],
+   "E": [
+    6,
+    7
+   ],
+   "F": [
+    5,
+    3
+   ],
+   "G": [
+    2,
+    2
+   ],
+   "H": [
+    1,
+    4
+   ],
+   "V": [
+    3,
+    8
+   ]
+  },
+  "assassi": "H"
+ }
+]

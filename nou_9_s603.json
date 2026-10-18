@@ -1,0 +1,540 @@
+[
+ {
+  "id": "mas-9-603-1",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 5,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    1,
+    3,
+    4,
+    4,
+    4,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    0
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "1": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "2": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "3": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "4": {
+    "ca": "porxo",
+    "fr": "porche"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "figuera"
+   ],
+   [
+    null,
+    null,
+    "balanci",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "taula",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "pou",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "pou",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "carro",
+    null,
+    null,
+    null,
+    null,
+    "banc",
+    "banc",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "balanci": {
+    "bloqueja": false,
+    "ca": "balancí",
+    "fr": "fauteuil à bascule"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "figuera",
+    "fr": "figuier"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Clara",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "F",
+    "nom": "Frederic",
+    "genere": "m"
+   },
+   {
+    "id": "G",
+    "nom": "Gerard",
+    "genere": "m"
+   },
+   {
+    "id": "H",
+    "nom": "Helena",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "vora",
+    "p": "A"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "pou"
+   },
+   {
+    "t": "col_obj",
+    "p": "H",
+    "obj": "balanci"
+   },
+   {
+    "t": "fila_obj",
+    "p": "F",
+    "obj": "cadira"
+   },
+   {
+    "t": "nord",
+    "p": "B",
+    "q": "F"
+   },
+   {
+    "t": "cavall",
+    "p": "V",
+    "q": "F"
+   },
+   {
+    "t": "oest",
+    "p": "V",
+    "q": "H"
+   },
+   {
+    "t": "cavall",
+    "p": "C",
+    "q": "G"
+   },
+   {
+    "t": "est",
+    "p": "D",
+    "q": "C"
+   },
+   {
+    "t": "cavall",
+    "p": "E",
+    "q": "V"
+   },
+   {
+    "t": "altra_sala",
+    "p": "G",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una paret exterior de la finca.",
+    "Era al costat d'un pou.",
+    "A la seva columna hi havia un balancí.",
+    "A la seva fila hi havia una cadira.",
+    "Era al nord de Frederic.",
+    "Era a un salt de cavall de Frederic (com als escacs).",
+    "Era a l'oest d'Helena.",
+    "Era a un salt de cavall de Gerard (com als escacs).",
+    "Era a l'est de Clara.",
+    "Era a un salt de cavall de Valentí (com als escacs).",
+    "No era a la mateixa habitació que Biel."
+   ],
+   "fr": [
+    "Elle était contre un mur extérieur de la propriété.",
+    "Elle était à côté d'un puits.",
+    "Dans sa colonne se trouvait un fauteuil à bascule.",
+    "Sur sa ligne se trouvait une chaise.",
+    "Il était au nord de Frederic.",
+    "Il était à un saut de cavalier de Frederic (comme aux échecs).",
+    "Il était à l'ouest d'Helena.",
+    "Elle était à un saut de cavalier de Gerard (comme aux échecs).",
+    "Il était à l'est de Clara.",
+    "Elle était à un saut de cavalier de Valentí (comme aux échecs).",
+    "Il n'était pas dans la même pièce que Biel."
+   ]
+  },
+  "solucio": {
+   "A": [
+    8,
+    4
+   ],
+   "B": [
+    0,
+    6
+   ],
+   "C": [
+    3,
+    7
+   ],
+   "D": [
+    1,
+    8
+   ],
+   "E": [
+    7,
+    0
+   ],
+   "F": [
+    4,
+    3
+   ],
+   "G": [
+    2,
+    5
+   ],
+   "H": [
+    6,
+    2
+   ],
+   "V": [
+    5,
+    1
+   ]
+  },
+  "assassi": "H"
+ }
+]
