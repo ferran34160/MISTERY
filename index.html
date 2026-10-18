@@ -102,8 +102,8 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.blocked{background-image:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.06) 6px 7px)}
 .cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
 .cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none;white-space:normal;right:2px;line-height:1.05;z-index:4;text-shadow:0 0 3px rgba(255,255,255,.85),0 0 2px rgba(255,255,255,.85)}
-.cell svg.obj,.cell img.obj{position:absolute;inset:8%;width:84%;height:84%;pointer-events:none}.cell img.obj{object-fit:contain;object-position:center bottom;inset:6%;width:88%;height:88%}
-.cell.free svg.obj,.cell.free img.obj{inset:auto 1px 1px auto;width:56%;height:56%}
+.cell svg.obj,.cell img.obj{position:absolute;inset:8%;width:84%;height:84%;pointer-events:none}.cell img.obj{object-fit:contain;object-position:center;inset:3%;width:94%;height:94%}
+.cell.free svg.obj{inset:auto 1px 1px auto;width:56%;height:56%}
 .cell.placed svg.obj,.cell.placed img.obj{opacity:.3}
 .mark.auto{color:var(--muted);opacity:.5;font-weight:400}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
@@ -515,7 +515,15 @@ function renderBoard(){
   // files/columnes amb sospitós col·locat
   const rowsU=new Set(),colsU=new Set();
   st.cells.forEach((row,r)=>row.forEach((c,k)=>{if(c.p){rowsU.add(r);colsU.add(k)}}));
-  const seen=new Set();let h="";
+  // casella on s'escriu el nom de cada sala: la primera sense objecte (i amb veïnes lliures), per no tapar-lo
+  const labelAt={},bestSc={};
+  for(let r=0;r<n;r++)for(let c=0;c<n;c++){
+    if(!cur.pla[r][c])continue;const q=cur.sala[r][c];
+    const ob=(rr,cc)=>rr<n&&cc<n&&cur.pla[rr][cc]&&cur.sala[rr][cc]===q&&cur.obj[rr][cc]?1:0;
+    const sc=(cur.obj[r][c]?100:0)+ob(r,c+1)*2+ob(r,c+2)+ob(r+1,c);
+    if(bestSc[q]===undefined||sc<bestSc[q]){bestSc[q]=sc;labelAt[q]=r+","+c}
+  }
+  let h="";
   for(let r=0;r<n;r++)for(let c=0;c<n;c++){
     if(!cur.pla[r][c]){h+=`<div class="cell hole"></div>`;continue}
     const s=cur.sala[r][c],cell=st.cells[r][c];
@@ -525,7 +533,7 @@ function renderBoard(){
     const o=cur.obj[r][c],blk=isBlocked(r,c),tx=texCache[s]||(texCache[s]=roomTex(cur.sales[s].ca));
     let cls="cell"+(blk?" blocked":"")+(o&&!blk?" free":"")+(cell.p?" placed":"")+((rowsU.has(r)||colsU.has(c))&&!cell.p?" line":"");
     let inner="";
-    if(!seen.has(s)){seen.add(s);inner+=`<span class="rn">${cur.sales[s][lang]}</span>`}
+    if(labelAt[s]===r+","+c)inner+=`<span class="rn">${cur.sales[s][lang]}</span>`;
     if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
