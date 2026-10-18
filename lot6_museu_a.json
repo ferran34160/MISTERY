@@ -193,8 +193,8 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
@@ -203,22 +203,22 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dídac",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eudald",
-    "genere": "m"
+    "nom": "Elna",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -268,21 +268,21 @@
     "Era a l'est de Berta.",
     "A la seva fila hi havia una vitrina.",
     "Era en un racó d'una habitació.",
-    "Era a l'est d'Anna.",
-    "Era a l'est de Valentí.",
+    "Era a l'est d'Aleix.",
+    "Era a l'est de Vicenç.",
     "Era sobre el banc.",
-    "Era a la mateixa diagonal que Eudald.",
-    "No era a la mateixa habitació que Anna."
+    "Era a la mateixa diagonal que Elna.",
+    "No era a la mateixa habitació que Aleix."
    ],
    "fr": [
-    "Il était à l'est de Berta.",
+    "Elle était à l'est de Berta.",
     "Sur sa ligne se trouvait une vitrine.",
     "Il était dans un coin d'une pièce.",
-    "Il était à l'est d'Anna.",
-    "Elle était à l'est de Valentí.",
-    "Elle était sur le banc.",
-    "Elle était sur la même diagonale qu'Eudald.",
-    "Il n'était pas dans la même pièce qu'Anna."
+    "Il était à l'est d'Aleix.",
+    "Elle était à l'est de Vicenç.",
+    "Il était sur le banc.",
+    "Il était sur la même diagonale qu'Elna.",
+    "Il n'était pas dans la même pièce qu'Aleix."
    ]
   },
   "solucio": {
@@ -521,22 +521,22 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eudald",
+    "nom": "Enric",
     "genere": "m"
    },
    {
@@ -587,19 +587,19 @@
     "Era sobre el banc.",
     "A la seva columna hi havia una caixa.",
     "A la seva fila hi havia una planta.",
-    "Era al magatzem.",
-    "Era a un salt de cavall de Biel (com als escacs).",
+    "Estava al magatzem.",
+    "Era a un salt de cavall de Berta (com als escacs).",
     "A la seva fila hi havia una caixa.",
-    "Era a la mateixa diagonal que David."
+    "Era a la mateixa diagonal que Delfina."
    ],
    "fr": [
-    "Il était sur le banc.",
+    "Elle était sur le banc.",
     "Dans sa colonne se trouvait une caisse.",
     "Sur sa ligne se trouvait une plante.",
-    "Il se trouvait dans la réserve.",
-    "Il était à un saut de cavalier de Biel (comme aux échecs).",
+    "Il était dans la réserve.",
+    "Il était à un saut de cavalier de Berta (comme aux échecs).",
     "Sur sa ligne se trouvait une caisse.",
-    "Il était sur la même diagonale que David."
+    "Il était sur la même diagonale que Delfina."
    ]
   },
   "solucio": {
@@ -838,33 +838,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aleix",
+    "nom": "Arnau",
     "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
-   },
-   {
-    "id": "C",
-    "nom": "Cesc",
+    "nom": "Blai",
     "genere": "m"
    },
    {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
     "id": "D",
-    "nom": "Dolors",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Enric",
-    "genere": "m"
+    "nom": "Eulàlia",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -906,22 +906,22 @@
   ],
   "textos": {
    "ca": [
-    "Era al sud de Bruna.",
+    "Era al sud de Blai.",
     "Era al vestíbul.",
     "A la seva columna hi havia un escriptori.",
-    "Era a l'oest de Bruna.",
-    "Era al nord de Bruna.",
+    "Era a l'oest de Blai.",
+    "Era al nord de Blai.",
     "Era al costat d'un arxivador.",
     "Era a la sala d'estàtues."
    ],
    "fr": [
-    "Elle était au sud de Bruna.",
-    "Il était dans l'hall.",
+    "Elle était au sud de Blai.",
+    "Elle se trouvait dans l'hall.",
     "Dans sa colonne se trouvait un bureau.",
-    "Il était à l'ouest de Bruna.",
-    "Il était au nord de Bruna.",
-    "Elle avait un classeur tout près.",
-    "Il se trouvait dans la salle des statues."
+    "Il était à l'ouest de Blai.",
+    "Elle était au nord de Blai.",
+    "Il avait un classeur tout près.",
+    "Elle était dans la salle des statues."
    ]
   },
   "solucio": {
@@ -1160,23 +1160,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
-   },
-   {
-    "id": "B",
-    "nom": "Berta",
-    "genere": "f"
-   },
-   {
-    "id": "C",
-    "nom": "Cesc",
+    "nom": "Aleix",
     "genere": "m"
    },
    {
-    "id": "D",
-    "nom": "Delfina",
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
     "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -1185,8 +1185,8 @@
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1223,20 +1223,20 @@
   ],
   "textos": {
    "ca": [
-    "Estava a la sala d'estàtues.",
+    "Era a la sala d'estàtues.",
     "Era al costat d'un escriptori.",
-    "Era a l'oest de Berta.",
-    "Estava a la galeria.",
+    "Era a l'oest de Blai.",
+    "Era a la galeria.",
     "Era al costat d'un carretó.",
-    "Era a l'est de Vera."
+    "Era a l'est de Vicenç."
    ],
    "fr": [
-    "Elle se trouvait dans la salle des statues.",
-    "Elle était à côté d'un bureau.",
-    "Elle était à l'ouest de Berta.",
-    "Elle était dans la galerie.",
-    "Elle avait un chariot tout près.",
-    "Il était à l'est de Vera."
+    "Il se trouvait dans la salle des statues.",
+    "Elle avait un bureau tout près.",
+    "Il était à l'ouest de Blai.",
+    "Il était dans la galerie.",
+    "Il était à côté d'un chariot.",
+    "Elle était à l'est de Vicenç."
    ]
   },
   "solucio": {
@@ -1484,33 +1484,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aleix",
-    "genere": "m"
+    "nom": "Anna",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Cesc",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1552,22 +1552,22 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest de Vicenç.",
-    "Era al nord de Bruna.",
-    "Era al nord d'Aleix.",
+    "Era a l'oest de Violant.",
+    "Era al nord de Biel.",
+    "Era al nord d'Anna.",
     "A la seva columna hi havia un banc.",
-    "Era a l'oest de Vicenç.",
+    "Era a l'oest de Violant.",
     "A la seva columna hi havia una taula.",
-    "Era a la mateixa diagonal que David."
+    "Era a la mateixa diagonal que Dídac."
    ],
    "fr": [
-    "Il était à l'ouest de Vicenç.",
-    "Il était au nord de Bruna.",
-    "Elle était au nord d'Aleix.",
+    "Il était à l'ouest de Violant.",
+    "Elle était au nord de Biel.",
+    "Il était au nord d'Anna.",
     "Dans sa colonne se trouvait un banc.",
-    "Il était à l'ouest de Vicenç.",
+    "Elle était à l'ouest de Violant.",
     "Dans sa colonne se trouvait une table.",
-    "Il était sur la même diagonale que David."
+    "Elle était sur la même diagonale que Dídac."
    ]
   },
   "solucio": {
@@ -1820,7 +1820,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
@@ -1835,8 +1835,8 @@
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -1902,19 +1902,19 @@
     "A la seva columna hi havia una finestreta.",
     "Era al costat d'una paret exterior de l'edifici.",
     "A la seva columna hi havia una taula.",
-    "Era al sud d'Elna.",
+    "Era al sud d'Eudald.",
     "A la seva fila hi havia una taula.",
     "No era al vestíbul.",
     "A la seva fila hi havia una escala."
    ],
    "fr": [
-    "Elle était dans un coin d'une pièce.",
+    "Il était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait un guichet.",
     "Elle était à l'ouest de Dolors.",
     "Dans sa colonne se trouvait un guichet.",
     "Elle était contre un mur extérieur de l'édifice.",
     "Dans sa colonne se trouvait une table.",
-    "Elle était au sud d'Elna.",
+    "Elle était au sud d'Eudald.",
     "Sur sa ligne se trouvait une table.",
     "Elle n'était pas dans l'hall.",
     "Sur sa ligne se trouvait une échelle."
@@ -2137,23 +2137,23 @@
    },
    {
     "id": "B",
-    "nom": "Blai",
+    "nom": "Biel",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Enric",
-    "genere": "m"
+    "nom": "Eulàlia",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -2211,8 +2211,8 @@
     "Era al sud d'Anna.",
     "Era al nord d'Anna.",
     "Era al sud de Violant.",
-    "Era a la mateixa habitació que Blai.",
-    "Era a la mateixa diagonal que David."
+    "Era a la mateixa habitació que Biel.",
+    "Era a la mateixa diagonal que Dídac."
    ],
    "fr": [
     "Il était à l'ouest d'Anna.",
@@ -2221,8 +2221,8 @@
     "Il était au sud d'Anna.",
     "Il était au nord d'Anna.",
     "Il était au sud de Violant.",
-    "Elle était dans la même pièce que Blai.",
-    "Elle était sur la même diagonale que David."
+    "Elle était dans la même pièce que Biel.",
+    "Elle était sur la même diagonale que Dídac."
    ]
   },
   "solucio": {
@@ -2460,7 +2460,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
@@ -2470,8 +2470,8 @@
    },
    {
     "id": "C",
-    "nom": "Clara",
-    "genere": "f"
+    "nom": "Cesc",
+    "genere": "m"
    },
    {
     "id": "D",
@@ -2480,12 +2480,12 @@
    },
    {
     "id": "E",
-    "nom": "Eudald",
+    "nom": "Enric",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -2532,18 +2532,18 @@
     "A la seva columna hi havia una taula.",
     "Només ella i Blai eren a la seva habitació.",
     "Estava al magatzem.",
-    "Era al costat d'una cadira.",
-    "Era a la mateixa diagonal que Aina.",
-    "Era a l'est d'Aina."
+    "Tenia una cadira a tocar.",
+    "Era a la mateixa diagonal que Anna.",
+    "Era a l'est d'Anna."
    ],
    "fr": [
     "Sur sa ligne se trouvait un banc.",
     "Dans sa colonne se trouvait une table.",
     "Seuls elle et Blai étaient dans sa pièce.",
-    "Elle était dans la réserve.",
-    "Elle avait une chaise tout près.",
-    "Il était sur la même diagonale qu'Aina.",
-    "Il était à l'est d'Aina."
+    "Elle se trouvait dans la réserve.",
+    "Il avait une chaise tout près.",
+    "Il était sur la même diagonale qu'Anna.",
+    "Il était à l'est d'Anna."
    ]
   },
   "solucio": {
@@ -2796,33 +2796,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
-    "genere": "f"
+    "nom": "Arnau",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Dídac",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
+    "nom": "Elna",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -2879,26 +2879,26 @@
   "textos": {
    "ca": [
     "Era en un racó d'una habitació.",
-    "Era al nord de Carla.",
-    "Era al nord d'Anna.",
+    "Era al nord de Clara.",
+    "Era al nord d'Arnau.",
     "A la seva columna hi havia un carretó.",
-    "Era a l'oest de Berta.",
-    "No era a la mateixa habitació que Dídac.",
+    "Era a l'oest de Blai.",
+    "No era a la mateixa habitació que David.",
     "La galeria estava buida: ni un sol cos.",
-    "Era al sud d'Eulàlia.",
-    "Era al nord de Dídac.",
+    "Era al sud d'Elna.",
+    "Era al nord de David.",
     "A la seva fila hi havia una finestreta."
    ],
    "fr": [
-    "Elle était dans un coin d'une pièce.",
-    "Elle était au nord de Carla.",
-    "Elle était au nord d'Anna.",
+    "Il était dans un coin d'une pièce.",
+    "Il était au nord de Clara.",
+    "Elle était au nord d'Arnau.",
     "Dans sa colonne se trouvait un chariot.",
-    "Elle était à l'ouest de Berta.",
-    "Elle n'était pas dans la même pièce que Dídac.",
-    "La galerie était vide : pas une âme.",
-    "Elle était au sud d'Eulàlia.",
-    "Elle était au nord de Dídac.",
+    "Elle était à l'ouest de Blai.",
+    "Il n'était pas dans la même pièce que David.",
+    "Personne n'était dans la galerie, pas même la victime.",
+    "Il était au sud d'Elna.",
+    "Elle était au nord de David.",
     "Sur sa ligne se trouvait un guichet."
    ]
   },
@@ -3137,13 +3137,13 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Anna",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -3157,13 +3157,13 @@
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
+    "nom": "Elna",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -3214,24 +3214,24 @@
    "ca": [
     "Era en un racó d'una habitació.",
     "Era a l'oest de David.",
-    "Era al nord d'Eulàlia.",
+    "Era al nord d'Elna.",
     "A la seva columna hi havia una estàtua.",
     "Era en un racó d'una habitació.",
-    "Era al sud d'Eulàlia.",
-    "Era al sud de Violant.",
-    "Només ell i David eren a la seva habitació.",
+    "Era al sud d'Elna.",
+    "Era al sud de Valentí.",
+    "Només ella i David eren a la seva habitació.",
     "Era al costat d'una paret exterior de l'edifici."
    ],
    "fr": [
     "Il était dans un coin d'une pièce.",
-    "Elle était à l'ouest de David.",
-    "Il était au nord d'Eulàlia.",
+    "Il était à l'ouest de David.",
+    "Elle était au nord d'Elna.",
     "Dans sa colonne se trouvait une statue.",
     "Il était dans un coin d'une pièce.",
-    "Il était au sud d'Eulàlia.",
-    "Il était au sud de Violant.",
-    "Seuls lui et David étaient dans sa pièce.",
-    "Il était contre un mur extérieur de l'édifice."
+    "Elle était au sud d'Elna.",
+    "Elle était au sud de Valentí.",
+    "Seuls elle et David étaient dans sa pièce.",
+    "Elle était contre un mur extérieur de l'édifice."
    ]
   },
   "solucio": {
@@ -3461,18 +3461,18 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Clara",
+    "nom": "Carla",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -3523,19 +3523,19 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest de Delfina.",
+    "Era a l'oest de David.",
     "A la seva columna hi havia un banc.",
-    "Era al costat d'un arxivador.",
+    "Tenia un arxivador a tocar.",
     "Era al nord d'Aleix.",
     "Era en un racó d'una habitació.",
     "A la seva columna hi havia una finestreta.",
     "Només ella i Eudald eren a la seva habitació."
    ],
    "fr": [
-    "Elle était à l'ouest de Delfina.",
+    "Elle était à l'ouest de David.",
     "Dans sa colonne se trouvait un banc.",
-    "Il avait un classeur tout près.",
-    "Il était au nord d'Aleix.",
+    "Il était à côté d'un classeur.",
+    "Elle était au nord d'Aleix.",
     "Elle était dans un coin d'une pièce.",
     "Dans sa colonne se trouvait un guichet.",
     "Seuls elle et Eudald étaient dans sa pièce."
@@ -3777,8 +3777,8 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
@@ -3787,23 +3787,23 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
-   },
-   {
-    "id": "D",
-    "nom": "David",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
-    "id": "E",
-    "nom": "Elna",
+    "id": "D",
+    "nom": "Dolors",
     "genere": "f"
    },
    {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -3854,19 +3854,19 @@
     "Era a la mateixa diagonal que Biel.",
     "A la seva fila hi havia un banc.",
     "Tenia una caixa a tocar.",
-    "Era a un salt de cavall d'Elna (com als escacs).",
+    "Era a un salt de cavall d'Eudald (com als escacs).",
     "A la seva fila hi havia una finestreta.",
     "No era al despatx."
    ],
    "fr": [
-    "Il était contre un mur extérieur de l'édifice.",
+    "Elle était contre un mur extérieur de l'édifice.",
     "Dans sa colonne se trouvait un banc.",
-    "Il était sur la même diagonale que Biel.",
+    "Elle était sur la même diagonale que Biel.",
     "Sur sa ligne se trouvait un banc.",
-    "Elle avait une caisse tout près.",
-    "Elle était à un saut de cavalier d'Elna (comme aux échecs).",
+    "Il était à côté d'une caisse.",
+    "Il était à un saut de cavalier d'Eudald (comme aux échecs).",
     "Sur sa ligne se trouvait un guichet.",
-    "Il n'était pas dans le bureau."
+    "Elle n'était pas dans le bureau."
    ]
   },
   "solucio": {

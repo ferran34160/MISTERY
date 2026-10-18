@@ -1,0 +1,932 @@
+[
+ {
+  "id": "circ-6-203-1",
+  "escenari": "circ",
+  "n": 6,
+  "nivell": 3,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    1,
+    0,
+    1,
+    0,
+    0,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    2,
+    2
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    2,
+    2
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "tribuna",
+    "fr": "tribune"
+   },
+   "1": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   },
+   "2": {
+    "ca": "taquilla",
+    "fr": "billetterie"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "escala",
+    null,
+    "banc"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "banc",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "escala": {
+    "bloqueja": true,
+    "ca": "escala",
+    "fr": "échelle"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 0
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "banc"
+   },
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "banc"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "E",
+    "sala": 0
+   },
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "escala"
+   },
+   {
+    "t": "oest",
+    "p": "E",
+    "q": "D"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "escala"
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "C"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a la tribuna.",
+    "A la seva columna hi havia un banc.",
+    "Era al costat d'un banc.",
+    "No era a la tribuna.",
+    "A la seva fila hi havia una escala.",
+    "Era a l'oest de Delfina.",
+    "A la seva columna hi havia una escala.",
+    "Era a la mateixa diagonal que Carles."
+   ],
+   "fr": [
+    "Il était dans la tribune.",
+    "Dans sa colonne se trouvait un banc.",
+    "Il avait un banc tout près.",
+    "Il n'était pas dans la tribune.",
+    "Sur sa ligne se trouvait une échelle.",
+    "Il était à l'ouest de Delfina.",
+    "Dans sa colonne se trouvait une échelle.",
+    "Elle était sur la même diagonale que Carles."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    0
+   ],
+   "B": [
+    2,
+    4
+   ],
+   "C": [
+    5,
+    5
+   ],
+   "D": [
+    4,
+    3
+   ],
+   "E": [
+    0,
+    2
+   ],
+   "V": [
+    1,
+    1
+   ]
+  },
+  "assassi": "E"
+ },
+ {
+  "id": "circ-6-203-2",
+  "escenari": "circ",
+  "n": 6,
+  "nivell": 3,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    -1
+   ],
+   [
+    0,
+    0,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "caravana",
+    "fr": "roulotte"
+   },
+   "1": {
+    "ca": "quadra",
+    "fr": "écurie"
+   },
+   "2": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "taula"
+   ],
+   [
+    null,
+    null,
+    "bagul",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "carro",
+    null,
+    "escala",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "caixa"
+   ],
+   [
+    null,
+    "caixa",
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "escala": {
+    "bloqueja": true,
+    "ca": "escala",
+    "fr": "échelle"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "oest",
+    "p": "D",
+    "q": "B"
+   },
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "carro"
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 1
+   },
+   {
+    "t": "fila_obj",
+    "p": "C",
+    "obj": "bagul"
+   },
+   {
+    "t": "col_obj",
+    "p": "B",
+    "obj": "caixa"
+   },
+   {
+    "t": "est",
+    "p": "V",
+    "q": "C"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a l'oest de Berta.",
+    "A la seva fila hi havia un carro.",
+    "Era a la quadra.",
+    "A la seva fila hi havia un bagul.",
+    "A la seva columna hi havia una caixa.",
+    "Era a l'est de Carles."
+   ],
+   "fr": [
+    "Elle était à l'ouest de Berta.",
+    "Sur sa ligne se trouvait une charrette.",
+    "Elle était dans l'écurie.",
+    "Sur sa ligne se trouvait une malle.",
+    "Dans sa colonne se trouvait une caisse.",
+    "Elle était à l'est de Carles."
+   ]
+  },
+  "solucio": {
+   "A": [
+    5,
+    2
+   ],
+   "B": [
+    4,
+    1
+   ],
+   "C": [
+    2,
+    3
+   ],
+   "D": [
+    1,
+    0
+   ],
+   "E": [
+    3,
+    5
+   ],
+   "V": [
+    0,
+    4
+   ]
+  },
+  "assassi": "D"
+ },
+ {
+  "id": "circ-6-203-3",
+  "escenari": "circ",
+  "n": 6,
+  "nivell": 3,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    1,
+    1,
+    3,
+    0
+   ],
+   [
+    1,
+    1,
+    3,
+    3,
+    3,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    3,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    0,
+    -1,
+    -1
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "caravana",
+    "fr": "roulotte"
+   },
+   "1": {
+    "ca": "tribuna",
+    "fr": "tribune"
+   },
+   "2": {
+    "ca": "taquilla",
+    "fr": "billetterie"
+   },
+   "3": {
+    "ca": "quadra",
+    "fr": "écurie"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    "banc",
+    "barril",
+    null
+   ],
+   [
+    null,
+    null,
+    "barril",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "taula",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 2
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 3
+   },
+   {
+    "t": "col_obj",
+    "p": "B",
+    "obj": "barril"
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "taula"
+   },
+   {
+    "t": "est",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "sud",
+    "p": "B",
+    "q": "V"
+   },
+   {
+    "t": "nord",
+    "p": "V",
+    "q": "A"
+   },
+   {
+    "t": "diag",
+    "p": "E",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a la taquilla.",
+    "Estava a la quadra.",
+    "A la seva columna hi havia un barril.",
+    "A la seva columna hi havia una taula.",
+    "Era a l'est de David.",
+    "Era al sud de Violant.",
+    "Era al nord d'Anna.",
+    "Era a la mateixa diagonal que Blai."
+   ],
+   "fr": [
+    "Elle se trouvait dans la billetterie.",
+    "Il était dans l'écurie.",
+    "Dans sa colonne se trouvait un tonneau.",
+    "Dans sa colonne se trouvait une table.",
+    "Elle était à l'est de David.",
+    "Il était au sud de Violant.",
+    "Elle était au nord d'Anna.",
+    "Elle était sur la même diagonale que Blai."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    5
+   ],
+   "B": [
+    4,
+    2
+   ],
+   "C": [
+    0,
+    3
+   ],
+   "D": [
+    1,
+    4
+   ],
+   "E": [
+    5,
+    1
+   ],
+   "V": [
+    2,
+    0
+   ]
+  },
+  "assassi": "E"
+ }
+]

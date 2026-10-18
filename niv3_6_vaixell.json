@@ -207,32 +207,32 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Anna",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dídac",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eudald",
-    "genere": "m"
+    "nom": "Elna",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -286,25 +286,25 @@
   "textos": {
    "ca": [
     "A la seva fila hi havia un llit.",
-    "Era a l'est de Dídac.",
-    "Era al nord de Dídac.",
+    "Era a l'est de Dolors.",
+    "Era al nord de Dolors.",
     "A la seva fila hi havia una taula.",
-    "Era al nord d'Arnau.",
-    "Era al sud de Cesc.",
+    "Era al nord d'Anna.",
+    "Era al sud de Carles.",
     "Només hi havia una persona a la sala de màquines, víctima inclosa.",
-    "Era a l'est de Cesc.",
-    "Tenia un carretó a tocar."
+    "Era a l'est de Carles.",
+    "Era al costat d'un carretó."
    ],
    "fr": [
     "Sur sa ligne se trouvait un lit.",
-    "Il était à l'est de Dídac.",
-    "Il était au nord de Dídac.",
+    "Elle était à l'est de Dolors.",
+    "Il était au nord de Dolors.",
     "Sur sa ligne se trouvait une table.",
-    "Elle était au nord d'Arnau.",
-    "Il était au sud de Cesc.",
+    "Elle était au nord d'Anna.",
+    "Elle était au sud de Carles.",
     "Il n'y avait qu'une personne dans la salle des machines, victime comprise.",
-    "Elle était à l'est de Cesc.",
-    "Il était à côté d'un chariot."
+    "Elle était à l'est de Carles.",
+    "Elle était à côté d'un chariot."
    ]
   },
   "solucio": {
@@ -543,23 +543,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Cesc",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -568,7 +568,7 @@
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -623,24 +623,24 @@
    "ca": [
     "A la seva columna hi havia un bagul.",
     "A la seva columna hi havia un timó.",
-    "Era a l'est d'Arnau.",
+    "Era a l'est d'Aina.",
     "A la seva fila hi havia un timó.",
     "No era a la coberta.",
     "Hi havia exactament 2 persones a la coberta, víctima inclosa.",
     "Era al sud d'Enric.",
-    "No era a la mateixa habitació que Dolors.",
-    "Era al sud de Dolors."
+    "No era a la mateixa habitació que Dídac.",
+    "Era al sud de Dídac."
    ],
    "fr": [
     "Dans sa colonne se trouvait une malle.",
     "Dans sa colonne se trouvait une barre.",
-    "Elle était à l'est d'Arnau.",
+    "Il était à l'est d'Aina.",
     "Sur sa ligne se trouvait une barre.",
-    "Il n'était pas dans le pont.",
+    "Elle n'était pas dans le pont.",
     "Il y avait exactement 2 personnes dans le pont, victime comprise.",
     "Elle était au sud d'Enric.",
-    "Il n'était pas dans la même pièce que Dolors.",
-    "Il était au sud de Dolors."
+    "Il n'était pas dans la même pièce que Dídac.",
+    "Elle était au sud de Dídac."
    ]
   },
   "solucio": {
@@ -865,28 +865,28 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Cesc",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -945,24 +945,24 @@
    "ca": [
     "A la seva fila hi havia un llit.",
     "A la seva columna hi havia un carretó.",
-    "Era a la mateixa diagonal que Aina.",
+    "Era a la mateixa diagonal que Anna.",
     "A la seva fila hi havia un carretó.",
     "A la seva fila hi havia un carretó.",
-    "Era a la mateixa habitació que Aina.",
+    "Era a la mateixa habitació que Anna.",
     "Era a l'oest de Vera.",
     "Era a la passarel·la.",
-    "Era a la mateixa diagonal que Bruna."
+    "Era a la mateixa diagonal que Blai."
    ],
    "fr": [
     "Sur sa ligne se trouvait un lit.",
     "Dans sa colonne se trouvait un chariot.",
-    "Elle était sur la même diagonale qu'Aina.",
+    "Il était sur la même diagonale qu'Anna.",
     "Sur sa ligne se trouvait un chariot.",
     "Sur sa ligne se trouvait un chariot.",
-    "Elle était dans la même pièce qu'Aina.",
-    "Elle était à l'ouest de Vera.",
-    "Elle se trouvait dans la passerelle.",
-    "Elle était sur la même diagonale que Bruna."
+    "Il était dans la même pièce qu'Anna.",
+    "Il était à l'ouest de Vera.",
+    "Il était dans la passerelle.",
+    "Il était sur la même diagonale que Blai."
    ]
   },
   "solucio": {

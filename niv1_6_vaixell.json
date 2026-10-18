@@ -207,13 +207,13 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -227,13 +227,13 @@
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -284,7 +284,7 @@
     "Només hi havia una persona a la coberta, víctima inclosa."
    ],
    "fr": [
-    "Il avait un poêle tout près.",
+    "Il était à côté d'un poêle.",
     "Sur sa ligne se trouvait un poêle.",
     "Sur sa ligne se trouvait une ancre.",
     "Dans sa colonne se trouvait un poêle.",
@@ -533,23 +533,23 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
+    "nom": "Berta",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dolors",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eudald",
-    "genere": "m"
+    "nom": "Eulàlia",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -606,25 +606,25 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest de Carla.",
+    "Era a l'oest de Carles.",
     "A la seva columna hi havia una taula.",
     "A la seva fila hi havia una àncora.",
     "A la seva columna hi havia una àncora.",
     "A la seva fila hi havia un carretó.",
-    "Era a la mateixa diagonal que Eudald.",
-    "Estava a la coberta.",
-    "Era al sud d'Eudald.",
+    "Era a la mateixa diagonal que Eulàlia.",
+    "Era a la coberta.",
+    "Era al sud d'Eulàlia.",
     "A la seva fila hi havia una taula."
    ],
    "fr": [
-    "Il était à l'ouest de Carla.",
+    "Il était à l'ouest de Carles.",
     "Dans sa colonne se trouvait une table.",
     "Sur sa ligne se trouvait une ancre.",
     "Dans sa colonne se trouvait une ancre.",
     "Sur sa ligne se trouvait un chariot.",
-    "Elle était sur la même diagonale qu'Eudald.",
+    "Elle était sur la même diagonale qu'Eulàlia.",
     "Il se trouvait dans le pont.",
-    "Elle était au sud d'Eudald.",
+    "Elle était au sud d'Eulàlia.",
     "Sur sa ligne se trouvait une table."
    ]
   },
@@ -850,7 +850,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
+    "nom": "Aleix",
     "genere": "m"
    },
    {
@@ -860,23 +860,23 @@
    },
    {
     "id": "C",
-    "nom": "Carles",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Elna",
+    "nom": "Eulàlia",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -928,25 +928,25 @@
   "textos": {
    "ca": [
     "Era al camarot.",
-    "No era a la mateixa habitació que Carles.",
+    "No era a la mateixa habitació que Carla.",
     "Era sobre el carretó.",
     "Era en un racó d'una habitació.",
-    "Era al nord de Carles.",
+    "Era al nord de Carla.",
     "Era sobre la cadira.",
     "No era al camarot.",
     "Era al sud de Blai.",
-    "Era a la mateixa diagonal que Carles."
+    "Era a la mateixa diagonal que Carla."
    ],
    "fr": [
-    "Il était dans la cabine.",
-    "Elle n'était pas dans la même pièce que Carles.",
-    "Il était sur le chariot.",
+    "Elle était dans la cabine.",
+    "Il n'était pas dans la même pièce que Carla.",
+    "Elle était sur le chariot.",
     "Il était dans un coin d'une pièce.",
-    "Elle était au nord de Carles.",
+    "Elle était au nord de Carla.",
     "Il était sur la chaise.",
     "Elle n'était pas dans la cabine.",
     "Elle était au sud de Blai.",
-    "Il était sur la même diagonale que Carles."
+    "Il était sur la même diagonale que Carla."
    ]
   },
   "solucio": {

@@ -1,0 +1,3828 @@
+[
+ {
+  "id": "mansio-6-201-1",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 5,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    2,
+    2,
+    2,
+    2,
+    -1,
+    -1
+   ],
+   [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    2,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "1": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   },
+   "2": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "figuera",
+    null,
+    null,
+    null
+   ],
+   [
+    "mirall",
+    null,
+    null,
+    null,
+    "planta",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "arbre",
+    "fr": "arbre"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "no_en_sala",
+    "p": "D",
+    "sala": 1
+   },
+   {
+    "t": "sobre_obj",
+    "p": "A",
+    "obj": "cadira"
+   },
+   {
+    "t": "prop_obj",
+    "p": "E",
+    "obj": "planta"
+   },
+   {
+    "t": "cavall",
+    "p": "C",
+    "q": "E"
+   },
+   {
+    "t": "cavall",
+    "p": "B",
+    "q": "C"
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "E"
+   },
+   {
+    "t": "cavall",
+    "p": "D",
+    "q": "A"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "No era al menjador.",
+    "Era sobre la cadira.",
+    "Tenia una planta a tocar.",
+    "Era a un salt de cavall d'Eulàlia (com als escacs).",
+    "Era a un salt de cavall de Carla (com als escacs).",
+    "Era a la mateixa diagonal que Eulàlia.",
+    "Era a un salt de cavall d'Anna (com als escacs)."
+   ],
+   "fr": [
+    "Il n'était pas dans la salle à manger.",
+    "Elle était sur la chaise.",
+    "Elle était à côté d'une plante.",
+    "Elle était à un saut de cavalier d'Eulàlia (comme aux échecs).",
+    "Il était à un saut de cavalier de Carla (comme aux échecs).",
+    "Il était sur la même diagonale qu'Eulàlia.",
+    "Il était à un saut de cavalier d'Anna (comme aux échecs)."
+   ]
+  },
+  "solucio": {
+   "A": [
+    1,
+    5
+   ],
+   "B": [
+    3,
+    0
+   ],
+   "C": [
+    4,
+    2
+   ],
+   "D": [
+    0,
+    3
+   ],
+   "E": [
+    5,
+    4
+   ],
+   "V": [
+    2,
+    1
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "mansio-6-201-2",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 5,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    0,
+    2,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    3,
+    3,
+    4,
+    4
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    4,
+    4
+   ],
+   [
+    -1,
+    -1,
+    3,
+    4,
+    4,
+    4
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   },
+   "2": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "3": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "4": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "estufa",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "taula",
+    null,
+    null,
+    null,
+    "escriptori",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "planta",
+    null,
+    null,
+    null,
+    null,
+    "taula"
+   ],
+   [
+    null,
+    "banc",
+    null,
+    null,
+    "cadira",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "planta"
+   },
+   {
+    "t": "sud",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "sud",
+    "p": "D",
+    "q": "A"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "B",
+    "q": "E"
+   },
+   {
+    "t": "diag",
+    "p": "C",
+    "q": "E"
+   },
+   {
+    "t": "cavall",
+    "p": "E",
+    "q": "V"
+   },
+   {
+    "t": "est",
+    "p": "B",
+    "q": "V"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia una planta.",
+    "Era al sud de Carles.",
+    "Era al sud d'Aina.",
+    "Era a la mateixa habitació que Eulàlia.",
+    "Era a la mateixa diagonal que Eulàlia.",
+    "Era a un salt de cavall de Vicenç (com als escacs).",
+    "Era a l'est de Vicenç."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait une plante.",
+    "Elle était au sud de Carles.",
+    "Il était au sud d'Aina.",
+    "Elle était dans la même pièce qu'Eulàlia.",
+    "Il était sur la même diagonale qu'Eulàlia.",
+    "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
+    "Elle était à l'est de Vicenç."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    1
+   ],
+   "B": [
+    1,
+    5
+   ],
+   "C": [
+    0,
+    0
+   ],
+   "D": [
+    5,
+    3
+   ],
+   "E": [
+    2,
+    2
+   ],
+   "V": [
+    3,
+    4
+   ]
+  },
+  "assassi": "D"
+ },
+ {
+  "id": "mansio-6-201-3",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 5,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1
+   ],
+   [
+    1,
+    1,
+    1,
+    3,
+    3,
+    3
+   ],
+   [
+    1,
+    2,
+    2,
+    0,
+    0,
+    3
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    0,
+    3
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    0,
+    -1
+   ],
+   [
+    -1,
+    -1,
+    2,
+    0,
+    0,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "saló",
+    "fr": "salon"
+   },
+   "1": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   },
+   "2": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "3": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "llibreria",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "estufa"
+   ],
+   [
+    "banc",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "butaca",
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aleix",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Clara",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "nord",
+    "p": "E",
+    "q": "B"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 0
+   },
+   {
+    "t": "no_en_sala",
+    "p": "B",
+    "sala": 2
+   },
+   {
+    "t": "diag",
+    "p": "A",
+    "q": "E"
+   },
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 1
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "banc"
+   },
+   {
+    "t": "diag",
+    "p": "D",
+    "q": "A"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al nord de Bruna.",
+    "Estava al saló.",
+    "No era al vestíbul.",
+    "Era a la mateixa diagonal que Eudald.",
+    "Era a l'estudi.",
+    "Era al costat d'un banc.",
+    "Era a la mateixa diagonal que Aleix."
+   ],
+   "fr": [
+    "Il était au nord de Bruna.",
+    "Elle était dans le salon.",
+    "Elle n'était pas dans le vestibule.",
+    "Il était sur la même diagonale qu'Eudald.",
+    "Elle se trouvait dans le cabinet.",
+    "Elle était à côté d'un banc.",
+    "Elle était sur la même diagonale qu'Aleix."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    2
+   ],
+   "B": [
+    2,
+    0
+   ],
+   "C": [
+    3,
+    1
+   ],
+   "D": [
+    5,
+    3
+   ],
+   "E": [
+    1,
+    5
+   ],
+   "V": [
+    0,
+    4
+   ]
+  },
+  "assassi": "B"
+ },
+ {
+  "id": "mansio-6-201-4",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 1,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    0
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "1": {
+    "ca": "saló",
+    "fr": "salon"
+   },
+   "2": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "sofa",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "mirall",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "banc",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "llar",
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
+   "sofa": {
+    "bloqueja": false,
+    "ca": "sofà",
+    "fr": "canapé"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "llar"
+   },
+   {
+    "t": "oest",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "vora",
+    "p": "D"
+   },
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "llar"
+   },
+   {
+    "t": "oest",
+    "p": "E",
+    "q": "A"
+   },
+   {
+    "t": "fila_obj",
+    "p": "C",
+    "obj": "mirall"
+   },
+   {
+    "t": "col_obj",
+    "p": "B",
+    "obj": "banc"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 0,
+    "k": 1
+   },
+   {
+    "t": "nord",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "nord",
+    "p": "D",
+    "q": "E"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una llar de foc.",
+    "Era a l'oest de Carla.",
+    "Era al costat d'una paret exterior de la mansió.",
+    "Tenia una llar de foc a tocar.",
+    "Era a l'oest d'Anna.",
+    "A la seva fila hi havia un mirall.",
+    "A la seva columna hi havia un banc.",
+    "Només hi havia una persona al vestíbul, víctima inclosa.",
+    "Era al nord de David.",
+    "Era al nord d'Elna."
+   ],
+   "fr": [
+    "Elle avait une cheminée tout près.",
+    "Elle était à l'ouest de Carla.",
+    "Il était contre un mur extérieur de la demeure.",
+    "Il était à côté d'une cheminée.",
+    "Elle était à l'ouest d'Anna.",
+    "Sur sa ligne se trouvait un miroir.",
+    "Dans sa colonne se trouvait un banc.",
+    "Il n'y avait qu'une personne dans le vestibule, victime comprise.",
+    "Elle était au nord de David.",
+    "Il était au nord d'Elna."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    2
+   ],
+   "B": [
+    5,
+    3
+   ],
+   "C": [
+    2,
+    5
+   ],
+   "D": [
+    1,
+    0
+   ],
+   "E": [
+    3,
+    1
+   ],
+   "V": [
+    4,
+    4
+   ]
+  },
+  "assassi": "B"
+ },
+ {
+  "id": "mansio-6-201-5",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    3,
+    3,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    3,
+    0,
+    0,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    2,
+    2,
+    0,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "2": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "3": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "escriptori",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "llibreria",
+    null,
+    null,
+    null,
+    "banc",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "caixa",
+    null
+   ],
+   [
+    "banc",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "caixa",
+    null
+   ],
+   [
+    null,
+    null,
+    "banc",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "llibreria"
+   },
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "caixa"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "llibreria"
+   },
+   {
+    "t": "diag",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "caixa"
+   },
+   {
+    "t": "est",
+    "p": "E",
+    "q": "D"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una llibreria.",
+    "A la seva fila hi havia una caixa.",
+    "A la seva columna hi havia una llibreria.",
+    "Era a la mateixa diagonal que Carles.",
+    "Era al costat d'una caixa.",
+    "Era a l'est de Dídac."
+   ],
+   "fr": [
+    "Il avait une bibliothèque tout près.",
+    "Sur sa ligne se trouvait une caisse.",
+    "Dans sa colonne se trouvait une bibliothèque.",
+    "Elle était sur la même diagonale que Carles.",
+    "Elle était à côté d'une caisse.",
+    "Elle était à l'est de Dídac."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    2
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "C": [
+    1,
+    1
+   ],
+   "D": [
+    4,
+    0
+   ],
+   "E": [
+    5,
+    3
+   ],
+   "V": [
+    2,
+    5
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "mansio-6-201-6",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    2,
+    2,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   [
+    -1,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "1": {
+    "ca": "saló",
+    "fr": "salon"
+   },
+   "2": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "figuera",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "sofa",
+    null,
+    null
+   ],
+   [
+    null,
+    "banc",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "banc",
+    "mirall",
+    null,
+    "sofa"
+   ],
+   [
+    null,
+    "mirall",
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "arbre",
+    "fr": "arbre"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
+   "sofa": {
+    "bloqueja": false,
+    "ca": "sofà",
+    "fr": "canapé"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "figuera"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "C",
+    "obj": "banc"
+   },
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 0
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 1
+   },
+   {
+    "t": "oest",
+    "p": "D",
+    "q": "C"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "B",
+    "q": "C"
+   },
+   {
+    "t": "diag",
+    "p": "E",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia un arbre.",
+    "Era sobre el banc.",
+    "Estava al vestíbul.",
+    "Estava al saló.",
+    "Era a l'oest de Cesc.",
+    "Era a la mateixa habitació que Cesc.",
+    "Era a la mateixa diagonal que Berta."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait un arbre.",
+    "Il était sur le banc.",
+    "Elle était dans le vestibule.",
+    "Il se trouvait dans le salon.",
+    "Elle était à l'ouest de Cesc.",
+    "Elle était dans la même pièce que Cesc.",
+    "Elle était sur la même diagonale que Berta."
+   ]
+  },
+  "solucio": {
+   "A": [
+    2,
+    5
+   ],
+   "B": [
+    0,
+    3
+   ],
+   "C": [
+    3,
+    1
+   ],
+   "D": [
+    4,
+    0
+   ],
+   "E": [
+    1,
+    4
+   ],
+   "V": [
+    5,
+    2
+   ]
+  },
+  "assassi": "D"
+ },
+ {
+  "id": "mansio-6-201-7",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    3,
+    3,
+    2
+   ],
+   [
+    1,
+    1,
+    3,
+    3,
+    3,
+    2
+   ],
+   [
+    1,
+    1,
+    3,
+    3,
+    3,
+    2
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   },
+   "2": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "3": {
+    "ca": "saló",
+    "fr": "salon"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    "mirall",
+    null,
+    "mirall"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "escriptori",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "butaca",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "caixa",
+    null
+   ]
+  ],
+  "objectes": {
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Clara",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 1
+   },
+   {
+    "t": "nord",
+    "p": "B",
+    "q": "V"
+   },
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "caixa"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "D",
+    "q": "A"
+   },
+   {
+    "t": "est",
+    "p": "C",
+    "q": "V"
+   },
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "mirall"
+   },
+   {
+    "t": "oest",
+    "p": "D",
+    "q": "E"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a l'estudi.",
+    "Era al nord de Violant.",
+    "A la seva fila hi havia una caixa.",
+    "Era a la mateixa habitació que Anna.",
+    "Era a l'est de Violant.",
+    "Tenia un mirall a tocar.",
+    "Era a l'oest d'Eulàlia."
+   ],
+   "fr": [
+    "Elle se trouvait dans le cabinet.",
+    "Elle était au nord de Violant.",
+    "Sur sa ligne se trouvait une caisse.",
+    "Il était dans la même pièce qu'Anna.",
+    "Elle était à l'est de Violant.",
+    "Elle était à côté d'un miroir.",
+    "Il était à l'ouest d'Eulàlia."
+   ]
+  },
+  "solucio": {
+   "A": [
+    1,
+    5
+   ],
+   "B": [
+    2,
+    1
+   ],
+   "C": [
+    4,
+    4
+   ],
+   "D": [
+    0,
+    2
+   ],
+   "E": [
+    5,
+    3
+   ],
+   "V": [
+    3,
+    0
+   ]
+  },
+  "assassi": "B"
+ },
+ {
+  "id": "mansio-6-201-8",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    4,
+    2,
+    4,
+    4,
+    -1,
+    -1
+   ],
+   [
+    4,
+    4,
+    4,
+    4,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   },
+   "1": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   },
+   "2": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "3": {
+    "ca": "saló",
+    "fr": "salon"
+   },
+   "4": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "taula",
+    null,
+    null,
+    null,
+    "llibreria"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "escriptori"
+   ],
+   [
+    "figuera",
+    null,
+    null,
+    null,
+    "sofa",
+    null
+   ],
+   [
+    null,
+    "planta",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "caixa",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "arbre",
+    "fr": "arbre"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
+   },
+   "sofa": {
+    "bloqueja": false,
+    "ca": "sofà",
+    "fr": "canapé"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aleix",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "caixa"
+   },
+   {
+    "t": "sud",
+    "p": "E",
+    "q": "C"
+   },
+   {
+    "t": "oest",
+    "p": "D",
+    "q": "B"
+   },
+   {
+    "t": "sud",
+    "p": "B",
+    "q": "A"
+   },
+   {
+    "t": "oest",
+    "p": "A",
+    "q": "V"
+   },
+   {
+    "t": "en_sala",
+    "p": "C",
+    "sala": 3
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 0
+   },
+   {
+    "t": "diag",
+    "p": "C",
+    "q": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia una caixa.",
+    "Era al sud de Carles.",
+    "Era a l'oest de Biel.",
+    "Era al sud d'Aleix.",
+    "Era a l'oest de Violant.",
+    "Era al saló.",
+    "Estava a l'estudi.",
+    "Era a la mateixa diagonal que Biel."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait une caisse.",
+    "Elle était au sud de Carles.",
+    "Elle était à l'ouest de Biel.",
+    "Il était au sud d'Aleix.",
+    "Il était à l'ouest de Violant.",
+    "Il se trouvait dans le salon.",
+    "Elle se trouvait dans le cabinet.",
+    "Il était sur la même diagonale que Biel."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    0
+   ],
+   "B": [
+    2,
+    4
+   ],
+   "C": [
+    3,
+    5
+   ],
+   "D": [
+    1,
+    3
+   ],
+   "E": [
+    4,
+    2
+   ],
+   "V": [
+    5,
+    1
+   ]
+  },
+  "assassi": "E"
+ },
+ {
+  "id": "mansio-6-201-9",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    3,
+    3,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   },
+   "1": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "2": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "3": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    "estufa",
+    null,
+    "banc",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "llibreria",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "banc"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Clara",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "llibreria"
+   },
+   {
+    "t": "oest",
+    "p": "D",
+    "q": "B"
+   },
+   {
+    "t": "col_obj",
+    "p": "V",
+    "obj": "estufa"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "C",
+    "sala": 0
+   },
+   {
+    "t": "oest",
+    "p": "E",
+    "q": "D"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "A",
+    "obj": "banc"
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "D"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una llibreria.",
+    "Era a l'oest de Biel.",
+    "A la seva columna hi havia una estufa.",
+    "No era a l'estudi.",
+    "Era a l'oest de Delfina.",
+    "Era sobre el banc.",
+    "Era a la mateixa diagonal que Delfina."
+   ],
+   "fr": [
+    "Il avait une bibliothèque tout près.",
+    "Elle était à l'ouest de Biel.",
+    "Dans sa colonne se trouvait un poêle.",
+    "Elle n'était pas dans le cabinet.",
+    "Il était à l'ouest de Delfina.",
+    "Elle était sur le banc.",
+    "Elle était sur la même diagonale que Delfina."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    5
+   ],
+   "B": [
+    3,
+    3
+   ],
+   "C": [
+    5,
+    4
+   ],
+   "D": [
+    0,
+    2
+   ],
+   "E": [
+    1,
+    1
+   ],
+   "V": [
+    2,
+    0
+   ]
+  },
+  "assassi": "E"
+ },
+ {
+  "id": "mansio-6-201-10",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    1,
+    0,
+    0,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    2,
+    -1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "1": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   },
+   "2": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "taula",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    null
+   ],
+   [
+    "escriptori",
+    null,
+    "banc",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "figuera",
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "arbre",
+    "fr": "arbre"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "sud",
+    "p": "A",
+    "q": "V"
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 1
+   },
+   {
+    "t": "nord",
+    "p": "V",
+    "q": "B"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "cadira"
+   },
+   {
+    "t": "sud",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "banc"
+   },
+   {
+    "t": "prop_obj",
+    "p": "E",
+    "obj": "figuera"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "E"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al sud de Violant.",
+    "Era a l'estudi.",
+    "Era al nord de Berta.",
+    "A la seva columna hi havia una cadira.",
+    "Era al sud de Carles.",
+    "A la seva columna hi havia un banc.",
+    "Era al costat d'un arbre.",
+    "Era a la mateixa diagonal que Eulàlia."
+   ],
+   "fr": [
+    "Il était au sud de Violant.",
+    "Elle se trouvait dans le cabinet.",
+    "Elle était au nord de Berta.",
+    "Dans sa colonne se trouvait une chaise.",
+    "Elle était au sud de Carles.",
+    "Dans sa colonne se trouvait un banc.",
+    "Elle était à côté d'un arbre.",
+    "Elle était sur la même diagonale qu'Eulàlia."
+   ]
+  },
+  "solucio": {
+   "A": [
+    5,
+    0
+   ],
+   "B": [
+    2,
+    1
+   ],
+   "C": [
+    0,
+    2
+   ],
+   "D": [
+    3,
+    4
+   ],
+   "E": [
+    4,
+    3
+   ],
+   "V": [
+    1,
+    5
+   ]
+  },
+  "assassi": "D"
+ },
+ {
+  "id": "mansio-6-201-11",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 3,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    2,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    0,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    0,
+    0,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    3,
+    3,
+    3,
+    0,
+    0
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "2": {
+    "ca": "saló",
+    "fr": "salon"
+   },
+   "3": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   }
+  },
+  "obj": [
+   [
+    "mirall",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "piano",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "taula",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "caixa",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "llibreria",
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
+   "piano": {
+    "bloqueja": true,
+    "ca": "piano",
+    "fr": "piano"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aleix",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "en_sala",
+    "p": "C",
+    "sala": 3
+   },
+   {
+    "t": "est",
+    "p": "B",
+    "q": "A"
+   },
+   {
+    "t": "est",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "col_obj",
+    "p": "V",
+    "obj": "mirall"
+   },
+   {
+    "t": "col_obj",
+    "p": "E",
+    "obj": "caixa"
+   },
+   {
+    "t": "sud",
+    "p": "B",
+    "q": "V"
+   },
+   {
+    "t": "diag",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "sud",
+    "p": "D",
+    "q": "B"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 1,
+    "k": 1
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era a l'estudi.",
+    "Era a l'est d'Aleix.",
+    "Era a l'est de Dídac.",
+    "A la seva columna hi havia un mirall.",
+    "A la seva columna hi havia una caixa.",
+    "Era al sud de Valentí.",
+    "Era a la mateixa diagonal que Cesc.",
+    "Era al sud de Blai.",
+    "Només hi havia una persona al vestíbul, víctima inclosa."
+   ],
+   "fr": [
+    "Il se trouvait dans le cabinet.",
+    "Il était à l'est d'Aleix.",
+    "Il était à l'est de Dídac.",
+    "Dans sa colonne se trouvait un miroir.",
+    "Dans sa colonne se trouvait une caisse.",
+    "Il était au sud de Valentí.",
+    "Il était sur la même diagonale que Cesc.",
+    "Il était au sud de Blai.",
+    "Il n'y avait qu'une personne dans le vestibule, victime comprise."
+   ]
+  },
+  "solucio": {
+   "A": [
+    1,
+    3
+   ],
+   "B": [
+    4,
+    5
+   ],
+   "C": [
+    3,
+    1
+   ],
+   "D": [
+    5,
+    2
+   ],
+   "E": [
+    0,
+    4
+   ],
+   "V": [
+    2,
+    0
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "mansio-6-201-12",
+  "escenari": "mansio",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    1,
+    4
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    1,
+    4
+   ],
+   [
+    0,
+    3,
+    3,
+    3,
+    3,
+    4
+   ],
+   [
+    0,
+    3,
+    3,
+    3,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "vestíbul",
+    "fr": "vestibule"
+   },
+   "2": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   },
+   "3": {
+    "ca": "jardí d'hivern",
+    "fr": "jardin d'hiver"
+   },
+   "4": {
+    "ca": "estudi",
+    "fr": "cabinet"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira"
+   ],
+   [
+    "caixa",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "mirall",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "taula",
+    null,
+    null,
+    null,
+    "figuera",
+    "llibreria"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "arbre",
+    "fr": "arbre"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "mirall"
+   },
+   {
+    "t": "est",
+    "p": "B",
+    "q": "D"
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 3
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "caixa"
+   },
+   {
+    "t": "cavall",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "prop_obj",
+    "p": "D",
+    "obj": "figuera"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 4,
+    "k": 0
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia un mirall.",
+    "Era a l'est de Dídac.",
+    "Era al jardí d'hivern.",
+    "A la seva columna hi havia una caixa.",
+    "Era a un salt de cavall de Carla (com als escacs).",
+    "Tenia un arbre a tocar.",
+    "L'estudi estava buida: ni un sol cos."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait un miroir.",
+    "Il était à l'est de Dídac.",
+    "Il était dans le jardin d'hiver.",
+    "Dans sa colonne se trouvait une caisse.",
+    "Elle était à un saut de cavalier de Carla (comme aux échecs).",
+    "Il avait un arbre tout près.",
+    "Le cabinet était vide : pas une âme."
+   ]
+  },
+  "solucio": {
+   "A": [
+    5,
+    2
+   ],
+   "B": [
+    0,
+    5
+   ],
+   "C": [
+    3,
+    0
+   ],
+   "D": [
+    4,
+    3
+   ],
+   "E": [
+    2,
+    4
+   ],
+   "V": [
+    1,
+    1
+   ]
+  },
+  "assassi": "C"
+ }
+]

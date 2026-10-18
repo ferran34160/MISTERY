@@ -216,22 +216,22 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
+    "nom": "Blai",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carles",
-    "genere": "m"
-   },
-   {
-    "id": "D",
-    "nom": "Dolors",
+    "nom": "Clara",
     "genere": "f"
    },
    {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
     "id": "E",
-    "nom": "Eudald",
+    "nom": "Enric",
     "genere": "m"
    },
    {
@@ -279,21 +279,21 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest de Biel.",
+    "Era a l'oest de Blai.",
     "Era a l'oest d'Aleix.",
     "A la seva columna hi havia una escala.",
-    "Era al costat d'una llibreria.",
-    "Era a l'habitació.",
+    "Tenia una llibreria a tocar.",
+    "Estava a l'habitació.",
     "Tenia una taula a tocar.",
     "Hi havia exactament 2 persones al bar, víctima inclosa."
    ],
    "fr": [
-    "Il était à l'ouest de Biel.",
+    "Il était à l'ouest de Blai.",
     "Il était à l'ouest d'Aleix.",
     "Dans sa colonne se trouvait une échelle.",
-    "Elle était à côté d'une bibliothèque.",
+    "Il avait une bibliothèque tout près.",
     "Il était dans la chambre.",
-    "Il était à côté d'une table.",
+    "Il avait une table tout près.",
     "Il y avait exactement 2 personnes dans le bar, victime comprise."
    ]
   },
@@ -532,13 +532,13 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
+    "nom": "Aina",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -547,13 +547,13 @@
    },
    {
     "id": "D",
-    "nom": "Dídac",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -601,21 +601,21 @@
   "textos": {
    "ca": [
     "A la seva fila hi havia una butaca.",
-    "Era a la mateixa habitació que Elna.",
-    "Era a l'habitació.",
-    "Estava a la recepció.",
+    "Era a la mateixa habitació que Eudald.",
+    "Estava a l'habitació.",
+    "Era a la recepció.",
     "A la seva columna hi havia un mirall.",
     "Tenia una maleta a tocar.",
-    "Tenia una butaca a tocar."
+    "Era al costat d'una butaca."
    ],
    "fr": [
     "Sur sa ligne se trouvait un fauteuil.",
-    "Elle était dans la même pièce qu'Elna.",
-    "Elle était dans la chambre.",
-    "Il était dans la réception.",
+    "Il était dans la même pièce qu'Eudald.",
+    "Elle se trouvait dans la chambre.",
+    "Il se trouvait dans la réception.",
     "Dans sa colonne se trouvait un miroir.",
-    "Elle était à côté d'une valise.",
-    "Il avait un fauteuil tout près."
+    "Elle avait une valise tout près.",
+    "Il était à côté d'un fauteuil."
    ]
   },
   "solucio": {
@@ -854,28 +854,28 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Bruna",
+    "nom": "Berta",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Dolors",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -935,22 +935,22 @@
     "Era al costat d'una paret exterior de l'hotel.",
     "A la seva fila hi havia un mirall.",
     "A la seva fila hi havia una cadira.",
-    "Era al bar.",
+    "Estava al bar.",
     "Només hi havia una persona al bar, víctima inclosa.",
     "Estava a la biblioteca.",
     "Era al nord de Vicenç.",
-    "Era a la mateixa diagonal que Elna."
+    "Era a la mateixa diagonal que Eudald."
    ],
    "fr": [
     "Elle était à côté d'une armoire.",
-    "Elle était contre un mur extérieur de l'hôtel.",
+    "Il était contre un mur extérieur de l'hôtel.",
     "Sur sa ligne se trouvait un miroir.",
     "Sur sa ligne se trouvait une chaise.",
-    "Elle se trouvait dans le bar.",
+    "Elle était dans le bar.",
     "Il n'y avait qu'une personne dans le bar, victime comprise.",
     "Il se trouvait dans la bibliothèque.",
     "Elle était au nord de Vicenç.",
-    "Elle était sur la même diagonale qu'Elna."
+    "Elle était sur la même diagonale qu'Eudald."
    ]
   },
   "solucio": {
