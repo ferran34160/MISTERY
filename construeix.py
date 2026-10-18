@@ -306,11 +306,11 @@ def main():
             im.save(buf, "PNG", optimize=True)
             return "image/png", buf.getvalue()
         im = im.convert("RGB")
-        im.thumbnail((144, 144), Image.LANCZOS)
+        im.thumbnail((144 if ruta.startswith("retrats") else 96, 144 if ruta.startswith("retrats") else 96), Image.LANCZOS)
         im.save(buf, "JPEG", quality=78, optimize=True)
         return "image/jpeg", buf.getvalue()
 
-    for ruta in set(re.findall(r'"((?:retrats|objectes)/[a-z_]+\.(?:jpg|png))"', html)):
+    for ruta in set(re.findall(r'"((?:retrats|objectes|terres)/[a-z_]+\.(?:jpg|png))"', html)):
         mime, raw = dades(ruta)
         html = html.replace('"' + ruta + '"', '"data:' + mime + ';base64,' + base64.b64encode(raw).decode() + '"')
     with open("joc.html", "w", encoding="utf-8") as fh:

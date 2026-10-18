@@ -83,23 +83,24 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .nws{display:none}
 
 
-/* terres de les sales */
-.tx-wood{background-image:repeating-linear-gradient(0deg,rgba(90,50,10,.13) 0 1px,transparent 1px 10px),linear-gradient(90deg,rgba(90,50,10,.10) 1px,transparent 1px);background-size:auto,27px 20px}
-.tx-tiles{background-image:conic-gradient(rgba(0,0,0,.10) 25%,transparent 0 50%,rgba(0,0,0,.10) 0 75%,transparent 0);background-size:16px 16px}
-.tx-grass{background-image:radial-gradient(circle at 20% 30%,rgba(30,110,40,.35) 1.2px,transparent 1.7px),radial-gradient(circle at 70% 70%,rgba(20,90,30,.30) 1.3px,transparent 1.8px),radial-gradient(circle at 45% 85%,rgba(60,140,50,.30) 1px,transparent 1.5px);background-size:9px 9px,13px 13px,7px 7px}
-.tx-stone{background-image:linear-gradient(rgba(0,0,0,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.14) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px);background-size:100% 15px,24px 100%,100% 31px}
-.tx-carpet{background-image:repeating-linear-gradient(45deg,rgba(130,40,50,.13) 0 2px,transparent 2px 7px),repeating-linear-gradient(-45deg,rgba(130,40,50,.13) 0 2px,transparent 2px 7px)}
-.tx-water{background-image:repeating-radial-gradient(circle at 0 100%,transparent 0 5px,rgba(255,255,255,.45) 5px 6.5px),repeating-radial-gradient(circle at 100% 0,transparent 0 6px,rgba(20,90,160,.18) 6px 7px)}
-.tx-sand{background-image:radial-gradient(rgba(120,85,30,.32) 1px,transparent 1.5px),radial-gradient(rgba(255,255,255,.35) 1px,transparent 1.5px);background-size:7px 7px,11px 11px;background-position:0 0,4px 5px}
-.tx-metal{background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.10) 0 1px,transparent 1px 8px),repeating-linear-gradient(-45deg,rgba(255,255,255,.28) 0 1px,transparent 1px 8px)}
-.tx-pavers{background-image:linear-gradient(rgba(70,50,30,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(70,50,30,.16) 1px,transparent 1px);background-size:14px 14px}
+/* terres de les sales (imatges a terres/; el color de la sala hi queda barrejat) */
+.cell[class*="tx-"]{background-size:100% 100%;background-blend-mode:multiply}
+.tx-wood{background-image:url("terres/parquet.jpg")}
+.tx-tiles{background-image:url("terres/rajoles.jpg")}
+.tx-grass{background-image:url("terres/gespa.jpg")}
+.tx-stone{background-image:url("terres/pedra.jpg")}
+.tx-carpet{background-image:url("terres/moqueta.jpg")}
+.tx-water{background-image:url("terres/aigua.jpg")}
+.tx-sand{background-image:url("terres/sorra.jpg")}
+.tx-metal{background-image:url("terres/metall.jpg")}
+.tx-pavers{background-image:url("terres/llambordes.jpg")}
 
 /* tauler */
 .bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
 #board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:none}
 .cell{position:relative;display:flex;align-items:center;justify-content:center;border:0 solid var(--line);outline:1px solid var(--cellgrid);outline-offset:-1px}
 .cell.hole{background:var(--hole);outline:none}
-.cell.blocked{background-image:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.06) 6px 7px)}
+.cell.blocked::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.08) 6px 7px);pointer-events:none}
 .cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
 .cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none;white-space:normal;right:2px;line-height:1.05;z-index:4;text-shadow:0 0 3px rgba(255,255,255,.85),0 0 2px rgba(255,255,255,.85)}
 .cell svg.obj,.cell img.obj{position:absolute;inset:8%;width:84%;height:84%;pointer-events:none}.cell img.obj{object-fit:contain;object-position:center;inset:3%;width:94%;height:94%}
@@ -303,7 +304,7 @@ function roomTex(nom){
   const n=(nom||"").toLowerCase();
   for(const [c,re,t,p] of TEX)if(re.test(n))return {c:"tx-"+c,t,p};
   return {c:"tx-wood",t:null,p:0}}
-const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/1.8):z.sat}% ${dark?34:84}%)`};
+const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/1.8):Math.min(100,z.sat+8)}% ${dark?46:92}%)`};
 const $=s=>document.querySelector(s);
 const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
 const save=(k,v)=>{try{localStorage.setItem("misteri:"+k,JSON.stringify(v))}catch(e){}};
