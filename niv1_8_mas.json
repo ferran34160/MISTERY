@@ -777,7 +777,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
@@ -865,7 +865,7 @@
    "ca": [
     "Era a l'est d'Aleix.",
     "A la seva fila hi havia una figuera.",
-    "Era a l'est de Berta.",
+    "Era a l'est de Bruna.",
     "Era en un racó d'una habitació.",
     "Era a l'est de Gabriel.",
     "Era en un racó d'una habitació.",
@@ -877,7 +877,7 @@
    "fr": [
     "Elle était à l'est d'Aleix.",
     "Sur sa ligne se trouvait un figuier.",
-    "Il était à l'est de Berta.",
+    "Il était à l'est de Bruna.",
     "Elle était dans un coin d'une pièce.",
     "Il était à l'est de Gabriel.",
     "Il était dans un coin d'une pièce.",
@@ -1232,37 +1232,37 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carles",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
-   },
-   {
-    "id": "E",
-    "nom": "Eudald",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
-    "id": "F",
-    "nom": "Fina",
+    "id": "E",
+    "nom": "Elna",
     "genere": "f"
    },
    {
+    "id": "F",
+    "nom": "Fabià",
+    "genere": "m"
+   },
+   {
     "id": "G",
-    "nom": "Gabriel",
+    "nom": "Gerard",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -1327,28 +1327,28 @@
    "ca": [
     "A la seva columna hi havia una taula.",
     "A la seva columna hi havia un carro.",
-    "Tenia un armari a tocar.",
+    "Era al costat d'un armari.",
     "A la seva fila hi havia un banc.",
     "Era al costat d'un armari.",
-    "Era a la cuina.",
+    "Estava a la cuina.",
     "Era a l'oest d'Aina.",
-    "Era al nord de Bruna.",
+    "Era al nord de Biel.",
     "Tenia un carro a tocar.",
-    "Era a l'oest de Valentí.",
+    "Era a l'oest de Vicenç.",
     "No era a la cuina."
    ],
    "fr": [
     "Dans sa colonne se trouvait une table.",
     "Dans sa colonne se trouvait une charrette.",
-    "Elle avait une armoire tout près.",
+    "Elle était à côté d'une armoire.",
     "Sur sa ligne se trouvait un banc.",
     "Il était à côté d'une armoire.",
-    "Elle était dans la cuisine.",
-    "Elle était à l'ouest d'Aina.",
-    "Il était au nord de Bruna.",
-    "Il était à côté d'une charrette.",
-    "Il était à l'ouest de Valentí.",
-    "Il n'était pas dans la cuisine."
+    "Il était dans la cuisine.",
+    "Il était à l'ouest d'Aina.",
+    "Il était au nord de Biel.",
+    "Elle avait une charrette tout près.",
+    "Il était à l'ouest de Vicenç.",
+    "Elle n'était pas dans la cuisine."
    ]
   },
   "solucio": {

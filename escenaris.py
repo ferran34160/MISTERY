@@ -108,7 +108,7 @@ ESCENARIS = {
 # Servei per a tots els escenaris; cada cas en tria un a l'atzar per lletra. (nom, gènere)
 NOMS_LLETRA = {
     "A": [("Aleix", "m"), ("Anna", "f"), ("Arnau", "m"), ("Aina", "f")],
-    "B": [("Biel", "m"), ("Berta", "f"), ("Bruna", "f")],
+    "B": [("Biel", "m"), ("Berta", "f"), ("Blai", "m"), ("Bruna", "f")],
     "C": [("Carles", "m"), ("Clara", "f"), ("Cesc", "m"), ("Carla", "f")],
     "D": [("Dídac", "m"), ("Dolors", "f"), ("David", "m"), ("Delfina", "f")],
     "E": [("Eudald", "m"), ("Elna", "f"), ("Enric", "m"), ("Eulàlia", "f")],
@@ -119,6 +119,6 @@ NOMS_LLETRA = {
     "H": [("Hug", "m"), ("Helena", "f"), ("Hèctor", "m"), ("Heura", "f")],
     "I": [("Ivo", "m"), ("Irene", "f"), ("Ignasi", "m"), ("Isabel", "f"), ("Isidre", "m"), ("Ingrid", "f"),
           ("Iu", "m"), ("Imma", "f")],
-    "J": [("Júlia", "f"), ("Jordi", "m"), ("Judit", "f")],
+    "J": [("Jaume", "m"), ("Júlia", "f"), ("Jordi", "m"), ("Judit", "f")],
     "V": [("Valentí", "m"), ("Violant", "f"), ("Vicenç", "m"), ("Vera", "f")],
 }

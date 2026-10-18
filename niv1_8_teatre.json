@@ -1234,7 +1234,7 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
+    "nom": "Berta",
     "genere": "f"
    },
    {
@@ -1244,8 +1244,8 @@
    },
    {
     "id": "D",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -1254,12 +1254,12 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
+    "nom": "Felip",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guerau",
+    "nom": "Gabriel",
     "genere": "m"
    },
    {
@@ -1332,12 +1332,12 @@
     "Era sobre el sofà.",
     "Era a un salt de cavall d'Anna (com als escacs).",
     "Era al nord d'Anna.",
-    "Era a un salt de cavall de Bruna (com als escacs).",
+    "Era a un salt de cavall de Berta (com als escacs).",
     "Era a un salt de cavall de Vicenç (com als escacs).",
-    "Era a l'est de Dolors.",
+    "Era a l'est de Dídac.",
     "A la seva columna hi havia una escala.",
-    "Era a l'oest de Dolors.",
-    "No era a la mateixa habitació que Ferran."
+    "Era a l'oest de Dídac.",
+    "No era a la mateixa habitació que Felip."
    ],
    "fr": [
     "Elle était sur le tabouret.",
@@ -1345,12 +1345,12 @@
     "Il était sur le canapé.",
     "Il était à un saut de cavalier d'Anna (comme aux échecs).",
     "Elle était au nord d'Anna.",
-    "Elle était à un saut de cavalier de Bruna (comme aux échecs).",
+    "Il était à un saut de cavalier de Berta (comme aux échecs).",
     "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
-    "Il était à l'est de Dolors.",
+    "Il était à l'est de Dídac.",
     "Dans sa colonne se trouvait une échelle.",
-    "Elle était à l'ouest de Dolors.",
-    "Elle n'était pas dans la même pièce que Ferran."
+    "Elle était à l'ouest de Dídac.",
+    "Il n'était pas dans la même pièce que Felip."
    ]
   },
   "solucio": {

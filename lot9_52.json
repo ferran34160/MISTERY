@@ -360,17 +360,17 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carles",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
@@ -380,18 +380,18 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
+    "nom": "Frederic",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guillem",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "H",
-    "nom": "Heura",
-    "genere": "f"
+    "nom": "Hèctor",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -478,36 +478,36 @@
   "textos": {
    "ca": [
     "Era a l'est de Vicenç.",
-    "Era a l'oest de Carles.",
+    "Era a l'oest de Cesc.",
     "A la seva columna hi havia una taula.",
     "A la seva fila hi havia una cadira.",
-    "No era a la mateixa habitació que Bruna.",
+    "No era a la mateixa habitació que Biel.",
     "Era a un salt de cavall d'Aina (com als escacs).",
     "A la seva fila hi havia una taula.",
     "A la seva columna hi havia un pou.",
-    "Era al nord de Guillem.",
-    "Era al sud d'Heura.",
+    "Era al nord de Gemma.",
+    "Era al sud d'Hèctor.",
     "Era a la mateixa diagonal que Vicenç.",
     "A la seva columna hi havia un armari.",
     "Era en un racó d'una habitació.",
-    "Era a la mateixa habitació que David.",
+    "Era a la mateixa habitació que Dídac.",
     "Hi havia exactament 3 persones a la cuina, víctima inclosa."
    ],
    "fr": [
-    "Il était à l'est de Vicenç.",
-    "Elle était à l'ouest de Carles.",
+    "Elle était à l'est de Vicenç.",
+    "Il était à l'ouest de Cesc.",
     "Dans sa colonne se trouvait une table.",
     "Sur sa ligne se trouvait une chaise.",
-    "Il n'était pas dans la même pièce que Bruna.",
+    "Il n'était pas dans la même pièce que Biel.",
     "Il était à un saut de cavalier d'Aina (comme aux échecs).",
     "Sur sa ligne se trouvait une table.",
     "Dans sa colonne se trouvait un puits.",
-    "Il était au nord de Guillem.",
-    "Il était au sud d'Heura.",
+    "Il était au nord de Gemma.",
+    "Il était au sud d'Hèctor.",
     "Il était sur la même diagonale que Vicenç.",
     "Dans sa colonne se trouvait une armoire.",
     "Elle était dans un coin d'une pièce.",
-    "Il était dans la même pièce que David.",
+    "Il était dans la même pièce que Dídac.",
     "Il y avait exactement 3 personnes dans la cuisine, victime comprise."
    ]
   },

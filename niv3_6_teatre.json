@@ -535,22 +535,22 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
-   },
-   {
-    "id": "D",
-    "nom": "David",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
-    "id": "E",
-    "nom": "Elna",
+    "id": "D",
+    "nom": "Dolors",
     "genere": "f"
    },
    {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -600,22 +600,22 @@
    "ca": [
     "No era a la platea.",
     "Era al costat d'un sofà.",
-    "Era a l'oest de David.",
+    "Era a l'oest de Dolors.",
     "Era al costat d'un sofà.",
-    "Era al costat d'un mirall.",
+    "Tenia un mirall a tocar.",
     "Era a l'est de Bruna.",
     "Hi havia exactament 3 persones a l'escenari, víctima inclosa.",
     "Era a la mateixa diagonal que Aina."
    ],
    "fr": [
-    "Il n'était pas dans le parterre.",
-    "Il avait un canapé tout près.",
-    "Elle était à l'ouest de David.",
-    "Elle était à côté d'un canapé.",
-    "Elle avait un miroir tout près.",
-    "Elle était à l'est de Bruna.",
+    "Elle n'était pas dans le parterre.",
+    "Il était à côté d'un canapé.",
+    "Elle était à l'ouest de Dolors.",
+    "Elle avait un canapé tout près.",
+    "Il était à côté d'un miroir.",
+    "Il était à l'est de Bruna.",
     "Il y avait exactement 3 personnes dans la scène, victime comprise.",
-    "Elle était sur la même diagonale qu'Aina."
+    "Il était sur la même diagonale qu'Aina."
    ]
   },
   "solucio": {
@@ -840,8 +840,8 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -924,8 +924,8 @@
     "Il était au sud de Cesc.",
     "Il avait un tabouret tout près.",
     "Il était à l'ouest d'Elna.",
-    "Elle était sur la même diagonale qu'Aina.",
-    "Elle était à l'ouest d'Aina."
+    "Il était sur la même diagonale qu'Aina.",
+    "Il était à l'ouest d'Aina."
    ]
   },
   "solucio": {
@@ -1169,7 +1169,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {

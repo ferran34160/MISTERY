@@ -764,8 +764,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -873,10 +873,10 @@
     "Dans sa colonne se trouvait un chariot.",
     "Sur sa ligne se trouvait un poêle.",
     "Sur sa ligne se trouvait un guichet.",
-    "Il était à un saut de cavalier d'Enric (comme aux échecs).",
+    "Elle était à un saut de cavalier d'Enric (comme aux échecs).",
     "Elle se trouvait dans l'entrepôt.",
     "Elle était dans la quai.",
-    "Il était dans la quai.",
+    "Elle était dans la quai.",
     "Il était à l'ouest d'Aina.",
     "Il était à côté d'un chariot.",
     "Elle était sur la même diagonale que Vicenç.",
@@ -1246,7 +1246,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {

@@ -307,7 +307,7 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
+    "nom": "Berta",
     "genere": "f"
    },
    {
@@ -317,23 +317,23 @@
    },
    {
     "id": "D",
-    "nom": "Dolors",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Enric",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -394,27 +394,27 @@
   "textos": {
    "ca": [
     "Era en un racó d'una habitació.",
-    "Tenia un bagul a tocar.",
+    "Era al costat d'un bagul.",
     "Era al costat d'una paret exterior de l'edifici.",
     "Era a l'escenari.",
     "Era a l'est de Vera.",
     "Era sobre la butaca.",
-    "Era a l'est de Bruna.",
-    "Era al nord de Dolors.",
+    "Era a l'est de Berta.",
+    "Era al nord de Delfina.",
     "A la seva fila hi havia una escala.",
     "Era a la mateixa diagonal que Clara."
    ],
    "fr": [
-    "Il était dans un coin d'une pièce.",
-    "Elle était à côté d'une malle.",
+    "Elle était dans un coin d'une pièce.",
+    "Elle avait une malle tout près.",
     "Il était contre un mur extérieur de l'édifice.",
-    "Elle se trouvait dans la scène.",
-    "Elle était à l'est de Vera.",
+    "Il était dans la scène.",
+    "Il était à l'est de Vera.",
     "Elle était sur le fauteuil.",
-    "Elle était à l'est de Bruna.",
-    "Elle était au nord de Dolors.",
+    "Elle était à l'est de Berta.",
+    "Elle était au nord de Delfina.",
     "Sur sa ligne se trouvait une échelle.",
-    "Elle était sur la même diagonale que Clara."
+    "Il était sur la même diagonale que Clara."
    ]
   },
   "solucio": {
@@ -770,8 +770,8 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -866,10 +866,10 @@
     "Era a l'est de Carla.",
     "Era a un salt de cavall de Carla (com als escacs).",
     "Era a la mateixa diagonal que Valentí.",
-    "Era a la mateixa diagonal que Berta."
+    "Era a la mateixa diagonal que Blai."
    ],
    "fr": [
-    "Elle était dans un coin d'une pièce.",
+    "Il était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait un fauteuil.",
     "Il était à l'ouest de Carla.",
     "Sur sa ligne se trouvait un rideau.",
@@ -878,7 +878,7 @@
     "Il était à l'est de Carla.",
     "Il était à un saut de cavalier de Carla (comme aux échecs).",
     "Elle était sur la même diagonale que Valentí.",
-    "Elle était sur la même diagonale que Berta."
+    "Elle était sur la même diagonale que Blai."
    ]
   },
   "solucio": {
@@ -1235,18 +1235,18 @@
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Enric",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1321,22 +1321,22 @@
     "Era al sud d'Aina.",
     "Era al costat d'un bagul.",
     "Era a la mateixa diagonal que Carla.",
-    "Era a l'oest de Guerau.",
+    "Era a l'oest de Glòria.",
     "Era a la mateixa diagonal que Violant.",
-    "Era a l'est d'Eulàlia."
+    "Era a l'est d'Enric."
    ],
    "fr": [
     "Sur sa ligne se trouvait une échelle.",
     "Elle était au nord d'Aina.",
-    "Il était au nord d'Aina.",
+    "Elle était au nord d'Aina.",
     "Elle était au nord de Bruna.",
-    "Elle était à côté d'une malle.",
+    "Elle avait une malle tout près.",
     "Elle était au sud d'Aina.",
     "Elle avait une malle tout près.",
-    "Elle était sur la même diagonale que Carla.",
-    "Elle était à l'ouest de Guerau.",
+    "Il était sur la même diagonale que Carla.",
+    "Elle était à l'ouest de Glòria.",
     "Elle était sur la même diagonale que Violant.",
-    "Elle était à l'est d'Eulàlia."
+    "Elle était à l'est d'Enric."
    ]
   },
   "solucio": {

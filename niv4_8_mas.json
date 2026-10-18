@@ -788,8 +788,8 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -886,24 +886,24 @@
     "Era al nord d'Anna.",
     "Només ell i Frederic eren a la seva habitació.",
     "Era a l'est d'Enric.",
-    "Era al nord de Berta.",
+    "Era al nord de Blai.",
     "Era a l'est de David.",
     "Era a l'est d'Enric.",
     "Era a l'oest d'Enric.",
-    "Era a un salt de cavall de Berta (com als escacs)."
+    "Era a un salt de cavall de Blai (com als escacs)."
    ],
    "fr": [
     "Sur sa ligne se trouvait un fauteuil à bascule.",
     "Il était contre un mur extérieur de la propriété.",
     "Elle avait une armoire tout près.",
-    "Elle était au nord d'Anna.",
+    "Il était au nord d'Anna.",
     "Seuls lui et Frederic étaient dans sa pièce.",
     "Il était à l'est d'Enric.",
-    "Elle était au nord de Berta.",
-    "Elle était à l'est de David.",
-    "Elle était à l'est d'Enric.",
+    "Elle était au nord de Blai.",
+    "Il était à l'est de David.",
+    "Il était à l'est d'Enric.",
     "Il était à l'ouest d'Enric.",
-    "Il était à un saut de cavalier de Berta (comme aux échecs)."
+    "Il était à un saut de cavalier de Blai (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -1254,8 +1254,8 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -1379,10 +1379,10 @@
     "Il se trouvait dans la basse-cour.",
     "Sur sa ligne se trouvait un tonneau.",
     "Il était dans la basse-cour.",
-    "Elle était à l'ouest de Carles.",
+    "Il était à l'ouest de Carles.",
     "Il n'y avait qu'une personne dans le potager, victime comprise.",
     "Seuls lui et Glòria étaient dans sa pièce.",
-    "Elle était sur la même diagonale que David.",
+    "Il était sur la même diagonale que David.",
     "Dans sa colonne se trouvait un tonneau.",
     "Il était sur la même diagonale qu'Anna."
    ]

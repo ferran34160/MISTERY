@@ -378,8 +378,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -490,7 +490,7 @@
     "Elle se trouvait dans le porche.",
     "Sur sa ligne se trouvait une charrette.",
     "Il était contre un mur extérieur de la propriété.",
-    "Il était à un saut de cavalier de Glòria (comme aux échecs).",
+    "Elle était à un saut de cavalier de Glòria (comme aux échecs).",
     "Il était à un saut de cavalier de Frederic (comme aux échecs)."
    ]
   },
@@ -1452,8 +1452,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -1591,9 +1591,9 @@
     "Il était au sud de Flora.",
     "Dans sa colonne se trouvait un tonneau.",
     "Elle était dans la même pièce qu'Arnau.",
-    "Il se trouvait dans le cellier.",
+    "Elle se trouvait dans le cellier.",
     "Elle était au nord de Guerau.",
-    "Il était sur la même diagonale que Guerau.",
+    "Elle était sur la même diagonale que Guerau.",
     "Elle était à un saut de cavalier de Vera (comme aux échecs)."
    ]
   },

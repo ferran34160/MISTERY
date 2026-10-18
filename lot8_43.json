@@ -298,7 +298,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
@@ -393,7 +393,7 @@
    "ca": [
     "Era a l'est de Dolors.",
     "Era al costat d'un carro.",
-    "Era a la mateixa diagonal que Berta.",
+    "Era a la mateixa diagonal que Bruna.",
     "Estava a la sala.",
     "Era a la mateixa habitació que Carles.",
     "A la seva fila hi havia una taula.",
@@ -406,7 +406,7 @@
    "fr": [
     "Il était à l'est de Dolors.",
     "Elle était à côté d'une charrette.",
-    "Il était sur la même diagonale que Berta.",
+    "Il était sur la même diagonale que Bruna.",
     "Il se trouvait dans le salon.",
     "Elle était dans la même pièce que Carles.",
     "Sur sa ligne se trouvait une table.",
@@ -780,8 +780,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -889,13 +889,13 @@
     "Elle était sur le banc.",
     "Sur sa ligne se trouvait une table.",
     "Il était sur la chaise.",
-    "Il était dans la même pièce que Fanny.",
+    "Elle était dans la même pièce que Fanny.",
     "Elle était à l'ouest de Fanny.",
     "Dans sa colonne se trouvait une armoire.",
     "Il avait une charrette tout près.",
     "Il n'était pas dans la même pièce que Dolors.",
     "Il n'était pas dans la même pièce qu'Arnau.",
-    "Il était sur la même diagonale que Dolors."
+    "Elle était sur la même diagonale que Dolors."
    ]
   },
   "solucio": {
@@ -1257,8 +1257,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",

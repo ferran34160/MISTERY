@@ -661,13 +661,13 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -676,12 +676,12 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -728,22 +728,22 @@
   ],
   "textos": {
    "ca": [
-    "Tenia un barril a tocar.",
-    "Era al nord de Dolors.",
+    "Era al costat d'un barril.",
+    "Era al nord de Dídac.",
     "Era a l'hort.",
-    "Era al costat d'una cadira.",
+    "Tenia una cadira a tocar.",
     "Era sola a la seva habitació.",
     "Estava al corral.",
     "Hi havia exactament 2 persones a l'hort, víctima inclosa.",
     "Era a un salt de cavall de Bruna (com als escacs)."
    ],
    "fr": [
-    "Elle avait un tonneau tout près.",
-    "Il était au nord de Dolors.",
+    "Il avait un tonneau tout près.",
+    "Elle était au nord de Dídac.",
     "Il se trouvait dans le potager.",
-    "Elle avait une chaise tout près.",
-    "Elle ne partageait sa pièce avec personne, pas même avec la victime.",
-    "Elle se trouvait dans la basse-cour.",
+    "Elle était à côté d'une chaise.",
+    "Elle était seule dans sa pièce.",
+    "Elle était dans la basse-cour.",
     "Il y avait exactement 2 personnes dans le potager, victime comprise.",
     "Il était à un saut de cavalier de Bruna (comme aux échecs)."
    ]
@@ -1414,7 +1414,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
@@ -1517,7 +1517,7 @@
     "Era en un racó d'una habitació.",
     "A la seva columna hi havia una cadira.",
     "Era a un salt de cavall d'Eulàlia (com als escacs).",
-    "Era al sud de Berta."
+    "Era al sud de Bruna."
    ],
    "fr": [
     "Sur sa ligne se trouvait un tonneau.",
@@ -1531,7 +1531,7 @@
     "Elle était dans un coin d'une pièce.",
     "Dans sa colonne se trouvait une chaise.",
     "Il était à un saut de cavalier d'Eulàlia (comme aux échecs).",
-    "Elle était au sud de Berta."
+    "Elle était au sud de Bruna."
    ]
   },
   "solucio": {

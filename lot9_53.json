@@ -365,8 +365,8 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -484,7 +484,7 @@
    "fr": [
     "Elle était à côté d'une table.",
     "Seuls elle et Heura étaient dans sa pièce.",
-    "Elle n'était pas dans la cuisine.",
+    "Il n'était pas dans la cuisine.",
     "Il était à l'ouest d'Anna.",
     "Elle était au nord de Violant.",
     "Elle était à côté d'un puits.",
@@ -911,22 +911,22 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
-   },
-   {
-    "id": "C",
-    "nom": "Cesc",
+    "nom": "Blai",
     "genere": "m"
    },
    {
-    "id": "D",
-    "nom": "Dolors",
+    "id": "C",
+    "nom": "Clara",
     "genere": "f"
    },
    {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
     "id": "E",
-    "nom": "Enric",
+    "nom": "Eudald",
     "genere": "m"
    },
    {
@@ -936,8 +936,8 @@
    },
    {
     "id": "G",
-    "nom": "Griselda",
-    "genere": "f"
+    "nom": "Gabriel",
+    "genere": "m"
    },
    {
     "id": "H",
@@ -946,7 +946,7 @@
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -1024,33 +1024,33 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'est de Bruna.",
-    "Era al nord d'Enric.",
+    "Era a l'est de Blai.",
+    "Era al nord d'Eudald.",
     "Era al costat d'un banc.",
     "A la seva fila hi havia un carro.",
     "A la seva columna hi havia un pou.",
     "Era a l'oest d'Aleix.",
     "A la seva fila hi havia un banc.",
     "A la seva columna hi havia un carro.",
-    "Era a la mateixa diagonal que Cesc.",
-    "Era al nord de Dolors.",
-    "Era a la mateixa habitació que Griselda.",
+    "Era a la mateixa diagonal que Clara.",
+    "Era al nord de David.",
+    "Era a la mateixa habitació que Gabriel.",
     "A la seva fila hi havia una llar de foc.",
     "A la seva columna hi havia una llar de foc.",
     "Només hi havia una persona a l'hort, víctima inclosa."
    ],
    "fr": [
-    "Il était à l'est de Bruna.",
-    "Elle était au nord d'Enric.",
+    "Elle était à l'est de Blai.",
+    "Il était au nord d'Eudald.",
     "Il était à côté d'un banc.",
     "Sur sa ligne se trouvait une charrette.",
     "Dans sa colonne se trouvait un puits.",
-    "Elle était à l'ouest d'Aleix.",
+    "Il était à l'ouest d'Aleix.",
     "Sur sa ligne se trouvait un banc.",
     "Dans sa colonne se trouvait une charrette.",
-    "Il était sur la même diagonale que Cesc.",
-    "Elle était au nord de Dolors.",
-    "Il était dans la même pièce que Griselda.",
+    "Il était sur la même diagonale que Clara.",
+    "Il était au nord de David.",
+    "Il était dans la même pièce que Gabriel.",
     "Sur sa ligne se trouvait une cheminée.",
     "Dans sa colonne se trouvait une cheminée.",
     "Il n'y avait qu'une personne dans le potager, victime comprise."
@@ -1475,8 +1475,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -1608,7 +1608,7 @@
     "Elle était au nord d'Aina.",
     "Dans sa colonne se trouvait un puits.",
     "Il était à un saut de cavalier de Carles (comme aux échecs).",
-    "Il était dans un coin d'une pièce.",
+    "Elle était dans un coin d'une pièce.",
     "Il était à un saut de cavalier de Ferran (comme aux échecs)."
    ]
   },

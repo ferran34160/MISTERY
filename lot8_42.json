@@ -326,8 +326,8 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -437,7 +437,7 @@
    "fr": [
     "Elle était à côté d'un tonneau.",
     "Il était à un saut de cavalier de Vera (comme aux échecs).",
-    "Elle avait un tonneau tout près.",
+    "Il avait un tonneau tout près.",
     "Il était au nord de Fabià.",
     "Dans sa colonne se trouvait un puits.",
     "Sur sa ligne se trouvait un figuier.",
@@ -1280,8 +1280,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -1373,22 +1373,22 @@
     "Estava al porxo.",
     "Era a l'oest de Vicenç.",
     "Era al costat d'una figuera.",
-    "Era a l'est de Biel.",
+    "Era a l'est de Berta.",
     "Ningú no era a la sala, ni tan sols la víctima.",
     "Era en un racó d'una habitació.",
-    "Era al nord de Biel."
+    "Era al nord de Berta."
    ],
    "fr": [
     "Il était à côté d'un puits.",
     "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
-    "Il avait une charrette tout près.",
+    "Elle avait une charrette tout près.",
     "Il était dans le porche.",
     "Il était à l'ouest de Vicenç.",
     "Il avait un figuier tout près.",
-    "Il était à l'est de Biel.",
+    "Il était à l'est de Berta.",
     "Le salon était vide : pas une âme.",
     "Il était dans un coin d'une pièce.",
-    "Elle était au nord de Biel."
+    "Elle était au nord de Berta."
    ]
   },
   "solucio": {
@@ -1735,8 +1735,8 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -1745,13 +1745,13 @@
    },
    {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eudald",
-    "genere": "m"
+    "nom": "Elna",
+    "genere": "f"
    },
    {
     "id": "F",
@@ -1760,12 +1760,12 @@
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -1827,30 +1827,30 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest d'Eudald.",
+    "Era a l'oest d'Elna.",
     "A la seva fila hi havia una taula.",
     "Estava a la sala.",
     "Era a la mateixa habitació que Aleix.",
-    "Era a un salt de cavall d'Eudald (com als escacs).",
+    "Era a un salt de cavall d'Elna (com als escacs).",
     "Estava al porxo.",
     "Era en un racó d'una habitació.",
     "A la seva columna hi havia una figuera.",
-    "Estava a la cuina.",
+    "Era a la cuina.",
     "Era a un salt de cavall de Cesc (com als escacs).",
-    "Era a l'est de David."
+    "Era a l'est de Dídac."
    ],
    "fr": [
-    "Il était à l'ouest d'Eudald.",
+    "Il était à l'ouest d'Elna.",
     "Sur sa ligne se trouvait une table.",
-    "Il était dans le salon.",
-    "Elle était dans la même pièce qu'Aleix.",
-    "Elle était à un saut de cavalier d'Eudald (comme aux échecs).",
+    "Il se trouvait dans le salon.",
+    "Il était dans la même pièce qu'Aleix.",
+    "Elle était à un saut de cavalier d'Elna (comme aux échecs).",
     "Il se trouvait dans le porche.",
-    "Il était dans un coin d'une pièce.",
+    "Elle était dans un coin d'une pièce.",
     "Dans sa colonne se trouvait un figuier.",
-    "Il se trouvait dans la cuisine.",
+    "Elle se trouvait dans la cuisine.",
     "Elle était à un saut de cavalier de Cesc (comme aux échecs).",
-    "Elle était à l'est de David."
+    "Il était à l'est de Dídac."
    ]
   },
   "solucio": {

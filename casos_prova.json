@@ -180,7 +180,7 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
@@ -247,7 +247,7 @@
   ],
   "textos": {
    "ca": [
-    "No era a la mateixa habitació que Berta.",
+    "No era a la mateixa habitació que Bruna.",
     "Era al costat d'una paret exterior de la finca.",
     "Era al costat d'un carro.",
     "Era a la mateixa habitació que Elna.",
@@ -257,7 +257,7 @@
     "Era a la cuina."
    ],
    "fr": [
-    "Elle n'était pas dans la même pièce que Berta.",
+    "Elle n'était pas dans la même pièce que Bruna.",
     "Elle était contre un mur extérieur de la propriété.",
     "Elle avait une charrette tout près.",
     "Elle était dans la même pièce qu'Elna.",
@@ -476,28 +476,28 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carles",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
-   },
-   {
-    "id": "E",
-    "nom": "Enric",
+    "nom": "David",
     "genere": "m"
    },
    {
-    "id": "V",
-    "nom": "Vera",
+    "id": "E",
+    "nom": "Eulàlia",
     "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -544,24 +544,24 @@
   ],
   "textos": {
    "ca": [
-    "Era a un salt de cavall de Carles (com als escacs).",
+    "Era a un salt de cavall de Carla (com als escacs).",
     "No era a l'hort.",
-    "Era a l'est de Bruna.",
-    "Era a la mateixa habitació que Bruna.",
-    "No era a la mateixa habitació que Vera.",
+    "Era a l'est de Biel.",
+    "Era a la mateixa habitació que Biel.",
+    "No era a la mateixa habitació que Valentí.",
     "A la seva columna hi havia un armari.",
-    "Era al nord d'Enric.",
+    "Era al nord d'Eulàlia.",
     "Era al nord d'Aleix."
    ],
    "fr": [
-    "Elle était à un saut de cavalier de Carles (comme aux échecs).",
-    "Il n'était pas dans le potager.",
-    "Elle était à l'est de Bruna.",
-    "Il était dans la même pièce que Bruna.",
-    "Il n'était pas dans la même pièce que Vera.",
+    "Il était à un saut de cavalier de Carla (comme aux échecs).",
+    "Elle n'était pas dans le potager.",
+    "Il était à l'est de Biel.",
+    "Elle était dans la même pièce que Biel.",
+    "Il n'était pas dans la même pièce que Valentí.",
     "Dans sa colonne se trouvait une armoire.",
-    "Elle était au nord d'Enric.",
-    "Elle était au nord d'Aleix."
+    "Il était au nord d'Eulàlia.",
+    "Il était au nord d'Aleix."
    ]
   },
   "solucio": {
@@ -773,8 +773,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -845,7 +845,7 @@
     "Era al costat d'una figuera.",
     "Era a un salt de cavall de Carles (com als escacs).",
     "A la seva columna hi havia una llar de foc.",
-    "Era a un salt de cavall de Biel (com als escacs).",
+    "Era a un salt de cavall de Berta (com als escacs).",
     "Hi havia exactament 3 persones a la sala, víctima inclosa.",
     "Era al costat d'una paret exterior de la finca."
    ],
@@ -855,9 +855,9 @@
     "Elle avait un figuier tout près.",
     "Il était à un saut de cavalier de Carles (comme aux échecs).",
     "Dans sa colonne se trouvait une cheminée.",
-    "Elle était à un saut de cavalier de Biel (comme aux échecs).",
+    "Elle était à un saut de cavalier de Berta (comme aux échecs).",
     "Il y avait exactement 3 personnes dans le salon, victime comprise.",
-    "Il était contre un mur extérieur de la propriété."
+    "Elle était contre un mur extérieur de la propriété."
    ]
   },
   "solucio": {
@@ -1073,8 +1073,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -1359,23 +1359,23 @@
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carles",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -1417,20 +1417,20 @@
   ],
   "textos": {
    "ca": [
-    "Era a la mateixa habitació que David.",
-    "Era al celler.",
-    "Era a un salt de cavall de Bruna (com als escacs).",
+    "Era a la mateixa habitació que Delfina.",
+    "Estava al celler.",
+    "Era a un salt de cavall de Biel (com als escacs).",
     "Era a l'oest de Valentí.",
-    "Era a la mateixa diagonal que Bruna.",
-    "Era a l'oest de Bruna."
+    "Era a la mateixa diagonal que Biel.",
+    "Era a l'oest de Biel."
    ],
    "fr": [
-    "Elle était dans la même pièce que David.",
-    "Elle se trouvait dans le cellier.",
-    "Elle était à un saut de cavalier de Bruna (comme aux échecs).",
-    "Il était à l'ouest de Valentí.",
-    "Il était sur la même diagonale que Bruna.",
-    "Il était à l'ouest de Bruna."
+    "Il était dans la même pièce que Delfina.",
+    "Elle était dans le cellier.",
+    "Il était à un saut de cavalier de Biel (comme aux échecs).",
+    "Elle était à l'ouest de Valentí.",
+    "Il était sur la même diagonale que Biel.",
+    "Il était à l'ouest de Biel."
    ]
   },
   "solucio": {
@@ -2508,8 +2508,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -2580,7 +2580,7 @@
     "Era a un salt de cavall de Clara (com als escacs).",
     "A la seva fila hi havia una figuera.",
     "Era a la mateixa habitació que Clara.",
-    "Era a un salt de cavall de Biel (com als escacs).",
+    "Era a un salt de cavall de Berta (com als escacs).",
     "A la seva fila hi havia una figuera.",
     "Era a la mateixa diagonal que Aina.",
     "Era a l'est de Clara."
@@ -2589,11 +2589,11 @@
     "Dans sa colonne se trouvait une armoire.",
     "Elle était à un saut de cavalier de Clara (comme aux échecs).",
     "Sur sa ligne se trouvait un figuier.",
-    "Il était dans la même pièce que Clara.",
-    "Il était à un saut de cavalier de Biel (comme aux échecs).",
+    "Elle était dans la même pièce que Clara.",
+    "Il était à un saut de cavalier de Berta (comme aux échecs).",
     "Sur sa ligne se trouvait un figuier.",
-    "Il était sur la même diagonale qu'Aina.",
-    "Il était à l'est de Clara."
+    "Elle était sur la même diagonale qu'Aina.",
+    "Elle était à l'est de Clara."
    ]
   },
   "solucio": {
@@ -2805,8 +2805,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -2878,7 +2878,7 @@
     "Era a un salt de cavall de Vera (com als escacs).",
     "Era a la mateixa habitació que Cesc.",
     "Era a l'est de Vera.",
-    "Era a la mateixa diagonal que Biel.",
+    "Era a la mateixa diagonal que Berta.",
     "A la seva fila hi havia un balancí.",
     "Només hi havia una persona a la cuina, víctima inclosa."
    ],
@@ -2886,9 +2886,9 @@
     "Elle n'était pas dans la basse-cour.",
     "Sur sa ligne se trouvait une charrette.",
     "Il était à un saut de cavalier de Vera (comme aux échecs).",
-    "Il était dans la même pièce que Cesc.",
+    "Elle était dans la même pièce que Cesc.",
     "Il était à l'est de Vera.",
-    "Il était sur la même diagonale que Biel.",
+    "Il était sur la même diagonale que Berta.",
     "Sur sa ligne se trouvait un fauteuil à bascule.",
     "Il n'y avait qu'une personne dans la cuisine, victime comprise."
    ]
