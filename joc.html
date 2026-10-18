@@ -80,7 +80,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 
 /* tauler */
 .bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
-#board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:manipulation}
+#board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:none}
 .cell{position:relative;display:flex;align-items:center;justify-content:center;border:0 solid var(--line);outline:1px solid var(--cellgrid);outline-offset:-1px;overflow:hidden}
 .cell.hole{background:var(--hole);outline:none}
 .cell.blocked{background-image:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.06) 6px 7px)}
@@ -96,7 +96,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 
 /* eines */
 .legend{display:flex;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0}.legend span{display:inline-flex;align-items:center;gap:5px;background:var(--panel);border:1.5px solid var(--cellgrid);border-radius:20px;padding:2px 9px 2px 4px;font-size:.78rem}.legend svg{width:24px;height:24px}.legend em{font-style:normal;color:var(--muted);font-size:.7rem}
-.tools{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:10px 0}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0}
 .tools button{padding:8px 0;font-size:1.05rem}
 .tools button.on{background:var(--ink);color:var(--bg)}
 .tools button small{display:block;font-size:.62rem;opacity:.8}
@@ -165,18 +165,20 @@ const T={
  ca:{title:"Misteri",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
   genh:"Pistes generals",ok:"Tot correcte fins ara!",errs:n=>n+(n==1?" error marcat en vermell":" errors marcats en vermell"),pickfirst:"Tria primer un sospitós.",victim:"Víctima",
   win:"Cas resolt!",culp:"L'assassí és",in:"Era a la mateixa sala que la víctima, i era l'únic.",time:"Temps",again:"Llista de casos",next:"Cas següent",close:"Tanca",
-  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",
+  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",clearall:"Vols buidar totes les caselles?",
   rules:`<p><b>Objectiu.</b> Descobreix qui va matar la víctima (V). L'assassí és l'<b>únic sospitós que és a la mateixa sala que la víctima</b>.</p>
   <p><b>Regles.</b></p><ul><li>Hi ha una persona a cada fila i a cada columna.</li><li>Només es pot posar gent a caselles lliures: els objectes grossos (taula, tonell, pou…) bloquegen la casella; banc, carro o cadira, no.</li><li>Cada targeta té una pista; també n'hi ha de generals. Cada cas té una única solució.</li></ul>
-  <p><b>Controls.</b></p><ul><li>Toca un sospitós per triar-lo.</li><li>Eina <b>Col·loca</b>: toca una casella per posar-hi el sospitós. Mantenir premut una casella també el col·loca, sigui quina sigui l'eina.</li><li><b>Descarta</b> (✕): marca una casella impossible. <b>Nota</b>: hi apunta la lletra del sospitós. <b>Goma</b>: buida la casella.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li><li>Quan poses un sospitós, la seva fila i columna s'enfosqueixen.</li></ul>
+  <p><b>Controls.</b></p><ul><li><b>Toca un sospitós</b> (a les targetes) per triar-lo.</li><li><b>Toca una casella</b>: hi apuntes o hi treus una nota (la lletra del sospitós en minúscula).</li><li><b>Mantén premuda una casella</b>: hi col·loques el sospitós (cara i lletra grans). Si ja hi és, el treus.</li><li><b>Arrossega el dit</b> per diverses caselles: les omples (o les buides) de notes d'un sol cop.</li><li>Quan poses un sospitós, la seva fila i columna s'enfosqueixen.</li></ul>
+  <p><b>Eines.</b></p><ul><li><b>✕ Descarta</b>: activa-la i toca (o arrossega) per marcar caselles impossibles. Torna-la a tocar per tornar a les notes.</li><li><b>⌫ Goma</b>: activa-la i toca per buidar una casella. <b>Mantén-la premuda</b> per buidar-ho tot.</li><li><b>↶ Desfés</b>: desfà l'última acció.</li><li><b>✔ Revisa</b>: marca en vermell els sospitosos mal col·locats.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li></ul>
   <p><b>Truc.</b> Si una fila o columna només té una casella lliure, hi va algú; si dues persones només caben a dues files, ningú més hi pot anar.</p>`},
  fr:{title:"Mystère",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
   genh:"Indices généraux",ok:"Tout est correct jusqu'ici !",errs:n=>n+(n==1?" erreur marquée en rouge":" erreurs marquées en rouge"),pickfirst:"Choisis d'abord un suspect.",victim:"Victime",
   win:"Affaire résolue !",culp:"Le coupable est",in:"Il était dans la même pièce que la victime, et il était le seul.",time:"Temps",again:"Liste des cas",next:"Cas suivant",close:"Fermer",
-  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",
+  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",clearall:"Vider toutes les cases ?",
   rules:`<p><b>But.</b> Découvre qui a tué la victime (V). Le coupable est le <b>seul suspect dans la même pièce que la victime</b>.</p>
   <p><b>Règles.</b></p><ul><li>Une personne par ligne et par colonne.</li><li>On ne place les gens que sur des cases libres : les gros objets (table, tonneau, puits…) bloquent la case ; banc, charrette ou chaise, non.</li><li>Chaque carte a un indice ; il y en a aussi des généraux. Chaque cas a une seule solution.</li></ul>
-  <p><b>Commandes.</b></p><ul><li>Touche un suspect pour le choisir.</li><li>Outil <b>Placer</b> : touche une case pour y mettre le suspect. Un appui long sur une case le place aussi, quel que soit l'outil.</li><li><b>Écarter</b> (✕) : marque une case impossible. <b>Note</b> : y inscrit la lettre du suspect. <b>Gomme</b> : vide la case.</li><li>Touche un indice pour le barrer quand tu l'as exploité.</li><li>Quand un suspect est placé, sa ligne et sa colonne s'assombrissent.</li></ul>
+  <p><b>Commandes.</b></p><ul><li><b>Touche un suspect</b> (sur les cartes) pour le choisir.</li><li><b>Touche une case</b> : tu y ajoutes ou retires une note (la lettre du suspect en minuscule).</li><li><b>Appui long sur une case</b> : tu y places le suspect (grand visage et grande lettre). S'il y est déjà, tu le retires.</li><li><b>Fais glisser le doigt</b> sur plusieurs cases : tu les remplis (ou vides) de notes d'un seul geste.</li><li>Quand un suspect est placé, sa ligne et sa colonne s'assombrissent.</li></ul>
+  <p><b>Outils.</b></p><ul><li><b>✕ Écarter</b> : active-le puis touche (ou glisse) pour marquer des cases impossibles. Retouche-le pour revenir aux notes.</li><li><b>⌫ Gomme</b> : active-la puis touche pour vider une case. <b>Appui long</b> pour tout vider.</li><li><b>↶ Annuler</b> : annule la dernière action.</li><li><b>✔ Vérifier</b> : marque en rouge les suspects mal placés.</li><li>Touche un indice pour le barrer quand tu l'as exploité.</li></ul>
   <p><b>Astuce.</b> Si une ligne ou colonne n'a qu'une case libre, quelqu'un y est ; si deux personnes ne tiennent que sur deux lignes, personne d'autre ne peut y aller.</p>`}
 };
 const ROOMHUE=[28,205,95,330,50,265,175,10];
@@ -226,7 +228,7 @@ const load=(k,d)=>{try{const v=localStorage.getItem("misteri:"+k);return v?JSON.
 
 let lang=load("lang",(navigator.language||"ca").startsWith("fr")?"fr":"ca");if(lang!=="ca"&&lang!=="fr")lang="ca";
 let prog=load("prog",{});          // id -> {solved,best}
-let cur=null, st=null, tool="place", sel=null, timerH=null, undo=[];
+let cur=null, st=null, tool="note", sel=null, timerH=null, undo=[];
 const t=k=>T[lang][k];
 
 function fmt(s){return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
@@ -305,7 +307,7 @@ function blank(c){return {cells:Array.from({length:c.n},()=>Array.from({length:c
 function obreCas(i){
   cur=CASOS[i];cur._i=i;
   st=load("st:"+cur.id,null)||blank(cur);undo=[];
-  sel=cur.persones[0].id;tool="place";
+  sel=cur.persones[0].id;tool="note";
   $("#home").classList.add("hidden");$("#hero").classList.add("hidden");$("header").classList.remove("hidden");$("#game").classList.remove("hidden");$("#back").classList.remove("hidden");
   render();startTimer();
 }
@@ -386,7 +388,7 @@ function renderBoard(){
   b.innerHTML=h;
 }
 function renderTools(){
-  const L=[["place","👤",t("place")],["mark","✕",t("mark")],["note","✎",t("note")],["erase","⌫",t("erase")],["undo","↶",t("undo")],["check","✔",t("check")]];
+  const L=[["mark","✕",t("mark")],["erase","⌫",t("erase")],["undo","↶",t("undo")],["check","✔",t("check")]];
   $("#tools").innerHTML=L.map(([k,i,l])=>`<button data-k="${k}" class="${k===tool?"on":""}">${i}<small>${l}</small></button>`).join("");
 }
 function clueText(i){return cur.textos[lang][i]}
@@ -405,7 +407,7 @@ $("#cards").onclick=e=>{
   const cl=e.target.closest("[data-clue]"),card=e.target.closest(".card");
   if(!card)return;
   if(sel===card.dataset.p&&cl){toggleClue(+cl.dataset.clue);return}
-  sel=card.dataset.p;if(tool==="erase"||tool==="mark")tool="place";renderTools();renderCards();
+  sel=card.dataset.p;if(tool==="erase"||tool==="mark")tool="note";renderTools();renderCards();
 };
 $("#gen").onclick=e=>{const li=e.target.closest("[data-clue]");if(li)toggleClue(+li.dataset.clue)};
 function toggleClue(i){snap();const a=st.crossed,k=a.indexOf(i);k<0?a.push(i):a.splice(k,1);persist();renderCards()}
@@ -414,9 +416,9 @@ function toggleClue(i){snap();const a=st.crossed,k=a.indexOf(i);k<0?a.push(i):a.
 function snap(){undo.push(JSON.stringify({cells:st.cells,crossed:st.crossed}));if(undo.length>100)undo.shift()}
 function persist(){save("st:"+cur.id,st)}
 function msg(s){$("#msg").textContent=s||""}
-function apply(r,c,how){
+function apply(r,c,how,force){
   const cell=st.cells[r][c];if(isBlocked(r,c))return;
-  snap();
+  if(force===undefined)snap();
   if(how==="place"){
     if(!sel)return msg(t("pickfirst"));
     if(cell.p===sel){cell.p=null}
@@ -424,10 +426,12 @@ function apply(r,c,how){
       st.cells.forEach(row=>row.forEach(x=>{if(x.p===sel)x.p=null}));
       cell.p=sel;cell.x=false;
     }
-  }else if(how==="mark"){cell.x=!cell.x;if(cell.x)cell.p=null}
+  }else if(how==="mark"){cell.x=force==="on"?true:force==="off"?false:!cell.x;if(cell.x)cell.p=null}
   else if(how==="note"){
     if(!sel)return msg(t("pickfirst"));
-    const k=cell.nt.indexOf(sel);k<0?cell.nt.push(sel):cell.nt.splice(k,1);cell.nt.sort();
+    const k=cell.nt.indexOf(sel);
+    if(force==="on"){if(k<0)cell.nt.push(sel)}else if(force==="off"){if(k>=0)cell.nt.splice(k,1)}else k<0?cell.nt.push(sel):cell.nt.splice(k,1);
+    cell.nt.sort();
   }else if(how==="erase"){cell.p=null;cell.x=false;cell.nt=[]}
   msg("");persist();renderBoard();renderCards();checkWin();
 }
@@ -435,8 +439,15 @@ $("#tools").onclick=e=>{
   const b=e.target.closest("button");if(!b)return;const k=b.dataset.k;
   if(k==="undo"){const s=undo.pop();if(s){const o=JSON.parse(s);st.cells=o.cells;st.crossed=o.crossed;persist();renderBoard();renderCards()}return}
   if(k==="check")return check();
-  tool=k;renderTools();
+  tool=tool===k?"note":k;renderTools();
 };
+// Goma: mantenir premut buida totes les caselles
+(()=>{let tm=null,fired=false;const T=$("#tools");
+  T.addEventListener("pointerdown",e=>{const b=e.target.closest('button[data-k="erase"]');if(!b)return;fired=false;
+    tm=setTimeout(()=>{fired=true;if(navigator.vibrate)navigator.vibrate(30);if(confirm(t("clearall"))){snap();st.cells=blank(cur).cells;persist();renderBoard();renderCards()}tool="note";renderTools()},650)});
+  const stop=()=>{clearTimeout(tm)};T.addEventListener("pointerup",stop);T.addEventListener("pointercancel",stop);T.addEventListener("pointerleave",stop);
+  T.addEventListener("click",e=>{if(fired){e.stopPropagation();fired=false}},true);
+})();
 function check(){
   let bad=0;
   document.querySelectorAll("#board .cell[data-r]").forEach(el=>{
@@ -466,20 +477,33 @@ function winModal(){
 
 /* tocs i pulsació llarga al tauler */
 (()=>{
-  const b=$("#board");let timer=null,long=false,target=null;
+  const b=$("#board");let timer=null,long=false,target=null,drag=null;
   const cellOf=e=>e.target.closest(".cell[data-r]");
+  const cellAt=e=>{const x=document.elementFromPoint(e.clientX,e.clientY);return x&&x.closest&&x.closest("#board .cell[data-r]")};
+  // mode d'arrossegament segons la casella de partida (afegir o treure)
+  const modeFor=el=>{const c=st.cells[+el.dataset.r][+el.dataset.c];
+    if(tool==="mark")return c.x?"off":"on";
+    return sel&&c.nt.includes(sel)?"off":"on"};
+  const paint=el=>{const k=el.dataset.r+","+el.dataset.c;if(drag.seen.has(k))return;drag.seen.add(k);
+    if(drag.first){snap();drag.first=false}
+    apply(+el.dataset.r,+el.dataset.c,tool,tool==="erase"?"on":drag.mode)};
   b.addEventListener("pointerdown",e=>{
-    const el=cellOf(e);if(!el)return;target=el;long=false;
-    timer=setTimeout(()=>{long=true;if(navigator.vibrate)navigator.vibrate(15);apply(+el.dataset.r,+el.dataset.c,"place")},450);
+    const el=cellOf(e);if(!el)return;target=el;long=false;drag=null;
+    timer=setTimeout(()=>{long=true;target=null;if(navigator.vibrate)navigator.vibrate(15);apply(+el.dataset.r,+el.dataset.c,"place")},450);
   });
   const cancel=()=>{clearTimeout(timer);timer=null};
   b.addEventListener("pointerup",e=>{
-    const el=cellOf(e);clearTimeout(timer);
-    if(!long&&el&&el===target)apply(+el.dataset.r,+el.dataset.c,tool);
-    target=null;
+    clearTimeout(timer);const el=cellAt(e)||cellOf(e);
+    if(!drag&&!long&&target&&el===target)apply(+el.dataset.r,+el.dataset.c,tool);
+    target=null;drag=null;
   });
-  b.addEventListener("pointercancel",cancel);
-  b.addEventListener("pointermove",e=>{if(target&&cellOf(e)!==target){cancel();target=null}});
+  b.addEventListener("pointercancel",()=>{cancel();target=null;drag=null});
+  b.addEventListener("pointermove",e=>{
+    if(!target&&!drag)return;
+    const el=cellAt(e);if(!el)return;
+    if(!drag){if(el===target)return;cancel();drag={seen:new Set(),first:true,mode:modeFor(target)};paint(target)}
+    paint(el);
+  });
   b.addEventListener("contextmenu",e=>e.preventDefault());
 })();
 
