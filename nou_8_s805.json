@@ -307,7 +307,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
+    "nom": "Aina",
     "genere": "f"
    },
    {
@@ -317,7 +317,7 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
@@ -327,13 +327,13 @@
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Fanny",
-    "genere": "f"
+    "nom": "Fabià",
+    "genere": "m"
    },
    {
     "id": "G",
@@ -411,13 +411,13 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia un barril.",
-    "Era a la mateixa diagonal que Carla.",
+    "Era a la mateixa diagonal que Clara.",
     "A la seva columna hi havia una figuera.",
-    "Estava a l'hort.",
+    "Era a l'hort.",
     "A la seva fila hi havia un armari.",
     "A la seva fila hi havia un carro.",
     "Era al sud de Dídac.",
-    "Era al sud de Carla.",
+    "Era al sud de Clara.",
     "A la seva columna hi havia un pou.",
     "Era a l'est de Dídac.",
     "Era al nord de Bruna.",
@@ -425,16 +425,16 @@
    ],
    "fr": [
     "Dans sa colonne se trouvait un tonneau.",
-    "Elle était sur la même diagonale que Carla.",
+    "Il était sur la même diagonale que Clara.",
     "Dans sa colonne se trouvait un figuier.",
-    "Il était dans le potager.",
+    "Il se trouvait dans le potager.",
     "Sur sa ligne se trouvait une armoire.",
     "Sur sa ligne se trouvait une charrette.",
     "Il était au sud de Dídac.",
-    "Elle était au sud de Carla.",
+    "Il était au sud de Clara.",
     "Dans sa colonne se trouvait un puits.",
     "Elle était à l'est de Dídac.",
-    "Elle était au nord de Bruna.",
+    "Il était au nord de Bruna.",
     "Dans sa colonne se trouvait une charrette."
    ]
   },
