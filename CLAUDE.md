@@ -8,7 +8,7 @@ L'usuari (Ferran) parla català: respon-li en català. Entorn: Windows, Python i
 
 Joc de puzles de lògica de crims. Cada cas és una graella n×n amb forats, dividida en sales amb objectes. S'han de col·locar n persones (n-1 sospitosos + la víctima, que és l'última) **una per fila i una per columna**, només en caselles utilitzables, seguint les pistes. **L'assassí és l'únic sospitós que queda a la mateixa sala que la víctima.** Cada persona té una pista i hi ha unes poques pistes generals. Cada cas té una única solució que es pot trobar per deducció.
 
-El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió alfa, 40 casos, 5 nivells, mides 6×6 a 9×9) i una app anomenada Roomers. L'usuari vol que el joc **s'assembli molt a Murdoku** en estructura, pantalles i maneres de jugar (vegeu §8), però **sense reutilitzar els seus noms, textos, dibuixos, personatges ni escenaris**: tot el contingut i l'art han de ser propis. No es copien imatges ni es fa servir el nom «Murdoku». Les mecàniques de joc en general no estan protegides, però els noms, textos i art sí (no és assessorament legal). A `referencia/` hi ha captures de Murdoku que l'usuari va enviar per entendre el gènere (no per reproduir-les).
+El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió alfa, 40 casos, 5 nivells, mides 6×6 a 9×9) i una app anomenada Roomers. **No s'ha de copiar**: noms, textos, dibuixos, escenaris i interfície han de ser propis. Les mecàniques de joc en general no estan protegides, però els noms, textos i art sí (no és assessorament legal). A `referencia/` hi ha captures de Murdoku que l'usuari va enviar per entendre el gènere (no per reproduir-les).
 
 ## 2. Decisions de l'usuari
 
@@ -16,11 +16,10 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - **Per jugar al mòbil** (pàgina web que s'adapti bé a una pantalla de mòbil).
 - **Idiomes: català i francès**, des del principi.
 - Experiment personal; no associar-lo a cap institució. Sense diners reals.
-- **Vol que s'assembli molt més a Murdoku** (17-10-2026): mateixes pantalles, controls i organització, amb contingut propi (§8).
 
 ## 3. Propostes de Claude (pendents de confirmar)
 
-- ~~Controls alternatius~~ (substituït: l'usuari vol que s'assembli més al joc de referència, vegeu §8).
+- **Controls al mòbil:** un toc fa cicle buit → X → nota; toc llarg col·loca el sospitós. (El joc de referència fa servir: tocar un sospitós per seleccionar-lo, tocar una casella per posar una nota, mantenir premut per col·locar, arrossegar per pintar notes; botons X, goma i desfés.)
 - Pàgina estàtica que carrega els casos des d'un JSON, instal·lable (PWA) i sense connexió; progrés i temps a `localStorage`.
 - Tocar una pista il·lumina les caselles afectades; temporitzador opcional; mode fosc.
 - Mides de 6×6 fins a 9×9 i 5 nivells de dificultat (com a referència; l'usuari no n'ha triat).
@@ -88,34 +87,3 @@ Les claus d'objecte (`taula`, `barril`, `carro`...) i si bloquegen són a `escen
 2. Fer la **pàgina web per al mòbil** (HTML/CSS/JS sense dependències): graella amb forats, sales amb color, objectes en SVG, targetes de sospitós amb la seva pista, controls tàctils, desfés, comprovació, selector ca/fr, llista de casos amb nivell i temps, progrés a `localStorage`.
 3. Ajustar el generador (equilibri de nivells, mides 7 a 9) i generar una col·lecció de 40 casos o més.
 4. Més escenaris, art i tutorial.
-
-## 8. Disseny de la interfície (objectiu: molt semblant en estructura i interaccions)
-
-Base: les captures de `referencia/`. **Es reprodueix l'organització i el comportament, no els recursos**: dibuixos, retrats, noms, textos i escenaris propis.
-
-### Pantalla de la llista de casos (captura 03 i 07)
-- Capçalera amb el nom del joc (propi), botó d'inici de sessió (opcional, pot ser només local), selector d'idioma (Català/Français), botó de notícies/novetats amb marcador, botó de mode fosc, i una etiqueta «ALPHA».
-- Resum: «40 enigmes · N completats».
-- Filtres per dificultat en pestanyes: Tots, Molt fàcil, Fàcil, Mitjà, Difícil, Expert (la seleccionada ressaltada).
-- «Ordena per:» (Dificultat...) i botó «Amaga els completats».
-- Quadrícula de dues columnes de **sobres**: un cas disponible és un sobre tancat amb un tros del plànol que s'entreveu i el text «CAS DISPONIBLE! FES CLIC PER REVELAR»; en tocar-lo s'obre. Un cas resolt és una targeta amb la miniatura del plànol amb les X i les lletres, el segell «CAS RESOLT», el nom del cas, la dificultat, la mida (6×6) i el millor temps; els no començats mostren el nombre de pistes o una lupa.
-- Cada cas té nom propi i escenari/tema (en el joc de referència, amb una etiqueta de color; aquí, escenaris propis).
-
-### Pantalla de joc (captures 01 i 02)
-- Barra superior: fletxa enrere, nom del cas, temporitzador, botó d'ajuda (?) i de configuració.
-- Plànol a dalt, amb forats, sales amb textura/color propis i el **nom de cada sala escrit sobre el plànol**, objectes dibuixats (alguns bloquegen la casella).
-- A sota, secció «Pistes generals» (targetes) i després les **targetes dels sospitosos** en dues columnes: lletra, nom, retrat i la seva pista, amb els mots clau en negreta; la víctima (V) hi surt també.
-- Barra inferior fixa amb: botó X (marcar caselles impossibles), goma (mantenir premut per buidar-ho tot), Desfés, pista (bombeta) i «Envia» (desactivat fins que tots els sospitosos són col·locats: «col·loca'ls tots primer»).
-
-### Controls (captura 05)
-- Tocar un sospitós: el selecciona.
-- Tocar una casella: afegeix/treu una nota (lletra minúscula).
-- Mantenir premuda la casella: col·loca el sospitós (lletra majúscula).
-- Arrossegar: pinta notes per diverses caselles.
-- Les caselles descartades per fila/columna es marquen soles (opcional, desactivable).
-
-### Ajuda (captures 04, 05, 06)
-Finestra amb quatre pestanyes: Com es juga, Paraules clau (mini-diagrames per a cada pista), Avançat (tècniques amb exemples) i FAQ.
-
-### Què ha de ser propi
-Nom del joc, logotip, tipografia i paleta, il·lustracions (plànols, objectes, retrats), noms dels casos, escenaris, textos de les pistes i de l'ajuda. L'escenari actual és «El mas»; s'han d'afegir més escenaris amb personalitat pròpia (colors i textures per escenari).

@@ -32,6 +32,14 @@ def etiqueta(p, n):
     return "V" if p == n - 1 else LLETRES[p]
 
 
+def objectes_json(esc, obj):
+    """Noms (ca/fr) i si bloquegen, només dels objectes que surten al plànol."""
+    claus = {o for fila in obj for o in fila if o}
+    return {k: {"bloqueja": esc["objectes"][k]["bloqueja"],
+                "ca": esc["objectes"][k]["nom"]["ca"][1],
+                "fr": esc["objectes"][k]["nom"]["fr"][1]} for k in sorted(claus)}
+
+
 def a_json(cas, esc, e, rng, ident):
     n = cas["n"]
     L = cas["plantilla"]
@@ -53,6 +61,7 @@ def a_json(cas, esc, e, rng, ident):
         "sales": {str(i): {lang: e["sales"][e["_sales"][i]]["nom"][lang][1]
                            for lang in ("ca", "fr")} for i in e["_sales"]},
         "obj": L.obj,
+        "objectes": objectes_json(esc, L.obj),
         "persones": [{"id": etiqueta(p, n), "nom": e["_noms"][p][0],
                       "genere": e["_noms"][p][1]} for p in range(n)],
         "pistes": pistes,

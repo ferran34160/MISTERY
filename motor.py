@@ -1,4 +1,4 @@
-"""Motor del joc de misteri (graella estil sudoku amb sales i pistes).
+﻿"""Motor del joc de misteri (graella estil sudoku amb sales i pistes).
 
 Model:
   - Graella n x n amb forats (caselles que no formen part del plànol).
@@ -175,34 +175,49 @@ def comptar(L, pistes, n, limit=2):
     rel = {p: [cl for cl in pistes
                if cl["t"] not in TIPUS_UNARIS and _afecta(cl, p)]
            for p in range(n)}
-    ordre = sorted(range(n), key=lambda p: len(dom[p]))
+    # Propagació prèvia (deduccions vàlides per a totes les solucions): redueix
+    # molt la cerca. Si es contradiu, no hi ha cap solució.
+    try:
+        _estabilitza(L, pistes, dom, n, 2, [1])
+    except Contradiccio:
+        return 0
     pos = {}
     usf, usc = set(), set()
     cnt = 0
 
-    def rec(i):
+    def rec():
         nonlocal cnt
         if cnt >= limit:
             return
-        if i == n:
+        if len(pos) == n:
             cnt += 1
             return
-        p = ordre[i]
-        for c in dom[p]:
-            if c[0] in usf or c[1] in usc:
+        # variable més restringida (menys caselles lliures de fila/columna)
+        millor, opcions = None, None
+        for p in range(n):
+            if p in pos:
                 continue
+            ops = [c for c in dom[p] if c[0] not in usf and c[1] not in usc]
+            if not ops:
+                return
+            if opcions is None or len(ops) < len(opcions):
+                millor, opcions = p, ops
+                if len(ops) == 1:
+                    break
+        p = millor
+        for c in opcions:
             pos[p] = c
             if all(compleix(L, cl, pos, n) for cl in rel[p]):
                 usf.add(c[0])
                 usc.add(c[1])
-                rec(i + 1)
+                rec()
                 usf.discard(c[0])
                 usc.discard(c[1])
             del pos[p]
             if cnt >= limit:
                 return
 
-    rec(0)
+    rec()
     return cnt
 
 
@@ -706,10 +721,23 @@ def candidates(L, sol, n, sales_ids):
     return per_p, generals
 
 
-def tria_pistes(rng, L, sol, n, sales_ids, K=8, CAP=3000, max_extra=3):
+def _puntua(L, pistes, n):
+    "Mida total dels dominis després de propagar (més petit = pista més útil)."
+    ps = list(pistes) + [REGLA]
+    dom = dominis_inicials(L, ps, n)
+    try:
+        _estabilitza(L, ps, dom, n, 2, [1])
+    except Contradiccio:
+        return 10 ** 9
+    return sum(len(d) for d in dom.values())
+
+
+def tria_pistes(rng, L, sol, n, sales_ids, K=8, CAP=150, max_extra=None):
     """Una pista per persona (la que més redueix les solucions entre K
     candidates, triant també quina persona) i, si cal, fins a `max_extra`
     pistes més (generals o segones pistes). Després treu les redundants."""
+    if max_extra is None:
+        max_extra = n
     per_p, generals = candidates(L, sol, n, sales_ids)
     if any(not v for v in per_p.values()):
         return None
@@ -724,7 +752,7 @@ def tria_pistes(rng, L, sol, n, sales_ids, K=8, CAP=3000, max_extra=3):
         if unic:
             millor = mostra[0]
         else:
-            millor = min(mostra, key=lambda c: comptar(L, pistes + [c], n, CAP))
+            millor = min(mostra, key=lambda c: _puntua(L, pistes + [c], n))
         pistes.append(millor)
         sense.discard(millor["p"])
         if not unic and comptar(L, pistes, n, 2) == 1:
@@ -733,7 +761,7 @@ def tria_pistes(rng, L, sol, n, sales_ids, K=8, CAP=3000, max_extra=3):
     while not unic and extra < max_extra:
         pool = generals + [c for p in range(n) for c in rng.sample(per_p[p], min(3, len(per_p[p])))]
         mostra = rng.sample(pool, min(K * 2, len(pool)))
-        millor = min(mostra, key=lambda c: comptar(L, pistes + [c], n, CAP))
+        millor = min(mostra, key=lambda c: _puntua(L, pistes + [c], n))
         pistes.append(millor)
         extra += 1
         if comptar(L, pistes, n, 2) == 1:

@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#2b2118">
+<title>El crim del mas</title>
+<style>
+:root{
+  --bg:#f4ecdf;--panel:#fffaf1;--ink:#2b2118;--muted:#7a6a58;--line:#2b2118;--accent:#b5472f;--ok:#3c7a4a;--bad:#c0392b;
+  --hole:transparent;--cellgrid:rgba(43,33,24,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme=light]){--bg:#1d1813;--panel:#2a231b;--ink:#f1e6d3;--muted:#a89a85;--line:#f1e6d3;--accent:#e0795f;--ok:#6fbf82;--bad:#ff7a69;--cellgrid:rgba(241,230,211,.2)}
+}
+:root[data-theme=dark]{--bg:#1d1813;--panel:#2a231b;--ink:#f1e6d3;--muted:#a89a85;--line:#f1e6d3;--accent:#e0795f;--ok:#6fbf82;--bad:#ff7a69;--cellgrid:rgba(241,230,211,.2)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);min-height:100vh;-webkit-user-select:none;user-select:none}
+button{font:inherit;color:inherit;background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;touch-action:manipulation}
+button:active{transform:translateY(1px)}
+header{display:flex;align-items:center;gap:8px;padding:8px 12px;max-width:520px;margin:0 auto}
+header h1{font-size:1.05rem;margin:0;flex:1;line-height:1.15}
+header h1 small{display:block;font-weight:400;color:var(--muted);font-size:.78rem}
+.ib{padding:6px 10px;min-width:40px}
+main{max-width:520px;margin:0 auto;padding:0 12px 24px}
+.hidden{display:none!important}
+
+/* llista de casos */
+.list{display:grid;gap:10px}
+.case{display:flex;align-items:center;gap:12px;text-align:left;padding:12px;width:100%}
+.case .num{font-size:1.4rem;font-weight:800;width:2.2rem;text-align:center}
+.case .meta{flex:1}
+.case .meta b{display:block}
+.case .meta span{color:var(--muted);font-size:.85rem}
+.stamp{color:var(--ok);font-weight:800;border:2px solid var(--ok);border-radius:8px;padding:2px 6px;transform:rotate(-6deg);font-size:.8rem}
+.lvl{display:inline-flex;gap:2px;vertical-align:middle}
+.lvl i{width:8px;height:8px;border-radius:50%;background:var(--cellgrid)}
+.lvl i.on{background:var(--accent)}
+
+/* tauler */
+.bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
+#board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:manipulation}
+.cell{position:relative;display:flex;align-items:center;justify-content:center;border:0 solid var(--line);outline:1px solid var(--cellgrid);outline-offset:-1px;overflow:hidden}
+.cell.hole{background:var(--hole);outline:none}
+.cell.blocked{background-image:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.06) 6px 7px)}
+.cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
+.cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none}
+.cell svg.obj{position:absolute;inset:14%;width:72%;height:72%;color:var(--ink);opacity:.8;pointer-events:none}
+.cell.free svg.obj{inset:auto 2px 2px auto;width:34%;height:34%;opacity:.55}
+.cell.placed svg.obj{opacity:.35}
+.mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
+.notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
+.tok{position:relative;width:70%;height:70%;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:clamp(14px,5vw,24px);color:#fff;border:2px solid var(--line);pointer-events:none;z-index:2}
+.cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
+
+/* eines */
+.tools{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:10px 0}
+.tools button{padding:8px 0;font-size:1.05rem}
+.tools button.on{background:var(--ink);color:var(--bg)}
+.tools button small{display:block;font-size:.62rem;opacity:.8}
+#msg{min-height:1.4em;text-align:center;font-weight:600;margin:0 0 8px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.card{display:flex;gap:8px;align-items:flex-start;text-align:left;padding:8px;border-radius:12px;width:100%}
+.card.sel{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent)}
+.card .tok{flex:none;width:34px;height:34px;font-size:1rem}
+.card .tx b{display:block;font-size:.9rem}
+.card .tx span{font-size:.8rem;color:var(--muted);line-height:1.25;display:block}
+.card.done .tx span{text-decoration:line-through;opacity:.6}
+.card .pl{margin-left:auto;color:var(--ok);font-weight:800}
+h2{font-size:.95rem;margin:16px 0 6px}
+.gen{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.gen li{background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:8px 10px;font-size:.88rem}
+.gen li.done{text-decoration:line-through;opacity:.6}
+
+/* modals */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center;z-index:10}
+.sheet{background:var(--panel);border:2px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-width:520px;max-height:88vh;overflow:auto;padding:16px 16px 28px}
+.sheet h3{margin:0 0 8px}
+.sheet p,.sheet li{font-size:.92rem;line-height:1.4}
+.sheet ul{padding-left:18px;margin:6px 0}
+.sheet .close{float:right}
+.win{text-align:center}
+.win .big{font-size:2.6rem}
+.win .culprit{display:flex;justify-content:center;margin:10px 0}
+.win .culprit .tok{width:64px;height:64px;font-size:1.8rem}
+.row{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header>
+  <button class="ib hidden" id="back" aria-label="Enrere">←</button>
+  <h1 id="title"></h1>
+  <button class="ib" id="help">?</button>
+  <button class="ib" id="lang">FR</button>
+</header>
+<main>
+  <section id="home" class="list"><p id="boot">Carregant… (si això no canvia, el JavaScript no s'executa)</p></section>
+  <section id="game" class="hidden">
+    <div class="bar"><span id="info"></span><span id="timer">0:00</span></div>
+    <div id="board"></div>
+    <div class="tools" id="tools"></div>
+    <div id="msg"></div>
+    <div class="cards" id="cards"></div>
+    <h2 id="genh"></h2>
+    <ul class="gen" id="gen"></ul>
+  </section>
+</main>
+<div id="modal" class="modal hidden"><div class="sheet" id="sheet"></div></div>
+
+<script>
+window.addEventListener("error",function(e){var m=(e.message||("No es pot carregar "+(e.target&&(e.target.src||e.target.href))));document.body.insertAdjacentHTML("afterbegin","<pre style='padding:12px;white-space:pre-wrap;color:#c00'>Error: "+m+"</pre>")},true);
+</script>
+<script src="casos.js"></script>
+<script>
+"use strict";
+const T={
+ ca:{title:"El crim del mas",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
+  genh:"Pistes generals",ok:"Tot correcte fins ara!",errs:n=>n+(n==1?" error marcat en vermell":" errors marcats en vermell"),pickfirst:"Tria primer un sospitós.",victim:"Víctima",
+  win:"Cas resolt!",culp:"L'assassí és",in:"Era a la mateixa sala que la víctima, i era l'únic.",time:"Temps",again:"Llista de casos",next:"Cas següent",close:"Tanca",
+  help:"Com es juga",theme:"Tema",reset:"Reinicia el cas",
+  rules:`<p><b>Objectiu.</b> Descobreix qui va matar la víctima (V). L'assassí és l'<b>únic sospitós que és a la mateixa sala que la víctima</b>.</p>
+  <p><b>Regles.</b></p><ul><li>Hi ha una persona a cada fila i a cada columna.</li><li>Només es pot posar gent a caselles lliures: els objectes grossos (taula, tonell, pou…) bloquegen la casella; banc, carro o cadira, no.</li><li>Cada targeta té una pista; també n'hi ha de generals. Cada cas té una única solució.</li></ul>
+  <p><b>Controls.</b></p><ul><li>Toca un sospitós per triar-lo.</li><li>Eina <b>Col·loca</b>: toca una casella per posar-hi el sospitós. Mantenir premut una casella també el col·loca, sigui quina sigui l'eina.</li><li><b>Descarta</b> (✕): marca una casella impossible. <b>Nota</b>: hi apunta la lletra del sospitós. <b>Goma</b>: buida la casella.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li><li>Quan poses un sospitós, la seva fila i columna s'enfosqueixen.</li></ul>
+  <p><b>Paraules clau.</b></p><ul><li><b>a tocar / al costat</b>: casella veïna (dalt, baix, esquerra o dreta) de la mateixa sala.</li><li><b>sol</b>: ningú més a la sala.</li><li><b>racó</b>: dues parets de la sala.</li><li><b>diagonal</b>: la línia sencera.</li><li><b>nord, sud, est, oest</b>: qualsevol casella en aquella direcció.</li><li><b>salt de cavall</b>: com el cavall dels escacs.</li></ul>
+  <p><b>Truc.</b> Si una fila o columna només té una casella lliure, hi va algú; si dues persones només caben a dues files, ningú més hi pot anar.</p>`},
+ fr:{title:"Le crime du mas",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
+  genh:"Indices généraux",ok:"Tout est correct jusqu'ici !",errs:n=>n+(n==1?" erreur marquée en rouge":" erreurs marquées en rouge"),pickfirst:"Choisis d'abord un suspect.",victim:"Victime",
+  win:"Affaire résolue !",culp:"Le coupable est",in:"Il était dans la même pièce que la victime, et il était le seul.",time:"Temps",again:"Liste des cas",next:"Cas suivant",close:"Fermer",
+  help:"Règles du jeu",theme:"Thème",reset:"Recommencer le cas",
+  rules:`<p><b>But.</b> Découvre qui a tué la victime (V). Le coupable est le <b>seul suspect dans la même pièce que la victime</b>.</p>
+  <p><b>Règles.</b></p><ul><li>Une personne par ligne et par colonne.</li><li>On ne place les gens que sur des cases libres : les gros objets (table, tonneau, puits…) bloquent la case ; banc, charrette ou chaise, non.</li><li>Chaque carte a un indice ; il y en a aussi des généraux. Chaque cas a une seule solution.</li></ul>
+  <p><b>Commandes.</b></p><ul><li>Touche un suspect pour le choisir.</li><li>Outil <b>Placer</b> : touche une case pour y mettre le suspect. Un appui long sur une case le place aussi, quel que soit l'outil.</li><li><b>Écarter</b> (✕) : marque une case impossible. <b>Note</b> : y inscrit la lettre du suspect. <b>Gomme</b> : vide la case.</li><li>Touche un indice pour le barrer quand tu l'as exploité.</li><li>Quand un suspect est placé, sa ligne et sa colonne s'assombrissent.</li></ul>
+  <p><b>Mots clés.</b></p><ul><li><b>tout près / à côté</b> : case voisine (haut, bas, gauche ou droite) dans la même pièce.</li><li><b>seul</b> : personne d'autre dans la pièce.</li><li><b>coin</b> : deux murs de la pièce.</li><li><b>diagonale</b> : la ligne entière.</li><li><b>nord, sud, est, ouest</b> : n'importe quelle case dans cette direction.</li><li><b>saut de cavalier</b> : comme le cavalier aux échecs.</li></ul>
+  <p><b>Astuce.</b> Si une ligne ou colonne n'a qu'une case libre, quelqu'un y est ; si deux personnes ne tiennent que sur deux lignes, personne d'autre ne peut y aller.</p>`}
+};
+const ROOMHUE=[28,205,95,330,50,265,175,10];
+const PERSONHUE=[8,210,130,280,35,175,320,60,95,245];
+const ICONS={
+ taula:'<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M6 12v8M18 12v8"/>',
+ llar:'<path d="M3 21V8l9-5 9 5v13zM9 21v-6h6v6"/><path d="M12 13c-2-2 0-3 0-5 2 1 3 4 0 5z"/>',
+ barril:'<ellipse cx="12" cy="12" rx="7" ry="9"/><path d="M5.5 8c4 2 9 2 13 0M5.5 16c4-2 9-2 13 0"/>',
+ armari:'<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M10 12v1M14 12v1"/>',
+ figuera:'<circle cx="12" cy="9" r="6"/><path d="M12 15v6M9 21h6"/>',
+ pou:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M3 12h4"/>',
+ banc:'<path d="M3 9h18M3 13h18M5 13v7M19 13v7"/>',
+ carro:'<rect x="3" y="7" width="14" height="8"/><path d="M17 10h4"/><circle cx="7" cy="18" r="3"/><circle cx="15" cy="18" r="3"/>',
+ balanci:'<path d="M7 3l2 12h8M9 9h7"/><path d="M4 19c4 3 12 3 16 0"/>',
+ cadira:'<path d="M7 3v18M7 12h10v9M17 12V8"/>'
+};
+const COLORS=(i,dark)=>`hsl(${ROOMHUE[i%8]} ${dark?22:60}% ${dark?25:84}%)`;
+const $=s=>document.querySelector(s);
+const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+const save=(k,v)=>{try{localStorage.setItem("misteri:"+k,JSON.stringify(v))}catch(e){}};
+const load=(k,d)=>{try{const v=localStorage.getItem("misteri:"+k);return v?JSON.parse(v):d}catch(e){return d}};
+
+let lang=load("lang",(navigator.language||"ca").startsWith("fr")?"fr":"ca");if(lang!=="ca"&&lang!=="fr")lang="ca";
+let prog=load("prog",{});          // id -> {solved,best}
+let cur=null, st=null, tool="place", sel=null, timerH=null, undo=[];
+const t=k=>T[lang][k];
+
+function fmt(s){return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
+function dots(n){return '<span class="lvl">'+[1,2,3,4,5].map(i=>`<i class="${i<=n?"on":""}"></i>`).join("")+"</span>"}
+
+/* ---------- llista ---------- */
+function home(){
+  stopTimer();cur=null;
+  $("#game").classList.add("hidden");$("#home").classList.remove("hidden");$("#back").classList.add("hidden");
+  $("#title").innerHTML=t("title");
+  $("#home").innerHTML=CASOS.map((c,i)=>{
+    const p=prog[c.id]||{};
+    return `<button class="case" data-i="${i}"><span class="num">${i+1}</span><span class="meta"><b>${t("cas")} ${i+1} · ${c.n}×${c.n}</b><span>${t("lvl")} ${dots(c.nivell)}${p.best?" · "+t("best")+" "+fmt(p.best):""}</span></span>${p.solved?`<span class="stamp">${t("solved")}</span>`:""}</button>`}).join("");
+}
+$("#home").onclick=e=>{const b=e.target.closest(".case");if(b)obreCas(+b.dataset.i)};
+
+/* ---------- partida ---------- */
+function blank(c){return {cells:Array.from({length:c.n},()=>Array.from({length:c.n},()=>({p:null,x:false,nt:[]}))),time:0,done:false,crossed:[]}}
+function obreCas(i){
+  cur=CASOS[i];cur._i=i;
+  st=load("st:"+cur.id,null)||blank(cur);undo=[];
+  sel=cur.persones[0].id;tool="place";
+  $("#home").classList.add("hidden");$("#game").classList.remove("hidden");$("#back").classList.remove("hidden");
+  render();startTimer();
+}
+const isBlocked=(r,c)=>{const o=cur.obj[r][c];return !!o&&cur.objectes[o].bloqueja};
+const pIdx=id=>cur.persones.findIndex(p=>p.id===id);
+const pName=id=>cur.persones[pIdx(id)].nom;
+const tokStyle=id=>`background:hsl(${PERSONHUE[pIdx(id)%10]} 55% ${dark()?42:40}%)`;
+
+function render(){
+  document.documentElement.lang=lang;document.title=t("title");
+  $("#title").innerHTML=`${t("cas")} ${cur._i+1}<small>${lang==="fr"?cur.titol.fr:cur.titol.ca}</small>`;
+  $("#info").innerHTML=`${t("lvl")} ${dots(cur.nivell)} · ${cur.n}×${cur.n}`;
+  renderBoard();renderTools();renderCards();
+}
+function renderBoard(){
+  const n=cur.n,b=$("#board"),dk=dark();
+  b.style.gridTemplateColumns=`repeat(${n},1fr)`;
+  // files/columnes amb sospitós col·locat
+  const rowsU=new Set(),colsU=new Set();
+  st.cells.forEach((row,r)=>row.forEach((c,k)=>{if(c.p){rowsU.add(r);colsU.add(k)}}));
+  const seen=new Set();let h="";
+  for(let r=0;r<n;r++)for(let c=0;c<n;c++){
+    if(!cur.pla[r][c]){h+=`<div class="cell hole"></div>`;continue}
+    const s=cur.sala[r][c],cell=st.cells[r][c];
+    const diff=(rr,cc)=>rr<0||cc<0||rr>=n||cc>=n||!cur.pla[rr][cc]||cur.sala[rr][cc]!==s;
+    const w=(a)=>a?"3px":"0";
+    const bw=`border-width:${w(diff(r-1,c))} ${w(diff(r,c+1))} ${w(diff(r+1,c))} ${w(diff(r,c-1))}`;
+    const o=cur.obj[r][c],blk=isBlocked(r,c);
+    let cls="cell"+(blk?" blocked":"")+(o&&!blk?" free":"")+(cell.p?" placed":"")+((rowsU.has(r)||colsU.has(c))&&!cell.p?" line":"");
+    let inner="";
+    if(!seen.has(s)){seen.add(s);inner+=`<span class="rn">${cur.sales[s][lang]}</span>`}
+    if(o)inner+=`<svg class="obj" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICONS[o]||""}</svg>`;
+    if(cell.x)inner+=`<span class="mark">✕</span>`;
+    if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
+    if(cell.p)inner+=`<span class="tok" style="${tokStyle(cell.p)}">${cell.p}</span>`;
+    h+=`<div class="${cls}" data-r="${r}" data-c="${c}" style="background-color:${COLORS(s,dk)};${bw}">${inner}</div>`;
+  }
+  b.innerHTML=h;
+}
+function renderTools(){
+  const L=[["place","👤",t("place")],["mark","✕",t("mark")],["note","✎",t("note")],["erase","⌫",t("erase")],["undo","↶",t("undo")],["check","✔",t("check")]];
+  $("#tools").innerHTML=L.map(([k,i,l])=>`<button data-k="${k}" class="${k===tool?"on":""}">${i}<small>${l}</small></button>`).join("");
+}
+function clueText(i){return cur.textos[lang][i]}
+function renderCards(){
+  const placed=new Set();st.cells.forEach(r=>r.forEach(c=>c.p&&placed.add(c.p)));
+  const mine={},gen=[];
+  cur.pistes.forEach((p,i)=>{if(p.p)(mine[p.p]=mine[p.p]||[]).push(i);else gen.push(i)});
+  $("#cards").innerHTML=cur.persones.map(p=>{
+    const idx=mine[p.id]||[];
+    const done=idx.length&&idx.every(i=>st.crossed.includes(i));
+    return `<button class="card ${sel===p.id?"sel":""} ${done?"done":""}" data-p="${p.id}"><span class="tok" style="${tokStyle(p.id)}">${p.id}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}">${clueText(i)}</span>`).join("")}</span>${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
+  $("#genh").style.display=gen.length?"":"none";$("#genh").textContent=t("genh");
+  $("#gen").innerHTML=gen.map(i=>`<li data-clue="${i}" class="${st.crossed.includes(i)?"done":""}">${clueText(i)}</li>`).join("");
+}
+$("#cards").onclick=e=>{
+  const cl=e.target.closest("[data-clue]"),card=e.target.closest(".card");
+  if(!card)return;
+  if(sel===card.dataset.p&&cl){toggleClue(+cl.dataset.clue);return}
+  sel=card.dataset.p;if(tool==="erase"||tool==="mark")tool="place";renderTools();renderCards();
+};
+$("#gen").onclick=e=>{const li=e.target.closest("[data-clue]");if(li)toggleClue(+li.dataset.clue)};
+function toggleClue(i){snap();const a=st.crossed,k=a.indexOf(i);k<0?a.push(i):a.splice(k,1);persist();renderCards()}
+
+/* ---------- accions ---------- */
+function snap(){undo.push(JSON.stringify({cells:st.cells,crossed:st.crossed}));if(undo.length>100)undo.shift()}
+function persist(){save("st:"+cur.id,st)}
+function msg(s){$("#msg").textContent=s||""}
+function apply(r,c,how){
+  const cell=st.cells[r][c];if(isBlocked(r,c))return;
+  snap();
+  if(how==="place"){
+    if(!sel)return msg(t("pickfirst"));
+    if(cell.p===sel){cell.p=null}
+    else{ // un sospitós només pot estar en un lloc
+      st.cells.forEach(row=>row.forEach(x=>{if(x.p===sel)x.p=null}));
+      cell.p=sel;cell.x=false;
+    }
+  }else if(how==="mark"){cell.x=!cell.x;if(cell.x)cell.p=null}
+  else if(how==="note"){
+    if(!sel)return msg(t("pickfirst"));
+    const k=cell.nt.indexOf(sel);k<0?cell.nt.push(sel):cell.nt.splice(k,1);cell.nt.sort();
+  }else if(how==="erase"){cell.p=null;cell.x=false;cell.nt=[]}
+  msg("");persist();renderBoard();renderCards();checkWin();
+}
+$("#tools").onclick=e=>{
+  const b=e.target.closest("button");if(!b)return;const k=b.dataset.k;
+  if(k==="undo"){const s=undo.pop();if(s){const o=JSON.parse(s);st.cells=o.cells;st.crossed=o.crossed;persist();renderBoard();renderCards()}return}
+  if(k==="check")return check();
+  tool=k;renderTools();
+};
+function check(){
+  let bad=0;
+  document.querySelectorAll("#board .cell[data-r]").forEach(el=>{
+    const r=+el.dataset.r,c=+el.dataset.c,p=st.cells[r][c].p;
+    if(p){const s=cur.solucio[p];if(s[0]!==r||s[1]!==c){bad++;el.classList.add("bad")}}
+  });
+  msg(bad?t("errs")(bad):t("ok"));
+  if(bad)setTimeout(()=>document.querySelectorAll(".cell.bad").forEach(e=>e.classList.remove("bad")),2500);
+}
+function checkWin(){
+  if(st.done)return;
+  for(const p of cur.persones){
+    const s=cur.solucio[p.id],c=st.cells[s[0]][s[1]];
+    if(c.p!==p.id)return;
+  }
+  st.done=true;persist();stopTimer();
+  const pr=prog[cur.id]||{};pr.solved=true;if(!pr.best||st.time<pr.best)pr.best=st.time;prog[cur.id]=pr;save("prog",prog);
+  setTimeout(winModal,350);
+}
+function winModal(){
+  const a=cur.assassi,next=CASOS[cur._i+1];
+  modal(`<div class="win"><div class="big">🔍</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok" style="${tokStyle(a)}">${a}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p>
+  <div class="row"><button id="mhome">${t("again")}</button>${next?`<button id="mnext">${t("next")}</button>`:""}</div></div>`);
+  $("#mhome").onclick=()=>{closeModal();home()};
+  if(next)$("#mnext").onclick=()=>{closeModal();obreCas(cur._i+1)};
+}
+
+/* tocs i pulsació llarga al tauler */
+(()=>{
+  const b=$("#board");let timer=null,long=false,target=null;
+  const cellOf=e=>e.target.closest(".cell[data-r]");
+  b.addEventListener("pointerdown",e=>{
+    const el=cellOf(e);if(!el)return;target=el;long=false;
+    timer=setTimeout(()=>{long=true;if(navigator.vibrate)navigator.vibrate(15);apply(+el.dataset.r,+el.dataset.c,"place")},450);
+  });
+  const cancel=()=>{clearTimeout(timer);timer=null};
+  b.addEventListener("pointerup",e=>{
+    const el=cellOf(e);clearTimeout(timer);
+    if(!long&&el&&el===target)apply(+el.dataset.r,+el.dataset.c,tool);
+    target=null;
+  });
+  b.addEventListener("pointercancel",cancel);
+  b.addEventListener("pointermove",e=>{if(target&&cellOf(e)!==target){cancel();target=null}});
+  b.addEventListener("contextmenu",e=>e.preventDefault());
+})();
+
+/* ---------- temps ---------- */
+function startTimer(){
+  stopTimer();$("#timer").textContent=fmt(st.time);
+  if(st.done)return;
+  timerH=setInterval(()=>{if(document.hidden)return;st.time++;$("#timer").textContent=fmt(st.time);if(st.time%5===0)persist()},1000);
+}
+function stopTimer(){clearInterval(timerH);timerH=null;if(cur&&st)persist()}
+
+/* ---------- modals i capçalera ---------- */
+function modal(h){$("#sheet").innerHTML=h;$("#modal").classList.remove("hidden")}
+function closeModal(){$("#modal").classList.add("hidden")}
+$("#modal").onclick=e=>{if(e.target.id==="modal")closeModal()};
+$("#help").onclick=()=>{
+  modal(`<button class="close" id="mc">${t("close")}</button><h3>${t("help")}</h3>${t("rules")}
+  <div class="row"><button id="mth">${t("theme")}</button>${cur?`<button id="mrs">${t("reset")}</button>`:""}</div>`);
+  $("#mc").onclick=closeModal;
+  $("#mth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);if(cur)renderBoard();renderCards()};
+  if(cur)$("#mrs").onclick=()=>{if(confirm(t("reset")+"?")){st=blank(cur);undo=[];save("st:"+cur.id,st);const pr=prog[cur.id];if(pr){delete pr.solved;save("prog",prog)}closeModal();render();startTimer()}};
+};
+$("#back").onclick=home;
+$("#lang").onclick=()=>{lang=lang==="ca"?"fr":"ca";save("lang",lang);$("#lang").textContent=lang==="ca"?"FR":"CA";cur?render():home()};
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur&&st)persist()});
+{const th=load("theme",null);if(th)document.documentElement.dataset.theme=th}
+$("#lang").textContent=lang==="ca"?"FR":"CA";
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
+try{home()}catch(e){document.body.insertAdjacentHTML('afterbegin','<pre style=\"padding:12px;white-space:pre-wrap\">Error: '+e.message+'</pre>')}
+</script>
+</body>
+</html>
