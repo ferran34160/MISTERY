@@ -42,6 +42,14 @@ def det(lang, nom, cas="def"):
     raise ValueError(cas)
 
 
+def de_lloc(lloc, lang):
+    """'el taller' -> 'del taller', 'le garage' -> 'du garage'; la/l' -> de la/de l'."""
+    pre = "el " if lang == "ca" else "le "
+    if lloc.startswith(pre):
+        return ("del " if lang == "ca" else "du ") + lloc[len(pre):]
+    return "de " + lloc
+
+
 def de_nom(nom):
     return ("d'" if _elideix(nom) else "de ") + nom
 
@@ -109,7 +117,7 @@ def frase(lang, esc, cl, tria):
         if t == "raco":
             return "Era en un racó d'una habitació."
         if t == "vora":
-            return f"Era al costat d'una paret exterior de {esc['lloc'][lang]}."
+            return f"Era al costat d'una paret exterior {de_lloc(esc['lloc'][lang], lang)}."
         if t == "sol":
             return tria(["No compartia habitació amb ningú, ni tan sols amb la víctima.",
                          "Era sol" + ("a" if g == "f" else "") + " a la seva habitació."])
@@ -153,7 +161,7 @@ def frase(lang, esc, cl, tria):
         if t == "raco":
             return f"{pr} était dans un coin d'une pièce."
         if t == "vora":
-            return f"{pr} était contre un mur extérieur de {esc['lloc'][lang]}."
+            return f"{pr} était contre un mur extérieur {de_lloc(esc['lloc'][lang], lang)}."
         if t == "sol":
             return tria([f"{pr} ne partageait sa pièce avec personne, pas même avec la victime.",
                          f"{pr} était seul{'e' if g == 'f' else ''} dans sa pièce."])

@@ -247,7 +247,7 @@ const SCEN={
  circ:{tag:{ca:"El circ",fr:"Le cirque"},hue:[350,50,200,120,280,20,170,320],sat:62,col:330},
  mansio:{tag:{ca:"La mansió",fr:"Le manoir"},hue:[30,270,150,350,200,60,320,10],sat:36,col:290},
  mercat:{tag:{ca:"El mercat",fr:"Le marché"},hue:[95,35,10,200,55,160,320,270],sat:55,col:95}};
-const scen=id=>SCEN[id]||SCEN.mas;
+const scen=id=>(window.SCEN_META&&SCEN_META[id])||SCEN[id]||SCEN.mas;
 const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/1.8):z.sat}% ${dark?34:84}%)`};
 const $=s=>document.querySelector(s);
 const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
@@ -320,7 +320,7 @@ function home(){
    <div class="sum"><b>${CASOS.length}</b> ${h.pz} · <b>${done}</b> ${h.dn}</div>
    <div class="tabs2">${h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}</div>
    <div class="sortrow"><span>${h.sort}</span><select id="hsel"><option value="d"${hs==="d"?" selected":""}>${h.sd}</option><option value="m"${hs==="m"?" selected":""}>${h.ss}</option><option value="n"${hs==="n"?" selected":""}>${h.sn}</option></select><button id="hhd">${hh?h.show:h.hide}</button></div>
-   <div class="sortrow"><span>${h.sc}</span><select id="hsc"><option value="">${h.all}</option>${Object.keys(SCEN).filter(k=>CASOS.some(c=>c.escenari===k)).map(k=>`<option value="${k}"${hsc===k?" selected":""}>${SCEN[k].tag[lang]}</option>`).join("")}</select></div>`;
+   <div class="sortrow"><span>${h.sc}</span><select id="hsc"><option value="">${h.all}</option>${[...new Set(CASOS.map(c=>c.escenari))].sort((a,b)=>scen(a).tag[lang].localeCompare(scen(b).tag[lang],lang)).map(k=>`<option value="${k}"${hsc===k?" selected":""}>${scen(k).tag[lang]}</option>`).join("")}</select></div>`;
   $("#home").innerHTML=idx.length?idx.map(i=>pcCard(CASOS[i],i)).join(""):`<p class="empty">${h.none}</p>`;
   $("#hero").classList.remove("hidden");
   $("#hl").onchange=e=>{lang=e.target.value;save("lang",lang);home()};

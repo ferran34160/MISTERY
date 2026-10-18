@@ -1,854 +1,842 @@
 {
-"mas-6-7-3": {
+"castell-6-202-2": {
+"ca": "La caixa llunyana",
+"fr": "La caisse lointaine"
+},
+"castell-6-202-3": {
 "ca": "L'escala fosca",
 "fr": "L'échelle sombre"
 },
-"mas-6-23-9": {
-"ca": "El llindar llunyà",
-"fr": "Le seuil lointain"
+"circ-6-201-10": {
+"ca": "El carretó trencat",
+"fr": "Le chariot brisé"
+},
+"circ-6-201-11": {
+"ca": "La cripta llunyana",
+"fr": "La crypte lointaine"
+},
+"circ-6-202-1": {
+"ca": "L'arxivador buit",
+"fr": "Le classeur vide"
+},
+"escola-6-202-2": {
+"ca": "L'escala trencada",
+"fr": "L'échelle brisée"
+},
+"escola-6-202-3": {
+"ca": "La planta buida",
+"fr": "La plante vide"
+},
+"hotel-6-201-11": {
+"ca": "La sala de màquines amagada",
+"fr": "La salle des machines cachée"
+},
+"hotel-6-201-12": {
+"ca": "El quadre tardà",
+"fr": "Le tableau tardif"
+},
+"hotel-6-202-1": {
+"ca": "La caixa trencada",
+"fr": "La caisse brisée"
+},
+"hotel-6-202-2": {
+"ca": "L'arxivador fosc",
+"fr": "Le classeur sombre"
+},
+"hotel-6-202-3": {
+"ca": "La sala de subhastes fosca",
+"fr": "La salle des ventes sombre"
+},
+"mansio-6-201-4": {
+"ca": "El sofà mut",
+"fr": "Le canapé muet"
+},
+"mansio-6-202-1": {
+"ca": "La biblioteca fosca",
+"fr": "La bibliothèque sombre"
+},
+"mansio-6-202-3": {
+"ca": "El mirall amagat",
+"fr": "Le miroir caché"
 },
 "mas-6-23-12": {
-"ca": "L'hort mut",
-"fr": "Le potager muet"
+"ca": "El tamboret trencat",
+"fr": "Le tabouret brisé"
 },
-"mas-6-61-1": {
-"ca": "El trull fosc",
-"fr": "Le pressoir sombre"
+"mercat-6-202-2": {
+"ca": "La cuina trencada",
+"fr": "La cuisine brisée"
 },
-"mas-6-61-2": {
-"ca": "La pastera amagada",
-"fr": "Le pétrin caché"
-},
-"mas-6-61-3": {
-"ca": "L'hort llunyà",
-"fr": "Le potager lointain"
-},
-"mas-6-61-4": {
-"ca": "La sorra muda",
-"fr": "Le sable muet"
-},
-"mas-6-61-5": {
-"ca": "El graner perdut",
-"fr": "Le grenier perdu"
-},
-"mas-6-61-6": {
-"ca": "El graner buit",
-"fr": "Le grenier vide"
-},
-"mas-6-7-1": {
-"ca": "El cistell trencat",
-"fr": "Le panier brisé"
-},
-"mas-6-21-6": {
-"ca": "El candeler fosc",
-"fr": "Le chandelier sombre"
-},
-"mas-6-21-7": {
-"ca": "El tonell llunyà",
-"fr": "Le tonneau lointain"
-},
-"mas-6-22-8": {
-"ca": "La llavor amagada",
-"fr": "La graine cachée"
-},
-"mas-6-23-10": {
-"ca": "El testament trencat",
-"fr": "Le testament brisé"
-},
-"mas-6-24-8": {
-"ca": "El tonell fosc",
-"fr": "Le tonneau sombre"
-},
-"mas-6-11-1": {
-"ca": "El forn tardà",
-"fr": "Le four tardif"
-},
-"mas-6-11-2": {
-"ca": "El forn buit",
-"fr": "Le four vide"
-},
-"mas-6-11-3": {
-"ca": "El celler perdut",
-"fr": "Le cellier perdu"
-},
-"mas-6-21-11": {
-"ca": "La campana llunyana",
-"fr": "La cloche lointaine"
-},
-"mas-6-23-1": {
-"ca": "El porxo mut",
-"fr": "Le porche muet"
-},
-"mas-6-23-7": {
-"ca": "El testament tardà",
-"fr": "Le testament tardif"
-},
-"mas-6-24-1": {
-"ca": "El testament buit",
-"fr": "Le testament vide"
-},
-"mas-6-64-1": {
-"ca": "La figuera perduda",
-"fr": "Le figuier perdu"
-},
-"mas-6-64-2": {
-"ca": "El tonell perdut",
-"fr": "Le tonneau perdu"
-},
-"mas-6-64-3": {
-"ca": "El galliner llunyà",
-"fr": "Le poulailler lointain"
-},
-"mas-6-64-4": {
-"ca": "La campana amagada",
-"fr": "La cloche cachée"
-},
-"mas-6-64-5": {
-"ca": "El pou buit",
-"fr": "Le puits vide"
-},
-"mas-6-64-6": {
-"ca": "La clau amagada",
-"fr": "La clé cachée"
-},
-"mas-6-68-1": {
-"ca": "El cistell mut",
-"fr": "Le panier muet"
-},
-"mas-6-68-2": {
-"ca": "La bassa tardana",
-"fr": "La mare tardive"
-},
-"mas-6-68-3": {
-"ca": "El pou llunyà",
-"fr": "Le puits lointain"
-},
-"mas-6-68-4": {
-"ca": "La llavor trencada",
-"fr": "La graine brisée"
-},
-"mas-6-68-5": {
-"ca": "L'escala tardana",
-"fr": "L'échelle tardive"
-},
-"mas-6-68-6": {
-"ca": "El porxo llunyà",
-"fr": "Le porche lointain"
-},
-"mas-6-7-2": {
-"ca": "El rebost mut",
-"fr": "Le garde-manger muet"
-},
-"mas-6-7-4": {
+"mercat-6-202-3": {
 "ca": "El celler tardà",
 "fr": "Le cellier tardif"
 },
-"mas-6-7-5": {
-"ca": "El rellotge llunyà",
-"fr": "L'horloge lointaine"
+"museu-6-202-1": {
+"ca": "La cadira fosca",
+"fr": "La chaise sombre"
 },
-"mas-6-7-6": {
-"ca": "La vinya muda",
-"fr": "La vigne muette"
+"museu-6-202-2": {
+"ca": "La caixa buida",
+"fr": "La caisse vide"
 },
-"mas-6-7-7": {
-"ca": "La xemeneia llunyana",
-"fr": "La cheminée lointaine"
+"museu-6-202-3": {
+"ca": "El banc fosc",
+"fr": "Le banc sombre"
 },
-"mas-6-7-8": {
-"ca": "La llavor muda",
-"fr": "La graine muette"
+"restaurant-6-202-2": {
+"ca": "L'estufa tardana",
+"fr": "Le poêle tardif"
 },
-"mas-6-7-9": {
-"ca": "La clau perduda",
-"fr": "La clé perdue"
+"restaurant-6-202-3": {
+"ca": "La planta muda",
+"fr": "La plante muette"
 },
-"mas-6-7-10": {
-"ca": "La sorra llunyana",
-"fr": "Le sable lointain"
+"vaixell-6-201-8": {
+"ca": "El taller mut",
+"fr": "L'atelier muet"
 },
-"mas-6-21-1": {
-"ca": "La pastera muda",
-"fr": "Le pétrin muet"
+"vaixell-6-202-1": {
+"ca": "El despatx llunyà",
+"fr": "Le bureau lointain"
 },
-"mas-6-21-2": {
-"ca": "El llindar amagat",
-"fr": "Le seuil caché"
-},
-"mas-6-21-3": {
-"ca": "El carro trencat",
-"fr": "La charrette brisée"
-},
-"mas-6-21-4": {
-"ca": "La pastera tardana",
-"fr": "Le pétrin tardif"
-},
-"mas-6-21-5": {
-"ca": "El carro mut",
-"fr": "La charrette muette"
-},
-"mas-6-21-8": {
-"ca": "La xemeneia tardana",
+"vaixell-6-202-2": {
+"ca": "La llar de foc tardana",
 "fr": "La cheminée tardive"
 },
-"mas-6-21-9": {
-"ca": "La pastera fosca",
-"fr": "Le pétrin sombre"
-},
-"mas-6-21-10": {
-"ca": "El llindar tardà",
-"fr": "Le seuil tardif"
-},
-"mas-6-21-12": {
-"ca": "La vinya amagada",
-"fr": "La vigne cachée"
-},
-"mas-6-22-1": {
-"ca": "El tonell tardà",
-"fr": "Le tonneau tardif"
-},
-"mas-6-22-2": {
-"ca": "La bassa amagada",
-"fr": "La mare cachée"
-},
-"mas-6-22-3": {
-"ca": "El rebost trencat",
-"fr": "Le garde-manger brisé"
-},
-"mas-6-22-4": {
-"ca": "El molí trencat",
-"fr": "Le moulin brisé"
-},
-"mas-6-22-5": {
-"ca": "La bassa muda",
-"fr": "La mare muette"
-},
-"mas-6-22-6": {
-"ca": "La sorra tardana",
-"fr": "Le sable tardif"
-},
-"mas-6-22-7": {
-"ca": "El testament mut",
-"fr": "Le testament muet"
-},
-"mas-6-22-9": {
-"ca": "El forn perdut",
-"fr": "Le four perdu"
-},
-"mas-6-22-10": {
-"ca": "El rebost llunyà",
-"fr": "Le garde-manger lointain"
-},
-"mas-6-22-11": {
-"ca": "El trull llunyà",
-"fr": "Le pressoir lointain"
-},
-"mas-6-22-12": {
-"ca": "La campana muda",
-"fr": "La cloche muette"
-},
-"mas-6-23-2": {
-"ca": "L'hort fosc",
-"fr": "Le potager sombre"
-},
-"mas-6-23-3": {
-"ca": "El rellotge trencat",
-"fr": "L'horloge brisée"
-},
-"mas-6-23-4": {
-"ca": "La sínia trencada",
-"fr": "La noria brisée"
-},
-"mas-6-23-5": {
-"ca": "El llindar perdut",
-"fr": "Le seuil perdu"
-},
-"mas-6-23-6": {
-"ca": "El testament perdut",
-"fr": "Le testament perdu"
-},
-"mas-6-23-8": {
-"ca": "El molí llunyà",
-"fr": "Le moulin lointain"
-},
-"mas-6-23-11": {
-"ca": "El rellotge perdut",
-"fr": "L'horloge perdue"
-},
-"mas-6-24-2": {
-"ca": "El tonell trencat",
-"fr": "Le tonneau brisé"
-},
-"mas-6-24-3": {
-"ca": "El testament amagat",
-"fr": "Le testament caché"
-},
-"mas-6-24-4": {
-"ca": "La vinya trencada",
-"fr": "La vigne brisée"
-},
-"mas-6-24-5": {
-"ca": "La clau buida",
-"fr": "La clé vide"
-},
-"mas-6-24-6": {
-"ca": "L'hort trencat",
-"fr": "Le potager brisé"
-},
-"mas-6-24-7": {
-"ca": "L'escala amagada",
-"fr": "L'échelle cachée"
-},
-"mas-6-24-9": {
-"ca": "El molí amagat",
-"fr": "Le moulin caché"
-},
-"mas-6-24-10": {
-"ca": "El carro amagat",
-"fr": "La charrette cachée"
-},
-"mas-6-24-11": {
-"ca": "El celler buit",
-"fr": "Le cellier vide"
-},
-"mas-6-24-12": {
-"ca": "El rellotge mut",
-"fr": "L'horloge muette"
-},
-"mas-7-62-1": {
-"ca": "La sínia fosca",
-"fr": "La noria sombre"
-},
-"mas-7-62-2": {
-"ca": "La llavor perduda",
-"fr": "La graine perdue"
-},
-"mas-7-62-3": {
-"ca": "La bassa trencada",
-"fr": "La mare brisée"
-},
-"mas-7-62-4": {
-"ca": "La figuera muda",
-"fr": "Le figuier muet"
-},
-"mas-7-62-5": {
-"ca": "El testament llunyà",
-"fr": "Le testament lointain"
-},
-"mas-7-31-1": {
-"ca": "La xemeneia perduda",
-"fr": "La cheminée perdue"
-},
-"mas-7-31-2": {
-"ca": "El porxo amagat",
-"fr": "Le porche caché"
-},
-"mas-7-31-4": {
-"ca": "El celler llunyà",
-"fr": "Le cellier lointain"
-},
-"mas-7-31-8": {
-"ca": "El forn llunyà",
-"fr": "Le four lointain"
-},
-"mas-7-31-9": {
-"ca": "La xemeneia buida",
-"fr": "La cheminée vide"
-},
-"mas-7-32-1": {
-"ca": "El carro buit",
-"fr": "La charrette vide"
-},
-"mas-7-32-3": {
-"ca": "La vinya fosca",
-"fr": "La vigne sombre"
-},
-"mas-7-32-6": {
-"ca": "La figuera llunyana",
-"fr": "Le figuier lointain"
-},
-"mas-7-32-8": {
-"ca": "El cistell perdut",
-"fr": "Le panier perdu"
-},
-"mas-7-31-6": {
-"ca": "La sorra amagada",
-"fr": "Le sable caché"
-},
-"mas-7-31-10": {
-"ca": "El pou tardà",
-"fr": "Le puits tardif"
-},
-"mas-7-32-2": {
-"ca": "El candeler perdut",
-"fr": "Le chandelier perdu"
-},
-"mas-7-32-9": {
-"ca": "El fanal perdut",
-"fr": "La lanterne perdue"
-},
-"mas-7-32-7": {
-"ca": "La bassa buida",
-"fr": "La mare vide"
-},
-"mas-7-65-1": {
-"ca": "La xemeneia fosca",
-"fr": "La cheminée sombre"
-},
-"mas-7-65-2": {
-"ca": "El rebost perdut",
-"fr": "Le garde-manger perdu"
-},
-"mas-7-65-3": {
-"ca": "El rellotge fosc",
-"fr": "L'horloge sombre"
-},
-"mas-7-65-4": {
-"ca": "El galliner perdut",
-"fr": "Le poulailler perdu"
-},
-"mas-7-65-5": {
-"ca": "L'escala buida",
-"fr": "L'échelle vide"
-},
-"mas-7-67-1": {
-"ca": "El rebost amagat",
-"fr": "Le garde-manger caché"
-},
-"mas-7-67-2": {
-"ca": "La sorra trencada",
-"fr": "Le sable brisé"
-},
-"mas-7-67-3": {
-"ca": "La sínia amagada",
-"fr": "La noria cachée"
-},
-"mas-7-67-4": {
-"ca": "El porxo trencat",
-"fr": "Le porche brisé"
-},
-"mas-7-67-5": {
-"ca": "El galliner fosc",
-"fr": "Le poulailler sombre"
-},
-"mas-7-31-3": {
-"ca": "L'era trencada",
-"fr": "L'aire brisée"
-},
-"mas-7-31-5": {
-"ca": "El cistell tardà",
-"fr": "Le panier tardif"
-},
-"mas-7-31-7": {
-"ca": "El celler trencat",
-"fr": "Le cellier brisé"
-},
-"mas-7-32-4": {
-"ca": "El forn amagat",
-"fr": "Le four caché"
-},
-"mas-7-32-5": {
-"ca": "El rebost buit",
-"fr": "Le garde-manger vide"
-},
-"mas-7-32-10": {
-"ca": "La bassa fosca",
-"fr": "La mare sombre"
-},
-"mas-8-41-1": {
-"ca": "El fanal mut",
-"fr": "La lanterne muette"
-},
-"mas-8-41-3": {
-"ca": "El molí buit",
-"fr": "Le moulin vide"
-},
-"mas-8-42-1": {
-"ca": "El porxo perdut",
-"fr": "Le porche perdu"
-},
-"mas-8-42-2": {
-"ca": "El llindar trencat",
-"fr": "Le seuil brisé"
-},
-"mas-8-42-3": {
-"ca": "El galliner trencat",
-"fr": "Le poulailler brisé"
-},
-"mas-8-42-4": {
-"ca": "El forn mut",
-"fr": "Le four muet"
-},
-"mas-8-43-1": {
-"ca": "El candeler mut",
-"fr": "Le chandelier muet"
-},
-"mas-8-43-3": {
-"ca": "El pou amagat",
-"fr": "Le puits caché"
-},
-"mas-8-41-4": {
-"ca": "L'era perduda",
-"fr": "L'aire perdue"
-},
-"mas-8-43-4": {
-"ca": "El celler mut",
-"fr": "Le cellier muet"
-},
-"mas-8-41-2": {
-"ca": "El llindar fosc",
-"fr": "Le seuil sombre"
-},
-"mas-8-43-2": {
-"ca": "El pou mut",
-"fr": "Le puits muet"
-},
-"mas-9-53-1": {
-"ca": "El graner trencat",
-"fr": "Le grenier brisé"
-},
-"mas-9-51-1": {
-"ca": "La figuera tardana",
-"fr": "Le figuier tardif"
-},
-"mas-9-51-2": {
-"ca": "La campana buida",
-"fr": "La cloche vide"
-},
-"mas-9-51-3": {
-"ca": "El trull tardà",
-"fr": "Le pressoir tardif"
-},
-"mas-9-53-3": {
-"ca": "El trull amagat",
-"fr": "Le pressoir caché"
-},
-"mas-9-52-1": {
-"ca": "El trull perdut",
-"fr": "Le pressoir perdu"
-},
-"mas-9-52-2": {
-"ca": "El carro llunyà",
-"fr": "La charrette lointaine"
-},
-"mas-9-52-3": {
-"ca": "La llavor fosca",
-"fr": "La graine sombre"
-},
-"mas-9-53-2": {
-"ca": "L'escala muda",
-"fr": "L'échelle muette"
-},
-"estacio-6-101-2": {
-"ca": "El fanal amagat",
-"fr": "Le lampadaire caché"
-},
-"estacio-6-101-7": {
-"ca": "El tren mut",
-"fr": "Le train muet"
-},
-"estacio-6-101-10": {
-"ca": "La locomotora trencada",
-"fr": "La locomotive brisée"
-},
-"estacio-6-101-13": {
-"ca": "El vagó fosc",
-"fr": "Le wagon sombre"
-},
-"teatre-6-101-2": {
-"ca": "El reflector amagat",
-"fr": "Le projecteur caché"
-},
-"teatre-6-101-9": {
-"ca": "L'escenari mut",
-"fr": "La scène muette"
-},
-"teatre-6-101-14": {
-"ca": "El reflector mut",
-"fr": "Le projecteur muet"
-},
-"estacio-6-102-1": {
-"ca": "La via perduda",
-"fr": "La voie perdue"
-},
-"estacio-6-102-2": {
-"ca": "El bitllet buit",
-"fr": "Le billet vide"
-},
-"estacio-6-102-3": {
-"ca": "El cafè trencat",
-"fr": "Le café brisé"
-},
-"estacio-6-102-4": {
-"ca": "El telègraf amagat",
-"fr": "Le télégraphe caché"
-},
-"teatre-6-102-1": {
-"ca": "El piano trencat",
-"fr": "Le piano brisé"
-},
-"teatre-6-102-2": {
-"ca": "El guió fosc",
-"fr": "Le scénario sombre"
-},
-"teatre-6-102-3": {
-"ca": "El bagul perdut",
-"fr": "La malle perdue"
-},
-"teatre-6-102-4": {
-"ca": "El mirall buit",
-"fr": "Le miroir vide"
-},
-"estacio-6-101-3": {
-"ca": "El bitllet fosc",
-"fr": "Le billet sombre"
-},
-"estacio-6-101-4": {
-"ca": "El senyal trencat",
-"fr": "Le signal brisé"
-},
-"estacio-6-101-5": {
-"ca": "La locomotora llunyana",
-"fr": "La locomotive lointaine"
-},
-"estacio-6-101-6": {
-"ca": "El cafè amagat",
-"fr": "Le café caché"
-},
-"estacio-6-101-8": {
-"ca": "La taquilla fosca",
-"fr": "Le guichet sombre"
-},
-"estacio-6-101-9": {
-"ca": "La taquilla trencada",
-"fr": "Le guichet brisé"
-},
-"estacio-6-101-11": {
-"ca": "L'horari llunyà",
-"fr": "L'horaire lointain"
-},
-"estacio-6-101-14": {
-"ca": "El telègraf buit",
-"fr": "Le télégraphe vide"
-},
-"teatre-6-101-10": {
-"ca": "El maquillatge trencat",
-"fr": "Le maquillage brisé"
-},
-"teatre-6-101-11": {
-"ca": "El vestit amagat",
-"fr": "Le costume caché"
-},
-"teatre-6-101-13": {
-"ca": "El mirall fosc",
-"fr": "Le miroir sombre"
-},
-"estacio-6-101-1": {
-"ca": "El bitllet trencat",
-"fr": "Le billet brisé"
-},
-"estacio-6-101-12": {
-"ca": "El senyal fosc",
-"fr": "Le signal sombre"
-},
-"teatre-6-101-1": {
-"ca": "El camerino trencat",
-"fr": "La loge brisée"
-},
-"teatre-6-101-6": {
-"ca": "El piano llunyà",
-"fr": "Le piano lointain"
-},
-"estacio-6-103-1": {
-"ca": "L'horari buit",
-"fr": "L'horaire vide"
-},
-"estacio-6-103-2": {
-"ca": "La locomotora fosca",
-"fr": "La locomotive sombre"
-},
-"estacio-6-103-3": {
-"ca": "La maleta fosca",
-"fr": "La valise sombre"
-},
-"estacio-6-103-4": {
-"ca": "El fanal trencat",
-"fr": "Le lampadaire brisé"
-},
-"teatre-6-103-1": {
-"ca": "El maquillatge amagat",
-"fr": "Le maquillage caché"
-},
-"teatre-6-103-2": {
-"ca": "La rèplica fosca",
-"fr": "La réplique sombre"
-},
-"teatre-6-103-3": {
-"ca": "La rèplica trencada",
-"fr": "La réplique brisée"
-},
-"teatre-6-103-4": {
-"ca": "L'escala llunyana",
-"fr": "L'échelle lointaine"
-},
-"teatre-6-101-3": {
-"ca": "El vestit buit",
-"fr": "Le costume vide"
-},
-"teatre-6-101-4": {
-"ca": "El mirall trencat",
-"fr": "Le miroir brisé"
-},
-"teatre-6-101-5": {
-"ca": "El camerino fosc",
-"fr": "La loge sombre"
-},
-"teatre-6-101-7": {
-"ca": "El piano fosc",
-"fr": "Le piano sombre"
-},
-"teatre-6-101-8": {
-"ca": "El maniquí fosc",
-"fr": "Le mannequin sombre"
-},
-"teatre-6-101-12": {
-"ca": "El reflector trencat",
-"fr": "Le projecteur brisé"
-},
-"estacio-7-104-6": {
-"ca": "El passatger amagat",
-"fr": "Le voyageur caché"
-},
-"teatre-7-104-7": {
-"ca": "La màscara amagada",
-"fr": "Le masque caché"
-},
-"estacio-7-104-4": {
-"ca": "L'estufa muda",
-"fr": "Le poêle muet"
-},
-"estacio-7-104-5": {
-"ca": "El telègraf llunyà",
-"fr": "Le télégraphe lointain"
-},
-"estacio-7-104-8": {
-"ca": "El cafè perdut",
-"fr": "Le café perdu"
-},
-"teatre-7-104-3": {
-"ca": "La corona muda",
-"fr": "La couronne muette"
-},
-"teatre-7-104-2": {
-"ca": "El vestit llunyà",
-"fr": "Le costume lointain"
-},
-"teatre-7-104-6": {
-"ca": "El maquillatge perdut",
-"fr": "Le maquillage perdu"
-},
-"estacio-7-104-1": {
-"ca": "La llanterna llunyana",
-"fr": "La lanterne lointaine"
-},
-"estacio-7-104-2": {
-"ca": "La locomotora perduda",
-"fr": "La locomotive perdue"
-},
-"estacio-7-104-3": {
-"ca": "La taquilla llunyana",
-"fr": "Le guichet lointain"
-},
-"estacio-7-104-7": {
+"vaixell-6-202-3": {
+"ca": "El dormitori fosc",
+"fr": "Le dortoir sombre"
+},
+"castell-6-201-10": {
+"ca": "La butaca amagada",
+"fr": "Le fauteuil caché"
+},
+"circ-6-201-2": {
+"ca": "La sala de joc muda",
+"fr": "La salle de jeu muette"
+},
+"circ-6-201-5": {
+"ca": "L'escriptori fosc",
+"fr": "Le bureau sombre"
+},
+"circ-6-201-8": {
+"ca": "La terrassa llunyana",
+"fr": "La terrasse lointaine"
+},
+"escola-6-201-12": {
+"ca": "La llibreria trencada",
+"fr": "La bibliothèque brisée"
+},
+"escola-6-201-6": {
+"ca": "El saló fosc",
+"fr": "Le salon sombre"
+},
+"escola-6-201-9": {
+"ca": "El bagul amagat",
+"fr": "La malle cachée"
+},
+"hotel-6-201-3": {
 "ca": "El cafè tardà",
 "fr": "Le café tardif"
 },
-"teatre-7-104-1": {
-"ca": "L'apuntador llunyà",
-"fr": "Le souffleur lointain"
+"mansio-6-201-12": {
+"ca": "El banc trencat",
+"fr": "Le banc brisé"
 },
-"teatre-7-104-4": {
-"ca": "El piano perdut",
-"fr": "Le piano perdu"
+"mansio-6-201-5": {
+"ca": "La planta llunyana",
+"fr": "La plante lointaine"
 },
-"teatre-7-104-5": {
-"ca": "La rèplica llunyana",
-"fr": "La réplique lointaine"
+"mansio-6-201-6": {
+"ca": "El dormitori buit",
+"fr": "La chambre vide"
 },
-"teatre-7-104-8": {
-"ca": "El maquillatge tardà",
-"fr": "Le maquillage tardif"
+"mansio-6-201-8": {
+"ca": "La quadra fosca",
+"fr": "L'écurie sombre"
 },
-"estacio-8-24-1": {
-"ca": "L'horari amagat",
-"fr": "L'horaire caché"
+"mas-6-22-8": {
+"ca": "El carretó buit",
+"fr": "Le chariot vide"
 },
-"estacio-8-24-2": {
-"ca": "L'equipatge tardà",
-"fr": "Le bagage tardif"
+"mas-6-23-10": {
+"ca": "La cadira perduda",
+"fr": "La chaise perdue"
 },
-"estacio-8-24-3": {
-"ca": "El vagó mut",
-"fr": "Le wagon muet"
+"mas-6-24-8": {
+"ca": "El llit tardà",
+"fr": "Le lit tardif"
 },
-"teatre-8-24-1": {
-"ca": "L'aplaudiment tardà",
-"fr": "L'applaudissement tardif"
+"mercat-6-201-10": {
+"ca": "La pissarra perduda",
+"fr": "Le tableau noir perdu"
 },
-"teatre-8-24-2": {
-"ca": "El guió mut",
-"fr": "Le scénario muet"
+"mercat-6-201-11": {
+"ca": "El pati mut",
+"fr": "La cour muette"
 },
-"teatre-8-24-3": {
-"ca": "L'ombra tardana",
-"fr": "L'ombre tardive"
+"mercat-6-201-5": {
+"ca": "L'escala perduda",
+"fr": "L'échelle perdue"
 },
-"teatre-8-21-1": {
-"ca": "L'apuntador mut",
-"fr": "Le souffleur muet"
+"mercat-6-201-9": {
+"ca": "El magatzem tardà",
+"fr": "L'entrepôt tardif"
 },
-"teatre-8-21-2": {
-"ca": "El maquillatge llunyà",
-"fr": "Le maquillage lointain"
+"museu-6-201-12": {
+"ca": "El banc perdut",
+"fr": "Le banc perdu"
 },
-"teatre-8-21-3": {
-"ca": "La rèplica amagada",
-"fr": "La réplique cachée"
+"museu-6-201-6": {
+"ca": "El bar tardà",
+"fr": "Le bar tardif"
 },
-"estacio-8-21-1": {
-"ca": "La campana tardana",
-"fr": "La cloche tardive"
+"museu-6-201-8": {
+"ca": "El reflector trencat",
+"fr": "Le projecteur brisé"
 },
-"estacio-8-21-2": {
-"ca": "La llanterna muda",
-"fr": "La lanterne muette"
+"museu-6-201-9": {
+"ca": "L'armari amagat",
+"fr": "L'armoire cachée"
 },
-"estacio-8-21-3": {
-"ca": "El cafè llunyà",
-"fr": "Le café lointain"
+"restaurant-6-201-10": {
+"ca": "La cafeteria trencada",
+"fr": "La cafétéria brisée"
 },
-"mas-8-21-1": {
+"restaurant-6-201-11": {
+"ca": "La vitrina llunyana",
+"fr": "La vitrine lointaine"
+},
+"restaurant-6-201-12": {
+"ca": "La caixa amagada",
+"fr": "La caisse cachée"
+},
+"restaurant-6-201-3": {
+"ca": "La sala de les estàtues buida",
+"fr": "La salle des statues vide"
+},
+"restaurant-6-201-5": {
+"ca": "El corral mut",
+"fr": "La basse-cour muette"
+},
+"restaurant-6-201-9": {
+"ca": "El bar trencat",
+"fr": "Le bar brisé"
+},
+"vaixell-6-201-2": {
+"ca": "El sofà perdut",
+"fr": "Le canapé perdu"
+},
+"vaixell-6-201-3": {
+"ca": "El banc buit",
+"fr": "Le banc vide"
+},
+"vaixell-6-201-7": {
+"ca": "La barra trencada",
+"fr": "Le comptoir brisé"
+},
+"vaixell-6-201-9": {
+"ca": "El magatzem fosc",
+"fr": "L'entrepôt sombre"
+},
+"castell-6-201-11": {
+"ca": "La terrassa muda",
+"fr": "La terrasse muette"
+},
+"castell-6-203-1": {
+"ca": "El bagul mut",
+"fr": "La malle muette"
+},
+"castell-6-203-2": {
+"ca": "La sala de massatges amagada",
+"fr": "La salle de massage cachée"
+},
+"circ-6-203-1": {
+"ca": "L'arxivador llunyà",
+"fr": "Le classeur lointain"
+},
+"circ-6-203-2": {
+"ca": "La finestreta perduda",
+"fr": "Le guichet perdu"
+},
+"circ-6-203-3": {
+"ca": "L'escala tardana",
+"fr": "L'échelle tardive"
+},
+"escola-6-201-7": {
+"ca": "La cadira amagada",
+"fr": "La chaise cachée"
+},
+"escola-6-203-1": {
+"ca": "La sala de tast llunyana",
+"fr": "La salle de dégustation lointaine"
+},
+"escola-6-203-2": {
+"ca": "La planta amagada",
+"fr": "La plante cachée"
+},
+"escola-6-203-3": {
+"ca": "El carretó llunyà",
+"fr": "Le chariot lointain"
+},
+"hotel-6-201-5": {
+"ca": "L'escala llunyana",
+"fr": "L'échelle lointaine"
+},
+"hotel-6-203-2": {
+"ca": "La sala de màquines perduda",
+"fr": "La salle des machines perdue"
+},
+"hotel-6-203-3": {
+"ca": "La maleta perduda",
+"fr": "La valise perdue"
+},
+"mansio-6-201-11": {
+"ca": "La nau buida",
+"fr": "La nef vide"
+},
+"mansio-6-203-1": {
+"ca": "El tamboret amagat",
+"fr": "Le tabouret caché"
+},
+"mansio-6-203-2": {
+"ca": "La sala de control perduda",
+"fr": "La régie perdue"
+},
+"mansio-6-203-3": {
+"ca": "La porxada perduda",
+"fr": "La véranda perdue"
+},
+"mas-6-11-1": {
+"ca": "L'estufa llunyana",
+"fr": "Le poêle lointain"
+},
+"mas-6-11-3": {
+"ca": "El despatx mut",
+"fr": "Le bureau muet"
+},
+"mas-6-23-1": {
+"ca": "La maleta muda",
+"fr": "La valise muette"
+},
+"mas-6-23-7": {
+"ca": "La barra muda",
+"fr": "Le comptoir muet"
+},
+"mercat-6-201-3": {
+"ca": "La taula fosca",
+"fr": "La table sombre"
+},
+"mercat-6-203-2": {
+"ca": "L'arxivador tardà",
+"fr": "Le classeur tardif"
+},
+"museu-6-201-11": {
+"ca": "La llar de foc muda",
+"fr": "La cheminée muette"
+},
+"museu-6-203-2": {
+"ca": "El fanal perdut",
+"fr": "Le lampadaire perdu"
+},
+"museu-6-203-3": {
+"ca": "El carretó perdut",
+"fr": "Le chariot perdu"
+},
+"restaurant-6-203-2": {
+"ca": "El carro tardà",
+"fr": "La charrette tardive"
+},
+"restaurant-6-203-3": {
+"ca": "L'escriptori llunyà",
+"fr": "Le bureau lointain"
+},
+"vaixell-6-203-2": {
+"ca": "El pou buit",
+"fr": "Le puits vide"
+},
+"circ-6-201-6": {
+"ca": "La finestreta tardana",
+"fr": "Le guichet tardif"
+},
+"castell-6-201-3": {
+"ca": "El magatzem amagat",
+"fr": "La réserve cachée"
+},
+"castell-6-201-6": {
+"ca": "El llit amagat",
+"fr": "Le lit caché"
+},
+"circ-6-201-12": {
+"ca": "L'escriptori perdut",
+"fr": "Le bureau perdu"
+},
+"escola-6-201-1": {
+"ca": "El quadre fosc",
+"fr": "Le tableau sombre"
+},
+"escola-6-201-10": {
+"ca": "La taula tardana",
+"fr": "La table tardive"
+},
+"escola-6-201-2": {
+"ca": "La cadira trencada",
+"fr": "La chaise brisée"
+},
+"hotel-6-201-1": {
+"ca": "L'arxivador amagat",
+"fr": "Le classeur caché"
+},
+"hotel-6-201-4": {
+"ca": "El reflector tardà",
+"fr": "Le projecteur tardif"
+},
+"hotel-6-201-6": {
+"ca": "El sofà tardà",
+"fr": "Le canapé tardif"
+},
+"hotel-6-201-9": {
+"ca": "El despatx trencat",
+"fr": "Le bureau brisé"
+},
+"mas-6-21-1": {
+"ca": "El fanal trencat",
+"fr": "Le lampadaire brisé"
+},
+"mas-6-21-10": {
+"ca": "El tron amagat",
+"fr": "Le trône caché"
+},
+"mas-6-21-2": {
+"ca": "El saló tardà",
+"fr": "Le salon tardif"
+},
+"mas-6-21-4": {
+"ca": "La finestreta amagada",
+"fr": "Le guichet caché"
+},
+"mas-6-21-5": {
+"ca": "El bagul buit",
+"fr": "La malle vide"
+},
+"mas-6-21-9": {
+"ca": "L'àncora trencada",
+"fr": "L'ancre brisée"
+},
+"mas-6-22-12": {
+"ca": "El carro perdut",
+"fr": "La charrette perdue"
+},
+"mas-6-22-2": {
+"ca": "L'escriptori tardà",
+"fr": "Le bureau tardif"
+},
+"mas-6-22-3": {
+"ca": "El mirall trencat",
+"fr": "Le miroir brisé"
+},
+"mas-6-22-5": {
+"ca": "L'armari llunyà",
+"fr": "L'armoire lointaine"
+},
+"mas-6-23-5": {
+"ca": "El bagul fosc",
+"fr": "La malle sombre"
+},
+"mas-6-23-6": {
+"ca": "La llar de foc buida",
+"fr": "La cheminée vide"
+},
+"mas-6-23-8": {
+"ca": "L'arxivador mut",
+"fr": "Le classeur muet"
+},
+"mas-6-24-10": {
+"ca": "L'escala buida",
+"fr": "L'échelle vide"
+},
+"mas-6-24-3": {
+"ca": "La butaca buida",
+"fr": "Le fauteuil vide"
+},
+"mas-6-24-4": {
+"ca": "El reflector buit",
+"fr": "Le projecteur vide"
+},
+"mas-6-24-7": {
+"ca": "La caixa muda",
+"fr": "La caisse muette"
+},
+"mas-6-7-2": {
+"ca": "La planta perduda",
+"fr": "La plante perdue"
+},
+"mas-6-7-8": {
+"ca": "El tamboret mut",
+"fr": "Le tabouret muet"
+},
+"mercat-6-201-7": {
+"ca": "El rentat tardà",
+"fr": "Le bac tardif"
+},
+"museu-6-201-2": {
+"ca": "El banc tardà",
+"fr": "Le banc tardif"
+},
+"museu-6-201-5": {
+"ca": "El despatx fosc",
+"fr": "Le bureau sombre"
+},
+"restaurant-6-201-1": {
+"ca": "L'oficina buida",
+"fr": "Le bureau vide"
+},
+"restaurant-6-201-4": {
+"ca": "La planta fosca",
+"fr": "La plante sombre"
+},
+"restaurant-6-201-6": {
+"ca": "El barril llunyà",
+"fr": "Le tonneau lointain"
+},
+"vaixell-6-201-1": {
+"ca": "El magatzem llunyà",
+"fr": "L'entrepôt lointain"
+},
+"vaixell-6-201-12": {
+"ca": "La pissarra fosca",
+"fr": "Le tableau noir sombre"
+},
+"vaixell-6-201-4": {
+"ca": "La barra perduda",
+"fr": "Le comptoir perdu"
+},
+"vaixell-6-201-5": {
+"ca": "La cadira llunyana",
+"fr": "La chaise lointaine"
+},
+"castell-7-204-6": {
+"ca": "El fanal tardà",
+"fr": "Le lampadaire tardif"
+},
+"escola-7-204-3": {
+"ca": "La sala perduda",
+"fr": "La salle perdue"
+},
+"hotel-7-204-3": {
+"ca": "L'armeria tardana",
+"fr": "L'armurerie tardive"
+},
+"mercat-7-204-6": {
+"ca": "La barra buida",
+"fr": "Le comptoir vide"
+},
+"museu-7-204-6": {
+"ca": "La cadira buida",
+"fr": "La chaise vide"
+},
+"castell-7-204-1": {
+"ca": "La planta tardana",
+"fr": "La plante tardive"
+},
+"castell-7-204-5": {
+"ca": "El carro buit",
+"fr": "La charrette vide"
+},
+"escola-7-204-4": {
+"ca": "La llibreria perduda",
+"fr": "La bibliothèque perdue"
+},
+"escola-7-204-6": {
+"ca": "La sala de tast tardana",
+"fr": "La salle de dégustation tardive"
+},
+"hotel-7-204-1": {
+"ca": "La planta trencada",
+"fr": "La plante brisée"
+},
+"hotel-7-204-4": {
+"ca": "L'armari mut",
+"fr": "L'armoire muette"
+},
+"mansio-7-204-2": {
+"ca": "L'escala muda",
+"fr": "L'échelle muette"
+},
+"mas-7-31-1": {
+"ca": "La coberta fosca",
+"fr": "Le pont sombre"
+},
+"mas-7-31-2": {
+"ca": "El carretó fosc",
+"fr": "Le chariot sombre"
+},
+"mas-7-31-4": {
 "ca": "El pou trencat",
 "fr": "Le puits brisé"
 },
+"mas-7-31-8": {
+"ca": "La taula llunyana",
+"fr": "La table lointaine"
+},
+"mas-7-31-9": {
+"ca": "El despatx tardà",
+"fr": "Le bureau tardif"
+},
+"mas-7-32-1": {
+"ca": "La butaca muda",
+"fr": "Le fauteuil muet"
+},
+"mas-7-32-3": {
+"ca": "El barril fosc",
+"fr": "Le tonneau sombre"
+},
+"mas-7-32-6": {
+"ca": "La sala principal perduda",
+"fr": "La salle principale perdue"
+},
+"mas-7-32-8": {
+"ca": "La finestreta buida",
+"fr": "Le guichet vide"
+},
+"mercat-7-204-4": {
+"ca": "La caixa fosca",
+"fr": "La caisse sombre"
+},
+"mercat-7-204-5": {
+"ca": "La sala de subhastes buida",
+"fr": "La salle des ventes vide"
+},
+"museu-7-204-1": {
+"ca": "La cafeteria perduda",
+"fr": "La cafétéria perdue"
+},
+"restaurant-7-204-4": {
+"ca": "La torxa llunyana",
+"fr": "La torche lointaine"
+},
+"restaurant-7-204-6": {
+"ca": "La cuina tardana",
+"fr": "La cuisine tardive"
+},
+"vaixell-7-204-5": {
+"ca": "L'estufa amagada",
+"fr": "Le poêle caché"
+},
+"castell-7-204-3": {
+"ca": "L'estudi trencat",
+"fr": "Le bureau brisé"
+},
+"circ-7-204-2": {
+"ca": "El menjador llunyà",
+"fr": "La salle lointaine"
+},
+"escola-7-204-1": {
+"ca": "El pou perdut",
+"fr": "Le puits perdu"
+},
+"mansio-7-204-3": {
+"ca": "La taquilla trencada",
+"fr": "La billetterie brisée"
+},
+"mansio-7-204-4": {
+"ca": "El banc mut",
+"fr": "Le banc muet"
+},
+"mansio-7-204-6": {
+"ca": "La cuina fosca",
+"fr": "La cuisine sombre"
+},
+"mas-7-31-10": {
+"ca": "L'arxivador perdut",
+"fr": "Le classeur perdu"
+},
+"mas-7-31-6": {
+"ca": "El quadre mut",
+"fr": "Le tableau muet"
+},
+"mas-7-32-2": {
+"ca": "La plataforma perduda",
+"fr": "La plateforme perdue"
+},
+"mas-7-32-9": {
+"ca": "El celler llunyà",
+"fr": "La cave lointaine"
+},
+"museu-7-204-5": {
+"ca": "La cadira muda",
+"fr": "La chaise muette"
+},
+"hotel-7-204-5": {
+"ca": "El maniquí amagat",
+"fr": "Le mannequin caché"
+},
+"mas-7-32-7": {
+"ca": "La barra tardana",
+"fr": "Le comptoir tardif"
+},
+"mercat-7-204-2": {
+"ca": "La llibreria amagada",
+"fr": "La bibliothèque cachée"
+},
+"castell-7-204-2": {
+"ca": "La vitrina muda",
+"fr": "La vitrine muette"
+},
+"castell-7-204-4": {
+"ca": "La butaca perduda",
+"fr": "Le fauteuil perdu"
+},
+"circ-7-204-1": {
+"ca": "L'estudi buit",
+"fr": "Le cabinet vide"
+},
+"circ-7-204-4": {
+"ca": "El carretó amagat",
+"fr": "Le chariot caché"
+},
+"escola-7-204-2": {
+"ca": "L'estufa muda",
+"fr": "Le poêle muet"
+},
+"hotel-7-204-2": {
+"ca": "La caixa perduda",
+"fr": "La caisse perdue"
+},
+"hotel-7-204-6": {
+"ca": "La sala de les moles amagada",
+"fr": "La salle des meules cachée"
+},
+"mansio-7-204-5": {
+"ca": "El taller amagat",
+"fr": "L'atelier caché"
+},
+"mas-7-31-3": {
+"ca": "El banc amagat",
+"fr": "Le banc caché"
+},
+"mas-7-31-5": {
+"ca": "El taller perdut",
+"fr": "L'atelier perdu"
+},
+"mas-7-31-7": {
+"ca": "El taller de restauració llunyà",
+"fr": "L'atelier lointain"
+},
+"mas-7-32-10": {
+"ca": "La maleta fosca",
+"fr": "La valise sombre"
+},
+"mas-7-32-4": {
+"ca": "La barra fosca",
+"fr": "Le comptoir sombre"
+},
+"mas-7-32-5": {
+"ca": "L'habitació fosca",
+"fr": "La chambre sombre"
+},
+"mercat-7-204-1": {
+"ca": "L'escala amagada",
+"fr": "L'échelle cachée"
+},
+"museu-7-204-2": {
+"ca": "El bagul llunyà",
+"fr": "La malle lointaine"
+},
+"museu-7-204-3": {
+"ca": "La pissarra amagada",
+"fr": "Le tableau noir caché"
+},
+"museu-7-204-4": {
+"ca": "La cadira tardana",
+"fr": "La chaise tardive"
+},
+"restaurant-7-204-1": {
+"ca": "La platea fosca",
+"fr": "Le parterre sombre"
+},
+"vaixell-7-204-1": {
+"ca": "El sofà fosc",
+"fr": "Le canapé sombre"
+},
+"vaixell-7-204-4": {
+"ca": "El tamboret fosc",
+"fr": "Le tabouret sombre"
+},
+"vaixell-7-204-6": {
+"ca": "El maniquí fosc",
+"fr": "Le mannequin sombre"
+},
+"estacio-8-21-1": {
+"ca": "La sala de màquines muda",
+"fr": "La salle des machines muette"
+},
+"estacio-8-21-2": {
+"ca": "El bagul tardà",
+"fr": "La malle tardive"
+},
+"estacio-8-21-3": {
+"ca": "L'hort buit",
+"fr": "Le potager vide"
+},
+"mas-8-21-1": {
+"ca": "La taquilla fosca",
+"fr": "La billetterie sombre"
+},
 "mas-8-21-2": {
-"ca": "L'era llunyana",
-"fr": "L'aire lointaine"
+"ca": "El barril buit",
+"fr": "Le tonneau vide"
 },
 "mas-8-21-3": {
-"ca": "El molí tardà",
-"fr": "Le moulin tardif"
+"ca": "L'habitació llunyana",
+"fr": "La chambre lointaine"
+},
+"teatre-8-21-1": {
+"ca": "La maleta llunyana",
+"fr": "La valise lointaine"
+},
+"teatre-8-21-2": {
+"ca": "El barril amagat",
+"fr": "Le tonneau caché"
+},
+"teatre-8-21-3": {
+"ca": "La terrassa trencada",
+"fr": "La terrasse brisée"
+},
+"estacio-8-24-1": {
+"ca": "El tron fosc",
+"fr": "Le trône sombre"
+},
+"estacio-8-24-2": {
+"ca": "El llit trencat",
+"fr": "Le lit brisé"
+},
+"estacio-8-24-3": {
+"ca": "El reflector perdut",
+"fr": "Le projecteur perdu"
 },
 "mas-8-24-1": {
-"ca": "La vinya perduda",
-"fr": "La vigne perdue"
+"ca": "La cafeteria fosca",
+"fr": "La cafétéria sombre"
 },
 "mas-8-24-2": {
-"ca": "El tonell mut",
-"fr": "Le tonneau muet"
+"ca": "L'oficina amagada",
+"fr": "Le bureau caché"
 },
 "mas-8-24-3": {
-"ca": "La vinya llunyana",
-"fr": "La vigne lointaine"
+"ca": "La taula muda",
+"fr": "La table muette"
+},
+"teatre-8-24-1": {
+"ca": "L'arbre llunyà",
+"fr": "L'arbre lointain"
+},
+"teatre-8-24-2": {
+"ca": "L'obrador fosc",
+"fr": "Le laboratoire sombre"
+},
+"teatre-8-24-3": {
+"ca": "L'estufa perduda",
+"fr": "Le poêle perdu"
 }
 }

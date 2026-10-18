@@ -231,3 +231,26 @@ _registra("mercat", ("Crim al mercat", "Crime au marché"), ("la plaça", "la pl
     ("cafe", ("m", "cafè"), ("m", "café"), ["barra", "tamboret", "mirall"]),
     ("magatzem", ("m", "magatzem"), ("m", "entrepôt"), ["carro", "caixa", "bagul"]),
     ("oficina", ("f", "oficina"), ("m", "bureau"), ["escriptori", "arxivador", "cadira"])])
+
+
+# --- escenaris definits a escenaris_extra.py ---------------------------------
+def _prep(tag, lang):
+    """'El castell' -> 'al castell' (ca) / 'au château' (fr), per fer el títol «Crim al castell»."""
+    art, _, resta = tag.partition(" ") if not tag.startswith(("L'", "l'")) else (tag[:2], "", tag[2:])
+    if lang == "ca":
+        return {"El": "al " + resta, "La": "a la " + resta, "L'": "a l'" + resta}[art]
+    return {"Le": "au " + resta, "La": "à la " + resta, "L'": "à l'" + resta}[art]
+
+
+def _carrega_extra():
+    from escenaris_extra import llegeix
+    for e in llegeix():
+        tag_ca, tag_fr = e["tag"]
+        _registra(e["clau"],
+                  ("Crim " + _prep(tag_ca, "ca"), "Crime " + _prep(tag_fr, "fr")),
+                  e["lloc"],
+                  [("s%d" % i, ca, fr, objs) for i, (ca, fr, objs) in enumerate(e["sales"])])
+        ESCENARIS[e["clau"]]["tag"] = {"ca": tag_ca, "fr": tag_fr}
+
+
+_carrega_extra()

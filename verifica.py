@@ -16,7 +16,8 @@ def comprova(cas):
     n = cas["n"]
     esc = ESCENARIS[cas["escenari"]]
     pla, sala, obj = cas["pla"], cas["sala"], cas["obj"]
-    bloq = {k: v["bloqueja"] for k, v in esc["objectes"].items()}
+    objs = cas.get("objectes") or esc["objectes"]
+    bloq = {k: v["bloqueja"] for k, v in objs.items()}
     ids = [p["id"] for p in cas["persones"]]
     vict = ids[-1]
 

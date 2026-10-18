@@ -6,6 +6,7 @@ Afegeix el camp "objectes" als casos antics que no el tenen.
 """
 import json
 import random
+import zlib
 import sys
 
 from escenaris import ESCENARIS
@@ -198,6 +199,17 @@ ADJ = [("mut", "muda", "muet", "muette"), ("trencat", "trencada", "brisé", "bri
        ("tardà", "tardana", "tardif", "tardive"), ("buit", "buida", "vide", "vide")]
 
 
+def noms_de(esc):
+    """Substantius (ca, gènere ca, fr, gènere fr) que surten a l'escenari: objectes i sales."""
+    e = ESCENARIS[esc]
+    out = []
+    for o in e["objectes"].values():
+        out.append((o["nom"]["ca"][1], o["nom"]["ca"][0], o["nom"]["fr"][1], o["nom"]["fr"][0]))
+    for s in e["sales"].values():
+        out.append((s["nom"]["ca"][1], s["nom"]["ca"][0], s["nom"]["fr"][1], s["nom"]["fr"][0]))
+    return list(dict.fromkeys(out))
+
+
 def assigna_noms(casos):
     """Assigna un nom estable a cada cas (guardat a noms.json, per id), propi del seu escenari."""
     try:
@@ -207,20 +219,26 @@ def assigna_noms(casos):
         noms = {}
     usats = {v["ca"] for v in noms.values()}
     lliures = {}
-    for esc, llista in NOMS.items():
-        combos = [(esc, a, b) for b in range(len(ADJ)) for a in range(len(llista))]
-        random.Random(3).shuffle(combos)
+    for c in casos:
+        esc = c["escenari"]
+        if c["id"] in noms or esc in lliures:
+            continue
+        llista = noms_de(esc)
+        combos = [(llista[a], b) for b in range(len(ADJ)) for a in range(len(llista))]
+        random.Random(zlib.crc32(esc.encode())).shuffle(combos)
         lliures[esc] = iter(k for k in combos if titol(*k)["ca"] not in usats)
     for c in casos:
         if c["id"] not in noms:
-            noms[c["id"]] = titol(*next(lliures[c["escenari"]]))
+            n = titol(*next(lliures[c["escenari"]]))
+            usats.add(n["ca"])
+            noms[c["id"]] = n
         c["nom"] = noms[c["id"]]
     with open("noms.json", "w", encoding="utf-8") as fh:
         json.dump(noms, fh, ensure_ascii=False, indent=0)
 
 
-def titol(esc, i, j):
-    ca, gca, fr, gfr = NOMS[esc][i]
+def titol(nom, j):
+    ca, gca, fr, gfr = nom
     a = ADJ[j]
     art_ca = "El " if gca == "m" else "La "
     if ca[0] in "aeiouàèéíòóúh":
@@ -233,7 +251,7 @@ def titol(esc, i, j):
 
 
 def main():
-    fitxers = sys.argv[1:] or ["casos_prova.json", "casos_n3.json"]
+    fitxers = sys.argv[1:] or ["casos_final.json"]
     casos, vistos = [], set()
     for f in fitxers:
         with open(f, encoding="utf-8") as fh:
@@ -247,8 +265,17 @@ def main():
                 casos.append(c)
     casos.sort(key=lambda c: (c["n"], c["nivell"]))
     assigna_noms(casos)
+    meta = {}
+    for c in casos:
+        k = c["escenari"]
+        tag = ESCENARIS[k].get("tag")
+        if tag and k not in meta:
+            base = zlib.crc32(k.encode()) % 360
+            meta[k] = {"tag": tag, "hue": [(base + 47 * i) % 360 for i in range(8)],
+                       "sat": 38 + zlib.crc32((k + "s").encode()) % 25, "col": base}
     with open("casos.js", "w", encoding="utf-8") as fh:
         fh.write("window.CASOS = " + json.dumps(casos, ensure_ascii=False) + ";\n")
+        fh.write("window.SCEN_META = " + json.dumps(meta, ensure_ascii=False) + ";\n")
     print(len(casos), "casos a casos.js")
     # joc.html: tot en un sol fitxer (casos inclosos), per obrir-lo sense servidor
     with open("index.html", encoding="utf-8") as fh:
