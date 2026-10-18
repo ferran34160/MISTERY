@@ -86,15 +86,16 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.blocked{background-image:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.06) 6px 7px)}
 .cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
 .cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none}
-.cell svg.obj{position:absolute;inset:14%;width:72%;height:72%;color:var(--ink);opacity:.8;pointer-events:none}
-.cell.free svg.obj{inset:auto 2px 2px auto;width:34%;height:34%;opacity:.55}
-.cell.placed svg.obj{opacity:.35}
+.cell svg.obj{position:absolute;inset:8%;width:84%;height:84%;pointer-events:none}
+.cell.free svg.obj{inset:auto 1px 1px auto;width:56%;height:56%}
+.cell.placed svg.obj{opacity:.3}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
 .notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
 .tok{position:relative;width:70%;height:70%;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:clamp(14px,5vw,24px);color:#fff;border:2px solid var(--line);pointer-events:none;z-index:2}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
 /* eines */
+.legend{display:flex;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0}.legend span{display:inline-flex;align-items:center;gap:5px;background:var(--panel);border:1.5px solid var(--cellgrid);border-radius:20px;padding:2px 9px 2px 4px;font-size:.78rem}.legend svg{width:24px;height:24px}.legend em{font-style:normal;color:var(--muted);font-size:.7rem}
 .tools{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:10px 0}
 .tools button{padding:8px 0;font-size:1.05rem}
 .tools button.on{background:var(--ink);color:var(--bg)}
@@ -143,6 +144,7 @@ h2{font-size:.95rem;margin:16px 0 6px}
   <section id="game" class="hidden">
     <div class="bar"><span id="info"></span><span id="timer">0:00</span></div>
     <div id="board"></div>
+    <div id="legend" class="legend"></div>
     <div class="tools" id="tools"></div>
     <div id="msg"></div>
     <div class="cards" id="cards"></div>
@@ -179,36 +181,37 @@ const T={
 const ROOMHUE=[28,205,95,330,50,265,175,10];
 const PERSONHUE=[8,210,130,280,35,175,320,60,95,245];
 const ICONS={
- fanal:'<path d="M12 3v18M8 21h8M8 6h8l-1 5H9z"/>',
- carreto:'<path d="M4 6h3l2 9h9l2-6H8"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/>',
- finestreta:'<rect x="4" y="5" width="16" height="12" rx="1"/><path d="M4 12h16M8 20h8"/>',
- estufa:'<rect x="6" y="6" width="12" height="14" rx="2"/><path d="M12 6V3M9 12h6"/>',
- maleta:'<rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 8V5h6v3M4 14h16"/>',
- barra:'<path d="M3 10h18M5 10v10M19 10v10M3 6h18"/>',
- tamboret:'<ellipse cx="12" cy="8" rx="6" ry="2"/><path d="M7 9l-1 11M17 9l1 11M12 10v10"/>',
- caixa:'<rect x="4" y="7" width="16" height="13"/><path d="M4 12h16M10 12v3h4v-3"/>',
- escriptori:'<rect x="3" y="8" width="18" height="3"/><path d="M5 11v9M19 11v9M9 11v5h6v-5"/>',
- arxivador:'<rect x="6" y="3" width="12" height="18" rx="1"/><path d="M6 9h12M6 15h12M11 6h2M11 12h2M11 18h2"/>',
- piano:'<path d="M3 9h18v10H3zM7 9v10M11 9v10M15 9v10M19 9v10M6 9l1-4h10l1 4"/>',
- tel:'<path d="M3 4h18M5 4c0 6 0 10-2 16M19 4c0 6 0 10 2 16M12 4v16M8 4c1 6 1 10 0 16M16 4c-1 6-1 10 0 16"/>',
- butaca:'<path d="M6 12V8a3 3 0 013-3h6a3 3 0 013 3v4M4 12h16v5H4zM6 17v3M18 17v3"/>',
- sofa:'<path d="M4 12v-2a2 2 0 012-2h12a2 2 0 012 2v2M3 12h18v5H3zM5 17v3M19 17v3"/>',
- mirall:'<ellipse cx="12" cy="10" rx="6" ry="8"/><path d="M12 18v3M9 21h6"/>',
- maniqui:'<path d="M12 3v3M9 6h6l2 4-2 2v9M9 6L7 10l2 2v9M9 21h6"/>',
- bagul:'<rect x="4" y="8" width="16" height="11" rx="1"/><path d="M4 12h16M10 12v3h4v-3M4 8c0-3 16-3 16 0"/>',
- escala:'<path d="M8 3v18M16 3v18M8 7h8M8 12h8M8 17h8"/>',
- reflector:'<path d="M7 5h10l2 6H5zM12 11v3M8 21h8M12 14v7M3 8l2 1M21 8l-2 1"/>',
- taula:'<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M6 12v8M18 12v8"/>',
- llar:'<path d="M3 21V8l9-5 9 5v13zM9 21v-6h6v6"/><path d="M12 13c-2-2 0-3 0-5 2 1 3 4 0 5z"/>',
- barril:'<ellipse cx="12" cy="12" rx="7" ry="9"/><path d="M5.5 8c4 2 9 2 13 0M5.5 16c4-2 9-2 13 0"/>',
- armari:'<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M10 12v1M14 12v1"/>',
- figuera:'<circle cx="12" cy="9" r="6"/><path d="M12 15v6M9 21h6"/>',
- pou:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M3 12h4"/>',
- banc:'<path d="M3 9h18M3 13h18M5 13v7M19 13v7"/>',
- carro:'<rect x="3" y="7" width="14" height="8"/><path d="M17 10h4"/><circle cx="7" cy="18" r="3"/><circle cx="15" cy="18" r="3"/>',
- balanci:'<path d="M7 3l2 12h8M9 9h7"/><path d="M4 19c4 3 12 3 16 0"/>',
- cadira:'<path d="M7 3v18M7 12h10v9M17 12V8"/>'
+ taula:'<rect x="2.5" y="9" width="19" height="3" rx="1" fill="#c68a4e"/><rect x="5" y="12" width="2.2" height="9" fill="#8a5a2e"/><rect x="16.8" y="12" width="2.2" height="9" fill="#8a5a2e"/><ellipse cx="12" cy="7.5" rx="3.5" ry="1.3" fill="#f1e3c0"/><path d="M8.5 7.5c0 3 7 3 7 0" fill="#f1e3c0"/>',
+ llar:'<rect x="2.5" y="3" width="19" height="18" fill="#9a948a"/><path d="M6.5 21V12a5.5 5.5 0 0111 0v9z" fill="#2b2118"/><path d="M12 20c-3.2 0-3.6-3.2-1.4-5.4.2 1.8 1.6 1.8 1.6 0 2.4 1.2 3.4 5.4-.2 5.4z" fill="#f08a1e"/><path d="M2.5 9h19M2.5 15h4M17.5 15h4" fill="none"/>',
+ barril:'<path d="M6 3h12c2.4 4 2.4 14 0 18H6c-2.4-4-2.4-14 0-18z" fill="#b5763c"/><path d="M5.6 8h12.8M5.2 16h13.6" fill="none" stroke-width="1.6"/><circle cx="12" cy="12" r="1.2" fill="#2b2118"/>',
+ armari:'<rect x="4.5" y="2" width="15" height="19" fill="#c68a4e"/><path d="M12 2v19M4.5 5h15" fill="none"/><rect x="5.5" y="6.5" width="5.5" height="13" fill="#8a5a2e"/><rect x="13" y="6.5" width="5.5" height="13" fill="#8a5a2e"/><circle cx="10" cy="13" r=".9" fill="#f0c43a"/><circle cx="14" cy="13" r=".9" fill="#f0c43a"/><rect x="5.5" y="21" width="3" height="1.8" fill="#2b2118"/><rect x="15.5" y="21" width="3" height="1.8" fill="#2b2118"/>',
+ figuera:'<rect x="10.8" y="13" width="2.6" height="8" fill="#7a4a22"/><circle cx="12" cy="8.5" r="6.3" fill="#4a9a4f"/><circle cx="9" cy="8.5" r="1.5" fill="#7b3f8c"/><circle cx="14.6" cy="10.4" r="1.5" fill="#7b3f8c"/><circle cx="12.6" cy="5.8" r="1.5" fill="#7b3f8c"/>',
+ pou:'<path d="M4 7.5L12 3l8 4.5z" fill="#b5302a"/><path d="M6.5 7.5v5M17.5 7.5v5" fill="none" stroke-width="1.6"/><path d="M12 7.5v3.5" fill="none"/><rect x="10.3" y="11" width="3.4" height="3" fill="#8a5a2e"/><path d="M4.5 12.5h15v8.5h-15z" fill="#9a948a"/><path d="M4.5 16.7h15M9 12.5v4.2M15 12.5v4.2M12 16.7v4.3" fill="none"/>',
+ banc:'<rect x="2.5" y="6" width="19" height="2.6" rx=".8" fill="#c68a4e"/><rect x="2.5" y="10.5" width="19" height="3" rx=".8" fill="#c68a4e"/><rect x="4.5" y="13.5" width="2.2" height="7" fill="#8a5a2e"/><rect x="17.3" y="13.5" width="2.2" height="7" fill="#8a5a2e"/><rect x="4.5" y="8.6" width="2" height="2" fill="#8a5a2e"/><rect x="17.5" y="8.6" width="2" height="2" fill="#8a5a2e"/>',
+ carro:'<path d="M2.5 7h19l-2.5 8H5z" fill="#c68a4e"/><path d="M8 7v8M12 7v8M16 7v8" fill="none"/><circle cx="8" cy="18" r="3.2" fill="#f1e3c0"/><circle cx="16.5" cy="18" r="3.2" fill="#f1e3c0"/><path d="M8 14.8v6.4M4.8 18h6.4M16.5 14.8v6.4M13.3 18h6.4" fill="none" stroke-width=".8"/><path d="M21.5 7l2 -3" fill="none"/>',
+ balanci:'<path d="M7.5 3l1.2 10h8.6" fill="none" stroke="#8a5a2e" stroke-width="2.6"/><path d="M7.5 3l1.2 10h8.6" fill="none" stroke="#c68a4e" stroke-width="1.2"/><path d="M8.5 13l-1.5 5M17 13l1.5 5" fill="none" stroke="#8a5a2e" stroke-width="1.6"/><path d="M3.5 19.5c5 3 13 3 17 0" fill="none" stroke="#8a5a2e" stroke-width="2.2"/>',
+ cadira:'<rect x="7" y="2.5" width="3" height="11" fill="#c68a4e"/><rect x="7" y="11.5" width="11" height="3.2" fill="#c68a4e"/><rect x="7" y="14.7" width="2.4" height="6.3" fill="#8a5a2e"/><rect x="15.6" y="14.7" width="2.4" height="6.3" fill="#8a5a2e"/><path d="M10 5h0M10 8h0" />',
+ fanal:'<rect x="10.9" y="8.5" width="2.2" height="12" fill="#5c5f66"/><rect x="8" y="20" width="8" height="2" rx=".6" fill="#5c5f66"/><path d="M8 8.5l1.2-5.5h5.6l1.2 5.5z" fill="#f5d35a"/><path d="M9.5 3h5" fill="none" stroke-width="1.8"/>',
+ carreto:'<path d="M7.5 2.5v15h2" fill="none" stroke="#5c5f66" stroke-width="2"/><rect x="9" y="7" width="8" height="8" fill="#c68a4e"/><path d="M9 11h8M13 7v8" fill="none"/><path d="M5.5 2.5h4" fill="none" stroke="#5c5f66" stroke-width="2"/><circle cx="12" cy="19" r="2.6" fill="#33353a"/><rect x="9" y="15" width="10" height="1.8" fill="#5c5f66"/>',
+ finestreta:'<rect x="2.5" y="3" width="19" height="17" fill="#6f8fb3"/><rect x="5.5" y="6" width="13" height="8" fill="#d6ebf8"/><rect x="3.5" y="14.5" width="17" height="2.6" fill="#c68a4e"/><path d="M12 6v8" fill="none"/><circle cx="9" cy="11" r="1.4" fill="#e8c9a0"/><path d="M6.5 14c.4-2 4.6-2 5 0" fill="#3a6ea5"/>',
+ estufa:'<rect x="10.5" y="2.5" width="3.2" height="5.5" fill="#6b6e75"/><rect x="5.5" y="8" width="13" height="12" rx="2.2" fill="#4c4f56"/><rect x="8" y="11" width="8" height="5.5" rx="1" fill="#f08a1e"/><path d="M12 16c-2 0-2-2-.8-3 .2 1 1.2 1 1.2 0 1.3.6 1.6 3-.4 3z" fill="#ffd35a" stroke="none"/><rect x="6.5" y="20" width="2.5" height="2" fill="#2b2118"/><rect x="15" y="20" width="2.5" height="2" fill="#2b2118"/>',
+ maleta:'<path d="M9 8V5h6v3" fill="none" stroke-width="1.6"/><rect x="3" y="8" width="18" height="12.5" rx="2" fill="#a8683a"/><path d="M3 13h18" fill="none"/><rect x="10" y="11.5" width="4" height="3" rx=".5" fill="#f0c43a"/><path d="M6.5 8v12.5M17.5 8v12.5" fill="none" stroke-width=".8"/>',
+ barra:'<rect x="2" y="9.5" width="20" height="3" rx="1" fill="#c68a4e"/><rect x="3" y="12.5" width="18" height="8.5" fill="#8a5a2e"/><path d="M8 12.5v8.5M13 12.5v8.5M18 12.5v8.5" fill="none" stroke-width=".8"/><rect x="5.5" y="3.5" width="2.6" height="6" rx=".8" fill="#3c8a4a"/><path d="M13.2 5.5h3.6l-.5 4h-2.6z" fill="#ffffff"/><path d="M16.8 6.3h1.2v2h-1.2" fill="none" stroke-width=".9"/>',
+ tamboret:'<ellipse cx="12" cy="8" rx="6.5" ry="2.4" fill="#c0392b"/><path d="M5.5 8v2.2c0 1.3 13 1.3 13 0V8" fill="#a22a1f"/><path d="M8 11.5l-1.5 9.5M16 11.5l1.5 9.5" fill="none" stroke="#8a5a2e" stroke-width="1.8"/><path d="M7.2 17h9.6" fill="none"/>',
+ caixa:'<rect x="3" y="5" width="18" height="15" fill="#c68a4e"/><path d="M3 9h18M3 16h18M3 5l18 15M21 5L3 20" fill="none"/><rect x="3" y="5" width="18" height="15" fill="none" stroke-width="1.6"/>',
+ escriptori:'<rect x="2" y="9" width="20" height="3" rx=".8" fill="#c68a4e"/><rect x="3.5" y="12" width="5.5" height="9" fill="#8a5a2e"/><rect x="15" y="12" width="5.5" height="9" fill="#8a5a2e"/><circle cx="6.2" cy="15" r=".8" fill="#f0c43a"/><circle cx="6.2" cy="19" r=".8" fill="#f0c43a"/><rect x="8" y="3.5" width="6" height="5.5" fill="#ffffff"/><path d="M9.2 5.2h3.6M9.2 7h3.6" fill="none" stroke-width=".8"/><rect x="16.5" y="6" width="3" height="3" fill="#3a6ea5"/>',
+ arxivador:'<rect x="5.5" y="2.5" width="13" height="19" rx="1" fill="#8d96a3"/><path d="M5.5 8.8h13M5.5 15.2h13" fill="none"/><rect x="9.5" y="5" width="5" height="2" rx=".5" fill="#f1e3c0"/><rect x="9.5" y="11.4" width="5" height="2" rx=".5" fill="#f1e3c0"/><rect x="9.5" y="17.8" width="5" height="2" rx=".5" fill="#f1e3c0"/>',
+ piano:'<path d="M3 5h18v3H3z" fill="#2b2118"/><rect x="2" y="8" width="20" height="12.5" fill="#2b2118"/><rect x="3.5" y="13" width="17" height="6.5" fill="#ffffff"/><path d="M6.5 13v6.5M9.5 13v6.5M12.5 13v6.5M15.5 13v6.5M18.5 13v6.5" fill="none" stroke-width=".7"/><path d="M5.5 13h2M8.5 13h2M14.5 13h2M17.5 13h2" stroke="#2b2118" stroke-width="3" fill="none"/>',
+ tel:'<rect x="2" y="2.5" width="20" height="2.6" rx=".8" fill="#f0c43a"/><path d="M3 5h8.5c-.6 5-2.4 11-4 16.5H3z" fill="#a8212b"/><path d="M21 5h-8.5c.6 5 2.4 11 4 16.5H21z" fill="#a8212b"/><path d="M7 5c.4 5 .2 11-.8 16.5M17 5c-.4 5-.2 11 .8 16.5" fill="none" stroke-width=".8"/>',
+ butaca:'<rect x="6" y="3.5" width="12" height="10" rx="3" fill="#a8212b"/><rect x="3" y="10" width="4.5" height="9" rx="2" fill="#8c1a22"/><rect x="16.5" y="10" width="4.5" height="9" rx="2" fill="#8c1a22"/><rect x="6.5" y="12" width="11" height="6" rx="1.5" fill="#c0392b"/><rect x="5" y="19" width="2" height="2.6" fill="#2b2118"/><rect x="17" y="19" width="2" height="2.6" fill="#2b2118"/>',
+ sofa:'<rect x="4" y="5" width="16" height="9" rx="3" fill="#3a6ea5"/><rect x="1.5" y="10" width="5" height="8" rx="2" fill="#2d5785"/><rect x="17.5" y="10" width="5" height="8" rx="2" fill="#2d5785"/><rect x="5.5" y="12" width="13" height="6" rx="1.5" fill="#4a82bd"/><rect x="4" y="18" width="2" height="2.6" fill="#2b2118"/><rect x="18" y="18" width="2" height="2.6" fill="#2b2118"/>',
+ mirall:'<ellipse cx="12" cy="10" rx="6.5" ry="8" fill="#f0c43a"/><ellipse cx="12" cy="10" rx="4.9" ry="6.4" fill="#d6ebf8"/><path d="M9.5 7.5l2.2-2.2M9 10l3.6-3.6" fill="none" stroke="#ffffff" stroke-width="1.2"/><path d="M12 18v3M8.5 21.5h7" fill="none" stroke-width="1.8"/>',
+ maniqui:'<circle cx="12" cy="4.3" r="2.3" fill="#e9d2b4"/><path d="M8.5 7.5h7l1.2 8h-9.4z" fill="#c0392b"/><path d="M12 15.5V20" fill="none" stroke-width="1.6"/><rect x="8" y="20" width="8" height="1.8" rx=".6" fill="#8a5a2e"/><path d="M8.5 7.5L6 12M15.5 7.5L18 12" fill="none" stroke="#e9d2b4" stroke-width="1.6"/>',
+ bagul:'<path d="M3 11c0-4.5 18-4.5 18 0z" fill="#9a5f2e"/><rect x="3" y="11" width="18" height="9" fill="#c68a4e"/><path d="M3 11h18M7 6.2V20M17 6.2V20" fill="none" stroke-width="1.1"/><rect x="10.3" y="10" width="3.4" height="3.8" rx=".6" fill="#f0c43a"/>',
+ escala:'<path d="M7.5 2v20M16.5 2v20" fill="none" stroke="#8a5a2e" stroke-width="2.4"/><path d="M7.5 6.5h9M7.5 11.5h9M7.5 16.5h9" fill="none" stroke="#c68a4e" stroke-width="2"/><path d="M7.5 2v20M16.5 2v20" fill="none" stroke="#2b2118" stroke-width=".5"/>',
+ reflector:'<path d="M15 9l6.5 12H9z" fill="#ffe27a" opacity=".75" stroke="none"/><path d="M4.5 3.5h8.5l3 5.5H7.5z" fill="#4c4f56"/><rect x="6.5" y="9" width="2" height="4" fill="#4c4f56"/><path d="M7.5 9l-1 4h9l-1.5-4" fill="#6b6e75"/><path d="M7.5 13l-3 8M14.5 13l3 8" fill="none" stroke-width="1.6"/>'
 };
+const icon=(o,cls)=>`<svg class="${cls||"obj"}" viewBox="0 0 24 24" stroke="#2b2118" stroke-width="1" stroke-linejoin="round" stroke-linecap="round">${ICONS[o]||""}</svg>`;
 const SCEN={
  mas:{tag:{ca:"El mas",fr:"Le mas"},hue:ROOMHUE,sat:60,col:28},
  estacio:{tag:{ca:"L'estació",fr:"La gare"},hue:[205,35,160,260,10,95,330,50],sat:42,col:205},
@@ -314,8 +317,11 @@ function render(){
   document.documentElement.lang=lang;document.title=t("title");
   $("#title").innerHTML=`${caseName(cur)}<small>${cur.titol[lang]} · ${t("cas")} ${cur._i+1}</small>`;
   $("#info").innerHTML=`${t("lvl")} ${dots(cur.nivell)} · ${cur.n}×${cur.n}`;
-  renderBoard();renderTools();renderCards();
+  renderBoard();renderLegend();renderTools();renderCards();
 }
+function renderLegend(){
+  const f=lang==="fr";
+  $("#legend").innerHTML=Object.entries(cur.objectes).map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}
 function renderBoard(){
   const n=cur.n,b=$("#board"),dk=dark();
   b.style.gridTemplateColumns=`repeat(${n},1fr)`;
@@ -333,7 +339,7 @@ function renderBoard(){
     let cls="cell"+(blk?" blocked":"")+(o&&!blk?" free":"")+(cell.p?" placed":"")+((rowsU.has(r)||colsU.has(c))&&!cell.p?" line":"");
     let inner="";
     if(!seen.has(s)){seen.add(s);inner+=`<span class="rn">${cur.sales[s][lang]}</span>`}
-    if(o)inner+=`<svg class="obj" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICONS[o]||""}</svg>`;
+    if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
     if(cell.p)inner+=`<span class="tok" style="${tokStyle(cell.p)}">${cell.p}</span>`;
