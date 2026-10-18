@@ -282,13 +282,37 @@ def main():
         html = fh.read()
     js = open("casos.js", encoding="utf-8").read()
     html = html.replace('<script src="casos.js"></script>', "<script>" + js + "</script>")
-    # imatges (retrats i objectes) incloses com a data URI: joc.html és un sol fitxer
+    # imatges (retrats i objectes) incloses com a data URI: joc.html és un sol fitxer.
+    # Si hi ha Pillow, s'encongeixen una mica perquè el fitxer pesi menys (index.html usa els originals).
     import base64
+    import io
     import re
-    for ruta in set(re.findall(r'"((?:retrats|objectes)/[a-z_]+\.(?:jpg|png))"', html)):
-        mime = "image/png" if ruta.endswith(".png") else "image/jpeg"
+    try:
+        from PIL import Image
+    except ImportError:
+        Image = None
+
+    def dades(ruta):
         with open(ruta, "rb") as fh:
-            html = html.replace('"' + ruta + '"', '"data:' + mime + ';base64,' + base64.b64encode(fh.read()).decode() + '"')
+            raw = fh.read()
+        if Image is None:
+            return ("image/png" if ruta.endswith(".png") else "image/jpeg"), raw
+        im = Image.open(io.BytesIO(raw))
+        buf = io.BytesIO()
+        if ruta.endswith(".png"):
+            im = im.convert("RGBA")
+            im.thumbnail((104, 104), Image.LANCZOS)
+            im = im.quantize(colors=96, method=Image.FASTOCTREE, dither=Image.NONE)
+            im.save(buf, "PNG", optimize=True)
+            return "image/png", buf.getvalue()
+        im = im.convert("RGB")
+        im.thumbnail((144, 144), Image.LANCZOS)
+        im.save(buf, "JPEG", quality=78, optimize=True)
+        return "image/jpeg", buf.getvalue()
+
+    for ruta in set(re.findall(r'"((?:retrats|objectes)/[a-z_]+\.(?:jpg|png))"', html)):
+        mime, raw = dades(ruta)
+        html = html.replace('"' + ruta + '"', '"data:' + mime + ';base64,' + base64.b64encode(raw).decode() + '"')
     with open("joc.html", "w", encoding="utf-8") as fh:
         fh.write(html)
     print("joc.html creat")
