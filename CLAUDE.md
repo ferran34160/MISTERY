@@ -16,6 +16,10 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - **Per jugar al mòbil** (pàgina web que s'adapti bé a una pantalla de mòbil).
 - **Idiomes: català i francès**, des del principi.
 - Experiment personal; no associar-lo a cap institució. Sense diners reals.
+- **70 escenaris amb 3 casos cadascun** (210 casos). Només canvien el fons, els noms de les sales i els objectes.
+- **Controls:** tocar una casella = nota; mantenir premut = col·locar; arrossegar = pintar notes; X (descarta), goma (premut = buida-ho tot), desfés, revisa. Les caselles de la fila i columna d'un sospitós es marquen soles amb una X suau (desactivable).
+- **Retrats:** fotogràfics (carpeta `retrats/`, 32 imatges que l'usuari va aportar) per a les lletres A-E, H, J i V; les lletres F, G i I fan servir una cara SVG dibuixada fins que l'usuari aporti més retrats.
+- Les persones tenen un nom que comença per la lletra del personatge (A, B, C... V) i canvia a cada cas.
 
 ## 3. Propostes de Claude (pendents de confirmar)
 
@@ -39,51 +43,53 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 
 | Fitxer | Què fa |
 |---|---|
-| `motor.py` | Plantilla (graella amb forats, sales, objectes), catàleg de pistes, solucionador que compta solucions, regla implícita de la víctima, valoració de dificultat, generador de casos. |
-| `escenaris.py` | Escenari `mas` (sales, objectes i personatges en ca/fr). |
-| `textos.py` | Frases de les pistes en ca/fr: articles, contraccions (al/del, au/du), elisions, gènere. |
-| `generador.py` | Genera casos i els desa en JSON. |
-| `verifica.py` | Comprovador **independent** per força bruta (no usa `motor.py`). |
-| `prova.py` | Prova de tot el flux: genera 3 casos i els verifica. |
-| `casos_prova.json`, `casos_n3.json` | 13 casos 6×6 de mostra (10 aleatoris, 3 de nivell 3). |
+| `motor.py` | Plantilla (graella amb forats, sales, objectes), catàleg de pistes, solucionador, valoració de dificultat, generador de casos. |
+| `escenaris.py` | 12 escenaris definits aquí (`mas`, `estacio`, `teatre`, `vaixell`, `hotel`, `museu`, `castell`, `escola`, `restaurant`, `circ`, `mansio`, `mercat`) i 58 més carregats de `escenaris_extra.py` (70 en total). Catàleg d'objectes `_OBJ` i noms per lletra `NOMS_LLETRA`. |
+| `escenaris_extra.py` | Dades compactes dels 58 escenaris addicionals (sales ca/fr i objectes). |
+| `textos.py` | Frases de les pistes en ca/fr (articles, contraccions, elisions, gènere). |
+| `generador.py` | Genera casos nous en JSON (`--escenari`, `--mida`, `--nivell`, `--quantitat`, `--llavor`, `--sortida`). |
+| `verifica.py` | Comprovador **independent**. Per defecte cerca amb retrocés (dècimes de segon fins a 9x9); `--forca` fa la força bruta antiga (només per contrastar). Validat: dóna el mateix nombre de solucions que la força bruta. |
+| `renom.py` | Posa a cada persona un nom que comença per la seva lletra i en refà els textos. |
+| `reskin.py` | Reparteix casos verificats entre els escenaris (3 per escenari) i en canvia sales i objectes **sense tornar a verificar** (cada objecte nou bloqueja igual que l'antic). Escriu `casos_final.json`. |
+| `construeix.py` | Llegeix `casos_final.json`, assigna noms de cas (`noms.json`), escriu `casos.js` (casos + `SCEN_META`) i `joc.html` (tot en un fitxer, amb les fotos incloses). |
+| `index.html`, `sw.js` | La pàgina (carrega `casos.js`, sense dependències) i el service worker. |
+| `retrats/` | 32 retrats (jpg) dels personatges. |
+| `*.json` | Lots de casos generats (font d'estructures): `lot*.json`, `niv*.json`, `casos_*.json`. |
 
-### Comandes
+### Flux de treball
 ```
-python generador.py --quantitat 10 --llavor 7 --sortida casos.json
-python generador.py --quantitat 3 --nivell 3 --veure
-python verifica.py casos.json
-python prova.py
+python generador.py --escenari mas --mida 7 --quantitat 6 --llavor 5 --sortida lot7_x.json
+python renom.py lot7_x.json              # noms per lletra
+python verifica.py lot7_x.json           # ràpid
+# llista d'identificadors verificats (un per línia) -> ids.txt
+python reskin.py ids.txt casos_final.json
+python construeix.py                     # casos.js + joc.html
 ```
-`--veure` imprimeix el plànol, la solució i les pistes en català i francès.
+Un cas només depèn de la seva estructura (plànol, sales, pistes i si els objectes bloquegen); l'escenari és només l'aspecte.
 
 ### Pistes implementades (`motor.py`, camp `t`)
-Per persona: `en_sala`, `no_en_sala`, `sobre_obj`, `prop_obj` (al costat d'un objecte, a la mateixa sala), `raco`, `vora` (a la vora de la finca), `fila_obj`, `col_obj`, `sol`, `costat` (ortogonal i a la mateixa sala), `nord`, `sud`, `est`, `oest` (qualsevol casella en aquella direcció), `diag`, `cavall` (salt de cavall d'escacs), `mateixa_sala`, `altra_sala`, `sol_amb`. Generals: `compte_sala` (k persones a una sala; k=0 és «sala buida»). Regla implícita `victima`: un únic sospitós a la sala de la víctima.
-`costat` i `mateixa_sala` amb la víctima s'exclouen perquè revelarien l'assassí.
+Per persona: `en_sala`, `no_en_sala`, `sobre_obj`, `prop_obj`, `raco`, `vora` (al costat d'una paret exterior de l'edifici o d'un forat), `fila_obj`, `col_obj`, `sol`, `costat`, `nord`, `sud`, `est`, `oest`, `diag`, `cavall`, `mateixa_sala`, `altra_sala`, `sol_amb`. Generals: `compte_sala`. Regla implícita `victima`.
 
 ### Dificultat (`valora`)
-Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alta necessària: 1 consistència de pistes + únic nu; 2 + fila/columna amb una sola opció; 3 + parelles sobrecarregades; 4 + interseccions i trios; 5 cal provar una casella i veure la contradicció. Si no es resol per deducció, el cas es descarta. És una definició pròpia i no s'ha validat amb jugadors.
+Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alta necessària (1 a 5). Definició pròpia, no validada amb jugadors.
 
-### Format del JSON d'un cas
-`id`, `escenari`, `n`, `nivell`, `pla` (matriu 0/1; 0 = forat), `sala` (matriu d'índexs; -1 fora del plànol), `sales` (índex → nom ca/fr), `obj` (matriu amb clau d'objecte o `null`), `persones` (`id` A.. i V, `nom`, `genere`), `pistes` (dades estructurades), `textos` (`ca` i `fr`, una frase per pista, en el mateix ordre), `solucio` (id → [fila, columna]), `assassi` (id).
-Les claus d'objecte (`taula`, `barril`, `carro`...) i si bloquegen són a `escenaris.py`; **el JSON no porta els noms dels objectes ni si bloquegen**: la pàgina haurà de rebre'ls (afegir-los al JSON és el primer canvi lògic).
+### Estat de la col·lecció
+210 casos a la pàgina: 108 de 6x6, 63 de 7x7, 30 de 8x8 i 9 de 9x9, en 70 escenaris (3 per escenari). Els 429 casos dels fitxers `*.json` estan tots verificats.
 
-### Verificat
-`verifica.py` ha comprovat 13 casos: tots tenen exactament una solució i és la correcta. De 10 casos aleatoris, 8 van sortir de nivell 5 (poca mostra).
+## 6. Problemes coneguts i feina oberta
 
-## 6. Problemes coneguts i preguntes obertes
-
-1. **Distribució de nivells:** els casos aleatoris surten sobretot de nivell 5. Es poden demanar per nivell (`--nivell`), però un cas de nivell 3 triga ~50 s. Cal ajustar el generador (menys intents descartats) o revisar la valoració.
-2. **Només s'ha provat 6×6.** 7×7 a 9×9 poden ser molt més lents (el solucionador compta per backtracking).
-3. **Textos:** les frases en francès les ha revisat només Claude; les hauria de repassar algú que parli francès. Alguns textos són una mica repetitius (cal més variants). «sala» és tant una sala del mas com la paraula genèrica: a les frases genèriques s'usa «habitació/pièce».
-4. **El JSON no porta els objectes** (vegeu §5).
-5. Atributs ocults i més tipus de pista per variar.
-6. Art (SVG propi), més escenaris, noms dels casos, retrats dels personatges.
-7. Pàgina del joc per al mòbil i com es publica.
-8. Tutorial dins del joc (regles, paraules clau, tècniques) en ca/fr.
+1. **9x9 nous:** el generador és molt lent a 9x9 (hores per cas) i només n'hi ha 9, tots de lots antics. Generar-ne més és el coll d'ampolla (la verificació ja no ho és).
+2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
+3. **Retrats F, G, I:** falten imatges fotogràfiques per a aquestes lletres (noms: Ferran, Francesca, Felip, Fina, Gerard, Griselda, Guerau, Glòria, Ivo, Irene, Ignasi, Isabel).
+4. **Objectes:** només hi ha icones SVG pròpies; si l'usuari vol més qualitat pot aportar una imatge amb els objectes i es retallen com els retrats.
+5. **Objectes de reserva:** si un escenari té pocs objectes d'un tipus, `reskin.py` en pren un d'un altre escenari (pot quedar poc coherent).
+6. **Publicació:** no s'ha publicat res (GitHub Pages no està activat; cal preguntar abans). L'usuari prova la versió amb `joc.html`.
+7. Atributs ocults i més tipus de pista; tutorial més complet; el mode fosc i el francès només s'han provat poc.
+8. Els identificadors dels casos conserven el prefix de l'escenari original (`mas-6-7-3`...) tot i que ara el cas es mostra en un altre escenari; el progrés es guarda per aquest identificador.
 
 ## 7. Propers passos (proposta)
 
-1. Afegir al JSON els objectes (nom ca/fr i si bloquegen) perquè la pàgina no depengui de `escenaris.py`.
-2. Fer la **pàgina web per al mòbil** (HTML/CSS/JS sense dependències): graella amb forats, sales amb color, objectes en SVG, targetes de sospitós amb la seva pista, controls tàctils, desfés, comprovació, selector ca/fr, llista de casos amb nivell i temps, progrés a `localStorage`.
-3. Ajustar el generador (equilibri de nivells, mides 7 a 9) i generar una col·lecció de 40 casos o més.
-4. Més escenaris, art i tutorial.
+1. Generar més 9x9 (i més casos en general) i tornar a executar `reskin.py` i `construeix.py`.
+2. Revisió del francès per una persona nativa.
+3. Retrats per a F, G, I i, si es vol, imatges d'objectes de més qualitat.
+4. Decidir com publicar-ho (GitHub Pages o altre); confirmar-ho amb l'usuari abans.
