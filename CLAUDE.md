@@ -23,7 +23,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - **Terres de les sales:** 9 textures fotogràfiques (carpeta `terres/`, aportades per l'usuari) que `index.html` tria segons el nom de la sala (`TEX`) i barreja amb el color de la sala.
 - **Logotip, sobre i targeta de paper:** imatges aportades per l'usuari (`logo.png`, `sobre.png`, `paper.png`; la xinxeta és un SVG propi). El logotip diu «MISTERY MURDER» (amb «Mistery», que és una errada d'«Mystery»): **l'usuari ha decidit deixar-lo així**.
 - **Classificació entre amics:** en directe amb una base de dades gratuïta (Firebase Realtime Database, via REST), triada per l'usuari (opció B). No es publica el joc: es comparteix `joc.html` o l'APK. Punts per cas = base segons nivell × mida × (1 + bonus de temps, fins a ×2). L'adreça va a `ranking_config.js` (buida fins que l'usuari creï la base de dades; vegeu `RANKING.md`).
-- **Distribució als amics:** l'usuari vol passar un **APK** (Android) en lloc de l'HTML.
+- **Distribució als amics:** un **APK** d'Android (`python construeix_apk.py`), construït al núvol amb l'SDK baixat a `~/android-sdk`; no s'ha pogut provar en un mòbil. Només Android; cal permetre instal·lar d'orígens desconeguts.
 - Les persones tenen un nom que comença per la lletra del personatge (A, B, C... V) i canvia a cada cas.
 
 ## 3. Propostes de Claude (pendents de confirmar)
@@ -61,6 +61,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 | `retrats/` | 50 retrats (jpg) dels personatges. |
 | `objectes/` | 44 imatges (png transparent) dels objectes. |
 | `terres/` | 9 textures (jpg) dels terres de les sales. |
+| `android/`, `construeix_apk.py` | Projecte d'Android (un WebView que carrega `index.html` des d'`assets/`) i script que copia els fitxers i construeix `misteri.apk` (cal JDK 17+, Gradle i l'SDK d'Android; clau de signatura fixa `android/debug.keystore`, la de depuració estàndard, no és secreta). |
 | `ranking_config.js`, `RANKING.md` | Adreça de la base de dades de la classificació i guia per crear-la. |
 | `PROMPTS_IMATGES.md` | Textos per demanar a un generador d'imatges els objectes, terres, logotip, sobre, targeta i retrats F/G/I. |
 | `*.json` | Lots de casos generats (font d'estructures): `lot*.json`, `niv*.json`, `casos_*.json`. |

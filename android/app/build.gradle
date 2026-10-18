@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'cat.ferran.misteri'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'cat.ferran.misteri'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    // Clau fixa (la de depuració estàndard d'Android, no és secreta): així les actualitzacions es poden instal·lar sobre la versió anterior.
+    signingConfigs {
+        fixa {
+            storeFile file('../debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.fixa
+            minifyEnabled false
+        }
+        debug {
+            signingConfig signingConfigs.fixa
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
