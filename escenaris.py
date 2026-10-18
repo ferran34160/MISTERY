@@ -102,3 +102,31 @@ ESCENARIS = {
         "persones": [('Xavi', 'm'), ('Mercè', 'f'), ('Roc', 'm'), ('Júlia', 'f'), ('Eudald', 'm'), ('Dolors', 'f'), ('Lluc', 'm'), ('Maia', 'f'), ('Ivo', 'm'), ('Violant', 'f')],
     },
 }
+
+
+# Noms de persona per lletra (A..J i V): el sospitós A té un nom que comença per A, etc.
+# Servei per a tots els escenaris; cada cas en tria un a l'atzar per lletra. (nom, gènere)
+NOMS_LLETRA = {
+    "A": [("Aleix", "m"), ("Anna", "f"), ("Arnau", "m"), ("Aina", "f"), ("Abel", "m"), ("Adela", "f"),
+          ("Albert", "m"), ("Alba", "f"), ("Àngel", "m"), ("Agnès", "f")],
+    "B": [("Biel", "m"), ("Berta", "f"), ("Blai", "m"), ("Bruna", "f"), ("Bernat", "m"), ("Blanca", "f"),
+          ("Bru", "m"), ("Beatriu", "f")],
+    "C": [("Carles", "m"), ("Clara", "f"), ("Cesc", "m"), ("Carla", "f"), ("Climent", "m"), ("Cecília", "f"),
+          ("Cristian", "m"), ("Candela", "f")],
+    "D": [("Dídac", "m"), ("Dolors", "f"), ("David", "m"), ("Delfina", "f"), ("Damià", "m"), ("Diana", "f"),
+          ("Daniel", "m"), ("Dàlia", "f")],
+    "E": [("Eudald", "m"), ("Elna", "f"), ("Enric", "m"), ("Eulàlia", "f"), ("Eduard", "m"), ("Emma", "f"),
+          ("Esteve", "m"), ("Èlia", "f")],
+    "F": [("Ferran", "m"), ("Francesca", "f"), ("Felip", "m"), ("Fina", "f"), ("Fabià", "m"), ("Flora", "f"),
+          ("Frederic", "m"), ("Fanny", "f")],
+    "G": [("Gerard", "m"), ("Griselda", "f"), ("Guerau", "m"), ("Glòria", "f"), ("Gabriel", "m"), ("Gal·la", "f"),
+          ("Guillem", "m"), ("Gemma", "f")],
+    "H": [("Hug", "m"), ("Helena", "f"), ("Hèctor", "m"), ("Hortènsia", "f"), ("Horaci", "m"), ("Heura", "f"),
+          ("Higini", "m"), ("Herminia", "f")],
+    "I": [("Ivo", "m"), ("Irene", "f"), ("Ignasi", "m"), ("Isabel", "f"), ("Isidre", "m"), ("Ingrid", "f"),
+          ("Iu", "m"), ("Imma", "f")],
+    "J": [("Jaume", "m"), ("Júlia", "f"), ("Jordi", "m"), ("Judit", "f"), ("Josep", "m"), ("Joana", "f"),
+          ("Joel", "m"), ("Jana", "f")],
+    "V": [("Valentí", "m"), ("Violant", "f"), ("Vicenç", "m"), ("Vera", "f"), ("Víctor", "m"), ("Valèria", "f"),
+          ("Vidal", "m"), ("Virgínia", "f")],
+}

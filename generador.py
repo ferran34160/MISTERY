@@ -11,7 +11,7 @@ import random
 import time
 
 import motor
-from escenaris import ESCENARIS
+from escenaris import ESCENARIS, NOMS_LLETRA
 from textos import descriu
 
 LLETRES = "ABCDEFGHIJ"
@@ -22,8 +22,7 @@ def prepara(rng, esc, cas):
     n = cas["n"]
     L = cas["plantilla"]
     e = dict(esc)
-    perso = rng.sample(esc["persones"], n)
-    e["_noms"] = {p: perso[p] for p in range(n)}
+    e["_noms"] = {p: rng.choice(NOMS_LLETRA[etiqueta(p, n)]) for p in range(n)}
     e["_sales"] = {i: L.noms_sales[i] for i in range(len(L.noms_sales))}
     return e
 

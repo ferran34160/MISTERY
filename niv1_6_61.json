@@ -202,33 +202,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Remei",
-    "genere": "f"
-   },
-   {
-    "id": "B",
-    "nom": "Blai",
+    "nom": "Abel",
     "genere": "m"
    },
    {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
     "id": "C",
-    "nom": "Aina",
+    "nom": "Carla",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Jaume",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Marçal",
+    "nom": "Esteve",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Rosa",
-    "genere": "f"
+    "nom": "Víctor",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -275,24 +275,24 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'est de Blai.",
+    "Era a l'est de Berta.",
     "A la seva columna hi havia un carro.",
-    "Era al sud de Blai.",
-    "Era a l'est de Blai.",
-    "Era al sud de Jaume.",
+    "Era al sud de Berta.",
+    "Era a l'est de Berta.",
+    "Era al sud de Dolors.",
     "Hi havia exactament 3 persones al corral, víctima inclosa.",
-    "Era a la mateixa diagonal que Marçal.",
-    "Era a un salt de cavall d'Aina (com als escacs)."
+    "Era a la mateixa diagonal que Esteve.",
+    "Era a un salt de cavall de Carla (com als escacs)."
    ],
    "fr": [
-    "Elle était à l'est de Blai.",
+    "Il était à l'est de Berta.",
     "Dans sa colonne se trouvait une charrette.",
-    "Il était au sud de Blai.",
-    "Il était à l'est de Blai.",
-    "Elle était au sud de Jaume.",
+    "Elle était au sud de Berta.",
+    "Il était à l'est de Berta.",
+    "Il était au sud de Dolors.",
     "Il y avait exactement 3 personnes dans la basse-cour, victime comprise.",
-    "Elle était sur la même diagonale que Marçal.",
-    "Elle était à un saut de cavalier d'Aina (comme aux échecs)."
+    "Elle était sur la même diagonale qu'Esteve.",
+    "Il était à un saut de cavalier de Carla (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -530,33 +530,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Agnès",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Blanca",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Teo",
+    "nom": "Climent",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Quim",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Marçal",
-    "genere": "m"
+    "nom": "Èlia",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Remei",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -604,21 +604,21 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia una cadira.",
-    "Era a l'est de Teo.",
+    "Era a l'est de Climent.",
     "A la seva fila hi havia una cadira.",
-    "Era al nord de Remei.",
-    "Era al nord de Quim.",
+    "Era al nord de Valentí.",
+    "Era al nord de David.",
     "Era al corral.",
     "Només hi havia una persona a la cuina, víctima inclosa.",
     "A la seva columna hi havia un armari."
    ],
    "fr": [
     "Dans sa colonne se trouvait une chaise.",
-    "Il était à l'est de Teo.",
+    "Elle était à l'est de Climent.",
     "Sur sa ligne se trouvait une chaise.",
-    "Il était au nord de Remei.",
-    "Elle était au nord de Quim.",
-    "Il se trouvait dans la basse-cour.",
+    "Il était au nord de Valentí.",
+    "Elle était au nord de David.",
+    "Elle était dans la basse-cour.",
     "Il n'y avait qu'une personne dans la cuisine, victime comprise.",
     "Dans sa colonne se trouvait une armoire."
    ]
@@ -863,32 +863,32 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Blai",
+    "nom": "Àngel",
     "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Neus",
-    "genere": "f"
+    "nom": "Bru",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Quim",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Teo",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Remei",
-    "genere": "f"
+    "nom": "Eduard",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Marçal",
+    "nom": "Vidal",
     "genere": "m"
    }
   ],
@@ -942,24 +942,24 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia una taula.",
-    "No era a la mateixa habitació que Remei.",
-    "Era a l'est de Blai.",
-    "Era a l'est de Quim.",
-    "Era al sud de Remei.",
+    "No era a la mateixa habitació que Eduard.",
+    "Era a l'est d'Àngel.",
+    "Era a l'est de Cesc.",
+    "Era al sud d'Eduard.",
     "A la seva columna hi havia una llar de foc.",
-    "Ningú no era a l'hort, ni tan sols la víctima.",
-    "Era a un salt de cavall de Quim (com als escacs).",
-    "La cuina estava buida: ni un sol cos."
+    "L'hort estava buida: ni un sol cos.",
+    "Era a un salt de cavall de Cesc (com als escacs).",
+    "Ningú no era a la cuina, ni tan sols la víctima."
    ],
    "fr": [
     "Dans sa colonne se trouvait une table.",
-    "Il n'était pas dans la même pièce que Remei.",
-    "Il était à l'est de Blai.",
-    "Elle était à l'est de Quim.",
-    "Il était au sud de Remei.",
+    "Il n'était pas dans la même pièce qu'Eduard.",
+    "Il était à l'est d'Àngel.",
+    "Il était à l'est de Cesc.",
+    "Il était au sud d'Eduard.",
     "Dans sa colonne se trouvait une cheminée.",
     "Le potager était vide : pas une âme.",
-    "Elle était à un saut de cavalier de Quim (comme aux échecs).",
+    "Il était à un saut de cavalier de Cesc (comme aux échecs).",
     "Personne n'était dans la cuisine, pas même la victime."
    ]
   },
@@ -1180,33 +1180,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Blai",
-    "genere": "m"
-   },
-   {
-    "id": "B",
-    "nom": "Teo",
-    "genere": "m"
-   },
-   {
-    "id": "C",
-    "nom": "Neus",
-    "genere": "f"
-   },
-   {
-    "id": "D",
-    "nom": "Rosa",
-    "genere": "f"
-   },
-   {
-    "id": "E",
     "nom": "Aina",
     "genere": "f"
    },
    {
-    "id": "V",
-    "nom": "Marçal",
+    "id": "B",
+    "nom": "Blanca",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
     "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Diana",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Emma",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1250,20 +1250,20 @@
    "ca": [
     "A la seva fila hi havia un carro.",
     "A la seva fila hi havia un banc.",
-    "Era a la sala.",
+    "Estava a la sala.",
     "A la seva columna hi havia un carro.",
     "A la seva columna hi havia un armari.",
-    "Era a un salt de cavall de Teo (com als escacs).",
-    "Era a un salt de cavall de Rosa (com als escacs)."
+    "Era a un salt de cavall de Blanca (com als escacs).",
+    "Era a un salt de cavall de Diana (com als escacs)."
    ],
    "fr": [
     "Sur sa ligne se trouvait une charrette.",
     "Sur sa ligne se trouvait un banc.",
-    "Il était dans le salon.",
+    "Elle était dans le salon.",
     "Dans sa colonne se trouvait une charrette.",
     "Dans sa colonne se trouvait une armoire.",
-    "Il était à un saut de cavalier de Teo (comme aux échecs).",
-    "Elle était à un saut de cavalier de Rosa (comme aux échecs)."
+    "Elle était à un saut de cavalier de Blanca (comme aux échecs).",
+    "Il était à un saut de cavalier de Diana (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -1493,33 +1493,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Jaume",
-    "genere": "m"
-   },
-   {
-    "id": "B",
-    "nom": "Neus",
+    "nom": "Alba",
     "genere": "f"
    },
    {
+    "id": "B",
+    "nom": "Bernat",
+    "genere": "m"
+   },
+   {
     "id": "C",
-    "nom": "Blai",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Teo",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Quim",
-    "genere": "m"
+    "nom": "Emma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Marçal",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1566,24 +1566,24 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest de Marçal.",
-    "Era al costat d'un barril.",
-    "Era a l'est de Marçal.",
-    "Tenia un carro a tocar.",
-    "Era al nord de Blai.",
-    "Era al nord de Neus.",
-    "Era a l'est de Quim.",
-    "Era a un salt de cavall de Blai (com als escacs)."
+    "Era a l'oest de Violant.",
+    "Tenia un barril a tocar.",
+    "Era a l'est de Violant.",
+    "Era al costat d'un carro.",
+    "Era al nord de Carles.",
+    "Era al nord de Bernat.",
+    "Era a l'est d'Emma.",
+    "Era a un salt de cavall de Carles (com als escacs)."
    ],
    "fr": [
-    "Elle était à l'ouest de Marçal.",
-    "Il avait un tonneau tout près.",
-    "Il était à l'est de Marçal.",
-    "Il avait une charrette tout près.",
-    "Il était au nord de Blai.",
-    "Il était au nord de Neus.",
-    "Il était à l'est de Quim.",
-    "Il était à un saut de cavalier de Blai (comme aux échecs)."
+    "Il était à l'ouest de Violant.",
+    "Elle avait un tonneau tout près.",
+    "Elle était à l'est de Violant.",
+    "Il était à côté d'une charrette.",
+    "Elle était au nord de Carles.",
+    "Il était au nord de Bernat.",
+    "Il était à l'est d'Emma.",
+    "Il était à un saut de cavalier de Carles (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -1803,33 +1803,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Elna",
-    "genere": "f"
-   },
-   {
-    "id": "B",
-    "nom": "Jaume",
+    "nom": "Albert",
     "genere": "m"
    },
    {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
     "id": "C",
-    "nom": "Quim",
+    "nom": "Cristian",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Rosa",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Marçal",
-    "genere": "m"
+    "nom": "Èlia",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Teo",
-    "genere": "m"
+    "nom": "Valèria",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1872,21 +1872,21 @@
   "textos": {
    "ca": [
     "Tenia un carro a tocar.",
-    "Era al costat d'un carro.",
-    "Només ell i Quim eren a la seva habitació.",
-    "Era a l'oest de Marçal.",
-    "Era al nord de Teo.",
-    "Era a la mateixa diagonal que Quim.",
-    "Era a l'oest de Rosa."
+    "Tenia un carro a tocar.",
+    "Només ella i Cristian eren a la seva habitació.",
+    "Era a l'oest d'Èlia.",
+    "Era al nord de Valèria.",
+    "Era a la mateixa diagonal que Cristian.",
+    "Era a l'oest de Delfina."
    ],
    "fr": [
-    "Il était à côté d'une charrette.",
     "Elle était à côté d'une charrette.",
-    "Seuls lui et Quim étaient dans sa pièce.",
-    "Il était à l'ouest de Marçal.",
-    "Elle était au nord de Teo.",
-    "Il était sur la même diagonale que Quim.",
-    "Il était à l'ouest de Rosa."
+    "Elle était à côté d'une charrette.",
+    "Seuls elle et Cristian étaient dans sa pièce.",
+    "Il était à l'ouest d'Èlia.",
+    "Il était au nord de Valèria.",
+    "Elle était sur la même diagonale que Cristian.",
+    "Elle était à l'ouest de Delfina."
    ]
   },
   "solucio": {

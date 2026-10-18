@@ -207,33 +207,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Xavi",
-    "genere": "m"
+    "nom": "Alba",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Maia",
+    "nom": "Berta",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Eudald",
-    "genere": "m"
+    "nom": "Candela",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Roc",
+    "nom": "Daniel",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Lluc",
-    "genere": "m"
+    "nom": "Emma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Júlia",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -282,21 +282,21 @@
     "Era en un racó d'una habitació.",
     "Era al vestíbul.",
     "A la seva columna hi havia un mirall.",
-    "Era al nord de Júlia.",
+    "Era al nord de Valentí.",
     "A la seva fila hi havia un maniquí.",
-    "Era a l'oest de Maia.",
+    "Era a l'oest de Berta.",
     "A la seva fila hi havia un reflector.",
-    "Era a la mateixa diagonal que Roc."
+    "Era a la mateixa diagonal que Daniel."
    ],
    "fr": [
-    "Il était dans un coin d'une pièce.",
-    "Il se trouvait dans le foyer.",
+    "Elle était dans un coin d'une pièce.",
+    "Elle était dans le foyer.",
     "Dans sa colonne se trouvait un miroir.",
-    "Il était au nord de Júlia.",
+    "Elle était au nord de Valentí.",
     "Sur sa ligne se trouvait un mannequin.",
-    "Il était à l'ouest de Maia.",
+    "Elle était à l'ouest de Berta.",
     "Sur sa ligne se trouvait un projecteur.",
-    "Elle était sur la même diagonale que Roc."
+    "Elle était sur la même diagonale que Daniel."
    ]
   },
   "solucio": {
@@ -525,33 +525,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Xavi",
+    "nom": "Albert",
     "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Violant",
+    "nom": "Beatriu",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Maia",
-    "genere": "f"
+    "nom": "Climent",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Lluc",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Ivo",
-    "genere": "m"
+    "nom": "Emma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -599,23 +599,23 @@
   "textos": {
    "ca": [
     "No era a la platea.",
-    "Tenia un sofà a tocar.",
-    "Era a l'oest de Lluc.",
-    "Tenia un sofà a tocar.",
-    "Era al costat d'un mirall.",
-    "Era a l'est de Violant.",
+    "Era al costat d'un sofà.",
+    "Era a l'oest de David.",
+    "Era al costat d'un sofà.",
+    "Tenia un mirall a tocar.",
+    "Era a l'est de Beatriu.",
     "Hi havia exactament 3 persones a l'escenari, víctima inclosa.",
-    "Era a la mateixa diagonal que Xavi."
+    "Era a la mateixa diagonal que Albert."
    ],
    "fr": [
     "Il n'était pas dans le parterre.",
-    "Elle avait un canapé tout près.",
-    "Elle était à l'ouest de Lluc.",
+    "Il était à côté d'un canapé.",
+    "Elle était à l'ouest de David.",
     "Il avait un canapé tout près.",
-    "Il avait un miroir tout près.",
-    "Elle était à l'est de Violant.",
+    "Elle était à côté d'un miroir.",
+    "Il était à l'est de Beatriu.",
     "Il y avait exactement 3 personnes dans la scène, victime comprise.",
-    "Elle était sur la même diagonale que Xavi."
+    "Il était sur la même diagonale qu'Albert."
    ]
   },
   "solucio": {
@@ -835,32 +835,32 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Júlia",
-    "genere": "f"
+    "nom": "Àngel",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Mercè",
-    "genere": "f"
+    "nom": "Bru",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Xavi",
+    "nom": "Climent",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Roc",
+    "nom": "Damià",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Maia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Ivo",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -911,21 +911,21 @@
     "Era sobre el tamboret.",
     "A la seva fila hi havia un bagul.",
     "Era al costat d'un bagul.",
-    "Era al sud de Xavi.",
-    "Tenia un tamboret a tocar.",
-    "Era a l'oest de Maia.",
-    "Era a la mateixa diagonal que Júlia.",
-    "Era a l'oest de Júlia."
+    "Era al sud de Climent.",
+    "Era al costat d'un tamboret.",
+    "Era a l'oest d'Eudald.",
+    "Era a la mateixa diagonal que Àngel.",
+    "Era a l'oest d'Àngel."
    ],
    "fr": [
     "Il était sur le tabouret.",
     "Sur sa ligne se trouvait une malle.",
-    "Elle avait une malle tout près.",
-    "Il était au sud de Xavi.",
+    "Il avait une malle tout près.",
+    "Il était au sud de Climent.",
     "Il avait un tabouret tout près.",
-    "Il était à l'ouest de Maia.",
-    "Elle était sur la même diagonale que Júlia.",
-    "Elle était à l'ouest de Júlia."
+    "Il était à l'ouest d'Eudald.",
+    "Il était sur la même diagonale qu'Àngel.",
+    "Il était à l'ouest d'Àngel."
    ]
   },
   "solucio": {
@@ -1164,32 +1164,32 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Júlia",
+    "nom": "Adela",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Mercè",
+    "nom": "Beatriu",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Maia",
+    "nom": "Clara",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Roc",
-    "genere": "m"
-   },
-   {
-    "id": "E",
-    "nom": "Violant",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
+    "id": "E",
+    "nom": "Esteve",
+    "genere": "m"
+   },
+   {
     "id": "V",
-    "nom": "Dolors",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -1233,20 +1233,20 @@
   "textos": {
    "ca": [
     "A la seva fila hi havia una escala.",
-    "Era al costat d'un tamboret.",
+    "Tenia un tamboret a tocar.",
     "A la seva columna hi havia un piano.",
     "A la seva fila hi havia un bagul.",
     "A la seva columna hi havia un tamboret.",
-    "Era a la mateixa diagonal que Roc.",
+    "Era a la mateixa diagonal que Delfina.",
     "Hi havia exactament 2 persones a l'escenari, víctima inclosa."
    ],
    "fr": [
     "Sur sa ligne se trouvait une échelle.",
-    "Elle avait un tabouret tout près.",
+    "Elle était à côté d'un tabouret.",
     "Dans sa colonne se trouvait un piano.",
     "Sur sa ligne se trouvait une malle.",
     "Dans sa colonne se trouvait un tabouret.",
-    "Elle était sur la même diagonale que Roc.",
+    "Il était sur la même diagonale que Delfina.",
     "Il y avait exactement 2 personnes dans la scène, victime comprise."
    ]
   },
