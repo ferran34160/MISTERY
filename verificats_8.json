@@ -6063,5 +6063,463 @@
    ]
   },
   "assassi": "B"
+ },
+ {
+  "id": "teatre-8-24-3",
+  "escenari": "teatre",
+  "n": 8,
+  "nivell": 4,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    3,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1
+   ],
+   [
+    2,
+    3,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    4,
+    4,
+    1,
+    4
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    4
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "vestíbul",
+    "fr": "foyer"
+   },
+   "1": {
+    "ca": "tramoia",
+    "fr": "coulisse"
+   },
+   "2": {
+    "ca": "escenari",
+    "fr": "scène"
+   },
+   "3": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "4": {
+    "ca": "cabina de llum",
+    "fr": "cabine technique"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    "tamboret",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "escala",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "tel",
+    null,
+    null,
+    null,
+    null,
+    "tamboret"
+   ],
+   [
+    null,
+    null,
+    "bagul",
+    null,
+    null,
+    null,
+    "tamboret",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
+   "escala": {
+    "bloqueja": true,
+    "ca": "escala",
+    "fr": "échelle"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   },
+   "tel": {
+    "bloqueja": true,
+    "ca": "teló",
+    "fr": "rideau"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Felip",
+    "genere": "m"
+   },
+   {
+    "id": "G",
+    "nom": "Glòria",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "escala"
+   },
+   {
+    "t": "nord",
+    "p": "V",
+    "q": "A"
+   },
+   {
+    "t": "nord",
+    "p": "G",
+    "q": "A"
+   },
+   {
+    "t": "nord",
+    "p": "A",
+    "q": "B"
+   },
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "bagul"
+   },
+   {
+    "t": "sud",
+    "p": "D",
+    "q": "A"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "bagul"
+   },
+   {
+    "t": "diag",
+    "p": "F",
+    "q": "C"
+   },
+   {
+    "t": "oest",
+    "p": "V",
+    "q": "G"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "V"
+   },
+   {
+    "t": "est",
+    "p": "D",
+    "q": "E"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva fila hi havia una escala.",
+    "Era al nord d'Aina.",
+    "Era al nord d'Aina.",
+    "Era al nord de Bruna.",
+    "Era al costat d'un bagul.",
+    "Era al sud d'Aina.",
+    "Era al costat d'un bagul.",
+    "Era a la mateixa diagonal que Carla.",
+    "Era a l'oest de Glòria.",
+    "Era a la mateixa diagonal que Violant.",
+    "Era a l'est d'Enric."
+   ],
+   "fr": [
+    "Sur sa ligne se trouvait une échelle.",
+    "Elle était au nord d'Aina.",
+    "Elle était au nord d'Aina.",
+    "Elle était au nord de Bruna.",
+    "Elle avait une malle tout près.",
+    "Elle était au sud d'Aina.",
+    "Elle avait une malle tout près.",
+    "Il était sur la même diagonale que Carla.",
+    "Elle était à l'ouest de Glòria.",
+    "Elle était sur la même diagonale que Violant.",
+    "Elle était à l'est d'Enric."
+   ]
+  },
+  "solucio": {
+   "A": [
+    2,
+    5
+   ],
+   "B": [
+    6,
+    1
+   ],
+   "C": [
+    7,
+    2
+   ],
+   "D": [
+    4,
+    3
+   ],
+   "E": [
+    3,
+    0
+   ],
+   "F": [
+    5,
+    4
+   ],
+   "G": [
+    0,
+    7
+   ],
+   "V": [
+    1,
+    6
+   ]
+  },
+  "assassi": "G"
  }
 ]
