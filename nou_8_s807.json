@@ -337,13 +337,13 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
-    "genere": "f"
+    "nom": "Ferran",
+    "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Griselda",
-    "genere": "f"
+    "nom": "Gerard",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -421,7 +421,7 @@
     "A la seva columna hi havia un armari.",
     "Era a l'oest de Blai.",
     "Era a un salt de cavall d'Eulàlia (com als escacs).",
-    "Era al nord de Francesca.",
+    "Era al nord de Ferran.",
     "Era al nord d'Arnau.",
     "A la seva columna hi havia un pou.",
     "Era a la mateixa habitació que Clara.",
@@ -433,12 +433,12 @@
     "Elle se trouvait dans la cuisine.",
     "Il avait une table tout près.",
     "Dans sa colonne se trouvait une armoire.",
-    "Elle était à l'ouest de Blai.",
+    "Il était à l'ouest de Blai.",
     "Il était à un saut de cavalier d'Eulàlia (comme aux échecs).",
-    "Il était au nord de Francesca.",
+    "Il était au nord de Ferran.",
     "Il était au nord d'Arnau.",
     "Dans sa colonne se trouvait un puits.",
-    "Elle était dans la même pièce que Clara.",
+    "Il était dans la même pièce que Clara.",
     "Il était à un saut de cavalier de Blai (comme aux échecs).",
     "Il était à un saut de cavalier de Vicenç (comme aux échecs)."
    ]

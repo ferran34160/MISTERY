@@ -318,18 +318,18 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gabriel",
-    "genere": "m"
+    "nom": "Griselda",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -394,27 +394,27 @@
     "Era a l'est de Dolors.",
     "Era al costat d'un carro.",
     "Era a la mateixa diagonal que Bruna.",
-    "Estava a la sala.",
+    "Era a la sala.",
     "Era a la mateixa habitació que Carles.",
     "A la seva fila hi havia una taula.",
     "A la seva columna hi havia un carro.",
     "A la seva columna hi havia un armari.",
-    "Era a la mateixa habitació que Gabriel.",
+    "Era a la mateixa habitació que Griselda.",
     "Hi havia exactament 2 persones a la cuina, víctima inclosa.",
     "Era a la mateixa diagonal que Carles."
    ],
    "fr": [
     "Il était à l'est de Dolors.",
-    "Elle était à côté d'une charrette.",
-    "Il était sur la même diagonale que Bruna.",
-    "Il se trouvait dans le salon.",
+    "Elle avait une charrette tout près.",
+    "Elle était sur la même diagonale que Bruna.",
+    "Il était dans le salon.",
     "Elle était dans la même pièce que Carles.",
     "Sur sa ligne se trouvait une table.",
     "Dans sa colonne se trouvait une charrette.",
     "Dans sa colonne se trouvait une armoire.",
-    "Elle était dans la même pièce que Gabriel.",
+    "Elle était dans la même pièce que Griselda.",
     "Il y avait exactement 2 personnes dans la cuisine, victime comprise.",
-    "Il était sur la même diagonale que Carles."
+    "Elle était sur la même diagonale que Carles."
    ]
   },
   "solucio": {
@@ -805,13 +805,13 @@
    },
    {
     "id": "G",
-    "nom": "Gerard",
+    "nom": "Guillem",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -892,7 +892,7 @@
     "Elle était dans la même pièce que Fanny.",
     "Elle était à l'ouest de Fanny.",
     "Dans sa colonne se trouvait une armoire.",
-    "Il avait une charrette tout près.",
+    "Il était à côté d'une charrette.",
     "Il n'était pas dans la même pièce que Dolors.",
     "Il n'était pas dans la même pièce qu'Arnau.",
     "Elle était sur la même diagonale que Dolors."
@@ -1277,12 +1277,12 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Griselda",
+    "nom": "Glòria",
     "genere": "f"
    },
    {
@@ -1351,26 +1351,26 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia un carro.",
-    "Tenia un barril a tocar.",
+    "Era al costat d'un barril.",
     "A la seva fila hi havia una figuera.",
     "Era al sud de Clara.",
     "Era a l'hort.",
-    "Era a la cuina.",
-    "Era a l'oest de Felip.",
-    "Tenia una llar de foc a tocar.",
+    "Estava a la cuina.",
+    "Era a l'oest de Fanny.",
+    "Era al costat d'una llar de foc.",
     "Era a la mateixa diagonal que Dídac.",
     "Era a l'est de Clara.",
     "Era a l'est d'Eudald."
    ],
    "fr": [
     "Dans sa colonne se trouvait une charrette.",
-    "Il avait un tonneau tout près.",
+    "Il était à côté d'un tonneau.",
     "Sur sa ligne se trouvait un figuier.",
     "Il était au sud de Clara.",
-    "Il était dans le potager.",
+    "Elle se trouvait dans le potager.",
     "Il se trouvait dans la cuisine.",
-    "Elle était à l'ouest de Felip.",
-    "Elle avait une cheminée tout près.",
+    "Elle était à l'ouest de Fanny.",
+    "Elle était à côté d'une cheminée.",
     "Elle était sur la même diagonale que Dídac.",
     "Il était à l'est de Clara.",
     "Il était à l'est d'Eudald."
@@ -1750,13 +1750,13 @@
    },
    {
     "id": "G",
-    "nom": "Glòria",
+    "nom": "Gemma",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1828,12 +1828,12 @@
     "Era a un salt de cavall d'Elna (com als escacs).",
     "A la seva columna hi havia una cadira.",
     "Estava a l'hort.",
-    "Era a l'est de Glòria.",
+    "Era a l'est de Gemma.",
     "Era al costat d'una paret exterior de la finca.",
-    "Era a l'hort.",
+    "Estava a l'hort.",
     "Era al nord d'Arnau.",
     "A la seva columna hi havia un barril.",
-    "Era a un salt de cavall de Vicenç (com als escacs)."
+    "Era a un salt de cavall de Violant (com als escacs)."
    ],
    "fr": [
     "Dans sa colonne se trouvait un puits.",
@@ -1841,13 +1841,13 @@
     "Sur sa ligne se trouvait un tonneau.",
     "Il était à un saut de cavalier d'Elna (comme aux échecs).",
     "Dans sa colonne se trouvait une chaise.",
-    "Il se trouvait dans le potager.",
-    "Il était à l'est de Glòria.",
+    "Il était dans le potager.",
+    "Elle était à l'est de Gemma.",
     "Elle était contre un mur extérieur de la propriété.",
-    "Il se trouvait dans le potager.",
+    "Elle se trouvait dans le potager.",
     "Il était au nord d'Arnau.",
     "Dans sa colonne se trouvait un tonneau.",
-    "Il était à un saut de cavalier de Vicenç (comme aux échecs)."
+    "Il était à un saut de cavalier de Violant (comme aux échecs)."
    ]
   },
   "solucio": {

@@ -277,8 +277,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -654,7 +654,7 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
@@ -1037,8 +1037,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -1119,7 +1119,7 @@
     "Sur sa ligne se trouvait un bureau.",
     "Elle était dans le bureau.",
     "Il était dans un coin d'une pièce.",
-    "Elle était dans un coin d'une pièce.",
+    "Il était dans un coin d'une pièce.",
     "Elle était dans la terrasse.",
     "Elle était au sud de Dolors.",
     "Dans sa colonne se trouvait un tabouret.",
@@ -1444,8 +1444,8 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1505,7 +1505,7 @@
     "A la seva fila hi havia una cadira.",
     "A la seva columna hi havia una cadira.",
     "A la seva fila hi havia una estufa.",
-    "Tenia una cadira a tocar.",
+    "Era al costat d'una cadira.",
     "A la seva columna hi havia un mirall.",
     "A la seva fila hi havia una caixa.",
     "La cuina estava buida: ni un sol cos.",
@@ -1819,7 +1819,7 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
@@ -1889,7 +1889,7 @@
     "Era al sud de Bruna.",
     "A la seva columna hi havia una caixa.",
     "Hi havia exactament 3 persones al menjador, víctima inclosa.",
-    "Era a un salt de cavall de Fanny (com als escacs).",
+    "Era a un salt de cavall de Fina (com als escacs).",
     "A la seva columna hi havia una caixa."
    ],
    "fr": [
@@ -1901,7 +1901,7 @@
     "Elle était au sud de Bruna.",
     "Dans sa colonne se trouvait une caisse.",
     "Il y avait exactement 3 personnes dans la salle, victime comprise.",
-    "Elle était à un saut de cavalier de Fanny (comme aux échecs).",
+    "Elle était à un saut de cavalier de Fina (comme aux échecs).",
     "Dans sa colonne se trouvait une caisse."
    ]
   },
@@ -2206,7 +2206,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -2274,7 +2274,7 @@
     "A la seva columna hi havia una estufa.",
     "A la seva columna hi havia una taula.",
     "Tenia una planta a tocar.",
-    "Era a l'est de Fabià.",
+    "Era a l'est de Felip.",
     "A la seva fila hi havia una estufa.",
     "Era en un racó d'una habitació.",
     "A la seva fila hi havia una cadira."
@@ -2286,7 +2286,7 @@
     "Dans sa colonne se trouvait un poêle.",
     "Dans sa colonne se trouvait une table.",
     "Elle avait une plante tout près.",
-    "Il était à l'est de Fabià.",
+    "Il était à l'est de Felip.",
     "Sur sa ligne se trouvait un poêle.",
     "Il était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait une chaise."

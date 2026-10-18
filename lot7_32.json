@@ -267,7 +267,7 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
@@ -342,7 +342,7 @@
     "A la seva fila hi havia un pou.",
     "Era a la mateixa diagonal que Berta.",
     "Era al sud d'Elna.",
-    "Era a la mateixa diagonal que Fanny.",
+    "Era a la mateixa diagonal que Fina.",
     "Era en un racó d'una habitació."
    ],
    "fr": [
@@ -355,7 +355,7 @@
     "Sur sa ligne se trouvait un puits.",
     "Elle était sur la même diagonale que Berta.",
     "Il était au sud d'Elna.",
-    "Elle était sur la même diagonale que Fanny.",
+    "Elle était sur la même diagonale que Fina.",
     "Il était dans un coin d'une pièce."
    ]
   },
@@ -664,8 +664,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -724,17 +724,17 @@
     "Era al costat d'un armari.",
     "Només ella i Dolors eren a la seva habitació.",
     "Era a la mateixa diagonal que Berta.",
-    "Era a la mateixa diagonal que Flora."
+    "Era a la mateixa diagonal que Felip."
    ],
    "fr": [
     "Elle était dans la basse-cour.",
-    "Elle était au nord de Vera.",
+    "Il était au nord de Vera.",
     "Sur sa ligne se trouvait une armoire.",
     "Il était à l'ouest de Berta.",
     "Elle avait une armoire tout près.",
     "Seuls elle et Dolors étaient dans sa pièce.",
     "Elle était sur la même diagonale que Berta.",
-    "Elle était sur la même diagonale que Flora."
+    "Elle était sur la même diagonale que Felip."
    ]
   },
   "solucio": {
@@ -1052,8 +1052,8 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1430,7 +1430,7 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
@@ -1818,7 +1818,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -1876,7 +1876,7 @@
     "Era al celler.",
     "A la seva columna hi havia un balancí.",
     "Era a un salt de cavall d'Enric (com als escacs).",
-    "Era a un salt de cavall de Fabià (com als escacs).",
+    "Era a un salt de cavall de Felip (com als escacs).",
     "Era al nord de Vera.",
     "Era a la mateixa diagonal que Vera."
    ],
@@ -1886,7 +1886,7 @@
     "Il était dans le cellier.",
     "Dans sa colonne se trouvait un fauteuil à bascule.",
     "Elle était à un saut de cavalier d'Enric (comme aux échecs).",
-    "Elle était à un saut de cavalier de Fabià (comme aux échecs).",
+    "Elle était à un saut de cavalier de Felip (comme aux échecs).",
     "Il était au nord de Vera.",
     "Il était sur la même diagonale que Vera."
    ]
@@ -2201,7 +2201,7 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
@@ -2593,13 +2593,13 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -2657,8 +2657,8 @@
    "ca": [
     "Era al costat d'una paret exterior de la finca.",
     "Era al celler.",
-    "Estava al celler.",
-    "Era a l'hort.",
+    "Era al celler.",
+    "Estava a l'hort.",
     "Era a l'hort.",
     "A la seva fila hi havia un armari.",
     "A la seva columna hi havia una taula.",
@@ -2668,9 +2668,9 @@
    ],
    "fr": [
     "Elle était contre un mur extérieur de la propriété.",
-    "Il se trouvait dans le cellier.",
-    "Il se trouvait dans le cellier.",
-    "Il était dans le potager.",
+    "Il était dans le cellier.",
+    "Elle se trouvait dans le cellier.",
+    "Il se trouvait dans le potager.",
     "Elle était dans le potager.",
     "Sur sa ligne se trouvait une armoire.",
     "Dans sa colonne se trouvait une table.",
@@ -2975,13 +2975,13 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -3037,21 +3037,21 @@
     "Era sobre el balancí.",
     "A la seva columna hi havia un pou.",
     "A la seva fila hi havia un pou.",
-    "Estava al corral.",
+    "Era al corral.",
     "A la seva columna hi havia una taula.",
     "Era a la mateixa diagonal que Dolors.",
     "Era a l'est d'Aina."
    ],
    "fr": [
     "Elle était sur le fauteuil à bascule.",
-    "Elle était dans un coin d'une pièce.",
+    "Il était dans un coin d'une pièce.",
     "Il était sur le fauteuil à bascule.",
     "Dans sa colonne se trouvait un puits.",
     "Sur sa ligne se trouvait un puits.",
-    "Elle était dans la basse-cour.",
+    "Elle se trouvait dans la basse-cour.",
     "Dans sa colonne se trouvait une table.",
     "Il était sur la même diagonale que Dolors.",
-    "Il était à l'est d'Aina."
+    "Elle était à l'est d'Aina."
    ]
   },
   "solucio": {
@@ -3378,7 +3378,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -3751,7 +3751,7 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Francesca",
     "genere": "f"
    },
    {

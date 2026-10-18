@@ -337,18 +337,18 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Guillem",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -410,29 +410,29 @@
   ],
   "textos": {
    "ca": [
-    "Era al celler.",
-    "Només ella i Guillem eren a la seva habitació.",
-    "Era a la mateixa diagonal que Guillem.",
+    "Estava al celler.",
+    "Només ella i Glòria eren a la seva habitació.",
+    "Era a la mateixa diagonal que Glòria.",
     "A la seva columna hi havia un armari.",
     "Era al corral.",
     "A la seva columna hi havia un carro.",
-    "Estava al corral.",
+    "Era al corral.",
     "Era sobre la cadira.",
-    "Era al sud de Vicenç.",
+    "Era al sud de Vera.",
     "Era al nord de Delfina.",
     "A la seva columna hi havia un banc."
    ],
    "fr": [
-    "Il était dans le cellier.",
-    "Seuls elle et Guillem étaient dans sa pièce.",
-    "Il était sur la même diagonale que Guillem.",
+    "Elle se trouvait dans le cellier.",
+    "Seuls elle et Glòria étaient dans sa pièce.",
+    "Il était sur la même diagonale que Glòria.",
     "Dans sa colonne se trouvait une armoire.",
-    "Elle se trouvait dans la basse-cour.",
+    "Elle était dans la basse-cour.",
     "Dans sa colonne se trouvait une charrette.",
     "Il se trouvait dans la basse-cour.",
     "Elle était sur la chaise.",
-    "Il était au sud de Vicenç.",
-    "Il était au nord de Delfina.",
+    "Il était au sud de Vera.",
+    "Elle était au nord de Delfina.",
     "Dans sa colonne se trouvait un banc."
    ]
   },

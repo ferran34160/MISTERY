@@ -332,13 +332,13 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gabriel",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -404,30 +404,30 @@
   ],
   "textos": {
    "ca": [
-    "Era al sud de Gabriel.",
+    "Era al sud de Glòria.",
     "A la seva columna hi havia un barril.",
     "Era en un racó d'una habitació.",
     "A la seva fila hi havia un carro.",
     "Era sobre la cadira.",
-    "Era a la mateixa diagonal que Fanny.",
-    "Era a l'oest de Fanny.",
+    "Era a la mateixa diagonal que Fina.",
+    "Era a l'oest de Fina.",
     "Era a la mateixa habitació que Bruna.",
     "Era al sud de Bruna.",
     "A la seva columna hi havia una cadira.",
-    "Era a la mateixa diagonal que Fanny."
+    "Era a la mateixa diagonal que Fina."
    ],
    "fr": [
-    "Elle était au sud de Gabriel.",
+    "Elle était au sud de Glòria.",
     "Dans sa colonne se trouvait un tonneau.",
-    "Il était dans un coin d'une pièce.",
+    "Elle était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait une charrette.",
     "Elle était sur la chaise.",
-    "Il était sur la même diagonale que Fanny.",
-    "Il était à l'ouest de Fanny.",
+    "Il était sur la même diagonale que Fina.",
+    "Il était à l'ouest de Fina.",
     "Il était dans la même pièce que Bruna.",
     "Elle était au sud de Bruna.",
     "Dans sa colonne se trouvait une chaise.",
-    "Il était sur la même diagonale que Fanny."
+    "Il était sur la même diagonale que Fina."
    ]
   },
   "solucio": {

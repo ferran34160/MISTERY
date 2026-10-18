@@ -18,7 +18,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - Experiment personal; no associar-lo a cap institució. Sense diners reals.
 - **70 escenaris amb 3 casos cadascun** (210 casos). Només canvien el fons, els noms de les sales i els objectes.
 - **Controls:** tocar una casella = nota; mantenir premut = col·locar; arrossegar = pintar notes; X (descarta), goma (premut = buida-ho tot), desfés, revisa. Les caselles de la fila i columna d'un sospitós es marquen soles amb una X suau (desactivable).
-- **Retrats:** fotogràfics (carpeta `retrats/`, 32 imatges que l'usuari va aportar) per a les lletres A-E, H, J i V; les lletres F, G i I fan servir una cara SVG dibuixada fins que l'usuari aporti més retrats.
+- **Retrats:** imatges de l'usuari (carpeta `retrats/`, 50): fotogràfics per a les lletres A-E, H, J i V i d'estil il·lustrat per a F, G i I (6 noms per aquestes tres lletres; la resta en tenen 4). Si un nom no té imatge es dibuixa una cara SVG.
 - **Objectes:** il·lustracions (carpeta `objectes/`, 44 imatges que l'usuari va aportar, retallades i amb el fons tret); si un objecte no té imatge es fa servir la icona SVG de `index.html`.
 - **Terres de les sales:** 9 textures fotogràfiques (carpeta `terres/`, aportades per l'usuari) que `index.html` tria segons el nom de la sala (`TEX`) i barreja amb el color de la sala.
 - **Logotip, sobre i targeta de paper:** imatges aportades per l'usuari (`logo.png`, `sobre.png`, `paper.png`; la xinxeta és un SVG propi). El logotip diu «MISTERY MURDER» (amb «Mistery», que és una errada d'«Mystery»): pendent de decidir si es manté o es regenera.
@@ -56,7 +56,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 | `reskin.py` | Reparteix casos verificats entre els escenaris (3 per escenari) i en canvia sales i objectes **sense tornar a verificar** (cada objecte nou bloqueja igual que l'antic). Escriu `casos_final.json`. |
 | `construeix.py` | Llegeix `casos_final.json`, assigna noms de cas (`noms.json`), escriu `casos.js` (casos + `SCEN_META`) i `joc.html` (tot en un fitxer, amb les fotos incloses). |
 | `index.html`, `sw.js` | La pàgina (carrega `casos.js`, sense dependències) i el service worker. |
-| `retrats/` | 32 retrats (jpg) dels personatges. |
+| `retrats/` | 50 retrats (jpg) dels personatges. |
 | `objectes/` | 44 imatges (png transparent) dels objectes. |
 | `terres/` | 9 textures (jpg) dels terres de les sales. |
 | `PROMPTS_IMATGES.md` | Textos per demanar a un generador d'imatges els objectes, terres, logotip, sobre, targeta i retrats F/G/I. |
@@ -86,7 +86,7 @@ Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alt
 
 1. **9x9 nous:** el generador és molt lent a 9x9 (hores per cas) i només n'hi ha 9, tots de lots antics. Generar-ne més és el coll d'ampolla (la verificació ja no ho és).
 2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
-3. **Retrats F, G, I:** falten imatges fotogràfiques per a aquestes lletres (noms: Ferran, Francesca, Felip, Fina, Gerard, Griselda, Guerau, Glòria, Ivo, Irene, Ignasi, Isabel).
+3. **Estil dels retrats:** els de F, G i I són il·lustrats i la resta fotogràfics; si es vol coherència caldria tornar a generar-los amb el mateix estil.
 4. **Logotip:** el text del logotip és «MISTERY MURDER» (errada ortogràfica en anglès). Decidir si es manté o es demana de nou.
 5. **Objectes de reserva:** si un escenari té pocs objectes d'un tipus, `reskin.py` en pren un d'un altre escenari (pot quedar poc coherent).
 6. **Publicació:** no s'ha publicat res (GitHub Pages no està activat; cal preguntar abans). L'usuari prova la versió amb `joc.html`.

@@ -263,8 +263,8 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -318,7 +318,7 @@
     "A la seva fila hi havia una taula.",
     "Era al costat d'un tamboret.",
     "Era a un salt de cavall de Vera (com als escacs).",
-    "Era a la mateixa habitació que Frederic.",
+    "Era a la mateixa habitació que Fina.",
     "Era a l'est d'Eulàlia.",
     "Era en un racó d'una habitació.",
     "No era a la mateixa habitació que Biel.",
@@ -327,8 +327,8 @@
    "fr": [
     "Sur sa ligne se trouvait une table.",
     "Il avait un tabouret tout près.",
-    "Il était à un saut de cavalier de Vera (comme aux échecs).",
-    "Elle était dans la même pièce que Frederic.",
+    "Elle était à un saut de cavalier de Vera (comme aux échecs).",
+    "Elle était dans la même pièce que Fina.",
     "Il était à l'est d'Eulàlia.",
     "Elle était dans un coin d'une pièce.",
     "Elle n'était pas dans la même pièce que Biel.",
@@ -636,13 +636,13 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -703,24 +703,24 @@
     "Era a un salt de cavall de Dídac (com als escacs).",
     "No era al forn.",
     "Era a l'est d'Aleix.",
-    "Tenia una taula a tocar.",
+    "Era al costat d'una taula.",
     "Era a l'oest d'Eulàlia.",
     "Era al sud de Dídac.",
     "Estava a la parada de fruita.",
     "Era a la mateixa diagonal que Cesc.",
-    "Era a la mateixa diagonal que Valentí."
+    "Era a la mateixa diagonal que Vera."
    ],
    "fr": [
     "Dans sa colonne se trouvait une caisse.",
     "Elle était à un saut de cavalier de Dídac (comme aux échecs).",
-    "Il n'était pas dans la boulangerie.",
-    "Il était à l'est d'Aleix.",
+    "Elle n'était pas dans la boulangerie.",
+    "Elle était à l'est d'Aleix.",
     "Il avait une table tout près.",
     "Elle était à l'ouest d'Eulàlia.",
     "Il était au sud de Dídac.",
-    "Elle était dans l'étal de fruits.",
-    "Il était sur la même diagonale que Cesc.",
-    "Il était sur la même diagonale que Valentí."
+    "Elle se trouvait dans l'étal de fruits.",
+    "Elle était sur la même diagonale que Cesc.",
+    "Elle était sur la même diagonale que Vera."
    ]
   },
   "solucio": {
@@ -1038,8 +1038,8 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1433,12 +1433,12 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -1499,7 +1499,7 @@
     "Ningú no era al cafè, ni tan sols la víctima.",
     "Era a un salt de cavall de Blai (com als escacs).",
     "No era a la parada de fruita.",
-    "Era a l'est de Valentí."
+    "Era a l'est de Vicenç."
    ],
    "fr": [
     "Dans sa colonne se trouvait une table.",
@@ -1507,10 +1507,10 @@
     "Sur sa ligne se trouvait un tabouret.",
     "Dans sa colonne se trouvait une chaise.",
     "Il était sur la même diagonale qu'Arnau.",
-    "Le café était vide : pas une âme.",
+    "Personne n'était dans le café, pas même la victime.",
     "Il était à un saut de cavalier de Blai (comme aux échecs).",
     "Elle n'était pas dans l'étal de fruits.",
-    "Il était à l'est de Valentí."
+    "Il était à l'est de Vicenç."
    ]
   },
   "solucio": {
@@ -1833,13 +1833,13 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1889,21 +1889,21 @@
     "A la seva fila hi havia una taula.",
     "A la seva fila hi havia un escriptori.",
     "A la seva fila hi havia una caixa.",
-    "Era al costat d'un barril.",
+    "Tenia un barril a tocar.",
     "A la seva fila hi havia un tamboret.",
-    "Era al sud de Vera.",
+    "Era al sud de Valentí.",
     "A la seva columna hi havia una caixa.",
-    "Era a la mateixa habitació que Ferran."
+    "Era a la mateixa habitació que Fanny."
    ],
    "fr": [
     "Sur sa ligne se trouvait une table.",
     "Sur sa ligne se trouvait un bureau.",
     "Sur sa ligne se trouvait une caisse.",
-    "Elle avait un tonneau tout près.",
+    "Elle était à côté d'un tonneau.",
     "Sur sa ligne se trouvait un tabouret.",
-    "Il était au sud de Vera.",
+    "Elle était au sud de Valentí.",
     "Dans sa colonne se trouvait une caisse.",
-    "Elle était dans la même pièce que Ferran."
+    "Elle était dans la même pièce que Fanny."
    ]
   },
   "solucio": {
@@ -2202,13 +2202,13 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -2272,27 +2272,27 @@
     "No era a la parada de fruita.",
     "No era al cafè.",
     "Estava a la parada de fruita.",
-    "Només ell i Frederic eren a la seva habitació.",
-    "Era al nord de Vicenç.",
+    "Només ell i Fabiola eren a la seva habitació.",
+    "Era al nord de Vera.",
     "Era al costat d'una paret exterior de la plaça.",
     "A la seva columna hi havia una estufa.",
-    "Era a un salt de cavall de Frederic (com als escacs).",
+    "Era a un salt de cavall de Fabiola (com als escacs).",
     "Era a un salt de cavall d'Eulàlia (com als escacs).",
     "Era al sud d'Eulàlia.",
-    "Era a l'est de Vicenç."
+    "Era a l'est de Vera."
    ],
    "fr": [
-    "Il n'était pas dans l'étal de fruits.",
-    "Il n'était pas dans le café.",
+    "Elle n'était pas dans l'étal de fruits.",
+    "Elle n'était pas dans le café.",
     "Elle se trouvait dans l'étal de fruits.",
-    "Seuls lui et Frederic étaient dans sa pièce.",
-    "Elle était au nord de Vicenç.",
+    "Seuls lui et Fabiola étaient dans sa pièce.",
+    "Elle était au nord de Vera.",
     "Elle était contre un mur extérieur de la place.",
     "Dans sa colonne se trouvait un poêle.",
-    "Elle était à un saut de cavalier de Frederic (comme aux échecs).",
+    "Elle était à un saut de cavalier de Fabiola (comme aux échecs).",
     "Elle était à un saut de cavalier d'Eulàlia (comme aux échecs).",
     "Elle était au sud d'Eulàlia.",
-    "Elle était à l'est de Vicenç."
+    "Elle était à l'est de Vera."
    ]
   },
   "solucio": {

@@ -327,18 +327,18 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gal·la",
+    "nom": "Gemma",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -407,10 +407,10 @@
     "Era en un racó d'una habitació.",
     "A la seva columna hi havia una figuera.",
     "Estava a la cuina.",
-    "Era al nord de Vera.",
+    "Era al nord de Vicenç.",
     "Era al costat d'una paret exterior de la finca.",
     "Era a l'oest de Dídac.",
-    "Era a l'est de Vera.",
+    "Era a l'est de Vicenç.",
     "A la seva columna hi havia una cadira.",
     "Estava a l'hort.",
     "Era sobre el carro.",
@@ -421,10 +421,10 @@
     "Elle était dans un coin d'une pièce.",
     "Dans sa colonne se trouvait un figuier.",
     "Il se trouvait dans la cuisine.",
-    "Il était au nord de Vera.",
+    "Il était au nord de Vicenç.",
     "Il était contre un mur extérieur de la propriété.",
     "Elle était à l'ouest de Dídac.",
-    "Elle était à l'est de Vera.",
+    "Elle était à l'est de Vicenç.",
     "Dans sa colonne se trouvait une chaise.",
     "Elle se trouvait dans le potager.",
     "Elle était sur la charrette.",

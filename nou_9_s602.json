@@ -389,22 +389,22 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Griselda",
+    "nom": "Gemma",
     "genere": "f"
    },
    {
     "id": "H",
-    "nom": "Heura",
-    "genere": "f"
+    "nom": "Hèctor",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -476,22 +476,22 @@
   ],
   "textos": {
    "ca": [
-    "Era a la mateixa diagonal que Heura.",
+    "Era a la mateixa diagonal que Hèctor.",
     "A la seva columna hi havia un carro.",
     "A la seva fila hi havia un banc.",
-    "Era al costat d'una cadira.",
+    "Tenia una cadira a tocar.",
     "A la seva fila hi havia un armari.",
     "A la seva columna hi havia un carro.",
     "A la seva fila hi havia un carro.",
     "Era al costat d'una paret exterior de la finca.",
-    "Era al costat d'una taula.",
-    "Era a l'oest de Fabià.",
+    "Tenia una taula a tocar.",
+    "Era a l'oest de Fanny.",
     "Era al porxo.",
-    "Era a la mateixa habitació que Heura.",
+    "Era a la mateixa habitació que Hèctor.",
     "Era a l'est de Delfina."
    ],
    "fr": [
-    "Il était sur la même diagonale qu'Heura.",
+    "Elle était sur la même diagonale qu'Hèctor.",
     "Dans sa colonne se trouvait une charrette.",
     "Sur sa ligne se trouvait un banc.",
     "Elle était à côté d'une chaise.",
@@ -499,10 +499,10 @@
     "Dans sa colonne se trouvait une charrette.",
     "Sur sa ligne se trouvait une charrette.",
     "Elle était contre un mur extérieur de la propriété.",
-    "Il avait une table tout près.",
-    "Elle était à l'ouest de Fabià.",
+    "Il était à côté d'une table.",
+    "Il était à l'ouest de Fanny.",
     "Il était dans le porche.",
-    "Il était dans la même pièce qu'Heura.",
+    "Il était dans la même pièce qu'Hèctor.",
     "Il était à l'est de Delfina."
    ]
   },

@@ -403,22 +403,22 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "H",
-    "nom": "Heura",
+    "nom": "Helena",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -477,14 +477,14 @@
   "textos": {
    "ca": [
     "A la seva fila hi havia un carro.",
-    "Tenia un banc a tocar.",
+    "Era al costat d'un banc.",
     "A la seva fila hi havia un barril.",
     "A la seva columna hi havia un armari.",
     "A la seva fila hi havia un balancí.",
-    "Era al costat d'una cadira.",
+    "Tenia una cadira a tocar.",
     "Era a la mateixa diagonal que Arnau.",
     "Era al costat d'un barril.",
-    "Només ell i Heura eren a la seva habitació.",
+    "Només ella i Helena eren a la seva habitació.",
     "Era a la mateixa diagonal que Carla."
    ],
    "fr": [
@@ -493,11 +493,11 @@
     "Sur sa ligne se trouvait un tonneau.",
     "Dans sa colonne se trouvait une armoire.",
     "Sur sa ligne se trouvait un fauteuil à bascule.",
-    "Elle avait une chaise tout près.",
+    "Elle était à côté d'une chaise.",
     "Elle était sur la même diagonale qu'Arnau.",
-    "Il avait un tonneau tout près.",
-    "Seuls lui et Heura étaient dans sa pièce.",
-    "Il était sur la même diagonale que Carla."
+    "Elle avait un tonneau tout près.",
+    "Seuls elle et Helena étaient dans sa pièce.",
+    "Elle était sur la même diagonale que Carla."
    ]
   },
   "solucio": {

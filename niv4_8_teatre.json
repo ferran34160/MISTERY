@@ -327,13 +327,13 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gemma",
-    "genere": "f"
+    "nom": "Guillem",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -405,16 +405,16 @@
     "Era a la mateixa diagonal que Clara."
    ],
    "fr": [
-    "Elle était dans un coin d'une pièce.",
+    "Il était dans un coin d'une pièce.",
     "Elle avait une malle tout près.",
     "Il était contre un mur extérieur de l'édifice.",
     "Il était dans la scène.",
-    "Il était à l'est de Vera.",
+    "Elle était à l'est de Vera.",
     "Elle était sur le fauteuil.",
     "Elle était à l'est de Berta.",
     "Elle était au nord de Delfina.",
     "Sur sa ligne se trouvait une échelle.",
-    "Il était sur la même diagonale que Clara."
+    "Elle était sur la même diagonale que Clara."
    ]
   },
   "solucio": {
@@ -790,17 +790,17 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gabriel",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -865,7 +865,7 @@
     "Era a l'oest de Dolors.",
     "Era a l'est de Carla.",
     "Era a un salt de cavall de Carla (com als escacs).",
-    "Era a la mateixa diagonal que Valentí.",
+    "Era a la mateixa diagonal que Vicenç.",
     "Era a la mateixa diagonal que Blai."
    ],
    "fr": [
@@ -874,10 +874,10 @@
     "Il était à l'ouest de Carla.",
     "Sur sa ligne se trouvait un rideau.",
     "Elle était à côté d'une malle.",
-    "Il était à l'ouest de Dolors.",
+    "Elle était à l'ouest de Dolors.",
     "Il était à l'est de Carla.",
-    "Il était à un saut de cavalier de Carla (comme aux échecs).",
-    "Elle était sur la même diagonale que Valentí.",
+    "Elle était à un saut de cavalier de Carla (comme aux échecs).",
+    "Elle était sur la même diagonale que Vicenç.",
     "Elle était sur la même diagonale que Blai."
    ]
   },
@@ -1240,12 +1240,12 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Glòria",
+    "nom": "Griselda",
     "genere": "f"
    },
    {
@@ -1321,7 +1321,7 @@
     "Era al sud d'Aina.",
     "Era al costat d'un bagul.",
     "Era a la mateixa diagonal que Carla.",
-    "Era a l'oest de Glòria.",
+    "Era a l'oest de Griselda.",
     "Era a la mateixa diagonal que Violant.",
     "Era a l'est d'Enric."
    ],
@@ -1333,8 +1333,8 @@
     "Elle avait une malle tout près.",
     "Elle était au sud d'Aina.",
     "Elle avait une malle tout près.",
-    "Il était sur la même diagonale que Carla.",
-    "Elle était à l'ouest de Glòria.",
+    "Elle était sur la même diagonale que Carla.",
+    "Elle était à l'ouest de Griselda.",
     "Elle était sur la même diagonale que Violant.",
     "Elle était à l'est d'Enric."
    ]

@@ -322,18 +322,18 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
-    "genere": "f"
+    "nom": "Ferran",
+    "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Griselda",
+    "nom": "Glòria",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -398,26 +398,26 @@
     "A la seva columna hi havia un banc.",
     "Era al costat d'una paret exterior de la finca.",
     "No era a la mateixa habitació que Dídac.",
-    "Era al costat d'un armari.",
-    "El porxo estava buida: ni un sol cos.",
+    "Tenia un armari a tocar.",
+    "Ningú no era al porxo, ni tan sols la víctima.",
     "Era a un salt de cavall de Blai (com als escacs).",
     "No era a la mateixa habitació que Blai.",
-    "Era a la mateixa diagonal que Griselda.",
+    "Era a la mateixa diagonal que Glòria.",
     "Era a l'oest de Dídac.",
-    "Era a l'oest de Griselda."
+    "Era a l'oest de Glòria."
    ],
    "fr": [
     "Sur sa ligne se trouvait une armoire.",
     "Dans sa colonne se trouvait un banc.",
-    "Elle était contre un mur extérieur de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Elle n'était pas dans la même pièce que Dídac.",
     "Elle avait une armoire tout près.",
-    "Personne n'était dans le porche, pas même la victime.",
+    "Le porche était vide : pas une âme.",
     "Elle était à un saut de cavalier de Blai (comme aux échecs).",
     "Il n'était pas dans la même pièce que Blai.",
-    "Il était sur la même diagonale que Griselda.",
+    "Il était sur la même diagonale que Glòria.",
     "Il était à l'ouest de Dídac.",
-    "Elle était à l'ouest de Griselda."
+    "Elle était à l'ouest de Glòria."
    ]
   },
   "solucio": {

@@ -323,18 +323,18 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fabiola",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Guillem",
+    "nom": "Gerard",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -396,29 +396,29 @@
   ],
   "textos": {
    "ca": [
-    "Tenia un balancí a tocar.",
-    "Era al celler.",
-    "No era a la mateixa habitació que Valentí.",
-    "Estava a la cuina.",
+    "Era al costat d'un balancí.",
+    "Estava al celler.",
+    "No era a la mateixa habitació que Vera.",
+    "Era a la cuina.",
     "Era a la mateixa habitació que Biel.",
     "No era a la cuina.",
     "A la seva fila hi havia una llar de foc.",
     "Era a un salt de cavall de Biel (com als escacs).",
     "Era sobre el carro.",
-    "Era al costat d'un armari.",
+    "Tenia un armari a tocar.",
     "Era a l'oest de Delfina."
    ],
    "fr": [
-    "Elle avait un fauteuil à bascule tout près.",
-    "Il était dans le cellier.",
-    "Elle n'était pas dans la même pièce que Valentí.",
+    "Elle était à côté d'un fauteuil à bascule.",
+    "Elle se trouvait dans le cellier.",
+    "Elle n'était pas dans la même pièce que Vera.",
     "Il était dans la cuisine.",
     "Il était dans la même pièce que Biel.",
     "Elle n'était pas dans la cuisine.",
     "Sur sa ligne se trouvait une cheminée.",
     "Il était à un saut de cavalier de Biel (comme aux échecs).",
     "Il était sur la charrette.",
-    "Elle avait une armoire tout près.",
+    "Elle était à côté d'une armoire.",
     "Elle était à l'ouest de Delfina."
    ]
   },

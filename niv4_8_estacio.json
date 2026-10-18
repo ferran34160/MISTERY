@@ -337,18 +337,18 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fabiola",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gerard",
+    "nom": "Guillem",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -408,10 +408,10 @@
     "Era sobre la cadira.",
     "A la seva fila hi havia un tamboret.",
     "Era a l'est d'Aina.",
-    "Tenia un fanal a tocar.",
+    "Era al costat d'un fanal.",
     "Estava al magatzem.",
     "Tenia una finestreta a tocar.",
-    "Era al nord de Gerard.",
+    "Era al nord de Guillem.",
     "Era a la mateixa diagonal que Aina.",
     "A la seva columna hi havia una cadira.",
     "Només hi havia una persona al magatzem, víctima inclosa."
@@ -421,9 +421,9 @@
     "Sur sa ligne se trouvait un tabouret.",
     "Il était à l'est d'Aina.",
     "Il avait un lampadaire tout près.",
-    "Elle était dans l'entrepôt.",
-    "Elle avait un guichet tout près.",
-    "Elle était au nord de Gerard.",
+    "Elle se trouvait dans l'entrepôt.",
+    "Il était à côté d'un guichet.",
+    "Elle était au nord de Guillem.",
     "Il était sur la même diagonale qu'Aina.",
     "Dans sa colonne se trouvait une chaise.",
     "Il n'y avait qu'une personne dans l'entrepôt, victime comprise."
@@ -784,17 +784,17 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gerard",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -862,11 +862,11 @@
     "A la seva fila hi havia una finestreta.",
     "Era a un salt de cavall d'Enric (com als escacs).",
     "Estava al magatzem.",
-    "Era a l'andana.",
     "Estava a l'andana.",
+    "Era a l'andana.",
     "Era a l'oest d'Aina.",
     "Tenia un carretó a tocar.",
-    "Era a la mateixa diagonal que Vicenç.",
+    "Era a la mateixa diagonal que Valentí.",
     "Era a l'est d'Aina."
    ],
    "fr": [
@@ -875,12 +875,12 @@
     "Sur sa ligne se trouvait un guichet.",
     "Elle était à un saut de cavalier d'Enric (comme aux échecs).",
     "Elle se trouvait dans l'entrepôt.",
-    "Elle était dans la quai.",
+    "Elle se trouvait dans la quai.",
     "Elle était dans la quai.",
     "Il était à l'ouest d'Aina.",
-    "Il était à côté d'un chariot.",
-    "Elle était sur la même diagonale que Vicenç.",
-    "Il était à l'est d'Aina."
+    "Elle était à côté d'un chariot.",
+    "Elle était sur la même diagonale que Valentí.",
+    "Elle était à l'est d'Aina."
    ]
   },
   "solucio": {
@@ -1266,18 +1266,18 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gerard",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1335,24 +1335,24 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia una caixa.",
-    "Estava a l'andana.",
+    "Era a l'andana.",
     "A la seva fila hi havia una finestreta.",
-    "Era al magatzem.",
-    "Era a l'est de Francesca.",
+    "Estava al magatzem.",
+    "Era a l'est de Fanny.",
     "A la seva fila hi havia una maleta.",
-    "Era a un salt de cavall de Vera (com als escacs).",
+    "Era a un salt de cavall de Valentí (com als escacs).",
     "Era al sud de Carla.",
     "Era sobre el carretó.",
     "Era a la mateixa diagonal que Enric."
    ],
    "fr": [
     "Dans sa colonne se trouvait une caisse.",
-    "Elle était dans la quai.",
+    "Elle se trouvait dans la quai.",
     "Sur sa ligne se trouvait un guichet.",
-    "Elle se trouvait dans l'entrepôt.",
-    "Il était à l'est de Francesca.",
+    "Elle était dans l'entrepôt.",
+    "Il était à l'est de Fanny.",
     "Sur sa ligne se trouvait une valise.",
-    "Il était à un saut de cavalier de Vera (comme aux échecs).",
+    "Il était à un saut de cavalier de Valentí (comme aux échecs).",
     "Il était au sud de Carla.",
     "Elle était sur le chariot.",
     "Elle était sur la même diagonale qu'Enric."

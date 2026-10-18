@@ -286,13 +286,13 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Fabiola",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -350,26 +350,26 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia una cadira.",
-    "Era al costat d'una cadira.",
+    "Tenia una cadira a tocar.",
     "Era al sud d'Enric.",
     "A la seva columna hi havia un pupitre.",
     "A la seva fila hi havia una taula.",
-    "Era a la mateixa diagonal que Vicenç.",
+    "Era a la mateixa diagonal que Violant.",
     "A la seva fila hi havia un pou.",
     "A la seva fila hi havia un escriptori.",
-    "Era a un salt de cavall de Fina (com als escacs).",
+    "Era a un salt de cavall de Fabiola (com als escacs).",
     "Només hi havia una persona al pati, víctima inclosa."
    ],
    "fr": [
     "Dans sa colonne se trouvait une chaise.",
-    "Il avait une chaise tout près.",
+    "Elle était à côté d'une chaise.",
     "Elle était au sud d'Enric.",
     "Dans sa colonne se trouvait un pupitre.",
     "Sur sa ligne se trouvait une table.",
-    "Il était sur la même diagonale que Vicenç.",
+    "Il était sur la même diagonale que Violant.",
     "Sur sa ligne se trouvait un puits.",
     "Sur sa ligne se trouvait un bureau.",
-    "Il était à un saut de cavalier de Fina (comme aux échecs).",
+    "Elle était à un saut de cavalier de Fabiola (comme aux échecs).",
     "Il n'y avait qu'une personne dans la cour, victime comprise."
    ]
   },
@@ -678,13 +678,13 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -735,7 +735,7 @@
     "A la seva fila hi havia un banc.",
     "Estava a l'aula.",
     "Era a l'oest d'Anna.",
-    "Era a la biblioteca.",
+    "Estava a la biblioteca.",
     "Era a la mateixa habitació que Anna."
    ],
    "fr": [
@@ -743,10 +743,10 @@
     "Elle était contre un mur extérieur de l'école.",
     "Elle était à côté d'une bibliothèque.",
     "Sur sa ligne se trouvait un banc.",
-    "Elle était dans la classe.",
-    "Elle était à l'ouest d'Anna.",
+    "Il était dans la classe.",
+    "Il était à l'ouest d'Anna.",
     "Il était dans la bibliothèque.",
-    "Il était dans la même pièce qu'Anna."
+    "Elle était dans la même pièce qu'Anna."
    ]
   },
   "solucio": {
@@ -1059,8 +1059,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -1123,19 +1123,19 @@
     "Era al costat d'una paret exterior de l'escola.",
     "Era al nord d'Aleix.",
     "Estava al despatx.",
-    "Era a un salt de cavall de Flora (com als escacs).",
+    "Era a un salt de cavall de Felip (com als escacs).",
     "Era a l'est d'Elna."
    ],
    "fr": [
     "Elle se trouvait dans la bibliothèque.",
     "Elle était dans le réfectoire.",
-    "Elle était au sud de Dídac.",
+    "Il était au sud de Dídac.",
     "Dans sa colonne se trouvait un banc.",
     "Il était contre un mur extérieur de l'école.",
     "Il était au nord d'Aleix.",
     "Il était dans le bureau.",
-    "Il était à un saut de cavalier de Flora (comme aux échecs).",
-    "Elle était à l'est d'Elna."
+    "Il était à un saut de cavalier de Felip (comme aux échecs).",
+    "Il était à l'est d'Elna."
    ]
   },
   "solucio": {
@@ -1462,8 +1462,8 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1518,20 +1518,20 @@
     "Era al sud de Delfina.",
     "A la seva fila hi havia un arbre.",
     "Era al nord de Clara.",
-    "Tenia una taula a tocar.",
+    "Era al costat d'una taula.",
     "Tenia un pupitre a tocar.",
     "Era a un salt de cavall de Delfina (com als escacs).",
-    "Era al costat d'un escriptori.",
+    "Tenia un escriptori a tocar.",
     "A la seva columna hi havia un pupitre."
    ],
    "fr": [
-    "Il était au sud de Delfina.",
+    "Elle était au sud de Delfina.",
     "Sur sa ligne se trouvait un arbre.",
     "Elle était au nord de Clara.",
-    "Elle avait une table tout près.",
-    "Elle était à côté d'un pupitre.",
+    "Elle était à côté d'une table.",
+    "Elle avait un pupitre tout près.",
     "Elle était à un saut de cavalier de Delfina (comme aux échecs).",
-    "Elle avait un bureau tout près.",
+    "Elle était à côté d'un bureau.",
     "Dans sa colonne se trouvait un pupitre."
    ]
   },
@@ -1845,8 +1845,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -1916,7 +1916,7 @@
     "Sur sa ligne se trouvait une table.",
     "Elle était dans la bibliothèque.",
     "Elle était contre un mur extérieur de l'école.",
-    "Elle était à côté d'un puits.",
+    "Il était à côté d'un puits.",
     "Dans sa colonne se trouvait une table.",
     "Dans sa colonne se trouvait un banc.",
     "Dans sa colonne se trouvait une bibliothèque.",
@@ -2229,8 +2229,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -2292,7 +2292,7 @@
     "Tenia un pupitre a tocar."
    ],
    "fr": [
-    "Elle était à côté d'un ballon.",
+    "Il était à côté d'un ballon.",
     "Elle était à côté d'un bureau.",
     "Elle se trouvait dans le réfectoire.",
     "Dans sa colonne se trouvait un bureau.",

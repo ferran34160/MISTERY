@@ -346,8 +346,8 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "G",
@@ -433,13 +433,13 @@
     "Ningú no era a la sala, ni tan sols la víctima.",
     "Era al sud d'Eulàlia.",
     "Era al sud de Valentí.",
-    "Era a l'est de Frederic.",
+    "Era a l'est de Fina.",
     "A la seva fila hi havia una llar de foc.",
     "Era a la mateixa diagonal que Delfina."
    ],
    "fr": [
     "Il était à côté d'une charrette.",
-    "Il était sur la même diagonale que Valentí.",
+    "Elle était sur la même diagonale que Valentí.",
     "Dans sa colonne se trouvait un figuier.",
     "Dans sa colonne se trouvait une cheminée.",
     "Dans sa colonne se trouvait une armoire.",
@@ -447,7 +447,7 @@
     "Le salon était vide : pas une âme.",
     "Il était au sud d'Eulàlia.",
     "Il était au sud de Valentí.",
-    "Elle était à l'est de Frederic.",
+    "Elle était à l'est de Fina.",
     "Sur sa ligne se trouvait une cheminée.",
     "Il était sur la même diagonale que Delfina."
    ]

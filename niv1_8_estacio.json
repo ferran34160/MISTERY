@@ -323,18 +323,18 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gal·la",
-    "genere": "f"
+    "nom": "Guerau",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -411,13 +411,13 @@
     "Era a l'est d'Anna.",
     "A la seva fila hi havia una caixa.",
     "Era a l'oest d'Anna.",
-    "Era a l'est de Gal·la.",
-    "Era a l'oest de Violant.",
+    "Era a l'est de Guerau.",
+    "Era a l'oest de Vicenç.",
     "Era al nord de Delfina.",
     "A la seva columna hi havia un carretó.",
     "Era a l'est de Cesc.",
     "Era a l'oest de Cesc.",
-    "Era al sud de Violant.",
+    "Era al sud de Vicenç.",
     "No era a la mateixa habitació que Biel."
    ],
    "fr": [
@@ -426,13 +426,13 @@
     "Elle était à l'est d'Anna.",
     "Sur sa ligne se trouvait une caisse.",
     "Il était à l'ouest d'Anna.",
-    "Elle était à l'est de Gal·la.",
-    "Elle était à l'ouest de Violant.",
-    "Elle était au nord de Delfina.",
+    "Elle était à l'est de Guerau.",
+    "Elle était à l'ouest de Vicenç.",
+    "Il était au nord de Delfina.",
     "Dans sa colonne se trouvait un chariot.",
     "Elle était à l'est de Cesc.",
-    "Elle était à l'ouest de Cesc.",
-    "Elle était au sud de Violant.",
+    "Il était à l'ouest de Cesc.",
+    "Il était au sud de Vicenç.",
     "Elle n'était pas dans la même pièce que Biel."
    ]
   },
@@ -1277,17 +1277,17 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gabriel",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -1356,31 +1356,31 @@
   "textos": {
    "ca": [
     "Era al costat d'una cadira.",
-    "Estava a l'andana.",
+    "Era a l'andana.",
     "A la seva columna hi havia una estufa.",
-    "Era a l'est de Frederic.",
+    "Era a l'est de Fina.",
     "Estava a la taquilla.",
-    "Era al sud de Valentí.",
+    "Era al sud de Vicenç.",
     "Era sobre el carretó.",
     "A la seva columna hi havia un banc.",
-    "Era al costat d'un carretó.",
+    "Tenia un carretó a tocar.",
     "No era a la mateixa habitació que Aleix.",
-    "Era a la mateixa diagonal que Valentí.",
-    "Era al sud de Gabriel."
+    "Era a la mateixa diagonal que Vicenç.",
+    "Era al sud de Glòria."
    ],
    "fr": [
-    "Il avait une chaise tout près.",
-    "Il était dans la quai.",
+    "Il était à côté d'une chaise.",
+    "Elle se trouvait dans la quai.",
     "Dans sa colonne se trouvait un poêle.",
-    "Il était à l'est de Frederic.",
-    "Elle se trouvait dans le guichet.",
-    "Il était au sud de Valentí.",
+    "Elle était à l'est de Fina.",
+    "Elle était dans le guichet.",
+    "Il était au sud de Vicenç.",
     "Elle était sur le chariot.",
     "Dans sa colonne se trouvait un banc.",
     "Il avait un chariot tout près.",
     "Elle n'était pas dans la même pièce qu'Aleix.",
-    "Elle était sur la même diagonale que Valentí.",
-    "Elle était au sud de Gabriel."
+    "Elle était sur la même diagonale que Vicenç.",
+    "Elle était au sud de Glòria."
    ]
   },
   "solucio": {

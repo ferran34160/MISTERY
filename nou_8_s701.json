@@ -337,18 +337,18 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Guillem",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -402,24 +402,24 @@
    "ca": [
     "A la seva fila hi havia un barril.",
     "A la seva fila hi havia una figuera.",
-    "Era al corral.",
     "Estava al corral.",
+    "Era al corral.",
     "A la seva columna hi havia una figuera.",
-    "Era a la mateixa habitació que Guillem.",
-    "Era a un salt de cavall de Felip (com als escacs).",
-    "La cuina estava buida: ni un sol cos.",
-    "Era a l'est de Felip."
+    "Era a la mateixa habitació que Gemma.",
+    "Era a un salt de cavall de Fanny (com als escacs).",
+    "Ningú no era a la cuina, ni tan sols la víctima.",
+    "Era a l'est de Fanny."
    ],
    "fr": [
     "Sur sa ligne se trouvait un tonneau.",
     "Sur sa ligne se trouvait un figuier.",
-    "Il se trouvait dans la basse-cour.",
+    "Elle se trouvait dans la basse-cour.",
     "Il se trouvait dans la basse-cour.",
     "Dans sa colonne se trouvait un figuier.",
-    "Elle était dans la même pièce que Guillem.",
-    "Il était à un saut de cavalier de Felip (comme aux échecs).",
-    "Personne n'était dans la cuisine, pas même la victime.",
-    "Il était à l'est de Felip."
+    "Elle était dans la même pièce que Gemma.",
+    "Elle était à un saut de cavalier de Fanny (comme aux échecs).",
+    "La cuisine était vide : pas une âme.",
+    "Il était à l'est de Fanny."
    ]
   },
   "solucio": {

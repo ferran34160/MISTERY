@@ -394,23 +394,23 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gerard",
+    "nom": "Guillem",
     "genere": "m"
    },
    {
     "id": "H",
-    "nom": "Helena",
-    "genere": "f"
+    "nom": "Hug",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -475,12 +475,12 @@
     "Era al costat d'un pou.",
     "A la seva columna hi havia un balancí.",
     "A la seva fila hi havia una cadira.",
-    "Era al nord de Frederic.",
-    "Era a un salt de cavall de Frederic (com als escacs).",
-    "Era a l'oest d'Helena.",
-    "Era a un salt de cavall de Gerard (com als escacs).",
+    "Era al nord de Fanny.",
+    "Era a un salt de cavall de Fanny (com als escacs).",
+    "Era a l'oest d'Hug.",
+    "Era a un salt de cavall de Guillem (com als escacs).",
     "Era a l'est de Clara.",
-    "Era a un salt de cavall de Valentí (com als escacs).",
+    "Era a un salt de cavall de Violant (com als escacs).",
     "No era a la mateixa habitació que Biel."
    ],
    "fr": [
@@ -488,12 +488,12 @@
     "Elle était à côté d'un puits.",
     "Dans sa colonne se trouvait un fauteuil à bascule.",
     "Sur sa ligne se trouvait une chaise.",
-    "Il était au nord de Frederic.",
-    "Il était à un saut de cavalier de Frederic (comme aux échecs).",
-    "Il était à l'ouest d'Helena.",
-    "Elle était à un saut de cavalier de Gerard (comme aux échecs).",
+    "Il était au nord de Fanny.",
+    "Elle était à un saut de cavalier de Fanny (comme aux échecs).",
+    "Elle était à l'ouest d'Hug.",
+    "Elle était à un saut de cavalier de Guillem (comme aux échecs).",
     "Il était à l'est de Clara.",
-    "Elle était à un saut de cavalier de Valentí (comme aux échecs).",
+    "Elle était à un saut de cavalier de Violant (comme aux échecs).",
     "Il n'était pas dans la même pièce que Biel."
    ]
   },

@@ -263,7 +263,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -725,9 +725,9 @@
     "Era al nord de Vera."
    ],
    "fr": [
-    "Elle était à côté d'une échelle.",
-    "Elle avait une table tout près.",
-    "Elle était dans la cambuse.",
+    "Elle avait une échelle tout près.",
+    "Elle était à côté d'une table.",
+    "Elle se trouvait dans la cambuse.",
     "Sur sa ligne se trouvait un tonneau.",
     "Seuls elle et Fanny étaient dans sa pièce.",
     "Dans sa colonne se trouvait un bureau.",
@@ -1065,13 +1065,13 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1113,21 +1113,21 @@
   "textos": {
    "ca": [
     "Era al costat d'una paret exterior de la nau.",
-    "Era al costat d'una taula.",
+    "Tenia una taula a tocar.",
     "Era al camarot.",
     "Només ell i Dídac eren a la seva habitació.",
     "A la seva columna hi havia una cadira.",
-    "Tenia un timó a tocar.",
+    "Era al costat d'un timó.",
     "Era a l'oest d'Eudald."
    ],
    "fr": [
     "Il était contre un mur extérieur de la nef.",
-    "Elle était à côté d'une table.",
+    "Elle avait une table tout près.",
     "Elle était dans la cabine.",
     "Seuls lui et Dídac étaient dans sa pièce.",
     "Dans sa colonne se trouvait une chaise.",
     "Il était à côté d'une barre.",
-    "Il était à l'ouest d'Eudald."
+    "Elle était à l'ouest d'Eudald."
    ]
   },
   "solucio": {
@@ -1435,8 +1435,8 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1497,7 +1497,7 @@
   "textos": {
    "ca": [
     "Era a l'oest d'Elna.",
-    "Era a la mateixa habitació que Frederic.",
+    "Era a la mateixa habitació que Fina.",
     "Era en un racó d'una habitació.",
     "Era al costat d'una àncora.",
     "Era a l'est d'Elna.",
@@ -1509,7 +1509,7 @@
    ],
    "fr": [
     "Elle était à l'ouest d'Elna.",
-    "Il était dans la même pièce que Frederic.",
+    "Il était dans la même pièce que Fina.",
     "Il était dans un coin d'une pièce.",
     "Elle avait une ancre tout près.",
     "Il était à l'est d'Elna.",
@@ -1517,7 +1517,7 @@
     "Sur sa ligne se trouvait une caisse.",
     "Elle était dans un coin d'une pièce.",
     "Il était à l'ouest d'Anna.",
-    "Il était sur la même diagonale que Dídac."
+    "Elle était sur la même diagonale que Dídac."
    ]
   },
   "solucio": {
@@ -2206,7 +2206,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -2261,7 +2261,7 @@
    "ca": [
     "A la seva columna hi havia un carretó.",
     "Era al costat d'una caixa.",
-    "Era a la mateixa habitació que Fabià.",
+    "Era a la mateixa habitació que Felip.",
     "Estava al camarot.",
     "A la seva columna hi havia una cadira.",
     "Era a la mateixa diagonal que Dolors.",
@@ -2271,7 +2271,7 @@
    "fr": [
     "Dans sa colonne se trouvait un chariot.",
     "Elle avait une caisse tout près.",
-    "Elle était dans la même pièce que Fabià.",
+    "Elle était dans la même pièce que Felip.",
     "Il se trouvait dans la cabine.",
     "Dans sa colonne se trouvait une chaise.",
     "Il était sur la même diagonale que Dolors.",

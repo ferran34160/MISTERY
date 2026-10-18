@@ -365,42 +365,42 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Glòria",
-    "genere": "f"
+    "nom": "Guillem",
+    "genere": "m"
    },
    {
     "id": "H",
-    "nom": "Helena",
-    "genere": "f"
+    "nom": "Hug",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -482,37 +482,37 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'est de Francesca.",
+    "Era a l'est de Fanny.",
     "Era a l'hort.",
     "A la seva columna hi havia un carro.",
     "A la seva fila hi havia un carro.",
-    "Era a la mateixa habitació que Eulàlia.",
+    "Era a la mateixa habitació que Eudald.",
     "A la seva columna hi havia un pou.",
     "A la seva columna hi havia un barril.",
     "Era en un racó d'una habitació.",
     "A la seva fila hi havia un pou.",
-    "Era al celler.",
+    "Estava al celler.",
     "Era a l'est d'Anna.",
-    "Era al sud de Carla.",
+    "Era al sud de Clara.",
     "A la seva columna hi havia una llar de foc.",
-    "Era a la mateixa diagonal que Helena.",
+    "Era a la mateixa diagonal que Hug.",
     "A la seva fila hi havia una figuera."
    ],
    "fr": [
-    "Elle était à l'est de Francesca.",
-    "Elle était dans le potager.",
+    "Il était à l'est de Fanny.",
+    "Il était dans le potager.",
     "Dans sa colonne se trouvait une charrette.",
     "Sur sa ligne se trouvait une charrette.",
-    "Elle était dans la même pièce qu'Eulàlia.",
+    "Elle était dans la même pièce qu'Eudald.",
     "Dans sa colonne se trouvait un puits.",
     "Dans sa colonne se trouvait un tonneau.",
     "Elle était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait un puits.",
     "Elle était dans le cellier.",
-    "Elle était à l'est d'Anna.",
-    "Elle était au sud de Carla.",
+    "Il était à l'est d'Anna.",
+    "Il était au sud de Clara.",
     "Dans sa colonne se trouvait une cheminée.",
-    "Elle était sur la même diagonale qu'Helena.",
+    "Elle était sur la même diagonale qu'Hug.",
     "Sur sa ligne se trouvait un figuier."
    ]
   },

@@ -389,13 +389,13 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gemma",
-    "genere": "f"
+    "nom": "Guillem",
+    "genere": "m"
    },
    {
     "id": "H",
@@ -474,7 +474,7 @@
     "Era al costat d'un pou.",
     "Era sobre la cadira.",
     "A la seva columna hi havia un pou.",
-    "Era a la mateixa habitació que Felip.",
+    "Era a la mateixa habitació que Francesca.",
     "Era a l'est de Carla.",
     "A la seva columna hi havia un banc.",
     "A la seva fila hi havia un banc.",
@@ -488,13 +488,13 @@
     "Il était à côté d'un puits.",
     "Elle était sur la chaise.",
     "Dans sa colonne se trouvait un puits.",
-    "Elle était dans la même pièce que Felip.",
+    "Il était dans la même pièce que Francesca.",
     "Elle était à l'est de Carla.",
     "Dans sa colonne se trouvait un banc.",
     "Sur sa ligne se trouvait un banc.",
     "Il était au sud d'Hug.",
-    "Il était contre un mur extérieur de la propriété.",
-    "Il était au sud de Blai."
+    "Elle était contre un mur extérieur de la propriété.",
+    "Elle était au sud de Blai."
    ]
   },
   "solucio": {

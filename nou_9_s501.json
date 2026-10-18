@@ -389,13 +389,13 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gemma",
-    "genere": "f"
+    "nom": "Guillem",
+    "genere": "m"
    },
    {
     "id": "H",
@@ -485,7 +485,7 @@
     "Era al sud d'Aina.",
     "A la seva fila hi havia un carro.",
     "Era a l'oest de Biel.",
-    "Era al sud de Felip.",
+    "Era al sud de Francesca.",
     "Era a la mateixa diagonal que Valentí.",
     "Ningú no era a la sala, ni tan sols la víctima.",
     "Era a la mateixa diagonal que Elna.",
@@ -495,16 +495,16 @@
     "Sur sa ligne se trouvait une cheminée.",
     "Sur sa ligne se trouvait un puits.",
     "Il était à l'est de Biel.",
-    "Il avait une charrette tout près.",
+    "Elle avait une charrette tout près.",
     "Elle était sur la même diagonale qu'Aina.",
     "Elle était au sud d'Aina.",
     "Sur sa ligne se trouvait une charrette.",
     "Elle était à l'ouest de Biel.",
-    "Il était au sud de Felip.",
+    "Il était au sud de Francesca.",
     "Il était sur la même diagonale que Valentí.",
     "Personne n'était dans le salon, pas même la victime.",
     "Elle était sur la même diagonale qu'Elna.",
-    "Elle était à un saut de cavalier de Valentí (comme aux échecs)."
+    "Il était à un saut de cavalier de Valentí (comme aux échecs)."
    ]
   },
   "solucio": {

@@ -282,8 +282,8 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -343,7 +343,7 @@
     "No era a la sala.",
     "Era al sud de Biel.",
     "Era sol a la seva habitació.",
-    "Era a la sala.",
+    "Estava a la sala.",
     "Era a un salt de cavall d'Aleix (com als escacs).",
     "Era a la mateixa habitació que David.",
     "A la seva columna hi havia un carro."
@@ -352,8 +352,8 @@
     "Il était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait une armoire.",
     "Il n'était pas dans le salon.",
-    "Il était au sud de Biel.",
-    "Il était seul dans sa pièce.",
+    "Elle était au sud de Biel.",
+    "Il ne partageait sa pièce avec personne, pas même avec la victime.",
     "Il se trouvait dans le salon.",
     "Il était à un saut de cavalier d'Aleix (comme aux échecs).",
     "Il était dans la même pièce que David.",
@@ -675,8 +675,8 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -739,7 +739,7 @@
     "A la seva columna hi havia un armari.",
     "Era sol a la seva habitació.",
     "Era en un racó d'una habitació.",
-    "Era a la mateixa diagonal que Felip."
+    "Era a la mateixa diagonal que Francesca."
    ],
    "fr": [
     "Sur sa ligne se trouvait une cheminée.",
@@ -750,7 +750,7 @@
     "Dans sa colonne se trouvait une armoire.",
     "Il était seul dans sa pièce.",
     "Il était dans un coin d'une pièce.",
-    "Il était sur la même diagonale que Felip."
+    "Il était sur la même diagonale que Francesca."
    ]
   },
   "solucio": {
@@ -1058,13 +1058,13 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1117,21 +1117,21 @@
   "textos": {
    "ca": [
     "A la seva columna hi havia un banc.",
-    "Era a l'oest de Violant.",
+    "Era a l'oest de Vicenç.",
     "A la seva fila hi havia una llar de foc.",
-    "Estava a la sala.",
-    "Era a l'est de Violant.",
+    "Era a la sala.",
+    "Era a l'est de Vicenç.",
     "Era a la mateixa habitació que Carles.",
-    "Ningú no era al porxo, ni tan sols la víctima.",
+    "El porxo estava buida: ni un sol cos.",
     "Era al sud de Dolors.",
     "Era a l'est d'Elna."
    ],
    "fr": [
     "Dans sa colonne se trouvait un banc.",
-    "Elle était à l'ouest de Violant.",
+    "Elle était à l'ouest de Vicenç.",
     "Sur sa ligne se trouvait une cheminée.",
-    "Il se trouvait dans le salon.",
-    "Elle était à l'est de Violant.",
+    "Elle était dans le salon.",
+    "Elle était à l'est de Vicenç.",
     "Elle était dans la même pièce que Carles.",
     "Le porche était vide : pas une âme.",
     "Elle était au sud de Dolors.",
@@ -1434,7 +1434,7 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
@@ -1834,13 +1834,13 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1898,20 +1898,20 @@
     "Era a l'oest de Bruna.",
     "A la seva fila hi havia un barril.",
     "A la seva columna hi havia una llar de foc.",
-    "Era a la cuina.",
+    "Estava a la cuina.",
     "A la seva columna hi havia una cadira.",
     "Era al nord de Carles."
    ],
    "fr": [
-    "Elle avait une cheminée tout près.",
+    "Elle était à côté d'une cheminée.",
     "Sur sa ligne se trouvait une charrette.",
     "Il était sur la même diagonale que Bruna.",
-    "Il était à l'ouest de Bruna.",
+    "Elle était à l'ouest de Bruna.",
     "Sur sa ligne se trouvait un tonneau.",
     "Dans sa colonne se trouvait une cheminée.",
-    "Elle était dans la cuisine.",
+    "Elle se trouvait dans la cuisine.",
     "Dans sa colonne se trouvait une chaise.",
-    "Il était au nord de Carles."
+    "Elle était au nord de Carles."
    ]
   },
   "solucio": {

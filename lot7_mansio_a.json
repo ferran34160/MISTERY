@@ -286,8 +286,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -351,7 +351,7 @@
     "Era al nord de Delfina.",
     "Era a la mateixa habitació que Cesc.",
     "Només hi havia una persona a l'estudi, víctima inclosa.",
-    "Era a la mateixa diagonal que Flora."
+    "Era a la mateixa diagonal que Felip."
    ],
    "fr": [
     "Il était dans un coin d'une pièce.",
@@ -360,9 +360,9 @@
     "Dans sa colonne se trouvait une plante.",
     "Sur sa ligne se trouvait un miroir.",
     "Il était au nord de Delfina.",
-    "Elle était dans la même pièce que Cesc.",
+    "Il était dans la même pièce que Cesc.",
     "Il n'y avait qu'une personne dans le cabinet, victime comprise.",
-    "Il était sur la même diagonale que Flora."
+    "Il était sur la même diagonale que Felip."
    ]
   },
   "solucio": {
@@ -689,8 +689,8 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -764,7 +764,7 @@
     "Il était à côté d'une plante.",
     "Elle était au sud d'Eudald.",
     "Sur sa ligne se trouvait une plante.",
-    "Il avait une chaise tout près.",
+    "Elle avait une chaise tout près.",
     "Personne n'était dans le salon, pas même la victime.",
     "Il y avait exactement 2 personnes dans la salle à manger, victime comprise."
    ]
@@ -1065,7 +1065,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -1124,7 +1124,7 @@
    "ca": [
     "A la seva fila hi havia una planta.",
     "Era al costat d'un mirall.",
-    "Era al sud de Fabià.",
+    "Era al sud de Felip.",
     "Era al nord d'Elna.",
     "Era en un racó d'una habitació.",
     "Era al costat d'una caixa.",
@@ -1135,7 +1135,7 @@
    "fr": [
     "Sur sa ligne se trouvait une plante.",
     "Elle était à côté d'un miroir.",
-    "Elle était au sud de Fabià.",
+    "Elle était au sud de Felip.",
     "Il était au nord d'Elna.",
     "Il était dans un coin d'une pièce.",
     "Il avait une caisse tout près.",
@@ -2250,7 +2250,7 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
@@ -2316,7 +2316,7 @@
     "Era al sud de Valentí.",
     "A la seva columna hi havia una caixa.",
     "Era a l'oest de Valentí.",
-    "Era a la mateixa diagonal que Fina."
+    "Era a la mateixa diagonal que Francesca."
    ],
    "fr": [
     "Il se trouvait dans le cabinet.",
@@ -2327,7 +2327,7 @@
     "Elle était au sud de Valentí.",
     "Dans sa colonne se trouvait une caisse.",
     "Elle était à l'ouest de Valentí.",
-    "Il était sur la même diagonale que Fina."
+    "Il était sur la même diagonale que Francesca."
    ]
   },
   "solucio": {

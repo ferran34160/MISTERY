@@ -359,8 +359,8 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
@@ -369,37 +369,37 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dídac",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Elna",
+    "nom": "Eulàlia",
     "genere": "f"
    },
    {
     "id": "F",
-    "nom": "Flora",
+    "nom": "Fina",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gemma",
-    "genere": "f"
-   },
-   {
-    "id": "H",
-    "nom": "Hug",
+    "nom": "Guillem",
     "genere": "m"
    },
    {
+    "id": "H",
+    "nom": "Heura",
+    "genere": "f"
+   },
+   {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -462,15 +462,15 @@
   "textos": {
    "ca": [
     "A la seva fila hi havia un pou.",
-    "Era al costat d'un barril.",
+    "Tenia un barril a tocar.",
     "Era a l'oest de Blai.",
     "A la seva columna hi havia un pou.",
     "A la seva fila hi havia un armari.",
-    "Només ella i Hug eren a la seva habitació.",
+    "Només ella i Heura eren a la seva habitació.",
     "Era a la mateixa diagonal que Blai.",
-    "Era a l'oest de Violant.",
+    "Era a l'oest de Vera.",
     "A la seva columna hi havia un armari.",
-    "Era a la mateixa diagonal que Aina.",
+    "Era a la mateixa diagonal que Aleix.",
     "Era en un racó d'una habitació."
    ],
    "fr": [
@@ -479,11 +479,11 @@
     "Elle était à l'ouest de Blai.",
     "Dans sa colonne se trouvait un puits.",
     "Sur sa ligne se trouvait une armoire.",
-    "Seuls elle et Hug étaient dans sa pièce.",
-    "Elle était sur la même diagonale que Blai.",
-    "Elle était à l'ouest de Violant.",
+    "Seuls elle et Heura étaient dans sa pièce.",
+    "Il était sur la même diagonale que Blai.",
+    "Il était à l'ouest de Vera.",
     "Dans sa colonne se trouvait une armoire.",
-    "Elle était sur la même diagonale qu'Aina.",
+    "Elle était sur la même diagonale qu'Aleix.",
     "Elle était dans un coin d'une pièce."
    ]
   },

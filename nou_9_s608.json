@@ -369,48 +369,48 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
-   },
-   {
-    "id": "B",
-    "nom": "Biel",
-    "genere": "m"
-   },
-   {
-    "id": "C",
-    "nom": "Cesc",
-    "genere": "m"
-   },
-   {
-    "id": "D",
-    "nom": "Dolors",
+    "nom": "Anna",
     "genere": "f"
    },
    {
-    "id": "E",
-    "nom": "Eudald",
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fina",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Griselda",
-    "genere": "f"
+    "nom": "Guillem",
+    "genere": "m"
    },
    {
     "id": "H",
-    "nom": "Hug",
-    "genere": "m"
+    "nom": "Helena",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -480,7 +480,7 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest d'Arnau.",
+    "Era a l'oest d'Anna.",
     "Estava a l'hort.",
     "A la seva columna hi havia un pou.",
     "A la seva columna hi havia un banc.",
@@ -488,26 +488,26 @@
     "Era en un racó d'una habitació.",
     "A la seva fila hi havia un barril.",
     "Només hi havia una persona a l'hort, víctima inclosa.",
-    "Era al celler.",
-    "Era al nord de Griselda.",
-    "Era a l'est d'Arnau.",
+    "Estava al celler.",
+    "Era al nord de Guillem.",
+    "Era a l'est d'Anna.",
     "A la seva fila hi havia un pou.",
-    "Era al costat d'un balancí."
+    "Tenia un balancí a tocar."
    ],
    "fr": [
-    "Il était à l'ouest d'Arnau.",
-    "Elle se trouvait dans le potager.",
+    "Elle était à l'ouest d'Anna.",
+    "Elle était dans le potager.",
     "Dans sa colonne se trouvait un puits.",
     "Dans sa colonne se trouvait un banc.",
-    "Il était contre un mur extérieur de la propriété.",
-    "Il était dans un coin d'une pièce.",
+    "Elle était contre un mur extérieur de la propriété.",
+    "Elle était dans un coin d'une pièce.",
     "Sur sa ligne se trouvait un tonneau.",
     "Il n'y avait qu'une personne dans le potager, victime comprise.",
-    "Il était dans le cellier.",
-    "Il était au nord de Griselda.",
-    "Il était à l'est d'Arnau.",
+    "Elle se trouvait dans le cellier.",
+    "Elle était au nord de Guillem.",
+    "Elle était à l'est d'Anna.",
     "Sur sa ligne se trouvait un puits.",
-    "Elle était à côté d'un fauteuil à bascule."
+    "Il était à côté d'un fauteuil à bascule."
    ]
   },
   "solucio": {

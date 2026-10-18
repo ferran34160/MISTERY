@@ -394,13 +394,13 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fina",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gal·la",
-    "genere": "f"
+    "nom": "Guerau",
+    "genere": "m"
    },
    {
     "id": "H",
@@ -483,11 +483,11 @@
     "Era a la mateixa habitació que David.",
     "Era a l'est de Bruna.",
     "Era sobre el balancí.",
-    "Era a l'oest de Gal·la.",
+    "Era a l'oest de Guerau.",
     "Era a l'est d'Anna.",
-    "Era a un salt de cavall de Fanny (com als escacs).",
+    "Era a un salt de cavall de Fina (com als escacs).",
     "Era al nord de David.",
-    "Era a la mateixa diagonal que Fanny.",
+    "Era a la mateixa diagonal que Fina.",
     "No era a la mateixa habitació que David."
    ],
    "fr": [
@@ -496,12 +496,12 @@
     "Elle avait un puits tout près.",
     "Elle était dans la même pièce que David.",
     "Elle était à l'est de Bruna.",
-    "Elle était sur le fauteuil à bascule.",
-    "Elle était à l'ouest de Gal·la.",
+    "Il était sur le fauteuil à bascule.",
+    "Elle était à l'ouest de Guerau.",
     "Il était à l'est d'Anna.",
-    "Il était à un saut de cavalier de Fanny (comme aux échecs).",
+    "Il était à un saut de cavalier de Fina (comme aux échecs).",
     "Il était au nord de David.",
-    "Elle était sur la même diagonale que Fanny.",
+    "Elle était sur la même diagonale que Fina.",
     "Elle n'était pas dans la même pièce que David."
    ]
   },

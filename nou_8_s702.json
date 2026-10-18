@@ -341,18 +341,18 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Glòria",
+    "nom": "Griselda",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -424,14 +424,14 @@
   "textos": {
    "ca": [
     "No era a la sala.",
-    "Era al costat d'una llar de foc.",
+    "Tenia una llar de foc a tocar.",
     "A la seva fila hi havia un armari.",
     "A la seva fila hi havia un carro.",
     "Era a l'est d'Aina.",
     "Era al porxo.",
     "A la seva columna hi havia un balancí.",
-    "Era a un salt de cavall de Glòria (com als escacs).",
-    "Era a l'oest de Vicenç.",
+    "Era a un salt de cavall de Griselda (com als escacs).",
+    "Era a l'oest de Violant.",
     "Era a l'est d'Aina.",
     "Era al costat d'una paret exterior de la finca.",
     "Era al nord de Dolors.",
@@ -439,16 +439,16 @@
    ],
    "fr": [
     "Elle n'était pas dans le salon.",
-    "Il était à côté d'une cheminée.",
+    "Elle était à côté d'une cheminée.",
     "Sur sa ligne se trouvait une armoire.",
     "Sur sa ligne se trouvait une charrette.",
     "Elle était à l'est d'Aina.",
     "Il était dans le porche.",
     "Dans sa colonne se trouvait un fauteuil à bascule.",
-    "Elle était à un saut de cavalier de Glòria (comme aux échecs).",
-    "Elle était à l'ouest de Vicenç.",
+    "Elle était à un saut de cavalier de Griselda (comme aux échecs).",
+    "Elle était à l'ouest de Violant.",
     "Il était à l'est d'Aina.",
-    "Il était contre un mur extérieur de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Elle était au nord de Dolors.",
     "Il était à un saut de cavalier d'Aina (comme aux échecs)."
    ]

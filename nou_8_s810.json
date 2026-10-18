@@ -346,17 +346,17 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -425,7 +425,7 @@
     "A la seva columna hi havia un banc.",
     "A la seva fila hi havia un armari.",
     "A la seva columna hi havia una figuera.",
-    "Era a l'hort.",
+    "Estava a l'hort.",
     "Era a l'oest de Delfina.",
     "A la seva fila hi havia una llar de foc.",
     "A la seva fila hi havia un armari.",
@@ -434,11 +434,11 @@
    "fr": [
     "Elle était au sud de Cesc.",
     "Il était au sud d'Eudald.",
-    "Il se trouvait dans le salon.",
+    "Elle était dans le salon.",
     "Dans sa colonne se trouvait un banc.",
     "Sur sa ligne se trouvait une armoire.",
     "Dans sa colonne se trouvait un figuier.",
-    "Il était dans le potager.",
+    "Il se trouvait dans le potager.",
     "Elle était à l'ouest de Delfina.",
     "Sur sa ligne se trouvait une cheminée.",
     "Sur sa ligne se trouvait une armoire.",

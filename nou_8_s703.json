@@ -328,18 +328,18 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -401,23 +401,23 @@
     "Era al porxo.",
     "Era a la mateixa habitació que Anna.",
     "Era al costat d'una cadira.",
-    "Era al sud de Valentí.",
-    "Tenia un pou a tocar.",
+    "Era al sud de Vera.",
+    "Era al costat d'un pou.",
     "Era a la mateixa diagonal que Carla.",
     "Era a la mateixa diagonal que Biel.",
-    "Era a l'oest de Guerau."
+    "Era a l'oest de Gemma."
    ],
    "fr": [
     "Dans sa colonne se trouvait une charrette.",
-    "Il était à côté d'un puits.",
-    "Il se trouvait dans le porche.",
-    "Il était dans la même pièce qu'Anna.",
-    "Il était à côté d'une chaise.",
-    "Il était au sud de Valentí.",
     "Elle était à côté d'un puits.",
+    "Elle se trouvait dans le porche.",
+    "Il était dans la même pièce qu'Anna.",
+    "Elle était à côté d'une chaise.",
+    "Il était au sud de Vera.",
+    "Elle avait un puits tout près.",
     "Elle était sur la même diagonale que Carla.",
-    "Il était sur la même diagonale que Biel.",
-    "Elle était à l'ouest de Guerau."
+    "Elle était sur la même diagonale que Biel.",
+    "Elle était à l'ouest de Gemma."
    ]
   },
   "solucio": {

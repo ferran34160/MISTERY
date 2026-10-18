@@ -389,13 +389,13 @@
    },
    {
     "id": "F",
-    "nom": "Frederic",
-    "genere": "m"
+    "nom": "Fina",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Guillem",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "H",
@@ -404,8 +404,8 @@
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -466,8 +466,8 @@
   ],
   "textos": {
    "ca": [
-    "Tenia una figuera a tocar.",
-    "Era a l'oest de Frederic.",
+    "Era al costat d'una figuera.",
+    "Era a l'oest de Fina.",
     "Era sobre el balancí.",
     "Era al costat d'una paret exterior de la finca.",
     "Era a un salt de cavall d'Eulàlia (com als escacs).",
@@ -475,21 +475,21 @@
     "No era a la sala.",
     "Era sobre el carro.",
     "Era a l'est d'Eulàlia.",
-    "Era a l'oest de Guillem.",
-    "Era a un salt de cavall de Frederic (com als escacs)."
+    "Era a l'oest de Glòria.",
+    "Era a un salt de cavall de Fina (com als escacs)."
    ],
    "fr": [
-    "Il était à côté d'un figuier.",
-    "Elle était à l'ouest de Frederic.",
+    "Elle avait un figuier tout près.",
+    "Elle était à l'ouest de Fina.",
     "Elle était sur le fauteuil à bascule.",
-    "Il était contre un mur extérieur de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Il était à un saut de cavalier d'Eulàlia (comme aux échecs).",
-    "Il était sur la charrette.",
+    "Elle était sur la charrette.",
     "Elle n'était pas dans le salon.",
     "Elle était sur la charrette.",
     "Elle était à l'est d'Eulàlia.",
-    "Il était à l'ouest de Guillem.",
-    "Il était à un saut de cavalier de Frederic (comme aux échecs)."
+    "Elle était à l'ouest de Glòria.",
+    "Il était à un saut de cavalier de Fina (comme aux échecs)."
    ]
   },
   "solucio": {

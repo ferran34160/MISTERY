@@ -267,7 +267,7 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
@@ -335,7 +335,7 @@
     "Estava a la cuina.",
     "Era a la mateixa habitació que Bruna.",
     "A la seva columna hi havia un barril.",
-    "Era a la mateixa habitació que Fabià.",
+    "Era a la mateixa habitació que Felip.",
     "Era al costat d'una paret exterior de la finca.",
     "Era a un salt de cavall d'Aina (com als escacs).",
     "Era al nord d'Aina."
@@ -347,7 +347,7 @@
     "Elle était dans la cuisine.",
     "Il était dans la même pièce que Bruna.",
     "Dans sa colonne se trouvait un tonneau.",
-    "Il était dans la même pièce que Fabià.",
+    "Il était dans la même pièce que Felip.",
     "Elle était contre un mur extérieur de la propriété.",
     "Elle était à un saut de cavalier d'Aina (comme aux échecs).",
     "Elle était au nord d'Aina."
@@ -1045,12 +1045,12 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -1105,22 +1105,22 @@
     "Era al nord de Delfina.",
     "Era al costat d'una paret exterior de la finca.",
     "A la seva fila hi havia una figuera.",
-    "Era al celler.",
-    "Era al sud de Francesca.",
+    "Estava al celler.",
+    "Era al sud de Fanny.",
     "A la seva fila hi havia un pou.",
     "Era a l'oest de Delfina.",
-    "Era a un salt de cavall de Vicenç (com als escacs).",
+    "Era a un salt de cavall de Valentí (com als escacs).",
     "Era a un salt de cavall de Clara (com als escacs)."
    ],
    "fr": [
     "Elle était au nord de Delfina.",
     "Elle était contre un mur extérieur de la propriété.",
     "Sur sa ligne se trouvait un figuier.",
-    "Elle se trouvait dans le cellier.",
-    "Il était au sud de Francesca.",
+    "Elle était dans le cellier.",
+    "Il était au sud de Fanny.",
     "Sur sa ligne se trouvait un puits.",
     "Elle était à l'ouest de Delfina.",
-    "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
+    "Elle était à un saut de cavalier de Valentí (comme aux échecs).",
     "Elle était à un saut de cavalier de Clara (comme aux échecs)."
    ]
   },
@@ -1434,12 +1434,12 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -1497,7 +1497,7 @@
   ],
   "textos": {
    "ca": [
-    "Era al nord de Vera.",
+    "Era al nord de Violant.",
     "A la seva fila hi havia un armari.",
     "Era al sud d'Elna.",
     "Era al nord d'Aleix.",
@@ -1509,14 +1509,14 @@
     "Era a un salt de cavall de David (com als escacs)."
    ],
    "fr": [
-    "Il était au nord de Vera.",
+    "Il était au nord de Violant.",
     "Sur sa ligne se trouvait une armoire.",
     "Il était au sud d'Elna.",
     "Elle était au nord d'Aleix.",
-    "Il était au sud de Berta.",
+    "Elle était au sud de Berta.",
     "Il avait une cheminée tout près.",
     "Elle était au nord de David.",
-    "Elle était dans la basse-cour.",
+    "Elle se trouvait dans la basse-cour.",
     "Seuls lui et David étaient dans sa pièce.",
     "Elle était à un saut de cavalier de David (comme aux échecs)."
    ]
@@ -1817,8 +1817,8 @@
    },
    {
     "id": "F",
-    "nom": "Flora",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -1878,7 +1878,7 @@
     "Era al costat d'una paret exterior de la finca.",
     "Era al porxo.",
     "Era al corral.",
-    "Era a un salt de cavall de Flora (com als escacs).",
+    "Era a un salt de cavall de Felip (com als escacs).",
     "A la seva columna hi havia un pou.",
     "A la seva fila hi havia un banc.",
     "Era al sud d'Anna.",
@@ -1889,7 +1889,7 @@
     "Elle était contre un mur extérieur de la propriété.",
     "Il se trouvait dans le porche.",
     "Il se trouvait dans la basse-cour.",
-    "Elle était à un saut de cavalier de Flora (comme aux échecs).",
+    "Elle était à un saut de cavalier de Felip (comme aux échecs).",
     "Dans sa colonne se trouvait un puits.",
     "Sur sa ligne se trouvait un banc.",
     "Il était au sud d'Anna.",

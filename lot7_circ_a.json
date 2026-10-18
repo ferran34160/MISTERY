@@ -282,13 +282,13 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -346,27 +346,27 @@
   "textos": {
    "ca": [
     "Tenia una finestreta a tocar.",
-    "Era a la caravana.",
-    "Estava a la pista.",
+    "Estava a la caravana.",
+    "Era a la pista.",
     "Era a l'est d'Elna.",
-    "Era a l'est de Ferran.",
+    "Era a l'est de Fanny.",
     "Era a l'est d'Elna.",
     "Era a un salt de cavall de Blai (com als escacs).",
     "Era a l'oest d'Anna.",
-    "Era a un salt de cavall de Ferran (com als escacs).",
-    "Era a la mateixa diagonal que Ferran."
+    "Era a un salt de cavall de Fanny (com als escacs).",
+    "Era a la mateixa diagonal que Fanny."
    ],
    "fr": [
-    "Elle avait un guichet tout près.",
-    "Elle était dans la roulotte.",
-    "Il se trouvait dans la piste.",
+    "Il avait un guichet tout près.",
+    "Elle se trouvait dans la roulotte.",
+    "Il était dans la piste.",
     "Il était à l'est d'Elna.",
-    "Elle était à l'est de Ferran.",
+    "Elle était à l'est de Fanny.",
     "Il était à l'est d'Elna.",
-    "Il était à un saut de cavalier de Blai (comme aux échecs).",
+    "Elle était à un saut de cavalier de Blai (comme aux échecs).",
     "Il était à l'ouest d'Anna.",
-    "Elle était à un saut de cavalier de Ferran (comme aux échecs).",
-    "Il était sur la même diagonale que Ferran."
+    "Elle était à un saut de cavalier de Fanny (comme aux échecs).",
+    "Il était sur la même diagonale que Fanny."
    ]
   },
   "solucio": {
@@ -665,8 +665,8 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
-    "genere": "f"
+    "nom": "Ferran",
+    "genere": "m"
    },
    {
     "id": "V",
@@ -736,7 +736,7 @@
     "A la seva fila hi havia un armari.",
     "Era a la mateixa diagonal que Violant.",
     "Era al sud de Blai.",
-    "Era a la mateixa diagonal que Francesca.",
+    "Era a la mateixa diagonal que Ferran.",
     "Era a la mateixa diagonal que Elna."
    ],
    "fr": [
@@ -746,10 +746,10 @@
     "Dans sa colonne se trouvait une chaise.",
     "Elle était dans la roulotte.",
     "Sur sa ligne se trouvait une armoire.",
-    "Elle était sur la même diagonale que Violant.",
+    "Il était sur la même diagonale que Violant.",
     "Elle était au sud de Blai.",
-    "Elle était sur la même diagonale que Francesca.",
-    "Elle était sur la même diagonale qu'Elna."
+    "Elle était sur la même diagonale que Ferran.",
+    "Il était sur la même diagonale qu'Elna."
    ]
   },
   "solucio": {
@@ -1053,12 +1053,12 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -1118,19 +1118,19 @@
     "A la seva columna hi havia una taula.",
     "Hi havia exactament 3 persones a la caravana, víctima inclosa.",
     "Era a l'oest de Berta.",
-    "Era al nord de Vicenç.",
-    "Era a la mateixa diagonal que Francesca."
+    "Era al nord de Valentí.",
+    "Era a la mateixa diagonal que Fanny."
    ],
    "fr": [
     "Elle était à l'est d'Eulàlia.",
-    "Il était dans la roulotte.",
+    "Il se trouvait dans la roulotte.",
     "Il était sur le tabouret.",
     "Elle était à l'est de Dídac.",
     "Dans sa colonne se trouvait une table.",
     "Il y avait exactement 3 personnes dans la roulotte, victime comprise.",
     "Elle était à l'ouest de Berta.",
-    "Elle était au nord de Vicenç.",
-    "Elle était sur la même diagonale que Francesca."
+    "Elle était au nord de Valentí.",
+    "Elle était sur la même diagonale que Fanny."
    ]
   },
   "solucio": {
@@ -1805,13 +1805,13 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Fabiola",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1869,9 +1869,9 @@
   "textos": {
    "ca": [
     "Era a l'oest de Cesc.",
-    "Era al sud de Fina.",
+    "Era al sud de Fabiola.",
     "Era al sud d'Enric.",
-    "Era a la mateixa diagonal que Fina.",
+    "Era a la mateixa diagonal que Fabiola.",
     "No era a la caravana.",
     "Era a l'est d'Arnau.",
     "Era sobre el bagul.",
@@ -1881,12 +1881,12 @@
    ],
    "fr": [
     "Elle était à l'ouest de Cesc.",
-    "Il était au sud de Fina.",
+    "Il était au sud de Fabiola.",
     "Elle était au sud d'Enric.",
-    "Il était sur la même diagonale que Fina.",
+    "Il était sur la même diagonale que Fabiola.",
     "Il n'était pas dans la roulotte.",
     "Il était à l'est d'Arnau.",
-    "Il était sur la malle.",
+    "Elle était sur la malle.",
     "Il était à l'ouest de Biel.",
     "Dans sa colonne se trouvait un projecteur.",
     "Il était sur la même diagonale que Biel."
@@ -2212,13 +2212,13 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
-    "genere": "m"
+    "nom": "Fanny",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -2278,7 +2278,7 @@
     "Era al costat d'un barril.",
     "A la seva columna hi havia un tamboret.",
     "No era a la pista.",
-    "Era a un salt de cavall de Ferran (com als escacs).",
+    "Era a un salt de cavall de Fanny (com als escacs).",
     "Era a l'oest de David.",
     "A la seva fila hi havia un banc.",
     "A la seva fila hi havia un barril.",
@@ -2287,15 +2287,15 @@
     "Era a un salt de cavall d'Aina (com als escacs)."
    ],
    "fr": [
-    "Il avait un tonneau tout près.",
+    "Elle était à côté d'un tonneau.",
     "Dans sa colonne se trouvait un tabouret.",
     "Elle n'était pas dans la piste.",
-    "Elle était à un saut de cavalier de Ferran (comme aux échecs).",
+    "Il était à un saut de cavalier de Fanny (comme aux échecs).",
     "Elle était à l'ouest de David.",
     "Sur sa ligne se trouvait un banc.",
     "Sur sa ligne se trouvait un tonneau.",
     "Il était sur la même diagonale qu'Aina.",
-    "Il était au nord d'Eulàlia.",
+    "Elle était au nord d'Eulàlia.",
     "Elle était à un saut de cavalier d'Aina (comme aux échecs)."
    ]
   },

@@ -332,18 +332,18 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Fabiola",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Griselda",
-    "genere": "f"
+    "nom": "Guillem",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -409,31 +409,31 @@
   ],
   "textos": {
    "ca": [
-    "Tenia un mirall a tocar.",
-    "Era a la mateixa diagonal que Griselda.",
+    "Era al costat d'un mirall.",
+    "Era a la mateixa diagonal que Guillem.",
     "Era al costat d'una paret exterior de l'edifici.",
-    "Era a l'oest de Griselda.",
-    "Era al camerino.",
-    "Era a un salt de cavall de Griselda (com als escacs).",
+    "Era a l'oest de Guillem.",
+    "Estava al camerino.",
+    "Era a un salt de cavall de Guillem (com als escacs).",
     "Era al sud de Carla.",
     "Era al nord de Dídac.",
-    "Era a l'oest de Fanny.",
+    "Era a l'oest de Fabiola.",
     "A la seva columna hi havia un tamboret.",
-    "Era a la mateixa diagonal que Griselda.",
+    "Era a la mateixa diagonal que Guillem.",
     "Només ella i Eudald eren a la seva habitació."
    ],
    "fr": [
-    "Elle était à côté d'un miroir.",
-    "Il était sur la même diagonale que Griselda.",
+    "Il était à côté d'un miroir.",
+    "Il était sur la même diagonale que Guillem.",
     "Elle était contre un mur extérieur de l'édifice.",
-    "Elle était à l'ouest de Griselda.",
-    "Elle était dans la loge.",
-    "Il était à un saut de cavalier de Griselda (comme aux échecs).",
-    "Elle était au sud de Carla.",
+    "Elle était à l'ouest de Guillem.",
+    "Il était dans la loge.",
+    "Il était à un saut de cavalier de Guillem (comme aux échecs).",
+    "Il était au sud de Carla.",
     "Il était au nord de Dídac.",
-    "Il était à l'ouest de Fanny.",
+    "Il était à l'ouest de Fabiola.",
     "Dans sa colonne se trouvait un tabouret.",
-    "Elle était sur la même diagonale que Griselda.",
+    "Elle était sur la même diagonale que Guillem.",
     "Seuls elle et Eudald étaient dans sa pièce."
    ]
   },
@@ -801,13 +801,13 @@
    },
    {
     "id": "F",
-    "nom": "Fabià",
+    "nom": "Felip",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Griselda",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -875,7 +875,7 @@
    "ca": [
     "A la seva columna hi havia una escala.",
     "Era al costat d'una paret exterior de l'edifici.",
-    "Era al sud de Guerau.",
+    "Era al sud de Griselda.",
     "A la seva columna hi havia un tamboret.",
     "Era a un salt de cavall de Vicenç (com als escacs).",
     "Era sobre el sofà.",
@@ -888,7 +888,7 @@
    "fr": [
     "Dans sa colonne se trouvait une échelle.",
     "Il était contre un mur extérieur de l'édifice.",
-    "Elle était au sud de Guerau.",
+    "Elle était au sud de Griselda.",
     "Dans sa colonne se trouvait un tabouret.",
     "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
     "Il était sur le canapé.",
@@ -896,7 +896,7 @@
     "Elle était dans la cabine technique.",
     "Il était dans la même pièce que Clara.",
     "Elle était sur la même diagonale qu'Eulàlia.",
-    "Il était à un saut de cavalier d'Anna (comme aux échecs)."
+    "Elle était à un saut de cavalier d'Anna (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -1254,13 +1254,13 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gabriel",
-    "genere": "m"
+    "nom": "Gemma",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -1337,7 +1337,7 @@
     "Era a l'est de Dídac.",
     "A la seva columna hi havia una escala.",
     "Era a l'oest de Dídac.",
-    "No era a la mateixa habitació que Felip."
+    "No era a la mateixa habitació que Francesca."
    ],
    "fr": [
     "Elle était sur le tabouret.",
@@ -1347,10 +1347,10 @@
     "Elle était au nord d'Anna.",
     "Il était à un saut de cavalier de Berta (comme aux échecs).",
     "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
-    "Il était à l'est de Dídac.",
+    "Elle était à l'est de Dídac.",
     "Dans sa colonne se trouvait une échelle.",
     "Elle était à l'ouest de Dídac.",
-    "Il n'était pas dans la même pièce que Felip."
+    "Il n'était pas dans la même pièce que Francesca."
    ]
   },
   "solucio": {

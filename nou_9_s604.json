@@ -385,13 +385,13 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Griselda",
-    "genere": "f"
+    "nom": "Gerard",
+    "genere": "m"
    },
    {
     "id": "H",
@@ -478,27 +478,27 @@
     "A la seva columna hi havia una cadira.",
     "Era a l'oest de Dolors.",
     "A la seva columna hi havia una llar de foc.",
-    "Era a la mateixa habitació que Fina.",
+    "Era a la mateixa habitació que Francesca.",
     "Era al sud d'Enric.",
     "Era al nord d'Aleix.",
     "Era al costat d'una paret exterior de la finca.",
     "Hi havia exactament 3 persones al corral, víctima inclosa.",
-    "Era a la mateixa diagonal que Fina."
+    "Era a la mateixa diagonal que Francesca."
    ],
    "fr": [
     "Dans sa colonne se trouvait un figuier.",
-    "Elle était dans un coin d'une pièce.",
+    "Il était dans un coin d'une pièce.",
     "Dans sa colonne se trouvait une charrette.",
     "Dans sa colonne se trouvait un puits.",
     "Dans sa colonne se trouvait une chaise.",
     "Elle était à l'ouest de Dolors.",
     "Dans sa colonne se trouvait une cheminée.",
-    "Il était dans la même pièce que Fina.",
+    "Il était dans la même pièce que Francesca.",
     "Elle était au sud d'Enric.",
     "Elle était au nord d'Aleix.",
     "Elle était contre un mur extérieur de la propriété.",
     "Il y avait exactement 3 personnes dans la basse-cour, victime comprise.",
-    "Elle était sur la même diagonale que Fina."
+    "Elle était sur la même diagonale que Francesca."
    ]
   },
   "solucio": {
