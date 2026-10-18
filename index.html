@@ -82,14 +82,26 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
 .nws{display:none}
 
+
+/* terres de les sales */
+.tx-wood{background-image:repeating-linear-gradient(0deg,rgba(90,50,10,.13) 0 1px,transparent 1px 10px),linear-gradient(90deg,rgba(90,50,10,.10) 1px,transparent 1px);background-size:auto,27px 20px}
+.tx-tiles{background-image:conic-gradient(rgba(0,0,0,.10) 25%,transparent 0 50%,rgba(0,0,0,.10) 0 75%,transparent 0);background-size:16px 16px}
+.tx-grass{background-image:radial-gradient(circle at 20% 30%,rgba(30,110,40,.35) 1.2px,transparent 1.7px),radial-gradient(circle at 70% 70%,rgba(20,90,30,.30) 1.3px,transparent 1.8px),radial-gradient(circle at 45% 85%,rgba(60,140,50,.30) 1px,transparent 1.5px);background-size:9px 9px,13px 13px,7px 7px}
+.tx-stone{background-image:linear-gradient(rgba(0,0,0,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.14) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px);background-size:100% 15px,24px 100%,100% 31px}
+.tx-carpet{background-image:repeating-linear-gradient(45deg,rgba(130,40,50,.13) 0 2px,transparent 2px 7px),repeating-linear-gradient(-45deg,rgba(130,40,50,.13) 0 2px,transparent 2px 7px)}
+.tx-water{background-image:repeating-radial-gradient(circle at 0 100%,transparent 0 5px,rgba(255,255,255,.45) 5px 6.5px),repeating-radial-gradient(circle at 100% 0,transparent 0 6px,rgba(20,90,160,.18) 6px 7px)}
+.tx-sand{background-image:radial-gradient(rgba(120,85,30,.32) 1px,transparent 1.5px),radial-gradient(rgba(255,255,255,.35) 1px,transparent 1.5px);background-size:7px 7px,11px 11px;background-position:0 0,4px 5px}
+.tx-metal{background-image:repeating-linear-gradient(45deg,rgba(0,0,0,.10) 0 1px,transparent 1px 8px),repeating-linear-gradient(-45deg,rgba(255,255,255,.28) 0 1px,transparent 1px 8px)}
+.tx-pavers{background-image:linear-gradient(rgba(70,50,30,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(70,50,30,.16) 1px,transparent 1px);background-size:14px 14px}
+
 /* tauler */
 .bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
 #board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:none}
-.cell{position:relative;display:flex;align-items:center;justify-content:center;border:0 solid var(--line);outline:1px solid var(--cellgrid);outline-offset:-1px;overflow:hidden}
+.cell{position:relative;display:flex;align-items:center;justify-content:center;border:0 solid var(--line);outline:1px solid var(--cellgrid);outline-offset:-1px}
 .cell.hole{background:var(--hole);outline:none}
 .cell.blocked{background-image:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.06) 6px 7px)}
 .cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
-.cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none}
+.cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none;white-space:normal;right:2px;line-height:1.05;z-index:4;text-shadow:0 0 3px rgba(255,255,255,.85),0 0 2px rgba(255,255,255,.85)}
 .cell svg.obj{position:absolute;inset:8%;width:84%;height:84%;pointer-events:none}
 .cell.free svg.obj{inset:auto 1px 1px auto;width:56%;height:56%}
 .cell.placed svg.obj{opacity:.3}
@@ -248,6 +260,21 @@ const SCEN={
  mansio:{tag:{ca:"La mansió",fr:"Le manoir"},hue:[30,270,150,350,200,60,320,10],sat:36,col:290},
  mercat:{tag:{ca:"El mercat",fr:"Le marché"},hue:[95,35,10,200,55,160,320,270],sat:55,col:95}};
 const scen=id=>(window.SCEN_META&&SCEN_META[id])||SCEN[id]||SCEN.mas;
+
+/* tipus de terra segons el nom de la sala (en català) */
+const TEX=[
+ ["water",/piscina|resclosa|dàrsena|\bmoll\b|\bfont\b|sauna|rentat/,"#6fb7e0",.5],
+ ["metal",/màquines|locomotora|motors|torpedes|caldera|impremta|hangar|fossat|control|\btaller\b/,"#b8bdc6",.45],
+ ["tiles",/cuina|galera|cafeteria|cafè|obrador|laboratori|fleca|\bforn\b|peixateria|vestuari|fruita|bany|lavabo|cambra freda/,null,0],
+ ["grass",/jardí|\bhort\b|vinya|\bcamp\b|passeig|foguera|hivernacle/,"#7bbf6a",.5],
+ ["sand",/pista|quadra|corral|estable|carrusel|tenda|campament|hipòdrom/,"#e6cf9a",.5],
+ ["pavers",/terrassa|porxada|\bpati\b|plaça|entrada|plataforma|coberta/,"#d8c8b0",.4],
+ ["stone",/celler|bodega|calabós|cripta|claustre|torre|soterrani|capella|santuari|estàtues|cuirassada|forta|armeria|magatzem|cobert|galeria|passadís|trull|campanar|presó/,"#b7b0a4",.4],
+ ["carpet",/despatx|oficina|recepció|vestíbul|espera|platea|tribuna|reunions|redacció|arxiu|privada|joc|saló|estudi|sala de proves|emprovador|massatges/,null,0]];
+function roomTex(nom){
+  const n=(nom||"").toLowerCase();
+  for(const [c,re,t,p] of TEX)if(re.test(n))return {c:"tx-"+c,t,p};
+  return {c:"tx-wood",t:null,p:0}}
 const COLORS=(i,dark,sc)=>{const z=scen(sc);return `hsl(${z.hue[i%8]} ${dark?Math.round(z.sat/1.8):z.sat}% ${dark?34:84}%)`};
 const $=s=>document.querySelector(s);
 const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
@@ -453,6 +480,7 @@ function renderLegend(){
   const f=lang==="fr";
   $("#legend").innerHTML=Object.entries(cur.objectes).map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}
 function renderBoard(){
+  const texCache={};
   const n=cur.n,b=$("#board"),dk=dark();
   b.style.gridTemplateColumns=`repeat(${n},minmax(0,1fr))`;b.style.gridTemplateRows=`repeat(${n},minmax(0,1fr))`;
   // files/columnes amb sospitós col·locat
@@ -465,7 +493,7 @@ function renderBoard(){
     const diff=(rr,cc)=>rr<0||cc<0||rr>=n||cc>=n||!cur.pla[rr][cc]||cur.sala[rr][cc]!==s;
     const w=(a)=>a?"3px":"0";
     const bw=`border-width:${w(diff(r-1,c))} ${w(diff(r,c+1))} ${w(diff(r+1,c))} ${w(diff(r,c-1))}`;
-    const o=cur.obj[r][c],blk=isBlocked(r,c);
+    const o=cur.obj[r][c],blk=isBlocked(r,c),tx=texCache[s]||(texCache[s]=roomTex(cur.sales[s].ca));
     let cls="cell"+(blk?" blocked":"")+(o&&!blk?" free":"")+(cell.p?" placed":"")+((rowsU.has(r)||colsU.has(c))&&!cell.p?" line":"");
     let inner="";
     if(!seen.has(s)){seen.add(s);inner+=`<span class="rn">${cur.sales[s][lang]}</span>`}
@@ -474,7 +502,7 @@ function renderBoard(){
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
     if(cell.p)inner+=`<span class="tok">${tokHtml(cell.p)}</span>`;
-    h+=`<div class="${cls}" data-r="${r}" data-c="${c}" style="background-color:${COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
+    h+=`<div class="${cls} ${tx.c}" data-r="${r}" data-c="${c}" style="background-color:${tx.t?`color-mix(in srgb,${COLORS(s,dk,cur.escenari)} ${Math.round((1-tx.p)*100)}%,${tx.t})`:COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
   }
   b.innerHTML=h;
 }
