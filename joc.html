@@ -71,12 +71,12 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .pc .chk{position:absolute;right:8px;top:8px;width:24px;height:24px;border-radius:50%;background:var(--ok);color:#fff;font-size:.85rem;line-height:24px;font-weight:800;z-index:4;box-shadow:0 2px 3px #0004}
 .pc.prog .chk{background:var(--accent)}
 /* sobre */
-.pc.env .env{display:block;position:relative;width:96%;margin:0 auto;aspect-ratio:1.18}
+.pc.env .env{display:block;position:relative;width:96%;margin:0 auto;aspect-ratio:1.04}
 .env .eb,.env .ef{position:absolute;inset:0;width:100%;height:100%;display:block}
 .env .paper{display:block;position:absolute;left:15%;right:15%;top:7%;height:58%;overflow:hidden;border:1.5px solid #00000030;border-radius:3px;background:var(--bg);box-shadow:0 1px 3px #0004;transition:transform .4s ease}
 .env .paper svg{width:100%;display:block}
 .env .ef{pointer-events:none}
-.env .lens{position:absolute;left:50%;top:56%;transform:translateX(-50%);white-space:nowrap;z-index:4;display:flex;gap:5px;align-items:center;background:#fff;color:#2b2118;border:2px solid #2b2118;border-radius:22px;padding:3px 14px;font-weight:900;font-size:1rem;box-shadow:0 3px 0 #2b2118,0 6px 8px #0004}
+.env .rev{position:absolute;left:8%;right:8%;top:55%;transform:rotate(-4deg);z-index:4;text-align:center;color:color-mix(in srgb,var(--ink) 52%,var(--bg));text-shadow:0 1px 0 rgba(255,255,255,.55);pointer-events:none}.env .rev b{display:block;font-weight:900;font-size:clamp(.78rem,3.9vw,1rem);letter-spacing:.07em;line-height:1.05}.env .rev i{display:block;font-style:normal;font-weight:800;font-size:clamp(.5rem,2.4vw,.62rem);letter-spacing:.08em;margin-top:3px;opacity:.9}
 .pc.env.open .paper{transform:translateY(-22%)}
 .pc.env .env-hint{display:block;font-size:.58rem;letter-spacing:.12em;font-weight:800;color:var(--muted);margin-top:2px;text-transform:uppercase}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
@@ -295,9 +295,9 @@ function dots(n){return '<span class="lvl">'+[1,2,3,4,5].map(i=>`<i class="${i<=
 /* ---------- llista ---------- */
 const H={
  ca:{lv:["Tots","Molt fàcil","Fàcil","Mitjà","Difícil","Expert"],pz:"enigmes",dn:"completats",sort:"Ordena per:",sc:"Escenari:",all:"Tots",sd:"Dificultat",ss:"Mida",sn:"Nom",hide:"Amaga els completats",show:"Mostra els completats",
-  alfa:"Benvingut a la versió alfa: és un projecte en curs. Les funcions poden canviar.",seal:"CAS<br>RESOLT",none:"Cap cas amb aquests filtres.",sub:"Puzles de lògica de crims"},
+  alfa:"Benvingut a la versió alfa: és un projecte en curs. Les funcions poden canviar.",seal:"CAS<br>RESOLT",avail:"CAS DISPONIBLE!",reveal:"FES CLIC PER REVELAR",none:"Cap cas amb aquests filtres.",sub:"Puzles de lògica de crims"},
  fr:{lv:["Tous","Très facile","Facile","Moyen","Difficile","Expert"],pz:"énigmes",dn:"résolues",sort:"Trier par :",sc:"Scénario :",all:"Tous",sd:"Difficulté",ss:"Taille",sn:"Nom",hide:"Masquer les résolues",show:"Afficher les résolues",
-  alfa:"Bienvenue dans la version alpha : un projet en cours. Les fonctions peuvent changer.",seal:"AFFAIRE<br>RÉSOLUE",none:"Aucun cas avec ces filtres.",sub:"Énigmes de logique criminelle"}};
+  alfa:"Bienvenue dans la version alpha : un projet en cours. Les fonctions peuvent changer.",seal:"AFFAIRE<br>RÉSOLUE",avail:"AFFAIRE DISPONIBLE !",reveal:"TOUCHE POUR RÉVÉLER",none:"Aucun cas avec ces filtres.",sub:"Énigmes de logique criminelle"}};
 let hf=load("hf",0),hs=load("hs","d"),hh=load("hh",false),hsc=load("hsc","");
 const caseName=c=>(c.nom&&c.nom[lang])||c.titol[lang];
 function thumb(c,mode){
@@ -328,9 +328,8 @@ function pcCard(c,i){
    sty=` style="--sc:hsl(${scen(c.escenari).col} 45% 42%)"`;
   if(p.solved)return `<button class="pc done" data-i="${i}"${sty}><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
   if(started)return `<button class="pc prog" data-i="${i}"${sty}><span class="chk">…</span><span class="th">${thumb(c,"prog")}</span><span class="nm">${nm}</span>${meta}</button>`;
-  const nc=c.textos.ca.length;
   const fl=`color-mix(in srgb,#efe6d2 70%,hsl(${scen(c.escenari).col} 45% 50%))`,fb=`color-mix(in srgb,#cdbf9f 70%,hsl(${scen(c.escenari).col} 45% 40%))`,ff=`color-mix(in srgb,#e8dcc1 78%,hsl(${scen(c.escenari).col} 45% 55%))`;
-  return `<button class="pc env" data-i="${i}"${sty}><span class="env"><svg class="eb" viewBox="0 0 120 100" aria-hidden="true"><ellipse cx="60" cy="96" rx="52" ry="3.5" fill="#0003"/><path d="M6 44L60 4L114 44V90H6Z" fill="${fb}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="paper">${thumb(c,"closed")}</span><svg class="ef" viewBox="0 0 120 100" aria-hidden="true"><path d="M6 44L60 76L114 44V90Q114 95 109 95H11Q6 95 6 90Z" fill="${ff}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 90L50 62M114 90L70 62" stroke="#2b2118" stroke-opacity=".35" stroke-width="1.2" fill="none"/><path d="M6 44L60 76L114 44" fill="none" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="lens">🔍 ${nc}</span></span><span class="nm">${nm}</span>${meta}</button>`}
+  return `<button class="pc env" data-i="${i}"${sty}><span class="env"><svg class="eb" viewBox="0 0 120 100" aria-hidden="true"><ellipse cx="60" cy="96" rx="52" ry="3.5" fill="#0003"/><path d="M6 44L60 4L114 44V90H6Z" fill="${fb}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="paper">${thumb(c,"closed")}</span><svg class="ef" viewBox="0 0 120 100" aria-hidden="true"><path d="M6 44L60 56L114 44V90Q114 95 109 95H11Q6 95 6 90Z" fill="${ff}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 44L60 56L114 44" fill="none" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="rev"><b>${h.avail}</b><i>${h.reveal}</i></span></span><span class="nm">${nm}</span>${meta}</button>`}
 function home(){
   stopTimer();cur=null;
   $("header").classList.add("hidden");
