@@ -1,0 +1,1 @@
+window.RANKING_URL = "";

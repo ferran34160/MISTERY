@@ -161,6 +161,21 @@ button:active{box-shadow:0 0 0 var(--line)}
 @keyframes fall{to{transform:translate3d(var(--dx),105vh,0) rotate(var(--rot))}}
 @media (prefers-reduced-motion:reduce){.tok.pop,.pc,.card.sel,.pc.slam .seal,.win .stampw,.win .culprit .tok{animation:none!important}.conf{display:none}}
 
+
+/* classificació */
+.rk table{width:100%;border-collapse:collapse;font-size:.92rem;margin:8px 0}
+.rk th{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:4px 6px}
+.rk td{padding:7px 6px;border-top:1px solid var(--cellgrid)}
+.rk td.n{width:2rem;font-weight:800;text-align:center}
+.rk td.r{text-align:right;font-variant-numeric:tabular-nums}
+.rk tr.me td{background:color-mix(in srgb,var(--accent) 14%,transparent);font-weight:700}
+.rk .nick{display:flex;gap:6px;margin:6px 0 4px}
+.rk .nick input{flex:1;font:inherit;padding:8px 10px;border:2px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);min-width:0}
+.rk select{font:inherit;width:100%;padding:8px;border:2px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+.rk .nota{font-size:.82rem;color:var(--muted);margin:6px 0}
+.rkw{margin:10px 0 0;font-size:.9rem}
+.rkw b{color:var(--ok)}
+
 /* modals */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center;z-index:10}
 .sheet{background:var(--panel);border:2px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-width:520px;max-height:88vh;overflow:auto;padding:16px 16px 28px}
@@ -205,6 +220,7 @@ button:active{box-shadow:0 0 0 var(--line)}
 window.addEventListener("error",function(e){var m=(e.message||("No es pot carregar "+(e.target&&(e.target.src||e.target.href))));document.body.insertAdjacentHTML("afterbegin","<pre style='padding:12px;white-space:pre-wrap;color:#c00'>Error: "+m+"</pre>")},true);
 </script>
 <script src="casos.js"></script>
+<script src="ranking_config.js"></script>
 <script>
 "use strict";
 const T={
@@ -373,7 +389,7 @@ function home(){
     return A.nivell-B.nivell||A.n-B.n||a-b});
   $("#hero").innerHTML=`<div class="top"><img class="logoimg" src="logo.png" alt="Mistery Murder">
    <select id="hl" aria-label="Idioma"><option value="ca"${lang==="ca"?" selected":""}>Català</option><option value="fr"${lang==="fr"?" selected":""}>Français</option></select>
-   <button class="ib" id="hth" aria-label="${t("theme")}">${dark()?"☀":"☾"}</button><button class="ib" id="hq">?</button></div>
+   <button class="ib" id="hth" aria-label="${t("theme")}">${dark()?"☀":"☾"}</button><button class="ib" id="hrk">🏆</button><button class="ib" id="hq">?</button></div>
    <div class="alfa"><i>ALFA</i><span>${h.alfa}</span></div>
    <div class="sum"><b>${CASOS.length}</b> ${h.pz} · <b>${done}</b> ${h.dn}</div>
    <div class="tabs2">${h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}</div>
@@ -385,6 +401,7 @@ function home(){
   $("#hl").onchange=e=>{lang=e.target.value;save("lang",lang);home()};
   $("#hth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);home()};
   $("#hq").onclick=()=>showHelp("r");
+  $("#hrk").onclick=()=>mostraRanking("g");
   $("#hsel").onchange=e=>{hs=e.target.value;save("hs",hs);home()};
   $("#hhd").onclick=()=>{hh=!hh;save("hh",hh);home()};
   document.querySelectorAll(".tabs2 button").forEach(b=>b.onclick=()=>{hf=+b.dataset.f;save("hf",hf);home()});
@@ -624,7 +641,7 @@ function checkWin(){
     if(c.p!==p.id)return;
   }
   st.done=true;persist();stopTimer();
-  const pr=prog[cur.id]||{};pr.solved=true;if(!pr.best||st.time<pr.best)pr.best=st.time;prog[cur.id]=pr;save("prog",prog);
+  const pr=prog[cur.id]||{};pr.solved=true;if(!pr.best||st.time<pr.best)pr.best=st.time;pr.p=Math.max(pr.p||0,punts(cur,st.time));prog[cur.id]=pr;save("prog",prog);
   justSolved=cur.id;
   setTimeout(winModal,350);
 }
@@ -638,11 +655,113 @@ function confeti(){
     e.style.animationDuration=(1.8+Math.random()*1.6)+"s";e.style.animationDelay=(Math.random()*.5)+"s";
     d.appendChild(e)}
   document.body.appendChild(d);setTimeout(()=>d.remove(),4200)}
+
+/* ---------- classificació entre amics (Firebase Realtime Database via REST) ---------- */
+const RK_URL=(window.RANKING_URL||"").replace(/\/+$/,"");
+let nick=load("nick","");
+const rkSan=n=>(n||"").replace(/[.$#\[\]\/]/g," ").replace(/\s+/g," ").trim().slice(0,16);
+function punts(c,t){
+  const base=[10,20,35,55,80][c.nivell-1]*({6:1,7:1.25,8:1.5,9:1.8}[c.n]||1);
+  const par=90*(c.n-4)*(1+.25*(c.nivell-1));            // temps de referència (s)
+  return Math.round(base*(1+Math.max(0,1-t/(2*par))));   // fins a +100% si és molt ràpid
+}
+const rkOn=()=>!!RK_URL;
+async function rkJson(path,opt){
+  const r=await fetch(RK_URL+path+".json",opt);
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  return r.json();
+}
+async function rkPuja(caseId,t,p){
+  const nk=rkSan(nick);if(!rkOn()||!nk)return false;
+  const path="/ranking/"+encodeURIComponent(caseId)+"/"+encodeURIComponent(nk);
+  const ant=await rkJson(path);
+  if(ant&&ant.p>=p&&ant.t<=t)return true;                   // ja hi ha un resultat igual o millor
+  const nou={t:t,p:Math.max(p,(ant&&ant.p)||0),ts:Date.now()};
+  if(ant&&ant.t<t)nou.t=ant.t;                               // guarda el millor temps
+  await rkJson(path,{method:"PUT",body:JSON.stringify(nou)});
+  return true;
+}
+async function rkCua(){
+  const q=load("rkq",[]);if(!q.length||!rkOn()||!nick)return;
+  const resta=[];
+  for(const e of q){try{await rkPuja(e.id,e.t,e.p)}catch(x){resta.push(e)}}
+  save("rkq",resta);
+}
+function rkEncua(id,t,p){const q=load("rkq",[]).filter(e=>e.id!==id);q.push({id,t,p});save("rkq",q)}
+async function rkTot(){return (await rkJson("/ranking"))||{}}
+function rkGeneral(tot){
+  const J={};
+  for(const id of Object.keys(tot))for(const [nk,v] of Object.entries(tot[id]||{})){
+    const j=J[nk]||(J[nk]={nk,p:0,n:0});j.p+=v.p||0;j.n++}
+  return Object.values(J).sort((a,b)=>b.p-a.p||b.n-a.n);
+}
+function rkCas(tot,id){
+  return Object.entries(tot[id]||{}).map(([nk,v])=>({nk,t:v.t,p:v.p})).sort((a,b)=>a.t-b.t);
+}
+const rkTxt={
+ ca:{tit:"Classificació",gen:"General",cas:"Per cas",nom:"El teu sobrenom",desa:"Desa",punts:"punts",casos:"casos",
+  off:"La classificació en línia encara no està activada. Mira RANKING.md per configurar-la; mentrestant veus els teus punts.",
+  buit:"Encara no hi ha resultats.",tria:"Tria un cas",carrega:"Carregant…",err:"No s'ha pogut carregar la classificació.",
+  nom0:"Posa't un sobrenom per sortir a la classificació:",els:"Els teus punts",guanyat:"punts",pos:"Posició",refr:"Actualitza"},
+ fr:{tit:"Classement",gen:"Général",cas:"Par affaire",nom:"Ton pseudo",desa:"Enregistrer",punts:"points",casos:"affaires",
+  off:"Le classement en ligne n'est pas encore activé. Voir RANKING.md pour le configurer ; en attendant tu vois tes points.",
+  buit:"Pas encore de résultats.",tria:"Choisis une affaire",carrega:"Chargement…",err:"Impossible de charger le classement.",
+  nom0:"Choisis un pseudo pour apparaître au classement :",els:"Tes points",guanyat:"points",pos:"Position",refr:"Actualiser"}};
+const rt=k=>rkTxt[lang][k];
+function rkTaula(files,cols){
+  return `<table><tr>${cols.map(c=>`<th class="${c[2]||""}">${c[0]}</th>`).join("")}</tr>${files.map((f,i)=>`<tr class="${rkSan(nick)&&f.nk===rkSan(nick)?"me":""}"><td class="n">${i+1}</td>${cols.slice(1).map(c=>`<td class="${c[2]||""}">${c[1](f)}</td>`).join("")}</tr>`).join("")}</table>`;
+}
+function rkLocal(){
+  let p=0,n=0;for(const c of CASOS){const q=prog[c.id];if(q&&q.solved){n++;p+=q.p||punts(c,q.best||9999)}}
+  return {p,n};
+}
+async function mostraRanking(tab){
+  tab=tab||"g";
+  const loc=rkLocal();
+  let h=`<div class="rk"><button class="close" id="mc">${t("close")}</button><h3>🏆 ${rt("tit")}</h3>`;
+  h+=`<div class="nick"><input id="rnick" maxlength="16" placeholder="${rt("nom")}" value="${(nick||"").replace(/"/g,"&quot;")}"><button id="rsave">${rt("desa")}</button></div>`;
+  if(!rkOn()){
+    h+=`<p class="nota">${rt("off")}</p><p><b>${rt("els")}:</b> ${loc.p} ${rt("punts")} · ${loc.n} ${rt("casos")}</p></div>`;
+    modal(h);$("#mc").onclick=closeModal;
+    $("#rsave").onclick=()=>{nick=rkSan($("#rnick").value);save("nick",nick);mostraRanking(tab)};
+    return;
+  }
+  h+=`<div class="tabs"><button data-t="g" class="${tab==="g"?"on":""}">${rt("gen")}</button><button data-t="c" class="${tab==="c"?"on":""}">${rt("cas")}</button></div><div id="rkb"><p class="nota">${rt("carrega")}</p></div></div>`;
+  modal(h);$("#mc").onclick=closeModal;
+  $("#rsave").onclick=()=>{nick=rkSan($("#rnick").value);save("nick",nick);rkCua();mostraRanking(tab)};
+  document.querySelectorAll(".rk .tabs button").forEach(b=>b.onclick=()=>mostraRanking(b.dataset.t));
+  try{
+    const tot=await rkTot();
+    if(tab==="g"){
+      const g=rkGeneral(tot);
+      $("#rkb").innerHTML=g.length?rkTaula(g,[["#"],[lang==="fr"?"Joueur":"Jugador",f=>f.nk],[rt("punts"),f=>f.p,"r"],[rt("casos"),f=>f.n,"r"]]):`<p class="nota">${rt("buit")}</p>`;
+    }else{
+      const ids=Object.keys(tot).filter(id=>CASOS.some(c=>c.id===id));
+      const sel=window._rkcas&&ids.includes(window._rkcas)?window._rkcas:(ids[0]||"");
+      $("#rkb").innerHTML=ids.length?`<select id="rsel">${ids.map(id=>{const c=CASOS.find(x=>x.id===id);return `<option value="${id}"${id===sel?" selected":""}>${caseName(c)} · ${c.n}×${c.n}</option>`}).join("")}</select>`+rkTaula(rkCas(tot,sel),[["#"],[lang==="fr"?"Joueur":"Jugador",f=>f.nk],[lang==="fr"?"Temps":"Temps",f=>fmt(f.t),"r"],[rt("punts"),f=>f.p,"r"]]):`<p class="nota">${rt("buit")}</p>`;
+      const s2=$("#rsel");if(s2)s2.onchange=()=>{window._rkcas=s2.value;mostraRanking("c")};
+    }
+  }catch(e){$("#rkb").innerHTML=`<p class="nota">${rt("err")}</p>`}
+}
+async function rkDesprésDeResoldre(c,t){
+  const p=punts(c,t);
+  const el=document.getElementById("rkw");
+  if(el)el.innerHTML=`<b>+${p}</b> ${rt("guanyat")}`;
+  if(!rkOn())return;
+  if(!nick){const n=rkSan(prompt(rt("nom0"))||"");if(n){nick=n;save("nick",nick)}}
+  if(!nick)return;
+  try{
+    await rkPuja(c.id,t,p);
+    const tot=await rkTot();const r=rkCas(tot,c.id),pos=r.findIndex(x=>x.nk===rkSan(nick))+1;
+    if(el&&pos)el.innerHTML=`<b>+${p}</b> ${rt("guanyat")} · ${rt("pos")} <b>#${pos}</b> / ${r.length}`;
+  }catch(e){rkEncua(c.id,t,p)}
+}
+
 function winModal(){
   const a=cur.assassi,next=CASOS[cur._i+1];
-  modal(`<div class="win"><div class="big">🔍</div><div class="stampw">${H[lang].seal.replace("<br>"," ")}</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok">${tokHtml(a)}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p>
+  modal(`<div class="win"><div class="big">🔍</div><div class="stampw">${H[lang].seal.replace("<br>"," ")}</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok">${tokHtml(a)}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p><p class="rkw" id="rkw"></p>
   <div class="row"><button id="mhome">${t("again")}</button>${next?`<button id="mnext">${t("next")}</button>`:""}</div></div>`);
-  confeti();
+  confeti();rkDesprésDeResoldre(cur,st.time);
   $("#mhome").onclick=()=>{closeModal();home()};
   if(next)$("#mnext").onclick=()=>{closeModal();obreCas(cur._i+1)};
 }
@@ -738,6 +857,7 @@ document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur&&st)pe
 {const th=load("theme",null);document.documentElement.dataset.theme=th||"light"}
 $("#lang").textContent=lang==="ca"?"FR":"CA";
 if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
+try{rkCua()}catch(e){}
 try{home()}catch(e){document.body.insertAdjacentHTML('afterbegin','<pre style=\"padding:12px;white-space:pre-wrap\">Error: '+e.message+'</pre>')}
 </script>
 </body>

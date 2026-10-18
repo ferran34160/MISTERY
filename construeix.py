@@ -282,6 +282,8 @@ def main():
         html = fh.read()
     js = open("casos.js", encoding="utf-8").read()
     html = html.replace('<script src="casos.js"></script>', "<script>" + js + "</script>")
+    with open("ranking_config.js", encoding="utf-8") as fh:
+        html = html.replace('<script src="ranking_config.js"></script>', "<script>" + fh.read() + "</script>")
     # imatges (retrats i objectes) incloses com a data URI: joc.html és un sol fitxer.
     # Si hi ha Pillow, s'encongeixen una mica perquè el fitxer pesi menys (index.html usa els originals).
     import base64
