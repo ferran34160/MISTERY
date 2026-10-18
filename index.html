@@ -91,7 +91,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.placed svg.obj{opacity:.3}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
 .notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
-.tok{position:relative;width:70%;height:70%;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:clamp(14px,5vw,24px);color:#fff;border:2px solid var(--line);pointer-events:none;z-index:2}
+.tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg{width:100%;height:100%;display:block;border-radius:50%}.cell .tok{height:auto;aspect-ratio:1;flex:none}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
 /* eines */
@@ -104,7 +104,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .card{display:flex;gap:8px;align-items:flex-start;text-align:left;padding:8px;border-radius:12px;width:100%}
 .card.sel{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent)}
-.card .tok{flex:none;width:34px;height:34px;font-size:1rem}
+.card .tok{flex:none;width:46px;height:46px;font-size:1.3rem}
 .card .tx b{display:block;font-size:.9rem}
 .card .tx span{font-size:.8rem;color:var(--muted);line-height:1.25;display:block}
 .card.done .tx span{text-decoration:line-through;opacity:.6}
@@ -127,7 +127,7 @@ h2{font-size:.95rem;margin:16px 0 6px}
 .win{text-align:center}
 .win .big{font-size:2.6rem}
 .win .culprit{display:flex;justify-content:center;margin:10px 0}
-.win .culprit .tok{width:64px;height:64px;font-size:1.8rem}
+.win .culprit .tok{width:96px;height:96px;font-size:2.4rem}
 .row{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap}
 </style>
 </head>
@@ -311,6 +311,43 @@ function obreCas(i){
 const isBlocked=(r,c)=>{const o=cur.obj[r][c];return !!o&&cur.objectes[o].bloqueja};
 const pIdx=id=>cur.persones.findIndex(p=>p.id===id);
 const pName=id=>cur.persones[pIdx(id)].nom;
+
+/* ---------- retrats (cares dibuixades a partir del nom) ---------- */
+function hashN(str){let h=7;for(const c of str)h=(h*31+c.charCodeAt(0))>>>0;return h}
+function face(p,i){
+  const h=hashN(p.nom),m=p.genere==="m",dk=dark(),
+   skin=["#f6d9bd","#e8bb90","#cf9468","#a56c45","#7a4b2e"][h%5],
+   hc=["#2b1d12","#5a3a1e","#8a5a2e","#d9b45a","#8c8c8c","#a5421f"][(h>>3)%6],
+   bg=`hsl(${PERSONHUE[i%10]} 55% ${dk?42:55}%)`,
+   shirt=`hsl(${(PERSONHUE[i%10]+170)%360} 40% ${dk?30:38}%)`,
+   st=(h>>6)%3,ln="#2b2118";
+  let o=`<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="${bg}"/>`;
+  if(!m&&st!==2)o+=`<path d="M9.5 19c0-9 4-14 10.5-14s10.5 5 10.5 14v13h-4.5V21H14v11H9.5z" fill="${hc}"/>`;
+  o+=`<path d="M5 40c0-9 6.5-12.5 15-12.5S35 31 35 40z" fill="${shirt}"/><rect x="17" y="23.5" width="6" height="6" rx="1" fill="${skin}"/><path d="M17 27.5c1 1.5 5 1.5 6 0v-1.5h-6z" fill="#00000022"/>`;
+  if(!m&&st===2)o+=`<path d="M9.5 20c0-9 3-14 10.5-14s10.5 5 10.5 14v4.5h-3.5V18H13v6.5H9.5z" fill="${hc}"/>`;
+  o+=`<ellipse cx="20" cy="19" rx="8" ry="9.2" fill="${skin}"/><ellipse cx="11.8" cy="20" rx="1.4" ry="2" fill="${skin}"/><ellipse cx="28.2" cy="20" rx="1.4" ry="2" fill="${skin}"/>`;
+  // cabell de davant
+  if(m){
+    if(st===0)o+=`<path d="M11.4 17.5c-.6-7 3.6-10.8 8.6-10.8s9.2 3.8 8.6 10.8c-1.6-3.4-3.8-4.8-8.6-4.8s-7 1.4-8.6 4.8z" fill="${hc}"/>`;
+    else if(st===1)o+=`<path d="M11.4 18c-.8-8 5.2-11.8 10.8-10.2 4.4 1.2 6.6 5 6.4 10.2-1.4-3.4-3.8-5.2-7.4-5.6-3.8-.2-7.6 1.2-9.8 5.6z" fill="${hc}"/>`;
+    else o+=`<circle cx="13.5" cy="12.5" r="3.2" fill="${hc}"/><circle cx="17.5" cy="9.5" r="3.4" fill="${hc}"/><circle cx="22.8" cy="9.5" r="3.4" fill="${hc}"/><circle cx="26.5" cy="12.8" r="3.2" fill="${hc}"/><circle cx="20" cy="12" r="3.4" fill="${hc}"/>`;
+  }else{
+    if(st===0)o+=`<path d="M11 18c-.4-8 4-12 9-12s9.4 4 9 12c-1.2-3-3-5.6-9-5.6S12.2 15 11 18z" fill="${hc}"/>`;
+    else if(st===1)o+=`<circle cx="20" cy="5.2" r="3.6" fill="${hc}"/><path d="M11.4 17.5c-.6-7 3.4-10.4 8.6-10.4s9.2 3.4 8.6 10.4c-1.6-3.4-3.8-4.8-8.6-4.8s-7 1.4-8.6 4.8z" fill="${hc}"/>`;
+    else o+=`<path d="M10.5 19c-.6-8.5 4-12.6 9.5-12.6s10.1 4.1 9.5 12.6c-1-3.4-2.8-5.4-5-6-3.4 1.4-9 1.6-11.6 0-.6.8-1.8 2.6-2.4 6z" fill="${hc}"/>`}
+  // cara
+  o+=`<circle cx="16.4" cy="19.6" r="1.15" fill="${ln}"/><circle cx="23.6" cy="19.6" r="1.15" fill="${ln}"/><path d="M14.6 17.4q1.8-1 3.6 0M21.8 17.4q1.8-1 3.6 0" fill="none" stroke="${hc}" stroke-width=".9" stroke-linecap="round"/><path d="M20 20.5v2.4h1.1" fill="none" stroke="#00000044" stroke-width=".8" stroke-linecap="round"/>`;
+  const sm=(h>>14)%3;
+  o+=sm===0?`<path d="M16.8 25.2q3.2 2.6 6.4 0" fill="none" stroke="${ln}" stroke-width="1" stroke-linecap="round"/>`:sm===1?`<path d="M17.2 25.4q2.8 1.8 5.6 0" fill="#fff" stroke="${ln}" stroke-width="1" stroke-linecap="round"/>`:`<path d="M17.4 25.6h5.2" fill="none" stroke="${ln}" stroke-width="1" stroke-linecap="round"/>`;
+  if(!m)o+=`<circle cx="14.2" cy="23" r="1.6" fill="#e88a8a" opacity=".35"/><circle cx="25.8" cy="23" r="1.6" fill="#e88a8a" opacity=".35"/>`;
+  const ac=(h>>9)%5;
+  if(ac===0)o+=`<circle cx="16.4" cy="19.6" r="3" fill="none" stroke="${ln}" stroke-width=".9"/><circle cx="23.6" cy="19.6" r="3" fill="none" stroke="${ln}" stroke-width=".9"/><path d="M19.4 19.4h1.2M13.4 19.2l-1.6-.6M26.6 19.2l1.6-.6" fill="none" stroke="${ln}" stroke-width=".9"/>`;
+  if(m&&ac===1)o+=`<path d="M15.6 24.2q4.4-2.6 8.8 0q-1.6 1.4-4.4.6q-2.8.8-4.4-.6z" fill="${hc}"/>`;
+  if(m&&ac===2)o+=`<path d="M12.6 21.5c0 6.2 3.2 9.6 7.4 9.6s7.4-3.4 7.4-9.6c-1.4 3.4-3 4-7.4 4s-6-.6-7.4-4z" fill="${hc}"/><path d="M17 25.6q3 1.6 6 0" fill="none" stroke="${skin}" stroke-width="1.1"/>`;
+  if(!m&&ac===3)o+=`<path d="M25 8.2l4-2.4v5.2zM25 8.2l-4-2.4v5.2z" fill="#d94f7a"/><circle cx="25" cy="8.2" r="1.2" fill="#b83a63"/>`;
+  if(ac===4&&m)o+=`<path d="M11 14.5h18" stroke="#b5302a" stroke-width="1.6" fill="none"/>`;
+  return o+"</svg>"}
+const tokHtml=id=>{const i=pIdx(id);return face(cur.persones[i],i)+`<b class="lt">${id}</b>`};
 const tokStyle=id=>`background:hsl(${PERSONHUE[pIdx(id)%10]} 55% ${dark()?42:40}%)`;
 
 function render(){
@@ -342,7 +379,7 @@ function renderBoard(){
     if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
-    if(cell.p)inner+=`<span class="tok" style="${tokStyle(cell.p)}">${cell.p}</span>`;
+    if(cell.p)inner+=`<span class="tok">${tokHtml(cell.p)}</span>`;
     h+=`<div class="${cls}" data-r="${r}" data-c="${c}" style="background-color:${COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
   }
   b.innerHTML=h;
@@ -359,7 +396,7 @@ function renderCards(){
   $("#cards").innerHTML=cur.persones.map(p=>{
     const idx=mine[p.id]||[];
     const done=idx.length&&idx.every(i=>st.crossed.includes(i));
-    return `<button class="card ${sel===p.id?"sel":""} ${done?"done":""}" data-p="${p.id}"><span class="tok" style="${tokStyle(p.id)}">${p.id}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}">${clueText(i)}</span>`).join("")}</span>${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
+    return `<button class="card ${sel===p.id?"sel":""} ${done?"done":""}" data-p="${p.id}"><span class="tok">${tokHtml(p.id)}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}">${clueText(i)}</span>`).join("")}</span>${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
   $("#genh").style.display=gen.length?"":"none";$("#genh").textContent=t("genh");
   $("#gen").innerHTML=gen.map(i=>`<li data-clue="${i}" class="${st.crossed.includes(i)?"done":""}">${clueText(i)}</li>`).join("");
 }
@@ -420,7 +457,7 @@ function checkWin(){
 }
 function winModal(){
   const a=cur.assassi,next=CASOS[cur._i+1];
-  modal(`<div class="win"><div class="big">🔍</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok" style="${tokStyle(a)}">${a}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p>
+  modal(`<div class="win"><div class="big">🔍</div><h3>${t("win")}</h3><p>${t("culp")}</p><div class="culprit"><span class="tok">${tokHtml(a)}</span></div><h3>${pName(a)}</h3><p>${t("in")}</p><p>${t("time")}: <b>${fmt(st.time)}</b></p>
   <div class="row"><button id="mhome">${t("again")}</button>${next?`<button id="mnext">${t("next")}</button>`:""}</div></div>`);
   $("#mhome").onclick=()=>{closeModal();home()};
   if(next)$("#mnext").onclick=()=>{closeModal();obreCas(cur._i+1)};
