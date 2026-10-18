@@ -175,17 +175,17 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Adela",
-    "genere": "f"
+    "nom": "Arnau",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Beatriu",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Candela",
+    "nom": "Carla",
     "genere": "f"
    },
    {
@@ -195,13 +195,13 @@
    },
    {
     "id": "E",
-    "nom": "Èlia",
+    "nom": "Elna",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -249,20 +249,20 @@
     "Era al costat d'una paret exterior de la finca.",
     "A la seva columna hi havia un carro.",
     "Era en un racó d'una habitació.",
-    "Era a la mateixa diagonal que Beatriu.",
+    "Era a la mateixa diagonal que Bruna.",
     "A la seva fila hi havia un balancí.",
     "A la seva columna hi havia un pou.",
     "Ningú no era a l'hort, ni tan sols la víctima.",
     "Hi havia exactament 2 persones al porxo, víctima inclosa."
    ],
    "fr": [
-    "Elle était contre un mur extérieur de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Dans sa colonne se trouvait une charrette.",
     "Elle était dans un coin d'une pièce.",
-    "Il était sur la même diagonale que Beatriu.",
+    "Elle était sur la même diagonale que Bruna.",
     "Sur sa ligne se trouvait un fauteuil à bascule.",
     "Dans sa colonne se trouvait un puits.",
-    "Le potager était vide : pas une âme.",
+    "Personne n'était dans le potager, pas même la victime.",
     "Il y avait exactement 2 personnes dans le porche, victime comprise."
    ]
   },
@@ -470,17 +470,17 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
-    "genere": "f"
-   },
-   {
-    "id": "B",
-    "nom": "Biel",
+    "nom": "Aleix",
     "genere": "m"
    },
    {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
@@ -495,7 +495,7 @@
    },
    {
     "id": "V",
-    "nom": "Víctor",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -538,20 +538,20 @@
   ],
   "textos": {
    "ca": [
-    "Era al costat d'un armari.",
+    "Tenia un armari a tocar.",
     "Era al costat d'una taula.",
     "A la seva columna hi havia un pou.",
-    "Era a un salt de cavall de Cesc (com als escacs).",
-    "Era a la mateixa diagonal que Víctor.",
+    "Era a un salt de cavall de Carles (com als escacs).",
+    "Era a la mateixa diagonal que Valentí.",
     "Només ella i Eudald eren a la seva habitació.",
     "A la seva fila hi havia un carro."
    ],
    "fr": [
-    "Il avait une armoire tout près.",
+    "Elle était à côté d'une armoire.",
     "Il avait une table tout près.",
     "Dans sa colonne se trouvait un puits.",
-    "Il était à un saut de cavalier de Cesc (comme aux échecs).",
-    "Elle était sur la même diagonale que Víctor.",
+    "Il était à un saut de cavalier de Carles (comme aux échecs).",
+    "Il était sur la même diagonale que Valentí.",
     "Seuls elle et Eudald étaient dans sa pièce.",
     "Sur sa ligne se trouvait une charrette."
    ]
@@ -764,32 +764,32 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Adela",
-    "genere": "f"
-   },
-   {
-    "id": "B",
-    "nom": "Biel",
+    "nom": "Arnau",
     "genere": "m"
    },
    {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Daniel",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Èlia",
+    "nom": "Eulàlia",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -832,22 +832,22 @@
   ],
   "textos": {
    "ca": [
-    "Era al sud de Violant.",
-    "No era a la mateixa habitació que Èlia.",
-    "Tenia una cadira a tocar.",
-    "Era a un salt de cavall d'Adela (com als escacs).",
+    "Era al sud de Vera.",
+    "No era a la mateixa habitació que Eulàlia.",
+    "Era al costat d'una cadira.",
+    "Era a un salt de cavall d'Arnau (com als escacs).",
     "Estava al porxo.",
-    "Era a la mateixa diagonal que Biel.",
-    "Era a la mateixa diagonal que Èlia."
+    "Era a la mateixa diagonal que Bruna.",
+    "Era a la mateixa diagonal que Eulàlia."
    ],
    "fr": [
-    "Elle était au sud de Violant.",
-    "Il n'était pas dans la même pièce qu'Èlia.",
-    "Elle était à côté d'une chaise.",
-    "Il était à un saut de cavalier d'Adela (comme aux échecs).",
-    "Il se trouvait dans le porche.",
-    "Elle était sur la même diagonale que Biel.",
-    "Il était sur la même diagonale qu'Èlia."
+    "Elle était au sud de Vera.",
+    "Elle n'était pas dans la même pièce qu'Eulàlia.",
+    "Elle avait une chaise tout près.",
+    "Il était à un saut de cavalier d'Arnau (comme aux échecs).",
+    "Elle était dans le porche.",
+    "Il était sur la même diagonale que Bruna.",
+    "Elle était sur la même diagonale qu'Eulàlia."
    ]
   },
   "solucio": {

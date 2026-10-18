@@ -92,7 +92,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .mark.auto{color:var(--muted);opacity:.5;font-weight:400}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
 .notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
-.tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg{width:100%;height:100%;display:block;border-radius:50%}.cell .tok{position:absolute;left:11%;top:11%;width:78%;height:78%}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
+.tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg,.tok img.ph{width:100%;height:100%;display:block;border-radius:50%;object-fit:cover}.cell .tok{position:absolute;left:11%;top:11%;width:78%;height:78%}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
 /* eines */
@@ -317,8 +317,10 @@ const pIdx=id=>cur.persones.findIndex(p=>p.id===id);
 const pName=id=>cur.persones[pIdx(id)].nom;
 
 /* ---------- retrats (cares dibuixades a partir del nom) ---------- */
+const PHOTOS={"Aleix": "retrats/aleix.jpg", "Anna": "retrats/anna.jpg", "Arnau": "retrats/arnau.jpg", "Aina": "retrats/aina.jpg", "Biel": "retrats/biel.jpg", "Berta": "retrats/berta.jpg", "Bruna": "retrats/bruna.jpg", "Carles": "retrats/carles.jpg", "Clara": "retrats/clara.jpg", "Cesc": "retrats/cesc.jpg", "Carla": "retrats/carla.jpg", "Dídac": "retrats/didac.jpg", "Dolors": "retrats/dolors.jpg", "David": "retrats/david.jpg", "Delfina": "retrats/delfina.jpg", "Eudald": "retrats/eudald.jpg", "Elna": "retrats/elna.jpg", "Enric": "retrats/enric.jpg", "Eulàlia": "retrats/eulalia.jpg", "Hug": "retrats/hug.jpg", "Helena": "retrats/helena.jpg", "Hèctor": "retrats/hector.jpg", "Heura": "retrats/heura.jpg", "Júlia": "retrats/julia.jpg", "Jordi": "retrats/jordi.jpg", "Judit": "retrats/judit.jpg", "Valentí": "retrats/valenti.jpg", "Violant": "retrats/violant.jpg", "Vicenç": "retrats/vicenc.jpg", "Vera": "retrats/vera.jpg"};
 function hashN(str){let h=7;for(const c of str)h=(h*31+c.charCodeAt(0))>>>0;return h}
 function face(p,i){
+  if(PHOTOS[p.nom])return `<img class="ph" src="${PHOTOS[p.nom]}" alt="">`;
   const h0=hashN(p.nom),m=p.genere==="m",dk=dark();
   let hs=h0;const R=n=>{hs=(Math.imul(hs,1103515245)+12345)>>>0;return (hs>>>8)%n};
   const skins=[["#f7dcc4","#ebbf9e"],["#efc7a0","#d9a67c"],["#d9a077","#bd8359"],["#b07848","#94603a"],["#80502f","#683f24"]];

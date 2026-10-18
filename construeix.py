@@ -147,6 +147,12 @@ def main():
         html = fh.read()
     js = open("casos.js", encoding="utf-8").read()
     html = html.replace('<script src="casos.js"></script>', "<script>" + js + "</script>")
+    # retrats fotogràfics inclosos com a data URI (joc.html és un sol fitxer)
+    import base64
+    import re
+    for ruta in set(re.findall(r'"(retrats/[a-z]+\.jpg)"', html)):
+        with open(ruta, "rb") as fh:
+            html = html.replace('"' + ruta + '"', '"data:image/jpeg;base64,' + base64.b64encode(fh.read()).decode() + '"')
     with open("joc.html", "w", encoding="utf-8") as fh:
         fh.write(html)
     print("joc.html creat")

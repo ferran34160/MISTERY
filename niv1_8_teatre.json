@@ -307,7 +307,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Alba",
+    "nom": "Aina",
     "genere": "f"
    },
    {
@@ -317,8 +317,8 @@
    },
    {
     "id": "C",
-    "nom": "Cristian",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
@@ -342,8 +342,8 @@
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Violant",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -415,26 +415,26 @@
     "Era a l'oest de Griselda.",
     "Era al camerino.",
     "Era a un salt de cavall de Griselda (com als escacs).",
-    "Era al sud de Cristian.",
+    "Era al sud de Carla.",
     "Era al nord de Dídac.",
     "Era a l'oest de Fanny.",
     "A la seva columna hi havia un tamboret.",
     "Era a la mateixa diagonal que Griselda.",
-    "Només ell i Eudald eren a la seva habitació."
+    "Només ella i Eudald eren a la seva habitació."
    ],
    "fr": [
     "Elle était à côté d'un miroir.",
     "Il était sur la même diagonale que Griselda.",
     "Elle était contre un mur extérieur de l'édifice.",
     "Elle était à l'ouest de Griselda.",
-    "Il était dans la loge.",
+    "Elle était dans la loge.",
     "Il était à un saut de cavalier de Griselda (comme aux échecs).",
-    "Elle était au sud de Cristian.",
+    "Elle était au sud de Carla.",
     "Il était au nord de Dídac.",
     "Il était à l'ouest de Fanny.",
     "Dans sa colonne se trouvait un tabouret.",
     "Elle était sur la même diagonale que Griselda.",
-    "Seuls lui et Eudald étaient dans sa pièce."
+    "Seuls elle et Eudald étaient dans sa pièce."
    ]
   },
   "solucio": {
@@ -776,27 +776,27 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Delfina",
+    "nom": "Dolors",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Èlia",
+    "nom": "Eulàlia",
     "genere": "f"
    },
    {
@@ -811,8 +811,8 @@
    },
    {
     "id": "V",
-    "nom": "Valèria",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -877,26 +877,26 @@
     "Era al costat d'una paret exterior de l'edifici.",
     "Era al sud de Guerau.",
     "A la seva columna hi havia un tamboret.",
-    "Era a un salt de cavall de Valèria (com als escacs).",
+    "Era a un salt de cavall de Vicenç (com als escacs).",
     "Era sobre el sofà.",
-    "Era a un salt de cavall de Berta (com als escacs).",
+    "Era a un salt de cavall de Biel (com als escacs).",
     "Estava a la cabina de llum.",
-    "Era a la mateixa habitació que Carla.",
-    "Era a la mateixa diagonal que Èlia.",
-    "Era a un salt de cavall d'Aina (com als escacs)."
+    "Era a la mateixa habitació que Clara.",
+    "Era a la mateixa diagonal que Eulàlia.",
+    "Era a un salt de cavall d'Anna (com als escacs)."
    ],
    "fr": [
     "Dans sa colonne se trouvait une échelle.",
     "Il était contre un mur extérieur de l'édifice.",
     "Elle était au sud de Guerau.",
     "Dans sa colonne se trouvait un tabouret.",
-    "Elle était à un saut de cavalier de Valèria (comme aux échecs).",
-    "Elle était sur le canapé.",
-    "Elle était à un saut de cavalier de Berta (comme aux échecs).",
+    "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
+    "Il était sur le canapé.",
+    "Elle était à un saut de cavalier de Biel (comme aux échecs).",
     "Elle était dans la cabine technique.",
-    "Il était dans la même pièce que Carla.",
-    "Elle était sur la même diagonale qu'Èlia.",
-    "Il était à un saut de cavalier d'Aina (comme aux échecs)."
+    "Il était dans la même pièce que Clara.",
+    "Elle était sur la même diagonale qu'Eulàlia.",
+    "Il était à un saut de cavalier d'Anna (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -1229,7 +1229,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
@@ -1239,8 +1239,8 @@
    },
    {
     "id": "C",
-    "nom": "Cesc",
-    "genere": "m"
+    "nom": "Clara",
+    "genere": "f"
    },
    {
     "id": "D",
@@ -1254,18 +1254,18 @@
    },
    {
     "id": "F",
-    "nom": "Felip",
+    "nom": "Ferran",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Gabriel",
+    "nom": "Guerau",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Valèria",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1330,27 +1330,27 @@
     "Era sobre el tamboret.",
     "A la seva fila hi havia un bagul.",
     "Era sobre el sofà.",
-    "Era a un salt de cavall d'Aina (com als escacs).",
-    "Era al nord d'Aina.",
+    "Era a un salt de cavall d'Anna (com als escacs).",
+    "Era al nord d'Anna.",
     "Era a un salt de cavall de Bruna (com als escacs).",
-    "Era a un salt de cavall de Valèria (com als escacs).",
+    "Era a un salt de cavall de Vicenç (com als escacs).",
     "Era a l'est de Dolors.",
     "A la seva columna hi havia una escala.",
     "Era a l'oest de Dolors.",
-    "No era a la mateixa habitació que Felip."
+    "No era a la mateixa habitació que Ferran."
    ],
    "fr": [
     "Elle était sur le tabouret.",
     "Sur sa ligne se trouvait une malle.",
-    "Elle était sur le canapé.",
-    "Il était à un saut de cavalier d'Aina (comme aux échecs).",
-    "Il était au nord d'Aina.",
+    "Il était sur le canapé.",
+    "Il était à un saut de cavalier d'Anna (comme aux échecs).",
+    "Elle était au nord d'Anna.",
     "Elle était à un saut de cavalier de Bruna (comme aux échecs).",
-    "Il était à un saut de cavalier de Valèria (comme aux échecs).",
+    "Elle était à un saut de cavalier de Vicenç (comme aux échecs).",
     "Il était à l'est de Dolors.",
     "Dans sa colonne se trouvait une échelle.",
     "Elle était à l'ouest de Dolors.",
-    "Elle n'était pas dans la même pièce que Felip."
+    "Elle n'était pas dans la même pièce que Ferran."
    ]
   },
   "solucio": {

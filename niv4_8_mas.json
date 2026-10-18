@@ -311,7 +311,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Alba",
+    "nom": "Aina",
     "genere": "f"
    },
    {
@@ -326,12 +326,12 @@
    },
    {
     "id": "D",
-    "nom": "Diana",
-    "genere": "f"
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Èlia",
+    "nom": "Eulàlia",
     "genere": "f"
    },
    {
@@ -346,7 +346,7 @@
    },
    {
     "id": "V",
-    "nom": "Vera",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -408,30 +408,30 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'est d'Èlia.",
+    "Era a l'est d'Eulàlia.",
     "Era a la sala.",
     "A la seva columna hi havia un barril.",
     "Era a l'oest de Carles.",
     "Era al costat d'un barril.",
     "No compartia habitació amb ningú, ni tan sols amb la víctima.",
     "A la seva fila hi havia una cadira.",
-    "Era a un salt de cavall de Diana (com als escacs).",
+    "Era a un salt de cavall de David (com als escacs).",
     "Era al celler.",
     "Només ella i Guerau eren a la seva habitació.",
     "Era al sud de Flora."
    ],
    "fr": [
-    "Il était à l'est d'Èlia.",
+    "Il était à l'est d'Eulàlia.",
     "Elle se trouvait dans le salon.",
     "Dans sa colonne se trouvait un tonneau.",
     "Elle était à l'ouest de Carles.",
     "Elle avait un tonneau tout près.",
-    "Elle était seule dans sa pièce.",
+    "Il était seul dans sa pièce.",
     "Sur sa ligne se trouvait une chaise.",
-    "Elle était à un saut de cavalier de Diana (comme aux échecs).",
+    "Elle était à un saut de cavalier de David (comme aux échecs).",
     "Il se trouvait dans le cellier.",
     "Seuls elle et Guerau étaient dans sa pièce.",
-    "Elle était au sud de Flora."
+    "Il était au sud de Flora."
    ]
   },
   "solucio": {
@@ -783,43 +783,43 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Agnès",
+    "nom": "Anna",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Bruna",
+    "nom": "Berta",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Cecília",
-    "genere": "f"
+    "nom": "Cesc",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Damià",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Emma",
-    "genere": "f"
-   },
-   {
-    "id": "F",
-    "nom": "Flora",
-    "genere": "f"
-   },
-   {
-    "id": "G",
-    "nom": "Guillem",
+    "nom": "Enric",
     "genere": "m"
    },
    {
-    "id": "V",
-    "nom": "Violant",
+    "id": "F",
+    "nom": "Frederic",
+    "genere": "m"
+   },
+   {
+    "id": "G",
+    "nom": "Griselda",
     "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -882,28 +882,28 @@
    "ca": [
     "A la seva fila hi havia un balancí.",
     "Era al costat d'una paret exterior de la finca.",
-    "Era al costat d'un armari.",
-    "Era al nord d'Agnès.",
-    "Només ell i Flora eren a la seva habitació.",
-    "Era a l'est d'Emma.",
-    "Era al nord de Bruna.",
-    "Era a l'est de Damià.",
-    "Era a l'est d'Emma.",
-    "Era a l'oest d'Emma.",
-    "Era a un salt de cavall de Bruna (com als escacs)."
+    "Tenia un armari a tocar.",
+    "Era al nord d'Anna.",
+    "Només ell i Frederic eren a la seva habitació.",
+    "Era a l'est d'Enric.",
+    "Era al nord de Berta.",
+    "Era a l'est de David.",
+    "Era a l'est d'Enric.",
+    "Era a l'oest d'Enric.",
+    "Era a un salt de cavall de Berta (com als escacs)."
    ],
    "fr": [
     "Sur sa ligne se trouvait un fauteuil à bascule.",
-    "Elle était contre un mur extérieur de la propriété.",
-    "Il avait une armoire tout près.",
-    "Elle était au nord d'Agnès.",
-    "Seuls lui et Flora étaient dans sa pièce.",
-    "Elle était à l'est d'Emma.",
-    "Il était au nord de Bruna.",
-    "Elle était à l'est de Damià.",
-    "Elle était à l'est d'Emma.",
-    "Elle était à l'ouest d'Emma.",
-    "Elle était à un saut de cavalier de Bruna (comme aux échecs)."
+    "Il était contre un mur extérieur de la propriété.",
+    "Elle avait une armoire tout près.",
+    "Elle était au nord d'Anna.",
+    "Seuls lui et Frederic étaient dans sa pièce.",
+    "Il était à l'est d'Enric.",
+    "Elle était au nord de Berta.",
+    "Elle était à l'est de David.",
+    "Elle était à l'est d'Enric.",
+    "Il était à l'ouest d'Enric.",
+    "Il était à un saut de cavalier de Berta (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -1249,27 +1249,27 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Bernat",
-    "genere": "m"
-   },
-   {
-    "id": "C",
-    "nom": "Clara",
+    "nom": "Berta",
     "genere": "f"
    },
    {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
     "id": "D",
-    "nom": "Damià",
+    "nom": "David",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
+    "nom": "Elna",
     "genere": "f"
    },
    {
@@ -1284,8 +1284,8 @@
    },
    {
     "id": "V",
-    "nom": "Valèria",
-    "genere": "f"
+    "nom": "Vicenç",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1364,27 +1364,27 @@
     "Estava al corral.",
     "A la seva fila hi havia un barril.",
     "Estava al corral.",
-    "Era a l'oest de Clara.",
+    "Era a l'oest de Carles.",
     "Només hi havia una persona a l'hort, víctima inclosa.",
-    "Només ella i Glòria eren a la seva habitació.",
-    "Era a la mateixa diagonal que Damià.",
+    "Només ell i Glòria eren a la seva habitació.",
+    "Era a la mateixa diagonal que David.",
     "A la seva columna hi havia un barril.",
-    "Era a la mateixa diagonal que Aina."
+    "Era a la mateixa diagonal que Anna."
    ],
    "fr": [
     "Dans sa colonne se trouvait une charrette.",
     "Elle n'était pas dans la basse-cour.",
     "Elle était à côté d'une chaise.",
-    "Elle était dans le salon.",
+    "Il était dans le salon.",
     "Il se trouvait dans la basse-cour.",
     "Sur sa ligne se trouvait un tonneau.",
-    "Elle était dans la basse-cour.",
-    "Il était à l'ouest de Clara.",
+    "Il était dans la basse-cour.",
+    "Elle était à l'ouest de Carles.",
     "Il n'y avait qu'une personne dans le potager, victime comprise.",
-    "Seuls elle et Glòria étaient dans sa pièce.",
-    "Il était sur la même diagonale que Damià.",
+    "Seuls lui et Glòria étaient dans sa pièce.",
+    "Elle était sur la même diagonale que David.",
     "Dans sa colonne se trouvait un tonneau.",
-    "Elle était sur la même diagonale qu'Aina."
+    "Il était sur la même diagonale qu'Anna."
    ]
   },
   "solucio": {
