@@ -427,11 +427,11 @@
     "Era al nord de Jaume.",
     "A la seva columna hi havia un pou.",
     "A la seva fila hi havia una figuera.",
-    "Era a la vora de la finca.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "A la seva columna hi havia un balancí.",
     "Era a l'hort.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era al sud de Blai."
    ],
    "fr": [
@@ -441,11 +441,11 @@
     "Il était au nord de Jaume.",
     "Dans sa colonne se trouvait un puits.",
     "Sur sa ligne se trouvait un figuier.",
-    "Il était en bordure de la propriété.",
-    "Elle était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Dans sa colonne se trouvait un fauteuil à bascule.",
     "Elle était dans le potager.",
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Il était au sud de Blai."
    ]
   },
@@ -889,7 +889,7 @@
   ],
   "textos": {
    "ca": [
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era al sud de Blai.",
     "A la seva fila hi havia un barril.",
     "A la seva fila hi havia un carro.",
@@ -903,7 +903,7 @@
     "Era a l'oest de Remei."
    ],
    "fr": [
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Elle était au sud de Blai.",
     "Sur sa ligne se trouvait un tonneau.",
     "Sur sa ligne se trouvait une charrette.",

@@ -336,7 +336,7 @@
     "Era a la mateixa habitació que Marçal.",
     "A la seva columna hi havia un barril.",
     "Era a la mateixa habitació que Rosa.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era a un salt de cavall d'Elna (com als escacs).",
     "Era al nord d'Elna."
    ],
@@ -348,7 +348,7 @@
     "Elle était dans la même pièce que Marçal.",
     "Dans sa colonne se trouvait un tonneau.",
     "Il était dans la même pièce que Rosa.",
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Il était à un saut de cavalier d'Elna (comme aux échecs).",
     "Il était au nord d'Elna."
    ]
@@ -1103,7 +1103,7 @@
   "textos": {
    "ca": [
     "Era al nord de Rosa.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "A la seva fila hi havia una figuera.",
     "Era al celler.",
     "Era al sud de Jaume.",
@@ -1114,7 +1114,7 @@
    ],
    "fr": [
     "Elle était au nord de Rosa.",
-    "Il était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Sur sa ligne se trouvait un figuier.",
     "Elle se trouvait dans le cellier.",
     "Elle était au sud de Jaume.",
@@ -1875,7 +1875,7 @@
   "textos": {
    "ca": [
     "Tenia un armari a tocar.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era al porxo.",
     "Era al corral.",
     "Era a un salt de cavall de Marçal (com als escacs).",
@@ -1886,7 +1886,7 @@
    ],
    "fr": [
     "Elle avait une armoire tout près.",
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Il se trouvait dans le porche.",
     "Il se trouvait dans la basse-cour.",
     "Elle était à un saut de cavalier de Marçal (comme aux échecs).",

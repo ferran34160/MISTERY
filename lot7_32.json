@@ -336,7 +336,7 @@
     "A la seva columna hi havia una taula.",
     "Era al corral.",
     "Era a l'hort.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era al sud d'Aina.",
     "Era a l'est de Quim.",
     "A la seva fila hi havia un pou.",
@@ -349,7 +349,7 @@
     "Dans sa colonne se trouvait une table.",
     "Elle se trouvait dans la basse-cour.",
     "Il se trouvait dans le potager.",
-    "Il était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Elle était au sud d'Aina.",
     "Il était à l'est de Quim.",
     "Sur sa ligne se trouvait un puits.",
@@ -1494,7 +1494,7 @@
     "A la seva fila hi havia una figuera.",
     "A la seva columna hi havia un carro.",
     "Només hi havia una persona a l'hort, víctima inclosa.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era a un salt de cavall de Rosa (com als escacs)."
    ],
    "fr": [
@@ -1505,7 +1505,7 @@
     "Sur sa ligne se trouvait un figuier.",
     "Dans sa colonne se trouvait une charrette.",
     "Il n'y avait qu'une personne dans le potager, victime comprise.",
-    "Il était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Il était à un saut de cavalier de Rosa (comme aux échecs)."
    ]
   },
@@ -2655,7 +2655,7 @@
   ],
   "textos": {
    "ca": [
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Estava al celler.",
     "Era al celler.",
     "Estava a l'hort.",
@@ -2667,7 +2667,7 @@
     "Era a la mateixa diagonal que Remei."
    ],
    "fr": [
-    "Il était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Elle se trouvait dans le cellier.",
     "Il se trouvait dans le cellier.",
     "Elle se trouvait dans le potager.",

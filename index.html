@@ -80,6 +80,9 @@ h2{font-size:.95rem;margin:16px 0 6px}
 .sheet p,.sheet li{font-size:.92rem;line-height:1.4}
 .sheet ul{padding-left:18px;margin:6px 0}
 .sheet .close{float:right}
+.tabs{display:flex;gap:6px;margin:0 0 10px}.tabs button{flex:1;padding:6px 8px;font-size:.88rem}.tabs button.on{background:var(--ink);color:var(--bg)}
+.kws{display:grid;gap:10px}.kw{display:flex;gap:12px;align-items:center}.kw svg{flex:none;width:84px;height:84px}.kw p{margin:0}
+.kw .g{fill:var(--panel);stroke:var(--cellgrid)}.kw .h{fill:var(--cellgrid)}.kw .t{fill:var(--accent);fill-opacity:.35}.kw .w{stroke:var(--ink);stroke-width:2.5;stroke-linecap:round}.kw .a{fill:var(--accent)}.kw .q{fill:var(--ink)}.kw text{font:700 11px system-ui;fill:#fff;text-anchor:middle;dominant-baseline:central}
 .win{text-align:center}
 .win .big{font-size:2.6rem}
 .win .culprit{display:flex;justify-content:center;margin:10px 0}
@@ -118,20 +121,18 @@ const T={
  ca:{title:"El crim del mas",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
   genh:"Pistes generals",ok:"Tot correcte fins ara!",errs:n=>n+(n==1?" error marcat en vermell":" errors marcats en vermell"),pickfirst:"Tria primer un sospitós.",victim:"Víctima",
   win:"Cas resolt!",culp:"L'assassí és",in:"Era a la mateixa sala que la víctima, i era l'únic.",time:"Temps",again:"Llista de casos",next:"Cas següent",close:"Tanca",
-  help:"Com es juga",theme:"Tema",reset:"Reinicia el cas",
+  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",
   rules:`<p><b>Objectiu.</b> Descobreix qui va matar la víctima (V). L'assassí és l'<b>únic sospitós que és a la mateixa sala que la víctima</b>.</p>
   <p><b>Regles.</b></p><ul><li>Hi ha una persona a cada fila i a cada columna.</li><li>Només es pot posar gent a caselles lliures: els objectes grossos (taula, tonell, pou…) bloquegen la casella; banc, carro o cadira, no.</li><li>Cada targeta té una pista; també n'hi ha de generals. Cada cas té una única solució.</li></ul>
   <p><b>Controls.</b></p><ul><li>Toca un sospitós per triar-lo.</li><li>Eina <b>Col·loca</b>: toca una casella per posar-hi el sospitós. Mantenir premut una casella també el col·loca, sigui quina sigui l'eina.</li><li><b>Descarta</b> (✕): marca una casella impossible. <b>Nota</b>: hi apunta la lletra del sospitós. <b>Goma</b>: buida la casella.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li><li>Quan poses un sospitós, la seva fila i columna s'enfosqueixen.</li></ul>
-  <p><b>Paraules clau.</b></p><ul><li><b>a tocar / al costat</b>: casella veïna (dalt, baix, esquerra o dreta) de la mateixa sala.</li><li><b>sol</b>: ningú més a la sala.</li><li><b>racó</b>: dues parets de la sala.</li><li><b>diagonal</b>: la línia sencera.</li><li><b>nord, sud, est, oest</b>: qualsevol casella en aquella direcció.</li><li><b>salt de cavall</b>: com el cavall dels escacs.</li></ul>
   <p><b>Truc.</b> Si una fila o columna només té una casella lliure, hi va algú; si dues persones només caben a dues files, ningú més hi pot anar.</p>`},
  fr:{title:"Le crime du mas",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
   genh:"Indices généraux",ok:"Tout est correct jusqu'ici !",errs:n=>n+(n==1?" erreur marquée en rouge":" erreurs marquées en rouge"),pickfirst:"Choisis d'abord un suspect.",victim:"Victime",
   win:"Affaire résolue !",culp:"Le coupable est",in:"Il était dans la même pièce que la victime, et il était le seul.",time:"Temps",again:"Liste des cas",next:"Cas suivant",close:"Fermer",
-  help:"Règles du jeu",theme:"Thème",reset:"Recommencer le cas",
+  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",
   rules:`<p><b>But.</b> Découvre qui a tué la victime (V). Le coupable est le <b>seul suspect dans la même pièce que la victime</b>.</p>
   <p><b>Règles.</b></p><ul><li>Une personne par ligne et par colonne.</li><li>On ne place les gens que sur des cases libres : les gros objets (table, tonneau, puits…) bloquent la case ; banc, charrette ou chaise, non.</li><li>Chaque carte a un indice ; il y en a aussi des généraux. Chaque cas a une seule solution.</li></ul>
   <p><b>Commandes.</b></p><ul><li>Touche un suspect pour le choisir.</li><li>Outil <b>Placer</b> : touche une case pour y mettre le suspect. Un appui long sur une case le place aussi, quel que soit l'outil.</li><li><b>Écarter</b> (✕) : marque une case impossible. <b>Note</b> : y inscrit la lettre du suspect. <b>Gomme</b> : vide la case.</li><li>Touche un indice pour le barrer quand tu l'as exploité.</li><li>Quand un suspect est placé, sa ligne et sa colonne s'assombrissent.</li></ul>
-  <p><b>Mots clés.</b></p><ul><li><b>tout près / à côté</b> : case voisine (haut, bas, gauche ou droite) dans la même pièce.</li><li><b>seul</b> : personne d'autre dans la pièce.</li><li><b>coin</b> : deux murs de la pièce.</li><li><b>diagonale</b> : la ligne entière.</li><li><b>nord, sud, est, ouest</b> : n'importe quelle case dans cette direction.</li><li><b>saut de cavalier</b> : comme le cavalier aux échecs.</li></ul>
   <p><b>Astuce.</b> Si une ligne ou colonne n'a qu'une case libre, quelqu'un y est ; si deux personnes ne tiennent que sur deux lignes, personne d'autre ne peut y aller.</p>`}
 };
 const ROOMHUE=[28,205,95,330,50,265,175,10];
@@ -324,17 +325,50 @@ function startTimer(){
 }
 function stopTimer(){clearInterval(timerH);timerH=null;if(cur&&st)persist()}
 
+
+/* ---------- paraules clau amb mini-diagrames ---------- */
+/* graella 4x4: . buida, # forat, T casella possible, A persona de la pista, Q persona citada, | / _ parets (només a kwSvg) */
+const KW=[
+ {g:[".T..","TAT.",".T..","...."],ca:["<b>al costat</b>","casella veïna (dalt, baix, esquerra o dreta) dins la mateixa sala. La veïna ha de ser de la mateixa sala."],fr:["<b>à côté</b>","case voisine (haut, bas, gauche ou droite) dans la même pièce. La voisine doit être dans la même pièce."]},
+ {g:["#...","T...","....","...."],ca:["<b>al costat d'una paret</b>","la casella toca una paret exterior de la finca o un forat del plànol."],fr:["<b>contre un mur</b>","la case touche un mur extérieur de la propriété ou un trou du plan."],wall:1},
+ {g:["T.T.","....","T.T.","...."],w:[[0,0,3,0],[3,0,3,3],[3,3,0,3],[0,3,0,0]],ca:["<b>racó</b>","casella amb dues parets de la mateixa sala (una horitzontal i una de vertical)."],fr:["<b>coin</b>","case avec deux murs de la même pièce (un horizontal et un vertical)."]},
+ {g:["....",".A..","....","...."],w:[[0,0,4,0],[4,0,4,4],[4,4,0,4],[0,4,0,0]],ca:["<b>sol</b>","ningú més a la sala, ni la víctima."],fr:["<b>seul</b>","personne d'autre dans la pièce, pas même la victime."]},
+ {g:["Q...","T...","T...","T..."],ca:["<b>nord / sud / est / oest</b>","qualsevol casella en aquella direcció (aquí: al sud de la Q), no només la veïna."],fr:["<b>nord / sud / est / ouest</b>","n'importe quelle case dans cette direction (ici : au sud de Q), pas seulement la voisine."]},
+ {g:["T..T",".TT.",".TT.","T..T"],diag:1,ca:["<b>diagonal</b>","la línia sencera en diagonal."],fr:["<b>diagonale</b>","la ligne entière en diagonale."]},
+ {g:[".T..","..T.","Q...","..T."],ca:["<b>salt de cavall</b>","com el cavall dels escacs: dues caselles en una direcció i una de costat."],fr:["<b>saut de cavalier</b>","comme le cavalier aux échecs : deux cases dans une direction et une de côté."]},
+ {g:["....","TTTT","....","...."],ca:["<b>a la seva fila / columna</b>","a la mateixa fila (o columna) hi ha l'objecte que diu la pista, en qualsevol casella."],fr:["<b>sur sa ligne / colonne</b>","sur la même ligne (ou colonne) se trouve l'objet de l'indice, sur n'importe quelle case."]}
+];
+function kwSvg(d){
+  const c=20;let o=`<svg viewBox="-2 -2 84 84" aria-hidden="true">`;
+  d.g.forEach((row,r)=>[...row].forEach((ch,k)=>{
+    const x=k*c,y=r*c;
+    o+=`<rect class="${ch==="#"?"h":ch==="T"?"t":"g"}" x="${x}" y="${y}" width="${c}" height="${c}" stroke-width="1"/>`;
+    if(ch==="A")o+=`<circle class="a" cx="${x+10}" cy="${y+10}" r="8"/><text x="${x+10}" y="${y+10}">A</text>`;
+    if(ch==="Q")o+=`<circle class="q" cx="${x+10}" cy="${y+10}" r="8"/><text x="${x+10}" y="${y+10}" style="fill:var(--bg)">Q</text>`;
+  }));
+  if(d.wall)o+=`<rect class="w" fill="none" x="0" y="0" width="80" height="80"/>`;
+  (d.w||[]).forEach(([a,b,e,f])=>o+=`<line class="w" x1="${a*c}" y1="${b*c}" x2="${e*c}" y2="${f*c}"/>`);
+  return o+"</svg>";
+}
+function kwHtml(){return `<div class="kws">`+KW.map(d=>`<div class="kw">${kwSvg(d)}<p>${d[lang][0]}: ${d[lang][1]}</p></div>`).join("")+`</div>`}
+function helpHtml(tab){
+  return `<button class="close" id="mc">${t("close")}</button><h3>${t("help")}</h3>
+  <div class="tabs"><button data-tab="r" class="${tab==="r"?"on":""}">${t("help")}</button><button data-tab="k" class="${tab==="k"?"on":""}">${t("kwtab")}</button></div>
+  ${tab==="r"?t("rules"):kwHtml()}
+  <div class="row"><button id="mth">${t("theme")}</button>${cur?`<button id="mrs">${t("reset")}</button>`:""}</div>`}
+
 /* ---------- modals i capçalera ---------- */
 function modal(h){$("#sheet").innerHTML=h;$("#modal").classList.remove("hidden")}
 function closeModal(){$("#modal").classList.add("hidden")}
 $("#modal").onclick=e=>{if(e.target.id==="modal")closeModal()};
-$("#help").onclick=()=>{
-  modal(`<button class="close" id="mc">${t("close")}</button><h3>${t("help")}</h3>${t("rules")}
-  <div class="row"><button id="mth">${t("theme")}</button>${cur?`<button id="mrs">${t("reset")}</button>`:""}</div>`);
+function showHelp(tab){
+  modal(helpHtml(tab));
   $("#mc").onclick=closeModal;
+  document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>showHelp(b.dataset.tab));
   $("#mth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);if(cur)renderBoard();renderCards()};
   if(cur)$("#mrs").onclick=()=>{if(confirm(t("reset")+"?")){st=blank(cur);undo=[];save("st:"+cur.id,st);const pr=prog[cur.id];if(pr){delete pr.solved;save("prog",prog)}closeModal();render();startTimer()}};
-};
+}
+$("#help").onclick=()=>showHelp("r");
 $("#back").onclick=home;
 $("#lang").onclick=()=>{lang=lang==="ca"?"fr":"ca";save("lang",lang);$("#lang").textContent=lang==="ca"?"FR":"CA";cur?render():home()};
 document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur&&st)persist()});

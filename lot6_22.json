@@ -919,7 +919,7 @@
     "Era al sud de Blai.",
     "Era a la mateixa diagonal que Blai.",
     "Era a l'est de Blai.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "A la seva fila hi havia una taula.",
     "Era a la mateixa diagonal que Jaume.",
     "Hi havia exactament 2 persones a la cuina, víctima inclosa.",
@@ -929,7 +929,7 @@
     "Elle était au sud de Blai.",
     "Il était sur la même diagonale que Blai.",
     "Il était à l'est de Blai.",
-    "Il était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Sur sa ligne se trouvait une table.",
     "Elle était sur la même diagonale que Jaume.",
     "Il y avait exactement 2 personnes dans la cuisine, victime comprise.",
@@ -1565,7 +1565,7 @@
     "A la seva columna hi havia una llar de foc.",
     "Només hi havia una persona a l'hort, víctima inclosa.",
     "Era a un salt de cavall de Jaume (com als escacs).",
-    "Era a la vora de la finca."
+    "Era al costat d'una paret exterior de la finca."
    ],
    "fr": [
     "Il était sur la même diagonale que Teo.",
@@ -1576,7 +1576,7 @@
     "Dans sa colonne se trouvait une cheminée.",
     "Il n'y avait qu'une personne dans le potager, victime comprise.",
     "Il était à un saut de cavalier de Jaume (comme aux échecs).",
-    "Elle était en bordure de la propriété."
+    "Elle était contre un mur extérieur de la propriété."
    ]
   },
   "solucio": {
@@ -2863,9 +2863,9 @@
   ],
   "textos": {
    "ca": [
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "No era a la cuina.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era a l'est de Marçal.",
     "Era al sud de Teo.",
     "Ningú no era a la sala, ni tan sols la víctima.",
@@ -2875,9 +2875,9 @@
     "No era a la mateixa habitació que Remei."
    ],
    "fr": [
-    "Il était en bordure de la propriété.",
+    "Il était contre un mur extérieur de la propriété.",
     "Il n'était pas dans la cuisine.",
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Il était à l'est de Marçal.",
     "Elle était au sud de Teo.",
     "Le salon était vide : pas une âme.",
@@ -3196,7 +3196,7 @@
     "Era a un salt de cavall d'Aina (com als escacs).",
     "Era a l'est de Teo.",
     "Era a la mateixa diagonal que Jaume.",
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era a l'est d'Aina."
    ],
    "fr": [
@@ -3206,7 +3206,7 @@
     "Elle était à un saut de cavalier d'Aina (comme aux échecs).",
     "Elle était à l'est de Teo.",
     "Il était sur la même diagonale que Jaume.",
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Elle était à l'est d'Aina."
    ]
   },
@@ -3837,7 +3837,7 @@
   ],
   "textos": {
    "ca": [
-    "Era a la vora de la finca.",
+    "Era al costat d'una paret exterior de la finca.",
     "Era a la mateixa diagonal que Neus.",
     "Era a la sala.",
     "A la seva columna hi havia un pou.",
@@ -3847,7 +3847,7 @@
     "A la seva fila hi havia una llar de foc."
    ],
    "fr": [
-    "Elle était en bordure de la propriété.",
+    "Elle était contre un mur extérieur de la propriété.",
     "Il était sur la même diagonale que Neus.",
     "Elle se trouvait dans le salon.",
     "Dans sa colonne se trouvait un puits.",
