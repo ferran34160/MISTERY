@@ -1,54 +1,46 @@
-# Classificació entre amics (base de dades gratuïta)
+# Classificació entre amics
 
-El joc guarda els temps i els punts de cada jugador en una base de dades de **Firebase** (de Google, gratuïta per a un ús com aquest). No cal publicar el joc en cap web: cada amic pot rebre el fitxer `joc.html` (o l'APK) i tots comparteixen la mateixa classificació.
+La classificació es guarda en **un fitxer (`ranking.json`) dins d'una branca d'aquest mateix repositori de GitHub**. Cada vegada que algú acaba un cas, el joc llegeix el fitxer, hi afegeix el resultat i el torna a pujar; el botó 🏆 el llegeix per mostrar la classificació. No cal cap servei extern ni publicar el joc: els amics reben el `joc.html` o l'APK.
 
-**Només cal fer-ho una vegada, i només la persona que organitza el grup.**
+GitHub no deixa escriure a ningú sense identificar-se, així que cal un **token** (una clau d'accés) dins de l'app. **Només cal fer-ho una vegada, i només la persona que organitza el grup.**
 
-## 1. Crear la base de dades
+## 1. Crear el token
 
-1. Entra a <https://console.firebase.google.com> amb un compte de Google.
-2. **Afegeix un projecte** (per exemple «misteri-amics»). Pots desactivar Google Analytics.
-3. Al menú de l'esquerra: **Compilació → Realtime Database → Crea la base de dades**.
-   - Tria la ubicació que et surti (per exemple Bèlgica, `europe-west1`).
-   - Tria **«Inicia en mode de prova»**.
-4. A la pestanya **Regles**, substitueix el contingut per això i prem **Publica**:
+1. A GitHub: la teva foto (a dalt a la dreta) → **Settings** → baixa fins a **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**.
+2. **Token name:** `misteri-classificacio`. **Expiration:** la més llarga que et deixi (per exemple 1 any).
+3. **Repository access → Only select repositories →** tria `MISTERY`.
+4. **Permissions → Repository permissions → Contents → Read and write.** No cal cap altre permís.
+5. **Generate token** i **copia'l** (comença per `github_pat_…`). Només el veuràs una vegada.
 
-```json
-{
-  "rules": {
-    "ranking": {
-      ".read": true,
-      ".write": true
-    }
-  }
-}
-```
+## 2. Posar el token al joc
 
-   Així la classificació no caduca (el mode de prova s'apaga als 30 dies) i només s'obre la part `ranking`.
-5. A la pestanya **Dades**, copia l'adreça que surt a dalt, del tipus
-   `https://misteri-amics-default-rtdb.europe-west1.firebasedatabase.app`
+El token **no es pot pujar al repositori** (GitHub el detectaria i el desactivaria). Per això només va dins del fitxer que es reparteix:
 
-## 2. Posar l'adreça al joc
-
-Obre `ranking_config.js` i canvia-hi la línia per:
+- Si em passes el token pel xat, jo el poso en un fitxer local que no es puja (`ranking_secret.js`) i construeixo l'`joc.html` i l'APK amb el token inclòs.
+- Si ho fas tu: crea el fitxer `ranking_secret.js` al costat de `ranking_config.js` amb una sola línia i torna a construir (`python construeix.py` i `python construeix_apk.py`):
 
 ```js
-window.RANKING_URL = "https://misteri-amics-default-rtdb.europe-west1.firebasedatabase.app";
+window.RANKING_GH.token = "github_pat_…el_teu_token…";
 ```
 
-Després cal tornar a construir el joc (`python construeix.py`) i passar el fitxer nou als amics. Si m'envies l'adreça, ho faig jo.
+Amb això la classificació ja funciona. El joc crea sol la branca `ranking` la primera vegada que algú acaba un cas.
 
 ## 3. Com funciona
 
-- Cada jugador es posa un **sobrenom** (al botó 🏆). No hi ha comptes ni contrasenyes.
+- Cada jugador es posa un **sobrenom** (al botó 🏆). No hi ha comptes.
 - En resoldre un cas, el temps i els punts pugen sols. Si no hi ha connexió, es guarden i es tornen a enviar la propera vegada.
 - **Punts d'un cas:** depèn del nivell (10, 20, 35, 55, 80) i de la mida (×1, ×1,25, ×1,5, ×1,8), amb un **bonus de fins al doble** si el resols ràpid respecte a un temps de referència. Cada jugador només compta el seu millor resultat de cada cas.
 - 🏆 **General:** suma de punts i casos resolts. 🏆 **Per cas:** els temps de tothom en un cas.
+- Si dos jugadors acaben alhora, el joc reintenta fins a 5 vegades.
+- Tens l'historial complet a GitHub: a la branca `ranking`, fitxer `ranking.json`, cada resultat és un canvi. Si cal corregir alguna cosa, pots editar el fitxer a mà.
 
 ## Seguretat (què cal saber)
 
-Les regles deixen escriure a qualsevol persona que tingui l'adreça de la base de dades. Entre amics és suficient, però:
-- Qui conegui l'adreça pot esborrar o canviar resultats; no la publiquis.
-- Dos jugadors amb el mateix sobrenom compartirien resultats.
+- **El token queda dins de l'app**, i qui tingui el `joc.html` o l'APK pot treure'l. Amb aquest token es pot escriure a **qualsevol branca** del repositori `MISTERY`, també al codi. Entre família ho veig acceptable, però **no passis el fitxer a gent de fora del grup**.
+- **Protecció recomanada (2 minuts):** a GitHub → el repositori → **Settings → Branches → Add branch ruleset / rule** per a la branca `main` (i la teva de treball), amb **«Require a pull request before merging»** i sense permetre ometre les regles ni a administradors. Així el token no pot canviar el codi, només la branca `ranking`.
+- Si el token es filtra o vols tancar-ho: a GitHub → Settings → Developer settings → **Revoke** el token. Cap altre accés s'ha compartit.
 - El joc no pot saber si algú fa trampes.
-- Si algun dia vols esborrar-ho tot, ho pots fer des de la pestanya **Dades** de Firebase.
+
+## Alternativa: Firebase
+
+Si algun dia prefereixes una base de dades en lloc de GitHub, posa l'adreça d'una Realtime Database de Firebase a `RANKING_URL` de `ranking_config.js` (i deixa el token buit). El format de les dades és el mateix.

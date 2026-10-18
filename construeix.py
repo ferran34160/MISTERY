@@ -5,6 +5,7 @@ Afegeix el camp "objectes" als casos antics que no el tenen.
 Ús: python construeix.py casos_prova.json casos_n3.json
 """
 import json
+import os
 import random
 import zlib
 import sys
@@ -250,6 +251,14 @@ def titol(nom, j):
             "fr": art_fr + fr + " " + (a[2] if gfr == "m" else a[3])}
 
 
+def config_classificacio():
+    """ranking_config.js (al repositori) + ranking_secret.js (el token; no es puja mai al repositori)."""
+    text = open("ranking_config.js", encoding="utf-8").read()
+    if os.path.exists("ranking_secret.js"):
+        text += "\n" + open("ranking_secret.js", encoding="utf-8").read()
+    return text
+
+
 def main():
     fitxers = sys.argv[1:] or ["casos_final.json"]
     casos, vistos = [], set()
@@ -282,8 +291,7 @@ def main():
         html = fh.read()
     js = open("casos.js", encoding="utf-8").read()
     html = html.replace('<script src="casos.js"></script>', "<script>" + js + "</script>")
-    with open("ranking_config.js", encoding="utf-8") as fh:
-        html = html.replace('<script src="ranking_config.js"></script>', "<script>" + fh.read() + "</script>")
+    html = html.replace('<script src="ranking_config.js"></script>', "<script>" + config_classificacio() + "</script>")
     # imatges (retrats i objectes) incloses com a data URI: joc.html és un sol fitxer.
     # Si hi ha Pillow, s'encongeixen una mica perquè el fitxer pesi menys (index.html usa els originals).
     import base64

@@ -12,7 +12,7 @@ import sys
 
 ARREL = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(ARREL, "android", "app", "src", "main", "assets")
-FITXERS = ["index.html", "casos.js", "ranking_config.js", "logo.png", "sobre.png", "paper.png"]
+FITXERS = ["index.html", "casos.js", "logo.png", "sobre.png", "paper.png"]
 CARPETES = ["retrats", "objectes", "terres"]
 
 
@@ -23,6 +23,12 @@ def main():
         shutil.copy(os.path.join(ARREL, f), ASSETS)
     for d in CARPETES:
         shutil.copytree(os.path.join(ARREL, d), os.path.join(ASSETS, d))
+    # configuració de la classificació (amb el token, si hi ha ranking_secret.js)
+    sys.path.insert(0, ARREL)
+    os.chdir(ARREL)
+    from construeix import config_classificacio
+    with open(os.path.join(ASSETS, "ranking_config.js"), "w", encoding="utf-8") as fh:
+        fh.write(config_classificacio())
     env = dict(os.environ)
     env.setdefault("ANDROID_HOME", os.path.expanduser("~/android-sdk"))
     env.setdefault("ANDROID_SDK_ROOT", env["ANDROID_HOME"])

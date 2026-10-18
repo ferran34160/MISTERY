@@ -657,6 +657,55 @@ function confeti(){
   document.body.appendChild(d);setTimeout(()=>d.remove(),4200)}
 
 /* ---------- classificació entre amics (Firebase Realtime Database via REST) ---------- */
+
+const GH=window.RANKING_GH||{};                        // {repo:"usuari/repositori", branch:"ranking", token:"..."}
+const GH_ON=!!(GH.repo&&GH.token);
+const GH_API=(GH.api||"https://api.github.com").replace(/\/+$/,"");
+const GH_BR=GH.branch||"ranking";
+const ghH=()=>({"Authorization":"Bearer "+GH.token,"Accept":"application/vnd.github+json","Content-Type":"application/json"});
+const b64d=x=>decodeURIComponent(escape(atob(x.replace(/\s/g,""))));
+const b64e=x=>btoa(unescape(encodeURIComponent(x)));
+async function ghFetch(url,opt){
+  const r=await fetch(GH_API+url,Object.assign({cache:"no-store",headers:ghH()},opt||{}));
+  return r;
+}
+// llegeix ranking.json: {dades, sha}; si no existeix, dades={} i sha=null
+async function ghLlegeix(){
+  const r=await ghFetch(`/repos/${GH.repo}/contents/ranking.json?ref=${encodeURIComponent(GH_BR)}&_=${Date.now()}`);
+  if(r.status===404)return {dades:{},sha:null};
+  if(!r.ok)throw new Error("GitHub "+r.status);
+  const j=await r.json();
+  let d={};try{d=JSON.parse(b64d(j.content))||{}}catch(e){}
+  return {dades:d,sha:j.sha};
+}
+// crea la branca de la classificació a partir de la branca per defecte, si encara no hi és
+async function ghBranca(){
+  const r=await ghFetch(`/repos/${GH.repo}/git/ref/heads/${encodeURIComponent(GH_BR)}`);
+  if(r.ok)return;
+  const rep=await ghFetch(`/repos/${GH.repo}`);if(!rep.ok)throw new Error("GitHub "+rep.status);
+  const def=(await rep.json()).default_branch||"main";
+  const b=await ghFetch(`/repos/${GH.repo}/git/ref/heads/${encodeURIComponent(def)}`);if(!b.ok)throw new Error("GitHub "+b.status);
+  const sha=(await b.json()).object.sha;
+  const c=await ghFetch(`/repos/${GH.repo}/git/refs`,{method:"POST",body:JSON.stringify({ref:"refs/heads/"+GH_BR,sha})});
+  if(!c.ok&&c.status!==422)throw new Error("GitHub "+c.status);
+}
+async function ghPuja(caseId,t,p,nk){
+  for(let intent=0;intent<5;intent++){
+    let {dades,sha}=await ghLlegeix();
+    if(sha===null)await ghBranca();
+    const cas=dades[caseId]||(dades[caseId]={});
+    const ant=cas[nk];
+    if(ant&&ant.p>=p&&ant.t<=t)return true;
+    cas[nk]={t:ant?Math.min(ant.t,t):t,p:Math.max(p,(ant&&ant.p)||0),ts:Date.now()};
+    const body={message:"Resultat de "+nk,content:b64e(JSON.stringify(dades)),branch:GH_BR};
+    if(sha)body.sha=sha;
+    const r=await ghFetch(`/repos/${GH.repo}/contents/ranking.json`,{method:"PUT",body:JSON.stringify(body)});
+    if(r.ok)return true;
+    if(r.status!==409&&r.status!==422)throw new Error("GitHub "+r.status);   // 409/422: algú ha escrit abans; es torna a provar
+    await new Promise(z=>setTimeout(z,300+Math.random()*500));
+  }
+  throw new Error("GitHub: massa conflictes");
+}
 const RK_URL=(window.RANKING_URL||"").replace(/\/+$/,"");
 let nick=load("nick","");
 const rkSan=n=>(n||"").replace(/[.$#\[\]\/]/g," ").replace(/\s+/g," ").trim().slice(0,16);
@@ -665,7 +714,7 @@ function punts(c,t){
   const par=90*(c.n-4)*(1+.25*(c.nivell-1));            // temps de referència (s)
   return Math.round(base*(1+Math.max(0,1-t/(2*par))));   // fins a +100% si és molt ràpid
 }
-const rkOn=()=>!!RK_URL;
+const rkOn=()=>GH_ON||!!RK_URL;
 async function rkJson(path,opt){
   const r=await fetch(RK_URL+path+".json",opt);
   if(!r.ok)throw new Error("HTTP "+r.status);
@@ -673,6 +722,7 @@ async function rkJson(path,opt){
 }
 async function rkPuja(caseId,t,p){
   const nk=rkSan(nick);if(!rkOn()||!nk)return false;
+  if(GH_ON)return ghPuja(caseId,t,p,nk);
   const path="/ranking/"+encodeURIComponent(caseId)+"/"+encodeURIComponent(nk);
   const ant=await rkJson(path);
   if(ant&&ant.p>=p&&ant.t<=t)return true;                   // ja hi ha un resultat igual o millor
@@ -688,7 +738,7 @@ async function rkCua(){
   save("rkq",resta);
 }
 function rkEncua(id,t,p){const q=load("rkq",[]).filter(e=>e.id!==id);q.push({id,t,p});save("rkq",q)}
-async function rkTot(){return (await rkJson("/ranking"))||{}}
+async function rkTot(){if(GH_ON)return (await ghLlegeix()).dades;return (await rkJson("/ranking"))||{}}
 function rkGeneral(tot){
   const J={};
   for(const id of Object.keys(tot))for(const [nk,v] of Object.entries(tot[id]||{})){

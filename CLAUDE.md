@@ -22,7 +22,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 - **Objectes:** il·lustracions (carpeta `objectes/`, 44 imatges que l'usuari va aportar, retallades i amb el fons tret); si un objecte no té imatge es fa servir la icona SVG de `index.html`.
 - **Terres de les sales:** 9 textures fotogràfiques (carpeta `terres/`, aportades per l'usuari) que `index.html` tria segons el nom de la sala (`TEX`) i barreja amb el color de la sala.
 - **Logotip, sobre i targeta de paper:** imatges aportades per l'usuari (`logo.png`, `sobre.png`, `paper.png`; la xinxeta és un SVG propi). El logotip diu «MISTERY MURDER» (amb «Mistery», que és una errada d'«Mystery»): **l'usuari ha decidit deixar-lo així**.
-- **Classificació entre amics:** en directe amb una base de dades gratuïta (Firebase Realtime Database, via REST), triada per l'usuari (opció B). No es publica el joc: es comparteix `joc.html` o l'APK. Punts per cas = base segons nivell × mida × (1 + bonus de temps, fins a ×2). L'adreça va a `ranking_config.js` (buida fins que l'usuari creï la base de dades; vegeu `RANKING.md`).
+- **Classificació entre amics:** només amb **GitHub**, al **mateix repositori** (decisió de l'usuari; juga amb 3-4 familiars): un fitxer `ranking.json` en una branca `ranking` que el joc crea sol, escrit des de l'app amb un token fi de GitHub (Contents: read/write). El token **no es puja mai al repositori** (GitHub el revocaria): va a `ranking_secret.js` (ignorat per git), que `construeix.py` i `construeix_apk.py` incrusten només a `joc.html` i a l'APK. `joc.html` i `misteri.apk` ja no es versionen (poden dur el token). Punts per cas = base segons nivell × mida × (1 + bonus de temps, fins a ×2). Firebase queda com a alternativa (`RANKING_URL`). Vegeu `RANKING.md`. **Pendent:** l'usuari ha de crear el token; probat només amb un servidor GitHub simulat.
 - **Distribució als amics:** un **APK** d'Android (`python construeix_apk.py`), construït al núvol amb l'SDK baixat a `~/android-sdk`; no s'ha pogut provar en un mòbil. Només Android; cal permetre instal·lar d'orígens desconeguts.
 - Les persones tenen un nom que comença per la lletra del personatge (A, B, C... V) i canvia a cada cas.
 
@@ -62,7 +62,7 @@ El gènere el representa Murdoku (murdoku.com, de Manuel Garand; vist en versió
 | `objectes/` | 44 imatges (png transparent) dels objectes. |
 | `terres/` | 9 textures (jpg) dels terres de les sales. |
 | `android/`, `construeix_apk.py` | Projecte d'Android (un WebView que carrega `index.html` des d'`assets/`) i script que copia els fitxers i construeix `misteri.apk` (cal JDK 17+, Gradle i l'SDK d'Android; clau de signatura fixa `android/debug.keystore`, la de depuració estàndard, no és secreta). |
-| `ranking_config.js`, `RANKING.md` | Adreça de la base de dades de la classificació i guia per crear-la. |
+| `ranking_config.js`, `RANKING.md` | Configuració de la classificació (repositori i branca; el token no hi va) i guia per crear el token. |
 | `PROMPTS_IMATGES.md` | Textos per demanar a un generador d'imatges els objectes, terres, logotip, sobre, targeta i retrats F/G/I. |
 | `*.json` | Lots de casos generats (font d'estructures): `lot*.json`, `niv*.json`, `casos_*.json`. |
 
