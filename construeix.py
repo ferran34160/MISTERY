@@ -13,7 +13,8 @@ from generador import objectes_json
 
 
 # Noms propis dels casos: (nom ca, gènere ca, nom fr, gènere fr) i adjectius (m ca, f ca, m fr, f fr)
-NOMS = [("pou", "m", "puits", "m"),
+NOMS = {
+    "mas": [("pou", "m", "puits", "m"),
         ("figuera", "f", "figuier", "m"),
         ("rellotge", "m", "horloge", "f"),
         ("clau", "f", "clé", "f"),
@@ -42,7 +43,47 @@ NOMS = [("pou", "m", "puits", "m"),
         ("molí", "m", "moulin", "m"),
         ("rebost", "m", "garde-manger", "m"),
         ("sorra", "f", "sable", "m"),
-        ("campana", "f", "cloche", "f")]
+        ("campana", "f", "cloche", "f")],
+    "estacio": [("andana", "f", "quai", "m"),
+        ("tren", "m", "train", "m"),
+        ("locomotora", "f", "locomotive", "f"),
+        ("bitllet", "m", "billet", "m"),
+        ("maleta", "f", "valise", "f"),
+        ("fanal", "m", "lampadaire", "m"),
+        ("rellotge", "m", "horloge", "f"),
+        ("via", "f", "voie", "f"),
+        ("senyal", "m", "signal", "m"),
+        ("vagó", "m", "wagon", "m"),
+        ("taquilla", "f", "guichet", "m"),
+        ("cafè", "m", "café", "m"),
+        ("equipatge", "m", "bagage", "m"),
+        ("passatger", "m", "voyageur", "m"),
+        ("estufa", "f", "poêle", "m"),
+        ("telègraf", "m", "télégraphe", "m"),
+        ("campana", "f", "cloche", "f"),
+        ("bàscula", "f", "bascule", "f"),
+        ("llanterna", "f", "lanterne", "f"),
+        ("horari", "m", "horaire", "m")],
+    "teatre": [("teló", "m", "rideau", "m"),
+        ("escenari", "m", "scène", "f"),
+        ("piano", "m", "piano", "m"),
+        ("mirall", "m", "miroir", "m"),
+        ("maniquí", "m", "mannequin", "m"),
+        ("reflector", "m", "projecteur", "m"),
+        ("butaca", "f", "fauteuil", "m"),
+        ("bagul", "m", "malle", "f"),
+        ("camerino", "m", "loge", "f"),
+        ("guió", "m", "scénario", "m"),
+        ("rèplica", "f", "réplique", "f"),
+        ("maquillatge", "m", "maquillage", "m"),
+        ("aplaudiment", "m", "applaudissement", "m"),
+        ("màscara", "f", "masque", "m"),
+        ("corona", "f", "couronne", "f"),
+        ("vestit", "m", "costume", "m"),
+        ("ombra", "f", "ombre", "f"),
+        ("ària", "f", "air", "m"),
+        ("apuntador", "m", "souffleur", "m"),
+        ("escala", "f", "échelle", "f")]}
 ADJ = [("mut", "muda", "muet", "muette"), ("trencat", "trencada", "brisé", "brisée"),
        ("perdut", "perduda", "perdu", "perdue"), ("llunyà", "llunyana", "lointain", "lointaine"),
        ("fosc", "fosca", "sombre", "sombre"), ("amagat", "amagada", "caché", "cachée"),
@@ -50,26 +91,28 @@ ADJ = [("mut", "muda", "muet", "muette"), ("trencat", "trencada", "brisé", "bri
 
 
 def assigna_noms(casos):
-    """Assigna un nom estable a cada cas (guardat a noms.json, per id)."""
+    """Assigna un nom estable a cada cas (guardat a noms.json, per id), propi del seu escenari."""
     try:
         with open("noms.json", encoding="utf-8") as fh:
             noms = json.load(fh)
     except FileNotFoundError:
         noms = {}
-    usats = {(v["ca"]) for v in noms.values()}
-    combos = [(a, b) for b in range(len(ADJ)) for a in range(len(NOMS))]
-    random.Random(3).shuffle(combos)
-    lliures = iter(k for k in combos if titol(*k)["ca"] not in usats)
+    usats = {v["ca"] for v in noms.values()}
+    lliures = {}
+    for esc, llista in NOMS.items():
+        combos = [(esc, a, b) for b in range(len(ADJ)) for a in range(len(llista))]
+        random.Random(3).shuffle(combos)
+        lliures[esc] = iter(k for k in combos if titol(*k)["ca"] not in usats)
     for c in casos:
         if c["id"] not in noms:
-            noms[c["id"]] = titol(*next(lliures))
+            noms[c["id"]] = titol(*next(lliures[c["escenari"]]))
         c["nom"] = noms[c["id"]]
     with open("noms.json", "w", encoding="utf-8") as fh:
         json.dump(noms, fh, ensure_ascii=False, indent=0)
 
 
-def titol(i, j):
-    ca, gca, fr, gfr = NOMS[i]
+def titol(esc, i, j):
+    ca, gca, fr, gfr = NOMS[esc][i]
     a = ADJ[j]
     art_ca = "El " if gca == "m" else "La "
     if ca[0] in "aeiouàèéíòóúh":
