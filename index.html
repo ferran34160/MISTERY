@@ -42,6 +42,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 /* llista estil col·lecció */
 .hero{max-width:520px;margin:0 auto;padding:14px 12px 4px}
 .hero .top{display:flex;align-items:center;gap:8px}
+.logoimg{flex:1;min-width:0;max-width:190px;width:100%;height:auto;object-fit:contain}
 .logo{flex:1;font-weight:900;font-size:1.7rem;letter-spacing:.14em;line-height:1}
 .logo b{color:var(--accent)}.logo small{display:block;font-size:.62rem;letter-spacing:.12em;font-weight:600;color:var(--muted);margin-top:3px}
 .hero select{font:inherit;color:inherit;background:var(--panel);border:2px solid var(--line);border-radius:10px;padding:7px 8px}
@@ -54,11 +55,11 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .sortrow{display:flex;gap:8px;align-items:center;font-size:.85rem;color:var(--muted);margin:2px 0 10px}
 .sortrow select{flex:1}.sortrow button{padding:7px 10px;font-size:.8rem}
 #home.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 14px;padding-top:12px}
-.pc{position:relative;border:2px solid color-mix(in srgb,var(--line) 70%,var(--sc,var(--line)));border-radius:6px 6px 12px 12px;background:color-mix(in srgb,var(--panel) 88%,var(--sc,var(--panel)));padding:22px 8px 12px;text-align:center;box-shadow:0 1px 0 #fff8 inset,0 6px 12px -4px #0005,0 2px 0 var(--line);cursor:pointer;display:block;width:100%;font:inherit;color:inherit;transition:transform .15s}
+.pc{position:relative;border:12px solid transparent;border-image:url("paper.png") 60 fill/12px stretch;background:none;padding:20px 0 6px;text-align:center;cursor:pointer;display:block;width:100%;font:inherit;color:inherit;transition:transform .15s;filter:drop-shadow(0 4px 4px rgba(43,33,24,.35))}
 #home.grid .pc:nth-child(odd){transform:rotate(-.7deg)}#home.grid .pc:nth-child(even){transform:rotate(.6deg)}
 .pc:active{transform:scale(.98)!important}
-.pc:before{content:"";position:absolute;top:-9px;left:50%;margin-left:-9px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#9aa0a8 35%,#555a62 100%);box-shadow:0 2px 3px #0006;z-index:5}
-.pc.done{background:color-mix(in srgb,var(--panel) 72%,var(--sc,var(--panel)))}
+.pc:before{content:"";position:absolute;top:-24px;left:50%;margin-left:-12px;width:24px;height:31px;background:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2024%2031%27%3E%3Cellipse%20cx=%2713%27%20cy=%2727.5%27%20rx=%275%27%20ry=%271.6%27%20fill=%27rgba%280%2C0%2C0%2C.28%29%27/%3E%3Cpath%20d=%27M12%2014v14%27%20stroke=%27%238a8f98%27%20stroke-width=%271.8%27%20stroke-linecap=%27round%27/%3E%3Ccircle%20cx=%2712%27%20cy=%279%27%20r=%278%27%20fill=%27%23c9a24a%27/%3E%3Ccircle%20cx=%2712%27%20cy=%279%27%20r=%278%27%20fill=%27none%27%20stroke=%27%236b4e16%27%20stroke-width=%271.2%27/%3E%3Ccircle%20cx=%2712%27%20cy=%279%27%20r=%274.2%27%20fill=%27%23e6c875%27/%3E%3Ccircle%20cx=%279.4%27%20cy=%276.4%27%20r=%272.3%27%20fill=%27%23fff%27%20opacity=%27.6%27/%3E%3C/svg%3E") center/contain no-repeat;z-index:5;filter:drop-shadow(0 2px 2px rgba(0,0,0,.4))}
+.pc.done{filter:drop-shadow(0 4px 4px rgba(43,33,24,.35)) saturate(.92)}
 .pc .nm{display:block;font-weight:800;font-size:.95rem;margin:10px 0 6px;line-height:1.15;letter-spacing:.01em}
 .pill{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:2px 9px;border-radius:6px;border:1.5px solid currentColor}
 .l1{color:#2f8a4e;background:#2f8a4e1f}.l2{color:#4d8f2a;background:#4d8f2a1f}.l3{color:#b57a14;background:#b57a141f}.l4{color:#c0502a;background:#c0502a1f}.l5{color:#8b3fa8;background:#8b3fa81f}
@@ -71,14 +72,15 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .pc .chk{position:absolute;right:8px;top:8px;width:24px;height:24px;border-radius:50%;background:var(--ok);color:#fff;font-size:.85rem;line-height:24px;font-weight:800;z-index:4;box-shadow:0 2px 3px #0004}
 .pc.prog .chk{background:var(--accent)}
 /* sobre */
-.pc.env .env{display:block;position:relative;width:96%;margin:0 auto;aspect-ratio:1.04}
-.env .eb,.env .ef{position:absolute;inset:0;width:100%;height:100%;display:block}
-.env .paper{display:block;position:absolute;left:15%;right:15%;top:7%;height:58%;overflow:hidden;border:1.5px solid #00000030;border-radius:3px;background:var(--bg);box-shadow:0 1px 3px #0004;transition:transform .4s ease}
+.pc.env .env{display:block;position:relative;width:96%;margin:0 auto;aspect-ratio:389/404}
+.env .eimg{position:absolute;inset:0;width:100%;height:100%;display:block;filter:drop-shadow(0 3px 3px rgba(43,33,24,.3))}
+.env .paper{display:block;position:absolute;left:9%;top:20%;width:79%;height:42%;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 38%,52% 100%,0 38%);background:var(--bg)}
 .env .paper svg{width:100%;display:block}
-.env .ef{pointer-events:none}
-.env .rev{position:absolute;left:8%;right:8%;top:55%;transform:rotate(-4deg);z-index:4;text-align:center;color:color-mix(in srgb,var(--ink) 52%,var(--bg));text-shadow:0 1px 0 rgba(255,255,255,.55);pointer-events:none}.env .rev b{display:block;font-weight:900;font-size:clamp(.78rem,3.9vw,1rem);letter-spacing:.07em;line-height:1.05}.env .rev i{display:block;font-style:normal;font-weight:800;font-size:clamp(.5rem,2.4vw,.62rem);letter-spacing:.08em;margin-top:3px;opacity:.9}
-.pc.env.open .paper{transform:translateY(-22%)}
-.pc.env .env-hint{display:block;font-size:.58rem;letter-spacing:.12em;font-weight:800;color:var(--muted);margin-top:2px;text-transform:uppercase}
+.env .rev{position:absolute;left:10%;right:10%;top:65%;transform:rotate(-3deg);z-index:4;text-align:center;color:#4a3320;text-shadow:0 1px 0 rgba(255,244,214,.8);pointer-events:none}
+.env .rev b{display:block;font-weight:900;font-size:clamp(.72rem,3.6vw,.92rem);letter-spacing:.06em;line-height:1.05}
+.env .rev i{display:block;font-style:normal;font-weight:800;font-size:clamp(.46rem,2.2vw,.58rem);letter-spacing:.07em;margin-top:3px;opacity:.9}
+.pc.env.open .env{animation:shake .38s}
+@keyframes shake{0%,100%{transform:rotate(0)}25%{transform:rotate(-3deg) scale(1.03)}60%{transform:rotate(2.5deg) scale(1.04)}}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px 0}
 .nws{display:none}
 
@@ -356,7 +358,7 @@ function pcCard(c,i){
   if(p.solved)return `<button class="pc done${c.id===justSolved?" slam":""}" data-i="${i}"${sty}><span class="chk">✓</span><span class="th">${thumb(c,"solved")}<span class="seal">${h.seal}</span></span><span class="nm">${nm}</span>${meta}</button>`;
   if(started)return `<button class="pc prog" data-i="${i}"${sty}><span class="chk">…</span><span class="th">${thumb(c,"prog")}</span><span class="nm">${nm}</span>${meta}</button>`;
   const fl=`color-mix(in srgb,#efe6d2 70%,hsl(${scen(c.escenari).col} 45% 50%))`,fb=`color-mix(in srgb,#cdbf9f 70%,hsl(${scen(c.escenari).col} 45% 40%))`,ff=`color-mix(in srgb,#e8dcc1 78%,hsl(${scen(c.escenari).col} 45% 55%))`;
-  return `<button class="pc env" data-i="${i}"${sty}><span class="env"><svg class="eb" viewBox="0 0 120 100" aria-hidden="true"><ellipse cx="60" cy="96" rx="52" ry="3.5" fill="#0003"/><path d="M6 44L60 4L114 44V90H6Z" fill="${fb}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="paper">${thumb(c,"closed")}</span><svg class="ef" viewBox="0 0 120 100" aria-hidden="true"><path d="M6 44L60 56L114 44V90Q114 95 109 95H11Q6 95 6 90Z" fill="${ff}" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 44L60 56L114 44" fill="none" stroke="#2b2118" stroke-width="1.6" stroke-linejoin="round"/></svg><span class="rev"><b>${h.avail}</b><i>${h.reveal}</i></span></span><span class="nm">${nm}</span>${meta}</button>`}
+  return `<button class="pc env" data-i="${i}"${sty}><span class="env"><img class="eimg" src="sobre.png" alt=""><span class="paper">${thumb(c,"closed")}</span><span class="rev"><b>${h.avail}</b><i>${h.reveal}</i></span></span><span class="nm">${nm}</span>${meta}</button>`}
 function home(){
   stopTimer();cur=null;
   $("header").classList.add("hidden");
@@ -368,7 +370,7 @@ function home(){
     if(hs==="m")return A.n-B.n||A.nivell-B.nivell||a-b;
     if(hs==="n")return caseName(A).localeCompare(caseName(B),lang);
     return A.nivell-B.nivell||A.n-B.n||a-b});
-  $("#hero").innerHTML=`<div class="top"><div class="logo">MIST<b>E</b>RI<small>${h.sub}</small></div>
+  $("#hero").innerHTML=`<div class="top"><img class="logoimg" src="logo.png" alt="Mistery Murder">
    <select id="hl" aria-label="Idioma"><option value="ca"${lang==="ca"?" selected":""}>Català</option><option value="fr"${lang==="fr"?" selected":""}>Français</option></select>
    <button class="ib" id="hth" aria-label="${t("theme")}">${dark()?"☀":"☾"}</button><button class="ib" id="hq">?</button></div>
    <div class="alfa"><i>ALFA</i><span>${h.alfa}</span></div>

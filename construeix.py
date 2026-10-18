@@ -301,8 +301,11 @@ def main():
         buf = io.BytesIO()
         if ruta.endswith(".png"):
             im = im.convert("RGBA")
-            im.thumbnail((104, 104), Image.LANCZOS)
-            im = im.quantize(colors=96, method=Image.FASTOCTREE, dither=Image.NONE)
+            # mides màximes (px) i colors segons la imatge
+            grans = {"logo.png": (420, 128), "sobre.png": (260, 128), "paper.png": (240, 128)}
+            mida_max, colors = grans.get(ruta, (104, 96))
+            im.thumbnail((mida_max, mida_max), Image.LANCZOS)
+            im = im.quantize(colors=colors, method=Image.FASTOCTREE, dither=Image.NONE)
             im.save(buf, "PNG", optimize=True)
             return "image/png", buf.getvalue()
         im = im.convert("RGB")
@@ -310,7 +313,7 @@ def main():
         im.save(buf, "JPEG", quality=78, optimize=True)
         return "image/jpeg", buf.getvalue()
 
-    for ruta in set(re.findall(r'"((?:retrats|objectes|terres)/[a-z_]+\.(?:jpg|png))"', html)):
+    for ruta in set(re.findall(r'"((?:retrats|objectes|terres)/[a-z_]+\.(?:jpg|png)|logo\.png|sobre\.png|paper\.png)"', html)):
         mime, raw = dades(ruta)
         html = html.replace('"' + ruta + '"', '"data:' + mime + ';base64,' + base64.b64encode(raw).decode() + '"')
     with open("joc.html", "w", encoding="utf-8") as fh:
