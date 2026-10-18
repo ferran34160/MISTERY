@@ -112,6 +112,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
 /* eines */
+.lgd{margin:10px 0 0;border:1.5px solid var(--cellgrid);border-radius:12px;background:var(--panel);padding:2px 10px}.lgd summary{cursor:pointer;font-weight:700;font-size:.88rem;padding:7px 0;list-style:none}.lgd summary::-webkit-details-marker{display:none}.lgd summary:before{content:"▸ ";color:var(--muted)}.lgd[open] summary:before{content:"▾ "}.lgd summary em{font-style:normal;color:var(--muted);font-weight:400}.lgd .legend{margin:0 0 8px}
 .legend{display:flex;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0}.legend span{display:inline-flex;align-items:center;gap:5px;background:var(--panel);border:1.5px solid var(--cellgrid);border-radius:20px;padding:2px 9px 2px 4px;font-size:.78rem}.legend svg{width:24px;height:24px}.legend em{font-style:normal;color:var(--muted);font-size:.7rem}
 .tools{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0}
 .tools button{padding:8px 0;font-size:1.05rem}
@@ -161,7 +162,7 @@ h2{font-size:.95rem;margin:16px 0 6px}
   <section id="game" class="hidden">
     <div class="bar"><span id="info"></span><span id="timer">0:00</span></div>
     <div id="board"></div>
-    <div id="legend" class="legend"></div>
+    <div id="legend"></div>
     <div class="tools" id="tools"></div>
     <div id="msg"></div>
     <div class="cards" id="cards"></div>
@@ -474,8 +475,9 @@ function render(){
   renderBoard();renderLegend();renderTools();renderCards();
 }
 function renderLegend(){
-  const f=lang==="fr";
-  $("#legend").innerHTML=Object.entries(cur.objectes).map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}
+  const f=lang==="fr",ks=Object.entries(cur.objectes);
+  $("#legend").innerHTML=`<details class="lgd"${load("lgopen",false)?" open":""}><summary>${f?"Objets":"Objectes"} <em>(${ks.length})</em></summary><div class="legend">${ks.map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}</div></details>`;
+  $("#legend details").ontoggle=e=>save("lgopen",e.target.open)}
 function renderBoard(){
   const texCache={};
   const n=cur.n,b=$("#board"),dk=dark();
