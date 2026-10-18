@@ -296,7 +296,7 @@ const H={
   alfa:"Benvingut a la versió alfa: és un projecte en curs. Les funcions poden canviar.",seal:"CAS<br>RESOLT",avail:"CAS DISPONIBLE!",reveal:"FES CLIC PER REVELAR",none:"Cap cas amb aquests filtres.",sub:"Puzles de lògica de crims"},
  fr:{lv:["Tous","Très facile","Facile","Moyen","Difficile","Expert"],pz:"énigmes",dn:"résolues",sort:"Trier par :",sc:"Scénario :",all:"Tous",sd:"Difficulté",ss:"Taille",sn:"Nom",hide:"Masquer les résolues",show:"Afficher les résolues",
   alfa:"Bienvenue dans la version alpha : un projet en cours. Les fonctions peuvent changer.",seal:"AFFAIRE<br>RÉSOLUE",avail:"AFFAIRE DISPONIBLE !",reveal:"TOUCHE POUR RÉVÉLER",none:"Aucun cas avec ces filtres.",sub:"Énigmes de logique criminelle"}};
-let hf=load("hf",0),hs=load("hs","d"),hh=load("hh",false),hsc=load("hsc","");
+let hf=load("hf",0),hs=load("hs","d"),hh=load("hh",false);
 const caseName=c=>(c.nom&&c.nom[lang])||c.titol[lang];
 function thumb(c,mode){
   const n=c.n,k=10,dk=dark(),sv=mode==="closed"?null:load("st:"+c.id,null);
@@ -334,7 +334,7 @@ function home(){
   $("#game").classList.add("hidden");$("#home").classList.remove("hidden");$("#back").classList.add("hidden");
   document.title=t("title");
   const h=H[lang],done=CASOS.filter(c=>(prog[c.id]||{}).solved).length;
-  let idx=CASOS.map((c,i)=>i).filter(i=>(hf===0||CASOS[i].nivell===hf)&&(!hsc||CASOS[i].escenari===hsc)&&!(hh&&(prog[CASOS[i].id]||{}).solved));
+  let idx=CASOS.map((c,i)=>i).filter(i=>(hf===0||CASOS[i].nivell===hf)&&!(hh&&(prog[CASOS[i].id]||{}).solved));
   idx.sort((a,b)=>{const A=CASOS[a],B=CASOS[b];
     if(hs==="m")return A.n-B.n||A.nivell-B.nivell||a-b;
     if(hs==="n")return caseName(A).localeCompare(caseName(B),lang);
@@ -345,15 +345,13 @@ function home(){
    <div class="alfa"><i>ALFA</i><span>${h.alfa}</span></div>
    <div class="sum"><b>${CASOS.length}</b> ${h.pz} · <b>${done}</b> ${h.dn}</div>
    <div class="tabs2">${h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}</div>
-   <div class="sortrow"><span>${h.sort}</span><select id="hsel"><option value="d"${hs==="d"?" selected":""}>${h.sd}</option><option value="m"${hs==="m"?" selected":""}>${h.ss}</option><option value="n"${hs==="n"?" selected":""}>${h.sn}</option></select><button id="hhd">${hh?h.show:h.hide}</button></div>
-   <div class="sortrow"><span>${h.sc}</span><select id="hsc"><option value="">${h.all}</option>${[...new Set(CASOS.map(c=>c.escenari))].sort((a,b)=>scen(a).tag[lang].localeCompare(scen(b).tag[lang],lang)).map(k=>`<option value="${k}"${hsc===k?" selected":""}>${scen(k).tag[lang]}</option>`).join("")}</select></div>`;
+   <div class="sortrow"><span>${h.sort}</span><select id="hsel"><option value="d"${hs==="d"?" selected":""}>${h.sd}</option><option value="m"${hs==="m"?" selected":""}>${h.ss}</option><option value="n"${hs==="n"?" selected":""}>${h.sn}</option></select><button id="hhd">${hh?h.show:h.hide}</button></div>`;
   $("#home").innerHTML=idx.length?idx.map(i=>pcCard(CASOS[i],i)).join(""):`<p class="empty">${h.none}</p>`;
   $("#hero").classList.remove("hidden");
   $("#hl").onchange=e=>{lang=e.target.value;save("lang",lang);home()};
   $("#hth").onclick=()=>{const d=document.documentElement;d.dataset.theme=dark()?"light":"dark";save("theme",d.dataset.theme);home()};
   $("#hq").onclick=()=>showHelp("r");
   $("#hsel").onchange=e=>{hs=e.target.value;save("hs",hs);home()};
-  $("#hsc").onchange=e=>{hsc=e.target.value;save("hsc",hsc);home()};
   $("#hhd").onclick=()=>{hh=!hh;save("hh",hh);home()};
   document.querySelectorAll(".tabs2 button").forEach(b=>b.onclick=()=>{hf=+b.dataset.f;save("hf",hf);home()});
 }
