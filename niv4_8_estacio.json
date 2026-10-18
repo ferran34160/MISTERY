@@ -1,0 +1,1397 @@
+[
+ {
+  "id": "estacio-8-24-1",
+  "escenari": "estacio",
+  "n": 8,
+  "nivell": 4,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    1,
+    4,
+    4,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    4,
+    4,
+    4,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    4,
+    4,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    4,
+    4,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    4,
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cafeteria",
+    "fr": "buvette"
+   },
+   "1": {
+    "ca": "despatx",
+    "fr": "bureau"
+   },
+   "2": {
+    "ca": "taquilla",
+    "fr": "guichet"
+   },
+   "3": {
+    "ca": "andana",
+    "fr": "quai"
+   },
+   "4": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    "barra"
+   ],
+   [
+    null,
+    null,
+    null,
+    "carreto",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "tamboret"
+   ],
+   [
+    null,
+    "banc",
+    "carreto",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "fanal",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "fanal",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "tamboret"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "finestreta",
+    "cadira",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "finestreta",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "barra": {
+    "bloqueja": true,
+    "ca": "barra",
+    "fr": "comptoir"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
+   "fanal": {
+    "bloqueja": true,
+    "ca": "fanal",
+    "fr": "lampadaire"
+   },
+   "finestreta": {
+    "bloqueja": true,
+    "ca": "finestreta",
+    "fr": "guichet"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Gal·la",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Nil",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Mireia",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Pau",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "G",
+    "nom": "Oriol",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Arnau",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "sobre_obj",
+    "p": "A",
+    "obj": "cadira"
+   },
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "tamboret"
+   },
+   {
+    "t": "est",
+    "p": "C",
+    "q": "A"
+   },
+   {
+    "t": "prop_obj",
+    "p": "G",
+    "obj": "fanal"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 4
+   },
+   {
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "finestreta"
+   },
+   {
+    "t": "nord",
+    "p": "E",
+    "q": "G"
+   },
+   {
+    "t": "diag",
+    "p": "G",
+    "q": "A"
+   },
+   {
+    "t": "col_obj",
+    "p": "F",
+    "obj": "cadira"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 4,
+    "k": 1
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era sobre la cadira.",
+    "A la seva fila hi havia un tamboret.",
+    "Era a l'est de Gal·la.",
+    "Tenia un fanal a tocar.",
+    "Estava al magatzem.",
+    "Tenia una finestreta a tocar.",
+    "Era al nord d'Oriol.",
+    "Era a la mateixa diagonal que Gal·la.",
+    "A la seva columna hi havia una cadira.",
+    "Només hi havia una persona al magatzem, víctima inclosa."
+   ],
+   "fr": [
+    "Elle était sur la chaise.",
+    "Sur sa ligne se trouvait un tabouret.",
+    "Il était à l'est de Gal·la.",
+    "Il avait un lampadaire tout près.",
+    "Elle se trouvait dans l'entrepôt.",
+    "Il avait un guichet tout près.",
+    "Il était au nord d'Oriol.",
+    "Il était sur la même diagonale que Gal·la.",
+    "Dans sa colonne se trouvait une chaise.",
+    "Il n'y avait qu'une personne dans l'entrepôt, victime comprise."
+   ]
+  },
+  "solucio": {
+   "A": [
+    0,
+    5
+   ],
+   "B": [
+    2,
+    0
+   ],
+   "C": [
+    6,
+    7
+   ],
+   "D": [
+    5,
+    2
+   ],
+   "E": [
+    3,
+    4
+   ],
+   "F": [
+    1,
+    6
+   ],
+   "G": [
+    4,
+    1
+   ],
+   "V": [
+    7,
+    3
+   ]
+  },
+  "assassi": "C"
+ },
+ {
+  "id": "estacio-8-24-2",
+  "escenari": "estacio",
+  "n": 8,
+  "nivell": 4,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    3,
+    3,
+    3,
+    3
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   },
+   "1": {
+    "ca": "andana",
+    "fr": "quai"
+   },
+   "2": {
+    "ca": "sala d'espera",
+    "fr": "salle d'attente"
+   },
+   "3": {
+    "ca": "taquilla",
+    "fr": "guichet"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    "estufa",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "carreto",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "carreto",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "finestreta",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "finestreta",
+    null,
+    "cadira"
+   ]
+  ],
+  "objectes": {
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   },
+   "finestreta": {
+    "bloqueja": true,
+    "ca": "finestreta",
+    "fr": "guichet"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Gal·la",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Nil",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Laia",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Pau",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Mireia",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Oriol",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Biel",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "V",
+    "obj": "carreto"
+   },
+   {
+    "t": "fila_obj",
+    "p": "D",
+    "obj": "estufa"
+   },
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "finestreta"
+   },
+   {
+    "t": "cavall",
+    "p": "B",
+    "q": "E"
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 0
+   },
+   {
+    "t": "en_sala",
+    "p": "F",
+    "sala": 1
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 1
+   },
+   {
+    "t": "oest",
+    "p": "C",
+    "q": "A"
+   },
+   {
+    "t": "prop_obj",
+    "p": "G",
+    "obj": "carreto"
+   },
+   {
+    "t": "diag",
+    "p": "F",
+    "q": "V"
+   },
+   {
+    "t": "est",
+    "p": "G",
+    "q": "A"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva columna hi havia un carretó.",
+    "A la seva fila hi havia una estufa.",
+    "A la seva fila hi havia una finestreta.",
+    "Era a un salt de cavall de Pau (com als escacs).",
+    "Estava al magatzem.",
+    "Estava a l'andana.",
+    "Era a l'andana.",
+    "Era a l'oest d'Arnau.",
+    "Tenia un carretó a tocar.",
+    "Era a la mateixa diagonal que Biel.",
+    "Era a l'est d'Arnau."
+   ],
+   "fr": [
+    "Dans sa colonne se trouvait un chariot.",
+    "Sur sa ligne se trouvait un poêle.",
+    "Sur sa ligne se trouvait un guichet.",
+    "Elle était à un saut de cavalier de Pau (comme aux échecs).",
+    "Il était dans l'entrepôt.",
+    "Elle se trouvait dans la quai.",
+    "Elle était dans la quai.",
+    "Il était à l'ouest d'Arnau.",
+    "Il avait un chariot tout près.",
+    "Elle était sur la même diagonale que Biel.",
+    "Il était à l'est d'Arnau."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    2
+   ],
+   "B": [
+    5,
+    5
+   ],
+   "C": [
+    1,
+    1
+   ],
+   "D": [
+    0,
+    7
+   ],
+   "E": [
+    7,
+    6
+   ],
+   "F": [
+    2,
+    0
+   ],
+   "G": [
+    3,
+    3
+   ],
+   "V": [
+    6,
+    4
+   ]
+  },
+  "assassi": "E"
+ },
+ {
+  "id": "estacio-8-24-3",
+  "escenari": "estacio",
+  "n": 8,
+  "nivell": 4,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    3
+   ],
+   [
+    1,
+    1,
+    0,
+    0,
+    3,
+    3,
+    3,
+    5
+   ],
+   [
+    4,
+    4,
+    0,
+    0,
+    0,
+    3,
+    3,
+    5
+   ],
+   [
+    4,
+    0,
+    0,
+    0,
+    0,
+    2,
+    5,
+    5
+   ],
+   [
+    4,
+    4,
+    0,
+    2,
+    2,
+    2,
+    5,
+    5
+   ],
+   [
+    4,
+    4,
+    4,
+    2,
+    2,
+    2,
+    5,
+    5
+   ],
+   [
+    4,
+    4,
+    4,
+    2,
+    2,
+    2,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "magatzem",
+    "fr": "entrepôt"
+   },
+   "1": {
+    "ca": "sala d'espera",
+    "fr": "salle d'attente"
+   },
+   "2": {
+    "ca": "andana",
+    "fr": "quai"
+   },
+   "3": {
+    "ca": "despatx",
+    "fr": "bureau"
+   },
+   "4": {
+    "ca": "taquilla",
+    "fr": "guichet"
+   },
+   "5": {
+    "ca": "cafeteria",
+    "fr": "buvette"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "maleta",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "banc",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "tamboret"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    null
+   ],
+   [
+    null,
+    "carreto",
+    "caixa",
+    null,
+    "carreto",
+    null,
+    null,
+    "tamboret"
+   ],
+   [
+    "finestreta",
+    null,
+    null,
+    null,
+    null,
+    "carreto",
+    null,
+    null
+   ],
+   [
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "finestreta",
+    "fanal",
+    "carreto",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
+   "fanal": {
+    "bloqueja": true,
+    "ca": "fanal",
+    "fr": "lampadaire"
+   },
+   "finestreta": {
+    "bloqueja": true,
+    "ca": "finestreta",
+    "fr": "guichet"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Laia",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Nil",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Oriol",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Pau",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "G",
+    "obj": "caixa"
+   },
+   {
+    "t": "en_sala",
+    "p": "F",
+    "sala": 2
+   },
+   {
+    "t": "fila_obj",
+    "p": "C",
+    "obj": "finestreta"
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 0
+   },
+   {
+    "t": "est",
+    "p": "E",
+    "q": "F"
+   },
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "maleta"
+   },
+   {
+    "t": "cavall",
+    "p": "E",
+    "q": "V"
+   },
+   {
+    "t": "sud",
+    "p": "A",
+    "q": "C"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "D",
+    "obj": "carreto"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "E"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "A la seva columna hi havia una caixa.",
+    "Estava a l'andana.",
+    "A la seva fila hi havia una finestreta.",
+    "Estava al magatzem.",
+    "Era a l'est de Carla.",
+    "A la seva fila hi havia una maleta.",
+    "Era a un salt de cavall de Pau (com als escacs).",
+    "Era al sud de Nil.",
+    "Era sobre el carretó.",
+    "Era a la mateixa diagonal que Arnau."
+   ],
+   "fr": [
+    "Dans sa colonne se trouvait une caisse.",
+    "Elle était dans la quai.",
+    "Sur sa ligne se trouvait un guichet.",
+    "Elle était dans l'entrepôt.",
+    "Il était à l'est de Carla.",
+    "Sur sa ligne se trouvait une valise.",
+    "Il était à un saut de cavalier de Pau (comme aux échecs).",
+    "Elle était au sud de Nil.",
+    "Il était sur le chariot.",
+    "Elle était sur la même diagonale qu'Arnau."
+   ]
+  },
+  "solucio": {
+   "A": [
+    7,
+    0
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "C": [
+    5,
+    6
+   ],
+   "D": [
+    4,
+    1
+   ],
+   "E": [
+    2,
+    5
+   ],
+   "F": [
+    6,
+    3
+   ],
+   "G": [
+    0,
+    2
+   ],
+   "V": [
+    1,
+    7
+   ]
+  },
+  "assassi": "E"
+ }
+]
