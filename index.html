@@ -89,16 +89,17 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 
 
 /* terres de les sales (imatges a terres/; el color de la sala hi queda barrejat) */
-.cell[class*="tx-"]{background-size:100% 100%;background-blend-mode:multiply}
-.tx-wood{background-image:url("terres/parquet.jpg")}
-.tx-tiles{background-image:url("terres/rajoles.jpg")}
-.tx-grass{background-image:url("terres/gespa.jpg")}
-.tx-stone{background-image:url("terres/pedra.jpg")}
-.tx-carpet{background-image:url("terres/moqueta.jpg")}
-.tx-water{background-image:url("terres/aigua.jpg")}
-.tx-sand{background-image:url("terres/sorra.jpg")}
-.tx-metal{background-image:url("terres/metall.jpg")}
-.tx-pavers{background-image:url("terres/llambordes.jpg")}
+.cell[class*="tx-"]{background-size:100% 100%;background-blend-mode:normal,multiply;--lt:linear-gradient(rgba(255,255,255,.34),rgba(255,255,255,.34))}
+:root[data-theme="dark"] .cell[class*="tx-"]{--lt:linear-gradient(rgba(255,255,255,.12),rgba(255,255,255,.12))}
+.tx-wood{background-image:var(--lt),url("terres/parquet.jpg")}
+.tx-tiles{background-image:var(--lt),url("terres/rajoles.jpg")}
+.tx-grass{background-image:var(--lt),url("terres/gespa.jpg")}
+.tx-stone{background-image:var(--lt),url("terres/pedra.jpg")}
+.tx-carpet{background-image:var(--lt),url("terres/moqueta.jpg")}
+.tx-water{background-image:var(--lt),url("terres/aigua.jpg")}
+.tx-sand{background-image:var(--lt),url("terres/sorra.jpg")}
+.tx-metal{background-image:var(--lt),url("terres/metall.jpg")}
+.tx-pavers{background-image:var(--lt),url("terres/llambordes.jpg")}
 
 /* tauler */
 .bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
