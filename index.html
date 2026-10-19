@@ -847,6 +847,20 @@ async function rkCua(){
   for(const e of q){try{await rkPuja(e.id,e.t,e.p)}catch(x){resta.push(e)}}
   save("rkq",resta);
 }
+/* recupera els casos resolts des de la classificació (si s'ha esborrat el progrés local, p. ex. en reinstal·lar) */
+async function rkRestaura(){
+  const nk=rkSan(nick);if(!rkOn()||!nk)return;
+  try{
+    const tot=await rkTot();let ch=false;
+    for(const c of CASOS){
+      const v=(tot[c.id]||{})[nk];if(!v)continue;
+      const pr=prog[c.id]||(prog[c.id]={});
+      if(!pr.solved){pr.solved=true;pr.best=v.t;pr.p=v.p;ch=true}
+      else if(v.t<(pr.best||1e9)){pr.best=v.t;ch=true}
+    }
+    if(ch){save("prog",prog);if(!cur)home()}
+  }catch(e){}
+}
 function rkEncua(id,t,p){const q=load("rkq",[]).filter(e=>e.id!==id);q.push({id,t,p});save("rkq",q)}
 async function rkTot(){if(GH_ON)return (await ghLlegeix()).dades;return (await rkJson("/ranking"))||{}}
 function rkGeneral(tot){
@@ -888,7 +902,7 @@ async function mostraRanking(tab){
   }
   h+=`<div class="tabs"><button data-t="g" class="${tab==="g"?"on":""}">${rt("gen")}</button><button data-t="c" class="${tab==="c"?"on":""}">${rt("cas")}</button></div><div id="rkb"><p class="nota">${rt("carrega")}</p></div></div>`;
   modal(h);$("#mc").onclick=closeModal;
-  $("#rsave").onclick=()=>{nick=rkSan($("#rnick").value);save("nick",nick);rkCua();mostraRanking(tab)};
+  $("#rsave").onclick=()=>{nick=rkSan($("#rnick").value);save("nick",nick);rkCua();rkRestaura();mostraRanking(tab)};
   document.querySelectorAll(".rk .tabs button").forEach(b=>b.onclick=()=>mostraRanking(b.dataset.t));
   try{
     const tot=await rkTot();
@@ -1019,6 +1033,7 @@ $("#lang").textContent=lang==="ca"?"FR":"CA";
 if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
 try{rkCua()}catch(e){}
 try{home()}catch(e){document.body.insertAdjacentHTML('afterbegin','<pre style=\"padding:12px;white-space:pre-wrap\">Error: '+e.message+'</pre>')}
+try{rkRestaura()}catch(e){}
 </script>
 </body>
 </html>

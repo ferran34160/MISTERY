@@ -9,6 +9,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 
 ARREL = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(ARREL, "android", "app", "src", "main", "assets")
@@ -32,7 +33,8 @@ def main():
     env = dict(os.environ)
     env.setdefault("ANDROID_HOME", os.path.expanduser("~/android-sdk"))
     env.setdefault("ANDROID_SDK_ROOT", env["ANDROID_HOME"])
-    cmd = ["gradle", "-p", os.path.join(ARREL, "android"), "assembleRelease", "--no-daemon", "-q"]
+    cmd = ["gradle", "-p", os.path.join(ARREL, "android"), "assembleRelease", "--no-daemon", "-q",
+           "-Pvcode=%d" % (int(time.time()) // 60 - 29000000)]   # puja a cada construcció: Android el tracta com una actualització i conserva les dades
     r = subprocess.run(cmd, env=env)
     if r.returncode:
         sys.exit(r.returncode)
