@@ -150,46 +150,40 @@ Quan les tinguis, les retallo i les afegeixo al catàleg d'objectes i als escena
 
 ---
 
-## 6. Mode K-POP (per a la filla) — personatges i objectes
+## 6. Mode K-POP Demon Hunters (ús personal, per a la filla)
 
-Personatges i objectes **originals inspirats en l'estil K-pop / caçadores de dimonis** (colors neó, escenaris de concert, motius coreans), **sense cap personatge, nom, logotip ni objecte de la pel·lícula**. Així els generadors no ho rebutgen i queda com un joc propi. Només per a ús familiar.
+Personatges reals de la pel·lícula, **només per a ús privat** (les imatges no es pugen al repositori ni es reparteixen fora de la família). Si el generador es nega a dibuixar-los pel nom, **adjunta captures de la pel·lícula** com a referència i digues-li «recreate these characters in the layout below».
 
-### 6a. Retrats — 14 personatges (2 files × 7)
-Lletres A–F + V (víctima), dos noms per lletra. Estil **il·lustrat tipus anime/manhwa polit**, cercle amb fons de color llis i brillants, bust. Etiqueta sota cada un.
-Noms (fila 1 = primer nom de cada lletra, fila 2 = segon): **Ara (f), Bora (f), Chaeri (f), Dami (f), Eunji (f), Feya (f), Vivi (f)** · **Aeri (f), Bomi (f), Dohyun (m), Dahee (f), Eli (m), Finn (m), Victor (m)**
-
-```
-A sheet of 14 circular head-and-shoulders character avatars, in a polished, colourful,
-kid-friendly anime / K-pop idol illustration style (large expressive eyes, glossy hair in
-vivid colours such as pink, violet, teal and silver, sparkly stage outfits with Korean
-traditional-inspired details like gat hats, hanbok sleeves, norigae tassels, glowing
-accessories). Original characters, NOT based on any existing franchise. Each portrait is
-inside a circle with a flat saturated solid-colour background with a few tiny sparkles.
-Layout: 2 rows of 7. Row 1 backgrounds: coral, orange, yellow, green, teal, blue, purple.
-Row 2 same colours in the same order. A small rounded pill label under each with the name,
-in this order. Row 1: Ara, Bora, Chaeri, Dami, Eunji, Feya, Vivi. Row 2: Aeri, Bomi,
-Dohyun, Dahee, Eli, Finn, Victor. Friendly smiles, each character clearly different
-(hair colour, accessory, glasses or hat). Labels outside the circles, no text inside.
-```
-
-### 6b. Objectes — 24 (8 columnes × 3 files)
-Mateix format que els altres fulls d'objectes (fons crema #F4ECDF, vista de davant i una mica des de dalt, ombra suau, etiqueta en francès a sota). Estil il·lustrat **vius i brillants**, lleugerament neó.
-Ordre: micro sobre peu, bâton lumineux gran, enceinte, projecteur de scène, ampli, clavier synthé, console de DJ, miroir de loge (amb bombetes) · portant de costumes, valise de tournée rosa, peluche de tigre, bol de ramen, bubble tea gegant, présentoir de photocards, poster emmarcat, caméra sur trépied · ring light, canapé rosa, boîte de cadeaux, lanterne coréenne, éventail traditionnel, arc lumineux màgic, cirerer en flor en test, distributeur de snacks
+### 6a. Retrats — 12 personatges (3 files × 4)
+Rumi, Mira, Zoey (Huntr/x) · Jinu, Abby, Baby, Mystery, Romance (Saja Boys) · Bobby, Gwi-Ma, Derpy (el tigre), Sussie (la garsa). *Repassa els noms: si algun no és correcte, canvia'l.*
 
 ```
-A clean sprite sheet of 24 illustrated stage-and-backstage props for a cheerful K-pop themed
-kids' detective puzzle game, arranged in a grid of 8 columns by 3 rows on a plain flat cream
-background (#F4ECDF). Each item is drawn in a bright, glossy, slightly neon polished
-illustration style (clean dark outline, pink / violet / teal / gold accents), seen from the
-front and slightly from above, centred in its cell, with a soft contact shadow. No text
-inside the drawings. Under each item a small rounded pill label with its French name. Items in
-order, row by row: microphone on a stand, big glowing light stick, speaker, stage spotlight,
-amplifier, synthesizer keyboard, DJ console, dressing-room mirror with light bulbs /
-costume rack, pink touring suitcase, plush tiger toy, ramen bowl, giant bubble tea cup,
-photocard display stand, framed poster, camera on tripod / ring light, pink sofa, gift
-box, Korean paper lantern, traditional folding fan, magical glowing bow, cherry blossom
-tree in a pot, snack vending machine. Original designs, no logos, no characters from any
-existing franchise. Consistent lighting from the top-left, same scale for all items.
+A sheet of 12 circular head-and-shoulders character portraits of characters from the Netflix
+animated film "KPop Demon Hunters", drawn in the exact 3D-animated look of the film (stylised
+CG animation, glossy hair, expressive faces, vivid colours). Each portrait is inside a circle
+with a flat solid-colour background chosen to match the character, bust framing, facing the
+viewer, friendly expression. Layout: 3 rows of 4. A small rounded pill label under each with the
+name, in this order. Row 1: Rumi, Mira, Zoey, Jinu. Row 2: Abby, Baby, Mystery, Romance.
+Row 3: Bobby, Gwi-Ma, Derpy (the tiger), Sussie (the magpie). Labels outside the circles,
+no text inside the portraits. Consistent lighting and framing for all twelve.
+```
+
+### 6b. Objectes — 24 (8 columnes × 3 files, etiquetes en francès)
+Mateix format que els altres fulls d'objectes (fons crema #F4ECDF, ombra suau, etiqueta a sota).
+
+```
+A clean sprite sheet of 24 illustrated props in the visual style of the Netflix animated film
+"KPop Demon Hunters" (glossy stylised 3D-animation look, neon pink / violet / teal / gold
+accents), arranged in a grid of 8 columns by 3 rows on a plain flat cream background
+(#F4ECDF). Each item is seen from the front and slightly from above, centred in its cell,
+with a soft contact shadow. No text inside the drawings. Under each item a small rounded
+pill label with its French name. Items in order, row by row: microphone on a stand, big
+glowing light stick, speaker, stage spotlight, amplifier, synthesizer keyboard, DJ console,
+dressing-room mirror with light bulbs / costume rack, pink touring suitcase, plush blue tiger
+toy, ramen bowl, giant bubble tea cup, photocard display stand, framed poster, camera on
+tripod / ring light, pink sofa, gift box, Korean paper lantern, traditional folding fan,
+glowing magical sword, traditional black gat hat on a stand, cherry blossom tree in a pot,
+snack vending machine. Consistent lighting from the top-left, same scale for all items.
 ```
 
 Quan les tinguis, passa-me-les i les retallo igual que els altres fulls.
