@@ -148,6 +148,19 @@ _OBJ = {
     "armadura": ("armadura", "f", "armure", "f", True), "pupitre": ("pupitre", "m", "pupitre", "m", False),
     "pissarra": ("pissarra", "f", "tableau noir", "m", True), "pilota": ("pilota", "f", "ballon", "m", False),
     "bola": ("bola d'equilibri", "f", "boule d'équilibre", "f", False),
+    # segon lot d'objectes (24)
+    "nevera": ("nevera", "f", "frigo", "m", True), "forn": ("forn", "m", "four", "m", True),
+    "pica": ("pica", "f", "évier", "m", True), "banyera": ("banyera", "f", "baignoire", "f", True),
+    "vater": ("vàter", "m", "W.-C.", "m", True), "rentadora": ("rentadora", "f", "lave-linge", "m", True),
+    "bascula": ("bàscula", "f", "balance", "f", False), "cafetera": ("cafetera", "f", "machine à café", "f", True),
+    "billar": ("billar", "m", "billard", "m", True), "escacs": ("tauler d'escacs", "m", "échiquier", "m", False),
+    "caixareg": ("caixa registradora", "f", "caisse enregistreuse", "f", True), "celler": ("rac de vins", "m", "casier à vins", "m", True),
+    "fogata": ("fogata", "f", "feu de camp", "m", True), "tenda": ("tenda de campanya", "f", "tente", "f", True),
+    "motxilla": ("motxilla", "f", "sac à dos", "m", False), "caiac": ("canoa", "f", "canoë", "m", False),
+    "cistell": ("cistell de fruita", "m", "panier de fruits", "m", False), "bicicleta": ("bicicleta", "f", "vélo", "m", False),
+    "tractor": ("tractor", "m", "tracteur", "m", True), "bustia": ("bústia", "f", "boîte aux lettres", "f", True),
+    "rellotge": ("rellotge de peu", "m", "horloge", "f", True), "gabia": ("gàbia", "f", "cage", "f", True),
+    "telefon": ("telèfon", "m", "téléphone", "m", True), "globus": ("globus terraqüi", "m", "globe", "m", True),
 }
 
 
@@ -251,3 +264,45 @@ def _carrega_extra():
 
 
 _carrega_extra()
+
+
+# --- objectes del segon lot: s'afegeixen a les sales on encaixen pel nom -------------------------
+_NOUS = [
+    (("cuina",), ["nevera", "forn", "pica"]),
+    (("forn", "obrador"), ["forn", "pica"]),
+    (("cafeteria", "cafè", "bar", "restaurant", "menjador", "refectori"), ["cafetera"]),
+    (("vestuari", "sauna", "massatges", "solàrium"), ["banyera", "bascula", "vater"]),
+    (("soterrani", "garatge", "hangar"), ["rentadora", "bicicleta"]),
+    (("sala de joc", "taverna", "saló", "sala comuna", "discoteca"), ["billar", "escacs"]),
+    (("botiga", "taquilla", "recepció", "caixa", "taulell", "parada", "barra", "consigna"), ["caixareg"]),
+    (("celler", "tast", "bodega", "trull", "vinya"), ["celler"]),
+    (("campament", "foguera", "tenda gran", "carpa"), ["fogata", "tenda", "motxilla"]),
+    (("hort", "hivernacle", "parada de fruita", "peixateria"), ["cistell", "tractor"]),
+    (("era", "graner", "cobert", "corral", "estable", "quadra"), ["tractor"]),
+    (("pati", "passeig", "mirador", "porxo"), ["bicicleta", "bascula"]),
+    (("moll", "fossat", "hangar", "port"), ["caiac"]),
+    (("entrada", "vestíbul", "passadís"), ["bustia", "rellotge"]),
+    (("recepció", "oficina", "despatx", "redacció", "cabina", "sala de control"), ["telefon"]),
+    (("sala d'espera", "terminal", "saló", "sala principal"), ["rellotge"]),
+    (("estudi", "biblioteca", "lectura", "despatx del director", "sala de reunions", "scriptorium"), ["globus"]),
+    (("casa", "sala infantil", "sala comuna", "saló"), ["gabia"]),
+]
+
+
+def _amplia():
+    for e in ESCENARIS.values():
+        for s in e["sales"].values():
+            nom = s["nom"]["ca"][1].lower()
+            for claus, objs in _NOUS:
+                if any(nom == k or nom.startswith(k + " ") or (len(k) > 4 and k in nom) for k in claus):
+                    for o in objs:
+                        if o not in s["objs"] and len(s["objs"]) < 6:
+                            s["objs"].append(o)
+        usats = {o for s in e["sales"].values() for o in s["objs"]}
+        for k in usats:
+            if k not in e["objectes"]:
+                e["objectes"][k] = {"bloqueja": _OBJ[k][4],
+                                    "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
+
+
+_amplia()
