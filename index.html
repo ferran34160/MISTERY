@@ -117,7 +117,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 /* eines */
 .lgd{margin:10px 0 0;border:1.5px solid var(--cellgrid);border-radius:12px;background:var(--panel);padding:2px 10px}.lgd summary{cursor:pointer;font-weight:700;font-size:.88rem;padding:7px 0;list-style:none}.lgd summary::-webkit-details-marker{display:none}.lgd summary:before{content:"▸ ";color:var(--muted)}.lgd[open] summary:before{content:"▾ "}.lgd summary em{font-style:normal;color:var(--muted);font-weight:400}.lgd .legend{margin:0 0 8px}
 .legend{display:flex;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0}.legend span{display:inline-flex;align-items:center;gap:5px;background:var(--panel);border:1.5px solid var(--cellgrid);border-radius:20px;padding:2px 9px 2px 4px;font-size:.78rem}.legend svg,.legend img{width:28px;height:28px;object-fit:contain}.legend em{font-style:normal;color:var(--muted);font-size:.7rem}
-.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0}
+.tools{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0}
 .tools button{padding:8px 0;font-size:1.05rem}
 .tools button.on{background:var(--ink);color:var(--bg)}
 .tools button small{display:block;font-size:.62rem;opacity:.8}
@@ -176,6 +176,15 @@ button:active{box-shadow:0 0 0 var(--line)}
 .rkw{margin:10px 0 0;font-size:.9rem}
 .rkw b{color:var(--ok)}
 
+
+/* pistes il·luminades i bombeta */
+.cell.hl::after{content:"";position:absolute;inset:0;background:rgba(255,214,64,.40);box-shadow:inset 0 0 0 3px rgba(226,160,0,.95);pointer-events:none;z-index:3}
+.cell.hint::after{content:"";position:absolute;inset:0;background:rgba(80,160,255,.28);box-shadow:inset 0 0 0 3px rgba(40,110,230,.95);pointer-events:none;z-index:3;animation:hp 1s ease-in-out infinite}
+@keyframes hp{0%,100%{opacity:.55}50%{opacity:1}}
+.tx span.hlc{background:rgba(255,214,64,.5);border-radius:4px;box-shadow:0 0 0 2px rgba(255,214,64,.5)}
+.card.hintc{box-shadow:0 0 0 3px rgba(40,110,230,.9)}
+@media (prefers-reduced-motion:reduce){.cell.hint::after{animation:none}}
+
 /* modals */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center;z-index:10}
 .sheet{background:var(--panel);border:2px solid var(--line);border-radius:16px 16px 0 0;width:100%;max-width:520px;max-height:88vh;overflow:auto;padding:16px 16px 28px}
@@ -227,20 +236,20 @@ const T={
  ca:{title:"Misteri",cas:"Cas",lvl:"Nivell",solved:"Resolt",best:"Millor",place:"Col·loca",mark:"Descarta",note:"Nota",erase:"Goma",undo:"Desfés",check:"Revisa",
   genh:"Pistes generals",ok:"Tot correcte fins ara!",errs:n=>n+(n==1?" error marcat en vermell":" errors marcats en vermell"),pickfirst:"Tria primer un sospitós.",victim:"Víctima",
   win:"Cas resolt!",culp:"L'assassí és",in:"Era a la mateixa sala que la víctima, i era l'únic.",time:"Temps",again:"Llista de casos",next:"Cas següent",close:"Tanca",
-  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",clearall:"Vols buidar totes les caselles?",autox:"Marca ✕ automàtica",
+  help:"Com es juga",kwtab:"Paraules clau",theme:"Tema",reset:"Reinicia el cas",clearall:"Vols buidar totes les caselles?",hint:"Pista",hallok:"Tot el que has col·locat és correcte!",h1:n=>n+": segons la seva pista, només pot ser a les caselles blaves. Torna a tocar la bombeta per veure on va.",h2:n=>n+" va a la casella blava.",hone:n=>"Per a "+n+" només queda una casella possible: la blava.",hlnone:"Col·loca primer l'altra persona al plànol per veure on afecta aquesta pista.",hlno:"Aquesta pista no es pot il·luminar al plànol.",autox:"Marca ✕ automàtica",
   rules:`<p><b>Objectiu.</b> Descobreix qui va matar la víctima (V). L'assassí és l'<b>únic sospitós que és a la mateixa sala que la víctima</b>.</p>
   <p><b>Regles.</b></p><ul><li>Hi ha una persona a cada fila i a cada columna.</li><li>Només es pot posar gent a caselles lliures: els objectes grossos (taula, tonell, pou…) bloquegen la casella; banc, carro o cadira, no.</li><li>Cada targeta té una pista; també n'hi ha de generals. Cada cas té una única solució.</li></ul>
   <p><b>Controls.</b></p><ul><li><b>Toca un sospitós</b> (a les targetes) per triar-lo.</li><li><b>Toca una casella</b>: hi apuntes o hi treus una nota (la lletra del sospitós en minúscula).</li><li><b>Mantén premuda una casella</b>: hi col·loques el sospitós (cara i lletra grans). Si ja hi és, el treus.</li><li><b>Arrossega el dit</b> per diverses caselles: les omples (o les buides) de notes d'un sol cop.</li><li>Quan poses un sospitós, la resta de la seva fila i columna es marquen soles amb una ✕ suau (es pot desactivar a l'ajuda).</li></ul>
-  <p><b>Eines.</b></p><ul><li><b>✕ Descarta</b>: activa-la i toca (o arrossega) per marcar caselles impossibles. Torna-la a tocar per tornar a les notes.</li><li><b>⌫ Goma</b>: activa-la i toca per buidar una casella. <b>Mantén-la premuda</b> per buidar-ho tot.</li><li><b>↶ Desfés</b>: desfà l'última acció.</li><li><b>✔ Revisa</b>: marca en vermell els sospitosos mal col·locats.</li><li>Toca una pista per ratllar-la quan l'hagis aprofitat.</li></ul>
+  <p><b>Eines.</b></p><ul><li><b>✕ Descarta</b>: activa-la i toca (o arrossega) per marcar caselles impossibles. Torna-la a tocar per tornar a les notes.</li><li><b>⌫ Goma</b>: activa-la i toca per buidar una casella. <b>Mantén-la premuda</b> per buidar-ho tot.</li><li><b>↶ Desfés</b>: desfà l'última acció.</li><li><b>✔ Revisa</b>: marca en vermell els sospitosos mal col·locats.</li><li><b>💡 Pista</b>: assenyala (en blau) on pot ser la persona més fàcil de resoldre; tocant-la de nou, t'ensenya on va. Cada pista resta un 15% dels punts.</li><li><b>Toca una pista</b> (a les targetes) per veure en groc les caselles on afecta. <b>Mantén-la premuda</b> per ratllar-la quan l'hagis aprofitat.</li></ul>
   <p><b>Truc.</b> Si una fila o columna només té una casella lliure, hi va algú; si dues persones només caben a dues files, ningú més hi pot anar.</p>`},
  fr:{title:"Mystère",cas:"Cas",lvl:"Niveau",solved:"Résolu",best:"Meilleur",place:"Placer",mark:"Écarter",note:"Note",erase:"Gomme",undo:"Annuler",check:"Vérifier",
   genh:"Indices généraux",ok:"Tout est correct jusqu'ici !",errs:n=>n+(n==1?" erreur marquée en rouge":" erreurs marquées en rouge"),pickfirst:"Choisis d'abord un suspect.",victim:"Victime",
   win:"Affaire résolue !",culp:"Le coupable est",in:"Il était dans la même pièce que la victime, et il était le seul.",time:"Temps",again:"Liste des cas",next:"Cas suivant",close:"Fermer",
-  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",clearall:"Vider toutes les cases ?",autox:"✕ automatique",
+  help:"Règles du jeu",kwtab:"Mots clés",theme:"Thème",reset:"Recommencer le cas",clearall:"Vider toutes les cases ?",hint:"Indice",hallok:"Tout ce que tu as placé est correct !",h1:n=>n+" : d'après son indice, la place ne peut être que sur les cases bleues. Retouche l'ampoule pour voir laquelle.",h2:n=>n+" va sur la case bleue.",hone:n=>"Pour "+n+" il ne reste qu'une case possible : la bleue.",hlnone:"Place d'abord l'autre personne sur le plan pour voir où cet indice agit.",hlno:"Cet indice ne peut pas être éclairé sur le plan.",autox:"✕ automatique",
   rules:`<p><b>But.</b> Découvre qui a tué la victime (V). Le coupable est le <b>seul suspect dans la même pièce que la victime</b>.</p>
   <p><b>Règles.</b></p><ul><li>Une personne par ligne et par colonne.</li><li>On ne place les gens que sur des cases libres : les gros objets (table, tonneau, puits…) bloquent la case ; banc, charrette ou chaise, non.</li><li>Chaque carte a un indice ; il y en a aussi des généraux. Chaque cas a une seule solution.</li></ul>
   <p><b>Commandes.</b></p><ul><li><b>Touche un suspect</b> (sur les cartes) pour le choisir.</li><li><b>Touche une case</b> : tu y ajoutes ou retires une note (la lettre du suspect en minuscule).</li><li><b>Appui long sur une case</b> : tu y places le suspect (grand visage et grande lettre). S'il y est déjà, tu le retires.</li><li><b>Fais glisser le doigt</b> sur plusieurs cases : tu les remplis (ou vides) de notes d'un seul geste.</li><li>Quand un suspect est placé, le reste de sa ligne et de sa colonne se marque tout seul d'une ✕ discrète (désactivable dans l'aide).</li></ul>
-  <p><b>Outils.</b></p><ul><li><b>✕ Écarter</b> : active-le puis touche (ou glisse) pour marquer des cases impossibles. Retouche-le pour revenir aux notes.</li><li><b>⌫ Gomme</b> : active-la puis touche pour vider une case. <b>Appui long</b> pour tout vider.</li><li><b>↶ Annuler</b> : annule la dernière action.</li><li><b>✔ Vérifier</b> : marque en rouge les suspects mal placés.</li><li>Touche un indice pour le barrer quand tu l'as exploité.</li></ul>
+  <p><b>Outils.</b></p><ul><li><b>✕ Écarter</b> : active-le puis touche (ou glisse) pour marquer des cases impossibles. Retouche-le pour revenir aux notes.</li><li><b>⌫ Gomme</b> : active-la puis touche pour vider une case. <b>Appui long</b> pour tout vider.</li><li><b>↶ Annuler</b> : annule la dernière action.</li><li><b>✔ Vérifier</b> : marque en rouge les suspects mal placés.</li><li><b>💡 Indice</b> : montre (en bleu) où peut être la personne la plus facile à placer ; en retouchant, il montre où elle va. Chaque indice retire 15 % des points.</li><li><b>Touche un indice</b> (sur les cartes) pour voir en jaune les cases qu'il concerne. <b>Appui long</b> pour le barrer quand tu l'as exploité.</li></ul>
   <p><b>Astuce.</b> Si une ligne ou colonne n'a qu'une case libre, quelqu'un y est ; si deux personnes ne tiennent que sur deux lignes, personne d'autre ne peut y aller.</p>`}
 };
 const ROOMHUE=[28,205,95,330,50,265,175,10];
@@ -552,7 +561,7 @@ function renderBoard(){
     const w=(a)=>a?"3px":"0";
     const bw=`border-width:${w(diff(r-1,c))} ${w(diff(r,c+1))} ${w(diff(r+1,c))} ${w(diff(r,c-1))}`;
     const o=cur.obj[r][c],blk=isBlocked(r,c),tx=texCache[s]||(texCache[s]=roomTex(cur.sales[s].ca));
-    let cls="cell"+(blk?" blocked":"")+(o&&!blk?" free":"")+(cell.p?" placed":"")+((rowsU.has(r)||colsU.has(c))&&!cell.p?" line":"");
+    let cls="cell"+(blk?" blocked":"")+(o&&!blk?" free":"")+(cell.p?" placed":"")+(hlCells&&hlCells.has(r+","+c)?" hl":"")+(hintCells&&hintCells.has(r+","+c)?" hint":"")+((rowsU.has(r)||colsU.has(c))&&!cell.p?" line":"");
     let inner="";
     if(labelAt[s]===r+","+c)inner+=`<span class="rn">${cur.sales[s][lang]}</span>`;
     if(o)inner+=icon(o);
@@ -565,7 +574,7 @@ function renderBoard(){
   b.innerHTML=h;popKey=null;
 }
 function renderTools(){
-  const L=[["mark","✕",t("mark")],["erase","⌫",t("erase")],["undo","↶",t("undo")],["check","✔",t("check")]];
+  const L=[["mark","✕",t("mark")],["erase","⌫",t("erase")],["undo","↶",t("undo")],["hint","💡",t("hint")],["check","✔",t("check")]];
   $("#tools").innerHTML=L.map(([k,i,l])=>`<button data-k="${k}" class="${k===tool?"on":""}">${i}<small>${l}</small></button>`).join("");
 }
 function clueText(i){return cur.textos[lang][i]}
@@ -576,18 +585,106 @@ function renderCards(){
   $("#cards").innerHTML=cur.persones.map(p=>{
     const idx=mine[p.id]||[];
     const done=idx.length&&idx.every(i=>st.crossed.includes(i));
-    return `<button class="card ${sel===p.id?"sel":""} ${done?"done":""} ${placed.has(p.id)?"plc":""}" data-p="${p.id}"><span class="tok">${tokHtml(p.id)}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}">${clueText(i)}</span>`).join("")}</span>${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
+    return `<button class="card ${hintP===p.id&&hintCells?"hintc":""} ${sel===p.id?"sel":""} ${done?"done":""} ${placed.has(p.id)?"plc":""}" data-p="${p.id}"><span class="tok">${tokHtml(p.id)}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}" class="${hlClue===i?"hlc":""}">${clueText(i)}</span>`).join("")}</span>${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
   $("#genh").style.display=gen.length?"":"none";$("#genh").textContent=t("genh");
-  $("#gen").innerHTML=gen.map(i=>`<li data-clue="${i}" class="${st.crossed.includes(i)?"done":""}">${clueText(i)}</li>`).join("");
+  $("#gen").innerHTML=gen.map(i=>`<li data-clue="${i}" class="${st.crossed.includes(i)?"done":""} ${hlClue===i?"hlc":""}">${clueText(i)}</li>`).join("");
 }
 $("#cards").onclick=e=>{
   const cl=e.target.closest("[data-clue]"),card=e.target.closest(".card");
   if(!card)return;
-  if(sel===card.dataset.p&&cl){toggleClue(+cl.dataset.clue);return}
+  if(cl){sel=card.dataset.p;if(tool==="erase"||tool==="mark")tool="note";renderTools();ressaltaPista(+cl.dataset.clue);return}
   sel=card.dataset.p;if(tool==="erase"||tool==="mark")tool="note";renderTools();renderCards();
 };
-$("#gen").onclick=e=>{const li=e.target.closest("[data-clue]");if(li)toggleClue(+li.dataset.clue)};
+$("#gen").onclick=e=>{const li=e.target.closest("[data-clue]");if(li)ressaltaPista(+li.dataset.clue)};
 function toggleClue(i){snap();const a=st.crossed,k=a.indexOf(i);k<0?a.push(i):a.splice(k,1);persist();renderCards()}
+
+
+/* ---------- pistes il·luminades i bombeta ---------- */
+let hlClue=null,hlCells=null,hintCells=null,hintP=null,hintLvl=0;
+function clearHints(){hlClue=null;hlCells=null;hintCells=null}
+const D4=[[-1,0],[1,0],[0,-1],[0,1]];
+const dinsC=(r,c)=>r>=0&&c>=0&&r<cur.n&&c<cur.n&&cur.pla[r][c];
+// la casella (r,c) compleix la pista cl? pos(id) dona la posició de l'altra persona, o null
+function okClue(cl,r,c,pos){
+  const S=cur.sala,O=cur.obj,n=cur.n;
+  switch(cl.t){
+    case "en_sala":return S[r][c]===cl.sala;
+    case "no_en_sala":return S[r][c]!==cl.sala;
+    case "sobre_obj":return O[r][c]===cl.obj;
+    case "prop_obj":return D4.some(([a,b])=>dinsC(r+a,c+b)&&S[r+a][c+b]===S[r][c]&&O[r+a][c+b]===cl.obj);
+    case "raco":{const w=D4.map(([a,b])=>!dinsC(r+a,c+b)||S[r+a][c+b]!==S[r][c]);return (w[0]||w[1])&&(w[2]||w[3])}
+    case "vora":return D4.some(([a,b])=>!dinsC(r+a,c+b));
+    case "fila_obj":for(let j=0;j<n;j++)if(j!==c&&O[r][j]===cl.obj)return true;return false;
+    case "col_obj":for(let i=0;i<n;i++)if(i!==r&&O[i][c]===cl.obj)return true;return false;
+  }
+  if(!cl.q)return true;
+  const b=pos(cl.q);if(!b)return true;               // l'altra persona encara no està col·locada: no restringeix
+  const dr=Math.abs(r-b[0]),dc=Math.abs(c-b[1]);
+  switch(cl.t){
+    case "costat":return dr+dc===1&&S[r][c]===S[b[0]][b[1]];
+    case "nord":return r<b[0];case "sud":return r>b[0];
+    case "est":return c>b[1];case "oest":return c<b[1];
+    case "diag":return dr===dc&&dr>0;
+    case "cavall":return (dr===1&&dc===2)||(dr===2&&dc===1);
+    case "mateixa_sala":return S[r][c]===S[b[0]][b[1]];
+    case "altra_sala":return S[r][c]!==S[b[0]][b[1]];
+  }
+  return true;
+}
+const posUsuari=id=>{for(let r=0;r<cur.n;r++)for(let c=0;c<cur.n;c++)if(st.cells[r][c].p===id)return [r,c];return null};
+function celesDePista(i){
+  const cl=cur.pistes[i],out=new Set();
+  if(cl.t==="compte_sala"){for(let r=0;r<cur.n;r++)for(let c=0;c<cur.n;c++)if(cur.pla[r][c]&&cur.sala[r][c]===cl.sala)out.add(r+","+c);return {cells:out}}
+  if(cl.t==="sol"||cl.t==="sol_amb")return {msg:t("hlno")};
+  if(cl.q&&!posUsuari(cl.q))return {msg:t("hlnone")};
+  for(let r=0;r<cur.n;r++)for(let c=0;c<cur.n;c++)if(cur.pla[r][c]&&!isBlocked(r,c)&&okClue(cl,r,c,posUsuari))out.add(r+","+c);
+  return {cells:out};
+}
+function ressaltaPista(i){
+  if(hlClue===i){clearHints();msg("");renderBoard();renderCards();return}
+  clearHints();
+  const r=celesDePista(i);
+  if(r.msg){msg(r.msg);renderCards();return}
+  hlClue=i;hlCells=r.cells;msg("");renderBoard();renderCards();
+}
+// bombeta: primer assenyala on pot ser la persona més restringida; a la segona pulsació, on va
+function bombeta(){
+  const bones=new Map();
+  cur.persones.forEach(p=>{const s=cur.solucio[p.id];if(st.cells[s[0]][s[1]].p===p.id)bones.set(p.id,s)});
+  const pend=cur.persones.filter(p=>!bones.has(p.id));
+  if(!pend.length){clearHints();msg(t("hallok"));renderBoard();return}
+  snap();st.hints=(st.hints||0)+1;persist();
+  clearHints();
+  if(hintP&&hintLvl===1&&pend.some(p=>p.id===hintP)){
+    const s=cur.solucio[hintP];hintCells=new Set([s[0]+","+s[1]]);hintLvl=2;sel=hintP;
+    msg(t("h2")(pName(hintP)));renderBoard();renderCards();return;
+  }
+  const filesU=new Set([...bones.values()].map(s=>s[0])),colsU=new Set([...bones.values()].map(s=>s[1]));
+  const posB=id=>bones.get(id)||null;
+  let best=null;
+  for(const p of pend){
+    const cls=cur.pistes.filter(x=>x.p===p.id);
+    const cand=new Set();
+    for(let r=0;r<cur.n;r++)for(let c=0;c<cur.n;c++){
+      if(!cur.pla[r][c]||isBlocked(r,c)||filesU.has(r)||colsU.has(c))continue;
+      if(cls.every(cl=>okClue(cl,r,c,posB)))cand.add(r+","+c);
+    }
+    const sol=cur.solucio[p.id];cand.add(sol[0]+","+sol[1]);   // la casella correcta hi és sempre
+    if(!best||cand.size<best.cand.size)best={p,cand};
+  }
+  hintP=best.p.id;sel=hintP;
+  if(best.cand.size===1){hintCells=best.cand;hintLvl=2;msg(t("hone")(pName(hintP)))}
+  else{hintCells=best.cand;hintLvl=1;msg(t("h1")(pName(hintP)))}
+  renderBoard();renderCards();
+}
+// pulsació llarga sobre una pista: la ratlla (o la desratlla)
+(()=>{let tm=null,fet=false;
+  const ini=e=>{const el=e.target.closest("[data-clue]");if(!el)return;fet=false;tm=setTimeout(()=>{fet=true;if(navigator.vibrate)navigator.vibrate(20);toggleClue(+el.dataset.clue)},500)};
+  const fi=()=>clearTimeout(tm);
+  for(const id of ["#cards","#gen"]){const b=$(id);
+    b.addEventListener("pointerdown",ini);b.addEventListener("pointerup",fi);b.addEventListener("pointercancel",fi);b.addEventListener("pointermove",fi);
+    b.addEventListener("click",e=>{if(fet){e.stopImmediatePropagation();fet=false}},true)}
+})();
 
 /* ---------- accions ---------- */
 function snap(){undo.push(JSON.stringify({cells:st.cells,crossed:st.crossed}));if(undo.length>100)undo.shift()}
@@ -595,6 +692,7 @@ function persist(){save("st:"+cur.id,st)}
 function msg(s){$("#msg").textContent=s||""}
 function apply(r,c,how,force){
   const cell=st.cells[r][c];if(isBlocked(r,c))return;
+  clearHints();hintLvl=hintLvl===2?0:hintLvl;
   if(force===undefined)snap();
   if(how==="place"){
     if(!sel)return msg(t("pickfirst"));
@@ -616,6 +714,7 @@ $("#tools").onclick=e=>{
   const b=e.target.closest("button");if(!b)return;const k=b.dataset.k;
   if(k==="undo"){const s=undo.pop();if(s){const o=JSON.parse(s);st.cells=o.cells;st.crossed=o.crossed;persist();renderBoard();renderCards()}return}
   if(k==="check")return check();
+  if(k==="hint")return bombeta();
   tool=tool===k?"note":k;renderTools();
 };
 // Goma: mantenir premut buida totes les caselles
@@ -641,7 +740,7 @@ function checkWin(){
     if(c.p!==p.id)return;
   }
   st.done=true;persist();stopTimer();
-  const pr=prog[cur.id]||{};pr.solved=true;if(!pr.best||st.time<pr.best)pr.best=st.time;pr.p=Math.max(pr.p||0,punts(cur,st.time));prog[cur.id]=pr;save("prog",prog);
+  const pr=prog[cur.id]||{};pr.solved=true;if(!pr.best||st.time<pr.best)pr.best=st.time;pr.p=Math.max(pr.p||0,punts(cur,st.time,st.hints));prog[cur.id]=pr;save("prog",prog);
   justSolved=cur.id;
   setTimeout(winModal,350);
 }
@@ -709,10 +808,10 @@ async function ghPuja(caseId,t,p,nk){
 const RK_URL=(window.RANKING_URL||"").replace(/\/+$/,"");
 let nick=load("nick","");
 const rkSan=n=>(n||"").replace(/[.$#\[\]\/]/g," ").replace(/\s+/g," ").trim().slice(0,16);
-function punts(c,t){
+function punts(c,t,h){
   const base=[10,20,35,55,80][c.nivell-1]*({6:1,7:1.25,8:1.5,9:1.8}[c.n]||1);
   const par=90*(c.n-4)*(1+.25*(c.nivell-1));            // temps de referència (s)
-  return Math.round(base*(1+Math.max(0,1-t/(2*par))));   // fins a +100% si és molt ràpid
+  return Math.round(base*(1+Math.max(0,1-t/(2*par)))*Math.max(.5,1-.15*(h||0)));   // fins a +100% si és ràpid; cada pista resta un 15% (màx. 50%)
 }
 const rkOn=()=>GH_ON||!!RK_URL;
 async function rkJson(path,opt){
@@ -794,7 +893,7 @@ async function mostraRanking(tab){
   }catch(e){$("#rkb").innerHTML=`<p class="nota">${rt("err")}</p>`}
 }
 async function rkDesprésDeResoldre(c,t){
-  const p=punts(c,t);
+  const p=punts(c,t,st&&st.hints);
   const el=document.getElementById("rkw");
   if(el)el.innerHTML=`<b>+${p}</b> ${rt("guanyat")}`;
   if(!rkOn())return;

@@ -64,35 +64,57 @@ def aplica(c, clau, rng):
     esc = ESCENARIS[clau]
     sales_e = list(esc["sales"].items())
     ks = len(c["sales"])
-    triades = rng.sample(sales_e, ks)           # sala i del cas -> sala triada de l'escenari
     n = c["n"]
-    # objectes
     if "objectes" not in c:
         from generador import objectes_json
         c["objectes"] = objectes_json(ESCENARIS[c["escenari"]], c["obj"])
     antic = c["objectes"]
     oe = dict(esc["objectes"])
+    # on apareix cada objecte antic (sala del cas -> nombre de caselles)
     ubic = {}
     for r in range(n):
         for q in range(n):
             o = c["obj"][r][q]
             if o:
-                ubic.setdefault(o, set()).add(c["sala"][r][q])
-    usats, mapa = set(), {}
-    for old in sorted(ubic, key=lambda k: -len(ubic[k])):
-        blk = antic[old]["bloqueja"]
-        def punts(k):
-            s = sum(1 for i in ubic[old] if k in triades[i][1]["objs"])
-            return (s, rng.random())
-        cand = [k for k in oe if k not in usats and oe[k]["bloqueja"] == blk]
-        if not cand:   # l'escenari no té prou objectes d'aquest tipus: agafa'n de la llista general
-            cand = [k for k in _OBJ if k not in usats and _OBJ[k][4] == blk]
-            k = max(cand, key=lambda k: rng.random())
-            oe[k] = {"bloqueja": blk, "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
-        else:
-            k = max(cand, key=punts)
-        usats.add(k)
-        mapa[old] = k
+                ubic.setdefault(o, {}).setdefault(c["sala"][r][q], 0)
+                ubic[o][c["sala"][r][q]] += 1
+    GENERICS = ["taula", "cadira", "banc", "caixa", "bagul", "barril", "escala", "armari", "planta", "tamboret"]
+
+    def prova(rg):
+        """Una repartiment de sales i d'objectes; retorna (punts de coherència, triades, mapa, afegits)."""
+        triades = rg.sample(sales_e, ks)
+        usats, mapa, afegits, punts = set(), {}, {}, 0
+        for old in sorted(ubic, key=lambda k: (-sum(ubic[k].values()), rg.random())):
+            blk = antic[old]["bloqueja"]
+
+            def sc(k):
+                return sum(nc for i, nc in ubic[old].items() if k in triades[i][1]["objs"])
+            cand = [k for k in oe if k not in usats and oe[k]["bloqueja"] == blk]
+            cand_ok = [k for k in cand if sc(k) > 0]
+            if cand_ok:
+                k = max(cand_ok, key=lambda k: (sc(k), rg.random()))
+            elif cand:
+                k = rg.choice(cand)
+            else:   # l'escenari no té prou objectes d'aquest tipus: es pren un de genèric
+                gen = [x for x in GENERICS if x not in usats and _OBJ[x][4] == blk]
+                pool = gen or [x for x in _OBJ if x not in usats and _OBJ[x][4] == blk]
+                k = rg.choice(pool)
+                afegits[k] = {"bloqueja": blk, "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
+            usats.add(k)
+            mapa[old] = k
+            punts += sc(k)
+        return punts, triades, mapa, afegits
+
+    millor = None
+    for _ in range(250):
+        r_ = prova(rng)
+        if millor is None or r_[0] > millor[0]:
+            millor = r_
+        if millor[0] == sum(sum(v.values()) for v in ubic.values()):
+            break
+    _, triades, mapa, afegits = millor
+    oe.update(afegits)
+    usats = set(mapa.values())
     c["obj"] = [[mapa[o] if o else None for o in fila] for fila in c["obj"]]
     c["objectes"] = {k: {"bloqueja": oe[k]["bloqueja"],
                          "ca": oe[k]["nom"]["ca"][1],
