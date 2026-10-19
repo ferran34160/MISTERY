@@ -841,6 +841,24 @@ async function rkPuja(caseId,t,p){
   await rkJson(path,{method:"PUT",body:JSON.stringify(nou)});
   return true;
 }
+async function rkReinicia(){
+  if(GH_ON){
+    const {dades,sha}=await ghLlegeix();
+    if(sha===null)return;
+    const r=await ghFetch(`/repos/${GH.repo}/contents/ranking.json`,{method:"PUT",body:JSON.stringify({message:"Classificació a 0",content:b64e("{}"),branch:GH_BR,sha})});
+    if(!r.ok)throw new Error("GitHub "+r.status);
+  }else await rkJson("/ranking",{method:"PUT",body:"null"});
+  save("rkq",[]);
+}
+function rkConfirmaReset(tab){
+  modal(`<div class="rk"><h3>⚠️ ${rt("rq")}</h3><p class="nota">${rt("rw")}</p><div class="nick"><button id="rno">${rt("rno")}</button><button id="rsi" style="background:var(--bad);color:#fff">${rt("rsi")}</button></div><p class="nota" id="rmsg"></p></div>`);
+  $("#rno").onclick=()=>mostraRanking(tab);
+  $("#rsi").onclick=async()=>{
+    $("#rsi").disabled=true;
+    try{await rkReinicia();$("#rmsg").textContent=rt("rdone");setTimeout(()=>mostraRanking(tab),900)}
+    catch(e){$("#rmsg").textContent=rt("rerr");$("#rsi").disabled=false}
+  };
+}
 async function rkCua(){
   const q=load("rkq",[]);if(!q.length||!rkOn()||!nick)return;
   const resta=[];
@@ -876,11 +894,13 @@ const rkTxt={
  ca:{tit:"Classificació",gen:"General",cas:"Per cas",nom:"El teu sobrenom",desa:"Desa",punts:"punts",casos:"casos",
   off:"La classificació en línia encara no està activada. Mira RANKING.md per configurar-la; mentrestant veus els teus punts.",
   buit:"Encara no hi ha resultats.",tria:"Tria un cas",carrega:"Carregant…",err:"No s'ha pogut carregar la classificació.",
-  nom0:"Posa't un sobrenom per sortir a la classificació:",els:"Els teus punts",guanyat:"punts",pos:"Posició",refr:"Actualitza"},
+  nom0:"Posa't un sobrenom per sortir a la classificació:",
+  reset:"Posa la classificació a 0",rq:"Segur que vols posar la classificació a 0?",rw:"S'esborraran els resultats de TOTS els jugadors. No es pot desfer des del joc.",rsi:"Sí, posa-la a 0",rno:"Cancel·la",rdone:"Classificació a 0.",rerr:"No s'ha pogut esborrar. Torna-ho a provar.",els:"Els teus punts",guanyat:"punts",pos:"Posició",refr:"Actualitza"},
  fr:{tit:"Classement",gen:"Général",cas:"Par affaire",nom:"Ton pseudo",desa:"Enregistrer",punts:"points",casos:"affaires",
   off:"Le classement en ligne n'est pas encore activé. Voir RANKING.md pour le configurer ; en attendant tu vois tes points.",
   buit:"Pas encore de résultats.",tria:"Choisis une affaire",carrega:"Chargement…",err:"Impossible de charger le classement.",
-  nom0:"Choisis un pseudo pour apparaître au classement :",els:"Tes points",guanyat:"points",pos:"Position",refr:"Actualiser"}};
+  nom0:"Choisis un pseudo pour apparaître au classement :",
+  reset:"Remettre le classement à 0",rq:"Remettre vraiment le classement à 0 ?",rw:"Les résultats de TOUS les joueurs seront effacés. Impossible d'annuler depuis le jeu.",rsi:"Oui, tout remettre à 0",rno:"Annuler",rdone:"Classement remis à 0.",rerr:"Impossible d'effacer. Réessaie.",els:"Tes points",guanyat:"points",pos:"Position",refr:"Actualiser"}};
 const rt=k=>rkTxt[lang][k];
 function rkTaula(files,cols){
   return `<table><tr>${cols.map(c=>`<th class="${c[2]||""}">${c[0]}</th>`).join("")}</tr>${files.map((f,i)=>`<tr class="${rkSan(nick)&&f.nk===rkSan(nick)?"me":""}"><td class="n">${i+1}</td>${cols.slice(1).map(c=>`<td class="${c[2]||""}">${c[1](f)}</td>`).join("")}</tr>`).join("")}</table>`;
@@ -915,6 +935,8 @@ async function mostraRanking(tab){
       $("#rkb").innerHTML=ids.length?`<select id="rsel">${ids.map(id=>{const c=CASOS.find(x=>x.id===id);return `<option value="${id}"${id===sel?" selected":""}>${caseName(c)} · ${c.n}×${c.n}</option>`}).join("")}</select>`+rkTaula(rkCas(tot,sel),[["#"],[lang==="fr"?"Joueur":"Jugador",f=>f.nk],[lang==="fr"?"Temps":"Temps",f=>fmt(f.t),"r"],[rt("punts"),f=>f.p,"r"]]):`<p class="nota">${rt("buit")}</p>`;
       const s2=$("#rsel");if(s2)s2.onchange=()=>{window._rkcas=s2.value;mostraRanking("c")};
     }
+    $("#rkb").insertAdjacentHTML("beforeend",`<p style="margin-top:14px;text-align:center"><button id="rrst" style="font-size:.8rem;opacity:.75">${rt("reset")}</button></p>`);
+    $("#rrst").onclick=()=>rkConfirmaReset(tab);
   }catch(e){$("#rkb").innerHTML=`<p class="nota">${rt("err")}</p>`}
 }
 async function rkDesprésDeResoldre(c,t){
