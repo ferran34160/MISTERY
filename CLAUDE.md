@@ -91,7 +91,7 @@ Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alt
 1. **9x9 nous:** el generador és molt lent a 9x9 (hores per cas) i només n'hi ha 9, tots de lots antics. Generar-ne més és el coll d'ampolla (la verificació ja no ho és).
 2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
 3. **Estil dels retrats:** els de F, G i I són il·lustrats i la resta fotogràfics; si es vol coherència caldria tornar a generar-los amb el mateix estil.
-4. **Retrats F, G, I:** l'usuari regenerarà aquests 18 retrats en estil fotogràfic; quan els passi, substituir els fitxers de `retrats/` (els 18 nous noms ja hi són).
+4. **Retrats F, G, I:** fet; els 18 són ja fotogràfics (substituïts a `retrats/`).
 5. **Objectes de reserva:** si un escenari té pocs objectes d'un tipus, `reskin.py` en pren un d'un altre escenari (pot quedar poc coherent).
 6. **Publicació:** no s'ha publicat res (GitHub Pages no està activat; cal preguntar abans). L'usuari prova la versió amb `joc.html`.
 7. Atributs ocults i més tipus de pista; tutorial més complet; el mode fosc i el francès només s'han provat poc.
