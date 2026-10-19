@@ -110,7 +110,9 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.placed svg.obj,.cell.placed img.obj{opacity:.3}
 .mark.auto{color:var(--ink);opacity:.62;font-weight:700}
 .mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(18px,7vw,32px);font-weight:700;color:var(--bad);pointer-events:none}
-.notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:flex-end;gap:0 2px;font-size:clamp(8px,2.6vw,12px);font-weight:700;color:var(--muted);line-height:1.1;pointer-events:none}
+.notes{position:absolute;inset:0;padding:2px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:0 3px;font-size:clamp(14px,5vw,22px);font-weight:800;color:var(--ink);opacity:.85;line-height:1.05;pointer-events:none}
+.notes.n3{font-size:clamp(11px,3.8vw,17px)}
+.notes.n5{font-size:clamp(9px,3vw,13px);gap:0 2px}
 .tok{position:relative;width:78%;height:78%;border-radius:50%;font-weight:800;font-size:clamp(14px,5vw,24px);border:2px solid var(--line);pointer-events:none;z-index:2}.tok svg,.tok img.ph{width:100%;height:100%;display:block;border-radius:50%;object-fit:cover}.cell .tok{position:absolute;left:11%;top:11%;width:78%;height:78%}.tok .lt{position:absolute;right:-5px;bottom:-5px;min-width:1.15em;height:1.15em;line-height:1.15em;border-radius:50%;background:var(--ink);color:var(--bg);font-size:.55em;text-align:center;border:1.5px solid var(--bg)}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
@@ -576,7 +578,7 @@ function renderBoard(){
     if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
-    if(cell.nt.length)inner+=`<span class="notes">${cell.nt.map(x=>x.toLowerCase()).join("")}</span>`;
+    if(cell.nt.length)inner+=`<span class="notes${cell.nt.length>4?" n5":cell.nt.length>1?" n3":""}">${cell.nt.join("")}</span>`;
     if(cell.p)inner+=`<span class="tok${popKey===r+","+c?" pop":""}">${tokHtml(cell.p)}</span>`;
     h+=`<div class="${cls} ${tx.c}" data-r="${r}" data-c="${c}" style="background-color:${tx.t?`color-mix(in srgb,${COLORS(s,dk,cur.escenari)} ${Math.round((1-tx.p)*100)}%,${tx.t})`:COLORS(s,dk,cur.escenari)};${bw}">${inner}</div>`;
   }
