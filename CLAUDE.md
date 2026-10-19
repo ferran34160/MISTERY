@@ -84,11 +84,11 @@ Per persona: `en_sala`, `no_en_sala`, `sobre_obj`, `prop_obj`, `raco`, `vora` (a
 Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alta necessària (1 a 5). Definició pròpia, no validada amb jugadors.
 
 ### Estat de la col·lecció
-210 casos a la pàgina: 108 de 6x6, 63 de 7x7, 30 de 8x8 i 9 de 9x9, en 70 escenaris (3 per escenari). Els 429 casos dels fitxers `*.json` estan tots verificats.
+210 casos a la pàgina: 88 de 6x6, 63 de 7x7, 38 de 8x8 i 21 de 9x9, en 70 escenaris (3 per escenari).
 
 ## 6. Problemes coneguts i feina oberta
 
-1. **9x9 nous:** el generador és molt lent a 9x9 (hores per cas) i només n'hi ha 9, tots de lots antics. Generar-ne més és el coll d'ampolla (la verificació ja no ho és).
+1. **9x9:** el generador en fa ara un lot de 3 en ~2 minuts; a la pàgina n'hi ha 21 (tots verificats).
 2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
 3. **Estil dels retrats:** els de F, G i I són il·lustrats i la resta fotogràfics; si es vol coherència caldria tornar a generar-los amb el mateix estil.
 4. **Retrats F, G, I:** fet; els 18 són ja fotogràfics (substituïts a `retrats/`).
