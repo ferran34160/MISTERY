@@ -279,7 +279,7 @@ def config_classificacio():
 
 
 def main():
-    fitxers = sys.argv[1:] or ["casos_final.json"] + (["casos_kpop.json"] if os.path.exists("casos_kpop.json") else [])
+    fitxers = sys.argv[1:] or ["casos_final.json"] + [f for f in ("casos_kpop.json", "casos_meu.json") if os.path.exists(f)]
     casos, vistos = [], set()
     for f in fitxers:
         with open(f, encoding="utf-8") as fh:
@@ -295,7 +295,7 @@ def main():
     kp = [c for c in casos if c.get("kpop")]
     for i, c in enumerate(kp, 1):
         c["nom"] = {"ca": "Missió K-pop %d" % i, "fr": "Mission K-pop %d" % i}
-    assigna_noms([c for c in casos if not c.get("kpop")])
+    assigna_noms([c for c in casos if not c.get("kpop") and "nom" not in c])
     meta = {}
     for c in casos:
         k = c["escenari"]

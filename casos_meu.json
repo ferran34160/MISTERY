@@ -1,0 +1,379 @@
+[
+ {
+  "id": "meu-7-1",
+  "escenari": "estiu",
+  "n": 7,
+  "nivell": 3,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    2,
+    3,
+    3,
+    4,
+    4
+   ],
+   [
+    0,
+    0,
+    2,
+    3,
+    3,
+    4,
+    4
+   ],
+   [
+    0,
+    0,
+    2,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    1,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    1,
+    1,
+    2,
+    5,
+    5,
+    5,
+    5
+   ],
+   [
+    1,
+    1,
+    2,
+    5,
+    5,
+    5,
+    5
+   ],
+   [
+    1,
+    1,
+    2,
+    5,
+    5,
+    5,
+    5
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina d'estiu",
+    "fr": "cuisine d'été"
+   },
+   "1": {
+    "ca": "menjador",
+    "fr": "salle à manger"
+   },
+   "2": {
+    "ca": "passadís",
+    "fr": "couloir"
+   },
+   "3": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "4": {
+    "ca": "piscina",
+    "fr": "piscine"
+   },
+   "5": {
+    "ca": "terrassa",
+    "fr": "terrasse"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "taula",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "planta"
+   ],
+   [
+    null,
+    null,
+    null,
+    "estatua",
+    null,
+    null,
+    "estatua"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "cadira",
+    null,
+    null,
+    "planta",
+    null,
+    null,
+    null
+   ],
+   [
+    "taula",
+    "taula",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "estatua": {
+    "bloqueja": true,
+    "ca": "estàtua",
+    "fr": "statue"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "F",
+    "nom": "Fanny",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "vora",
+    "p": "D"
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 4
+   },
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "estatua"
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 2
+   },
+   {
+    "t": "sobre_obj",
+    "p": "F",
+    "obj": "cadira"
+   },
+   {
+    "t": "nord",
+    "p": "B",
+    "q": "E"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "taula"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una paret exterior de la casa.",
+    "Va passar l'estona a la piscina.",
+    "Una estàtua era a la seva fila.",
+    "Estava al passadís.",
+    "Era sobre la cadira.",
+    "Era al nord d'Eulàlia.",
+    "Prop seu hi havia una taula."
+   ],
+   "fr": [
+    "Il touchait un mur extérieur de la maison.",
+    "Elle se trouvait dans la piscine.",
+    "Elle partageait sa ligne avec une statue.",
+    "Elle était dans le couloir.",
+    "Elle était sur la chaise.",
+    "Eulàlia était au sud de lui.",
+    "Il se tenait près d'une table."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    2
+   ],
+   "B": [
+    0,
+    3
+   ],
+   "C": [
+    6,
+    1
+   ],
+   "D": [
+    5,
+    6
+   ],
+   "E": [
+    1,
+    5
+   ],
+   "F": [
+    4,
+    0
+   ],
+   "V": [
+    2,
+    4
+   ]
+  },
+  "assassi": "B",
+  "nom": {
+   "ca": "El crim de la piscina",
+   "fr": "Le crime de la piscine"
+  }
+ }
+]

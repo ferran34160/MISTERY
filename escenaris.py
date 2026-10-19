@@ -298,6 +298,17 @@ KPOP_PERSONATGES = {"R": [("Rumi", "f"), ("Romance", "m")], "M": [("Mira", "f"),
                     "D": [("Derpy", "m")], "S": [("Sussie", "f")]}
 
 
+# --- escenari de la casa d'estiu (el cas dissenyat per l'usuari; no entra a la col·lecció de 3 per escenari) ---
+_registra("estiu", ("Crim a la casa d'estiu", "Crime à la maison d'été"), ("la casa", "la maison"), [
+    ("cuina", ("f", "cuina d'estiu"), ("f", "cuisine d'été"), ["taula"]),
+    ("menjador", ("m", "menjador"), ("f", "salle à manger"), ["taula", "cadira"]),
+    ("passadis", ("m", "passadís"), ("m", "couloir"), []),
+    ("porxo", ("m", "porxo"), ("m", "porche"), ["estatua"]),
+    ("piscina", ("f", "piscina"), ("f", "piscine"), ["planta"]),
+    ("terrassa", ("f", "terrassa"), ("f", "terrasse"), ["planta"])])
+ESCENARIS["estiu"]["tag"] = {"ca": "La casa d'estiu", "fr": "La maison d'été"}
+ESCENARIS["estiu"]["especial"] = True
+
 # --- objectes del segon lot: s'afegeixen a les sales on encaixen pel nom -------------------------
 _NOUS = [
     (("cuina",), ["nevera", "forn", "pica"]),
