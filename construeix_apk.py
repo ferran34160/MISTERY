@@ -28,6 +28,8 @@ def main():
     from construeix import fotos_kpop
     if fotos_kpop():
         shutil.copytree(os.path.join(ARREL, "kpop", "retrats"), os.path.join(ASSETS, "kpop", "retrats"))
+        if os.path.isdir(os.path.join(ARREL, "kpop", "objectes")):
+            shutil.copytree(os.path.join(ARREL, "kpop", "objectes"), os.path.join(ASSETS, "kpop", "objectes"))
     idx = os.path.join(ASSETS, "index.html")
     txt = open(idx, encoding="utf-8").read().replace("/*KPOP_PHOTOS*/", fotos_kpop())
     open(idx, "w", encoding="utf-8").write(txt)

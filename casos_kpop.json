@@ -9,8 +9,8 @@
     1,
     1,
     1,
-    1,
-    1
+    0,
+    0
    ],
    [
     1,
@@ -38,58 +38,62 @@
     1,
     1,
     1,
-    1
+    0
    ]
   ],
   "sala": [
    [
-    1,
-    1,
-    1,
-    1,
+    3,
+    3,
+    3,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    3,
+    0,
     1
    ],
    [
-    1,
-    1,
-    1,
-    1,
-    2
-   ],
-   [
-    0,
-    0,
     2,
     2,
-    2
+    3,
+    0,
+    1
    ],
    [
     -1,
+    2,
     0,
-    2,
-    2,
-    2
+    0,
+    1
    ],
    [
     -1,
-    0,
-    0,
     2,
-    2
+    2,
+    0,
+    -1
    ]
   ],
   "sales": {
    "0": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
+    "ca": "camerino",
+    "fr": "loge"
    },
    "1": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "2": {
     "ca": "terrat",
     "fr": "toit"
    },
-   "2": {
-    "ca": "camerino",
-    "fr": "loge"
+   "3": {
+    "ca": "estudi de gravació",
+    "fr": "studio"
    }
   },
   "obj": [
@@ -101,11 +105,11 @@
     null
    ],
    [
-    "planta",
     null,
     null,
+    "synthe",
     null,
-    null
+    "distributeur"
    ],
    [
     null,
@@ -117,39 +121,44 @@
    [
     null,
     null,
+    "photocards",
     null,
-    null,
-    "sofa"
+    null
    ],
    [
     null,
     null,
-    "mirall",
+    "cerisier",
     null,
     null
    ]
   ],
   "objectes": {
-   "mirall": {
+   "cerisier": {
     "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
+    "ca": "cirerer en flor",
+    "fr": "cerisier"
    },
-   "planta": {
+   "distributeur": {
     "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
    },
-   "sofa": {
-    "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+   "photocards": {
+    "bloqueja": true,
+    "ca": "expositor de fotocards",
+    "fr": "présentoir"
+   },
+   "synthe": {
+    "bloqueja": true,
+    "ca": "sintetitzador",
+    "fr": "synthé"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Baby",
+    "nom": "Bobby",
     "genere": "m",
     "ins": "B"
    },
@@ -161,28 +170,33 @@
    },
    {
     "id": "C",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
-   },
-   {
-    "id": "D",
     "nom": "Jinu",
     "genere": "m",
     "ins": "J"
    },
    {
-    "id": "V",
+    "id": "D",
     "nom": "Romance",
     "genere": "m",
     "ins": "R"
+   },
+   {
+    "id": "V",
+    "nom": "Mystery",
+    "genere": "m",
+    "ins": "M"
    }
   ],
   "pistes": [
    {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "photocards"
+   },
+   {
     "t": "en_sala",
-    "p": "V",
-    "sala": 1
+    "p": "A",
+    "sala": 2
    },
    {
     "t": "en_sala",
@@ -190,66 +204,54 @@
     "sala": 1
    },
    {
-    "t": "sobre_obj",
-    "p": "A",
-    "obj": "sofa"
-   },
-   {
     "t": "raco",
     "p": "V"
    },
    {
-    "t": "compte_sala",
-    "sala": 2,
-    "k": 1
-   },
-   {
     "t": "prop_obj",
-    "p": "C",
-    "obj": "mirall"
+    "p": "B",
+    "obj": "synthe"
    }
   ],
   "textos": {
    "ca": [
-    "Estava al terrat.",
-    "El van veure al terrat.",
-    "Va quedar-se sobre el sofà.",
-    "Era en un racó d'una habitació.",
-    "El camerino només tenia una persona, comptant la víctima.",
-    "Prop seu hi havia un mirall."
+    "Tenia un expositor de fotocards a tocar.",
+    "Va passar l'estona al terrat.",
+    "Era a la cuina.",
+    "Estava en una cantonada d'una habitació.",
+    "Estava vora un sintetitzador."
    ],
    "fr": [
-    "Il a passé le temps sur le toit.",
+    "Il avait un présentoir tout près.",
     "On l'a vu sur le toit.",
-    "Il était installé sur le canapé.",
-    "Il occupait un coin d'une pièce.",
-    "Il n'y avait qu'une personne dans la loge, victime comprise.",
-    "Il était à côté d'un miroir."
+    "Il se trouvait dans la cuisine.",
+    "Il se tenait dans un angle d'une pièce.",
+    "Elle était à côté d'un synthé."
    ]
   },
   "solucio": {
    "A": [
-    3,
-    4
-   ],
-   "B": [
-    2,
-    0
-   ],
-   "C": [
     4,
     1
    ],
-   "D": [
+   "B": [
     0,
     2
    ],
+   "C": [
+    3,
+    3
+   ],
+   "D": [
+    2,
+    4
+   ],
    "V": [
     1,
-    3
+    0
    ]
   },
-  "assassi": "D",
+  "assassi": "B",
   "kpop": true
  },
  {
@@ -259,42 +261,63 @@
   "nivell": 1,
   "pla": [
    [
-    0,
-    0,
-    1,
-    1,
-    1
-   ],
-   [
-    0,
-    0,
-    1,
-    1,
-    1
-   ],
-   [
     1,
     1,
     1,
     1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    0,
     0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    -1
+   ],
+   [
+    0,
+    3,
+    1,
+    1,
+    -1
+   ],
+   [
+    3,
+    3,
+    1,
+    2,
+    2
+   ],
    [
     -1,
     -1,
@@ -306,29 +329,8 @@
     -1,
     -1,
     1,
-    3,
+    2,
     2
-   ],
-   [
-    0,
-    1,
-    1,
-    3,
-    2
-   ],
-   [
-    0,
-    1,
-    3,
-    3,
-    3
-   ],
-   [
-    0,
-    0,
-    0,
-    -1,
-    -1
    ]
   ],
   "sales": {
@@ -353,13 +355,13 @@
    [
     null,
     null,
-    "tel",
     null,
-    "banc"
+    null,
+    null
    ],
    [
-    null,
-    null,
+    "peluche",
+    "ramen",
     null,
     null,
     null
@@ -369,57 +371,57 @@
     null,
     null,
     null,
+    "chapeau"
+   ],
+   [
+    null,
+    null,
+    "enceinte",
+    null,
     null
    ],
    [
     null,
     null,
     null,
-    null,
-    "forn"
-   ],
-   [
-    null,
-    null,
-    "sofa",
     null,
     null
    ]
   ],
   "objectes": {
-   "banc": {
+   "chapeau": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "barret gat",
+    "fr": "chapeau gat"
    },
-   "forn": {
+   "enceinte": {
     "bloqueja": true,
-    "ca": "forn",
-    "fr": "four"
+    "ca": "altaveu",
+    "fr": "enceinte"
    },
-   "sofa": {
+   "peluche": {
     "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+    "ca": "peluix de tigre",
+    "fr": "peluche"
    },
-   "tel": {
-    "bloqueja": true,
-    "ca": "teló",
-    "fr": "rideau"
+   "ramen": {
+    "bloqueja": false,
+    "ca": "bol de ramen",
+    "fr": "bol de ramen"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Bobby",
+    "nom": "Romance",
     "genere": "m",
-    "ins": "B"
+    "ins": "R"
    },
    {
     "id": "B",
-    "nom": "Mystery",
+    "nom": "Derpy",
     "genere": "m",
-    "ins": "M"
+    "ins": "D"
    },
    {
     "id": "C",
@@ -429,91 +431,79 @@
    },
    {
     "id": "D",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
+    "nom": "Bobby",
+    "genere": "m",
+    "ins": "B"
    },
    {
     "id": "V",
-    "nom": "Abby",
+    "nom": "Gwi-Ma",
     "genere": "m",
-    "ins": "A"
+    "ins": "G"
    }
   ],
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "D",
-    "obj": "banc"
-   },
-   {
-    "t": "sobre_obj",
-    "p": "V",
-    "obj": "sofa"
-   },
-   {
-    "t": "en_sala",
-    "p": "C",
-    "sala": 0
+    "p": "B",
+    "obj": "chapeau"
    },
    {
     "t": "prop_obj",
-    "p": "B",
-    "obj": "banc"
+    "p": "A",
+    "obj": "ramen"
+   },
+   {
+    "t": "prop_obj",
+    "p": "D",
+    "obj": "enceinte"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "C",
+    "obj": "peluche"
    },
    {
     "t": "raco",
-    "p": "A"
-   },
-   {
-    "t": "raco",
-    "p": "B"
-   },
-   {
-    "t": "raco",
-    "p": "C"
+    "p": "V"
    }
   ],
   "textos": {
    "ca": [
-    "Estava vora un banc.",
-    "Era sobre el sofà.",
-    "Era al camerino.",
-    "Era al costat d'un banc.",
-    "Va quedar-se en un racó d'una habitació.",
-    "Ocupava un racó d'una habitació.",
-    "Era en un racó d'una habitació."
+    "Prop seu hi havia un barret gat.",
+    "Estava vora un bol de ramen.",
+    "Tenia un altaveu a tocar.",
+    "Es va deixar caure sobre el peluix de tigre.",
+    "Estava en una cantonada d'una habitació."
    ],
    "fr": [
-    "Elle était à côté d'un banc.",
-    "Il était installé sur le canapé.",
-    "Elle était dans la loge.",
-    "Il avait un banc tout près.",
-    "Il occupait un coin d'une pièce.",
-    "Il était dans un coin d'une pièce.",
-    "Elle se tenait dans un angle d'une pièce."
+    "Il était à côté d'un chapeau gat.",
+    "Il se tenait près d'un bol de ramen.",
+    "Il avait une enceinte tout près.",
+    "Elle se tenait sur la peluche.",
+    "Il se tenait dans un angle d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    3,
+    2,
     1
    ],
    "B": [
-    0,
-    3
+    3,
+    4
    ],
    "C": [
-    2,
+    1,
     0
    ],
    "D": [
-    1,
-    4
-   ],
-   "V": [
     4,
     2
+   ],
+   "V": [
+    0,
+    3
    ]
   },
   "assassi": "C",
@@ -547,55 +537,55 @@
     1
    ],
    [
-    1,
-    1,
+    0,
+    0,
     1,
     1,
     1
    ],
    [
-    1,
-    1,
-    1,
     0,
-    0
+    0,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
+    3,
+    3,
+    3,
     2,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    2,
-    2,
-    1,
-    1,
-    1
-   ],
-   [
-    2,
-    2,
-    1,
-    1,
-    1
+    2
    ],
    [
     0,
     0,
-    0,
-    0,
-    0
+    1,
+    2,
+    4
    ],
    [
     0,
-    0,
-    0,
+    1,
+    1,
+    4,
+    4
+   ],
+   [
     -1,
-    -1
+    -1,
+    1,
+    4,
+    4
+   ],
+   [
+    -1,
+    -1,
+    1,
+    1,
+    4
    ]
   ],
   "sales": {
@@ -604,32 +594,40 @@
     "fr": "loge"
    },
    "1": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
+    "ca": "terrat",
+    "fr": "toit"
    },
    "2": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "3": {
     "ca": "escena",
     "fr": "scène"
+   },
+   "4": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
    }
   },
   "obj": [
    [
     null,
     null,
-    null,
-    "banc",
-    null
-   ],
-   [
-    "tamboret",
-    null,
-    null,
-    null,
+    "projecteur",
+    "bubble",
     null
    ],
    [
     null,
     null,
+    "cerisier",
+    null,
+    "lightstick"
+   ],
+   [
+    "miroirloge",
+    null,
     null,
     null,
     null
@@ -638,7 +636,7 @@
     null,
     null,
     null,
-    "maniqui",
+    null,
     null
    ],
    [
@@ -650,46 +648,56 @@
    ]
   ],
   "objectes": {
-   "banc": {
+   "bubble": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "bubble tea",
+    "fr": "bubble tea"
    },
-   "maniqui": {
+   "cerisier": {
     "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
+    "ca": "cirerer en flor",
+    "fr": "cerisier"
    },
-   "tamboret": {
+   "lightstick": {
     "bloqueja": false,
-    "ca": "tamboret",
-    "fr": "tabouret"
+    "ca": "bastó lluminós",
+    "fr": "light stick"
+   },
+   "miroirloge": {
+    "bloqueja": true,
+    "ca": "mirall de camerino",
+    "fr": "miroir de loge"
+   },
+   "projecteur": {
+    "bloqueja": true,
+    "ca": "projector d'escena",
+    "fr": "projecteur"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
+    "nom": "Romance",
+    "genere": "m",
+    "ins": "R"
    },
    {
     "id": "B",
+    "nom": "Bobby",
+    "genere": "m",
+    "ins": "B"
+   },
+   {
+    "id": "C",
     "nom": "Jinu",
     "genere": "m",
     "ins": "J"
    },
    {
-    "id": "C",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
-   },
-   {
     "id": "D",
-    "nom": "Mystery",
+    "nom": "Abby",
     "genere": "m",
-    "ins": "M"
+    "ins": "A"
    },
    {
     "id": "V",
@@ -700,73 +708,66 @@
   ],
   "pistes": [
    {
-    "t": "sobre_obj",
+    "t": "en_sala",
+    "p": "B",
+    "sala": 4
+   },
+   {
+    "t": "en_sala",
     "p": "C",
-    "obj": "tamboret"
-   },
-   {
-    "t": "prop_obj",
-    "p": "A",
-    "obj": "banc"
-   },
-   {
-    "t": "en_sala",
-    "p": "D",
-    "sala": 1
-   },
-   {
-    "t": "en_sala",
-    "p": "V",
     "sala": 0
    },
    {
     "t": "prop_obj",
-    "p": "B",
-    "obj": "maniqui"
+    "p": "A",
+    "obj": "projecteur"
    },
    {
     "t": "raco",
-    "p": "B"
+    "p": "D"
+   },
+   {
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "lightstick"
    }
   ],
   "textos": {
    "ca": [
-    "Era sobre el tamboret.",
-    "Era al costat d'un banc.",
-    "Va passar l'estona a la sala d'assaig.",
-    "Era al camerino.",
-    "Prop seu hi havia un maniquí.",
-    "Era en un racó d'una habitació."
+    "Era a la sala d'assaig.",
+    "Va passar l'estona al camerino.",
+    "Tenia un projector d'escena a tocar.",
+    "Va quedar-se en un racó d'una habitació.",
+    "Prop seu hi havia un bastó lluminós."
    ],
    "fr": [
-    "Elle se tenait sur le tabouret.",
-    "Elle avait un banc tout près.",
-    "On l'a vu dans la salle de danse.",
-    "Il a passé le temps dans la loge.",
-    "Il était à côté d'un mannequin.",
-    "Il était dans un coin d'une pièce."
+    "Il a passé le temps dans la salle de danse.",
+    "Il se trouvait dans la loge.",
+    "Il se tenait près d'un projecteur.",
+    "Il était dans un coin d'une pièce.",
+    "Il avait un light stick tout près."
    ]
   },
   "solucio": {
    "A": [
     0,
-    2
+    1
    ],
    "B": [
     3,
-    4
+    3
    ],
    "C": [
     1,
     0
    ],
    "D": [
-    2,
-    3
+    4,
+    2
    ],
    "V": [
-    4,
-    1
+    2,
+    4
    ]
   },
   "assassi": "B",
@@ -779,13 +780,6 @@
   "nivell": 1,
   "pla": [
    [
-    0,
-    0,
-    1,
-    1,
-    1
-   ],
-   [
     1,
     1,
     1,
@@ -810,35 +804,21 @@
     1,
     1,
     1,
-    0,
-    0
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
-    -1,
-    -1,
-    0,
-    0,
-    0
-   ],
-   [
     1,
-    2,
-    0,
-    0,
-    0
-   ],
-   [
     1,
-    2,
-    2,
-    0,
-    0
-   ],
-   [
-    1,
-    2,
     1,
     1,
     1
@@ -846,44 +826,55 @@
    [
     1,
     1,
-    1,
-    -1,
-    -1
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    3,
+    0
+   ],
+   [
+    2,
+    2,
+    3,
+    3,
+    3
    ]
   ],
   "sales": {
    "0": {
-    "ca": "cuina",
-    "fr": "cuisine"
+    "ca": "escena",
+    "fr": "scène"
    },
    "1": {
     "ca": "terrat",
     "fr": "toit"
    },
    "2": {
-    "ca": "camerino",
-    "fr": "loge"
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "3": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
    }
   },
   "obj": [
    [
     null,
     null,
-    null,
-    null,
-    null
-   ],
-   [
-    "banc",
-    "sofa",
-    null,
-    null,
-    "pica"
-   ],
-   [
-    "banc",
-    null,
-    null,
+    "chapeau",
     null,
     null
    ],
@@ -892,80 +883,99 @@
     null,
     null,
     null,
+    "micro"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "enceinte"
+   ],
+   [
+    "distributeur",
+    "bubble",
+    null,
+    null,
     null
    ],
    [
-    "banc",
     null,
     null,
     null,
-    null
+    null,
+    "eventail"
    ]
   ],
   "objectes": {
-   "banc": {
+   "bubble": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "bubble tea",
+    "fr": "bubble tea"
    },
-   "pica": {
+   "chapeau": {
+    "bloqueja": false,
+    "ca": "barret gat",
+    "fr": "chapeau gat"
+   },
+   "distributeur": {
     "bloqueja": true,
-    "ca": "pica",
-    "fr": "évier"
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
    },
-   "sofa": {
+   "enceinte": {
+    "bloqueja": true,
+    "ca": "altaveu",
+    "fr": "enceinte"
+   },
+   "eventail": {
     "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+    "ca": "ventall",
+    "fr": "éventail"
+   },
+   "micro": {
+    "bloqueja": false,
+    "ca": "micròfon",
+    "fr": "micro"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
+    "nom": "Mystery",
+    "genere": "m",
+    "ins": "M"
    },
    {
     "id": "B",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
-   },
-   {
-    "id": "C",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
-   },
-   {
-    "id": "D",
     "nom": "Rumi",
     "genere": "f",
     "ins": "R"
    },
    {
-    "id": "V",
-    "nom": "Baby",
+    "id": "C",
+    "nom": "Gwi-Ma",
     "genere": "m",
-    "ins": "B"
+    "ins": "G"
+   },
+   {
+    "id": "D",
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
+   },
+   {
+    "id": "V",
+    "nom": "Derpy",
+    "genere": "m",
+    "ins": "D"
    }
   ],
   "pistes": [
    {
-    "t": "sobre_obj",
-    "p": "V",
-    "obj": "sofa"
-   },
-   {
     "t": "prop_obj",
-    "p": "D",
-    "obj": "pica"
-   },
-   {
-    "t": "en_sala",
-    "p": "C",
-    "sala": 2
+    "p": "V",
+    "obj": "chapeau"
    },
    {
     "t": "en_sala",
@@ -973,50 +983,59 @@
     "sala": 1
    },
    {
-    "t": "sobre_obj",
+    "t": "prop_obj",
     "p": "B",
-    "obj": "banc"
+    "obj": "bubble"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "C",
+    "obj": "eventail"
+   },
+   {
+    "t": "raco",
+    "p": "D"
    }
   ],
   "textos": {
    "ca": [
-    "Es va deixar caure sobre el sofà.",
-    "Tenia una pica a tocar.",
-    "Estava al camerino.",
-    "Es trobava al terrat.",
-    "Va quedar-se sobre el banc."
+    "Prop seu hi havia un barret gat.",
+    "Estava al terrat.",
+    "Era al costat d'un bubble tea.",
+    "Era sobre el ventall.",
+    "Ocupava un racó d'una habitació."
    ],
    "fr": [
-    "Il était installé sur le canapé.",
-    "Elle se tenait près d'un évier.",
-    "Elle se trouvait dans la loge.",
-    "Elle était sur le toit.",
-    "Il était sur le banc."
+    "Il était à côté d'un chapeau gat.",
+    "Il a passé le temps sur le toit.",
+    "Elle se tenait près d'un bubble tea.",
+    "Il était sur l'éventail.",
+    "Elle se tenait dans un angle d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    3,
-    3
-   ],
-   "B": [
-    4,
+    1,
     0
    ],
-   "C": [
+   "B": [
     2,
-    2
+    1
    ],
-   "D": [
-    0,
+   "C": [
+    4,
     4
    ],
+   "D": [
+    3,
+    2
+   ],
    "V": [
-    1,
-    1
+    0,
+    3
    ]
   },
-  "assassi": "C",
+  "assassi": "A",
   "kpop": true
  },
  {
@@ -1030,82 +1049,82 @@
     1,
     1,
     1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    0,
     0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
     0,
     0,
-    0,
-    0,
-    2
-   ],
-   [
-    0,
-    0,
-    0,
-    2,
-    2
-   ],
-   [
-    0,
-    0,
     2,
     2,
-    2
-   ],
-   [
-    1,
-    0,
-    1,
-    2,
-    2
-   ],
-   [
-    1,
-    1,
-    1,
-    -1,
     -1
+   ],
+   [
+    0,
+    0,
+    2,
+    2,
+    -1
+   ],
+   [
+    0,
+    0,
+    2,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1
    ]
   ],
   "sales": {
    "0": {
-    "ca": "camerino",
-    "fr": "loge"
+    "ca": "terrat",
+    "fr": "toit"
    },
    "1": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
+    "ca": "escena",
+    "fr": "scène"
    },
    "2": {
     "ca": "sala d'assaig",
@@ -1114,10 +1133,17 @@
   },
   "obj": [
    [
-    "maniqui",
     null,
     null,
     null,
+    null,
+    null
+   ],
+   [
+    "cerisier",
+    null,
+    null,
+    "epee",
     null
    ],
    [
@@ -1128,15 +1154,8 @@
     null
    ],
    [
+    "chapeau",
     null,
-    null,
-    null,
-    null,
-    "banc"
-   ],
-   [
-    "butaca",
-    "mirall",
     null,
     null,
     null
@@ -1145,30 +1164,30 @@
     null,
     null,
     null,
-    null,
+    "enceinte",
     null
    ]
   ],
   "objectes": {
-   "banc": {
-    "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
-   },
-   "butaca": {
-    "bloqueja": false,
-    "ca": "butaca",
-    "fr": "fauteuil"
-   },
-   "maniqui": {
+   "cerisier": {
     "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
+    "ca": "cirerer en flor",
+    "fr": "cerisier"
    },
-   "mirall": {
+   "chapeau": {
+    "bloqueja": false,
+    "ca": "barret gat",
+    "fr": "chapeau gat"
+   },
+   "enceinte": {
     "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
+    "ca": "altaveu",
+    "fr": "enceinte"
+   },
+   "epee": {
+    "bloqueja": false,
+    "ca": "espasa màgica",
+    "fr": "épée magique"
    }
   },
   "persones": [
@@ -1180,95 +1199,100 @@
    },
    {
     "id": "B",
+    "nom": "Gwi-Ma",
+    "genere": "m",
+    "ins": "G"
+   },
+   {
+    "id": "C",
+    "nom": "Zoey",
+    "genere": "f",
+    "ins": "Z"
+   },
+   {
+    "id": "D",
     "nom": "Mira",
     "genere": "f",
     "ins": "M"
    },
    {
-    "id": "C",
+    "id": "V",
     "nom": "Abby",
     "genere": "m",
     "ins": "A"
-   },
-   {
-    "id": "D",
-    "nom": "Romance",
-    "genere": "m",
-    "ins": "R"
-   },
-   {
-    "id": "V",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
    }
   ],
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "A",
-    "obj": "butaca"
+    "p": "B",
+    "obj": "cerisier"
    },
    {
-    "t": "sobre_obj",
+    "t": "en_sala",
     "p": "D",
-    "obj": "banc"
+    "sala": 0
    },
    {
     "t": "prop_obj",
     "p": "C",
-    "obj": "maniqui"
+    "obj": "enceinte"
    },
    {
-    "t": "en_sala",
-    "p": "B",
-    "sala": 0
+    "t": "raco",
+    "p": "A"
    },
    {
-    "t": "en_sala",
+    "t": "prop_obj",
     "p": "V",
-    "sala": 2
+    "obj": "epee"
+   },
+   {
+    "t": "raco",
+    "p": "V"
    }
   ],
   "textos": {
    "ca": [
-    "Prop seu hi havia una butaca.",
-    "Es va deixar caure sobre el banc.",
-    "Era al costat d'un maniquí.",
-    "Estava al camerino.",
-    "Es trobava a la sala d'assaig."
+    "Tenia un cirerer en flor a tocar.",
+    "Va passar l'estona al terrat.",
+    "Era al costat d'un altaveu.",
+    "Estava en una cantonada d'una habitació.",
+    "Prop seu hi havia una espasa màgica.",
+    "Va quedar-se en un racó d'una habitació."
    ],
    "fr": [
-    "Il avait un fauteuil tout près.",
-    "Il était installé sur le banc.",
-    "Il se tenait près d'un mannequin.",
-    "Elle a passé le temps dans la loge.",
-    "Il se trouvait dans la salle de danse."
+    "Il se tenait près d'un cerisier.",
+    "Elle se trouvait sur le toit.",
+    "Elle était à côté d'une enceinte.",
+    "Il se tenait dans un angle d'une pièce.",
+    "Il avait une épée magique tout près.",
+    "Il occupait un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    4,
-    0
+    2,
+    2
    ],
    "B": [
     1,
-    2
-   ],
-   "C": [
-    0,
     1
    ],
-   "D": [
-    2,
+   "C": [
+    4,
     4
    ],
-   "V": [
+   "D": [
     3,
+    0
+   ],
+   "V": [
+    0,
     3
    ]
   },
-  "assassi": "D",
+  "assassi": "A",
   "kpop": true
  },
  {
@@ -1299,6 +1323,266 @@
     1
    ],
    [
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    3
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    3
+   ],
+   [
+    1,
+    1,
+    2,
+    3,
+    3
+   ],
+   [
+    -1,
+    1,
+    2,
+    2,
+    -1
+   ],
+   [
+    -1,
+    1,
+    1,
+    2,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "escena",
+    "fr": "scène"
+   },
+   "1": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "2": {
+    "ca": "terrat",
+    "fr": "toit"
+   },
+   "3": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    "lightstick"
+   ],
+   [
+    null,
+    null,
+    "cerisier",
+    "micro",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "peluche",
+    null,
+    "lanterne",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "cerisier": {
+    "bloqueja": true,
+    "ca": "cirerer en flor",
+    "fr": "cerisier"
+   },
+   "lanterne": {
+    "bloqueja": true,
+    "ca": "llanterna coreana",
+    "fr": "lanterne"
+   },
+   "lightstick": {
+    "bloqueja": false,
+    "ca": "bastó lluminós",
+    "fr": "light stick"
+   },
+   "micro": {
+    "bloqueja": false,
+    "ca": "micròfon",
+    "fr": "micro"
+   },
+   "peluche": {
+    "bloqueja": false,
+    "ca": "peluix de tigre",
+    "fr": "peluche"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Derpy",
+    "genere": "m",
+    "ins": "D"
+   },
+   {
+    "id": "B",
+    "nom": "Zoey",
+    "genere": "f",
+    "ins": "Z"
+   },
+   {
+    "id": "C",
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
+   },
+   {
+    "id": "D",
+    "nom": "Bobby",
+    "genere": "m",
+    "ins": "B"
+   },
+   {
+    "id": "V",
+    "nom": "Jinu",
+    "genere": "m",
+    "ins": "J"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "lightstick"
+   },
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "lanterne"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 0
+   },
+   {
+    "t": "sobre_obj",
+    "p": "V",
+    "obj": "peluche"
+   },
+   {
+    "t": "raco",
+    "p": "C"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Prop seu hi havia un bastó lluminós.",
+    "Estava vora una llanterna coreana.",
+    "Es trobava a l'escena.",
+    "Va quedar-se sobre el peluix de tigre.",
+    "Ocupava un racó d'una habitació."
+   ],
+   "fr": [
+    "Elle était à côté d'un light stick.",
+    "Il se tenait près d'une lanterne.",
+    "On l'a vu sur la scène.",
+    "Il était sur la peluche.",
+    "Elle se tenait dans un angle d'une pièce."
+   ]
+  },
+  "solucio": {
+   "A": [
+    4,
+    3
+   ],
+   "B": [
+    1,
+    4
+   ],
+   "C": [
+    2,
+    0
+   ],
+   "D": [
+    0,
+    2
+   ],
+   "V": [
+    3,
+    1
+   ]
+  },
+  "assassi": "C",
+  "kpop": true
+ },
+ {
+  "id": "kpop-5-1-7",
+  "escenari": "kpop",
+  "n": 5,
+  "nivell": 1,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
     1,
     1,
     1,
@@ -1315,133 +1599,130 @@
   ],
   "sala": [
    [
-    4,
-    4,
-    4,
-    3,
-    3
-   ],
-   [
-    4,
-    4,
-    2,
-    3,
-    3
-   ],
-   [
-    1,
-    2,
-    2,
-    2,
-    2
-   ],
-   [
-    1,
-    1,
-    1,
+    -1,
+    -1,
     0,
-    0
+    1,
+    1
    ],
    [
-    1,
-    1,
-    1,
     0,
-    0
+    0,
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    1
    ]
   ],
   "sales": {
    "0": {
-    "ca": "escena",
-    "fr": "scène"
-   },
-   "1": {
-    "ca": "cuina",
-    "fr": "cuisine"
-   },
-   "2": {
     "ca": "camerino",
     "fr": "loge"
    },
-   "3": {
-    "ca": "terrat",
-    "fr": "toit"
+   "1": {
+    "ca": "escena",
+    "fr": "scène"
    },
-   "4": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
+   "2": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
    }
   },
   "obj": [
    [
     null,
     null,
-    "escriptori",
+    null,
+    null,
+    null
+   ],
+   [
+    "valise",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "miroirloge",
+    null,
+    null,
+    null,
+    "projecteur"
+   ],
+   [
+    "epee",
+    null,
+    null,
     null,
     null
    ],
    [
     null,
     null,
+    "affiche",
     null,
-    null,
-    "fanal"
-   ],
-   [
-    null,
-    null,
-    null,
-    "maniqui",
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    "tamboret"
-   ],
-   [
-    null,
-    "taula",
-    null,
-    null,
-    null
+    "micro"
    ]
   ],
   "objectes": {
-   "escriptori": {
+   "affiche": {
     "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
+    "ca": "pòster",
+    "fr": "affiche"
    },
-   "fanal": {
-    "bloqueja": true,
-    "ca": "fanal",
-    "fr": "lampadaire"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
-   },
-   "tamboret": {
+   "epee": {
     "bloqueja": false,
-    "ca": "tamboret",
-    "fr": "tabouret"
+    "ca": "espasa màgica",
+    "fr": "épée magique"
    },
-   "taula": {
+   "micro": {
+    "bloqueja": false,
+    "ca": "micròfon",
+    "fr": "micro"
+   },
+   "miroirloge": {
     "bloqueja": true,
-    "ca": "taula",
-    "fr": "table"
+    "ca": "mirall de camerino",
+    "fr": "miroir de loge"
+   },
+   "projecteur": {
+    "bloqueja": true,
+    "ca": "projector d'escena",
+    "fr": "projecteur"
+   },
+   "valise": {
+    "bloqueja": false,
+    "ca": "maleta de gira",
+    "fr": "valise"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Mira",
+    "nom": "Zoey",
     "genere": "f",
-    "ins": "M"
+    "ins": "Z"
    },
    {
     "id": "B",
@@ -1457,346 +1738,83 @@
    },
    {
     "id": "D",
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
+   },
+   {
+    "id": "V",
     "nom": "Bobby",
     "genere": "m",
     "ins": "B"
-   },
-   {
-    "id": "V",
-    "nom": "Derpy",
-    "genere": "m",
-    "ins": "D"
    }
   ],
   "pistes": [
    {
-    "t": "sobre_obj",
-    "p": "B",
-    "obj": "tamboret"
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "miroirloge"
    },
    {
     "t": "prop_obj",
-    "p": "C",
-    "obj": "maniqui"
+    "p": "D",
+    "obj": "micro"
+   },
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "affiche"
    },
    {
     "t": "en_sala",
-    "p": "A",
-    "sala": 0
-   },
-   {
-    "t": "raco",
-    "p": "D"
-   },
-   {
-    "t": "prop_obj",
     "p": "V",
-    "obj": "escriptori"
+    "sala": 1
+   },
+   {
+    "t": "sobre_obj",
+    "p": "B",
+    "obj": "valise"
    }
   ],
   "textos": {
    "ca": [
-    "Es va deixar caure sobre el tamboret.",
-    "Tenia un maniquí a tocar.",
-    "La van veure a l'escena.",
-    "Estava en una cantonada d'una habitació.",
-    "Prop seu hi havia un escriptori."
+    "Estava vora un mirall de camerino.",
+    "Tenia un micròfon a tocar.",
+    "Prop seu hi havia un pòster.",
+    "Es trobava a l'escena.",
+    "Era sobre la maleta de gira."
    ],
    "fr": [
-    "Il était installé sur le tabouret.",
-    "Il avait un mannequin tout près.",
-    "Elle a passé le temps sur la scène.",
-    "Il était dans un coin d'une pièce.",
-    "Il se tenait près d'un bureau."
+    "Il se tenait près d'un miroir de loge.",
+    "Elle était à côté d'un micro.",
+    "Elle avait une affiche tout près.",
+    "Il a passé le temps sur la scène.",
+    "Il était installé sur la valise."
    ]
   },
   "solucio": {
    "A": [
-    4,
-    3
-   ],
-   "B": [
     3,
-    4
-   ],
-   "C": [
-    2,
     2
    ],
-   "D": [
+   "B": [
     1,
     0
    ],
+   "C": [
+    2,
+    1
+   ],
+   "D": [
+    4,
+    3
+   ],
    "V": [
     0,
-    1
+    4
    ]
   },
   "assassi": "D",
-  "kpop": true
- },
- {
-  "id": "kpop-5-1-7",
-  "escenari": "kpop",
-  "n": 5,
-  "nivell": 1,
-  "pla": [
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    0,
-    0,
-    1,
-    1,
-    1
-   ]
-  ],
-  "sala": [
-   [
-    4,
-    4,
-    4,
-    4,
-    0
-   ],
-   [
-    2,
-    2,
-    4,
-    4,
-    0
-   ],
-   [
-    2,
-    2,
-    1,
-    1,
-    0
-   ],
-   [
-    2,
-    2,
-    1,
-    3,
-    0
-   ],
-   [
-    -1,
-    -1,
-    1,
-    3,
-    3
-   ]
-  ],
-  "sales": {
-   "0": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
-   },
-   "1": {
-    "ca": "camerino",
-    "fr": "loge"
-   },
-   "2": {
-    "ca": "cuina",
-    "fr": "cuisine"
-   },
-   "3": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
-   },
-   "4": {
-    "ca": "terrat",
-    "fr": "toit"
-   }
-  },
-  "obj": [
-   [
-    "fanal",
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    "pica",
-    null,
-    null,
-    null,
-    "piano"
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    "maniqui",
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    "pilota"
-   ]
-  ],
-  "objectes": {
-   "fanal": {
-    "bloqueja": true,
-    "ca": "fanal",
-    "fr": "lampadaire"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
-   },
-   "piano": {
-    "bloqueja": true,
-    "ca": "piano",
-    "fr": "piano"
-   },
-   "pica": {
-    "bloqueja": true,
-    "ca": "pica",
-    "fr": "évier"
-   },
-   "pilota": {
-    "bloqueja": false,
-    "ca": "pilota",
-    "fr": "ballon"
-   }
-  },
-  "persones": [
-   {
-    "id": "A",
-    "nom": "Mira",
-    "genere": "f",
-    "ins": "M"
-   },
-   {
-    "id": "B",
-    "nom": "Derpy",
-    "genere": "m",
-    "ins": "D"
-   },
-   {
-    "id": "C",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
-   },
-   {
-    "id": "D",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
-   },
-   {
-    "id": "V",
-    "nom": "Romance",
-    "genere": "m",
-    "ins": "R"
-   }
-  ],
-  "pistes": [
-   {
-    "t": "prop_obj",
-    "p": "V",
-    "obj": "fanal"
-   },
-   {
-    "t": "prop_obj",
-    "p": "B",
-    "obj": "pica"
-   },
-   {
-    "t": "raco",
-    "p": "D"
-   },
-   {
-    "t": "sobre_obj",
-    "p": "C",
-    "obj": "pilota"
-   },
-   {
-    "t": "en_sala",
-    "p": "A",
-    "sala": 4
-   }
-  ],
-  "textos": {
-   "ca": [
-    "Era al costat d'un fanal.",
-    "Tenia una pica a tocar.",
-    "Era en un racó d'una habitació.",
-    "Es va deixar caure sobre la pilota.",
-    "La van veure al terrat."
-   ],
-   "fr": [
-    "Il se tenait près d'un lampadaire.",
-    "Il avait un évier tout près.",
-    "Elle se tenait dans un angle d'une pièce.",
-    "Il était installé sur le ballon.",
-    "Elle a passé le temps sur le toit."
-   ]
-  },
-  "solucio": {
-   "A": [
-    1,
-    2
-   ],
-   "B": [
-    2,
-    0
-   ],
-   "C": [
-    4,
-    4
-   ],
-   "D": [
-    3,
-    3
-   ],
-   "V": [
-    0,
-    1
-   ]
-  },
-  "assassi": "A",
   "kpop": true
  },
  {
@@ -1834,8 +1852,8 @@
     1
    ],
    [
-    1,
-    1,
+    0,
+    0,
     1,
     1,
     1
@@ -1844,81 +1862,63 @@
   "sala": [
    [
     -1,
+    2,
+    2,
     0,
-    3,
-    3,
     -1
    ],
    [
-    0,
-    0,
-    3,
-    1,
-    1
-   ],
-   [
-    0,
-    0,
-    1,
-    1,
-    2
-   ],
-   [
-    4,
-    0,
-    1,
     2,
-    2
+    2,
+    2,
+    0,
+    0
    ],
    [
-    4,
-    4,
-    4,
-    4,
-    2
+    1,
+    1,
+    3,
+    0,
+    0
+   ],
+   [
+    1,
+    3,
+    3,
+    3,
+    0
+   ],
+   [
+    -1,
+    -1,
+    3,
+    3,
+    0
    ]
   ],
   "sales": {
    "0": {
-    "ca": "cuina",
-    "fr": "cuisine"
-   },
-   "1": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
-   },
-   "2": {
-    "ca": "terrat",
-    "fr": "toit"
-   },
-   "3": {
     "ca": "estudi de gravació",
     "fr": "studio"
    },
-   "4": {
-    "ca": "escena",
-    "fr": "scène"
+   "1": {
+    "ca": "terrat",
+    "fr": "toit"
+   },
+   "2": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
+   },
+   "3": {
+    "ca": "cuina",
+    "fr": "cuisine"
    }
   },
   "obj": [
    [
     null,
-    "taula",
     null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    "globus",
-    null,
-    null
-   ],
-   [
-    "forn",
-    null,
-    "mirall",
+    "epee",
     null,
     null
    ],
@@ -1926,11 +1926,25 @@
     null,
     null,
     null,
-    null,
-    "planta"
+    "synthe",
+    null
    ],
    [
-    "tel",
+    null,
+    null,
+    null,
+    "camera",
+    null
+   ],
+   [
+    "lanterne",
+    null,
+    null,
+    "bubble",
+    null
+   ],
+   [
+    null,
     null,
     null,
     null,
@@ -1938,55 +1952,50 @@
    ]
   ],
   "objectes": {
-   "forn": {
-    "bloqueja": true,
-    "ca": "forn",
-    "fr": "four"
+   "bubble": {
+    "bloqueja": false,
+    "ca": "bubble tea",
+    "fr": "bubble tea"
    },
-   "globus": {
+   "camera": {
     "bloqueja": true,
-    "ca": "globus terraqüi",
-    "fr": "globe"
+    "ca": "càmera",
+    "fr": "caméra"
    },
-   "mirall": {
-    "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
+   "epee": {
+    "bloqueja": false,
+    "ca": "espasa màgica",
+    "fr": "épée magique"
    },
-   "planta": {
+   "lanterne": {
     "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
+    "ca": "llanterna coreana",
+    "fr": "lanterne"
    },
-   "taula": {
+   "synthe": {
     "bloqueja": true,
-    "ca": "taula",
-    "fr": "table"
-   },
-   "tel": {
-    "bloqueja": true,
-    "ca": "teló",
-    "fr": "rideau"
+    "ca": "sintetitzador",
+    "fr": "synthé"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Abby",
-    "genere": "m",
-    "ins": "A"
-   },
-   {
-    "id": "B",
     "nom": "Gwi-Ma",
     "genere": "m",
     "ins": "G"
    },
    {
-    "id": "C",
-    "nom": "Rumi",
-    "genere": "f",
+    "id": "B",
+    "nom": "Romance",
+    "genere": "m",
     "ins": "R"
+   },
+   {
+    "id": "C",
+    "nom": "Bobby",
+    "genere": "m",
+    "ins": "B"
    },
    {
     "id": "D",
@@ -1996,82 +2005,76 @@
    },
    {
     "id": "V",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
+    "nom": "Zoey",
+    "genere": "f",
+    "ins": "Z"
    }
   ],
   "pistes": [
    {
-    "t": "prop_obj",
+    "t": "en_sala",
     "p": "D",
-    "obj": "tel"
+    "sala": 2
    },
    {
-    "t": "prop_obj",
+    "t": "sobre_obj",
     "p": "A",
-    "obj": "globus"
-   },
-   {
-    "t": "prop_obj",
-    "p": "C",
-    "obj": "tel"
+    "obj": "bubble"
    },
    {
     "t": "prop_obj",
     "p": "B",
-    "obj": "mirall"
+    "obj": "camera"
    },
    {
     "t": "raco",
     "p": "V"
    },
    {
-    "t": "raco",
-    "p": "C"
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "epee"
    }
   ],
   "textos": {
    "ca": [
-    "Tenia un teló a tocar.",
-    "Era al costat d'un globus terraqüi.",
-    "Prop seu hi havia un teló.",
-    "Estava vora un mirall.",
-    "Era en un racó d'una habitació.",
-    "Estava en una cantonada d'una habitació."
+    "Va passar l'estona a la sala d'assaig.",
+    "Es va deixar caure sobre el bubble tea.",
+    "Tenia una càmera a tocar.",
+    "Estava en una cantonada d'una habitació.",
+    "Estava vora una espasa màgica."
    ],
    "fr": [
-    "Il était à côté d'un rideau.",
-    "Il se tenait près d'un globe.",
-    "Elle avait un rideau tout près.",
-    "Il se tenait près d'un miroir.",
-    "Il se tenait dans un angle d'une pièce.",
-    "Elle était dans un coin d'une pièce."
+    "On l'a vu dans la salle de danse.",
+    "Il était sur le bubble tea.",
+    "Il se tenait près d'une caméra.",
+    "Elle se tenait dans un angle d'une pièce.",
+    "Il avait une épée magique tout près."
    ]
   },
   "solucio": {
    "A": [
-    0,
-    2
+    3,
+    3
    ],
    "B": [
     2,
-    3
+    4
    ],
    "C": [
-    3,
-    0
-   ],
-   "D": [
-    4,
+    0,
     1
    ],
-   "V": [
+   "D": [
     1,
-    4
+    0
+   ],
+   "V": [
+    4,
+    2
    ]
   },
-  "assassi": "B",
+  "assassi": "A",
   "kpop": true
  },
  {
@@ -2102,55 +2105,55 @@
     1
    ],
    [
-    1,
-    1,
+    0,
+    0,
     1,
     1,
     1
    ],
    [
-    1,
-    1,
-    1,
     0,
-    0
+    0,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
-    3,
-    3,
-    3,
+    2,
+    2,
+    0,
     0,
     -1
    ],
    [
-    4,
+    2,
     2,
     0,
     0,
     0
    ],
    [
-    4,
     2,
-    1,
-    0,
-    0
+    3,
+    3,
+    3,
+    3
    ],
    [
-    4,
-    2,
+    -1,
+    -1,
     1,
     1,
     1
    ],
    [
-    4,
-    2,
-    1,
     -1,
-    -1
+    -1,
+    1,
+    1,
+    1
    ]
   ],
   "sales": {
@@ -2159,39 +2162,21 @@
     "fr": "toit"
    },
    "1": {
-    "ca": "camerino",
-    "fr": "loge"
-   },
-   "2": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
-   },
-   "3": {
     "ca": "cuina",
     "fr": "cuisine"
    },
-   "4": {
+   "2": {
     "ca": "sala d'assaig",
     "fr": "salle de danse"
+   },
+   "3": {
+    "ca": "camerino",
+    "fr": "loge"
    }
   },
   "obj": [
    [
-    "taula",
     null,
-    null,
-    "fanal",
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    "banc"
-   ],
-   [
-    "pilota",
     null,
     null,
     null,
@@ -2199,49 +2184,53 @@
    ],
    [
     null,
-    null,
-    "maniqui",
+    "lightstick",
+    "chapeau",
     null,
     null
    ],
    [
     null,
-    "escriptori",
+    null,
+    null,
+    null,
+    "valise"
+   ],
+   [
+    null,
+    null,
     null,
     null,
     null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "cadeau"
    ]
   ],
   "objectes": {
-   "banc": {
+   "cadeau": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "caixa de regal",
+    "fr": "boîte cadeau"
    },
-   "escriptori": {
-    "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
-   },
-   "fanal": {
-    "bloqueja": true,
-    "ca": "fanal",
-    "fr": "lampadaire"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
-   },
-   "pilota": {
+   "chapeau": {
     "bloqueja": false,
-    "ca": "pilota",
-    "fr": "ballon"
+    "ca": "barret gat",
+    "fr": "chapeau gat"
    },
-   "taula": {
-    "bloqueja": true,
-    "ca": "taula",
-    "fr": "table"
+   "lightstick": {
+    "bloqueja": false,
+    "ca": "bastó lluminós",
+    "fr": "light stick"
+   },
+   "valise": {
+    "bloqueja": false,
+    "ca": "maleta de gira",
+    "fr": "valise"
    }
   },
   "persones": [
@@ -2259,88 +2248,88 @@
    },
    {
     "id": "C",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
-   },
-   {
-    "id": "D",
     "nom": "Sussie",
     "genere": "f",
     "ins": "S"
    },
    {
+    "id": "D",
+    "nom": "Baby",
+    "genere": "m",
+    "ins": "B"
+   },
+   {
     "id": "V",
-    "nom": "Mira",
-    "genere": "f",
-    "ins": "M"
+    "nom": "Abby",
+    "genere": "m",
+    "ins": "A"
    }
   ],
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "C",
-    "obj": "banc"
-   },
-   {
-    "t": "prop_obj",
-    "p": "V",
-    "obj": "fanal"
-   },
-   {
-    "t": "prop_obj",
     "p": "B",
-    "obj": "escriptori"
+    "obj": "cadeau"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "D",
+    "obj": "lightstick"
    },
    {
     "t": "en_sala",
+    "p": "V",
+    "sala": 2
+   },
+   {
+    "t": "sobre_obj",
     "p": "A",
-    "sala": 4
+    "obj": "valise"
    },
    {
     "t": "raco",
-    "p": "D"
+    "p": "C"
    }
   ],
   "textos": {
    "ca": [
-    "Prop seu hi havia un banc.",
-    "Era al costat d'un fanal.",
-    "Tenia un escriptori a tocar.",
-    "Estava a la sala d'assaig.",
-    "Va quedar-se en un racó d'una habitació."
+    "Prop seu hi havia una caixa de regal.",
+    "Es va deixar caure sobre el bastó lluminós.",
+    "Va passar l'estona a la sala d'assaig.",
+    "Era sobre la maleta de gira.",
+    "Era en un racó d'una habitació."
    ],
    "fr": [
-    "Elle avait un banc tout près.",
-    "Elle était à côté d'un lampadaire.",
-    "Il se tenait près d'un bureau.",
+    "Il était à côté d'une boîte cadeau.",
+    "Il était installé sur le light stick.",
     "Il était dans la salle de danse.",
+    "Il se tenait sur la valise.",
     "Elle était dans un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    4,
-    0
-   ],
-   "B": [
-    3,
-    1
-   ],
-   "C": [
     2,
     4
    ],
-   "D": [
-    0,
+   "B": [
+    4,
+    3
+   ],
+   "C": [
+    3,
     2
    ],
-   "V": [
+   "D": [
     1,
-    3
+    1
+   ],
+   "V": [
+    0,
+    0
    ]
   },
-  "assassi": "C",
+  "assassi": "D",
   "kpop": true
  },
  {
@@ -2350,13 +2339,6 @@
   "nivell": 1,
   "pla": [
    [
-    0,
-    1,
-    1,
-    1,
-    0
-   ],
-   [
     1,
     1,
     1,
@@ -2382,70 +2364,87 @@
     1,
     1,
     1,
-    0
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
-    -1,
-    1,
-    1,
-    4,
-    -1
-   ],
-   [
     2,
     2,
-    1,
-    4,
+    2,
+    2,
     0
    ],
    [
     2,
     1,
     1,
-    4,
+    0,
     0
    ],
    [
     2,
-    2,
-    2,
-    4,
+    1,
+    1,
+    0,
     0
    ],
    [
+    1,
+    1,
+    1,
+    3,
+    3
+   ],
+   [
+    1,
     3,
     3,
     3,
-    3,
-    -1
+    3
    ]
   ],
   "sales": {
    "0": {
-    "ca": "escena",
-    "fr": "scène"
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
    },
    "1": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
-   },
-   "2": {
     "ca": "cuina",
     "fr": "cuisine"
+   },
+   "2": {
+    "ca": "camerino",
+    "fr": "loge"
    },
    "3": {
     "ca": "terrat",
     "fr": "toit"
-   },
-   "4": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
    }
   },
   "obj": [
    [
+    "miroirloge",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "lightstick",
+    null
+   ],
+   [
     null,
     null,
     null,
@@ -2454,158 +2453,144 @@
    ],
    [
     null,
-    null,
-    null,
-    null,
-    "tamboret"
-   ],
-   [
-    null,
-    null,
-    "globus",
-    "mirall",
-    null
-   ],
-   [
-    "forn",
-    null,
+    "bubble",
     null,
     null,
     null
    ],
    [
     null,
-    "banc",
     null,
+    "chapeau",
     null,
     null
    ]
   ],
   "objectes": {
-   "banc": {
+   "bubble": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "bubble tea",
+    "fr": "bubble tea"
    },
-   "forn": {
-    "bloqueja": true,
-    "ca": "forn",
-    "fr": "four"
-   },
-   "globus": {
-    "bloqueja": true,
-    "ca": "globus terraqüi",
-    "fr": "globe"
-   },
-   "mirall": {
-    "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
-   },
-   "tamboret": {
+   "chapeau": {
     "bloqueja": false,
-    "ca": "tamboret",
-    "fr": "tabouret"
+    "ca": "barret gat",
+    "fr": "chapeau gat"
+   },
+   "lightstick": {
+    "bloqueja": false,
+    "ca": "bastó lluminós",
+    "fr": "light stick"
+   },
+   "miroirloge": {
+    "bloqueja": true,
+    "ca": "mirall de camerino",
+    "fr": "miroir de loge"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
-   },
-   {
-    "id": "B",
     "nom": "Sussie",
     "genere": "f",
     "ins": "S"
    },
    {
+    "id": "B",
+    "nom": "Zoey",
+    "genere": "f",
+    "ins": "Z"
+   },
+   {
     "id": "C",
-    "nom": "Mystery",
-    "genere": "m",
-    "ins": "M"
-   },
-   {
-    "id": "D",
-    "nom": "Abby",
-    "genere": "m",
-    "ins": "A"
-   },
-   {
-    "id": "V",
     "nom": "Jinu",
     "genere": "m",
     "ins": "J"
+   },
+   {
+    "id": "D",
+    "nom": "Rumi",
+    "genere": "f",
+    "ins": "R"
+   },
+   {
+    "id": "V",
+    "nom": "Mystery",
+    "genere": "m",
+    "ins": "M"
    }
   ],
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "B",
-    "obj": "globus"
+    "p": "C",
+    "obj": "lightstick"
    },
    {
     "t": "sobre_obj",
     "p": "A",
-    "obj": "tamboret"
-   },
-   {
-    "t": "en_sala",
-    "p": "V",
-    "sala": 1
+    "obj": "chapeau"
    },
    {
     "t": "prop_obj",
-    "p": "C",
-    "obj": "banc"
+    "p": "D",
+    "obj": "bubble"
    },
    {
-    "t": "en_sala",
-    "p": "D",
-    "sala": 4
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "bubble"
+   },
+   {
+    "t": "raco",
+    "p": "B"
+   },
+   {
+    "t": "raco",
+    "p": "V"
    }
   ],
   "textos": {
    "ca": [
-    "Tenia un globus terraqüi a tocar.",
-    "Era sobre el tamboret.",
-    "Estava a l'estudi de gravació.",
-    "Estava vora un banc.",
-    "Era a la sala d'assaig."
+    "Era al costat d'un bastó lluminós.",
+    "Era sobre el barret gat.",
+    "Prop seu hi havia un bubble tea.",
+    "Estava vora un bubble tea.",
+    "Era en un racó d'una habitació.",
+    "Va quedar-se en un racó d'una habitació."
    ],
    "fr": [
-    "Elle se tenait près d'un globe.",
-    "Elle se tenait sur le tabouret.",
-    "Il a passé le temps dans le studio.",
-    "Il était à côté d'un banc.",
-    "Il était dans la salle de danse."
+    "Il était à côté d'un light stick.",
+    "Elle était sur le chapeau gat.",
+    "Elle avait un bubble tea tout près.",
+    "Il se tenait près d'un bubble tea.",
+    "Elle se tenait dans un angle d'une pièce.",
+    "Il occupait un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
+    4,
+    2
+   ],
+   "B": [
+    0,
+    3
+   ],
+   "C": [
     1,
     4
    ],
-   "B": [
+   "D": [
     2,
     1
    ],
-   "C": [
-    4,
-    0
-   ],
-   "D": [
-    3,
-    3
-   ],
    "V": [
-    0,
-    2
+    3,
+    0
    ]
   },
-  "assassi": "B",
+  "assassi": "D",
   "kpop": true
  },
  {
@@ -2625,8 +2610,8 @@
     1,
     1,
     1,
-    1,
-    1
+    0,
+    0
    ],
    [
     1,
@@ -2659,72 +2644,62 @@
     -1
    ],
    [
-    1,
     3,
     3,
-    0,
-    2
+    3,
+    -1,
+    -1
    ],
    [
+    4,
+    3,
     1,
-    0,
-    0,
-    0,
-    2
+    1,
+    0
    ],
    [
-    1,
-    1,
-    0,
-    0,
-    2
-   ],
-   [
-    1,
-    1,
-    1,
+    4,
+    3,
     2,
-    2
+    1,
+    0
+   ],
+   [
+    4,
+    2,
+    2,
+    2,
+    0
    ]
   ],
   "sales": {
    "0": {
-    "ca": "terrat",
-    "fr": "toit"
+    "ca": "cuina",
+    "fr": "cuisine"
    },
    "1": {
-    "ca": "escena",
-    "fr": "scène"
-   },
-   "2": {
     "ca": "camerino",
     "fr": "loge"
    },
+   "2": {
+    "ca": "escena",
+    "fr": "scène"
+   },
    "3": {
-    "ca": "cuina",
-    "fr": "cuisine"
+    "ca": "terrat",
+    "fr": "toit"
+   },
+   "4": {
+    "ca": "estudi de gravació",
+    "fr": "studio"
    }
   },
   "obj": [
    [
     null,
     null,
-    "caixa",
-    null,
-    null
-   ],
-   [
     null,
     null,
-    null,
-    "planta",
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    "planta",
     null
    ],
    [
@@ -2735,132 +2710,152 @@
     null
    ],
    [
-    "reflector",
+    null,
+    "chapeau",
+    null,
+    null,
+    "distributeur"
+   ],
+   [
+    null,
+    null,
+    "projecteur",
+    "canape",
+    null
+   ],
+   [
+    "console",
     null,
     null,
     null,
-    "sofa"
+    null
    ]
   ],
   "objectes": {
-   "caixa": {
-    "bloqueja": true,
-    "ca": "caixa",
-    "fr": "caisse"
-   },
-   "planta": {
-    "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
-   },
-   "reflector": {
-    "bloqueja": true,
-    "ca": "reflector",
-    "fr": "projecteur"
-   },
-   "sofa": {
+   "canape": {
     "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+    "ca": "sofà rosa",
+    "fr": "canapé rose"
+   },
+   "chapeau": {
+    "bloqueja": false,
+    "ca": "barret gat",
+    "fr": "chapeau gat"
+   },
+   "console": {
+    "bloqueja": true,
+    "ca": "taula de DJ",
+    "fr": "console DJ"
+   },
+   "distributeur": {
+    "bloqueja": true,
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
+   },
+   "projecteur": {
+    "bloqueja": true,
+    "ca": "projector d'escena",
+    "fr": "projecteur"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
-   },
-   {
-    "id": "B",
     "nom": "Derpy",
     "genere": "m",
     "ins": "D"
    },
    {
-    "id": "C",
+    "id": "B",
     "nom": "Gwi-Ma",
     "genere": "m",
     "ins": "G"
    },
    {
-    "id": "D",
+    "id": "C",
     "nom": "Abby",
     "genere": "m",
     "ins": "A"
    },
    {
+    "id": "D",
+    "nom": "Rumi",
+    "genere": "f",
+    "ins": "R"
+   },
+   {
     "id": "V",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
    }
   ],
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "V",
-    "obj": "sofa"
-   },
-   {
-    "t": "prop_obj",
-    "p": "B",
-    "obj": "sofa"
+    "p": "A",
+    "obj": "distributeur"
    },
    {
     "t": "prop_obj",
     "p": "C",
-    "obj": "planta"
+    "obj": "chapeau"
    },
    {
     "t": "en_sala",
-    "p": "A",
+    "p": "D",
     "sala": 1
    },
    {
-    "t": "raco",
-    "p": "V"
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "projecteur"
+   },
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 3
    }
   ],
   "textos": {
    "ca": [
-    "Tenia un sofà a tocar.",
-    "Estava vora un sofà.",
-    "Era al costat d'una planta.",
-    "Es trobava a l'escena.",
-    "Ocupava un racó d'una habitació."
+    "Estava vora una màquina de snacks.",
+    "Era al costat d'un barret gat.",
+    "Es trobava al camerino.",
+    "Tenia un projector d'escena a tocar.",
+    "Va passar l'estona al terrat."
    ],
    "fr": [
-    "Il se tenait près d'un canapé.",
-    "Il était à côté d'un canapé.",
-    "Il avait une plante tout près.",
-    "Elle a passé le temps sur la scène.",
-    "Il se tenait dans un angle d'une pièce."
+    "Il était à côté d'un distributeur.",
+    "Il se tenait près d'un chapeau gat.",
+    "On l'a vue dans la loge.",
+    "Il avait un projecteur tout près.",
+    "Elle a passé le temps sur le toit."
    ]
   },
   "solucio": {
    "A": [
-    1,
-    0
-   ],
-   "B": [
     3,
     4
    ],
-   "C": [
-    2,
+   "B": [
+    4,
     2
    ],
-   "D": [
-    0,
+   "C": [
+    1,
     1
    ],
-   "V": [
-    4,
+   "D": [
+    2,
     3
+   ],
+   "V": [
+    0,
+    0
    ]
   },
-  "assassi": "B",
+  "assassi": "C",
   "kpop": true
  },
  {
@@ -2870,127 +2865,127 @@
   "nivell": 1,
   "pla": [
    [
-    0,
-    0,
-    1,
-    1,
-    1
-   ],
-   [
-    0,
-    0,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
     1,
     1,
     1,
     1,
     0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
-    -1,
-    -1,
     3,
     3,
-    3
-   ],
-   [
-    -1,
-    -1,
     3,
-    2,
-    3
-   ],
-   [
-    0,
-    0,
-    1,
-    2,
-    2
-   ],
-   [
-    0,
-    0,
-    1,
-    2,
-    2
-   ],
-   [
-    0,
-    1,
-    1,
-    2,
+    3,
     -1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0
    ]
   ],
   "sales": {
    "0": {
-    "ca": "camerino",
-    "fr": "loge"
+    "ca": "escena",
+    "fr": "scène"
    },
    "1": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
+   },
+   "2": {
     "ca": "cuina",
     "fr": "cuisine"
    },
-   "2": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
-   },
    "3": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
+    "ca": "camerino",
+    "fr": "loge"
    }
   },
   "obj": [
    [
-    null,
-    null,
-    "banc",
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    "escriptori",
-    null
-   ],
-   [
-    null,
-    null,
-    "caixa",
-    null,
-    null
-   ],
-   [
-    null,
+    "canape",
     null,
     null,
     null,
     null
    ],
    [
-    "sofa",
+    null,
+    null,
+    null,
+    null,
+    "epee"
+   ],
+   [
+    null,
+    null,
+    "distributeur",
+    null,
+    "micro"
+   ],
+   [
+    null,
+    null,
+    "distributeur",
+    null,
+    null
+   ],
+   [
+    null,
     null,
     null,
     null,
@@ -2998,33 +2993,33 @@
    ]
   ],
   "objectes": {
-   "banc": {
+   "canape": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "sofà rosa",
+    "fr": "canapé rose"
    },
-   "caixa": {
+   "distributeur": {
     "bloqueja": true,
-    "ca": "caixa",
-    "fr": "caisse"
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
    },
-   "escriptori": {
-    "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
-   },
-   "sofa": {
+   "epee": {
     "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+    "ca": "espasa màgica",
+    "fr": "épée magique"
+   },
+   "micro": {
+    "bloqueja": false,
+    "ca": "micròfon",
+    "fr": "micro"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Gwi-Ma",
+    "nom": "Jinu",
     "genere": "m",
-    "ins": "G"
+    "ins": "J"
    },
    {
     "id": "B",
@@ -3034,102 +3029,108 @@
    },
    {
     "id": "C",
-    "nom": "Abby",
-    "genere": "m",
-    "ins": "A"
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
    },
    {
     "id": "D",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
+    "nom": "Mira",
+    "genere": "f",
+    "ins": "M"
    },
    {
     "id": "V",
-    "nom": "Zoey",
+    "nom": "Rumi",
     "genere": "f",
-    "ins": "Z"
+    "ins": "R"
    }
   ],
   "pistes": [
    {
-    "t": "prop_obj",
-    "p": "A",
-    "obj": "banc"
+    "t": "en_sala",
+    "p": "B",
+    "sala": 1
    },
    {
-    "t": "prop_obj",
-    "p": "V",
-    "obj": "sofa"
+    "t": "sobre_obj",
+    "p": "D",
+    "obj": "canape"
    },
    {
     "t": "en_sala",
     "p": "C",
-    "sala": 0
+    "sala": 2
    },
    {
-    "t": "en_sala",
-    "p": "D",
-    "sala": 1
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "micro"
    },
    {
     "t": "raco",
-    "p": "B"
+    "p": "A"
+   },
+   {
+    "t": "raco",
+    "p": "C"
    }
   ],
   "textos": {
    "ca": [
-    "Prop seu hi havia un banc.",
-    "Tenia un sofà a tocar.",
-    "Es trobava al camerino.",
-    "Estava a la cuina.",
-    "Va quedar-se en un racó d'una habitació."
+    "El van veure a la sala d'assaig.",
+    "Estava damunt el sofà rosa.",
+    "Va passar l'estona a la cuina.",
+    "Era al costat d'un micròfon.",
+    "Estava en una cantonada d'una habitació.",
+    "Ocupava un racó d'una habitació."
    ],
    "fr": [
-    "Il était à côté d'un banc.",
-    "Elle se tenait près d'un canapé.",
-    "Il était dans la loge.",
-    "Il se trouvait dans la cuisine.",
-    "Il occupait un coin d'une pièce."
+    "Il se trouvait dans la salle de danse.",
+    "Elle se tenait sur le canapé rose.",
+    "Elle a passé le temps dans la cuisine.",
+    "Elle se tenait près d'un micro.",
+    "Il occupait un coin d'une pièce.",
+    "Elle était dans un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    0,
-    3
-   ],
-   "B": [
-    1,
-    4
-   ],
-   "C": [
-    2,
-    1
-   ],
-   "D": [
     4,
     2
    ],
+   "B": [
+    1,
+    1
+   ],
+   "C": [
+    2,
+    3
+   ],
+   "D": [
+    0,
+    0
+   ],
    "V": [
     3,
-    0
+    4
    ]
   },
-  "assassi": "C",
+  "assassi": "A",
   "kpop": true
  },
  {
   "id": "kpop-6-101-1",
   "escenari": "kpop",
   "n": 6,
-  "nivell": 2,
+  "nivell": 1,
   "pla": [
    [
     0,
+    1,
+    1,
+    1,
     0,
-    1,
-    1,
-    1,
     0
    ],
    [
@@ -3138,107 +3139,111 @@
     1,
     1,
     1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
     0
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    0,
-    0,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    0,
-    0,
-    1,
-    1,
-    1,
-    1
    ]
   ],
   "sala": [
    [
     -1,
+    0,
+    0,
+    2,
     -1,
-    3,
-    3,
-    3,
     -1
    ],
    [
     0,
     0,
     0,
+    2,
+    2,
+    1
+   ],
+   [
     0,
+    0,
+    0,
+    2,
+    2,
+    1
+   ],
+   [
+    4,
+    4,
+    3,
+    3,
+    3,
+    1
+   ],
+   [
+    -1,
+    4,
+    4,
+    4,
+    3,
+    1
+   ],
+   [
+    -1,
+    4,
+    4,
+    4,
     3,
     -1
-   ],
-   [
-    0,
-    0,
-    0,
-    0,
-    3,
-    3
-   ],
-   [
-    0,
-    0,
-    0,
-    1,
-    2,
-    3
-   ],
-   [
-    -1,
-    -1,
-    1,
-    1,
-    2,
-    3
-   ],
-   [
-    -1,
-    -1,
-    1,
-    2,
-    2,
-    3
    ]
   ],
   "sales": {
    "0": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
+    "ca": "cuina",
+    "fr": "cuisine"
    },
    "1": {
-    "ca": "camerino",
-    "fr": "loge"
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
    },
    "2": {
     "ca": "terrat",
     "fr": "toit"
    },
    "3": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
+    "ca": "escena",
+    "fr": "scène"
+   },
+   "4": {
+    "ca": "estudi de gravació",
+    "fr": "studio"
    }
   },
   "obj": [
@@ -3246,22 +3251,6 @@
     null,
     null,
     null,
-    "pilota",
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    "escriptori",
-    null,
-    null,
     null,
     null,
     null
@@ -3271,159 +3260,179 @@
     null,
     null,
     null,
+    "chapeau",
+    null
+   ],
+   [
+    "bubble",
+    "ramen",
+    null,
+    null,
     null,
     null
    ],
    [
     null,
     null,
-    "sofa",
     null,
-    "banc",
-    null
+    null,
+    null,
+    "eventail"
    ],
    [
     null,
     null,
     null,
+    null,
+    "projecteur",
+    null
+   ],
+   [
+    null,
+    null,
+    "console",
     null,
     null,
     null
    ]
   ],
   "objectes": {
-   "banc": {
+   "bubble": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "bubble tea",
+    "fr": "bubble tea"
    },
-   "escriptori": {
+   "chapeau": {
+    "bloqueja": false,
+    "ca": "barret gat",
+    "fr": "chapeau gat"
+   },
+   "console": {
     "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
+    "ca": "taula de DJ",
+    "fr": "console DJ"
    },
-   "pilota": {
+   "eventail": {
     "bloqueja": false,
-    "ca": "pilota",
-    "fr": "ballon"
+    "ca": "ventall",
+    "fr": "éventail"
    },
-   "sofa": {
+   "projecteur": {
+    "bloqueja": true,
+    "ca": "projector d'escena",
+    "fr": "projecteur"
+   },
+   "ramen": {
     "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+    "ca": "bol de ramen",
+    "fr": "bol de ramen"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Romance",
-    "genere": "m",
-    "ins": "R"
-   },
-   {
-    "id": "B",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
-   },
-   {
-    "id": "C",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
-   },
-   {
-    "id": "D",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
-   },
-   {
-    "id": "E",
     "nom": "Sussie",
     "genere": "f",
     "ins": "S"
    },
    {
-    "id": "V",
-    "nom": "Mira",
+    "id": "B",
+    "nom": "Baby",
+    "genere": "m",
+    "ins": "B"
+   },
+   {
+    "id": "C",
+    "nom": "Zoey",
     "genere": "f",
+    "ins": "Z"
+   },
+   {
+    "id": "D",
+    "nom": "Gwi-Ma",
+    "genere": "m",
+    "ins": "G"
+   },
+   {
+    "id": "E",
+    "nom": "Mystery",
+    "genere": "m",
     "ins": "M"
+   },
+   {
+    "id": "V",
+    "nom": "Jinu",
+    "genere": "m",
+    "ins": "J"
    }
   ],
   "pistes": [
    {
-    "t": "sobre_obj",
-    "p": "C",
-    "obj": "banc"
+    "t": "prop_obj",
+    "p": "E",
+    "obj": "console"
    },
    {
     "t": "en_sala",
-    "p": "E",
-    "sala": 3
+    "p": "V",
+    "sala": 4
    },
    {
-    "t": "raco",
-    "p": "D"
+    "t": "prop_obj",
+    "p": "D",
+    "obj": "chapeau"
    },
    {
-    "t": "raco",
-    "p": "B"
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "chapeau"
    },
    {
     "t": "prop_obj",
     "p": "A",
-    "obj": "escriptori"
+    "obj": "eventail"
    },
    {
-    "t": "prop_obj",
-    "p": "V",
-    "obj": "pilota"
-   },
-   {
-    "t": "compte_sala",
-    "sala": 0,
-    "k": 3
-   },
-   {
-    "t": "prop_obj",
+    "t": "en_sala",
     "p": "B",
-    "obj": "escriptori"
+    "sala": 0
+   },
+   {
+    "t": "raco",
+    "p": "C"
    }
   ],
   "textos": {
    "ca": [
-    "Era sobre el banc.",
-    "Va passar l'estona a la sala d'assaig.",
-    "Era en un racó d'una habitació.",
-    "Ocupava un racó d'una habitació.",
-    "Prop seu hi havia un escriptori.",
-    "Estava vora una pilota.",
-    "L'estudi de gravació acollia 3 persones, comptant la víctima.",
-    "Tenia un escriptori a tocar."
+    "Estava vora una taula de DJ.",
+    "El van veure a l'estudi de gravació.",
+    "Prop seu hi havia un barret gat.",
+    "Era al costat d'un barret gat.",
+    "Tenia un ventall a tocar.",
+    "Es trobava a la cuina.",
+    "Estava en una cantonada d'una habitació."
    ],
    "fr": [
-    "Il était installé sur le banc.",
-    "Elle était dans la salle de danse.",
-    "Il occupait un coin d'une pièce.",
-    "Elle se tenait dans un angle d'une pièce.",
-    "Il avait un bureau tout près.",
-    "Elle se tenait près d'un ballon.",
-    "Le studio accueillait 3 personnes, victime comprise.",
-    "Elle était à côté d'un bureau."
+    "Il se tenait près d'une console DJ.",
+    "Il a passé le temps dans le studio.",
+    "Il était à côté d'un chapeau gat.",
+    "Elle avait un chapeau gat tout près.",
+    "Elle avait un éventail tout près.",
+    "Il se trouvait dans la cuisine.",
+    "Elle occupait un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    2,
-    1
+    4,
+    5
    ],
    "B": [
-    3,
-    0
+    0,
+    2
    ],
    "C": [
-    4,
+    2,
     4
    ],
    "D": [
@@ -3432,11 +3441,11 @@
    ],
    "E": [
     5,
-    5
+    1
    ],
    "V": [
-    0,
-    2
+    3,
+    0
    ]
   },
   "assassi": "E",
@@ -3453,44 +3462,44 @@
     1,
     1,
     1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
     0,
-    0
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
+    0,
     1,
     1,
     1,
@@ -3499,51 +3508,51 @@
   ],
   "sala": [
    [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    0,
+    0,
     1,
+    1
+   ],
+   [
+    3,
+    3,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
     3,
     3,
     3,
+    4,
+    4,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    4,
+    4,
+    4
+   ],
+   [
     -1,
-    -1
-   ],
-   [
-    1,
+    -1,
     3,
-    3,
-    3,
-    3,
-    2
-   ],
-   [
-    1,
-    1,
-    1,
-    3,
-    2,
-    2
-   ],
-   [
-    1,
-    1,
-    1,
-    0,
-    2,
-    2
-   ],
-   [
-    0,
-    0,
-    0,
-    0,
-    2,
-    2
-   ],
-   [
-    0,
-    0,
-    0,
-    2,
-    2,
+    4,
+    4,
     -1
    ]
   ],
@@ -3553,14 +3562,18 @@
     "fr": "salle de danse"
    },
    "1": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "2": {
     "ca": "escena",
     "fr": "scène"
    },
-   "2": {
-    "ca": "estudi de gravació",
-    "fr": "studio"
-   },
    "3": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "4": {
     "ca": "terrat",
     "fr": "toit"
    }
@@ -3568,7 +3581,39 @@
   "obj": [
    [
     null,
-    "planta",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "projecteur",
+    null,
+    null,
+    "affiche",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "ramen",
+    null
+   ],
+   [
+    null,
+    "miroirloge",
+    null,
+    null,
+    "lanterne",
+    null
+   ],
+   [
+    null,
+    "canape",
     null,
     null,
     null,
@@ -3579,199 +3624,162 @@
     null,
     null,
     null,
-    "banc",
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    "tamboret",
-    null,
-    "reflector",
-    null,
-    "globus",
-    "escriptori"
-   ],
-   [
-    "mirall",
-    "banc",
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    null,
+    "chapeau",
     null
    ]
   ],
   "objectes": {
-   "banc": {
+   "affiche": {
+    "bloqueja": true,
+    "ca": "pòster",
+    "fr": "affiche"
+   },
+   "canape": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "sofà rosa",
+    "fr": "canapé rose"
    },
-   "escriptori": {
-    "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
+   "chapeau": {
+    "bloqueja": false,
+    "ca": "barret gat",
+    "fr": "chapeau gat"
    },
-   "globus": {
+   "lanterne": {
     "bloqueja": true,
-    "ca": "globus terraqüi",
-    "fr": "globe"
+    "ca": "llanterna coreana",
+    "fr": "lanterne"
    },
-   "mirall": {
+   "miroirloge": {
     "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
+    "ca": "mirall de camerino",
+    "fr": "miroir de loge"
    },
-   "planta": {
+   "projecteur": {
     "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
-   },
-   "reflector": {
-    "bloqueja": true,
-    "ca": "reflector",
+    "ca": "projector d'escena",
     "fr": "projecteur"
    },
-   "tamboret": {
+   "ramen": {
     "bloqueja": false,
-    "ca": "tamboret",
-    "fr": "tabouret"
+    "ca": "bol de ramen",
+    "fr": "bol de ramen"
    }
   },
   "persones": [
    {
     "id": "A",
+    "nom": "Derpy",
+    "genere": "m",
+    "ins": "D"
+   },
+   {
+    "id": "B",
     "nom": "Abby",
     "genere": "m",
     "ins": "A"
    },
    {
-    "id": "B",
-    "nom": "Romance",
-    "genere": "m",
-    "ins": "R"
-   },
-   {
     "id": "C",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
    },
    {
     "id": "D",
-    "nom": "Mira",
-    "genere": "f",
-    "ins": "M"
+    "nom": "Bobby",
+    "genere": "m",
+    "ins": "B"
    },
    {
     "id": "E",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
+    "nom": "Rumi",
+    "genere": "f",
+    "ins": "R"
    },
    {
     "id": "V",
-    "nom": "Baby",
+    "nom": "Gwi-Ma",
     "genere": "m",
-    "ins": "B"
+    "ins": "G"
    }
   ],
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "B",
-    "obj": "reflector"
-   },
-   {
-    "t": "prop_obj",
     "p": "A",
-    "obj": "escriptori"
-   },
-   {
-    "t": "prop_obj",
-    "p": "C",
-    "obj": "planta"
+    "obj": "projecteur"
    },
    {
     "t": "en_sala",
-    "p": "V",
+    "p": "C",
     "sala": 1
    },
    {
-    "t": "en_sala",
+    "t": "prop_obj",
     "p": "D",
+    "obj": "miroirloge"
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
     "sala": 0
    },
    {
-    "t": "raco",
-    "p": "E"
+    "t": "sobre_obj",
+    "p": "B",
+    "obj": "chapeau"
    },
    {
-    "t": "raco",
-    "p": "A"
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "ramen"
    }
   ],
   "textos": {
    "ca": [
-    "Tenia un reflector a tocar.",
-    "Prop seu hi havia un escriptori.",
-    "Era al costat d'una planta.",
-    "El van veure a l'escena.",
+    "Tenia un projector d'escena a tocar.",
+    "Es trobava a la cuina.",
+    "Prop seu hi havia un mirall de camerino.",
     "Era a la sala d'assaig.",
-    "Va quedar-se en un racó d'una habitació.",
-    "Estava en una cantonada d'una habitació."
+    "Va quedar-se sobre el barret gat.",
+    "Estava vora un bol de ramen."
    ],
    "fr": [
-    "Il était à côté d'un projecteur.",
-    "Il avait un bureau tout près.",
-    "Il se tenait près d'une plante.",
-    "Il se trouvait sur la scène.",
-    "Elle a passé le temps dans la salle de danse.",
-    "Il était dans un coin d'une pièce.",
-    "Il se tenait dans un angle d'une pièce."
+    "Il avait un projecteur tout près.",
+    "On l'a vue dans la cuisine.",
+    "Il était à côté d'un miroir de loge.",
+    "Elle se trouvait dans la salle de danse.",
+    "Il se tenait sur le chapeau gat.",
+    "Il se tenait près d'un bol de ramen."
    ]
   },
   "solucio": {
    "A": [
-    4,
-    5
+    0,
+    0
    ],
    "B": [
-    2,
-    2
-   ],
-   "C": [
-    1,
-    1
-   ],
-   "D": [
-    3,
-    3
-   ],
-   "E": [
     5,
     4
    ],
+   "C": [
+    3,
+    5
+   ],
+   "D": [
+    4,
+    1
+   ],
+   "E": [
+    1,
+    2
+   ],
    "V": [
-    0,
-    0
+    2,
+    3
    ]
   },
-  "assassi": "B",
+  "assassi": "C",
   "kpop": true
  },
  {
@@ -3782,39 +3790,7 @@
   "pla": [
    [
     0,
-    1,
-    1,
-    1,
     0,
-    0
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
     1,
     1,
     1,
@@ -3822,77 +3798,113 @@
    ],
    [
     0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
     1,
     1,
     1,
     1,
-    0
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
    ]
   ],
   "sala": [
    [
     -1,
-    3,
-    3,
-    3,
     -1,
-    -1
-   ],
-   [
-    3,
-    3,
-    2,
     1,
     1,
-    1
-   ],
-   [
-    3,
-    2,
-    2,
-    2,
-    2,
-    1
-   ],
-   [
-    3,
-    2,
-    0,
-    2,
     1,
-    1
-   ],
-   [
-    3,
-    2,
-    0,
-    0,
-    0,
     1
    ],
    [
     -1,
+    -1,
+    1,
+    1,
     0,
+    0
+   ],
+   [
+    3,
+    3,
+    3,
+    1,
     0,
-    0,
-    0,
-    -1
+    0
+   ],
+   [
+    3,
+    3,
+    3,
+    4,
+    4,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    4,
+    4,
+    4
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    4,
+    4
    ]
   ],
   "sales": {
    "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
     "ca": "terrat",
     "fr": "toit"
    },
-   "1": {
+   "2": {
     "ca": "sala d'assaig",
     "fr": "salle de danse"
    },
-   "2": {
-    "ca": "escena",
-    "fr": "scène"
-   },
    "3": {
+    "ca": "estudi de gravació",
+    "fr": "studio"
+   },
+   "4": {
     "ca": "camerino",
     "fr": "loge"
    }
@@ -3901,34 +3913,10 @@
    [
     null,
     null,
-    "sofa",
     null,
     null,
-    null
-   ],
-   [
-    "mirall",
     null,
-    null,
-    "pilota",
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    "tel",
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    "planta",
-    null,
-    null,
-    null
+    "cerisier"
    ],
    [
     null,
@@ -3940,154 +3928,183 @@
    ],
    [
     null,
-    "planta",
+    null,
+    "camera",
+    null,
+    "distributeur",
+    null
+   ],
+   [
+    null,
+    null,
+    "synthe",
+    null,
+    null,
+    null
+   ],
+   [
+    "affiche",
     null,
     null,
     null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "photocards",
     null
    ]
   ],
   "objectes": {
-   "mirall": {
+   "affiche": {
     "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
+    "ca": "pòster",
+    "fr": "affiche"
    },
-   "pilota": {
-    "bloqueja": false,
-    "ca": "pilota",
-    "fr": "ballon"
-   },
-   "planta": {
+   "camera": {
     "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
+    "ca": "càmera",
+    "fr": "caméra"
    },
-   "sofa": {
-    "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
-   },
-   "tel": {
+   "cerisier": {
     "bloqueja": true,
-    "ca": "teló",
-    "fr": "rideau"
+    "ca": "cirerer en flor",
+    "fr": "cerisier"
+   },
+   "distributeur": {
+    "bloqueja": true,
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
+   },
+   "photocards": {
+    "bloqueja": true,
+    "ca": "expositor de fotocards",
+    "fr": "présentoir"
+   },
+   "synthe": {
+    "bloqueja": true,
+    "ca": "sintetitzador",
+    "fr": "synthé"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Mystery",
+    "nom": "Derpy",
     "genere": "m",
-    "ins": "M"
+    "ins": "D"
    },
    {
     "id": "B",
-    "nom": "Rumi",
+    "nom": "Zoey",
     "genere": "f",
-    "ins": "R"
+    "ins": "Z"
    },
    {
     "id": "C",
+    "nom": "Abby",
+    "genere": "m",
+    "ins": "A"
+   },
+   {
+    "id": "D",
+    "nom": "Baby",
+    "genere": "m",
+    "ins": "B"
+   },
+   {
+    "id": "E",
     "nom": "Jinu",
     "genere": "m",
     "ins": "J"
    },
    {
-    "id": "D",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
-   },
-   {
-    "id": "E",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
-   },
-   {
     "id": "V",
-    "nom": "Abby",
-    "genere": "m",
-    "ins": "A"
+    "nom": "Rumi",
+    "genere": "f",
+    "ins": "R"
    }
   ],
   "pistes": [
    {
-    "t": "sobre_obj",
-    "p": "C",
-    "obj": "sofa"
-   },
-   {
-    "t": "sobre_obj",
-    "p": "A",
-    "obj": "pilota"
-   },
-   {
     "t": "prop_obj",
-    "p": "B",
-    "obj": "tel"
+    "p": "E",
+    "obj": "synthe"
    },
    {
     "t": "en_sala",
-    "p": "D",
+    "p": "V",
     "sala": 3
    },
    {
     "t": "en_sala",
-    "p": "E",
-    "sala": 0
+    "p": "B",
+    "sala": 2
+   },
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "distributeur"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 4
    },
    {
     "t": "raco",
-    "p": "V"
+    "p": "C"
    }
   ],
   "textos": {
    "ca": [
-    "Era sobre el sofà.",
-    "Es va deixar caure sobre la pilota.",
-    "Prop seu hi havia un teló.",
-    "El van veure al camerino.",
-    "Era al terrat.",
-    "Era en un racó d'una habitació."
+    "Prop seu hi havia un sintetitzador.",
+    "La van veure a l'estudi de gravació.",
+    "Era a la sala d'assaig.",
+    "Era al costat d'una màquina de snacks.",
+    "Estava al camerino.",
+    "Ocupava un racó d'una habitació."
    ],
    "fr": [
-    "Il était installé sur le canapé.",
-    "Il se tenait sur le ballon.",
-    "Elle avait un rideau tout près.",
-    "On l'a vu dans la loge.",
-    "Elle était sur le toit.",
+    "Il avait un synthé tout près.",
+    "Elle a passé le temps dans le studio.",
+    "On l'a vue dans la salle de danse.",
+    "Il était à côté d'un distributeur.",
+    "Il était dans la loge.",
     "Il était dans un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
     1,
-    3
+    4
    ],
    "B": [
-    2,
-    1
+    5,
+    3
    ],
    "C": [
     0,
     2
    ],
    "D": [
-    3,
-    0
-   ],
-   "E": [
-    5,
-    4
-   ],
-   "V": [
     4,
     5
+   ],
+   "E": [
+    3,
+    1
+   ],
+   "V": [
+    2,
+    0
    ]
   },
-  "assassi": "A",
+  "assassi": "E",
   "kpop": true
  },
  {
@@ -4098,7 +4115,15 @@
   "pla": [
    [
     0,
+    1,
+    1,
+    1,
     0,
+    0
+   ],
+   [
+    1,
+    1,
     1,
     1,
     1,
@@ -4107,6 +4132,330 @@
    [
     1,
     1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    3,
+    3,
+    0,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    4,
+    0,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    4,
+    4,
+    4,
+    4
+   ],
+   [
+    3,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "sala d'assaig",
+    "fr": "salle de danse"
+   },
+   "1": {
+    "ca": "estudi de gravació",
+    "fr": "studio"
+   },
+   "2": {
+    "ca": "escena",
+    "fr": "scène"
+   },
+   "3": {
+    "ca": "camerino",
+    "fr": "loge"
+   },
+   "4": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "valise",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "canape",
+    null,
+    null,
+    null,
+    "affiche"
+   ],
+   [
+    null,
+    null,
+    null,
+    "cadeau",
+    null,
+    null
+   ],
+   [
+    null,
+    "projecteur",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "camera",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "affiche": {
+    "bloqueja": true,
+    "ca": "pòster",
+    "fr": "affiche"
+   },
+   "cadeau": {
+    "bloqueja": false,
+    "ca": "caixa de regal",
+    "fr": "boîte cadeau"
+   },
+   "camera": {
+    "bloqueja": true,
+    "ca": "càmera",
+    "fr": "caméra"
+   },
+   "canape": {
+    "bloqueja": false,
+    "ca": "sofà rosa",
+    "fr": "canapé rose"
+   },
+   "projecteur": {
+    "bloqueja": true,
+    "ca": "projector d'escena",
+    "fr": "projecteur"
+   },
+   "valise": {
+    "bloqueja": false,
+    "ca": "maleta de gira",
+    "fr": "valise"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Rumi",
+    "genere": "f",
+    "ins": "R"
+   },
+   {
+    "id": "B",
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
+   },
+   {
+    "id": "C",
+    "nom": "Baby",
+    "genere": "m",
+    "ins": "B"
+   },
+   {
+    "id": "D",
+    "nom": "Gwi-Ma",
+    "genere": "m",
+    "ins": "G"
+   },
+   {
+    "id": "E",
+    "nom": "Derpy",
+    "genere": "m",
+    "ins": "D"
+   },
+   {
+    "id": "V",
+    "nom": "Jinu",
+    "genere": "m",
+    "ins": "J"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "camera"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "camera"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "V",
+    "obj": "valise"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 3
+   },
+   {
+    "t": "en_sala",
+    "p": "A",
+    "sala": 0
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 2
+   },
+   {
+    "t": "raco",
+    "p": "C"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Era al costat d'una càmera.",
+    "Prop seu hi havia una càmera.",
+    "Estava damunt la maleta de gira.",
+    "El van veure al camerino.",
+    "Era a la sala d'assaig.",
+    "Estava a l'escena.",
+    "Era en un racó d'una habitació."
+   ],
+   "fr": [
+    "Elle avait une caméra tout près.",
+    "Il était à côté d'une caméra.",
+    "Il se tenait sur la valise.",
+    "On l'a vu dans la loge.",
+    "Elle était dans la salle de danse.",
+    "Il se trouvait sur la scène.",
+    "Il se tenait dans un angle d'une pièce."
+   ]
+  },
+  "solucio": {
+   "A": [
+    1,
+    3
+   ],
+   "B": [
+    3,
+    4
+   ],
+   "C": [
+    4,
+    5
+   ],
+   "D": [
+    2,
+    0
+   ],
+   "E": [
+    5,
+    2
+   ],
+   "V": [
+    0,
+    1
+   ]
+  },
+  "assassi": "D",
+  "kpop": true
+ },
+ {
+  "id": "kpop-6-101-5",
+  "escenari": "kpop",
+  "n": 6,
+  "nivell": 2,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
     1,
     1,
     1,
@@ -4149,56 +4498,56 @@
    [
     -1,
     -1,
-    1,
+    2,
+    2,
     0,
-    0,
-    2
+    0
    ],
    [
-    1,
-    1,
-    1,
-    1,
+    -1,
+    -1,
+    2,
+    2,
     0,
-    2
-   ],
-   [
-    1,
-    4,
-    4,
-    4,
-    0,
-    2
-   ],
-   [
-    4,
-    4,
-    4,
-    0,
-    0,
-    2
-   ],
-   [
-    3,
-    4,
-    4,
-    3,
-    3,
-    2
+    0
    ],
    [
     3,
     3,
+    2,
+    2,
+    0,
+    4
+   ],
+   [
     3,
     3,
+    1,
+    1,
+    4,
+    4
+   ],
+   [
     3,
-    3
+    3,
+    1,
+    1,
+    4,
+    4
+   ],
+   [
+    3,
+    3,
+    1,
+    1,
+    4,
+    4
    ]
   ],
   "sales": {
    "0": {
-    "ca": "camerino",
-    "fr": "loge"
+    "ca": "escena",
+    "fr": "scène"
    },
    "1": {
     "ca": "sala d'assaig",
@@ -4213,33 +4562,25 @@
     "fr": "studio"
    },
    "4": {
-    "ca": "escena",
-    "fr": "scène"
+    "ca": "terrat",
+    "fr": "toit"
    }
   },
   "obj": [
    [
     null,
     null,
-    "banc",
+    "cadeau",
     null,
-    null,
-    "nevera"
-   ],
-   [
-    null,
-    null,
-    null,
-    "pilota",
     null,
     null
    ],
    [
     null,
-    "tel",
     null,
     null,
-    "maniqui",
+    "distributeur",
+    null,
     null
    ],
    [
@@ -4247,191 +4588,190 @@
     null,
     null,
     null,
+    "micro",
+    "lanterne"
+   ],
+   [
+    "console",
+    null,
+    "epee",
+    null,
     null,
     null
    ],
    [
-    "globus",
+    "ampli",
     null,
-    "tamboret",
+    null,
     null,
     null,
     null
    ],
    [
     null,
-    "globus",
     null,
     null,
     null,
-    null
+    null,
+    "cerisier"
    ]
   ],
   "objectes": {
-   "banc": {
+   "ampli": {
+    "bloqueja": true,
+    "ca": "amplificador",
+    "fr": "ampli"
+   },
+   "cadeau": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "caixa de regal",
+    "fr": "boîte cadeau"
    },
-   "globus": {
+   "cerisier": {
     "bloqueja": true,
-    "ca": "globus terraqüi",
-    "fr": "globe"
+    "ca": "cirerer en flor",
+    "fr": "cerisier"
    },
-   "maniqui": {
+   "console": {
     "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
+    "ca": "taula de DJ",
+    "fr": "console DJ"
    },
-   "nevera": {
+   "distributeur": {
     "bloqueja": true,
-    "ca": "nevera",
-    "fr": "frigo"
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
    },
-   "pilota": {
+   "epee": {
     "bloqueja": false,
-    "ca": "pilota",
-    "fr": "ballon"
+    "ca": "espasa màgica",
+    "fr": "épée magique"
    },
-   "tamboret": {
-    "bloqueja": false,
-    "ca": "tamboret",
-    "fr": "tabouret"
-   },
-   "tel": {
+   "lanterne": {
     "bloqueja": true,
-    "ca": "teló",
-    "fr": "rideau"
+    "ca": "llanterna coreana",
+    "fr": "lanterne"
+   },
+   "micro": {
+    "bloqueja": false,
+    "ca": "micròfon",
+    "fr": "micro"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Derpy",
-    "genere": "m",
-    "ins": "D"
-   },
-   {
-    "id": "B",
     "nom": "Gwi-Ma",
     "genere": "m",
     "ins": "G"
    },
    {
-    "id": "C",
-    "nom": "Zoey",
+    "id": "B",
+    "nom": "Sussie",
     "genere": "f",
-    "ins": "Z"
+    "ins": "S"
    },
    {
-    "id": "D",
-    "nom": "Baby",
-    "genere": "m",
-    "ins": "B"
-   },
-   {
-    "id": "E",
+    "id": "C",
     "nom": "Jinu",
     "genere": "m",
     "ins": "J"
    },
    {
+    "id": "D",
+    "nom": "Abby",
+    "genere": "m",
+    "ins": "A"
+   },
+   {
+    "id": "E",
+    "nom": "Derpy",
+    "genere": "m",
+    "ins": "D"
+   },
+   {
     "id": "V",
-    "nom": "Sussie",
+    "nom": "Mira",
     "genere": "f",
-    "ins": "S"
+    "ins": "M"
    }
   ],
   "pistes": [
    {
-    "t": "en_sala",
-    "p": "D",
-    "sala": 1
-   },
-   {
     "t": "prop_obj",
-    "p": "V",
-    "obj": "tamboret"
-   },
-   {
-    "t": "en_sala",
-    "p": "A",
-    "sala": 2
+    "p": "E",
+    "obj": "cerisier"
    },
    {
     "t": "prop_obj",
     "p": "C",
-    "obj": "globus"
-   },
-   {
-    "t": "en_sala",
-    "p": "B",
-    "sala": 0
-   },
-   {
-    "t": "raco",
-    "p": "E"
+    "obj": "lanterne"
    },
    {
     "t": "prop_obj",
-    "p": "E",
-    "obj": "tamboret"
+    "p": "A",
+    "obj": "ampli"
+   },
+   {
+    "t": "prop_obj",
+    "p": "V",
+    "obj": "console"
+   },
+   {
+    "t": "raco",
+    "p": "D"
    }
   ],
   "textos": {
    "ca": [
-    "Era a la sala d'assaig.",
-    "Prop seu hi havia un tamboret.",
-    "Estava a la cuina.",
-    "Estava vora un globus terraqüi.",
-    "Va passar l'estona al camerino.",
-    "Era en un racó d'una habitació.",
-    "Tenia un tamboret a tocar."
+    "Estava vora un cirerer en flor.",
+    "Prop seu hi havia una llanterna coreana.",
+    "Tenia un amplificador a tocar.",
+    "Era al costat d'una taula de DJ.",
+    "Ocupava un racó d'una habitació."
    ],
    "fr": [
-    "Il se trouvait dans la salle de danse.",
-    "Elle se tenait près d'un tabouret.",
-    "Il a passé le temps dans la cuisine.",
-    "Elle était à côté d'un globe.",
-    "On l'a vu dans la loge.",
-    "Il occupait un coin d'une pièce.",
-    "Il avait un tabouret tout près."
+    "Il était à côté d'un cerisier.",
+    "Il se tenait près d'une lanterne.",
+    "Il avait un ampli tout près.",
+    "Elle se tenait près d'une console DJ.",
+    "Il était dans un coin d'une pièce."
    ]
   },
   "solucio": {
    "A": [
-    2,
-    5
-   ],
-   "B": [
-    0,
-    4
-   ],
-   "C": [
-    5,
-    0
-   ],
-   "D": [
-    1,
-    3
-   ],
-   "E": [
     4,
     1
    ],
-   "V": [
-    3,
+   "B": [
+    1,
     2
+   ],
+   "C": [
+    3,
+    5
+   ],
+   "D": [
+    0,
+    3
+   ],
+   "E": [
+    5,
+    4
+   ],
+   "V": [
+    2,
+    0
    ]
   },
-  "assassi": "E",
+  "assassi": "A",
   "kpop": true
  },
  {
-  "id": "kpop-6-101-5",
+  "id": "kpop-6-101-6",
   "escenari": "kpop",
   "n": 6,
-  "nivell": 2,
+  "nivell": 1,
   "pla": [
    [
     1,
@@ -4470,8 +4810,8 @@
     1,
     1,
     1,
-    0,
-    0
+    1,
+    1
    ],
    [
     1,
@@ -4485,101 +4825,73 @@
   "sala": [
    [
     1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   [
-    1,
-    0,
-    0,
-    0,
-    3,
-    0
-   ],
-   [
     1,
     1,
     1,
-    3,
-    3,
-    3
-   ],
-   [
     1,
-    1,
-    3,
-    3,
-    3,
-    3
+    1
    ],
    [
     2,
+    1,
+    1,
     2,
     2,
-    3,
-    -1,
-    -1
+    2
    ],
    [
     2,
     2,
     2,
     2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
     -1,
     -1
    ]
   ],
   "sales": {
    "0": {
-    "ca": "terrat",
-    "fr": "toit"
-   },
-   "1": {
     "ca": "cuina",
     "fr": "cuisine"
    },
-   "2": {
+   "1": {
     "ca": "escena",
     "fr": "scène"
    },
-   "3": {
-    "ca": "camerino",
-    "fr": "loge"
+   "2": {
+    "ca": "terrat",
+    "fr": "toit"
    }
   },
   "obj": [
    [
     null,
+    "micro",
     null,
-    null,
-    null,
-    null,
-    "planta"
-   ],
-   [
-    "caixa",
-    "banc",
-    "banc",
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    "sofa",
-    null
-   ],
-   [
-    null,
-    null,
-    "mirall",
-    "maniqui",
+    "projecteur",
     null,
     null
    ],
@@ -4592,7 +4904,31 @@
     null
    ],
    [
-    "tamboret",
+    "chapeau",
+    null,
+    null,
+    "chapeau",
+    "chapeau",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "distributeur",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "cadeau",
+    null,
+    null
+   ],
+   [
+    null,
     null,
     null,
     null,
@@ -4601,48 +4937,38 @@
    ]
   ],
   "objectes": {
-   "banc": {
+   "cadeau": {
     "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
+    "ca": "caixa de regal",
+    "fr": "boîte cadeau"
    },
-   "caixa": {
-    "bloqueja": true,
-    "ca": "caixa",
-    "fr": "caisse"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
-   },
-   "mirall": {
-    "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
-   },
-   "planta": {
-    "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
-   },
-   "sofa": {
+   "chapeau": {
     "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
+    "ca": "barret gat",
+    "fr": "chapeau gat"
    },
-   "tamboret": {
+   "distributeur": {
+    "bloqueja": true,
+    "ca": "màquina de snacks",
+    "fr": "distributeur"
+   },
+   "micro": {
     "bloqueja": false,
-    "ca": "tamboret",
-    "fr": "tabouret"
+    "ca": "micròfon",
+    "fr": "micro"
+   },
+   "projecteur": {
+    "bloqueja": true,
+    "ca": "projector d'escena",
+    "fr": "projecteur"
    }
   },
   "persones": [
    {
     "id": "A",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
+    "nom": "Jinu",
+    "genere": "m",
+    "ins": "J"
    },
    {
     "id": "B",
@@ -4652,21 +4978,21 @@
    },
    {
     "id": "C",
-    "nom": "Jinu",
-    "genere": "m",
-    "ins": "J"
+    "nom": "Zoey",
+    "genere": "f",
+    "ins": "Z"
    },
    {
     "id": "D",
-    "nom": "Romance",
-    "genere": "m",
-    "ins": "R"
+    "nom": "Sussie",
+    "genere": "f",
+    "ins": "S"
    },
    {
     "id": "E",
-    "nom": "Mystery",
+    "nom": "Bobby",
     "genere": "m",
-    "ins": "M"
+    "ins": "B"
    },
    {
     "id": "V",
@@ -4678,397 +5004,83 @@
   "pistes": [
    {
     "t": "prop_obj",
-    "p": "D",
-    "obj": "maniqui"
-   },
-   {
-    "t": "sobre_obj",
-    "p": "V",
-    "obj": "banc"
-   },
-   {
-    "t": "en_sala",
-    "p": "A",
-    "sala": 3
-   },
-   {
-    "t": "prop_obj",
     "p": "C",
-    "obj": "tamboret"
+    "obj": "projecteur"
    },
    {
     "t": "en_sala",
     "p": "B",
+    "sala": 1
+   },
+   {
+    "t": "sobre_obj",
+    "p": "V",
+    "obj": "chapeau"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
     "sala": 2
    },
    {
     "t": "raco",
     "p": "E"
-   }
-  ],
-  "textos": {
-   "ca": [
-    "Era al costat d'un maniquí.",
-    "Es va deixar caure sobre el banc.",
-    "Era al camerino.",
-    "Prop seu hi havia un tamboret.",
-    "Va passar l'estona a l'escena.",
-    "Estava en una cantonada d'una habitació."
-   ],
-   "fr": [
-    "Il se tenait près d'un mannequin.",
-    "Il se tenait sur le banc.",
-    "Elle a passé le temps dans la loge.",
-    "Il avait un tabouret tout près.",
-    "Il était sur la scène.",
-    "Il était dans un coin d'une pièce."
-   ]
-  },
-  "solucio": {
-   "A": [
-    2,
-    5
-   ],
-   "B": [
-    5,
-    3
-   ],
-   "C": [
-    4,
-    0
-   ],
-   "D": [
-    3,
-    4
-   ],
-   "E": [
-    0,
-    1
-   ],
-   "V": [
-    1,
-    2
-   ]
-  },
-  "assassi": "E",
-  "kpop": true
- },
- {
-  "id": "kpop-6-101-6",
-  "escenari": "kpop",
-  "n": 6,
-  "nivell": 2,
-  "pla": [
-   [
-    0,
-    1,
-    1,
-    1,
-    0,
-    0
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    0,
-    1,
-    1,
-    1,
-    0,
-    0
-   ],
-   [
-    0,
-    1,
-    1,
-    1,
-    0,
-    0
-   ]
-  ],
-  "sala": [
-   [
-    -1,
-    2,
-    2,
-    2,
-    -1,
-    -1
-   ],
-   [
-    1,
-    2,
-    2,
-    2,
-    3,
-    3
-   ],
-   [
-    1,
-    3,
-    3,
-    2,
-    3,
-    3
-   ],
-   [
-    1,
-    1,
-    3,
-    3,
-    3,
-    3
-   ],
-   [
-    -1,
-    0,
-    0,
-    0,
-    -1,
-    -1
-   ],
-   [
-    -1,
-    0,
-    0,
-    0,
-    -1,
-    -1
-   ]
-  ],
-  "sales": {
-   "0": {
-    "ca": "camerino",
-    "fr": "loge"
-   },
-   "1": {
-    "ca": "escena",
-    "fr": "scène"
-   },
-   "2": {
-    "ca": "sala d'assaig",
-    "fr": "salle de danse"
-   },
-   "3": {
-    "ca": "terrat",
-    "fr": "toit"
-   }
-  },
-  "obj": [
-   [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    "reflector",
-    null,
-    null,
-    "banc",
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    null,
-    null,
-    "planta"
-   ],
-   [
-    null,
-    null,
-    "banc",
-    "fanal",
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    "mirall",
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null,
-    "maniqui",
-    null,
-    null
-   ]
-  ],
-  "objectes": {
-   "banc": {
-    "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
-   },
-   "fanal": {
-    "bloqueja": true,
-    "ca": "fanal",
-    "fr": "lampadaire"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
-   },
-   "mirall": {
-    "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
-   },
-   "planta": {
-    "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
-   },
-   "reflector": {
-    "bloqueja": true,
-    "ca": "reflector",
-    "fr": "projecteur"
-   }
-  },
-  "persones": [
-   {
-    "id": "A",
-    "nom": "Mira",
-    "genere": "f",
-    "ins": "M"
    },
    {
-    "id": "B",
-    "nom": "Sussie",
-    "genere": "f",
-    "ins": "S"
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "cadeau"
    },
-   {
-    "id": "C",
-    "nom": "Romance",
-    "genere": "m",
-    "ins": "R"
-   },
-   {
-    "id": "D",
-    "nom": "Zoey",
-    "genere": "f",
-    "ins": "Z"
-   },
-   {
-    "id": "E",
-    "nom": "Bobby",
-    "genere": "m",
-    "ins": "B"
-   },
-   {
-    "id": "V",
-    "nom": "Gwi-Ma",
-    "genere": "m",
-    "ins": "G"
-   }
-  ],
-  "pistes": [
    {
     "t": "prop_obj",
     "p": "E",
-    "obj": "reflector"
-   },
-   {
-    "t": "prop_obj",
-    "p": "D",
-    "obj": "maniqui"
-   },
-   {
-    "t": "prop_obj",
-    "p": "V",
-    "obj": "mirall"
-   },
-   {
-    "t": "prop_obj",
-    "p": "C",
-    "obj": "banc"
-   },
-   {
-    "t": "prop_obj",
-    "p": "B",
-    "obj": "planta"
-   },
-   {
-    "t": "raco",
-    "p": "A"
+    "obj": "distributeur"
    }
   ],
   "textos": {
    "ca": [
-    "Tenia un reflector a tocar.",
-    "Era al costat d'un maniquí.",
-    "Prop seu hi havia un mirall.",
-    "Estava vora un banc.",
-    "Tenia una planta a tocar.",
-    "Va quedar-se en un racó d'una habitació."
+    "Prop seu hi havia un projector d'escena.",
+    "Estava a l'escena.",
+    "Era sobre el barret gat.",
+    "Va passar l'estona al terrat.",
+    "Era en un racó d'una habitació.",
+    "Estava vora una caixa de regal.",
+    "Era al costat d'una màquina de snacks."
    ],
    "fr": [
-    "Il se tenait près d'un projecteur.",
-    "Elle avait un mannequin tout près.",
-    "Il était à côté d'un miroir.",
-    "Il était à côté d'un banc.",
-    "Elle avait une plante tout près.",
-    "Elle était dans un coin d'une pièce."
+    "Elle était à côté d'un projecteur.",
+    "Il était sur la scène.",
+    "Il était installé sur le chapeau gat.",
+    "Elle se trouvait sur le toit.",
+    "Il occupait un coin d'une pièce.",
+    "Il avait une boîte cadeau tout près.",
+    "Il se tenait près d'un distributeur."
    ]
   },
   "solucio": {
    "A": [
-    1,
-    4
+    5,
+    3
    ],
    "B": [
-    3,
-    5
+    1,
+    1
    ],
    "C": [
     0,
-    3
-   ],
-   "D": [
-    5,
     2
    ],
+   "D": [
+    4,
+    5
+   ],
    "E": [
-    2,
-    0
+    3,
+    4
    ],
    "V": [
-    4,
-    1
+    2,
+    0
    ]
   },
   "assassi": "D",

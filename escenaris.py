@@ -267,13 +267,27 @@ _carrega_extra()
 
 
 # --- mode K-pop (només per a ús personal; no entra a la col·lecció normal) ---------------------
+_OBJ.update({
+    "micro": ("micròfon", "m", "micro", "m", False), "lightstick": ("bastó lluminós", "m", "light stick", "m", False),
+    "enceinte": ("altaveu", "m", "enceinte", "f", True), "projecteur": ("projector d'escena", "m", "projecteur", "m", True),
+    "ampli": ("amplificador", "m", "ampli", "m", True), "synthe": ("sintetitzador", "m", "synthé", "m", True),
+    "console": ("taula de DJ", "f", "console DJ", "f", True), "miroirloge": ("mirall de camerino", "m", "miroir de loge", "m", True),
+    "valise": ("maleta de gira", "f", "valise", "f", False), "peluche": ("peluix de tigre", "m", "peluche", "f", False),
+    "ramen": ("bol de ramen", "m", "bol de ramen", "m", False), "bubble": ("bubble tea", "m", "bubble tea", "m", False),
+    "photocards": ("expositor de fotocards", "m", "présentoir", "m", True), "affiche": ("pòster", "m", "affiche", "f", True),
+    "camera": ("càmera", "f", "caméra", "f", True), "canape": ("sofà rosa", "m", "canapé rose", "m", False),
+    "cadeau": ("caixa de regal", "f", "boîte cadeau", "f", False), "lanterne": ("llanterna coreana", "f", "lanterne", "f", True),
+    "eventail": ("ventall", "m", "éventail", "m", False), "epee": ("espasa màgica", "f", "épée magique", "f", False),
+    "chapeau": ("barret gat", "m", "chapeau gat", "m", False), "cerisier": ("cirerer en flor", "m", "cerisier", "m", True),
+    "distributeur": ("màquina de snacks", "f", "distributeur", "m", True),
+})
 _registra("kpop", ("Missió K-pop", "Mission K-pop"), ("l'escenari", "la scène"), [
-    ("escena", ("f", "escena"), ("f", "scène"), ["reflector", "tel", "tamboret"]),
-    ("camerinos", ("m", "camerino"), ("f", "loge"), ["mirall", "maniqui", "sofa"]),
-    ("estudi", ("m", "estudi de gravació"), ("m", "studio"), ["piano", "escriptori", "butaca"]),
-    ("assaig", ("f", "sala d'assaig"), ("f", "salle de danse"), ["mirall", "banc", "pilota"]),
-    ("terrat", ("m", "terrat"), ("m", "toit"), ["planta", "banc", "fanal"]),
-    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["taula", "estufa", "caixa"])])
+    ("escena", ("f", "escena"), ("f", "scène"), ["projecteur", "micro", "enceinte"]),
+    ("camerinos", ("m", "camerino"), ("f", "loge"), ["miroirloge", "canape", "valise", "peluche", "photocards"]),
+    ("estudi", ("m", "estudi de gravació"), ("m", "studio"), ["console", "synthe", "ampli", "camera"]),
+    ("assaig", ("f", "sala d'assaig"), ("f", "salle de danse"), ["eventail", "epee", "lightstick", "affiche"]),
+    ("terrat", ("m", "terrat"), ("m", "toit"), ["cerisier", "lanterne", "chapeau"]),
+    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["ramen", "bubble", "distributeur", "cadeau"])])
 ESCENARIS["kpop"]["tag"] = {"ca": "El K-pop", "fr": "Le K-pop"}
 ESCENARIS["kpop"]["especial"] = True
 
@@ -309,6 +323,8 @@ _NOUS = [
 
 def _amplia():
     for e in ESCENARIS.values():
+        if e.get("especial"):
+            continue
         for s in e["sales"].values():
             nom = s["nom"]["ca"][1].lower()
             for claus, objs in _NOUS:

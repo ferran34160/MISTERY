@@ -257,12 +257,17 @@ KPOP_NOMS = {"rumi": "Rumi", "mira": "Mira", "zoey": "Zoey", "jinu": "Jinu", "ab
 
 
 def fotos_kpop():
-    """JS que afegeix els retrats K-pop a PHOTOS (només si hi ha la carpeta kpop/retrats, que no es puja a git)."""
-    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kpop", "retrats")
-    if not os.path.isdir(d):
+    """JS que afegeix els retrats i objectes K-pop a PHOTOS/OBJIMG (només si hi ha la carpeta kpop/, que no es puja a git)."""
+    arrel = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kpop")
+    dr, do = os.path.join(arrel, "retrats"), os.path.join(arrel, "objectes")
+    if not os.path.isdir(dr):
         return ""
-    m = {KPOP_NOMS[f[:-4]]: "kpop/retrats/" + f for f in sorted(os.listdir(d)) if f[:-4] in KPOP_NOMS}
-    return "Object.assign(PHOTOS," + json.dumps(m) + ");"
+    m = {KPOP_NOMS[f[:-4]]: "kpop/retrats/" + f for f in sorted(os.listdir(dr)) if f[:-4] in KPOP_NOMS}
+    js = "Object.assign(PHOTOS," + json.dumps(m) + ");"
+    if os.path.isdir(do):
+        o = {f[:-4]: "kpop/objectes/" + f for f in sorted(os.listdir(do)) if f.endswith(".png")}
+        js += "Object.assign(OBJIMG," + json.dumps(o) + ");"
+    return js
 
 
 def config_classificacio():
@@ -341,7 +346,7 @@ def main():
         im.save(buf, "JPEG", quality=78, optimize=True)
         return "image/jpeg", buf.getvalue()
 
-    for ruta in set(re.findall(r'"((?:kpop/retrats|retrats|objectes|terres)/[a-z_]+\.(?:jpg|png)|logo\.png|sobre\.png|paper\.png)"', html)):
+    for ruta in set(re.findall(r'"((?:kpop/retrats|kpop/objectes|retrats|objectes|terres)/[a-z_]+\.(?:jpg|png)|logo\.png|sobre\.png|paper\.png)"', html)):
         mime, raw = dades(ruta)
         html = html.replace('"' + ruta + '"', '"data:' + mime + ';base64,' + base64.b64encode(raw).decode() + '"')
     with open("joc.html", "w", encoding="utf-8") as fh:
