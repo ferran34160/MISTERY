@@ -1,0 +1,544 @@
+[
+ {
+  "id": "mas-9-1126-1",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    2,
+    1,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    1,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "1": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "2": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "3": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "carro",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "bicicleta",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "bascula",
+    "banc",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "celler",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "barril",
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "bicicleta": {
+    "bloqueja": false,
+    "ca": "bicicleta",
+    "fr": "vélo"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "celler": {
+    "bloqueja": true,
+    "ca": "rac de vins",
+    "fr": "casier à vins"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "F",
+    "nom": "Francesca",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Guillem",
+    "genere": "m"
+   },
+   {
+    "id": "H",
+    "nom": "Helena",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "E",
+    "obj": "celler"
+   },
+   {
+    "t": "fila_obj",
+    "p": "D",
+    "obj": "bascula"
+   },
+   {
+    "t": "col_obj",
+    "p": "H",
+    "obj": "barril"
+   },
+   {
+    "t": "fila_obj",
+    "p": "C",
+    "obj": "carro"
+   },
+   {
+    "t": "sud",
+    "p": "V",
+    "q": "E"
+   },
+   {
+    "t": "sud",
+    "p": "G",
+    "q": "D"
+   },
+   {
+    "t": "fila_obj",
+    "p": "F",
+    "obj": "cadira"
+   },
+   {
+    "t": "cavall",
+    "p": "H",
+    "q": "E"
+   },
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "bascula"
+   },
+   {
+    "t": "cavall",
+    "p": "A",
+    "q": "B"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "C",
+    "q": "D"
+   },
+   {
+    "t": "oest",
+    "p": "V",
+    "q": "G"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Un rac de vins era a la seva fila.",
+    "A la seva fila hi havia una bàscula.",
+    "Un barril era a la seva columna.",
+    "Tenia un carro a la mateixa fila.",
+    "Tenia Eulàlia al seu nord.",
+    "Era al sud de Dolors.",
+    "Compartia fila amb una cadira.",
+    "Estava a un salt de cavall d'Eulàlia.",
+    "Estava vora una bàscula.",
+    "Era a un salt de cavall de Berta (com als escacs).",
+    "Dolors i ell eren a la mateixa habitació.",
+    "Tenia Guillem al seu est."
+   ],
+   "fr": [
+    "Un casier à vins se trouvait sur sa ligne.",
+    "Sur sa ligne se trouvait une balance.",
+    "Dans sa colonne se trouvait un tonneau.",
+    "Il partageait sa ligne avec une charrette.",
+    "Eulàlia était au nord d'elle.",
+    "Il se trouvait plus au sud que Dolors.",
+    "Elle partageait sa ligne avec une chaise.",
+    "Elle se trouvait à un saut de cavalier d'Eulàlia.",
+    "Elle était à côté d'une balance.",
+    "Par rapport à Berta, il était à un mouvement de cavalier.",
+    "Il partageait sa pièce avec Dolors.",
+    "Elle se trouvait plus à l'ouest que Guillem."
+   ]
+  },
+  "solucio": {
+   "A": [
+    2,
+    4
+   ],
+   "B": [
+    4,
+    5
+   ],
+   "C": [
+    1,
+    0
+   ],
+   "D": [
+    3,
+    1
+   ],
+   "E": [
+    7,
+    7
+   ],
+   "F": [
+    0,
+    8
+   ],
+   "G": [
+    6,
+    3
+   ],
+   "H": [
+    5,
+    6
+   ],
+   "V": [
+    8,
+    2
+   ]
+  },
+  "assassi": "E"
+ }
+]

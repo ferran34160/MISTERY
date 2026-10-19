@@ -84,11 +84,11 @@ Per persona: `en_sala`, `no_en_sala`, `sobre_obj`, `prop_obj`, `raco`, `vora` (a
 Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alta necessària (1 a 5). Definició pròpia, no validada amb jugadors.
 
 ### Estat de la col·lecció
-210 casos a la pàgina: 88 de 6x6, 63 de 7x7, 38 de 8x8 i 21 de 9x9, en 70 escenaris (3 per escenari).
+210 casos a la pàgina: 84 de 6x6, 63 de 7x7, 38 de 8x8 i 25 de 9x9, en 70 escenaris (3 per escenari).
 
 ## 6. Problemes coneguts i feina oberta
 
-1. **9x9:** el generador en fa ara un lot de 3 en ~2 minuts; a la pàgina n'hi ha 21 (tots verificats).
+1. **9x9:** el generador en fa ara un lot de 3 en ~2 minuts; a la pàgina n'hi ha 25 (tots verificats, també de nivells 1-3).
 2. **Francès:** els textos i els noms de sales/escenaris els ha revisat només Claude; caldria que algú que parli francès els repassés.
 3. **Estil dels retrats:** els de F, G i I són il·lustrats i la resta fotogràfics; si es vol coherència caldria tornar a generar-los amb el mateix estil.
 4. **Retrats F, G, I:** fet; els 18 són ja fotogràfics (substituïts a `retrats/`).
@@ -103,3 +103,8 @@ Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alt
 2. Revisió del francès per una persona nativa.
 3. Retrats per a F, G, I i, si es vol, imatges d'objectes de més qualitat.
 4. Decidir com publicar-ho (GitHub Pages o altre); confirmar-ho amb l'usuari abans.
+
+## 8. Notes de manteniment
+- `assignacions.json` recorda quin escenari té cada cas (id d'estructura → escenari) perquè no canviï en tornar a executar `reskin.py`. Per fer lloc a casos nous, treu-ne entrades i passa un fitxer de preferits: `python reskin.py ids.txt casos_final.json preferits.txt`.
+- Els `id` de cas són estables (`escenari-mida-hash`); `font` guarda l'id antic i `index.html` hi migra el progrés.
+- Objectes: 67 (43 + 24 del segon lot); `escenaris._amplia()` els afegeix a les sales pel nom.
