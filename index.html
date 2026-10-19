@@ -605,7 +605,11 @@ function renderCards(){
   $("#genh").style.display=gen.length?"":"none";$("#genh").textContent=t("genh");
   $("#gen").innerHTML=gen.map(i=>`<li data-clue="${i}" class="${st.crossed.includes(i)?"done":""} ${hlClue===i?"hlc":""}">${clueText(i)}</li>`).join("");
 }
-function dis(txt){try{const u=new SpeechSynthesisUtterance(txt);u.lang="fr-FR";u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+function dis(txt){
+  try{if(window.Veu&&Veu.diu){Veu.diu(txt,"fr-FR");return}}catch(e){}   // APK d'Android: veu nativa
+  try{const u=new SpeechSynthesisUtterance(txt);u.lang="fr-FR";u.rate=.85;
+    const v=(speechSynthesis.getVoices()||[]).find(x=>/^fr/i.test(x.lang));if(v)u.voice=v;
+    speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 $("#cards").onclick=e=>{
   const sp=e.target.closest("[data-say]");
   if(sp){const card0=sp.closest(".card"),nom=card0.querySelector("b").textContent.split(" · ")[0];dis(nom+". "+clueText(+sp.dataset.say).replace(/<[^>]+>/g,""));return}
