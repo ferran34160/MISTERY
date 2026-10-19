@@ -24,6 +24,13 @@ def main():
         shutil.copy(os.path.join(ARREL, f), ASSETS)
     for d in CARPETES:
         shutil.copytree(os.path.join(ARREL, d), os.path.join(ASSETS, d))
+    # mode K-pop: retrats (carpeta local, no es puja a git) i la seva llista a index.html
+    from construeix import fotos_kpop
+    if fotos_kpop():
+        shutil.copytree(os.path.join(ARREL, "kpop", "retrats"), os.path.join(ASSETS, "kpop", "retrats"))
+    idx = os.path.join(ASSETS, "index.html")
+    txt = open(idx, encoding="utf-8").read().replace("/*KPOP_PHOTOS*/", fotos_kpop())
+    open(idx, "w", encoding="utf-8").write(txt)
     # configuració de la classificació (amb el token, si hi ha ranking_secret.js)
     sys.path.insert(0, ARREL)
     os.chdir(ARREL)

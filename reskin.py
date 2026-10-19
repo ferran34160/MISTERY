@@ -181,7 +181,7 @@ def reparteix(triats, escenaris):
 def main():
     ok = {l.strip() for l in open(sys.argv[1]) if l.strip()}
     pool = carrega_pool(ok)
-    escenaris = sorted(ESCENARIS)
+    escenaris = sorted(e for e in ESCENARIS if not ESCENARIS[e].get("especial"))
     n_total = len(escenaris) * PER_ESCENARI
     try:
         prev = json.load(open("assignacions.json", encoding="utf-8"))

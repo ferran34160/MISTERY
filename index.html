@@ -49,6 +49,9 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .alfa{display:flex;gap:10px;align-items:center;margin:12px 0 6px;font-size:.8rem;color:var(--muted)}
 .alfa i{font-style:normal;font-weight:800;color:var(--ok);border:2px solid var(--ok);border-radius:6px;padding:3px 6px;font-size:.7rem;letter-spacing:.08em}
 .sum{text-align:center;font-size:.95rem;margin:6px 0 10px}
+.tabs2 .kp{background:linear-gradient(135deg,#ff7ac8,#8a5cf6);color:#fff;border-color:#6b3fd0}
+.tabs2 .kp.on{box-shadow:0 0 0 3px #ffd54a}
+.spk{margin-left:auto;font-size:1.5rem;padding:4px 6px;align-self:center;cursor:pointer}
 .tabs2{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none}.tabs2::-webkit-scrollbar{display:none}
 .tabs2 button{flex:none;padding:6px 11px;font-size:.85rem;border-radius:9px;box-shadow:0 2px 0 var(--line)}
 .tabs2 button.on{background:var(--accent);color:#fff;border-color:var(--line)}
@@ -327,9 +330,9 @@ const TEX=[
  ["tiles",/cuina|galera|cafeteria|cafè|obrador|laboratori|fleca|\bforn\b|peixateria|vestuari|fruita|bany|lavabo|cambra freda/,null,0],
  ["grass",/jardí|\bhort\b|vinya|\bcamp\b|passeig|foguera|hivernacle/,"#7bbf6a",.5],
  ["sand",/pista|quadra|corral|estable|carrusel|tenda|campament|hipòdrom/,"#e6cf9a",.5],
- ["pavers",/terrassa|porxada|\bpati\b|plaça|entrada|plataforma|coberta|\bmoll\b|solàrium|mirador/,"#d8c8b0",.4],
+ ["pavers",/terrassa|terrat|porxada|\bpati\b|plaça|entrada|plataforma|coberta|\bmoll\b|solàrium|mirador/,"#d8c8b0",.4],
  ["stone",/celler|bodega|calabós|cripta|claustre|torre|soterrani|capella|santuari|estàtues|cuirassada|forta|armeria|magatzem|cobert|galeria|passadís|trull|campanar|presó/,"#b7b0a4",.4],
- ["carpet",/despatx|oficina|recepció|vestíbul|espera|platea|tribuna|reunions|redacció|arxiu|privada|joc|saló|estudi|sala de proves|emprovador|massatges/,null,0]];
+ ["carpet",/despatx|oficina|camerino|recepció|vestíbul|espera|platea|tribuna|reunions|redacció|arxiu|privada|joc|saló|estudi|sala de proves|emprovador|massatges/,null,0]];
 function roomTex(nom){
   const n=(nom||"").toLowerCase();
   for(const [c,re,t,p] of TEX)if(re.test(n))return {c:"tx-"+c,t,p};
@@ -364,7 +367,7 @@ const H={
   alfa:"Benvingut a la versió alfa: és un projecte en curs. Les funcions poden canviar.",seal:"CAS<br>RESOLT",avail:"CAS DISPONIBLE!",reveal:"FES CLIC PER REVELAR",none:"Cap cas amb aquests filtres.",sub:"Puzles de lògica de crims"},
  fr:{lv:["Tous","Très facile","Facile","Moyen","Difficile","Expert"],pz:"énigmes",dn:"résolues",sort:"Trier par :",sc:"Scénario :",all:"Tous",sd:"Difficulté",ss:"Taille",sn:"Nom",hide:"Masquer les résolues",show:"Afficher les résolues",
   alfa:"Bienvenue dans la version alpha : un projet en cours. Les fonctions peuvent changer.",seal:"AFFAIRE<br>RÉSOLUE",avail:"AFFAIRE DISPONIBLE !",reveal:"TOUCHE POUR RÉVÉLER",none:"Aucun cas avec ces filtres.",sub:"Énigmes de logique criminelle"}};
-let hf=load("hf",0),hs=load("hs","d"),hh=load("hh",false);
+let hf=load("hf",0),hs=load("hs","d"),hh=load("hh",false),hk=load("hk",false);
 const caseName=c=>(c.nom&&c.nom[lang])||c.titol[lang];
 function thumb(c,mode){
   const n=c.n,k=10,dk=dark(),sv=mode==="closed"?null:load("st:"+c.id,null);
@@ -401,8 +404,9 @@ function home(){
   $("header").classList.add("hidden");
   $("#game").classList.add("hidden");$("#home").classList.remove("hidden");$("#back").classList.add("hidden");
   document.title=t("title");
-  const h=H[lang],done=CASOS.filter(c=>(prog[c.id]||{}).solved).length;
-  let idx=CASOS.map((c,i)=>i).filter(i=>(hf===0||CASOS[i].nivell===hf)&&!(hh&&(prog[CASOS[i].id]||{}).solved));
+  const h=H[lang],done=CASOS.filter(c=>!!c.kpop===hk&&(prog[c.id]||{}).solved).length;
+  const hasK=CASOS.some(c=>c.kpop);if(!hasK)hk=false;
+  let idx=CASOS.map((c,i)=>i).filter(i=>!!CASOS[i].kpop===hk&&(hk||hf===0||CASOS[i].nivell===hf)&&!(hh&&(prog[CASOS[i].id]||{}).solved));
   idx.sort((a,b)=>{const A=CASOS[a],B=CASOS[b];
     if(hs==="m")return A.n-B.n||A.nivell-B.nivell||a-b;
     if(hs==="n")return caseName(A).localeCompare(caseName(B),lang);
@@ -411,8 +415,8 @@ function home(){
    <select id="hl" aria-label="Idioma"><option value="ca"${lang==="ca"?" selected":""}>Català</option><option value="fr"${lang==="fr"?" selected":""}>Français</option></select>
    <button class="ib" id="hth" aria-label="${t("theme")}">${dark()?"☀":"☾"}</button><button class="ib" id="hrk">🏆</button><button class="ib" id="hq">?</button></div>
    <div class="alfa"><i>ALFA</i><span>${h.alfa}</span></div>
-   <div class="sum"><b>${CASOS.length}</b> ${h.pz} · <b>${done}</b> ${h.dn}</div>
-   <div class="tabs2">${h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}</div>
+   <div class="sum"><b>${CASOS.filter(c=>!!c.kpop===hk).length}</b> ${h.pz} · <b>${done}</b> ${h.dn}</div>
+   <div class="tabs2">${hk?"":h.lv.map((x,j)=>`<button data-f="${j}" class="${hf===j?"on":""}">${x}</button>`).join("")}${hasK?`<button id="hkb" class="kp ${hk?"on":""}">⭐ K-POP</button>`:""}</div>
    <div class="sortrow"><span>${h.sort}</span><select id="hsel"><option value="d"${hs==="d"?" selected":""}>${h.sd}</option><option value="m"${hs==="m"?" selected":""}>${h.ss}</option><option value="n"${hs==="n"?" selected":""}>${h.sn}</option></select><button id="hhd">${hh?h.show:h.hide}</button></div>`;
   $("#home").innerHTML=idx.length?idx.map(i=>pcCard(CASOS[i],i)).join(""):`<p class="empty">${h.none}</p>`;
   document.querySelectorAll("#home .pc").forEach((el,k)=>{if(k<14)el.style.setProperty("--d",k);else el.style.animation="none"});
@@ -424,7 +428,8 @@ function home(){
   $("#hrk").onclick=()=>mostraRanking("g");
   $("#hsel").onchange=e=>{hs=e.target.value;save("hs",hs);home()};
   $("#hhd").onclick=()=>{hh=!hh;save("hh",hh);home()};
-  document.querySelectorAll(".tabs2 button").forEach(b=>b.onclick=()=>{hf=+b.dataset.f;save("hf",hf);home()});
+  document.querySelectorAll(".tabs2 button[data-f]").forEach(b=>b.onclick=()=>{hf=+b.dataset.f;save("hf",hf);home()});
+  const kb=$("#hkb");if(kb)kb.onclick=()=>{hk=!hk;save("hk",hk);if(hk){save("langPrev",lang);lang="fr";save("lang",lang)}else{const lp=load("langPrev",null);if(lp){lang=lp;save("lang",lang)}}home()};
 }
 $("#home").onclick=e=>{const b=e.target.closest(".pc");if(!b)return;const i=+b.dataset.i;
   if(b.classList.contains("env")){b.classList.add("open");setTimeout(()=>obreCas(i),380)}else obreCas(i)};
@@ -443,7 +448,7 @@ const pIdx=id=>cur.persones.findIndex(p=>p.id===id);
 const pName=id=>cur.persones[pIdx(id)].nom;
 
 /* ---------- retrats (cares dibuixades a partir del nom) ---------- */
-const PHOTOS={"Aleix": "retrats/aleix.jpg", "Anna": "retrats/anna.jpg", "Arnau": "retrats/arnau.jpg", "Aina": "retrats/aina.jpg", "Biel": "retrats/biel.jpg", "Berta": "retrats/berta.jpg", "Blai": "retrats/blai.jpg", "Bruna": "retrats/bruna.jpg", "Carles": "retrats/carles.jpg", "Clara": "retrats/clara.jpg", "Cesc": "retrats/cesc.jpg", "Carla": "retrats/carla.jpg", "Dídac": "retrats/didac.jpg", "Dolors": "retrats/dolors.jpg", "David": "retrats/david.jpg", "Delfina": "retrats/delfina.jpg", "Eudald": "retrats/eudald.jpg", "Elna": "retrats/elna.jpg", "Enric": "retrats/enric.jpg", "Eulàlia": "retrats/eulalia.jpg", "Hug": "retrats/hug.jpg", "Helena": "retrats/helena.jpg", "Hèctor": "retrats/hector.jpg", "Heura": "retrats/heura.jpg", "Jaume": "retrats/jaume.jpg", "Júlia": "retrats/julia.jpg", "Jordi": "retrats/jordi.jpg", "Judit": "retrats/judit.jpg", "Valentí": "retrats/valenti.jpg", "Violant": "retrats/violant.jpg", "Vicenç": "retrats/vicenc.jpg", "Vera": "retrats/vera.jpg", "Ferran": "retrats/ferran.jpg", "Francesca": "retrats/francesca.jpg", "Felip": "retrats/felip.jpg", "Fina": "retrats/fina.jpg", "Fabiola": "retrats/fabiola.jpg", "Fanny": "retrats/fanny.jpg", "Gerard": "retrats/gerard.jpg", "Griselda": "retrats/griselda.jpg", "Guerau": "retrats/guerau.jpg", "Guillem": "retrats/guillem.jpg", "Glòria": "retrats/gloria.jpg", "Gemma": "retrats/gemma.jpg", "Ivo": "retrats/ivo.jpg", "Irene": "retrats/irene.jpg", "Ignasi": "retrats/ignasi.jpg", "Isidre": "retrats/isidre.jpg", "Isabel": "retrats/isabel.jpg", "Imma": "retrats/imma.jpg"};
+const PHOTOS={"Aleix": "retrats/aleix.jpg", "Anna": "retrats/anna.jpg", "Arnau": "retrats/arnau.jpg", "Aina": "retrats/aina.jpg", "Biel": "retrats/biel.jpg", "Berta": "retrats/berta.jpg", "Blai": "retrats/blai.jpg", "Bruna": "retrats/bruna.jpg", "Carles": "retrats/carles.jpg", "Clara": "retrats/clara.jpg", "Cesc": "retrats/cesc.jpg", "Carla": "retrats/carla.jpg", "Dídac": "retrats/didac.jpg", "Dolors": "retrats/dolors.jpg", "David": "retrats/david.jpg", "Delfina": "retrats/delfina.jpg", "Eudald": "retrats/eudald.jpg", "Elna": "retrats/elna.jpg", "Enric": "retrats/enric.jpg", "Eulàlia": "retrats/eulalia.jpg", "Hug": "retrats/hug.jpg", "Helena": "retrats/helena.jpg", "Hèctor": "retrats/hector.jpg", "Heura": "retrats/heura.jpg", "Jaume": "retrats/jaume.jpg", "Júlia": "retrats/julia.jpg", "Jordi": "retrats/jordi.jpg", "Judit": "retrats/judit.jpg", "Valentí": "retrats/valenti.jpg", "Violant": "retrats/violant.jpg", "Vicenç": "retrats/vicenc.jpg", "Vera": "retrats/vera.jpg", "Ferran": "retrats/ferran.jpg", "Francesca": "retrats/francesca.jpg", "Felip": "retrats/felip.jpg", "Fina": "retrats/fina.jpg", "Fabiola": "retrats/fabiola.jpg", "Fanny": "retrats/fanny.jpg", "Gerard": "retrats/gerard.jpg", "Griselda": "retrats/griselda.jpg", "Guerau": "retrats/guerau.jpg", "Guillem": "retrats/guillem.jpg", "Glòria": "retrats/gloria.jpg", "Gemma": "retrats/gemma.jpg", "Ivo": "retrats/ivo.jpg", "Irene": "retrats/irene.jpg", "Ignasi": "retrats/ignasi.jpg", "Isidre": "retrats/isidre.jpg", "Isabel": "retrats/isabel.jpg", "Imma": "retrats/imma.jpg"};/*KPOP_PHOTOS*/
 function hashN(str){let h=7;for(const c of str)h=(h*31+c.charCodeAt(0))>>>0;return h}
 function face(p,i){
   if(PHOTOS[p.nom])return `<img class="ph" src="${PHOTOS[p.nom]}" alt="">`;
@@ -535,7 +540,7 @@ function face(p,i){
   if(glasses===2)o+=`<rect x="35.5" y="41.5" width="13" height="9.5" rx="2.6" fill="#9cd2f522" stroke="#7a2e2e" stroke-width="1.6"/><rect x="51.5" y="41.5" width="13" height="9.5" rx="2.6" fill="#9cd2f522" stroke="#7a2e2e" stroke-width="1.6"/><path d="M48.5 45H51.5" stroke="#7a2e2e" stroke-width="1.6"/>`;
   o+=`</g><circle cx="50" cy="50" r="49" fill="none" stroke="#00000022" stroke-width="2"/></svg>`;
   return o}
-const tokHtml=id=>{const i=pIdx(id);return face(cur.persones[i],i)+`<b class="lt">${id}</b>`};
+const tokHtml=id=>{const i=pIdx(id);return face(cur.persones[i],i)+`<b class="lt">${cur.persones[i].ins||id}</b>`};
 const tokStyle=id=>`background:hsl(${PERSONHUE[pIdx(id)%10]} 55% ${dark()?42:40}%)`;
 
 function render(){
@@ -596,11 +601,14 @@ function renderCards(){
   $("#cards").innerHTML=cur.persones.map(p=>{
     const idx=mine[p.id]||[];
     const done=idx.length&&idx.every(i=>st.crossed.includes(i));
-    return `<button class="card ${hintP===p.id&&hintCells?"hintc":""} ${sel===p.id?"sel":""} ${done?"done":""} ${placed.has(p.id)?"plc":""}" data-p="${p.id}"><span class="tok">${tokHtml(p.id)}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}" class="${hlClue===i?"hlc":""}">${clueText(i)}</span>`).join("")}</span>${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
+    return `<button class="card ${hintP===p.id&&hintCells?"hintc":""} ${sel===p.id?"sel":""} ${done?"done":""} ${placed.has(p.id)?"plc":""}" data-p="${p.id}"><span class="tok">${tokHtml(p.id)}</span><span class="tx"><b>${p.nom}${p.id==="V"?" · "+t("victim"):""}</b>${idx.map(i=>`<span data-clue="${i}" class="${hlClue===i?"hlc":""}">${clueText(i)}</span>`).join("")}</span>${cur.kpop&&idx.length?`<span class="spk" data-say="${idx[0]}" role="button" aria-label="Écouter">🔊</span>`:""}${placed.has(p.id)?'<span class="pl">✓</span>':""}</button>`}).join("");
   $("#genh").style.display=gen.length?"":"none";$("#genh").textContent=t("genh");
   $("#gen").innerHTML=gen.map(i=>`<li data-clue="${i}" class="${st.crossed.includes(i)?"done":""} ${hlClue===i?"hlc":""}">${clueText(i)}</li>`).join("");
 }
+function dis(txt){try{const u=new SpeechSynthesisUtterance(txt);u.lang="fr-FR";u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 $("#cards").onclick=e=>{
+  const sp=e.target.closest("[data-say]");
+  if(sp){const card0=sp.closest(".card"),nom=card0.querySelector("b").textContent.split(" · ")[0];dis(nom+". "+clueText(+sp.dataset.say).replace(/<[^>]+>/g,""));return}
   const cl=e.target.closest("[data-clue]"),card=e.target.closest(".card");
   if(!card)return;
   if(cl){sel=card.dataset.p;if(tool==="erase"||tool==="mark")tool="note";renderTools();ressaltaPista(+cl.dataset.clue);return}
@@ -666,6 +674,7 @@ function bombeta(){
   if(!pend.length){clearHints();msg(t("hallok"));renderBoard();return}
   snap();st.hints=(st.hints||0)+1;persist();
   clearHints();
+  if(cur.kpop){const p=pend[0],s=cur.solucio[p.id];hintP=p.id;hintCells=new Set([s[0]+","+s[1]]);hintLvl=2;sel=p.id;st.hints=0;msg(t("h2")(pName(p.id)));renderBoard();renderCards();return}
   if(hintP&&hintLvl===1&&pend.some(p=>p.id===hintP)){
     const s=cur.solucio[hintP];hintCells=new Set([s[0]+","+s[1]]);hintLvl=2;sel=hintP;
     msg(t("h2")(pName(hintP)));renderBoard();renderCards();return;
@@ -940,6 +949,7 @@ async function mostraRanking(tab){
   }catch(e){$("#rkb").innerHTML=`<p class="nota">${rt("err")}</p>`}
 }
 async function rkDesprésDeResoldre(c,t){
+  if(c.kpop)return;
   const p=punts(c,t,st&&st.hints);
   const el=document.getElementById("rkw");
   if(el)el.innerHTML=`<b>+${p}</b> ${rt("guanyat")}`;
@@ -996,8 +1006,8 @@ function winModal(){
 
 /* ---------- temps ---------- */
 function startTimer(){
-  stopTimer();$("#timer").textContent=fmt(st.time);
-  if(st.done)return;
+  stopTimer();$("#timer").textContent=fmt(st.time);$("#timer").style.display=cur.kpop?"none":"";
+  if(st.done||cur.kpop)return;
   timerH=setInterval(()=>{if(document.hidden)return;st.time++;$("#timer").textContent=fmt(st.time);if(st.time%5===0)persist()},1000);
 }
 function stopTimer(){clearInterval(timerH);timerH=null;if(cur&&st)persist()}

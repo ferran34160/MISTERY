@@ -251,6 +251,20 @@ def titol(nom, j):
             "fr": art_fr + fr + " " + (a[2] if gfr == "m" else a[3])}
 
 
+KPOP_NOMS = {"rumi": "Rumi", "mira": "Mira", "zoey": "Zoey", "jinu": "Jinu", "abby": "Abby", "baby": "Baby",
+             "mystery": "Mystery", "romance": "Romance", "bobby": "Bobby", "gwima": "Gwi-Ma", "derpy": "Derpy",
+             "sussie": "Sussie"}
+
+
+def fotos_kpop():
+    """JS que afegeix els retrats K-pop a PHOTOS (només si hi ha la carpeta kpop/retrats, que no es puja a git)."""
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kpop", "retrats")
+    if not os.path.isdir(d):
+        return ""
+    m = {KPOP_NOMS[f[:-4]]: "kpop/retrats/" + f for f in sorted(os.listdir(d)) if f[:-4] in KPOP_NOMS}
+    return "Object.assign(PHOTOS," + json.dumps(m) + ");"
+
+
 def config_classificacio():
     """ranking_config.js (al repositori) + ranking_secret.js (el token; no es puja mai al repositori)."""
     text = open("ranking_config.js", encoding="utf-8").read()
@@ -260,7 +274,7 @@ def config_classificacio():
 
 
 def main():
-    fitxers = sys.argv[1:] or ["casos_final.json"]
+    fitxers = sys.argv[1:] or ["casos_final.json"] + (["casos_kpop.json"] if os.path.exists("casos_kpop.json") else [])
     casos, vistos = [], set()
     for f in fitxers:
         with open(f, encoding="utf-8") as fh:
@@ -273,7 +287,10 @@ def main():
                 c["titol"] = ESCENARIS[c["escenari"]]["titol"]
                 casos.append(c)
     casos.sort(key=lambda c: (c["n"], c["nivell"]))
-    assigna_noms(casos)
+    kp = [c for c in casos if c.get("kpop")]
+    for i, c in enumerate(kp, 1):
+        c["nom"] = {"ca": "Missió K-pop %d" % i, "fr": "Mission K-pop %d" % i}
+    assigna_noms([c for c in casos if not c.get("kpop")])
     meta = {}
     for c in casos:
         k = c["escenari"]
@@ -291,6 +308,7 @@ def main():
         html = fh.read()
     js = open("casos.js", encoding="utf-8").read()
     html = html.replace('<script src="casos.js"></script>', "<script>" + js + "</script>")
+    html = html.replace("/*KPOP_PHOTOS*/", fotos_kpop())
     html = html.replace('<script src="ranking_config.js"></script>', "<script>" + config_classificacio() + "</script>")
     # imatges (retrats i objectes) incloses com a data URI: joc.html és un sol fitxer.
     # Si hi ha Pillow, s'encongeixen una mica perquè el fitxer pesi menys (index.html usa els originals).
@@ -319,11 +337,11 @@ def main():
             im.save(buf, "PNG", optimize=True)
             return "image/png", buf.getvalue()
         im = im.convert("RGB")
-        im.thumbnail((144 if ruta.startswith("retrats") else 96, 144 if ruta.startswith("retrats") else 96), Image.LANCZOS)
+        im.thumbnail((144 if "retrats" in ruta else 96, 144 if "retrats" in ruta else 96), Image.LANCZOS)
         im.save(buf, "JPEG", quality=78, optimize=True)
         return "image/jpeg", buf.getvalue()
 
-    for ruta in set(re.findall(r'"((?:retrats|objectes|terres)/[a-z_]+\.(?:jpg|png)|logo\.png|sobre\.png|paper\.png)"', html)):
+    for ruta in set(re.findall(r'"((?:kpop/retrats|retrats|objectes|terres)/[a-z_]+\.(?:jpg|png)|logo\.png|sobre\.png|paper\.png)"', html)):
         mime, raw = dades(ruta)
         html = html.replace('"' + ruta + '"', '"data:' + mime + ';base64,' + base64.b64encode(raw).decode() + '"')
     with open("joc.html", "w", encoding="utf-8") as fh:

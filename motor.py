@@ -664,6 +664,9 @@ def mostra_solucio(rng, L, n):
     return None
 
 
+TIPUS_PERMESOS = None      # p. ex. {"en_sala", "sobre_obj"}: restringeix les pistes que es poden triar
+
+
 def candidates(L, sol, n, sales_ids):
     """Totes les pistes vertaderes per a la solució `sol`:
     (per persona, generals)."""
@@ -718,6 +721,9 @@ def candidates(L, sol, n, sales_ids):
     for R in sales_ids:
         k = sum(1 for p in range(n) if L.sala_de(sol[p]) == R)
         generals.append({"t": "compte_sala", "sala": R, "k": k})
+    if TIPUS_PERMESOS:      # mode infantil: només els tipus de pista més simples
+        per_p = {p: [c for c in v if c["t"] in TIPUS_PERMESOS] for p, v in per_p.items()}
+        generals = [c for c in generals if c["t"] in TIPUS_PERMESOS]
     return per_p, generals
 
 

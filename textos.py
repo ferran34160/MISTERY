@@ -38,8 +38,11 @@ def det(lang, nom, cas="def"):
         if cas == "de":
             return "de " + d if base != "le " else "du " + t
         if cas == "dins":
-            return "dans " + d
+            return ("sur " if t in _SUR_FR else "dans ") + d
     raise ValueError(cas)
+
+
+_SUR_FR = {"toit", "terrasse", "pont", "passerelle", "plateforme", "quai", "mirador", "piste", "scène"}
 
 
 def de_lloc(lloc, lang):

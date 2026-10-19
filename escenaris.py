@@ -266,6 +266,24 @@ def _carrega_extra():
 _carrega_extra()
 
 
+# --- mode K-pop (només per a ús personal; no entra a la col·lecció normal) ---------------------
+_registra("kpop", ("Missió K-pop", "Mission K-pop"), ("l'escenari", "la scène"), [
+    ("escena", ("f", "escena"), ("f", "scène"), ["reflector", "tel", "tamboret"]),
+    ("camerinos", ("m", "camerino"), ("f", "loge"), ["mirall", "maniqui", "sofa"]),
+    ("estudi", ("m", "estudi de gravació"), ("m", "studio"), ["piano", "escriptori", "butaca"]),
+    ("assaig", ("f", "sala d'assaig"), ("f", "salle de danse"), ["mirall", "banc", "pilota"]),
+    ("terrat", ("m", "terrat"), ("m", "toit"), ["planta", "banc", "fanal"]),
+    ("cuina", ("f", "cuina"), ("f", "cuisine"), ["taula", "estufa", "caixa"])])
+ESCENARIS["kpop"]["tag"] = {"ca": "El K-pop", "fr": "Le K-pop"}
+ESCENARIS["kpop"]["especial"] = True
+
+# personatges (nom, gènere) per inicial; en un cas no se'n repeteix cap inicial
+KPOP_PERSONATGES = {"R": [("Rumi", "f"), ("Romance", "m")], "M": [("Mira", "f"), ("Mystery", "m")],
+                    "Z": [("Zoey", "f")], "J": [("Jinu", "m")], "A": [("Abby", "m")],
+                    "B": [("Baby", "m"), ("Bobby", "m")], "G": [("Gwi-Ma", "m")],
+                    "D": [("Derpy", "m")], "S": [("Sussie", "f")]}
+
+
 # --- objectes del segon lot: s'afegeixen a les sales on encaixen pel nom -------------------------
 _NOUS = [
     (("cuina",), ["nevera", "forn", "pica"]),
