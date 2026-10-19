@@ -303,8 +303,8 @@ _registra("estiu", ("Crim a la casa d'estiu", "Crime à la maison d'été"), ("l
     ("cuina", ("f", "cuina d'estiu"), ("f", "cuisine d'été"), ["taula"]),
     ("menjador", ("m", "menjador"), ("f", "salle à manger"), ["taula", "cadira"]),
     ("passadis", ("m", "passadís"), ("m", "couloir"), []),
-    ("porxo", ("m", "porxo"), ("m", "porche"), ["estatua"]),
-    ("piscina", ("f", "piscina"), ("f", "piscine"), ["planta"]),
+    ("porxo", ("m", "porxo"), ("m", "porche"), ["estatua", "planta"]),
+    ("piscina", ("f", "piscina"), ("f", "piscine"), []),
     ("terrassa", ("f", "terrassa"), ("f", "terrasse"), ["planta"])])
 ESCENARIS["estiu"]["tag"] = {"ca": "La casa d'estiu", "fr": "La maison d'été"}
 ESCENARIS["estiu"]["especial"] = True

@@ -35,7 +35,7 @@ def main():
     sala = pla_i_sales()
     obj = [[None] * N for _ in range(N)]
     for (r, c), o in {(1, 0): "taula", (5, 0): "taula", (5, 1): "taula", (4, 0): "cadira",
-                      (2, 3): "estatua", (2, 6): "estatua", (1, 6): "planta", (4, 3): "planta"}.items():
+                      (2, 3): "estatua", (2, 6): "planta", (4, 3): "planta"}.items():
         obj[r][c] = o
     bloqueja = {"taula": True, "cadira": False, "estatua": True, "planta": True}
     L = motor.Plantilla(N, [[True] * N for _ in range(N)], sala, obj, bloqueja)

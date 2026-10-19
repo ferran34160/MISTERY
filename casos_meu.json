@@ -177,7 +177,7 @@
     null,
     null,
     null,
-    "planta"
+    null
    ],
    [
     null,
@@ -186,7 +186,7 @@
     "estatua",
     null,
     null,
-    "estatua"
+    "planta"
    ],
    [
     null,
@@ -250,7 +250,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
@@ -260,13 +260,13 @@
    },
    {
     "id": "C",
-    "nom": "Cesc",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Dídac",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
@@ -275,34 +275,20 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
   "pistes": [
    {
-    "t": "vora",
-    "p": "D"
-   },
-   {
-    "t": "en_sala",
-    "p": "E",
-    "sala": 4
-   },
-   {
     "t": "fila_obj",
     "p": "V",
     "obj": "estatua"
-   },
-   {
-    "t": "en_sala",
-    "p": "A",
-    "sala": 2
    },
    {
     "t": "sobre_obj",
@@ -310,34 +296,55 @@
     "obj": "cadira"
    },
    {
-    "t": "nord",
-    "p": "B",
-    "q": "E"
+    "t": "en_sala",
+    "p": "A",
+    "sala": 2
    },
    {
-    "t": "prop_obj",
+    "t": "vora",
+    "p": "B"
+   },
+   {
+    "t": "cavall",
     "p": "C",
-    "obj": "taula"
+    "q": "F"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 5
+   },
+   {
+    "t": "no_en_sala",
+    "p": "B",
+    "sala": 4
+   },
+   {
+    "t": "oest",
+    "p": "E",
+    "q": "D"
    }
   ],
   "textos": {
    "ca": [
+    "Tenia una estàtua a la mateixa fila.",
+    "Va quedar-se sobre la cadira.",
+    "La van veure al passadís.",
     "Era al costat d'una paret exterior de la casa.",
-    "Va passar l'estona a la piscina.",
-    "Una estàtua era a la seva fila.",
-    "Estava al passadís.",
-    "Era sobre la cadira.",
-    "Era al nord d'Eulàlia.",
-    "Prop seu hi havia una taula."
+    "Respecte a Francesca, estava a un moviment de cavall.",
+    "Era a la terrassa.",
+    "No era a la piscina.",
+    "Tenia Dolors al seu est."
    ],
    "fr": [
-    "Il touchait un mur extérieur de la maison.",
-    "Elle se trouvait dans la piscine.",
-    "Elle partageait sa ligne avec une statue.",
-    "Elle était dans le couloir.",
+    "Une statue se trouvait sur sa ligne.",
     "Elle était sur la chaise.",
-    "Eulàlia était au sud de lui.",
-    "Il se tenait près d'une table."
+    "Elle a passé le temps dans le couloir.",
+    "Il avait un mur extérieur de la maison tout contre lui.",
+    "Elle se trouvait à un saut de cavalier de Francesca.",
+    "Elle était sur la terrasse.",
+    "Personne ne l'a vu dans la piscine.",
+    "Elle se trouvait plus à l'ouest que Dolors."
    ]
   },
   "solucio": {
