@@ -341,6 +341,15 @@ const load=(k,d)=>{try{const v=localStorage.getItem("misteri:"+k);return v?JSON.
 let lang=load("lang",(navigator.language||"ca").startsWith("fr")?"fr":"ca");if(lang!=="ca"&&lang!=="fr")lang="ca";
 let auto=load("auto",true);
 let prog=load("prog",{});          // id -> {solved,best}
+/* migra el progrés guardat amb l'identificador antic (c.font) al nou, només una vegada */
+(()=>{try{let ch=false;
+  for(const c of CASOS){
+    if(!c.font||c.font===c.id)continue;
+    const nou="misteri:st:"+c.id,vell="misteri:st:"+c.font;
+    if(prog[c.font]&&!prog[c.id]){prog[c.id]=prog[c.font];ch=true}
+    if(localStorage.getItem(vell)&&!localStorage.getItem(nou))localStorage.setItem(nou,localStorage.getItem(vell));
+  }
+  if(ch)save("prog",prog)}catch(e){}})();
 let cur=null, st=null, tool="note", sel=null, timerH=null, undo=[];
 const t=k=>T[lang][k];
 

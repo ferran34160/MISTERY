@@ -123,3 +123,27 @@ Passa'm cada full per aquest xat. Quan els tingui:
 - **Terres:** les faig servir de textura de cada sala.
 - **Logotip, sobre i targeta:** els poso a la capçalera, als sobres i a les targetes de la llista.
 - **Retrats F, G, I:** els afegeixo a la carpeta `retrats/` i desapareixen les cares dibuixades.
+
+---
+
+## 5. Objectes nous (opcional) — 24 objectes
+
+Per donar més varietat als escenaris (ara cada sala reaprofita els 44 objectes). Mateix estil que el full d'objectes: **8 columnes × 3 files**, fons crema llis (#F4ECDF), vist de davant i una mica des de dalt, ombra suau, sense text dins del dibuix, etiqueta a sota amb el nom en català.
+
+Ordre: 1) nevera, forn de cuina, pica de cuina, banyera, lavabo (WC), rentadora, bàscula, cafetera · 2) taula de billar, tauler d'escacs, caixa registradora, botellero de vins, foguera, tenda de campanya, motxilla, canoa · 3) cistell de fruita, bicicleta, tractor petit, bústia, rellotge de peu, gàbia d'ocell, telèfon antic, globus terraqüi
+
+```
+A clean sprite sheet of 24 illustrated furniture and prop items for a cozy detective puzzle
+game, arranged in a grid of 8 columns by 3 rows on a plain flat cream background (#F4ECDF).
+Each item is drawn in the same warm, polished semi-realistic illustration style (soft
+shading, rich wood, metal and fabric colours, clean dark-brown outline), seen from the front
+and slightly from above, centred in its cell, with a soft contact shadow under it. No text
+inside the drawings. Under each item, a small rounded pill label with its Catalan name.
+Items in order, row by row: refrigerator, kitchen oven, kitchen sink, bathtub, toilet,
+washing machine, weighing scale, coffee machine / billiard table, chessboard, cash register,
+wine rack with bottles, campfire, camping tent, backpack, canoe / fruit basket, bicycle,
+small tractor, mailbox, grandfather clock, birdcage, vintage rotary telephone, desk globe.
+Consistent lighting from the top-left, same scale and level of detail for all items.
+```
+
+Quan les tinguis, les retallo i les afegeixo al catàleg d'objectes i als escenaris on encaixen.

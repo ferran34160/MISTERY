@@ -1,6 +1,6 @@
 [
  {
-  "id": "circ-6-202-2",
+  "id": "tren-6-0fa8b5",
   "escenari": "tren",
   "n": 6,
   "nivell": 1,
@@ -335,10 +335,11 @@
     4
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "circ-6-202-2"
  },
  {
-  "id": "estacio-6-101-10",
+  "id": "vaixell-6-9fc220",
   "escenari": "vaixell",
   "n": 6,
   "nivell": 1,
@@ -670,10 +671,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "estacio-6-101-10"
  },
  {
-  "id": "estacio-6-101-13",
+  "id": "dirigible-6-45d633",
   "escenari": "dirigible",
   "n": 6,
   "nivell": 1,
@@ -994,10 +996,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "estacio-6-101-13"
  },
  {
-  "id": "hotel-6-201-11",
+  "id": "esglesia-6-653b55",
   "escenari": "esglesia",
   "n": 6,
   "nivell": 1,
@@ -1309,10 +1312,11 @@
     2
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "hotel-6-201-11"
  },
  {
-  "id": "mas-6-23-12",
+  "id": "tapes-6-98cc68",
   "escenari": "tapes",
   "n": 6,
   "nivell": 1,
@@ -1624,10 +1628,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-6-23-12"
  },
  {
-  "id": "mas-6-23-9",
+  "id": "radio-6-83ee1d",
   "escenari": "radio",
   "n": 6,
   "nivell": 1,
@@ -1946,10 +1951,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-6-23-9"
  },
  {
-  "id": "mas-6-61-1",
+  "id": "ranxo-6-3f8e40",
   "escenari": "ranxo",
   "n": 6,
   "nivell": 1,
@@ -2270,10 +2276,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-61-1"
  },
  {
-  "id": "mas-6-61-3",
+  "id": "submari-6-a8f273",
   "escenari": "submari",
   "n": 6,
   "nivell": 1,
@@ -2610,10 +2617,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-6-61-3"
  },
  {
-  "id": "mas-6-61-6",
+  "id": "galeria-6-e08763",
   "escenari": "galeria",
   "n": 6,
   "nivell": 1,
@@ -2913,10 +2921,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-6-61-6"
  },
  {
-  "id": "mercat-6-201-6",
+  "id": "estacio-6-b180c1",
   "escenari": "estacio",
   "n": 6,
   "nivell": 1,
@@ -3241,10 +3250,11 @@
     4
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mercat-6-201-6"
  },
  {
-  "id": "mercat-6-202-2",
+  "id": "parc-6-6aca0e",
   "escenari": "parc",
   "n": 6,
   "nivell": 1,
@@ -3573,10 +3583,11 @@
     2
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mercat-6-202-2"
  },
  {
-  "id": "mercat-6-202-3",
+  "id": "antiguitats-6-bfa22c",
   "escenari": "antiguitats",
   "n": 6,
   "nivell": 1,
@@ -3916,10 +3927,11 @@
     4
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mercat-6-202-3"
  },
  {
-  "id": "teatre-6-101-14",
+  "id": "oficines-6-8a9df4",
   "escenari": "oficines",
   "n": 6,
   "nivell": 1,
@@ -4245,10 +4257,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "teatre-6-101-14"
  },
  {
-  "id": "teatre-6-101-2",
+  "id": "convent-6-39042e",
   "escenari": "convent",
   "n": 6,
   "nivell": 1,
@@ -4567,10 +4580,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "teatre-6-101-2"
  },
  {
-  "id": "teatre-6-102-1",
+  "id": "atic-6-0113b1",
   "escenari": "atic",
   "n": 6,
   "nivell": 1,
@@ -4895,10 +4909,11 @@
     2
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "teatre-6-102-1"
  },
  {
-  "id": "teatre-6-102-2",
+  "id": "xocolata-6-509b9f",
   "escenari": "xocolata",
   "n": 6,
   "nivell": 1,
@@ -5235,10 +5250,11 @@
     3
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "teatre-6-102-2"
  },
  {
-  "id": "teatre-6-102-4",
+  "id": "xalet-6-42c035",
   "escenari": "xalet",
   "n": 6,
   "nivell": 1,
@@ -5552,10 +5568,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "teatre-6-102-4"
  },
  {
-  "id": "vaixell-6-201-8",
+  "id": "restaurant-6-d453f1",
   "escenari": "restaurant",
   "n": 6,
   "nivell": 1,
@@ -5886,10 +5903,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "vaixell-6-201-8"
  },
  {
-  "id": "vaixell-6-202-3",
+  "id": "monestir-6-106801",
   "escenari": "monestir",
   "n": 6,
   "nivell": 1,
@@ -6207,10 +6225,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "vaixell-6-202-3"
  },
  {
-  "id": "castell-6-201-10",
+  "id": "circ-6-d09dc4",
   "escenari": "circ",
   "n": 6,
   "nivell": 2,
@@ -6522,10 +6541,11 @@
     5
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "castell-6-201-10"
  },
  {
-  "id": "castell-6-201-12",
+  "id": "farmacia-6-6ded68",
   "escenari": "farmacia",
   "n": 6,
   "nivell": 2,
@@ -6857,10 +6877,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "castell-6-201-12"
  },
  {
-  "id": "castell-6-201-7",
+  "id": "hostal-6-fe0607",
   "escenari": "hostal",
   "n": 6,
   "nivell": 2,
@@ -7179,10 +7200,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "castell-6-201-7"
  },
  {
-  "id": "circ-6-201-2",
+  "id": "pizzeria-6-95b229",
   "escenari": "pizzeria",
   "n": 6,
   "nivell": 2,
@@ -7498,10 +7520,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "circ-6-201-2"
  },
  {
-  "id": "circ-6-201-7",
+  "id": "estudi-6-726b0a",
   "escenari": "estudi",
   "n": 6,
   "nivell": 2,
@@ -7827,10 +7850,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "circ-6-201-7"
  },
  {
-  "id": "estacio-6-101-11",
+  "id": "far-6-b6ec9f",
   "escenari": "far",
   "n": 6,
   "nivell": 2,
@@ -8152,10 +8176,11 @@
     5
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "estacio-6-101-11"
  },
  {
-  "id": "estacio-6-101-6",
+  "id": "poble-6-1c4652",
   "escenari": "poble",
   "n": 6,
   "nivell": 2,
@@ -8495,10 +8520,11 @@
     3
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "estacio-6-101-6"
  },
  {
-  "id": "mansio-6-201-12",
+  "id": "refugi-6-006c89",
   "escenari": "refugi",
   "n": 6,
   "nivell": 2,
@@ -8821,10 +8847,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mansio-6-201-12"
  },
  {
-  "id": "mansio-6-201-5",
+  "id": "titelles-6-af4c9b",
   "escenari": "titelles",
   "n": 6,
   "nivell": 2,
@@ -9126,10 +9153,11 @@
     5
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mansio-6-201-5"
  },
  {
-  "id": "mas-6-21-6",
+  "id": "casino-6-0e31bb",
   "escenari": "casino",
   "n": 6,
   "nivell": 2,
@@ -9440,10 +9468,11 @@
     3
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-6-21-6"
  },
  {
-  "id": "mercat-6-201-10",
+  "id": "botiga de llibres-6-40d964",
   "escenari": "botiga de llibres",
   "n": 6,
   "nivell": 2,
@@ -9766,10 +9795,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mercat-6-201-10"
  },
  {
-  "id": "museu-6-201-3",
+  "id": "golf-6-e1f3d9",
   "escenari": "golf",
   "n": 6,
   "nivell": 2,
@@ -10088,10 +10118,11 @@
     2
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "museu-6-201-3"
  },
  {
-  "id": "museu-6-201-9",
+  "id": "palau-6-971495",
   "escenari": "palau",
   "n": 6,
   "nivell": 2,
@@ -10444,10 +10475,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "museu-6-201-9"
  },
  {
-  "id": "restaurant-6-201-11",
+  "id": "mansio-6-c30949",
   "escenari": "mansio",
   "n": 6,
   "nivell": 2,
@@ -10777,10 +10809,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "restaurant-6-201-11"
  },
  {
-  "id": "restaurant-6-201-5",
+  "id": "plato-6-48f678",
   "escenari": "plato",
   "n": 6,
   "nivell": 2,
@@ -11084,10 +11117,11 @@
     5
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "restaurant-6-201-5"
  },
  {
-  "id": "teatre-6-101-10",
+  "id": "mercat-6-7f645e",
   "escenari": "mercat",
   "n": 6,
   "nivell": 2,
@@ -11410,10 +11444,11 @@
     0
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "teatre-6-101-10"
  },
  {
-  "id": "vaixell-6-201-11",
+  "id": "port-6-1783d8",
   "escenari": "port",
   "n": 6,
   "nivell": 2,
@@ -11734,10 +11769,11 @@
     2
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "vaixell-6-201-11"
  },
  {
-  "id": "vaixell-6-201-7",
+  "id": "moli-6-05335e",
   "escenari": "moli",
   "n": 6,
   "nivell": 2,
@@ -12044,10 +12080,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "vaixell-6-201-7"
  },
  {
-  "id": "vaixell-6-201-9",
+  "id": "observatori-6-67299e",
   "escenari": "observatori",
   "n": 6,
   "nivell": 2,
@@ -12367,10 +12404,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "vaixell-6-201-9"
  },
  {
-  "id": "castell-6-201-11",
+  "id": "hipodrom-6-e12a8d",
   "escenari": "hipodrom",
   "n": 6,
   "nivell": 3,
@@ -12690,10 +12728,11 @@
     3
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "castell-6-201-11"
  },
  {
-  "id": "castell-6-201-5",
+  "id": "nautic-6-bf9443",
   "escenari": "nautic",
   "n": 6,
   "nivell": 3,
@@ -13011,10 +13050,11 @@
     3
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "castell-6-201-5"
  },
  {
-  "id": "castell-6-201-9",
+  "id": "museu-6-b1b8a4",
   "escenari": "museu",
   "n": 6,
   "nivell": 3,
@@ -13349,10 +13389,11 @@
     3
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "castell-6-201-9"
  },
  {
-  "id": "circ-6-203-1",
+  "id": "campament-6-ba64b9",
   "escenari": "campament",
   "n": 6,
   "nivell": 3,
@@ -13654,10 +13695,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "circ-6-203-1"
  },
  {
-  "id": "escola-6-201-11",
+  "id": "biblioteca-6-caff58",
   "escenari": "biblioteca",
   "n": 6,
   "nivell": 3,
@@ -13974,10 +14016,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "escola-6-201-11"
  },
  {
-  "id": "escola-6-201-7",
+  "id": "taverna-6-641dec",
   "escenari": "taverna",
   "n": 6,
   "nivell": 3,
@@ -14309,10 +14352,11 @@
     2
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "escola-6-201-7"
  },
  {
-  "id": "escola-6-203-2",
+  "id": "teatre-6-a23f3e",
   "escenari": "teatre",
   "n": 6,
   "nivell": 3,
@@ -14623,10 +14667,11 @@
     1
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "escola-6-203-2"
  },
  {
-  "id": "estacio-6-101-12",
+  "id": "cinema-6-c0f437",
   "escenari": "cinema",
   "n": 6,
   "nivell": 3,
@@ -14943,10 +14988,11 @@
     5
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "estacio-6-101-12"
  },
  {
-  "id": "estacio-6-103-2",
+  "id": "escola-6-c9c7c4",
   "escenari": "escola",
   "n": 6,
   "nivell": 3,
@@ -15256,10 +15302,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "estacio-6-103-2"
  },
  {
-  "id": "hotel-6-201-5",
+  "id": "gimnas-6-526e31",
   "escenari": "gimnas",
   "n": 6,
   "nivell": 3,
@@ -15578,10 +15625,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "hotel-6-201-5"
  },
  {
-  "id": "hotel-6-203-2",
+  "id": "concerts-6-08d06d",
   "escenari": "concerts",
   "n": 6,
   "nivell": 3,
@@ -15907,10 +15955,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "hotel-6-203-2"
  },
  {
-  "id": "hotel-6-203-3",
+  "id": "perruqueria-6-4f5521",
   "escenari": "perruqueria",
   "n": 6,
   "nivell": 3,
@@ -16212,10 +16261,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "hotel-6-203-3"
  },
  {
-  "id": "mansio-6-203-2",
+  "id": "aeroport-6-3420b1",
   "escenari": "aeroport",
   "n": 6,
   "nivell": 3,
@@ -16525,10 +16575,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mansio-6-203-2"
  },
  {
-  "id": "mas-6-24-1",
+  "id": "sastreria-6-61b0a6",
   "escenari": "sastreria",
   "n": 6,
   "nivell": 3,
@@ -16848,10 +16899,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-24-1"
  },
  {
-  "id": "mercat-6-203-1",
+  "id": "mina-6-4d5ab5",
   "escenari": "mina",
   "n": 6,
   "nivell": 3,
@@ -17183,10 +17235,11 @@
     1
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mercat-6-203-1"
  },
  {
-  "id": "mercat-6-203-2",
+  "id": "temple-6-b2aac1",
   "escenari": "temple",
   "n": 6,
   "nivell": 3,
@@ -17491,10 +17544,11 @@
     3
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mercat-6-203-2"
  },
  {
-  "id": "museu-6-201-11",
+  "id": "mas-6-a5507c",
   "escenari": "mas",
   "n": 6,
   "nivell": 3,
@@ -17798,10 +17852,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "museu-6-201-11"
  },
  {
-  "id": "vaixell-6-203-1",
+  "id": "fira-6-6f9b60",
   "escenari": "fira",
   "n": 6,
   "nivell": 3,
@@ -18134,10 +18189,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "vaixell-6-203-1"
  },
  {
-  "id": "vaixell-6-203-2",
+  "id": "diari-6-d62df4",
   "escenari": "diari",
   "n": 6,
   "nivell": 3,
@@ -18470,10 +18526,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "vaixell-6-203-2"
  },
  {
-  "id": "circ-6-201-6",
+  "id": "saloon-6-fb5b4e",
   "escenari": "saloon",
   "n": 6,
   "nivell": 4,
@@ -18790,10 +18847,11 @@
     3
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "circ-6-201-6"
  },
  {
-  "id": "mas-6-64-1",
+  "id": "hotel-6-f3281f",
   "escenari": "hotel",
   "n": 6,
   "nivell": 4,
@@ -19110,10 +19168,11 @@
     3
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-64-1"
  },
  {
-  "id": "mas-6-64-2",
+  "id": "ferreteria-6-e56517",
   "escenari": "ferreteria",
   "n": 6,
   "nivell": 4,
@@ -19443,10 +19502,11 @@
     3
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-64-2"
  },
  {
-  "id": "mas-6-64-3",
+  "id": "cafe-6-1efd76",
   "escenari": "cafe",
   "n": 6,
   "nivell": 4,
@@ -19765,10 +19825,11 @@
     5
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-64-3"
  },
  {
-  "id": "mas-6-64-4",
+  "id": "castell-6-b42a10",
   "escenari": "castell",
   "n": 6,
   "nivell": 4,
@@ -20103,10 +20164,11 @@
     4
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-6-64-4"
  },
  {
-  "id": "mas-6-64-5",
+  "id": "spa-6-df9881",
   "escenari": "spa",
   "n": 6,
   "nivell": 4,
@@ -20426,10 +20488,11 @@
     5
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-6-64-5"
  },
  {
-  "id": "mas-6-64-6",
+  "id": "cabaret-6-c28de3",
   "escenari": "cabaret",
   "n": 6,
   "nivell": 4,
@@ -20748,10 +20811,11 @@
     3
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-6-64-6"
  },
  {
-  "id": "mas-6-68-1",
+  "id": "jardi-6-244624",
   "escenari": "jardi",
   "n": 6,
   "nivell": 4,
@@ -21057,10 +21121,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-68-1"
  },
  {
-  "id": "mas-6-68-2",
+  "id": "taller-6-18651a",
   "escenari": "taller",
   "n": 6,
   "nivell": 4,
@@ -21383,10 +21448,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-68-2"
  },
  {
-  "id": "mas-6-68-3",
+  "id": "banc-6-b7a061",
   "escenari": "banc",
   "n": 6,
   "nivell": 4,
@@ -21703,10 +21769,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-6-68-3"
  },
  {
-  "id": "mas-6-68-4",
+  "id": "vinya-6-3385d5",
   "escenari": "vinya",
   "n": 6,
   "nivell": 4,
@@ -22018,10 +22085,11 @@
     2
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-6-68-4"
  },
  {
-  "id": "mas-6-68-5",
+  "id": "pastisseria-6-70533a",
   "escenari": "pastisseria",
   "n": 6,
   "nivell": 4,
@@ -22334,10 +22402,11 @@
     0
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-6-68-5"
  },
  {
-  "id": "mas-6-68-6",
+  "id": "joieria-6-903626",
   "escenari": "joieria",
   "n": 6,
   "nivell": 4,
@@ -22635,10 +22704,11 @@
     1
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-6-68-6"
  },
  {
-  "id": "castell-6-201-4",
+  "id": "tren-6-aacdd0",
   "escenari": "tren",
   "n": 6,
   "nivell": 5,
@@ -22951,10 +23021,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "castell-6-201-4"
  },
  {
-  "id": "circ-6-201-1",
+  "id": "vaixell-6-d5105e",
   "escenari": "vaixell",
   "n": 6,
   "nivell": 5,
@@ -23259,10 +23330,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "circ-6-201-1"
  },
  {
-  "id": "circ-6-201-3",
+  "id": "dirigible-6-aa9739",
   "escenari": "dirigible",
   "n": 6,
   "nivell": 5,
@@ -23583,10 +23655,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "circ-6-201-3"
  },
  {
-  "id": "circ-6-201-4",
+  "id": "esglesia-6-5427f1",
   "escenari": "esglesia",
   "n": 6,
   "nivell": 5,
@@ -23885,10 +23958,11 @@
     5
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "circ-6-201-4"
  },
  {
-  "id": "escola-6-201-1",
+  "id": "tapes-6-547c28",
   "escenari": "tapes",
   "n": 6,
   "nivell": 5,
@@ -24186,10 +24260,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "escola-6-201-1"
  },
  {
-  "id": "mansio-6-201-3",
+  "id": "radio-6-f590a3",
   "escenari": "radio",
   "n": 6,
   "nivell": 5,
@@ -24498,10 +24573,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mansio-6-201-3"
  },
  {
-  "id": "mas-6-21-2",
+  "id": "ranxo-6-3c34a7",
   "escenari": "ranxo",
   "n": 6,
   "nivell": 5,
@@ -24830,10 +24906,11 @@
     3
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-6-21-2"
  },
  {
-  "id": "mas-6-21-3",
+  "id": "submari-6-aec90c",
   "escenari": "submari",
   "n": 6,
   "nivell": 5,
@@ -25160,10 +25237,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-6-21-3"
  },
  {
-  "id": "mas-6-21-9",
+  "id": "galeria-6-5f73cd",
   "escenari": "galeria",
   "n": 6,
   "nivell": 5,
@@ -25496,10 +25574,11 @@
     3
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-6-21-9"
  },
  {
-  "id": "mas-6-22-11",
+  "id": "estacio-6-46f4d3",
   "escenari": "estacio",
   "n": 6,
   "nivell": 5,
@@ -25831,10 +25910,11 @@
     4
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-6-22-11"
  },
  {
-  "id": "mas-6-22-12",
+  "id": "parc-6-9b14e4",
   "escenari": "parc",
   "n": 6,
   "nivell": 5,
@@ -26143,10 +26223,11 @@
     2
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-6-22-12"
  },
  {
-  "id": "mas-6-24-12",
+  "id": "antiguitats-6-ad9985",
   "escenari": "antiguitats",
   "n": 6,
   "nivell": 5,
@@ -26478,10 +26559,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-6-24-12"
  },
  {
-  "id": "mas-6-24-6",
+  "id": "oficines-6-f340df",
   "escenari": "oficines",
   "n": 6,
   "nivell": 5,
@@ -26811,10 +26893,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-6-24-6"
  },
  {
-  "id": "mas-6-7-2",
+  "id": "convent-6-4ad42d",
   "escenari": "convent",
   "n": 6,
   "nivell": 5,
@@ -27140,10 +27223,11 @@
     "ca": "taula",
     "fr": "table"
    }
-  }
+  },
+  "font": "mas-6-7-2"
  },
  {
-  "id": "mercat-6-201-7",
+  "id": "atic-6-56c6a5",
   "escenari": "atic",
   "n": 6,
   "nivell": 5,
@@ -27460,10 +27544,11 @@
     5
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mercat-6-201-7"
  },
  {
-  "id": "restaurant-6-201-6",
+  "id": "xocolata-6-c631d4",
   "escenari": "xocolata",
   "n": 6,
   "nivell": 5,
@@ -27761,10 +27846,11 @@
     0
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "restaurant-6-201-6"
  },
  {
-  "id": "teatre-6-101-4",
+  "id": "xalet-6-cffcf0",
   "escenari": "xalet",
   "n": 6,
   "nivell": 5,
@@ -28080,10 +28166,11 @@
     2
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "teatre-6-101-4"
  },
  {
-  "id": "vaixell-6-201-12",
+  "id": "restaurant-6-65cb61",
   "escenari": "restaurant",
   "n": 6,
   "nivell": 5,
@@ -28417,10 +28504,11 @@
     5
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "vaixell-6-201-12"
  },
  {
-  "id": "castell-7-204-6",
+  "id": "monestir-7-cbbb7d",
   "escenari": "monestir",
   "n": 7,
   "nivell": 1,
@@ -28800,10 +28888,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "castell-7-204-6"
  },
  {
-  "id": "escola-7-204-3",
+  "id": "circ-7-f7a969",
   "escenari": "circ",
   "n": 7,
   "nivell": 1,
@@ -29189,10 +29278,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "escola-7-204-3"
  },
  {
-  "id": "estacio-7-104-6",
+  "id": "farmacia-7-b47ac2",
   "escenari": "farmacia",
   "n": 7,
   "nivell": 1,
@@ -29591,10 +29681,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "estacio-7-104-6"
  },
  {
-  "id": "hotel-7-204-3",
+  "id": "hostal-7-72010e",
   "escenari": "hostal",
   "n": 7,
   "nivell": 1,
@@ -29968,10 +30059,11 @@
     4
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "hotel-7-204-3"
  },
  {
-  "id": "mas-7-62-1",
+  "id": "pizzeria-7-d74278",
   "escenari": "pizzeria",
   "n": 7,
   "nivell": 1,
@@ -30358,10 +30450,11 @@
     6
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-7-62-1"
  },
  {
-  "id": "mas-7-62-2",
+  "id": "estudi-7-2226a8",
   "escenari": "estudi",
   "n": 7,
   "nivell": 1,
@@ -30749,10 +30842,11 @@
     2
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-7-62-2"
  },
  {
-  "id": "mas-7-62-3",
+  "id": "far-7-073070",
   "escenari": "far",
   "n": 7,
   "nivell": 1,
@@ -31125,10 +31219,11 @@
     4
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-7-62-3"
  },
  {
-  "id": "mas-7-62-4",
+  "id": "poble-7-513231",
   "escenari": "poble",
   "n": 7,
   "nivell": 1,
@@ -31535,10 +31630,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-7-62-4"
  },
  {
-  "id": "mas-7-62-5",
+  "id": "refugi-7-a9b367",
   "escenari": "refugi",
   "n": 7,
   "nivell": 1,
@@ -31923,10 +32019,11 @@
     3
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-62-5"
  },
  {
-  "id": "mercat-7-204-6",
+  "id": "titelles-7-0e04ee",
   "escenari": "titelles",
   "n": 7,
   "nivell": 1,
@@ -32312,10 +32409,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mercat-7-204-6"
  },
  {
-  "id": "museu-7-204-6",
+  "id": "casino-7-a5f6db",
   "escenari": "casino",
   "n": 7,
   "nivell": 1,
@@ -32690,10 +32788,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "museu-7-204-6"
  },
  {
-  "id": "teatre-7-104-7",
+  "id": "botiga de llibres-7-046e41",
   "escenari": "botiga de llibres",
   "n": 7,
   "nivell": 1,
@@ -33085,10 +33184,11 @@
     6
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "teatre-7-104-7"
  },
  {
-  "id": "estacio-7-104-4",
+  "id": "golf-7-e0e2fe",
   "escenari": "golf",
   "n": 7,
   "nivell": 2,
@@ -33477,10 +33577,11 @@
     5
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "estacio-7-104-4"
  },
  {
-  "id": "estacio-7-104-5",
+  "id": "palau-7-adf415",
   "escenari": "palau",
   "n": 7,
   "nivell": 2,
@@ -33865,10 +33966,11 @@
     0
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "estacio-7-104-5"
  },
  {
-  "id": "estacio-7-104-8",
+  "id": "mansio-7-303c07",
   "escenari": "mansio",
   "n": 7,
   "nivell": 2,
@@ -34253,10 +34355,11 @@
     2
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "estacio-7-104-8"
  },
  {
-  "id": "hotel-7-204-1",
+  "id": "plato-7-32729e",
   "escenari": "plato",
   "n": 7,
   "nivell": 2,
@@ -34638,10 +34741,11 @@
     1
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "hotel-7-204-1"
  },
  {
-  "id": "mansio-7-204-2",
+  "id": "mercat-7-95c153",
   "escenari": "mercat",
   "n": 7,
   "nivell": 2,
@@ -35042,10 +35146,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mansio-7-204-2"
  },
  {
-  "id": "mas-7-31-1",
+  "id": "port-7-03ea4a",
   "escenari": "port",
   "n": 7,
   "nivell": 2,
@@ -35432,10 +35537,11 @@
     1
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-31-1"
  },
  {
-  "id": "mas-7-31-9",
+  "id": "moli-7-64b463",
   "escenari": "moli",
   "n": 7,
   "nivell": 2,
@@ -35829,10 +35935,11 @@
     5
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-7-31-9"
  },
  {
-  "id": "mas-7-32-1",
+  "id": "observatori-7-674be2",
   "escenari": "observatori",
   "n": 7,
   "nivell": 2,
@@ -36221,10 +36328,11 @@
     2
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-7-32-1"
  },
  {
-  "id": "mas-7-32-3",
+  "id": "hipodrom-7-98bc94",
   "escenari": "hipodrom",
   "n": 7,
   "nivell": 2,
@@ -36609,10 +36717,11 @@
     6
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-7-32-3"
  },
  {
-  "id": "mercat-7-204-4",
+  "id": "nautic-7-7358a8",
   "escenari": "nautic",
   "n": 7,
   "nivell": 2,
@@ -37004,10 +37113,11 @@
     0
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mercat-7-204-4"
  },
  {
-  "id": "museu-7-204-1",
+  "id": "museu-7-64748a",
   "escenari": "museu",
   "n": 7,
   "nivell": 2,
@@ -37394,10 +37504,11 @@
     6
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "museu-7-204-1"
  },
  {
-  "id": "restaurant-7-204-4",
+  "id": "campament-7-4de0c9",
   "escenari": "campament",
   "n": 7,
   "nivell": 2,
@@ -37789,10 +37900,11 @@
     4
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "restaurant-7-204-4"
  },
  {
-  "id": "restaurant-7-204-6",
+  "id": "biblioteca-7-e7b098",
   "escenari": "biblioteca",
   "n": 7,
   "nivell": 2,
@@ -38176,10 +38288,11 @@
     5
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "restaurant-7-204-6"
  },
  {
-  "id": "castell-7-204-3",
+  "id": "taverna-7-efa4ab",
   "escenari": "taverna",
   "n": 7,
   "nivell": 3,
@@ -38557,10 +38670,11 @@
     1
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "castell-7-204-3"
  },
  {
-  "id": "circ-7-204-2",
+  "id": "teatre-7-b5c826",
   "escenari": "teatre",
   "n": 7,
   "nivell": 3,
@@ -38940,10 +39054,11 @@
     0
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "circ-7-204-2"
  },
  {
-  "id": "escola-7-204-1",
+  "id": "cinema-7-6d0e66",
   "escenari": "cinema",
   "n": 7,
   "nivell": 3,
@@ -39346,10 +39461,11 @@
     2
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "escola-7-204-1"
  },
  {
-  "id": "mansio-7-204-3",
+  "id": "escola-7-0072ba",
   "escenari": "escola",
   "n": 7,
   "nivell": 3,
@@ -39721,10 +39837,11 @@
     4
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mansio-7-204-3"
  },
  {
-  "id": "mansio-7-204-4",
+  "id": "gimnas-7-57478a",
   "escenari": "gimnas",
   "n": 7,
   "nivell": 3,
@@ -40112,10 +40229,11 @@
     4
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mansio-7-204-4"
  },
  {
-  "id": "mansio-7-204-6",
+  "id": "concerts-7-992aac",
   "escenari": "concerts",
   "n": 7,
   "nivell": 3,
@@ -40517,10 +40635,11 @@
     4
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mansio-7-204-6"
  },
  {
-  "id": "mas-7-31-10",
+  "id": "perruqueria-7-6f8b3d",
   "escenari": "perruqueria",
   "n": 7,
   "nivell": 3,
@@ -40905,10 +41024,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-7-31-10"
  },
  {
-  "id": "mas-7-31-6",
+  "id": "aeroport-7-8a4143",
   "escenari": "aeroport",
   "n": 7,
   "nivell": 3,
@@ -41287,10 +41407,11 @@
     0
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-7-31-6"
  },
  {
-  "id": "mas-7-32-2",
+  "id": "sastreria-7-01799d",
   "escenari": "sastreria",
   "n": 7,
   "nivell": 3,
@@ -41665,10 +41786,11 @@
     5
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-32-2"
  },
  {
-  "id": "mas-7-32-9",
+  "id": "mina-7-8b2582",
   "escenari": "mina",
   "n": 7,
   "nivell": 3,
@@ -42062,10 +42184,11 @@
     5
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-32-9"
  },
  {
-  "id": "museu-7-204-5",
+  "id": "temple-7-ab5614",
   "escenari": "temple",
   "n": 7,
   "nivell": 3,
@@ -42457,10 +42580,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "museu-7-204-5"
  },
  {
-  "id": "teatre-7-104-2",
+  "id": "mas-7-5c4080",
   "escenari": "mas",
   "n": 7,
   "nivell": 3,
@@ -42821,10 +42945,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "teatre-7-104-2"
  },
  {
-  "id": "teatre-7-104-6",
+  "id": "fira-7-dfc4cd",
   "escenari": "fira",
   "n": 7,
   "nivell": 3,
@@ -43212,10 +43337,11 @@
     4
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "teatre-7-104-6"
  },
  {
-  "id": "hotel-7-204-5",
+  "id": "diari-7-fa954e",
   "escenari": "diari",
   "n": 7,
   "nivell": 4,
@@ -43595,10 +43721,11 @@
     6
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "hotel-7-204-5"
  },
  {
-  "id": "mas-7-32-7",
+  "id": "saloon-7-b6b454",
   "escenari": "saloon",
   "n": 7,
   "nivell": 4,
@@ -43986,10 +44113,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-7-32-7"
  },
  {
-  "id": "mas-7-65-1",
+  "id": "hotel-7-2d7033",
   "escenari": "hotel",
   "n": 7,
   "nivell": 4,
@@ -44379,10 +44507,11 @@
     3
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-65-1"
  },
  {
-  "id": "mas-7-65-2",
+  "id": "ferreteria-7-4c4f22",
   "escenari": "ferreteria",
   "n": 7,
   "nivell": 4,
@@ -44772,10 +44901,11 @@
     3
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-65-2"
  },
  {
-  "id": "mas-7-65-3",
+  "id": "cafe-7-3a2228",
   "escenari": "cafe",
   "n": 7,
   "nivell": 4,
@@ -45157,10 +45287,11 @@
     3
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-7-65-3"
  },
  {
-  "id": "mas-7-65-4",
+  "id": "castell-7-3514a6",
   "escenari": "castell",
   "n": 7,
   "nivell": 4,
@@ -45538,10 +45669,11 @@
     6
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-65-4"
  },
  {
-  "id": "mas-7-65-5",
+  "id": "spa-7-6af80b",
   "escenari": "spa",
   "n": 7,
   "nivell": 4,
@@ -45933,10 +46065,11 @@
     0
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-65-5"
  },
  {
-  "id": "mas-7-67-1",
+  "id": "cabaret-7-4e675d",
   "escenari": "cabaret",
   "n": 7,
   "nivell": 4,
@@ -46319,10 +46452,11 @@
     5
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-7-67-1"
  },
  {
-  "id": "mas-7-67-2",
+  "id": "jardi-7-d0df07",
   "escenari": "jardi",
   "n": 7,
   "nivell": 4,
@@ -46710,10 +46844,11 @@
     5
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-7-67-2"
  },
  {
-  "id": "mas-7-67-3",
+  "id": "taller-7-2fe78c",
   "escenari": "taller",
   "n": 7,
   "nivell": 4,
@@ -47090,10 +47225,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-7-67-3"
  },
  {
-  "id": "mas-7-67-4",
+  "id": "banc-7-1c5db5",
   "escenari": "banc",
   "n": 7,
   "nivell": 4,
@@ -47487,10 +47623,11 @@
     6
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-7-67-4"
  },
  {
-  "id": "mas-7-67-5",
+  "id": "vinya-7-580ddf",
   "escenari": "vinya",
   "n": 7,
   "nivell": 4,
@@ -47862,10 +47999,11 @@
     5
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-7-67-5"
  },
  {
-  "id": "mercat-7-204-2",
+  "id": "pastisseria-7-bb0152",
   "escenari": "pastisseria",
   "n": 7,
   "nivell": 4,
@@ -48250,10 +48388,11 @@
     3
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mercat-7-204-2"
  },
  {
-  "id": "castell-7-204-2",
+  "id": "joieria-7-8ea09f",
   "escenari": "joieria",
   "n": 7,
   "nivell": 5,
@@ -48633,10 +48772,11 @@
     2
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "castell-7-204-2"
  },
  {
-  "id": "castell-7-204-4",
+  "id": "tren-7-ef8fdb",
   "escenari": "tren",
   "n": 7,
   "nivell": 5,
@@ -49061,10 +49201,11 @@
     6
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "castell-7-204-4"
  },
  {
-  "id": "circ-7-204-1",
+  "id": "vaixell-7-7967f4",
   "escenari": "vaixell",
   "n": 7,
   "nivell": 5,
@@ -49463,10 +49604,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "circ-7-204-1"
  },
  {
-  "id": "circ-7-204-6",
+  "id": "dirigible-7-74432b",
   "escenari": "dirigible",
   "n": 7,
   "nivell": 5,
@@ -49870,10 +50012,11 @@
     2
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "circ-7-204-6"
  },
  {
-  "id": "escola-7-204-5",
+  "id": "esglesia-7-6f98a1",
   "escenari": "esglesia",
   "n": 7,
   "nivell": 5,
@@ -50259,10 +50402,11 @@
     0
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "escola-7-204-5"
  },
  {
-  "id": "hotel-7-204-6",
+  "id": "tapes-7-438415",
   "escenari": "tapes",
   "n": 7,
   "nivell": 5,
@@ -50666,10 +50810,11 @@
     3
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "hotel-7-204-6"
  },
  {
-  "id": "mas-7-31-3",
+  "id": "radio-7-62be84",
   "escenari": "radio",
   "n": 7,
   "nivell": 5,
@@ -51030,10 +51175,11 @@
     3
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-7-31-3"
  },
  {
-  "id": "mas-7-31-7",
+  "id": "ranxo-7-633c51",
   "escenari": "ranxo",
   "n": 7,
   "nivell": 5,
@@ -51428,10 +51574,11 @@
     6
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-7-31-7"
  },
  {
-  "id": "mas-7-32-5",
+  "id": "submari-7-fc7b9e",
   "escenari": "submari",
   "n": 7,
   "nivell": 5,
@@ -51810,10 +51957,11 @@
     5
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-7-32-5"
  },
  {
-  "id": "museu-7-204-2",
+  "id": "galeria-7-12278f",
   "escenari": "galeria",
   "n": 7,
   "nivell": 5,
@@ -52193,10 +52341,11 @@
     2
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "museu-7-204-2"
  },
  {
-  "id": "vaixell-7-204-4",
+  "id": "estacio-7-3fa13f",
   "escenari": "estacio",
   "n": 7,
   "nivell": 5,
@@ -52583,10 +52732,11 @@
     0
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "vaixell-7-204-4"
  },
  {
-  "id": "vaixell-7-204-6",
+  "id": "parc-7-65d679",
   "escenari": "parc",
   "n": 7,
   "nivell": 5,
@@ -52957,10 +53107,11 @@
     2
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "vaixell-7-204-6"
  },
  {
-  "id": "estacio-8-21-1",
+  "id": "antiguitats-8-1c0b64",
   "escenari": "antiguitats",
   "n": 8,
   "nivell": 1,
@@ -53430,10 +53581,11 @@
     3
    ]
   },
-  "assassi": "G"
+  "assassi": "G",
+  "font": "estacio-8-21-1"
  },
  {
-  "id": "estacio-8-21-2",
+  "id": "oficines-8-0c9692",
   "escenari": "oficines",
   "n": 8,
   "nivell": 1,
@@ -53902,10 +54054,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "estacio-8-21-2"
  },
  {
-  "id": "estacio-8-21-3",
+  "id": "convent-8-f65f73",
   "escenari": "convent",
   "n": 8,
   "nivell": 1,
@@ -54377,10 +54530,11 @@
     4
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "estacio-8-21-3"
  },
  {
-  "id": "mas-8-21-1",
+  "id": "atic-8-b338f9",
   "escenari": "atic",
   "n": 8,
   "nivell": 1,
@@ -54842,10 +54996,11 @@
     0
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-8-21-1"
  },
  {
-  "id": "mas-8-21-2",
+  "id": "xocolata-8-a7d911",
   "escenari": "xocolata",
   "n": 8,
   "nivell": 1,
@@ -55301,10 +55456,11 @@
     0
    ]
   },
-  "assassi": "G"
+  "assassi": "G",
+  "font": "mas-8-21-2"
  },
  {
-  "id": "mas-8-21-3",
+  "id": "xalet-8-478532",
   "escenari": "xalet",
   "n": 8,
   "nivell": 1,
@@ -55765,10 +55921,11 @@
     5
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-21-3"
  },
  {
-  "id": "teatre-8-21-2",
+  "id": "restaurant-8-84c6e3",
   "escenari": "restaurant",
   "n": 8,
   "nivell": 1,
@@ -56227,10 +56384,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "teatre-8-21-2"
  },
  {
-  "id": "teatre-8-21-3",
+  "id": "monestir-8-dbb0ca",
   "escenari": "monestir",
   "n": 8,
   "nivell": 1,
@@ -56681,10 +56839,11 @@
     0
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "teatre-8-21-3"
  },
  {
-  "id": "mas-8-41-1",
+  "id": "circ-8-687241",
   "escenari": "circ",
   "n": 8,
   "nivell": 2,
@@ -57140,10 +57299,11 @@
     2
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-8-41-1"
  },
  {
-  "id": "mas-8-42-2",
+  "id": "farmacia-8-1a6e89",
   "escenari": "farmacia",
   "n": 8,
   "nivell": 2,
@@ -57608,10 +57768,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-42-2"
  },
  {
-  "id": "mas-8-42-3",
+  "id": "hostal-8-1271db",
   "escenari": "hostal",
   "n": 8,
   "nivell": 2,
@@ -58082,10 +58243,11 @@
     5
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-8-42-3"
  },
  {
-  "id": "mas-8-43-1",
+  "id": "pizzeria-8-a678c1",
   "escenari": "pizzeria",
   "n": 8,
   "nivell": 2,
@@ -58536,10 +58698,11 @@
     1
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-8-43-1"
  },
  {
-  "id": "mas-8-43-3",
+  "id": "estudi-8-5621fc",
   "escenari": "estudi",
   "n": 8,
   "nivell": 2,
@@ -59014,10 +59177,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-8-43-3"
  },
  {
-  "id": "mas-8-701-1",
+  "id": "far-8-3f872c",
   "escenari": "far",
   "n": 8,
   "nivell": 2,
@@ -59473,10 +59637,11 @@
     6
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-8-701-1"
  },
  {
-  "id": "mas-8-708-1",
+  "id": "poble-8-5e46ab",
   "escenari": "poble",
   "n": 8,
   "nivell": 2,
@@ -59953,10 +60118,11 @@
     2
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-8-708-1"
  },
  {
-  "id": "mas-8-809-1",
+  "id": "refugi-8-a53298",
   "escenari": "refugi",
   "n": 8,
   "nivell": 2,
@@ -60420,10 +60586,11 @@
     7
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-8-809-1"
  },
  {
-  "id": "mas-8-41-4",
+  "id": "titelles-8-f8bd77",
   "escenari": "titelles",
   "n": 8,
   "nivell": 3,
@@ -60864,10 +61031,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-8-41-4"
  },
  {
-  "id": "mas-8-43-4",
+  "id": "casino-8-8d2008",
   "escenari": "casino",
   "n": 8,
   "nivell": 3,
@@ -61338,10 +61506,11 @@
     2
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-8-43-4"
  },
  {
-  "id": "mas-8-703-1",
+  "id": "botiga de llibres-8-decfc4",
   "escenari": "botiga de llibres",
   "n": 8,
   "nivell": 3,
@@ -61795,10 +61964,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-8-703-1"
  },
  {
-  "id": "mas-8-707-1",
+  "id": "golf-8-9f04b3",
   "escenari": "golf",
   "n": 8,
   "nivell": 3,
@@ -62253,10 +62423,11 @@
     2
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-8-707-1"
  },
  {
-  "id": "mas-8-710-1",
+  "id": "palau-8-1cbb9d",
   "escenari": "palau",
   "n": 8,
   "nivell": 3,
@@ -62726,10 +62897,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-8-710-1"
  },
  {
-  "id": "mas-8-801-1",
+  "id": "mansio-8-abb804",
   "escenari": "mansio",
   "n": 8,
   "nivell": 3,
@@ -63198,10 +63370,11 @@
     5
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-8-801-1"
  },
  {
-  "id": "mas-8-804-1",
+  "id": "plato-8-af2189",
   "escenari": "plato",
   "n": 8,
   "nivell": 3,
@@ -63674,10 +63847,11 @@
     6
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-804-1"
  },
  {
-  "id": "mas-8-805-1",
+  "id": "mercat-8-95b60d",
   "escenari": "mercat",
   "n": 8,
   "nivell": 3,
@@ -64149,10 +64323,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-8-805-1"
  },
  {
-  "id": "estacio-8-24-1",
+  "id": "port-8-517c47",
   "escenari": "port",
   "n": 8,
   "nivell": 4,
@@ -64615,10 +64790,11 @@
     3
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "estacio-8-24-1"
  },
  {
-  "id": "estacio-8-24-2",
+  "id": "moli-8-f1d2ad",
   "escenari": "moli",
   "n": 8,
   "nivell": 4,
@@ -65069,10 +65245,11 @@
     4
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "estacio-8-24-2"
  },
  {
-  "id": "estacio-8-24-3",
+  "id": "observatori-8-e74a5a",
   "escenari": "observatori",
   "n": 8,
   "nivell": 4,
@@ -65544,10 +65721,11 @@
     7
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "estacio-8-24-3"
  },
  {
-  "id": "mas-8-24-1",
+  "id": "hipodrom-8-4ed351",
   "escenari": "hipodrom",
   "n": 8,
   "nivell": 4,
@@ -66015,10 +66193,11 @@
     6
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-24-1"
  },
  {
-  "id": "mas-8-24-3",
+  "id": "nautic-8-dd5ee6",
   "escenari": "nautic",
   "n": 8,
   "nivell": 4,
@@ -66496,10 +66675,11 @@
     0
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-8-24-3"
  },
  {
-  "id": "teatre-8-24-2",
+  "id": "museu-8-f56e90",
   "escenari": "museu",
   "n": 8,
   "nivell": 4,
@@ -66960,10 +67140,11 @@
     2
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "teatre-8-24-2"
  },
  {
-  "id": "teatre-8-24-3",
+  "id": "campament-8-50217e",
   "escenari": "campament",
   "n": 8,
   "nivell": 4,
@@ -67418,10 +67599,11 @@
     6
    ]
   },
-  "assassi": "G"
+  "assassi": "G",
+  "font": "teatre-8-24-3"
  },
  {
-  "id": "mas-8-41-2",
+  "id": "biblioteca-8-b0ccc6",
   "escenari": "biblioteca",
   "n": 8,
   "nivell": 5,
@@ -67875,10 +68057,11 @@
     0
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-41-2"
  },
  {
-  "id": "mas-8-43-2",
+  "id": "taverna-8-e73b06",
   "escenari": "taverna",
   "n": 8,
   "nivell": 5,
@@ -68356,10 +68539,11 @@
     6
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-8-43-2"
  },
  {
-  "id": "mas-8-702-1",
+  "id": "teatre-8-9e4db2",
   "escenari": "teatre",
   "n": 8,
   "nivell": 5,
@@ -68846,10 +69030,11 @@
     4
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-702-1"
  },
  {
-  "id": "mas-8-705-1",
+  "id": "cinema-8-d19a7f",
   "escenari": "cinema",
   "n": 8,
   "nivell": 5,
@@ -69313,10 +69498,11 @@
     1
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-8-705-1"
  },
  {
-  "id": "mas-8-706-1",
+  "id": "escola-8-092108",
   "escenari": "escola",
   "n": 8,
   "nivell": 5,
@@ -69780,10 +69966,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-8-706-1"
  },
  {
-  "id": "mas-8-806-1",
+  "id": "gimnas-8-0f8250",
   "escenari": "gimnas",
   "n": 8,
   "nivell": 5,
@@ -70237,10 +70424,11 @@
     5
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-8-806-1"
  },
  {
-  "id": "mas-8-807-1",
+  "id": "concerts-8-10950c",
   "escenari": "concerts",
   "n": 8,
   "nivell": 5,
@@ -70717,10 +70905,11 @@
     2
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-8-807-1"
  },
  {
-  "id": "mas-9-502-1",
+  "id": "perruqueria-9-759324",
   "escenari": "perruqueria",
   "n": 9,
   "nivell": 2,
@@ -71255,10 +71444,11 @@
     2
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-9-502-1"
  },
  {
-  "id": "mas-9-53-1",
+  "id": "aeroport-9-fb030d",
   "escenari": "aeroport",
   "n": 9,
   "nivell": 2,
@@ -71792,10 +71982,11 @@
     2
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-9-53-1"
  },
  {
-  "id": "mas-9-605-1",
+  "id": "sastreria-9-40b933",
   "escenari": "sastreria",
   "n": 9,
   "nivell": 2,
@@ -72350,10 +72541,11 @@
     3
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-9-605-1"
  },
  {
-  "id": "mas-9-609-1",
+  "id": "mina-9-105a27",
   "escenari": "mina",
   "n": 9,
   "nivell": 2,
@@ -72883,10 +73075,11 @@
     8
    ]
   },
-  "assassi": "H"
+  "assassi": "H",
+  "font": "mas-9-609-1"
  },
  {
-  "id": "mas-9-901-3",
+  "id": "temple-9-2ceb1f",
   "escenari": "temple",
   "n": 9,
   "nivell": 2,
@@ -73437,10 +73630,11 @@
     8
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-9-901-3"
  },
  {
-  "id": "mas-9-905-3",
+  "id": "mas-9-ae2b7a",
   "escenari": "mas",
   "n": 9,
   "nivell": 2,
@@ -73990,10 +74184,11 @@
     3
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-9-905-3"
  },
  {
-  "id": "mas-9-906-2",
+  "id": "fira-9-d9bbf4",
   "escenari": "fira",
   "n": 9,
   "nivell": 2,
@@ -74536,10 +74731,11 @@
     5
    ]
   },
-  "assassi": "H"
+  "assassi": "H",
+  "font": "mas-9-906-2"
  },
  {
-  "id": "mas-9-51-1",
+  "id": "diari-9-58ea7d",
   "escenari": "diari",
   "n": 9,
   "nivell": 3,
@@ -75071,10 +75267,11 @@
     1
    ]
   },
-  "assassi": "H"
+  "assassi": "H",
+  "font": "mas-9-51-1"
  },
  {
-  "id": "mas-9-51-2",
+  "id": "saloon-9-32c7c0",
   "escenari": "saloon",
   "n": 9,
   "nivell": 3,
@@ -75614,10 +75811,11 @@
     4
    ]
   },
-  "assassi": "D"
+  "assassi": "D",
+  "font": "mas-9-51-2"
  },
  {
-  "id": "mas-9-51-3",
+  "id": "hotel-9-58580b",
   "escenari": "hotel",
   "n": 9,
   "nivell": 3,
@@ -76174,10 +76372,11 @@
     3
    ]
   },
-  "assassi": "G"
+  "assassi": "G",
+  "font": "mas-9-51-3"
  },
  {
-  "id": "mas-9-53-3",
+  "id": "ferreteria-9-72da14",
   "escenari": "ferreteria",
   "n": 9,
   "nivell": 3,
@@ -76730,10 +76929,11 @@
     1
    ]
   },
-  "assassi": "A"
+  "assassi": "A",
+  "font": "mas-9-53-3"
  },
  {
-  "id": "mas-9-602-1",
+  "id": "cafe-9-022eeb",
   "escenari": "cafe",
   "n": 9,
   "nivell": 3,
@@ -77277,10 +77477,11 @@
     2
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-9-602-1"
  },
  {
-  "id": "mas-9-610-1",
+  "id": "castell-9-c353d8",
   "escenari": "castell",
   "n": 9,
   "nivell": 3,
@@ -77810,10 +78011,11 @@
     4
    ]
   },
-  "assassi": "F"
+  "assassi": "F",
+  "font": "mas-9-610-1"
  },
  {
-  "id": "mas-9-906-1",
+  "id": "spa-9-5ebea5",
   "escenari": "spa",
   "n": 9,
   "nivell": 3,
@@ -78333,10 +78535,11 @@
     4
    ]
   },
-  "assassi": "H"
+  "assassi": "H",
+  "font": "mas-9-906-1"
  },
  {
-  "id": "mas-9-601-1",
+  "id": "cabaret-9-684f02",
   "escenari": "cabaret",
   "n": 9,
   "nivell": 4,
@@ -78876,10 +79079,11 @@
     5
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-9-601-1"
  },
  {
-  "id": "mas-9-607-1",
+  "id": "jardi-9-39127c",
   "escenari": "jardi",
   "n": 9,
   "nivell": 5,
@@ -79433,10 +79637,11 @@
     5
    ]
   },
-  "assassi": "G"
+  "assassi": "G",
+  "font": "mas-9-607-1"
  },
  {
-  "id": "mas-9-608-1",
+  "id": "taller-9-99fde6",
   "escenari": "taller",
   "n": 9,
   "nivell": 5,
@@ -79984,10 +80189,11 @@
     4
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-9-608-1"
  },
  {
-  "id": "mas-9-902-2",
+  "id": "banc-9-9b4f90",
   "escenari": "banc",
   "n": 9,
   "nivell": 5,
@@ -80528,10 +80734,11 @@
     5
    ]
   },
-  "assassi": "C"
+  "assassi": "C",
+  "font": "mas-9-902-2"
  },
  {
-  "id": "mas-9-903-3",
+  "id": "vinya-9-9d4ac9",
   "escenari": "vinya",
   "n": 9,
   "nivell": 5,
@@ -81060,10 +81267,11 @@
     8
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-9-903-3"
  },
  {
-  "id": "mas-9-904-1",
+  "id": "pastisseria-9-9e3028",
   "escenari": "pastisseria",
   "n": 9,
   "nivell": 5,
@@ -81610,10 +81818,11 @@
     1
    ]
   },
-  "assassi": "E"
+  "assassi": "E",
+  "font": "mas-9-904-1"
  },
  {
-  "id": "mas-9-906-3",
+  "id": "joieria-9-9d8e30",
   "escenari": "joieria",
   "n": 9,
   "nivell": 5,
@@ -82143,6 +82352,7 @@
     8
    ]
   },
-  "assassi": "B"
+  "assassi": "B",
+  "font": "mas-9-906-3"
  }
 ]

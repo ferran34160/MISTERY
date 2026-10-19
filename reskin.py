@@ -5,7 +5,8 @@ La lògica d'un cas (plànol, sales, pistes, solució) no depèn de l'escenari: 
 noms de les sales i dels objectes i els seus colors. Cada objecte antic es canvia per un d'únic del
 nou escenari que bloqueja igual, així la solució continua sent la mateixa i no cal tornar a verificar.
 
-Ús: python reskin.py verificats.txt sortida.json
+Ús: python reskin.py verificats.txt sortida.json [preferits.txt]
+(assignacions.json recorda quin escenari té cada cas; per fer lloc a casos nous, treu-ne entrades)
 (verificats.txt: un identificador de cas per línia)
 """
 import glob
@@ -24,7 +25,7 @@ PER_ESCENARI = 3
 def carrega_pool(ids_ok):
     pool = {}
     for f in sorted(glob.glob("*.json")):
-        if f in ("noms.json", "casos_final.json"):
+        if f in ("noms.json", "casos_final.json", "assignacions.json"):
             continue
         for c in json.load(open(f, encoding="utf-8")):
             if c["id"] in ids_ok and c["id"] not in pool:
@@ -145,22 +146,71 @@ def aplica(c, clau, rng):
     return c
 
 
+def id_estable(c, clau):
+    """Identificador que no canvia mentre el cas es vegi en el mateix escenari."""
+    return "%s-%d-%s" % (clau, c["n"], "%06x" % (zlib.crc32((c["id"] + "|" + clau).encode()) & 0xFFFFFF))
+
+
+def reparteix(triats, escenaris):
+    """Manté l'escenari que ja tenia cada cas (assignacions.json) i col·loca els nous als llocs lliures."""
+    try:
+        ant = json.load(open("assignacions.json", encoding="utf-8"))
+    except (OSError, ValueError):
+        ant = {}
+    lliures = {e: PER_ESCENARI for e in escenaris}
+    asg = {}
+    for c in triats:
+        e = ant.get(c["id"])
+        if e in lliures and lliures[e] > 0:
+            asg[c["id"]] = e
+            lliures[e] -= 1
+    rng0 = random.Random(5)
+    ordre = escenaris[:]
+    rng0.shuffle(ordre)
+    for c in triats:
+        if c["id"] in asg:
+            continue
+        # l'escenari amb més lloc lliure; en empat, l'ordre barrejat
+        e = max(ordre, key=lambda x: (lliures[x], -ordre.index(x)))
+        asg[c["id"]] = e
+        lliures[e] -= 1
+    json.dump(asg, open("assignacions.json", "w", encoding="utf-8"), indent=0, sort_keys=True)
+    return asg
+
+
 def main():
     ok = {l.strip() for l in open(sys.argv[1]) if l.strip()}
     pool = carrega_pool(ok)
     escenaris = sorted(ESCENARIS)
     n_total = len(escenaris) * PER_ESCENARI
+    try:
+        prev = json.load(open("assignacions.json", encoding="utf-8"))
+    except (OSError, ValueError):
+        prev = {}
     triats = tria_casos(pool, n_total)
+    # els casos ja assignats es conserven; si en falten, es treuen els sobrants
+    triats_ids = {c["id"] for c in triats}
+    fixos = [pool[i] for i in prev if i in pool and prev[i] in escenaris]
+    if len(fixos) >= n_total:
+        triats = fixos[:n_total]
+    else:
+        pref = {l.strip() for l in open(sys.argv[3])} if len(sys.argv) > 3 else set()
+        nous = [c for c in pool.values() if c["id"] in pref and c["id"] not in prev]
+        nous += [c for c in triats if c["id"] not in prev and c["id"] not in pref]
+        triats = fixos + nous[:n_total - len(fixos)]
+        if len(triats) < n_total:
+            triats += [c for c in pool.values() if c not in triats][:n_total - len(triats)]
+    triats.sort(key=lambda c: (c["n"], c["nivell"], c["id"]))
     print(len(pool), "casos verificats;", len(triats), "triats per a", len(escenaris), "escenaris")
-    rng0 = random.Random(5)
-    ordre = escenaris[:]
-    rng0.shuffle(ordre)
+    asg = reparteix(triats, escenaris)
     out = []
-    m = len(escenaris)
-    for i, c in enumerate(triats):
-        clau = ordre[i % m]
+    for c in triats:
+        clau = asg[c["id"]]
         rng = random.Random(zlib.crc32((c["id"] + clau).encode()))
-        out.append(aplica(json.loads(json.dumps(c)), clau, rng))
+        r = aplica(json.loads(json.dumps(c)), clau, rng)
+        r["font"] = c["id"]          # identificador de l'estructura (per migrar el progrés antic)
+        r["id"] = id_estable(c, clau)
+        out.append(r)
     with open(sys.argv[2], "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
     from collections import Counter
