@@ -10,7 +10,7 @@ android {
         applicationId 'cat.ferran.misteri'
         minSdk 24
         targetSdk 34
-        versionCode (project.findProperty('vcode') ?: '1').toInteger()
+        versionCode(project.hasProperty('vcode') ? project.property('vcode').toString().toInteger() : 1)
         versionName '1.0'
     }
 
