@@ -108,6 +108,7 @@ def main():
     ap.add_argument("--veure", action="store_true")
     ap.add_argument("--nivell", type=int, default=None, help="només aquest nivell")
     ap.add_argument("--escenari", default="mas")
+    ap.add_argument("--sales", default=None, help="nombre de sales a triar, p. ex. 5,6")
     a = ap.parse_args()
 
     rng = random.Random(a.llavor)
@@ -117,7 +118,8 @@ def main():
     intents = 0
     while len(casos) < a.quantitat and intents < a.quantitat * 400:
         intents += 1
-        cas = motor.genera_cas(rng, esc, n=a.mida, intents=5)
+        ks = rng.choice([int(x) for x in a.sales.split(",")]) if a.sales else None
+        cas = motor.genera_cas(rng, esc, n=a.mida, k_sales=ks, intents=5)
         if cas is None:
             continue
         if a.nivell and cas["nivell"] != a.nivell:

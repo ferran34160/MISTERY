@@ -33,28 +33,39 @@ def carrega_pool(ids_ok):
     return pool
 
 
-def tria_casos(pool, n_total):
-    """Tria n_total casos repartits per mida i nivell, i els ordena per mida perquè cada escenari en rebi de diferents."""
-    per_mida = {6: 0.42, 7: 0.30, 8: 0.18, 9: 0.10}
-    triats = []
+PER_MIDA = {6: 0.12, 7: 0.28, 8: 0.30, 9: 0.30}   # la majoria, 7x7 a 9x9
+MIN_SALES = 5                                      # i amb 5 o 6 sales
+
+
+def quotes(n_total):
+    q = {n: round(n_total * f) for n, f in PER_MIDA.items()}
+    q[9] += n_total - sum(q.values())
+    return q
+
+
+def tria_casos(pool, n_total, fixos=()):
+    """Tria n_total casos amb 5 o 6 sales, repartits per mida (PER_MIDA) i per nivell.
+    `fixos` (ids ja assignats) es conserven mentre càpiguen a la quota de la seva mida."""
     rng = random.Random(11)
-    for n, frac in per_mida.items():
-        cs = sorted((c for c in pool.values() if c["n"] == n), key=lambda c: (c["nivell"], c["id"]))
-        k = min(len(cs), round(n_total * frac))
-        # reparteix per nivells: agafa de cada nivell alternativament
+    elig = {i: c for i, c in pool.items() if len(c["sales"]) >= MIN_SALES}
+    triats = []
+    for n, k in quotes(n_total).items():
+        mantinguts = [elig[i] for i in fixos if i in elig and elig[i]["n"] == n][:k]
+        triats += mantinguts
+        usats = {c["id"] for c in mantinguts}
         per_niv = {}
-        for c in cs:
+        for c in sorted((c for c in elig.values() if c["n"] == n and c["id"] not in usats),
+                        key=lambda c: (c["nivell"], c["id"])):
             per_niv.setdefault(c["nivell"], []).append(c)
         for l in per_niv.values():
             rng.shuffle(l)
-        escollits = []
-        while len(escollits) < k and any(per_niv.values()):
+        nous = []
+        while len(mantinguts) + len(nous) < k and any(per_niv.values()):
             for niv in sorted(per_niv):
-                if per_niv[niv] and len(escollits) < k:
-                    escollits.append(per_niv[niv].pop())
-        triats += escollits
-    # si falten casos, completa amb el que sobri
-    resta = [c for c in pool.values() if c not in triats]
+                if per_niv[niv] and len(mantinguts) + len(nous) < k:
+                    nous.append(per_niv[niv].pop())
+        triats += nous
+    resta = [c for c in elig.values() if c not in triats]
     rng.shuffle(resta)
     triats += resta[:max(0, n_total - len(triats))]
     triats.sort(key=lambda c: (c["n"], c["nivell"], c["id"]))
@@ -187,19 +198,7 @@ def main():
         prev = json.load(open("assignacions.json", encoding="utf-8"))
     except (OSError, ValueError):
         prev = {}
-    triats = tria_casos(pool, n_total)
-    # els casos ja assignats es conserven; si en falten, es treuen els sobrants
-    triats_ids = {c["id"] for c in triats}
-    fixos = [pool[i] for i in prev if i in pool and prev[i] in escenaris]
-    if len(fixos) >= n_total:
-        triats = fixos[:n_total]
-    else:
-        pref = {l.strip() for l in open(sys.argv[3])} if len(sys.argv) > 3 else set()
-        nous = [c for c in pool.values() if c["id"] in pref and c["id"] not in prev]
-        nous += [c for c in triats if c["id"] not in prev and c["id"] not in pref]
-        triats = fixos + nous[:n_total - len(fixos)]
-        if len(triats) < n_total:
-            triats += [c for c in pool.values() if c not in triats][:n_total - len(triats)]
+    triats = tria_casos(pool, n_total, [i for i in prev if prev[i] in escenaris])
     triats.sort(key=lambda c: (c["n"], c["nivell"], c["id"]))
     print(len(pool), "casos verificats;", len(triats), "triats per a", len(escenaris), "escenaris")
     asg = reparteix(triats, escenaris)

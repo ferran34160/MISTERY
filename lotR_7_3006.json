@@ -1,0 +1,1597 @@
+[
+ {
+  "id": "mas-7-3006-1",
+  "escenari": "mas",
+  "n": 7,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4
+   ],
+   [
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    4
+   ],
+   [
+    5,
+    0,
+    0,
+    4,
+    4,
+    4,
+    3
+   ],
+   [
+    5,
+    0,
+    5,
+    5,
+    3,
+    3,
+    3
+   ],
+   [
+    5,
+    5,
+    5,
+    5,
+    3,
+    3,
+    3
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    3,
+    3,
+    1
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "2": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "3": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "4": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "5": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "nevera",
+    "llar",
+    null,
+    null,
+    "armari",
+    "cadira"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "balanci",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "carro",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "pou",
+    null
+   ],
+   [
+    null,
+    "barril",
+    null,
+    null,
+    null,
+    "pou",
+    "bascula"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "balanci": {
+    "bloqueja": false,
+    "ca": "balancí",
+    "fr": "fauteuil à bascule"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "nevera": {
+    "bloqueja": true,
+    "ca": "nevera",
+    "fr": "frigo"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Francesca",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "sud",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "en_sala",
+    "p": "F",
+    "sala": 4
+   },
+   {
+    "t": "fila_obj",
+    "p": "V",
+    "obj": "armari"
+   },
+   {
+    "t": "diag",
+    "p": "E",
+    "q": "V"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "V",
+    "sala": 0
+   },
+   {
+    "t": "est",
+    "p": "C",
+    "q": "V"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "B",
+    "obj": "bascula"
+   },
+   {
+    "t": "est",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "fila_obj",
+    "p": "D",
+    "obj": "pou"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Tenia Delfina al seu nord.",
+    "Era a la sala.",
+    "Tenia un armari a la mateixa fila.",
+    "Compartia diagonal amb Vicenç.",
+    "Ningú no el va veure a la cuina.",
+    "Era a l'est de Vicenç.",
+    "Va quedar-se sobre la bàscula.",
+    "Tenia Delfina al seu oest.",
+    "A la seva fila hi havia un pou."
+   ],
+   "fr": [
+    "Il était au sud de Delfina.",
+    "On l'a vue dans le salon.",
+    "Une armoire se trouvait sur sa ligne.",
+    "Il partageait une diagonale avec Vicenç.",
+    "Il ne se trouvait pas dans la cuisine.",
+    "Il était à l'est de Vicenç.",
+    "Elle était sur la balance.",
+    "Il se trouvait plus à l'est que Delfina.",
+    "Sur sa ligne se trouvait un puits."
+   ]
+  },
+  "solucio": {
+   "A": [
+    6,
+    1
+   ],
+   "B": [
+    5,
+    6
+   ],
+   "C": [
+    3,
+    5
+   ],
+   "D": [
+    4,
+    0
+   ],
+   "E": [
+    2,
+    2
+   ],
+   "F": [
+    1,
+    3
+   ],
+   "V": [
+    0,
+    4
+   ]
+  },
+  "assassi": "F"
+ },
+ {
+  "id": "mas-7-3006-2",
+  "escenari": "mas",
+  "n": 7,
+  "nivell": 5,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    2,
+    1,
+    1,
+    3,
+    3
+   ],
+   [
+    -1,
+    -1,
+    2,
+    1,
+    1,
+    1,
+    3
+   ],
+   [
+    4,
+    4,
+    2,
+    1,
+    1,
+    1,
+    3
+   ],
+   [
+    4,
+    4,
+    2,
+    2,
+    2,
+    1,
+    3
+   ],
+   [
+    4,
+    4,
+    4,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    4,
+    4,
+    4,
+    4,
+    0,
+    5,
+    5
+   ],
+   [
+    -1,
+    0,
+    0,
+    0,
+    0,
+    5,
+    5
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "1": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "2": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "3": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "4": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "5": {
+    "ca": "hort",
+    "fr": "potager"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    "celler",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "pou",
+    null,
+    null,
+    "celler",
+    null,
+    null,
+    "pica"
+   ],
+   [
+    null,
+    "tractor",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "balanci",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "pou",
+    null,
+    "bascula",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "figuera"
+   ]
+  ],
+  "objectes": {
+   "balanci": {
+    "bloqueja": false,
+    "ca": "balancí",
+    "fr": "fauteuil à bascule"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "celler": {
+    "bloqueja": true,
+    "ca": "rac de vins",
+    "fr": "casier à vins"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "figuera",
+    "fr": "figuier"
+   },
+   "pica": {
+    "bloqueja": true,
+    "ca": "pica",
+    "fr": "évier"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   },
+   "tractor": {
+    "bloqueja": true,
+    "ca": "tractor",
+    "fr": "tracteur"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Francesca",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "no_en_sala",
+    "p": "F",
+    "sala": 2
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 1
+   },
+   {
+    "t": "raco",
+    "p": "V"
+   },
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "balanci"
+   },
+   {
+    "t": "fila_obj",
+    "p": "D",
+    "obj": "balanci"
+   },
+   {
+    "t": "sol_amb",
+    "p": "C",
+    "q": "F"
+   },
+   {
+    "t": "sud",
+    "p": "D",
+    "q": "C"
+   },
+   {
+    "t": "diag",
+    "p": "B",
+    "q": "F"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "No era a la sala.",
+    "Estava al celler.",
+    "Era en un racó d'una habitació.",
+    "Tenia un balancí a tocar.",
+    "Tenia un balancí a la mateixa fila.",
+    "A la seva habitació només hi havia Francesca amb ell.",
+    "Tenia Carles al seu nord.",
+    "Era a la mateixa diagonal que Francesca."
+   ],
+   "fr": [
+    "Personne ne l'a vue dans le salon.",
+    "Il était dans le cellier.",
+    "Il se tenait dans un angle d'une pièce.",
+    "Elle avait un fauteuil à bascule tout près.",
+    "Il partageait sa ligne avec un fauteuil à bascule.",
+    "Seuls lui et Francesca étaient dans sa pièce.",
+    "Il se trouvait plus au sud que Carles.",
+    "Francesca et lui étaient sur une même ligne diagonale."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    3
+   ],
+   "B": [
+    6,
+    1
+   ],
+   "C": [
+    0,
+    5
+   ],
+   "D": [
+    4,
+    2
+   ],
+   "E": [
+    2,
+    4
+   ],
+   "F": [
+    1,
+    6
+   ],
+   "V": [
+    5,
+    0
+   ]
+  },
+  "assassi": "D"
+ },
+ {
+  "id": "mas-7-3006-3",
+  "escenari": "mas",
+  "n": 7,
+  "nivell": 3,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    1,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    1,
+    4,
+    3
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    4,
+    4,
+    3
+   ],
+   [
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    3
+   ],
+   [
+    -1,
+    0,
+    0,
+    4,
+    4,
+    4,
+    3
+   ],
+   [
+    -1,
+    0,
+    0,
+    4,
+    4,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "1": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "2": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "3": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "4": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "bascula"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    "armari",
+    "nevera",
+    null,
+    "pou"
+   ],
+   [
+    "cadira",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "nevera": {
+    "bloqueja": true,
+    "ca": "nevera",
+    "fr": "frigo"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Enric",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Fabiola",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "cadira"
+   },
+   {
+    "t": "cavall",
+    "p": "F",
+    "q": "D"
+   },
+   {
+    "t": "cavall",
+    "p": "E",
+    "q": "D"
+   },
+   {
+    "t": "en_sala",
+    "p": "C",
+    "sala": 1
+   },
+   {
+    "t": "nord",
+    "p": "V",
+    "q": "A"
+   },
+   {
+    "t": "nord",
+    "p": "E",
+    "q": "F"
+   },
+   {
+    "t": "cavall",
+    "p": "B",
+    "q": "C"
+   },
+   {
+    "t": "cavall",
+    "p": "A",
+    "q": "V"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Una cadira era a la seva columna.",
+    "Respecte a David, estava a un moviment de cavall.",
+    "Estava a un salt de cavall de David.",
+    "Va passar l'estona al celler.",
+    "Tenia Aina al seu sud.",
+    "Era al nord de Fabiola.",
+    "Era a un salt de cavall de Carles (com als escacs).",
+    "Era a un salt de cavall de Vicenç (com als escacs)."
+   ],
+   "fr": [
+    "Une chaise se trouvait dans sa colonne.",
+    "Par rapport à David, elle était à un mouvement de cavalier.",
+    "Il était à un saut de cavalier de David (comme aux échecs).",
+    "Il était dans le cellier.",
+    "Il se trouvait plus au nord qu'Aina.",
+    "Il était au nord de Fabiola.",
+    "Il se trouvait à un saut de cavalier de Carles.",
+    "Elle était à un saut de cavalier de Vicenç (comme aux échecs)."
+   ]
+  },
+  "solucio": {
+   "A": [
+    6,
+    3
+   ],
+   "B": [
+    0,
+    6
+   ],
+   "C": [
+    1,
+    4
+   ],
+   "D": [
+    2,
+    0
+   ],
+   "E": [
+    3,
+    2
+   ],
+   "F": [
+    4,
+    1
+   ],
+   "V": [
+    5,
+    5
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "mas-7-3006-4",
+  "escenari": "mas",
+  "n": 7,
+  "nivell": 2,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    3,
+    3,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    3,
+    3,
+    4,
+    2,
+    1
+   ],
+   [
+    0,
+    0,
+    3,
+    3,
+    4,
+    2,
+    1
+   ],
+   [
+    0,
+    0,
+    4,
+    4,
+    4,
+    2,
+    1
+   ],
+   [
+    0,
+    0,
+    4,
+    4,
+    1,
+    1,
+    1
+   ],
+   [
+    4,
+    4,
+    4,
+    4,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "1": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "2": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "3": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "4": {
+    "ca": "celler",
+    "fr": "cellier"
+   }
+  },
+  "obj": [
+   [
+    null,
+    "carro",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "figuera",
+    null,
+    null
+   ],
+   [
+    null,
+    "armari",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "barril",
+    "tractor",
+    null
+   ],
+   [
+    null,
+    null,
+    "armari",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "balanci",
+    null,
+    "barril",
+    null,
+    "bascula",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "balanci": {
+    "bloqueja": false,
+    "ca": "balancí",
+    "fr": "fauteuil à bascule"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "figuera",
+    "fr": "figuier"
+   },
+   "tractor": {
+    "bloqueja": true,
+    "ca": "tractor",
+    "fr": "tracteur"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Carla",
+    "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Francesca",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vera",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "E",
+    "obj": "carro"
+   },
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "armari"
+   },
+   {
+    "t": "sol_amb",
+    "p": "A",
+    "q": "F"
+   },
+   {
+    "t": "sud",
+    "p": "D",
+    "q": "F"
+   },
+   {
+    "t": "prop_obj",
+    "p": "F",
+    "obj": "barril"
+   },
+   {
+    "t": "oest",
+    "p": "V",
+    "q": "E"
+   },
+   {
+    "t": "fila_obj",
+    "p": "C",
+    "obj": "tractor"
+   },
+   {
+    "t": "diag",
+    "p": "D",
+    "q": "V"
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "armari"
+   },
+   {
+    "t": "raco",
+    "p": "B"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Compartia columna amb un carro.",
+    "A la seva fila hi havia un armari.",
+    "Compartia habitació només amb Francesca.",
+    "Era al sud de Francesca.",
+    "Prop seu hi havia un barril.",
+    "Era a l'oest d'Eudald.",
+    "Tenia un tractor a la mateixa fila.",
+    "Vera i ell eren en una mateixa línia diagonal.",
+    "Tenia un armari a la mateixa columna.",
+    "Ocupava un racó d'una habitació."
+   ],
+   "fr": [
+    "Une charrette se trouvait dans sa colonne.",
+    "Sur sa ligne se trouvait une armoire.",
+    "Seuls elle et Francesca étaient dans sa pièce.",
+    "Il était au sud de Francesca.",
+    "Elle était à côté d'un tonneau.",
+    "Eudald était à l'est d'elle.",
+    "Un tracteur se trouvait sur sa ligne.",
+    "Il était sur la même diagonale que Vera.",
+    "Elle partageait sa colonne avec une armoire.",
+    "Il se tenait dans un angle d'une pièce."
+   ]
+  },
+  "solucio": {
+   "A": [
+    6,
+    3
+   ],
+   "B": [
+    2,
+    6
+   ],
+   "C": [
+    3,
+    2
+   ],
+   "D": [
+    5,
+    5
+   ],
+   "E": [
+    1,
+    1
+   ],
+   "F": [
+    4,
+    4
+   ],
+   "V": [
+    0,
+    0
+   ]
+  },
+  "assassi": "E"
+ }
+]
