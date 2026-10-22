@@ -854,5 +854,517 @@
 "campament-9-b620e8": {
 "ca": "El tractor tardà",
 "fr": "Le tracteur tardif"
+},
+"vaixell-6-c48a70": {
+"ca": "La coberta muda",
+"fr": "Le pont muet"
+},
+"dirigible-6-73af99": {
+"ca": "La sala de motors amagada",
+"fr": "La salle des moteurs cachée"
+},
+"esglesia-7-c1aa32": {
+"ca": "El bagul trencat",
+"fr": "La malle brisée"
+},
+"tapes-7-8a5dc4": {
+"ca": "La cuina amagada",
+"fr": "La cuisine cachée"
+},
+"radio-7-2aa911": {
+"ca": "La caixa registradora perduda",
+"fr": "La caisse enregistreuse perdue"
+},
+"galeria-7-62c934": {
+"ca": "La taula muda",
+"fr": "La table muette"
+},
+"xalet-7-74b78a": {
+"ca": "El fanal amagat",
+"fr": "Le lampadaire caché"
+},
+"monestir-7-4c97c8": {
+"ca": "La biblioteca perduda",
+"fr": "La bibliothèque perdue"
+},
+"botiga de llibres-7-7a85ea": {
+"ca": "El soterrani tardà",
+"fr": "Le sous-sol tardif"
+},
+"moli-7-a50649": {
+"ca": "L'hort fosc",
+"fr": "Le potager sombre"
+},
+"biblioteca-7-810213": {
+"ca": "El pupitre fosc",
+"fr": "Le pupitre sombre"
+},
+"saloon-7-602eab": {
+"ca": "El forn trencat",
+"fr": "Le four brisé"
+},
+"spa-7-838d00": {
+"ca": "La caixa registradora llunyana",
+"fr": "La caisse enregistreuse lointaine"
+},
+"joieria-7-583c9d": {
+"ca": "L'escriptori trencat",
+"fr": "Le bureau brisé"
+},
+"vaixell-7-675c57": {
+"ca": "El timó tardà",
+"fr": "La barre tardive"
+},
+"dirigible-7-b3448b": {
+"ca": "El timó amagat",
+"fr": "La barre cachée"
+},
+"esglesia-7-ee096b": {
+"ca": "El cistell de fruita trencat",
+"fr": "Le panier de fruits brisé"
+},
+"tapes-7-f14987": {
+"ca": "L'estufa buida",
+"fr": "Le poêle vide"
+},
+"radio-7-128b6f": {
+"ca": "La nevera fosca",
+"fr": "Le frigo sombre"
+},
+"ranxo-7-f70cd0": {
+"ca": "El billar buit",
+"fr": "Le billard vide"
+},
+"galeria-7-0dc237": {
+"ca": "El rellotge de peu mut",
+"fr": "L'horloge muette"
+},
+"parc-7-db82e3": {
+"ca": "La sala dels miralls muda",
+"fr": "La palais des glaces muette"
+},
+"antiguitats-7-f007ab": {
+"ca": "La sala de subhastes muda",
+"fr": "La salle des ventes muette"
+},
+"convent-7-828f75": {
+"ca": "La llibreria muda",
+"fr": "La bibliothèque muette"
+},
+"atic-7-08e8a5": {
+"ca": "L'escriptori amagat",
+"fr": "Le bureau caché"
+},
+"xocolata-7-b4ddb5": {
+"ca": "La caixa registradora fosca",
+"fr": "La caisse enregistreuse sombre"
+},
+"xalet-7-1e68ac": {
+"ca": "La butaca tardana",
+"fr": "Le fauteuil tardif"
+},
+"monestir-7-52b4ed": {
+"ca": "El claustre tardà",
+"fr": "Le cloître tardif"
+},
+"circ-7-37b56f": {
+"ca": "La tribuna tardana",
+"fr": "La tribune tardive"
+},
+"hostal-7-e69811": {
+"ca": "L'arbre tardà",
+"fr": "L'arbre tardif"
+},
+"pizzeria-7-58f0d8": {
+"ca": "L'arxivador trencat",
+"fr": "Le classeur brisé"
+},
+"titelles-7-710a67": {
+"ca": "El camerino perdut",
+"fr": "La loge perdue"
+},
+"botiga de llibres-7-34092d": {
+"ca": "El bagul tardà",
+"fr": "La malle tardive"
+},
+"golf-7-512887": {
+"ca": "El vàter perdut",
+"fr": "Le W.-C. perdu"
+},
+"mansio-7-0853b6": {
+"ca": "El piano mut",
+"fr": "Le piano muet"
+},
+"plato-7-72aff3": {
+"ca": "El magatzem perdut",
+"fr": "L'entrepôt perdu"
+},
+"port-7-fed38a": {
+"ca": "L'oficina muda",
+"fr": "Le bureau muet"
+},
+"moli-7-96dc6b": {
+"ca": "L'armari tardà",
+"fr": "L'armoire tardive"
+},
+"hipodrom-7-30ee47": {
+"ca": "El telèfon fosc",
+"fr": "Le téléphone sombre"
+},
+"biblioteca-7-161397": {
+"ca": "El globus terraqüi fosc",
+"fr": "Le globe sombre"
+},
+"teatre-7-6c3068": {
+"ca": "El sofà llunyà",
+"fr": "Le canapé lointain"
+},
+"escola-7-b1a7bb": {
+"ca": "El telèfon tardà",
+"fr": "Le téléphone tardif"
+},
+"gimnas-7-8ef92b": {
+"ca": "El vàter trencat",
+"fr": "Le W.-C. brisé"
+},
+"concerts-7-88a438": {
+"ca": "La bústia muda",
+"fr": "La boîte aux lettres muette"
+},
+"aeroport-7-fc1d7f": {
+"ca": "La canoa buida",
+"fr": "Le canoë vide"
+},
+"sastreria-7-49ccc2": {
+"ca": "La botiga llunyana",
+"fr": "La boutique lointaine"
+},
+"mas-7-fa2aa0": {
+"ca": "El celler trencat",
+"fr": "Le cellier brisé"
+},
+"fira-7-d5a5bd": {
+"ca": "El carrusel llunyà",
+"fr": "Le manège lointain"
+},
+"diari-7-56920c": {
+"ca": "La barra llunyana",
+"fr": "Le comptoir lointain"
+},
+"saloon-8-0a6332": {
+"ca": "La cuina llunyana",
+"fr": "La cuisine lointaine"
+},
+"hotel-8-9cf555": {
+"ca": "La pica llunyana",
+"fr": "L'évier lointain"
+},
+"ferreteria-8-4c4f5a": {
+"ca": "La rentadora amagada",
+"fr": "Le lave-linge caché"
+},
+"cafe-8-53957f": {
+"ca": "La pica fosca",
+"fr": "L'évier sombre"
+},
+"spa-8-cc7ce2": {
+"ca": "El vestuari mut",
+"fr": "Le vestiaire muet"
+},
+"cabaret-8-78e5a7": {
+"ca": "El despatx perdut",
+"fr": "Le bureau perdu"
+},
+"taller-8-c95039": {
+"ca": "El tamboret llunyà",
+"fr": "Le tabouret lointain"
+},
+"banc-8-3f1e22": {
+"ca": "El rellotge de peu fosc",
+"fr": "L'horloge sombre"
+},
+"vinya-8-d90c68": {
+"ca": "El despatx amagat",
+"fr": "Le bureau caché"
+},
+"joieria-8-1ac82f": {
+"ca": "El sofà trencat",
+"fr": "Le canapé brisé"
+},
+"tren-8-5eeda8": {
+"ca": "El piano tardà",
+"fr": "Le piano tardif"
+},
+"vaixell-8-77f2dc": {
+"ca": "El llit trencat",
+"fr": "Le lit brisé"
+},
+"dirigible-8-2810e1": {
+"ca": "La cafetera muda",
+"fr": "La machine à café muette"
+},
+"esglesia-8-47eb41": {
+"ca": "La llibreria buida",
+"fr": "La bibliothèque vide"
+},
+"tapes-8-6a726b": {
+"ca": "La taula buida",
+"fr": "La table vide"
+},
+"radio-8-26da6b": {
+"ca": "La barra amagada",
+"fr": "Le comptoir caché"
+},
+"ranxo-8-2b4749": {
+"ca": "La pica perduda",
+"fr": "L'évier perdu"
+},
+"submari-8-c63dbd": {
+"ca": "El forn buit",
+"fr": "Le four vide"
+},
+"galeria-8-61faa4": {
+"ca": "L'escriptori buit",
+"fr": "Le bureau vide"
+},
+"estacio-8-e9093f": {
+"ca": "L'andana perduda",
+"fr": "La quai perdue"
+},
+"parc-8-372fd6": {
+"ca": "La caixa registradora muda",
+"fr": "La caisse enregistreuse muette"
+},
+"antiguitats-8-13497d": {
+"ca": "La taula perduda",
+"fr": "La table perdue"
+},
+"oficines-8-3745e9": {
+"ca": "El despatx del director perdut",
+"fr": "Le bureau du directeur perdu"
+},
+"convent-8-916b0e": {
+"ca": "El carro trencat",
+"fr": "La charrette brisée"
+},
+"atic-8-e6850b": {
+"ca": "La nevera tardana",
+"fr": "Le frigo tardif"
+},
+"xocolata-8-d8b18f": {
+"ca": "La sala de tast amagada",
+"fr": "La salle de dégustation cachée"
+},
+"xalet-8-0c57fc": {
+"ca": "El tauler d'escacs mut",
+"fr": "L'échiquier muet"
+},
+"restaurant-8-7bb82b": {
+"ca": "El rac de vins trencat",
+"fr": "Le casier à vins brisé"
+},
+"monestir-8-cb5b88": {
+"ca": "El rac de vins tardà",
+"fr": "Le casier à vins tardif"
+},
+"circ-8-e78f98": {
+"ca": "El banc llunyà",
+"fr": "Le banc lointain"
+},
+"farmacia-8-064002": {
+"ca": "El magatzem trencat",
+"fr": "La réserve brisée"
+},
+"hostal-8-0468c7": {
+"ca": "El carro amagat",
+"fr": "La charrette cachée"
+},
+"pizzeria-8-8ded49": {
+"ca": "El tamboret perdut",
+"fr": "Le tabouret perdu"
+},
+"estudi-8-8531f9": {
+"ca": "El magatzem buit",
+"fr": "L'entrepôt vide"
+},
+"far-9-5620ba": {
+"ca": "La pica buida",
+"fr": "L'évier vide"
+},
+"poble-9-9a756f": {
+"ca": "La bàscula tardana",
+"fr": "La balance tardive"
+},
+"refugi-9-9e7d13": {
+"ca": "La gàbia llunyana",
+"fr": "La cage lointaine"
+},
+"titelles-9-0693bc": {
+"ca": "La butaca llunyana",
+"fr": "Le fauteuil lointain"
+},
+"casino-9-a50240": {
+"ca": "El vestíbul tardà",
+"fr": "L'hall tardif"
+},
+"botiga de llibres-9-184b56": {
+"ca": "El telèfon llunyà",
+"fr": "Le téléphone lointain"
+},
+"golf-9-0aa86f": {
+"ca": "La cafetera llunyana",
+"fr": "La machine à café lointaine"
+},
+"palau-9-269d34": {
+"ca": "El saló de ball buit",
+"fr": "La salle de bal vide"
+},
+"mansio-9-ac1701": {
+"ca": "El piano llunyà",
+"fr": "Le piano lointain"
+},
+"plato-9-7720a5": {
+"ca": "La cafetera fosca",
+"fr": "La machine à café sombre"
+},
+"port-9-470f99": {
+"ca": "El tractor trencat",
+"fr": "Le tracteur brisé"
+},
+"moli-9-a0079b": {
+"ca": "El cistell de fruita buit",
+"fr": "Le panier de fruits vide"
+},
+"observatori-9-60ddbc": {
+"ca": "L'arbre mut",
+"fr": "L'arbre muet"
+},
+"hipodrom-9-2c55d9": {
+"ca": "El bar llunyà",
+"fr": "Le bar lointain"
+},
+"nautic-9-bb9adc": {
+"ca": "El mirall perdut",
+"fr": "Le miroir perdu"
+},
+"museu-9-6a398e": {
+"ca": "La finestreta fosca",
+"fr": "Le guichet sombre"
+},
+"campament-9-69e907": {
+"ca": "La pica tardana",
+"fr": "L'évier tardif"
+},
+"biblioteca-9-953f26": {
+"ca": "L'arxiu tardà",
+"fr": "L'archive tardive"
+},
+"taverna-9-4aa342": {
+"ca": "El tamboret tardà",
+"fr": "Le tabouret tardif"
+},
+"teatre-9-ffcfdc": {
+"ca": "La tramoia perduda",
+"fr": "La coulisse perdue"
+},
+"cinema-9-79dd31": {
+"ca": "La bústia tardana",
+"fr": "La boîte aux lettres tardive"
+},
+"escola-9-b3da38": {
+"ca": "El gimnàs mut",
+"fr": "Le gymnase muet"
+},
+"gimnas-9-fdfd68": {
+"ca": "El magatzem mut",
+"fr": "L'entrepôt muet"
+},
+"concerts-9-c08d95": {
+"ca": "El reflector llunyà",
+"fr": "Le projecteur lointain"
+},
+"perruqueria-9-6eab0a": {
+"ca": "La bàscula buida",
+"fr": "La balance vide"
+},
+"aeroport-9-5f94a8": {
+"ca": "La caixa registradora trencada",
+"fr": "La caisse enregistreuse brisée"
+},
+"sastreria-9-c23dbf": {
+"ca": "La golfa muda",
+"fr": "Le grenier muet"
+},
+"mina-9-28223e": {
+"ca": "La torxa fosca",
+"fr": "La torche sombre"
+},
+"temple-9-1bc52a": {
+"ca": "El santuari fosc",
+"fr": "Le sanctuaire sombre"
+},
+"mas-9-5ce97e": {
+"ca": "La figuera tardana",
+"fr": "Le figuier tardif"
+},
+"fira-9-9369d1": {
+"ca": "La fogata fosca",
+"fr": "Le feu de camp sombre"
+},
+"diari-9-881420": {
+"ca": "La redacció tardana",
+"fr": "La rédaction tardive"
+},
+"saloon-9-d004b8": {
+"ca": "El forn amagat",
+"fr": "Le four caché"
+},
+"hotel-9-2290d8": {
+"ca": "La caixa tardana",
+"fr": "La caisse tardive"
+},
+"ferreteria-9-67c1c2": {
+"ca": "El carro mut",
+"fr": "La charrette muette"
+},
+"cafe-9-f2efc9": {
+"ca": "El celler buit",
+"fr": "La cave vide"
+},
+"castell-9-152987": {
+"ca": "El pou fosc",
+"fr": "Le puits sombre"
+},
+"spa-9-119ab6": {
+"ca": "La bàscula perduda",
+"fr": "La balance perdue"
+},
+"cabaret-9-0cd4b0": {
+"ca": "El mirall fosc",
+"fr": "Le miroir sombre"
+},
+"jardi-9-2db7b6": {
+"ca": "La bicicleta perduda",
+"fr": "Le vélo perdu"
+},
+"taller-9-629e83": {
+"ca": "El barril mut",
+"fr": "Le tonneau muet"
+},
+"banc-9-f44617": {
+"ca": "La taula amagada",
+"fr": "La table cachée"
+},
+"vinya-9-fc2700": {
+"ca": "La vinya llunyana",
+"fr": "La vigne lointaine"
+},
+"pastisseria-9-65ebc0": {
+"ca": "L'armari perdut",
+"fr": "L'armoire perdue"
+},
+"joieria-9-04fc72": {
+"ca": "La vitrina buida",
+"fr": "La vitrine vide"
 }
 }

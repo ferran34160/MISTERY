@@ -326,33 +326,33 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Blai",
+    "nom": "Biel",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Enric",
-    "genere": "m"
+    "nom": "Eulàlia",
+    "genere": "f"
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Fabiola",
+    "genere": "f"
    },
    {
     "id": "G",
@@ -361,7 +361,7 @@
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -419,28 +419,28 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'est de Delfina.",
-    "A la seva fila hi havia un armari.",
-    "Compartia fila amb un tractor.",
-    "Prop seu hi havia un armari.",
-    "Tenia Aina al seu sud.",
+    "Tenia Dídac al seu oest.",
+    "Tenia un armari a la mateixa fila.",
+    "A la seva fila hi havia un tractor.",
+    "Era al costat d'un armari.",
+    "Era al nord d'Aleix.",
     "A la seva columna hi havia un rac de vins.",
-    "Tenia un pou a la mateixa columna.",
-    "Era a la mateixa habitació que Enric.",
-    "Només ella i Felip eren a la seva habitació.",
-    "No va posar els peus al porxo."
+    "Un pou era a la seva columna.",
+    "Compartia habitació amb Eulàlia.",
+    "A la seva habitació només hi havia Fabiola amb ell.",
+    "No era al porxo."
    ],
    "fr": [
-    "Delfina était à l'ouest de lui.",
-    "Elle partageait sa ligne avec une armoire.",
+    "Il se trouvait plus à l'est que Dídac.",
+    "Sur sa ligne se trouvait une armoire.",
     "Un tracteur se trouvait sur sa ligne.",
-    "Il était à côté d'une armoire.",
-    "Il était au nord d'Aina.",
-    "Un casier à vins se trouvait dans sa colonne.",
-    "Il partageait sa colonne avec un puits.",
-    "Il partageait sa pièce avec Enric.",
-    "Dans sa pièce, il n'y avait qu'elle et Felip.",
-    "Personne ne l'a vue dans le porche."
+    "Il se tenait près d'une armoire.",
+    "Elle était au nord d'Aleix.",
+    "Elle partageait sa colonne avec un casier à vins.",
+    "Dans sa colonne se trouvait un puits.",
+    "Eulàlia et lui étaient dans la même pièce.",
+    "Il ne partageait sa pièce qu'avec Fabiola.",
+    "Il ne se trouvait pas dans le porche."
    ]
   },
   "solucio": {
@@ -806,28 +806,28 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
+    "nom": "Aleix",
     "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
-   },
-   {
-    "id": "C",
-    "nom": "Cesc",
+    "nom": "Biel",
     "genere": "m"
    },
    {
+    "id": "C",
+    "nom": "Clara",
+    "genere": "f"
+   },
+   {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Enric",
+    "genere": "m"
    },
    {
     "id": "F",
@@ -836,13 +836,13 @@
    },
    {
     "id": "G",
-    "nom": "Guerau",
-    "genere": "m"
+    "nom": "Griselda",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -909,32 +909,32 @@
   ],
   "textos": {
    "ca": [
-    "Era al sud d'Eulàlia.",
-    "Compartia fila amb una bàscula.",
-    "Un carro era a la seva columna.",
-    "Era a un salt de cavall de Cesc (com als escacs).",
-    "Un carro era a la seva fila.",
-    "Estava més a l'est que David.",
-    "Estava més al nord que Francesca.",
-    "Era a l'oest de Bruna.",
-    "A la seva fila hi havia un pou.",
-    "A la seva columna hi havia un carro.",
-    "Compartia habitació amb Guerau.",
-    "Era a la mateixa diagonal que Bruna."
+    "Tenia Enric al seu nord.",
+    "Tenia una bàscula a la mateixa fila.",
+    "Compartia columna amb un carro.",
+    "Respecte a Clara, estava a un moviment de cavall.",
+    "Compartia fila amb un carro.",
+    "Tenia Dídac al seu oest.",
+    "Tenia Francesca al seu sud.",
+    "Estava més a l'oest que Biel.",
+    "Un pou era a la seva fila.",
+    "Tenia un carro a la mateixa columna.",
+    "Compartia habitació amb Griselda.",
+    "Compartia diagonal amb Biel."
    ],
    "fr": [
-    "Eulàlia était au nord de lui.",
-    "Elle partageait sa ligne avec une balance.",
-    "Une charrette se trouvait dans sa colonne.",
-    "Elle se trouvait à un saut de cavalier de Cesc.",
+    "Enric était au nord de lui.",
+    "Il partageait sa ligne avec une balance.",
+    "Dans sa colonne se trouvait une charrette.",
+    "Par rapport à Clara, il était à un mouvement de cavalier.",
     "Sur sa ligne se trouvait une charrette.",
-    "Elle était à l'est de David.",
-    "Francesca était au sud de lui.",
-    "Bruna était à l'est d'elle.",
+    "Il se trouvait plus à l'est que Dídac.",
+    "Il se trouvait plus au nord que Francesca.",
+    "Elle était à l'ouest de Biel.",
     "Un puits se trouvait sur sa ligne.",
     "Il partageait sa colonne avec une charrette.",
-    "Guerau et lui étaient dans la même pièce.",
-    "Elle partageait une diagonale avec Bruna."
+    "Il partageait sa pièce avec Griselda.",
+    "Il était sur la même diagonale que Biel."
    ]
   },
   "solucio": {
@@ -1305,22 +1305,22 @@
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Clara",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dolors",
+    "nom": "Delfina",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Enric",
+    "nom": "Eudald",
     "genere": "m"
    },
    {
@@ -1330,12 +1330,12 @@
    },
    {
     "id": "G",
-    "nom": "Gemma",
-    "genere": "f"
+    "nom": "Guerau",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -1388,25 +1388,25 @@
   ],
   "textos": {
    "ca": [
-    "Era al costat d'un carro.",
-    "Compartia columna amb un forn.",
-    "Era a la sala.",
-    "Estava vora un tractor.",
-    "A la seva fila hi havia una cadira.",
-    "Compartia fila amb un tractor.",
-    "Només hi havia una persona al celler, víctima inclosa.",
-    "Estava a un salt de cavall de Gemma.",
-    "Prop seu hi havia una bicicleta."
+    "Tenia un carro a tocar.",
+    "Tenia un forn a la mateixa columna.",
+    "La van veure a la sala.",
+    "Prop seu hi havia un tractor.",
+    "Compartia fila amb una cadira.",
+    "A la seva fila hi havia un tractor.",
+    "El celler només tenia una persona, comptant la víctima.",
+    "Respecte a Guerau, estava a un moviment de cavall.",
+    "Estava vora una bicicleta."
    ],
    "fr": [
-    "Elle était à côté d'une charrette.",
-    "Un four se trouvait dans sa colonne.",
+    "Elle se tenait près d'une charrette.",
+    "Il partageait sa colonne avec un four.",
     "Elle a passé le temps dans le salon.",
-    "Elle se tenait près d'un tracteur.",
+    "Il était à côté d'un tracteur.",
     "Sur sa ligne se trouvait une chaise.",
-    "Il partageait sa ligne avec un tracteur.",
-    "Il n'y avait qu'une personne dans le cellier, victime comprise.",
-    "Par rapport à Gemma, il était à un mouvement de cavalier.",
+    "Un tracteur se trouvait sur sa ligne.",
+    "Le cellier ne comptait qu'une personne, victime comprise.",
+    "Il était à un saut de cavalier de Guerau (comme aux échecs).",
     "Elle avait un vélo tout près."
    ]
   },
@@ -1768,8 +1768,8 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
@@ -1778,8 +1778,8 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
@@ -1788,8 +1788,8 @@
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
@@ -1866,30 +1866,30 @@
   ],
   "textos": {
    "ca": [
-    "A la seva fila hi havia un armari.",
+    "Tenia un armari a la mateixa fila.",
     "Tenia un tractor a la mateixa columna.",
-    "Es trobava a la sala.",
-    "Va quedar-se sobre el banc.",
-    "Elna i ell eren en una mateixa línia diagonal.",
-    "El van veure a l'hort.",
-    "Estava més al nord que Anna.",
-    "Tenia Francesca al seu sud.",
-    "Era a un salt de cavall de Francesca (com als escacs).",
+    "El van veure a la sala.",
+    "Es va deixar caure sobre el banc.",
+    "Compartia diagonal amb Eudald.",
+    "Era a l'hort.",
+    "Tenia Aleix al seu sud.",
+    "Estava més al nord que Francesca.",
+    "Estava a un salt de cavall de Francesca.",
     "Comptant la víctima, 2 persones eren al porxo.",
-    "Estava a un salt de cavall d'Anna."
+    "Respecte a Aleix, estava a un moviment de cavall."
    ],
    "fr": [
-    "Une armoire se trouvait sur sa ligne.",
-    "Dans sa colonne se trouvait un tracteur.",
-    "Elle se trouvait dans le salon.",
-    "Elle se tenait sur le banc.",
-    "Elna et lui étaient sur une même ligne diagonale.",
-    "Il a passé le temps dans le potager.",
-    "Anna était au sud d'elle.",
-    "Elle se trouvait plus au nord que Francesca.",
-    "Par rapport à Francesca, elle était à un mouvement de cavalier.",
-    "Il y avait exactement 2 personnes dans le porche, victime comprise.",
-    "Elle était à un saut de cavalier d'Anna (comme aux échecs)."
+    "Elle partageait sa ligne avec une armoire.",
+    "Un tracteur se trouvait dans sa colonne.",
+    "Il a passé le temps dans le salon.",
+    "Il était installé sur le banc.",
+    "Il partageait une diagonale avec Eudald.",
+    "Il se trouvait dans le potager.",
+    "Elle se trouvait plus au nord qu'Aleix.",
+    "Il était au nord de Francesca.",
+    "Il était à un saut de cavalier de Francesca (comme aux échecs).",
+    "Victime comprise, 2 personnes se trouvaient dans le porche.",
+    "Par rapport à Aleix, elle était à un mouvement de cavalier."
    ]
   },
   "solucio": {

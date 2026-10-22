@@ -256,28 +256,28 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aleix",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carles",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dídac",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
@@ -286,7 +286,7 @@
    },
    {
     "id": "V",
-    "nom": "Vera",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -344,27 +344,27 @@
   "textos": {
    "ca": [
     "A la seva fila hi havia una llar de foc.",
-    "Només ell i Elna eren a la seva habitació.",
+    "Compartia habitació només amb Eudald.",
     "Era al costat d'una llar de foc.",
-    "Es trobava a l'hort.",
+    "Era a l'hort.",
     "Era a l'est de Ferran.",
     "Compartia columna amb un carro.",
-    "Estava més a l'est que Carles.",
-    "Tenia Vera al seu sud.",
+    "Estava més a l'est que Cesc.",
+    "Tenia Violant al seu sud.",
     "Va quedar-se en un racó d'una habitació.",
-    "Estava a un salt de cavall d'Aleix."
+    "Estava a un salt de cavall d'Aina."
    ],
    "fr": [
-    "Une cheminée se trouvait sur sa ligne.",
-    "Seuls lui et Elna étaient dans sa pièce.",
-    "Elle se tenait près d'une cheminée.",
-    "Il était dans le potager.",
-    "Il se trouvait plus à l'est que Ferran.",
-    "Une charrette se trouvait dans sa colonne.",
-    "Il était à l'est de Carles.",
-    "Il était au nord de Vera.",
-    "Elle occupait un coin d'une pièce.",
-    "Il était à un saut de cavalier d'Aleix (comme aux échecs)."
+    "Sur sa ligne se trouvait une cheminée.",
+    "Elle ne partageait sa pièce qu'avec Eudald.",
+    "Elle avait une cheminée tout près.",
+    "Il a passé le temps dans le potager.",
+    "Elle se trouvait plus à l'est que Ferran.",
+    "Dans sa colonne se trouvait une charrette.",
+    "Elle était à l'est de Cesc.",
+    "Violant était au sud de lui.",
+    "Il occupait un coin d'une pièce.",
+    "Il était à un saut de cavalier d'Aina (comme aux échecs)."
    ]
   },
   "solucio": {
@@ -656,27 +656,27 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Anna",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Cesc",
-    "genere": "m"
+    "nom": "Clara",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Enric",
+    "nom": "Eudald",
     "genere": "m"
    },
    {
@@ -686,8 +686,8 @@
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -744,28 +744,28 @@
   ],
   "textos": {
    "ca": [
-    "Estava més a l'est que Blai.",
+    "Estava més a l'est que Bruna.",
     "A la seva columna hi havia un tractor.",
-    "Tenia Cesc al seu nord.",
-    "Un balancí era a la seva columna.",
-    "Era al sud de Valentí.",
-    "Es trobava al corral.",
-    "La cuina estava buida: ni un sol cos.",
-    "Era al nord d'Arnau.",
-    "Era a un salt de cavall de Blai (com als escacs).",
+    "Era al sud de Clara.",
+    "Compartia columna amb un balancí.",
+    "Tenia Vera al seu nord.",
+    "Estava al corral.",
+    "Ningú no era a la cuina, ni tan sols la víctima.",
+    "Era al nord d'Anna.",
+    "Estava a un salt de cavall de Bruna.",
     "Tenia Fanny al seu est."
    ],
    "fr": [
-    "Il se trouvait plus à l'est que Blai.",
-    "Dans sa colonne se trouvait un tracteur.",
-    "Il était au sud de Cesc.",
-    "Il partageait sa colonne avec un fauteuil à bascule.",
-    "Valentí était au nord de lui.",
-    "Il a passé le temps dans la basse-cour.",
-    "Personne n'était dans la cuisine, pas même la victime.",
-    "Arnau était au sud d'elle.",
-    "Il était à un saut de cavalier de Blai (comme aux échecs).",
-    "Fanny était à l'est de lui."
+    "Elle se trouvait plus à l'est que Bruna.",
+    "Elle partageait sa colonne avec un tracteur.",
+    "Elle se trouvait plus au sud que Clara.",
+    "Dans sa colonne se trouvait un fauteuil à bascule.",
+    "Elle était au sud de Vera.",
+    "Il se trouvait dans la basse-cour.",
+    "La cuisine était vide : pas une âme.",
+    "Elle se trouvait plus au nord qu'Anna.",
+    "Elle se trouvait à un saut de cavalier de Bruna.",
+    "Elle était à l'ouest de Fanny."
    ]
   },
   "solucio": {
@@ -1072,27 +1072,27 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
-   },
-   {
-    "id": "D",
-    "nom": "Dídac",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
     "id": "E",
-    "nom": "Eudald",
+    "nom": "Enric",
     "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Francesca",
-    "genere": "f"
+    "nom": "Ferran",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -1145,26 +1145,26 @@
   ],
   "textos": {
    "ca": [
-    "Tenia Dídac al seu est.",
+    "Era a l'oest de Delfina.",
     "Prop seu hi havia un barril.",
-    "Va passar l'estona a la cuina.",
-    "La van veure al corral.",
-    "Tenia Aina al seu oest.",
-    "Estava més al nord que Francesca.",
-    "Estava a un salt de cavall d'Aina.",
-    "Era a l'est d'Eudald.",
-    "Respecte a Dídac, estava a un moviment de cavall."
+    "La van veure a la cuina.",
+    "Estava al corral.",
+    "Era a l'est d'Aina.",
+    "Tenia Ferran al seu sud.",
+    "Era a un salt de cavall d'Aina (com als escacs).",
+    "Estava més a l'est que Enric.",
+    "Respecte a Delfina, estava a un moviment de cavall."
    ],
    "fr": [
-    "Dídac était à l'est d'elle.",
+    "Delfina était à l'est d'elle.",
     "Elle se tenait près d'un tonneau.",
-    "Il a passé le temps dans la cuisine.",
-    "On l'a vue dans la basse-cour.",
-    "Aina était à l'ouest de lui.",
-    "Il était au nord de Francesca.",
-    "Par rapport à Aina, elle était à un mouvement de cavalier.",
-    "Elle se trouvait plus à l'est qu'Eudald.",
-    "Elle se trouvait à un saut de cavalier de Dídac."
+    "Elle se trouvait dans la cuisine.",
+    "Il était dans la basse-cour.",
+    "Il se trouvait plus à l'est qu'Aina.",
+    "Ferran était au sud de lui.",
+    "Il se trouvait à un saut de cavalier d'Aina.",
+    "Elle était à l'est d'Enric.",
+    "Par rapport à Delfina, elle était à un mouvement de cavalier."
    ]
   },
   "solucio": {
@@ -1456,33 +1456,33 @@
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Enric",
-    "genere": "m"
+    "nom": "Eulàlia",
+    "genere": "f"
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1533,26 +1533,26 @@
   ],
   "textos": {
    "ca": [
-    "Tenia Cesc al seu oest.",
-    "Tenia un barril a la mateixa columna.",
-    "Prop seu hi havia un armari.",
-    "Compartia fila amb un armari.",
-    "Estava a un salt de cavall d'Aleix.",
-    "Tenia Felip al seu est.",
+    "Estava més a l'est que Carles.",
+    "Un barril era a la seva columna.",
+    "Tenia un armari a tocar.",
+    "Tenia un armari a la mateixa fila.",
+    "Era a un salt de cavall d'Aleix (com als escacs).",
+    "Estava més a l'oest que Francesca.",
     "Estava en una cantonada d'una habitació.",
-    "Era a l'est de Valentí.",
-    "Era a la mateixa diagonal que Valentí."
+    "Tenia Vera al seu oest.",
+    "Vera i ella eren en una mateixa línia diagonal."
    ],
    "fr": [
-    "Il était à l'est de Cesc.",
-    "Il partageait sa colonne avec un tonneau.",
+    "Elle se trouvait plus à l'est que Carles.",
+    "Un tonneau se trouvait dans sa colonne.",
     "Il était à côté d'une armoire.",
-    "Une armoire se trouvait sur sa ligne.",
-    "Il se trouvait à un saut de cavalier d'Aleix.",
-    "Felip était à l'est de lui.",
-    "Il se tenait dans un angle d'une pièce.",
-    "Valentí était à l'ouest de lui.",
-    "Il partageait une diagonale avec Valentí."
+    "Elle partageait sa ligne avec une armoire.",
+    "Par rapport à Aleix, il était à un mouvement de cavalier.",
+    "Francesca était à l'est d'elle.",
+    "Elle se tenait dans un angle d'une pièce.",
+    "Il était à l'est de Vera.",
+    "Elle partageait une diagonale avec Vera."
    ]
   },
   "solucio": {

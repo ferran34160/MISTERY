@@ -275,23 +275,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
+    "nom": "Anna",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Clara",
+    "nom": "Carla",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -300,12 +300,12 @@
    },
    {
     "id": "F",
-    "nom": "Fina",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -358,26 +358,26 @@
   ],
   "textos": {
    "ca": [
-    "Tenia un banc a la mateixa columna.",
+    "Compartia columna amb un banc.",
     "Un pou era a la seva columna.",
-    "Tenia Dolors al seu est.",
-    "Va passar l'estona a l'hort.",
-    "Era a un salt de cavall de Dolors (com als escacs).",
+    "Era a l'oest de David.",
+    "Estava a l'hort.",
+    "Respecte a David, estava a un moviment de cavall.",
     "Estava més a l'oest que Elna.",
-    "Respecte a Clara, estava a un moviment de cavall.",
-    "Estava al corral.",
-    "Dolors i ella eren en una mateixa línia diagonal."
+    "Era a un salt de cavall de Carla (com als escacs).",
+    "Va passar l'estona al corral.",
+    "Era a la mateixa diagonal que David."
    ],
    "fr": [
     "Un banc se trouvait dans sa colonne.",
-    "Elle partageait sa colonne avec un puits.",
-    "Elle était à l'ouest de Dolors.",
-    "On l'a vu dans le potager.",
-    "Par rapport à Dolors, il était à un mouvement de cavalier.",
+    "Il partageait sa colonne avec un puits.",
+    "Elle était à l'ouest de David.",
+    "Elle se trouvait dans le potager.",
+    "Il se trouvait à un saut de cavalier de David.",
     "Elna était à l'est d'elle.",
-    "Elle se trouvait à un saut de cavalier de Clara.",
-    "Elle était dans la basse-cour.",
-    "Dolors et elle étaient sur une même ligne diagonale."
+    "Par rapport à Carla, elle était à un mouvement de cavalier.",
+    "On l'a vue dans la basse-cour.",
+    "Elle était sur la même diagonale que David."
    ]
   },
   "solucio": {
@@ -669,37 +669,37 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
-    "genere": "f"
-   },
-   {
-    "id": "B",
-    "nom": "Blai",
+    "nom": "Aleix",
     "genere": "m"
    },
    {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
     "id": "C",
-    "nom": "Carles",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Fanny",
+    "nom": "Francesca",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Valentí",
+    "nom": "Vicenç",
     "genere": "m"
    }
   ],
@@ -747,23 +747,23 @@
   "textos": {
    "ca": [
     "Era al costat d'una paret exterior de la finca.",
-    "Compartia habitació amb Fanny.",
+    "Compartia habitació amb Francesca.",
     "Una figuera era a la seva columna.",
     "Tenia una figuera a la mateixa fila.",
-    "Un pou era a la seva fila.",
-    "Blai i ella eren en una mateixa línia diagonal.",
-    "Respecte a Fanny, estava a un moviment de cavall.",
-    "Estava vora una bicicleta."
+    "Compartia fila amb un pou.",
+    "Compartia diagonal amb Berta.",
+    "Estava a un salt de cavall de Francesca.",
+    "Era al costat d'una bicicleta."
    ],
    "fr": [
-    "Elle avait un mur extérieur de la propriété tout contre elle.",
-    "Il était dans la même pièce que Fanny.",
-    "Un figuier se trouvait dans sa colonne.",
+    "Il avait un mur extérieur de la propriété tout contre lui.",
+    "Il était dans la même pièce que Francesca.",
+    "Dans sa colonne se trouvait un figuier.",
     "Un figuier se trouvait sur sa ligne.",
-    "Il partageait sa ligne avec un puits.",
-    "Blai et elle étaient sur une même ligne diagonale.",
-    "Elle se trouvait à un saut de cavalier de Fanny.",
-    "Elle se tenait près d'un vélo."
+    "Elle partageait sa ligne avec un puits.",
+    "Elle partageait une diagonale avec Berta.",
+    "Par rapport à Francesca, il était à un mouvement de cavalier.",
+    "Il avait un vélo tout près."
    ]
   },
   "solucio": {
@@ -1079,23 +1079,23 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
+    "nom": "Blai",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Cesc",
+    "nom": "Carles",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
@@ -1147,22 +1147,22 @@
   ],
   "textos": {
    "ca": [
-    "Era a l'oest de Delfina.",
-    "Estava vora un balancí.",
+    "Estava més a l'oest que Dídac.",
+    "Tenia un balancí a tocar.",
     "Una taula era a la seva columna.",
-    "Prop seu hi havia un pou.",
-    "Tenia Anna al seu sud.",
+    "Era al costat d'un pou.",
+    "Era al nord d'Anna.",
     "Era a un salt de cavall de Violant (com als escacs).",
     "A la seva columna hi havia un tractor."
    ],
    "fr": [
-    "Il était à l'ouest de Delfina.",
+    "Il se trouvait plus à l'ouest que Dídac.",
     "Elle était à côté d'un fauteuil à bascule.",
     "Une table se trouvait dans sa colonne.",
-    "Elle se tenait près d'un puits.",
-    "Anna était au sud d'elle.",
-    "Elle se trouvait à un saut de cavalier de Violant.",
-    "Dans sa colonne se trouvait un tracteur."
+    "Elle avait un puits tout près.",
+    "Elle était au nord d'Anna.",
+    "Il était à un saut de cavalier de Violant (comme aux échecs).",
+    "Il partageait sa colonne avec un tracteur."
    ]
   },
   "solucio": {
@@ -1464,23 +1464,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
+    "nom": "Aina",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Blai",
+    "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Cesc",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Dolors",
-    "genere": "f"
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -1489,13 +1489,13 @@
    },
    {
     "id": "F",
-    "nom": "Fanny",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -1546,26 +1546,26 @@
   ],
   "textos": {
    "ca": [
-    "Era al nord de Carla.",
+    "Tenia Cesc al seu sud.",
     "Estava vora un balancí.",
-    "Tenia Berta al seu nord.",
+    "Era al sud de Blai.",
     "Tenia una paret exterior de la finca just al costat.",
-    "Tenia Berta al seu sud.",
-    "Compartia columna amb un tractor.",
-    "Compartia fila amb un carro.",
+    "Estava més al nord que Blai.",
+    "Tenia un tractor a la mateixa columna.",
+    "A la seva fila hi havia un carro.",
     "Va passar l'estona a la sala.",
-    "La van veure al corral."
+    "El van veure al corral."
    ],
    "fr": [
-    "Elle était au nord de Carla.",
-    "Elle avait un fauteuil à bascule tout près.",
-    "Elle se trouvait plus au sud que Berta.",
-    "Elle avait un mur extérieur de la propriété tout contre elle.",
-    "Elle se trouvait plus au nord que Berta.",
-    "Un tracteur se trouvait dans sa colonne.",
-    "Une charrette se trouvait sur sa ligne.",
-    "Elle se trouvait dans le salon.",
-    "Elle était dans la basse-cour."
+    "Il était au nord de Cesc.",
+    "Il avait un fauteuil à bascule tout près.",
+    "Elle se trouvait plus au sud que Blai.",
+    "Il touchait un mur extérieur de la propriété.",
+    "Il se trouvait plus au nord que Blai.",
+    "Il partageait sa colonne avec un tracteur.",
+    "Il partageait sa ligne avec une charrette.",
+    "On l'a vue dans le salon.",
+    "Il a passé le temps dans la basse-cour."
    ]
   },
   "solucio": {

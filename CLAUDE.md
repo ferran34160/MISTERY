@@ -84,7 +84,7 @@ Per persona: `en_sala`, `no_en_sala`, `sobre_obj`, `prop_obj`, `raco`, `vora` (a
 Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alta necessària (1 a 5). Definició pròpia, no validada amb jugadors.
 
 ### Estat de la col·lecció
-210 casos a la pàgina: 84 de 6x6, 63 de 7x7, 38 de 8x8 i 25 de 9x9, en 70 escenaris (3 per escenari).
+210 casos a la pàgina (més els 18 K-pop i el cas de la casa d'estiu): 25 de 6x6, 59 de 7x7, 63 de 8x8 i 63 de 9x9, tots amb 5 o 6 sales (`reskin.py`: quotes `PER_MIDA` i `MIN_SALES`; `generador.py --sales 5,6`).
 
 ## 6. Problemes coneguts i feina oberta
 

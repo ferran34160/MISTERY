@@ -327,12 +327,12 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
@@ -342,13 +342,13 @@
    },
    {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
@@ -362,8 +362,8 @@
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -415,26 +415,26 @@
   ],
   "textos": {
    "ca": [
-    "Compartia fila amb una taula.",
+    "A la seva fila hi havia una taula.",
     "Estava a la cuina.",
-    "Tenia una pica a la mateixa columna.",
+    "Una pica era a la seva columna.",
     "Compartia columna amb un rac de vins.",
-    "Un tractor era a la seva fila.",
-    "Estava a un salt de cavall de Glòria.",
-    "Va passar l'estona a la cuina.",
-    "Una taula era a la seva columna.",
-    "Tenia Vicenç al seu oest."
+    "Tenia un tractor a la mateixa fila.",
+    "Era a un salt de cavall de Glòria (com als escacs).",
+    "Era a la cuina.",
+    "A la seva columna hi havia una taula.",
+    "Tenia Vera al seu oest."
    ],
    "fr": [
     "Sur sa ligne se trouvait une table.",
     "On l'a vu dans la cuisine.",
-    "Un évier se trouvait dans sa colonne.",
-    "Il partageait sa colonne avec un casier à vins.",
-    "Il partageait sa ligne avec un tracteur.",
-    "Elle se trouvait à un saut de cavalier de Glòria.",
-    "Elle était dans la cuisine.",
+    "Elle partageait sa colonne avec un évier.",
+    "Un casier à vins se trouvait dans sa colonne.",
+    "Un tracteur se trouvait sur sa ligne.",
+    "Elle était à un saut de cavalier de Glòria (comme aux échecs).",
+    "Elle a passé le temps dans la cuisine.",
     "Dans sa colonne se trouvait une table.",
-    "Vicenç était à l'ouest d'elle."
+    "Vera était à l'ouest d'elle."
    ]
   },
   "solucio": {
@@ -800,8 +800,8 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
@@ -810,33 +810,33 @@
    },
    {
     "id": "C",
-    "nom": "Carla",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "Dídac",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Eudald",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Fanny",
-    "genere": "f"
+    "nom": "Ferran",
+    "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Glòria",
+    "nom": "Griselda",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
-    "genere": "f"
+    "nom": "Valentí",
+    "genere": "m"
    }
   ],
   "pistes": [
@@ -888,26 +888,26 @@
   ],
   "textos": {
    "ca": [
-    "Era al costat d'un rac de vins.",
-    "Era a la mateixa diagonal que Delfina.",
-    "Estava a un salt de cavall de Delfina.",
-    "Tenia una pica a la mateixa fila.",
-    "Era a la mateixa habitació que Delfina.",
-    "Elna i ella eren en una mateixa línia diagonal.",
+    "Estava vora un rac de vins.",
+    "Compartia diagonal amb Dídac.",
+    "Respecte a Dídac, estava a un moviment de cavall.",
+    "Una pica era a la seva fila.",
+    "Era a la mateixa habitació que Dídac.",
+    "Era a la mateixa diagonal que Eudald.",
     "Un cistell de fruita era a la seva columna.",
-    "Estava més al sud que Fanny.",
-    "A la seva fila hi havia un cistell de fruita."
+    "Era al sud de Ferran.",
+    "Compartia fila amb un cistell de fruita."
    ],
    "fr": [
-    "Elle avait un casier à vins tout près.",
-    "Elle était sur la même diagonale que Delfina.",
-    "Par rapport à Delfina, il était à un mouvement de cavalier.",
+    "Il était à côté d'un casier à vins.",
+    "Dídac et lui étaient sur une même ligne diagonale.",
+    "Il était à un saut de cavalier de Dídac (comme aux échecs).",
     "Sur sa ligne se trouvait un évier.",
-    "Il était dans la même pièce que Delfina.",
-    "Elna et elle étaient sur une même ligne diagonale.",
-    "Un panier de fruits se trouvait dans sa colonne.",
-    "Elle se trouvait plus au sud que Fanny.",
-    "Elle partageait sa ligne avec un panier de fruits."
+    "Elle était dans la même pièce que Dídac.",
+    "Il partageait une diagonale avec Eudald.",
+    "Dans sa colonne se trouvait un panier de fruits.",
+    "Elle était au sud de Ferran.",
+    "Il partageait sa ligne avec un panier de fruits."
    ]
   },
   "solucio": {
@@ -1273,18 +1273,18 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Biel",
+    "nom": "Blai",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Clara",
-    "genere": "f"
+    "nom": "Carles",
+    "genere": "m"
    },
    {
     "id": "D",
@@ -1293,7 +1293,7 @@
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
+    "nom": "Elna",
     "genere": "f"
    },
    {
@@ -1303,13 +1303,13 @@
    },
    {
     "id": "G",
-    "nom": "Guerau",
+    "nom": "Guillem",
     "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1375,31 +1375,31 @@
   "textos": {
    "ca": [
     "Tenia un barril a la mateixa fila.",
-    "Estava més a l'oest que Fina.",
-    "Era a la mateixa diagonal que Arnau.",
-    "Tenia una llar de foc a la mateixa columna.",
+    "Tenia Fina al seu est.",
+    "Compartia diagonal amb Aina.",
+    "Compartia columna amb una llar de foc.",
+    "Era en un racó d'una habitació.",
+    "Era a l'oest de Blai.",
+    "Un rac de vins era a la seva columna.",
+    "A la seva columna hi havia un barril.",
+    "Era a la mateixa habitació que Aina.",
+    "Era al sud d'Aina.",
     "Va quedar-se en un racó d'una habitació.",
-    "Era a l'oest de Biel.",
-    "A la seva columna hi havia un rac de vins.",
-    "Un barril era a la seva columna.",
-    "Compartia habitació amb Arnau.",
-    "Era al sud d'Arnau.",
-    "Ocupava un racó d'una habitació.",
     "Fina i ell eren a la mateixa habitació."
    ],
    "fr": [
-    "Il partageait sa ligne avec un tonneau.",
-    "Il se trouvait plus à l'ouest que Fina.",
-    "Elle partageait une diagonale avec Arnau.",
-    "Dans sa colonne se trouvait une cheminée.",
+    "Elle partageait sa ligne avec un tonneau.",
+    "Il était à l'ouest de Fina.",
+    "Il était sur la même diagonale qu'Aina.",
+    "Elle partageait sa colonne avec une cheminée.",
     "Il se tenait dans un angle d'une pièce.",
-    "Il était à l'ouest de Biel.",
-    "Elle partageait sa colonne avec un casier à vins.",
-    "Un tonneau se trouvait dans sa colonne.",
-    "Elle était dans la même pièce qu'Arnau.",
-    "Il était au sud d'Arnau.",
-    "Il occupait un coin d'une pièce.",
-    "Il partageait sa pièce avec Fina."
+    "Il se trouvait plus à l'ouest que Blai.",
+    "Un casier à vins se trouvait dans sa colonne.",
+    "Dans sa colonne se trouvait un tonneau.",
+    "Il partageait sa pièce avec Aina.",
+    "Il était au sud d'Aina.",
+    "Il était dans un coin d'une pièce.",
+    "Fina et lui étaient dans la même pièce."
    ]
   },
   "solucio": {
@@ -1760,37 +1760,37 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
-   },
-   {
-    "id": "C",
-    "nom": "Clara",
+    "nom": "Bruna",
     "genere": "f"
    },
    {
-    "id": "D",
-    "nom": "David",
+    "id": "C",
+    "nom": "Carles",
     "genere": "m"
    },
    {
+    "id": "D",
+    "nom": "Dolors",
+    "genere": "f"
+   },
+   {
     "id": "E",
-    "nom": "Eudald",
+    "nom": "Enric",
     "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Felip",
+    "nom": "Ferran",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Gemma",
+    "nom": "Glòria",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Vera",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -1853,30 +1853,30 @@
   ],
   "textos": {
    "ca": [
-    "Era al nord de Vera.",
-    "Prop seu hi havia un carro.",
+    "Tenia Violant al seu sud.",
+    "Era al costat d'un carro.",
     "Tenia una pica a la mateixa fila.",
-    "Una figuera era a la seva fila.",
-    "Compartia fila amb un tractor.",
-    "Ningú no era a la sala, ni tan sols la víctima.",
-    "A la seva fila hi havia un banc.",
-    "Un carro era a la seva columna.",
-    "Tenia una pica a la mateixa columna.",
+    "Compartia fila amb una figuera.",
+    "A la seva fila hi havia un tractor.",
+    "No hi havia ànima a la sala, ni la víctima.",
+    "Un banc era a la seva fila.",
+    "A la seva columna hi havia un carro.",
+    "Compartia columna amb una pica.",
     "El porxo només tenia una persona, comptant la víctima.",
-    "A la seva columna hi havia un armari."
+    "Un armari era a la seva columna."
    ],
    "fr": [
-    "Vera était au sud de lui.",
-    "Elle se tenait près d'une charrette.",
+    "Il était au nord de Violant.",
+    "Elle avait une charrette tout près.",
     "Elle partageait sa ligne avec un évier.",
-    "Un figuier se trouvait sur sa ligne.",
-    "Sur sa ligne se trouvait un tracteur.",
+    "Sur sa ligne se trouvait un figuier.",
+    "Un tracteur se trouvait sur sa ligne.",
     "Le salon était vide : pas une âme.",
     "Il partageait sa ligne avec un banc.",
-    "Une charrette se trouvait dans sa colonne.",
+    "Elle partageait sa colonne avec une charrette.",
     "Dans sa colonne se trouvait un évier.",
     "Il n'y avait qu'une personne dans le porche, victime comprise.",
-    "Elle partageait sa colonne avec une armoire."
+    "Une armoire se trouvait dans sa colonne."
    ]
   },
   "solucio": {

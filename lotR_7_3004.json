@@ -270,13 +270,13 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aleix",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -285,18 +285,18 @@
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Enric",
+    "nom": "Eudald",
     "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Felip",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "V",
@@ -350,21 +350,21 @@
     "Es trobava al porxo.",
     "Tenia una bàscula a la mateixa columna.",
     "Estava a un salt de cavall de Violant.",
-    "Tocava una paret exterior de la finca.",
-    "Compartia diagonal amb Enric.",
-    "Delfina i ell eren a la mateixa habitació.",
-    "Era a l'oest d'Enric.",
+    "Era al costat d'una paret exterior de la finca.",
+    "Eudald i ella eren en una mateixa línia diagonal.",
+    "David i ella eren a la mateixa habitació.",
+    "Tenia Eudald al seu est.",
     "A la seva columna hi havia un banc."
    ],
    "fr": [
-    "Elle était dans le porche.",
+    "Il était dans le porche.",
     "Dans sa colonne se trouvait une balance.",
-    "Il se trouvait à un saut de cavalier de Violant.",
-    "Elle était contre un mur extérieur de la propriété.",
-    "Il était sur la même diagonale qu'Enric.",
-    "Il était dans la même pièce que Delfina.",
-    "Elle se trouvait plus à l'ouest qu'Enric.",
-    "Il partageait sa colonne avec un banc."
+    "Il était à un saut de cavalier de Violant (comme aux échecs).",
+    "Il avait un mur extérieur de la propriété tout contre lui.",
+    "Eudald et elle étaient sur une même ligne diagonale.",
+    "David et elle étaient dans la même pièce.",
+    "Elle se trouvait plus à l'ouest qu'Eudald.",
+    "Un banc se trouvait dans sa colonne."
    ]
   },
   "solucio": {
@@ -661,17 +661,17 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
+    "nom": "Aina",
     "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Bruna",
+    "nom": "Berta",
     "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carla",
+    "nom": "Clara",
     "genere": "f"
    },
    {
@@ -686,12 +686,12 @@
    },
    {
     "id": "F",
-    "nom": "Fabiola",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -748,28 +748,28 @@
   ],
   "textos": {
    "ca": [
-    "Tenia una paret exterior de la finca just al costat.",
+    "Era al costat d'una paret exterior de la finca.",
     "Compartia fila amb un banc.",
-    "Estava més al sud que Violant.",
-    "Tenia un armari a la mateixa fila.",
-    "Era a l'oest de Bruna.",
-    "Tenia un pou a tocar.",
-    "Estava més a l'est que Anna.",
-    "Era a l'est de Carla.",
-    "Era al sud d'Enric.",
+    "Era al sud de Vera.",
+    "Un armari era a la seva fila.",
+    "Tenia Berta al seu est.",
+    "Era al costat d'un pou.",
+    "Estava més a l'est que Aina.",
+    "Tenia Clara al seu oest.",
+    "Estava més al sud que Enric.",
     "Compartia columna amb una nevera."
    ],
    "fr": [
-    "Elle avait un mur extérieur de la propriété tout contre elle.",
-    "Un banc se trouvait sur sa ligne.",
-    "Elle était au sud de Violant.",
-    "Sur sa ligne se trouvait une armoire.",
-    "Il se trouvait plus à l'ouest que Bruna.",
-    "Elle se tenait près d'un puits.",
-    "Anna était à l'ouest d'elle.",
-    "Il était à l'est de Carla.",
-    "Enric était au nord de lui.",
-    "Un frigo se trouvait dans sa colonne."
+    "Il était contre un mur extérieur de la propriété.",
+    "Sur sa ligne se trouvait un banc.",
+    "Vera était au nord d'elle.",
+    "Une armoire se trouvait sur sa ligne.",
+    "Il se trouvait plus à l'ouest que Berta.",
+    "Elle était à côté d'un puits.",
+    "Aina était à l'ouest d'elle.",
+    "Il se trouvait plus à l'est que Clara.",
+    "Il se trouvait plus au sud qu'Enric.",
+    "Il partageait sa colonne avec un frigo."
    ]
   },
   "solucio": {
@@ -1076,28 +1076,28 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Arnau",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Berta",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Cesc",
-    "genere": "m"
+    "nom": "Carla",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Delfina",
+    "nom": "Dolors",
     "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Elna",
-    "genere": "f"
+    "nom": "Enric",
+    "genere": "m"
    },
    {
     "id": "F",
@@ -1106,8 +1106,8 @@
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1154,24 +1154,24 @@
   ],
   "textos": {
    "ca": [
-    "La van veure al porxo.",
-    "A la seva columna hi havia una taula.",
-    "Estava més a l'oest que Cesc.",
+    "Es trobava al porxo.",
+    "Una taula era a la seva columna.",
+    "Era a l'oest de Carla.",
     "Tenia un tractor a tocar.",
-    "Compartia fila amb un rac de vins.",
-    "Tenia un barril a la mateixa columna.",
-    "Era a la mateixa diagonal que Delfina.",
+    "A la seva fila hi havia un rac de vins.",
+    "A la seva columna hi havia un barril.",
+    "Era a la mateixa diagonal que Dolors.",
     "Compartia diagonal amb Fabiola."
    ],
    "fr": [
-    "On l'a vue dans le porche.",
+    "Elle a passé le temps dans le porche.",
     "Dans sa colonne se trouvait une table.",
-    "Elle se trouvait plus à l'ouest que Cesc.",
-    "Elle était à côté d'un tracteur.",
-    "Sur sa ligne se trouvait un casier à vins.",
-    "Il partageait sa colonne avec un tonneau.",
-    "Il était sur la même diagonale que Delfina.",
-    "Fabiola et elle étaient sur une même ligne diagonale."
+    "Elle se trouvait plus à l'ouest que Carla.",
+    "Il se tenait près d'un tracteur.",
+    "Un casier à vins se trouvait sur sa ligne.",
+    "Un tonneau se trouvait dans sa colonne.",
+    "Elle était sur la même diagonale que Dolors.",
+    "Fabiola et lui étaient sur une même ligne diagonale."
    ]
   },
   "solucio": {
@@ -1468,7 +1468,7 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Anna",
+    "nom": "Aina",
     "genere": "f"
    },
    {
@@ -1478,8 +1478,8 @@
    },
    {
     "id": "C",
-    "nom": "Carles",
-    "genere": "m"
+    "nom": "Clara",
+    "genere": "f"
    },
    {
     "id": "D",
@@ -1488,17 +1488,17 @@
    },
    {
     "id": "E",
-    "nom": "Eudald",
-    "genere": "m"
-   },
-   {
-    "id": "F",
-    "nom": "Fabiola",
+    "nom": "Eulàlia",
     "genere": "f"
    },
    {
+    "id": "F",
+    "nom": "Ferran",
+    "genere": "m"
+   },
+   {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -1555,28 +1555,28 @@
   ],
   "textos": {
    "ca": [
-    "Un balancí era a la seva fila.",
-    "Tocava una paret exterior de la finca.",
-    "Estava vora un pou.",
+    "A la seva fila hi havia un balancí.",
+    "Tenia una paret exterior de la finca just al costat.",
     "Era al costat d'un pou.",
-    "Blai i ella eren en una mateixa línia diagonal.",
-    "Tenia Carles al seu oest.",
+    "Estava vora un pou.",
+    "Compartia diagonal amb Blai.",
+    "Era a l'est de Clara.",
     "Era a la sala.",
     "Tenia una cadira a la mateixa fila.",
-    "A la seva columna hi havia un tractor.",
-    "A la seva fila hi havia un banc."
+    "Un tractor era a la seva columna.",
+    "Compartia fila amb un banc."
    ],
    "fr": [
-    "Sur sa ligne se trouvait un fauteuil à bascule.",
-    "Il touchait un mur extérieur de la propriété.",
-    "Elle se tenait près d'un puits.",
-    "Il était à côté d'un puits.",
+    "Elle partageait sa ligne avec un fauteuil à bascule.",
+    "Elle avait un mur extérieur de la propriété tout contre elle.",
+    "Elle était à côté d'un puits.",
+    "Il se tenait près d'un puits.",
     "Blai et elle étaient sur une même ligne diagonale.",
-    "Elle se trouvait plus à l'est que Carles.",
-    "Elle était dans le salon.",
-    "Une chaise se trouvait sur sa ligne.",
+    "Il se trouvait plus à l'est que Clara.",
+    "Elle a passé le temps dans le salon.",
+    "Sur sa ligne se trouvait une chaise.",
     "Un tracteur se trouvait dans sa colonne.",
-    "Elle partageait sa ligne avec un banc."
+    "Un banc se trouvait sur sa ligne."
    ]
   },
   "solucio": {

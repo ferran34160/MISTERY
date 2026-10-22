@@ -275,23 +275,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Biel",
+    "nom": "Blai",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Clara",
-    "genere": "f"
+    "nom": "Cesc",
+    "genere": "m"
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
@@ -305,8 +305,8 @@
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -358,26 +358,26 @@
   ],
   "textos": {
    "ca": [
-    "Tenia un tractor a la mateixa columna.",
+    "Un tractor era a la seva columna.",
     "A la seva fila hi havia un rac de vins.",
-    "Tenia Clara al seu sud.",
-    "Clara i ell eren a la mateixa habitació.",
-    "Estava damunt la cadira.",
+    "Estava més al nord que Cesc.",
+    "Era a la mateixa habitació que Cesc.",
+    "Era sobre la cadira.",
     "Estava a un salt de cavall d'Enric.",
     "El van veure al porxo.",
-    "Era al sud de Biel.",
-    "A la seva columna hi havia un cistell de fruita."
+    "Era al sud de Blai.",
+    "Tenia un cistell de fruita a la mateixa columna."
    ],
    "fr": [
-    "Un tracteur se trouvait dans sa colonne.",
-    "Sur sa ligne se trouvait un casier à vins.",
-    "Il se trouvait plus au nord que Clara.",
-    "Il partageait sa pièce avec Clara.",
-    "Elle était installée sur la chaise.",
-    "Il était à un saut de cavalier d'Enric (comme aux échecs).",
-    "On l'a vu dans le porche.",
-    "Il se trouvait plus au sud que Biel.",
-    "Dans sa colonne se trouvait un panier de fruits."
+    "Il partageait sa colonne avec un tracteur.",
+    "Il partageait sa ligne avec un casier à vins.",
+    "Il se trouvait plus au nord que Cesc.",
+    "Elle partageait sa pièce avec Cesc.",
+    "Il se tenait sur la chaise.",
+    "Il se trouvait à un saut de cavalier d'Enric.",
+    "Il était dans le porche.",
+    "Il était au sud de Blai.",
+    "Un panier de fruits se trouvait dans sa colonne."
    ]
   },
   "solucio": {
@@ -683,13 +683,13 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aleix",
-    "genere": "m"
+    "nom": "Anna",
+    "genere": "f"
    },
    {
     "id": "B",
-    "nom": "Berta",
-    "genere": "f"
+    "nom": "Biel",
+    "genere": "m"
    },
    {
     "id": "C",
@@ -698,22 +698,22 @@
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
+    "nom": "Elna",
     "genere": "f"
    },
    {
     "id": "F",
-    "nom": "Fabiola",
+    "nom": "Fanny",
     "genere": "f"
    },
    {
     "id": "V",
-    "nom": "Violant",
+    "nom": "Vera",
     "genere": "f"
    }
   ],
@@ -761,24 +761,24 @@
   ],
   "textos": {
    "ca": [
-    "Tenia Berta al seu oest.",
+    "Estava més a l'est que Biel.",
     "Tenia una cadira a tocar.",
     "Estava vora una bicicleta.",
-    "Tenia un carro a la mateixa fila.",
-    "Tenia Violant al seu nord.",
-    "Compartia diagonal amb Eulàlia.",
-    "Tenia un carro a la mateixa columna.",
-    "Estava més a l'oest que Fabiola."
+    "Un carro era a la seva fila.",
+    "Estava més al sud que Vera.",
+    "Compartia diagonal amb Elna.",
+    "Un carro era a la seva columna.",
+    "Estava més a l'oest que Fanny."
    ],
    "fr": [
-    "Il se trouvait plus à l'est que Berta.",
-    "Il avait une chaise tout près.",
+    "Biel était à l'ouest de lui.",
+    "Elle avait une chaise tout près.",
     "Elle était à côté d'un vélo.",
     "Elle partageait sa ligne avec une charrette.",
-    "Elle était au sud de Violant.",
-    "Elle était sur la même diagonale qu'Eulàlia.",
+    "Il se trouvait plus au sud que Vera.",
+    "Elle partageait une diagonale avec Elna.",
     "Dans sa colonne se trouvait une charrette.",
-    "Fabiola était à l'est d'elle."
+    "Elle était à l'ouest de Fanny."
    ]
   },
   "solucio": {
@@ -1079,28 +1079,28 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Aleix",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Biel",
+    "nom": "Blai",
     "genere": "m"
    },
    {
     "id": "C",
-    "nom": "Clara",
+    "nom": "Carla",
     "genere": "f"
    },
    {
     "id": "D",
-    "nom": "David",
+    "nom": "Dídac",
     "genere": "m"
    },
    {
     "id": "E",
-    "nom": "Enric",
-    "genere": "m"
+    "nom": "Eulàlia",
+    "genere": "f"
    },
    {
     "id": "F",
@@ -1109,7 +1109,7 @@
    },
    {
     "id": "V",
-    "nom": "Vicenç",
+    "nom": "Valentí",
     "genere": "m"
    }
   ],
@@ -1166,28 +1166,28 @@
   ],
   "textos": {
    "ca": [
-    "Tenia un pou a tocar.",
-    "Una taula era a la seva fila.",
-    "Compartia fila amb un barril.",
-    "Era al costat d'una paret exterior de la finca.",
-    "Estava al celler.",
-    "Estava a un salt de cavall de Vicenç.",
-    "Tenia Enric al seu est.",
-    "A la seva columna hi havia una bicicleta.",
-    "Prop seu hi havia una taula.",
-    "Estava més al nord que David."
+    "Prop seu hi havia un pou.",
+    "Tenia una taula a la mateixa fila.",
+    "Un barril era a la seva fila.",
+    "Tenia una paret exterior de la finca just al costat.",
+    "El van veure al celler.",
+    "Respecte a Valentí, estava a un moviment de cavall.",
+    "Era a l'oest d'Eulàlia.",
+    "Tenia una bicicleta a la mateixa columna.",
+    "Tenia una taula a tocar.",
+    "Tenia Dídac al seu sud."
    ],
    "fr": [
     "Il avait un puits tout près.",
-    "Une table se trouvait sur sa ligne.",
-    "Il partageait sa ligne avec un tonneau.",
-    "Il touchait un mur extérieur de la propriété.",
+    "Sur sa ligne se trouvait une table.",
+    "Un tonneau se trouvait sur sa ligne.",
+    "Il avait un mur extérieur de la propriété tout contre lui.",
     "Il se trouvait dans le cellier.",
-    "Par rapport à Vicenç, elle était à un mouvement de cavalier.",
-    "Il se trouvait plus à l'ouest qu'Enric.",
-    "Un vélo se trouvait dans sa colonne.",
+    "Elle se trouvait à un saut de cavalier de Valentí.",
+    "Il était à l'ouest d'Eulàlia.",
+    "Dans sa colonne se trouvait un vélo.",
     "Il se tenait près d'une table.",
-    "Elle se trouvait plus au nord que David."
+    "Elle se trouvait plus au nord que Dídac."
    ]
   },
   "solucio": {
@@ -1474,23 +1474,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
-    "genere": "m"
-   },
-   {
-    "id": "B",
-    "nom": "Bruna",
+    "nom": "Anna",
     "genere": "f"
    },
    {
+    "id": "B",
+    "nom": "Biel",
+    "genere": "m"
+   },
+   {
     "id": "C",
-    "nom": "Carles",
+    "nom": "Cesc",
     "genere": "m"
    },
    {
     "id": "D",
-    "nom": "Delfina",
-    "genere": "f"
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -1499,7 +1499,7 @@
    },
    {
     "id": "F",
-    "nom": "Francesca",
+    "nom": "Fabiola",
     "genere": "f"
    },
    {
@@ -1557,26 +1557,26 @@
   ],
   "textos": {
    "ca": [
-    "Es va deixar caure sobre el balancí.",
-    "Estava a la cuina.",
-    "Estava més al nord que Arnau.",
-    "Estava més a l'est que Delfina.",
-    "Era a un salt de cavall d'Arnau (com als escacs).",
-    "Va quedar-se sobre el cistell de fruita.",
-    "Era al nord de Carles.",
-    "Hi havia exactament 2 persones a la cuina, víctima inclosa.",
+    "Era sobre el balancí.",
+    "Era a la cuina.",
+    "Tenia Anna al seu sud.",
+    "Era a l'est de David.",
+    "Respecte a Anna, estava a un moviment de cavall.",
+    "Estava damunt el cistell de fruita.",
+    "Era al nord de Cesc.",
+    "La cuina acollia 2 persones, comptant la víctima.",
     "Només hi havia una persona a l'hort, víctima inclosa."
    ],
    "fr": [
-    "Il se tenait sur le fauteuil à bascule.",
-    "Elle a passé le temps dans la cuisine.",
-    "Arnau était au sud de lui.",
-    "Elle était à l'est de Delfina.",
-    "Par rapport à Arnau, il était à un mouvement de cavalier.",
-    "Elle était installée sur le panier de fruits.",
-    "Elle se trouvait plus au nord que Carles.",
+    "Elle était installée sur le fauteuil à bascule.",
+    "Elle se trouvait dans la cuisine.",
+    "Il se trouvait plus au nord qu'Anna.",
+    "Il se trouvait plus à l'est que David.",
+    "Il se trouvait à un saut de cavalier d'Anna.",
+    "Il se tenait sur le panier de fruits.",
+    "Elle était au nord de Cesc.",
     "La cuisine accueillait 2 personnes, victime comprise.",
-    "Il n'y avait qu'une personne dans le potager, victime comprise."
+    "Le potager ne comptait qu'une personne, victime comprise."
    ]
   },
   "solucio": {
