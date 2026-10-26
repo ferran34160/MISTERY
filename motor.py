@@ -507,13 +507,14 @@ def _estabilitza(L, pistes, dom, n, maxn, usat):
             return algun
 
 
-def valora(L, pistes, n):
+def valora(L, pistes, n, detall=False):
     """Retorna el nivell de dificultat (1-5) o None si no es resol per deducció.
     1 consistència de pistes + únic nu; 2 + fila/columna amb una sola opció;
     3 + parelles sobrecarregades; 4 + interseccions i trios; 5 cal mirar endavant."""
     pistes = list(pistes) + [REGLA]
     dom = dominis_inicials(L, pistes, n)
     usat = [1]
+    proves = 0
     try:
         _estabilitza(L, pistes, dom, n, 4, usat)
         while any(len(d) > 1 for d in dom.values()):
@@ -530,6 +531,7 @@ def valora(L, pistes, n):
                         dom[p].remove(c)
                         progres = True
                         usat[0] = 5
+                        proves += 1
                         _estabilitza(L, pistes, dom, n, 4, [0])
                         break
                 if progres:
@@ -540,7 +542,8 @@ def valora(L, pistes, n):
         return None
     if any(len(d) != 1 for d in dom.values()):
         return None
-    return usat[0] if usat[0] > 1 else 1
+    niv = usat[0] if usat[0] > 1 else 1
+    return (niv, proves) if detall else niv
 
 
 # ------------------------------------------------------------- generació

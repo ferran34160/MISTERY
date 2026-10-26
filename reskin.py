@@ -25,7 +25,7 @@ PER_ESCENARI = 3
 def carrega_pool(ids_ok):
     pool = {}
     for f in sorted(glob.glob("*.json")):
-        if f in ("noms.json", "casos_final.json", "assignacions.json"):
+        if f in ("noms.json", "casos_final.json", "assignacions.json", "dificultats.json", "casos_kpop.json", "casos_meu.json"):
             continue
         for c in json.load(open(f, encoding="utf-8")):
             if c["id"] in ids_ok and c["id"] not in pool:
@@ -33,42 +33,56 @@ def carrega_pool(ids_ok):
     return pool
 
 
-PER_MIDA = {6: 0.12, 7: 0.28, 8: 0.30, 9: 0.30}   # la majoria, 7x7 a 9x9
-MIN_SALES = 5                                      # i amb 5 o 6 sales
+PER_MIDA = {6: 0.10, 7: 0.15, 8: 0.25, 9: 0.50}      # proporció per mida
+PER_NIVELL = {1: 15, 2: 20, 3: 45, 4: 50, 5: 80}      # casos de cada nivell sobre 210
+MIN_SALES = 5                                          # i amb 5 o 6 sales
+PROVES_DIFICIL = 2     # un cas que el motor valora 5 (cal mirar endavant) és «Difícil» si calen <= 2 proves
 
 
-def quotes(n_total):
-    q = {n: round(n_total * f) for n, f in PER_MIDA.items()}
-    q[9] += n_total - sum(q.values())
-    return q
+def nivell_final(dif, i):
+    """Nivell que veu el jugador: el del motor, però el 5 es parteix en 4 (poques proves) i 5 (moltes)."""
+    niv, proves = dif[i]
+    return 4 if niv == 5 and proves <= PROVES_DIFICIL else niv
+
+
+def reparteix_enter(total, pesos):
+    """Reparteix `total` en parts senceres proporcionals a `pesos` (dict), pel mètode del residu més gran."""
+    s = float(sum(pesos.values()))
+    base = {k: int(total * v / s) for k, v in pesos.items()}
+    resta = sorted(pesos, key=lambda k: -(total * pesos[k] / s - base[k]))
+    for k in resta[:total - sum(base.values())]:
+        base[k] += 1
+    return base
 
 
 def tria_casos(pool, n_total, fixos=()):
-    """Tria n_total casos amb 5 o 6 sales, repartits per mida (PER_MIDA) i per nivell.
-    `fixos` (ids ja assignats) es conserven mentre càpiguen a la quota de la seva mida."""
+    """Tria n_total casos amb 5 o 6 sales, repartits per mida (PER_MIDA) i per nivell (PER_NIVELL).
+    Si d'una mida no hi ha prou casos d'un nivell, s'agafen del nivell que més falta. Els `fixos`
+    (ja assignats abans) tenen preferència, perquè no canviï el que el jugador ja coneix."""
+    dif = json.load(open("dificultats.json"))
     rng = random.Random(11)
-    elig = {i: c for i, c in pool.items() if len(c["sales"]) >= MIN_SALES}
+    elig = {i: c for i, c in pool.items() if len(c["sales"]) >= MIN_SALES and i in dif}
+    ordre_fix = {i: k for k, i in enumerate(fixos)}
     triats = []
-    for n, k in quotes(n_total).items():
-        mantinguts = [elig[i] for i in fixos if i in elig and elig[i]["n"] == n][:k]
-        triats += mantinguts
-        usats = {c["id"] for c in mantinguts}
-        per_niv = {}
-        for c in sorted((c for c in elig.values() if c["n"] == n and c["id"] not in usats),
-                        key=lambda c: (c["nivell"], c["id"])):
-            per_niv.setdefault(c["nivell"], []).append(c)
-        for l in per_niv.values():
-            rng.shuffle(l)
-        nous = []
-        while len(mantinguts) + len(nous) < k and any(per_niv.values()):
-            for niv in sorted(per_niv):
-                if per_niv[niv] and len(mantinguts) + len(nous) < k:
-                    nous.append(per_niv[niv].pop())
-        triats += nous
-    resta = [c for c in elig.values() if c not in triats]
-    rng.shuffle(resta)
-    triats += resta[:max(0, n_total - len(triats))]
-    triats.sort(key=lambda c: (c["n"], c["nivell"], c["id"]))
+    for n, k in reparteix_enter(n_total, PER_MIDA).items():
+        meta = reparteix_enter(k, PER_NIVELL)
+        per_niv = {l: [] for l in PER_NIVELL}
+        for i, c in elig.items():
+            if c["n"] == n:
+                per_niv[nivell_final(dif, i)].append(c)
+        for l in per_niv:
+            rng.shuffle(per_niv[l])
+            per_niv[l].sort(key=lambda c: ordre_fix.get(c["id"], 10 ** 9))   # primer els fixos
+        agafats = {l: [] for l in PER_NIVELL}
+        for l in PER_NIVELL:
+            agafats[l] = per_niv[l][:meta[l]]
+            per_niv[l] = per_niv[l][meta[l]:]
+        while sum(len(v) for v in agafats.values()) < k and any(per_niv.values()):
+            l = max((x for x in PER_NIVELL if per_niv[x]), key=lambda x: (meta[x] - len(agafats[x]), -abs(x - 3)))
+            agafats[l].append(per_niv[l].pop(0))
+        for v in agafats.values():
+            triats += v
+    triats.sort(key=lambda c: (c["n"], nivell_final(dif, c["id"]), c["id"]))
     return triats[:n_total]
 
 
@@ -199,7 +213,6 @@ def main():
     except (OSError, ValueError):
         prev = {}
     triats = tria_casos(pool, n_total, [i for i in prev if prev[i] in escenaris])
-    triats.sort(key=lambda c: (c["n"], c["nivell"], c["id"]))
     print(len(pool), "casos verificats;", len(triats), "triats per a", len(escenaris), "escenaris")
     asg = reparteix(triats, escenaris)
     out = []
@@ -207,6 +220,7 @@ def main():
         clau = asg[c["id"]]
         rng = random.Random(zlib.crc32((c["id"] + clau).encode()))
         r = aplica(json.loads(json.dumps(c)), clau, rng)
+        r["nivell"] = nivell_final(json.load(open("dificultats.json")), c["id"])
         r["font"] = c["id"]          # identificador de l'estructura (per migrar el progrés antic)
         r["id"] = id_estable(c, clau)
         out.append(r)
