@@ -84,7 +84,7 @@ Per persona: `en_sala`, `no_en_sala`, `sobre_obj`, `prop_obj`, `raco`, `vora` (a
 Un solucionador «humà» aplica tècniques en ordre i el nivell és la més alta necessària (1 a 5). Definició pròpia, no validada amb jugadors.
 
 ### Estat de la col·lecció
-210 casos a la pàgina (més els 18 K-pop i el cas de la casa d'estiu): 25 de 6x6, 59 de 7x7, 63 de 8x8 i 63 de 9x9, tots amb 5 o 6 sales (`reskin.py`: quotes `PER_MIDA` i `MIN_SALES`; `generador.py --sales 5,6`).
+210 casos a la pàgina (més els 18 K-pop i el cas de la casa d'estiu): mides 21 de 6x6, 32 de 7x7, 52 de 8x8 i 105 de 9x9 (`PER_MIDA`), tots amb 5 o 6 sales; nivells (després de `dificultat.py`) ~12 Molt fàcil, 24 Fàcil, 47 Mitjà, 60 Difícil, 67 Expert. Difícil = nivell 4 del motor o nivell 5 amb ≤2 proves d'hipòtesi (`PROVES_DIFICIL`).
 
 ## 6. Problemes coneguts i feina oberta
 
