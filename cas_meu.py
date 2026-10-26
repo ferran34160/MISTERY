@@ -31,7 +31,36 @@ def pla_i_sales():
     return sala
 
 
+def refa_textos():
+    """Torna a redactar les pistes del cas ja triat (sense canviar-les)."""
+    import zlib
+    from textos import descriu
+    j = json.load(open("casos_meu.json", encoding="utf-8"))[0]
+    esc = ESCENARIS["estiu"]
+    idx = lambda l: N - 1 if l == "V" else "ABCDEF".index(l)
+    e = dict(esc)
+    e["_noms"] = {idx(p["id"]): (p["nom"], p["genere"]) for p in j["persones"]}
+    e["_sales"] = {int(i): next(k for k, v in esc["sales"].items() if v["nom"]["ca"][1] == nm["ca"])
+                   for i, nm in j["sales"].items()}
+    pistes = []
+    for cl in j["pistes"]:
+        d = dict(cl)
+        for k in ("p", "q"):
+            if k in d:
+                d[k] = idx(d[k])
+        pistes.append(d)
+    rng = random.Random(zlib.crc32(b"meu-7-1"))
+    j["textos"] = {l: descriu(l, e, pistes, rng) for l in ("ca", "fr")}
+    json.dump([j], open("casos_meu.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    for t in j["textos"]["ca"]:
+        print(" -", t)
+
+
 def main():
+    import os
+    import sys
+    if os.path.exists("casos_meu.json") and "--nou" not in sys.argv:
+        return refa_textos()      # el cas ja està triat: només es redacten de nou les pistes
     sala = pla_i_sales()
     obj = [[None] * N for _ in range(N)]
     for (r, c), o in {(1, 0): "taula", (5, 0): "taula", (5, 1): "taula", (4, 0): "cadira",

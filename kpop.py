@@ -63,7 +63,35 @@ def fes_casos(n, quantitat, llavor, nivells):
     return out
 
 
+def refa_textos():
+    """Torna a redactar les pistes dels casos ja generats (sense canviar-les)."""
+    casos = json.load(open("casos_kpop.json", encoding="utf-8"))
+    esc = ESCENARIS["kpop"]
+    for j in casos:
+        n = j["n"]
+        idx = lambda l: n - 1 if l == "V" else LLETRES.index(l)
+        e = dict(esc)
+        e["_noms"] = {idx(p["id"]): (p["nom"], p["genere"]) for p in j["persones"]}
+        e["_sales"] = {int(i): next(k for k, v in esc["sales"].items() if v["nom"]["ca"][1] == nm["ca"])
+                       for i, nm in j["sales"].items()}
+        pistes = []
+        for cl in j["pistes"]:
+            d = dict(cl)
+            for k in ("p", "q"):
+                if k in d:
+                    d[k] = idx(d[k])
+            pistes.append(d)
+        rng = random.Random(zlib.crc32(j["id"].encode()))
+        j["textos"] = {l: descriu(l, e, pistes, rng) for l in ("ca", "fr")}
+    json.dump(casos, open("casos_kpop.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(len(casos), "casos K-pop (textos refets)")
+
+
 def main():
+    import os
+    import sys
+    if os.path.exists("casos_kpop.json") and "--nous" not in sys.argv:
+        return refa_textos()      # els casos ja existeixen: només es redacten de nou les pistes
     ap = argparse.ArgumentParser()
     ap.add_argument("--cinc", type=int, default=12)
     ap.add_argument("--sis", type=int, default=6)
