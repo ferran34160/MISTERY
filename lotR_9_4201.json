@@ -1,0 +1,2187 @@
+[
+ {
+  "id": "mas-9-4201-1",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 3,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    0,
+    4,
+    4,
+    4,
+    4,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    4,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    1,
+    1
+   ],
+   [
+    0,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    1,
+    1
+   ],
+   [
+    0,
+    3,
+    2,
+    3,
+    4,
+    2,
+    2,
+    1,
+    1
+   ],
+   [
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1
+   ],
+   [
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    -1,
+    -1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "1": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "2": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "3": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "4": {
+    "ca": "sala",
+    "fr": "salon"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    "carro",
+    null,
+    null,
+    "armari",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "banc",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    null,
+    "carro"
+   ],
+   [
+    null,
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    null
+   ],
+   [
+    "pou",
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "cistell",
+    "cistell",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "cistell": {
+    "bloqueja": false,
+    "ca": "cistell de fruita",
+    "fr": "panier de fruits"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Arnau",
+    "genere": "m"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "F",
+    "nom": "Fina",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Glòria",
+    "genere": "f"
+   },
+   {
+    "id": "H",
+    "nom": "Heura",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "B",
+    "obj": "cistell"
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 0
+   },
+   {
+    "t": "raco",
+    "p": "F"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "C",
+    "q": "B"
+   },
+   {
+    "t": "col_obj",
+    "p": "A",
+    "obj": "armari"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "G",
+    "q": "A"
+   },
+   {
+    "t": "sud",
+    "p": "H",
+    "q": "B"
+   },
+   {
+    "t": "prop_obj",
+    "p": "F",
+    "obj": "cadira"
+   },
+   {
+    "t": "en_sala",
+    "p": "D",
+    "sala": 3
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "C"
+   },
+   {
+    "t": "vora",
+    "p": "G"
+   },
+   {
+    "t": "fila_obj",
+    "p": "A",
+    "obj": "banc"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Segons un testimoni, estava vora un cistell de fruita.",
+    "Va passar l'estona al corral.",
+    "Diuen que va trobar refugi en un racó d'una habitació.",
+    "A la llibreta de l'inspector consta que va coincidir amb Bruna a la mateixa habitació.",
+    "Un armari es feia notar a la seva columna.",
+    "Algú va jurar que compartia habitació amb Arnau.",
+    "Bruna quedava més amunt que ella al plànol.",
+    "L'inspector va anotar que a pocs passos hi havia una cadira.",
+    "Un convidat recorda que havia estat a l'hort tota l'estona.",
+    "Si traçaves una diagonal des de Cesc, hi arribaves a ell.",
+    "Tocava una paret exterior de la finca.",
+    "Tenia un banc a la mateixa fila."
+   ],
+   "fr": [
+    "Dans le carnet de l'inspecteur, on lit qu'à quelques pas se trouvait un panier de fruits.",
+    "L'inspecteur a noté que personne ne doute qu'elle était dans la basse-cour.",
+    "Quelqu'un a juré qu'elle occupait un coin d'une pièce.",
+    "Il a croisé Bruna dans la même pièce.",
+    "Un invité se souvient que dans sa colonne se trouvait une armoire.",
+    "Arnau et elle étaient dans la même pièce.",
+    "Bruna était au nord d'elle.",
+    "Selon un témoin, elle se tenait près d'une chaise.",
+    "On dit qu'elle avait sa place dans le potager.",
+    "Cesc et lui formaient une diagonale.",
+    "Elle s'est appuyée près d'un mur extérieur de la propriété.",
+    "Il partageait sa ligne avec un banc."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    5
+   ],
+   "B": [
+    6,
+    1
+   ],
+   "C": [
+    8,
+    2
+   ],
+   "D": [
+    5,
+    3
+   ],
+   "E": [
+    1,
+    0
+   ],
+   "F": [
+    4,
+    6
+   ],
+   "G": [
+    0,
+    4
+   ],
+   "H": [
+    7,
+    7
+   ],
+   "V": [
+    2,
+    8
+   ]
+  },
+  "assassi": "H"
+ },
+ {
+  "id": "mas-9-4201-2",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 5,
+  "pla": [
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    -1,
+    -1,
+    0,
+    3,
+    3,
+    3,
+    0,
+    -1,
+    -1
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    0,
+    0,
+    4
+   ],
+   [
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    0,
+    4
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    4,
+    4,
+    4
+   ],
+   [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    4,
+    4,
+    4
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    4,
+    4,
+    4
+   ],
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    4,
+    4,
+    4,
+    4
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "1": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "2": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "3": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "4": {
+    "ca": "porxo",
+    "fr": "porche"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "pou",
+    null,
+    "tractor",
+    "figuera",
+    null,
+    "cadira",
+    null,
+    null
+   ],
+   [
+    null,
+    "carro",
+    "carro",
+    "tractor",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "bicicleta",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "armari",
+    "bicicleta",
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "bascula",
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "bicicleta": {
+    "bloqueja": false,
+    "ca": "bicicleta",
+    "fr": "vélo"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "figuera",
+    "fr": "figuier"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   },
+   "tractor": {
+    "bloqueja": true,
+    "ca": "tractor",
+    "fr": "tracteur"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Berta",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Delfina",
+    "genere": "f"
+   },
+   {
+    "id": "E",
+    "nom": "Elna",
+    "genere": "f"
+   },
+   {
+    "id": "F",
+    "nom": "Francesca",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Gemma",
+    "genere": "f"
+   },
+   {
+    "id": "H",
+    "nom": "Hug",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Valentí",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "prop_obj",
+    "p": "A",
+    "obj": "pou"
+   },
+   {
+    "t": "col_obj",
+    "p": "D",
+    "obj": "tractor"
+   },
+   {
+    "t": "en_sala",
+    "p": "B",
+    "sala": 1
+   },
+   {
+    "t": "diag",
+    "p": "G",
+    "q": "A"
+   },
+   {
+    "t": "en_sala",
+    "p": "F",
+    "sala": 2
+   },
+   {
+    "t": "altra_sala",
+    "p": "V",
+    "q": "F"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "bicicleta"
+   },
+   {
+    "t": "en_sala",
+    "p": "H",
+    "sala": 4
+   },
+   {
+    "t": "sol",
+    "p": "E"
+   },
+   {
+    "t": "nord",
+    "p": "B",
+    "q": "D"
+   },
+   {
+    "t": "diag",
+    "p": "C",
+    "q": "F"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Segons un testimoni, tenia un pou ben a prop.",
+    "L'inspector va anotar que tenia un tractor a la mateixa columna.",
+    "A la llibreta de l'inspector consta que es trobava al celler.",
+    "Anna i ella eren en una mateixa línia diagonal.",
+    "Un convidat recorda que es va deixar veure al corral.",
+    "No compartia habitació amb Francesca.",
+    "Tenia una bicicleta a tocar.",
+    "Algú va jurar que tenia el seu lloc al porxo.",
+    "Ningú més, ni tan sols la víctima, no compartia la seva habitació.",
+    "Diuen que tenia Delfina al seu sud.",
+    "Francesca i ell formaven una diagonal."
+   ],
+   "fr": [
+    "Dans le carnet de l'inspecteur, on lit qu'elle ne s'est guère éloignée d'un puits.",
+    "Elle partageait sa colonne avec un tracteur.",
+    "Selon un témoin, elle n'a pas quitté le cellier de la soirée.",
+    "Un invité se souvient qu'elle partageait une diagonale avec Anna.",
+    "Elle était dans la basse-cour.",
+    "Il n'était pas dans la même pièce que Francesca.",
+    "L'inspecteur a noté qu'il se tenait près d'un vélo.",
+    "Quelqu'un a juré qu'il se trouvait dans le porche.",
+    "On dit qu'elle était seule dans sa pièce.",
+    "On dit qu'elle était au nord de Delfina.",
+    "En traçant une diagonale depuis Francesca, on arrivait à lui."
+   ]
+  },
+  "solucio": {
+   "A": [
+    2,
+    0
+   ],
+   "B": [
+    6,
+    2
+   ],
+   "C": [
+    7,
+    7
+   ],
+   "D": [
+    8,
+    3
+   ],
+   "E": [
+    0,
+    6
+   ],
+   "F": [
+    4,
+    4
+   ],
+   "G": [
+    3,
+    1
+   ],
+   "H": [
+    5,
+    8
+   ],
+   "V": [
+    1,
+    5
+   ]
+  },
+  "assassi": "A"
+ },
+ {
+  "id": "mas-9-4201-3",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 5,
+  "pla": [
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    -1
+   ],
+   [
+    4,
+    0,
+    0,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    4,
+    0,
+    0,
+    0,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    4,
+    4,
+    0,
+    0,
+    0,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    4,
+    4,
+    4,
+    2,
+    0,
+    3,
+    3,
+    3,
+    1
+   ],
+   [
+    4,
+    4,
+    4,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   [
+    4,
+    4,
+    4,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   [
+    -1,
+    -1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "porxo",
+    "fr": "porche"
+   },
+   "2": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   },
+   "3": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "4": {
+    "ca": "celler",
+    "fr": "cellier"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    "taula",
+    null,
+    null,
+    "cadira",
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "armari",
+    null,
+    null,
+    null,
+    "balanci"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "armari",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "barril",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "armari",
+    null,
+    null,
+    "pou",
+    "pou",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "celler",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "banc"
+   ],
+   [
+    null,
+    null,
+    null,
+    "tractor",
+    null,
+    null,
+    "bascula",
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "balanci": {
+    "bloqueja": false,
+    "ca": "balancí",
+    "fr": "fauteuil à bascule"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "celler": {
+    "bloqueja": true,
+    "ca": "rac de vins",
+    "fr": "casier à vins"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   },
+   "tractor": {
+    "bloqueja": true,
+    "ca": "tractor",
+    "fr": "tracteur"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Aina",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Bruna",
+    "genere": "f"
+   },
+   {
+    "id": "C",
+    "nom": "Carles",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eulàlia",
+    "genere": "f"
+   },
+   {
+    "id": "F",
+    "nom": "Ferran",
+    "genere": "m"
+   },
+   {
+    "id": "G",
+    "nom": "Guillem",
+    "genere": "m"
+   },
+   {
+    "id": "H",
+    "nom": "Helena",
+    "genere": "f"
+   },
+   {
+    "id": "V",
+    "nom": "Vicenç",
+    "genere": "m"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "col_obj",
+    "p": "E",
+    "obj": "tractor"
+   },
+   {
+    "t": "en_sala",
+    "p": "V",
+    "sala": 4
+   },
+   {
+    "t": "prop_obj",
+    "p": "G",
+    "obj": "armari"
+   },
+   {
+    "t": "prop_obj",
+    "p": "C",
+    "obj": "barril"
+   },
+   {
+    "t": "sobre_obj",
+    "p": "F",
+    "obj": "banc"
+   },
+   {
+    "t": "oest",
+    "p": "H",
+    "q": "E"
+   },
+   {
+    "t": "mateixa_sala",
+    "p": "B",
+    "q": "H"
+   },
+   {
+    "t": "diag",
+    "p": "D",
+    "q": "H"
+   },
+   {
+    "t": "fila_obj",
+    "p": "A",
+    "obj": "balanci"
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Segons un testimoni, tenia un tractor a la mateixa columna.",
+    "Havia estat al celler tota l'estona.",
+    "Estava vora un armari.",
+    "Un convidat recorda que un barril era el seu veí més proper.",
+    "A la llibreta de l'inspector consta que es va deixar caure sobre el banc.",
+    "Diuen que era a l'oest d'Eulàlia.",
+    "Helena i ella eren a la mateixa habitació.",
+    "Helena i ell formaven una diagonal.",
+    "Algú va jurar que tenia un balancí a la mateixa fila."
+   ],
+   "fr": [
+    "L'inspecteur a noté qu'un tracteur se trouvait dans sa colonne.",
+    "Il se trouvait dans le cellier.",
+    "Il ne s'est guère éloigné d'une armoire.",
+    "Dans le carnet de l'inspecteur, on lit qu'il était à côté d'un tonneau.",
+    "Quelqu'un a juré qu'il a pris place sur le banc.",
+    "On dit qu'elle était à l'ouest d'Eulàlia.",
+    "Helena et elle étaient dans la même pièce.",
+    "Helena et lui étaient sur une même ligne diagonale.",
+    "Sur sa ligne se trouvait un fauteuil à bascule."
+   ]
+  },
+  "solucio": {
+   "A": [
+    1,
+    7
+   ],
+   "B": [
+    6,
+    4
+   ],
+   "C": [
+    3,
+    0
+   ],
+   "D": [
+    4,
+    6
+   ],
+   "E": [
+    0,
+    3
+   ],
+   "F": [
+    7,
+    8
+   ],
+   "G": [
+    2,
+    5
+   ],
+   "H": [
+    8,
+    2
+   ],
+   "V": [
+    5,
+    1
+   ]
+  },
+  "assassi": "C"
+ },
+ {
+  "id": "mas-9-4201-4",
+  "escenari": "mas",
+  "n": 9,
+  "nivell": 5,
+  "pla": [
+   [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  ],
+  "sala": [
+   [
+    -1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    3,
+    0,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    1,
+    1,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    2,
+    2,
+    2
+   ],
+   [
+    3,
+    3,
+    3,
+    0,
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    0,
+    3,
+    3,
+    0,
+    0,
+    4,
+    4,
+    4,
+    4
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    4,
+    4
+   ]
+  ],
+  "sales": {
+   "0": {
+    "ca": "cuina",
+    "fr": "cuisine"
+   },
+   "1": {
+    "ca": "sala",
+    "fr": "salon"
+   },
+   "2": {
+    "ca": "hort",
+    "fr": "potager"
+   },
+   "3": {
+    "ca": "celler",
+    "fr": "cellier"
+   },
+   "4": {
+    "ca": "corral",
+    "fr": "basse-cour"
+   }
+  },
+  "obj": [
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cadira",
+    "figuera"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "celler",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "armari",
+    null,
+    "celler",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "armari",
+    null,
+    null,
+    "tractor"
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    "llar",
+    null,
+    "pou",
+    "figuera",
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "tractor",
+    "carro",
+    null
+   ],
+   [
+    null,
+    null,
+    "taula",
+    "llar",
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "celler": {
+    "bloqueja": true,
+    "ca": "rac de vins",
+    "fr": "casier à vins"
+   },
+   "figuera": {
+    "bloqueja": true,
+    "ca": "figuera",
+    "fr": "figuier"
+   },
+   "llar": {
+    "bloqueja": true,
+    "ca": "llar de foc",
+    "fr": "cheminée"
+   },
+   "pou": {
+    "bloqueja": true,
+    "ca": "pou",
+    "fr": "puits"
+   },
+   "taula": {
+    "bloqueja": true,
+    "ca": "taula",
+    "fr": "table"
+   },
+   "tractor": {
+    "bloqueja": true,
+    "ca": "tractor",
+    "fr": "tracteur"
+   }
+  },
+  "persones": [
+   {
+    "id": "A",
+    "nom": "Anna",
+    "genere": "f"
+   },
+   {
+    "id": "B",
+    "nom": "Blai",
+    "genere": "m"
+   },
+   {
+    "id": "C",
+    "nom": "Cesc",
+    "genere": "m"
+   },
+   {
+    "id": "D",
+    "nom": "Dídac",
+    "genere": "m"
+   },
+   {
+    "id": "E",
+    "nom": "Eudald",
+    "genere": "m"
+   },
+   {
+    "id": "F",
+    "nom": "Fanny",
+    "genere": "f"
+   },
+   {
+    "id": "G",
+    "nom": "Griselda",
+    "genere": "f"
+   },
+   {
+    "id": "H",
+    "nom": "Hug",
+    "genere": "m"
+   },
+   {
+    "id": "V",
+    "nom": "Violant",
+    "genere": "f"
+   }
+  ],
+  "pistes": [
+   {
+    "t": "fila_obj",
+    "p": "D",
+    "obj": "cadira"
+   },
+   {
+    "t": "en_sala",
+    "p": "E",
+    "sala": 1
+   },
+   {
+    "t": "prop_obj",
+    "p": "F",
+    "obj": "figuera"
+   },
+   {
+    "t": "col_obj",
+    "p": "C",
+    "obj": "armari"
+   },
+   {
+    "t": "prop_obj",
+    "p": "H",
+    "obj": "llar"
+   },
+   {
+    "t": "diag",
+    "p": "A",
+    "q": "D"
+   },
+   {
+    "t": "diag",
+    "p": "V",
+    "q": "H"
+   },
+   {
+    "t": "est",
+    "p": "B",
+    "q": "F"
+   },
+   {
+    "t": "no_en_sala",
+    "p": "A",
+    "sala": 3
+   },
+   {
+    "t": "diag",
+    "p": "F",
+    "q": "H"
+   },
+   {
+    "t": "cavall",
+    "p": "G",
+    "q": "V"
+   },
+   {
+    "t": "fila_obj",
+    "p": "B",
+    "obj": "armari"
+   },
+   {
+    "t": "compte_sala",
+    "sala": 3,
+    "k": 2
+   }
+  ],
+  "textos": {
+   "ca": [
+    "Una cadira era a la seva fila.",
+    "Un convidat recorda que era a la sala.",
+    "L'inspector va anotar que no es va separar gaire d'una figuera.",
+    "Un armari es feia notar a la seva columna.",
+    "Diuen que tenia una llar de foc ben a prop.",
+    "Si traçaves una diagonal des de Dídac, hi arribaves a ella.",
+    "Algú va jurar que era a la mateixa diagonal que Hug.",
+    "A la llibreta de l'inspector consta que tenia Fanny al seu oest.",
+    "Segons un testimoni, no va posar els peus al celler.",
+    "Hug i ella eren en una mateixa línia diagonal.",
+    "Diuen que estava a un salt de cavall de Violant.",
+    "Un armari es feia notar a la seva fila.",
+    "Hi havia exactament 2 persones al celler, víctima inclosa."
+   ],
+   "fr": [
+    "Une chaise se remarquait sur sa ligne.",
+    "Personne ne doute qu'il était dans le salon.",
+    "Elle se tenait près d'un figuier.",
+    "On dit qu'une armoire se remarquait dans sa colonne.",
+    "Dans le carnet de l'inspecteur, on lit qu'une cheminée était son plus proche voisin.",
+    "Dídac et elle étaient sur une même ligne diagonale.",
+    "Selon un témoin, elle partageait une diagonale avec Hug.",
+    "Fanny se trouvait à sa gauche.",
+    "Un invité se souvient qu'elle ne se trouvait pas dans le cellier.",
+    "L'inspecteur a noté qu'elle était sur la même diagonale qu'Hug.",
+    "Quelqu'un a juré qu'elle était à un saut de cavalier de Violant (comme aux échecs).",
+    "En suivant sa ligne, on tombait sur une armoire.",
+    "En ajoutant la victime, 2 personnes étaient dans le cellier."
+   ]
+  },
+  "solucio": {
+   "A": [
+    3,
+    5
+   ],
+   "B": [
+    4,
+    8
+   ],
+   "C": [
+    2,
+    0
+   ],
+   "D": [
+    0,
+    2
+   ],
+   "E": [
+    1,
+    6
+   ],
+   "F": [
+    5,
+    7
+   ],
+   "G": [
+    6,
+    1
+   ],
+   "H": [
+    8,
+    4
+   ],
+   "V": [
+    7,
+    3
+   ]
+  },
+  "assassi": "H"
+ }
+]
