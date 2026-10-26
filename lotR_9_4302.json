@@ -379,23 +379,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aina",
-    "genere": "f"
+    "nom": "Arnau",
+    "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Blai",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
-    "nom": "Carles",
-    "genere": "m"
+    "nom": "Clara",
+    "genere": "f"
    },
    {
     "id": "D",
-    "nom": "Dídac",
-    "genere": "m"
+    "nom": "Dolors",
+    "genere": "f"
    },
    {
     "id": "E",
@@ -404,12 +404,12 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
+    "nom": "Felip",
     "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Glòria",
+    "nom": "Gemma",
     "genere": "f"
    },
    {
@@ -419,8 +419,8 @@
    },
    {
     "id": "V",
-    "nom": "Vicenç",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -495,36 +495,36 @@
   ],
   "textos": {
    "ca": [
-    "L'inspector va anotar que no es trobava a l'hort.",
-    "Va evitar la sala.",
-    "Algú va jurar que tenia dues parets d'una habitació a l'esquena.",
-    "Dídac i ella formaven una diagonal.",
-    "Dídac quedava més amunt que ell al plànol.",
-    "Un convidat recorda que ocupava un racó d'una habitació.",
-    "Segons un testimoni, la sala no era el seu lloc aquella nit.",
-    "Dídac i ell no es van creuar: eren a habitacions diferents.",
-    "Al plànol, estava per sobre de Ferran.",
-    "Diuen que a la seva fila hi havia una cadira.",
-    "Compartia fila amb una taula.",
-    "Dídac quedava a la seva esquerra.",
-    "A la llibreta de l'inspector consta que un carro es feia notar a la seva fila.",
-    "Segons un testimoni, a la seva habitació només hi havia Helena amb ella."
+    "L'inspector va anotar que l'hort no era el seu lloc aquella nit.",
+    "Va mantenir-se lluny de la sala.",
+    "Estava en una cantonada d'una habitació.",
+    "Dolors i ell formaven una diagonal.",
+    "Algú va jurar que estava més al sud que Dolors.",
+    "Segons un testimoni, era en un racó d'una habitació.",
+    "Diuen que no es trobava a la sala.",
+    "Dolors i ella no es van creuar: eren a habitacions diferents.",
+    "Felip quedava més avall que ella al plànol.",
+    "A la llibreta de l'inspector consta que seguint la seva fila, es topava amb una cadira.",
+    "Una taula era a la seva fila.",
+    "Un convidat recorda que era a l'est de Dolors.",
+    "Segons un testimoni, un carro es feia notar a la seva fila.",
+    "L'inspector va anotar que a la seva habitació, ningú més que Helena."
    ],
    "fr": [
-    "L'inspecteur a noté qu'elle a évité le potager.",
-    "Quelqu'un a juré qu'il est resté à l'écart du salon.",
-    "Il avait deux murs d'une pièce dans le dos.",
-    "Dídac et elle formaient une diagonale.",
-    "Il se trouvait plus au sud que Dídac.",
-    "On dit qu'elle était dans un coin d'une pièce.",
-    "Un invité se souvient qu'il ne se trouvait pas dans le salon.",
-    "Dans le carnet de l'inspecteur, on lit qu'il ne partageait pas sa pièce avec Dídac.",
-    "Sur le plan, il était au-dessus de Ferran.",
-    "Selon un témoin, en suivant sa ligne, on tombait sur une chaise.",
-    "Elle partageait sa ligne avec une table.",
-    "Un invité se souvient que sur le plan, elle était à droite de Dídac.",
-    "On dit que sur sa ligne se trouvait une charrette.",
-    "Selon un témoin, dans sa pièce, personne d'autre que Helena."
+    "Selon un témoin, elle ne se trouvait pas dans le potager.",
+    "Quelqu'un a juré que personne ne l'a vu dans le salon.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle était dans un coin d'une pièce.",
+    "Dolors et lui formaient une diagonale.",
+    "L'inspecteur a noté qu'elle était au sud de Dolors.",
+    "Elle avait trouvé refuge dans un coin d'une pièce.",
+    "Elle n'était pas dans le salon.",
+    "Elle n'était pas dans la même pièce que Dolors.",
+    "Felip était au sud d'elle.",
+    "On dit qu'elle partageait sa ligne avec une chaise.",
+    "Un invité se souvient qu'une table se remarquait sur sa ligne.",
+    "Dolors était à l'ouest d'elle.",
+    "Quelqu'un a juré qu'en suivant sa ligne, on tombait sur une charrette.",
+    "Selon un témoin, elle ne partageait sa pièce qu'avec Helena."
    ]
   },
   "solucio": {
@@ -947,8 +947,8 @@
    },
    {
     "id": "B",
-    "nom": "Biel",
-    "genere": "m"
+    "nom": "Bruna",
+    "genere": "f"
    },
    {
     "id": "C",
@@ -957,8 +957,8 @@
    },
    {
     "id": "D",
-    "nom": "David",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
@@ -972,8 +972,8 @@
    },
    {
     "id": "G",
-    "nom": "Guillem",
-    "genere": "m"
+    "nom": "Glòria",
+    "genere": "f"
    },
    {
     "id": "H",
@@ -1060,36 +1060,36 @@
   ],
   "textos": {
    "ca": [
-    "Un convidat recorda que va entrar al porxo i no en va sortir.",
-    "Diuen que tenia Hèctor al seu est.",
-    "Es trobava al celler.",
-    "Un rac de vins era el seu veí més proper.",
-    "L'inspector va anotar que tenia una bicicleta a la mateixa fila.",
-    "Algú va jurar que era a l'oest de David.",
-    "Es va deixar veure a l'hort.",
-    "A la llibreta de l'inspector consta que un tractor es feia notar a la seva fila.",
+    "L'inspector va anotar que ningú no dubta que era al porxo.",
+    "Segons un testimoni, era a l'oest d'Hèctor.",
+    "Havia estat al celler tota l'estona.",
+    "Un convidat recorda que era al costat d'un rac de vins.",
+    "Compartia fila amb una bicicleta.",
+    "A la llibreta de l'inspector consta que tenia Delfina al seu est.",
+    "Va passar l'estona a l'hort.",
+    "Diuen que a la seva fila hi havia un tractor.",
     "Hi havia exactament 2 persones a l'hort, víctima inclosa.",
-    "Segons un testimoni, estava més a l'oest que Biel.",
-    "Segons un testimoni, era al sud d'Hèctor.",
-    "L'inspector va anotar que respecte a Fanny, estava a un moviment de cavall.",
-    "Si hi sumes la víctima, al porxo hi havia 3 persones.",
-    "Un convidat recorda que era a la mateixa diagonal que Fanny."
+    "Bruna quedava a la seva dreta.",
+    "Algú va jurar que era al sud d'Hèctor.",
+    "A la llibreta de l'inspector consta que estava a un salt de cavall de Fanny.",
+    "Comptant la víctima, 3 persones eren al porxo.",
+    "Si traçaves una diagonal des de Fanny, hi arribaves a ell."
    ],
    "fr": [
-    "Quelqu'un a juré qu'on l'a vu dans le porche.",
-    "Hèctor était à l'est de lui.",
-    "Elle a passé le temps dans le cellier.",
-    "Un casier à vins était son plus proche voisin.",
-    "Dans le carnet de l'inspecteur, on lit qu'en suivant sa ligne, on tombait sur un vélo.",
-    "L'inspecteur a noté que sur le plan, il était à gauche de David.",
-    "Un invité se souvient qu'il n'a pas quitté le potager de la soirée.",
-    "On dit qu'il partageait sa ligne avec un tracteur.",
+    "Quelqu'un a juré qu'il n'a pas quitté le porche de la soirée.",
+    "L'inspecteur a noté que sur le plan, elle était à gauche d'Hèctor.",
+    "Personne ne doute qu'elle était dans le cellier.",
+    "On dit qu'il ne s'est guère éloigné d'un casier à vins.",
+    "Selon un témoin, en suivant sa ligne, on tombait sur un vélo.",
+    "Delfina se trouvait à sa droite.",
+    "Il était dans le potager.",
+    "Sur sa ligne se trouvait un tracteur.",
     "Le potager accueillait 2 personnes, victime comprise.",
-    "Biel se trouvait à sa droite.",
-    "Hèctor se trouvait plus haut que lui sur le plan.",
-    "Selon un témoin, par rapport à Fanny, il était à un mouvement de cavalier.",
-    "Victime comprise, 3 personnes se trouvaient dans le porche.",
-    "En traçant une diagonale depuis Fanny, on arrivait à lui."
+    "Un invité se souvient qu'il se trouvait plus à l'ouest que Bruna.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle se trouvait plus au sud qu'Hèctor.",
+    "Il se trouvait à un saut de cavalier de Fanny.",
+    "Le porche abritait 3 personnes ce soir-là, victime comprise.",
+    "Il partageait une diagonale avec Fanny."
    ]
   },
   "solucio": {
@@ -1516,23 +1516,23 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Arnau",
+    "nom": "Aleix",
     "genere": "m"
    },
    {
     "id": "B",
-    "nom": "Bruna",
-    "genere": "f"
-   },
-   {
-    "id": "C",
-    "nom": "Cesc",
+    "nom": "Blai",
     "genere": "m"
    },
    {
-    "id": "D",
-    "nom": "Dolors",
+    "id": "C",
+    "nom": "Clara",
     "genere": "f"
+   },
+   {
+    "id": "D",
+    "nom": "David",
+    "genere": "m"
    },
    {
     "id": "E",
@@ -1541,13 +1541,13 @@
    },
    {
     "id": "F",
-    "nom": "Ferran",
-    "genere": "m"
+    "nom": "Francesca",
+    "genere": "f"
    },
    {
     "id": "G",
-    "nom": "Gemma",
-    "genere": "f"
+    "nom": "Guerau",
+    "genere": "m"
    },
    {
     "id": "H",
@@ -1556,8 +1556,8 @@
    },
    {
     "id": "V",
-    "nom": "Valentí",
-    "genere": "m"
+    "nom": "Vera",
+    "genere": "f"
    }
   ],
   "pistes": [
@@ -1618,30 +1618,30 @@
   ],
   "textos": {
    "ca": [
-    "Un convidat recorda que prop seu hi havia una figuera.",
-    "Segons un testimoni, a la seva columna hi havia un balancí.",
-    "A la llibreta de l'inspector consta que tenia una cadira a tocar.",
-    "Cesc quedava més amunt que ella al plànol.",
-    "A pocs passos hi havia una cadira.",
-    "L'inspector va anotar que compartia fila amb una pica.",
-    "Algú va jurar que una pica es feia notar a la seva columna.",
-    "Diuen que tenia una figuera a la mateixa columna.",
-    "Tenia una paret exterior de la finca just al costat.",
-    "Seguint la seva columna, es topava amb una cadira.",
-    "Compartia habitació només amb Hug."
+    "Segons un testimoni, era al costat d'una figuera.",
+    "Un convidat recorda que tenia un balancí a la mateixa columna.",
+    "Una cadira era el seu veí més proper.",
+    "Al plànol, estava per sota de Clara.",
+    "L'inspector va anotar que no es va separar gaire d'una cadira.",
+    "Algú va jurar que una pica es feia notar a la seva fila.",
+    "A la llibreta de l'inspector consta que una pica es feia notar a la seva columna.",
+    "Diuen que a la seva columna hi havia una figuera.",
+    "Tocava una paret exterior de la finca.",
+    "Segons un testimoni, compartia columna amb una cadira.",
+    "Hug era l'única companyia en aquella habitació."
    ],
    "fr": [
-    "Un invité se souvient qu'il ne s'est guère éloigné d'un figuier.",
-    "Dans le carnet de l'inspecteur, on lit qu'en suivant sa colonne, on tombait sur un fauteuil à bascule.",
-    "À quelques pas se trouvait une chaise.",
-    "Cesc était au nord d'elle.",
-    "On dit qu'elle était à côté d'une chaise.",
-    "L'inspecteur a noté qu'un évier se trouvait sur sa ligne.",
-    "Quelqu'un a juré qu'elle partageait sa colonne avec un évier.",
-    "Un figuier se remarquait dans sa colonne.",
-    "Il avait l'extérieur de la propriété tout près, derrière un simple mur.",
-    "Selon un témoin, dans sa colonne se trouvait une chaise.",
-    "Seuls elle et Hug étaient dans sa pièce."
+    "Dans le carnet de l'inspecteur, on lit qu'à quelques pas se trouvait un figuier.",
+    "Un fauteuil à bascule se remarquait dans sa colonne.",
+    "L'inspecteur a noté qu'une chaise était son plus proche voisin.",
+    "Il se trouvait plus au sud que Clara.",
+    "Un invité se souvient qu'il se tenait près d'une chaise.",
+    "Selon un témoin, en suivant sa ligne, on tombait sur un évier.",
+    "Dans sa colonne se trouvait un évier.",
+    "Quelqu'un a juré qu'un figuier se trouvait dans sa colonne.",
+    "On dit qu'il avait un mur extérieur de la propriété tout contre lui.",
+    "On dit qu'il partageait sa colonne avec une chaise.",
+    "Elle ne partageait sa pièce qu'avec Hug."
    ]
   },
   "solucio": {
@@ -2059,8 +2059,8 @@
   "persones": [
    {
     "id": "A",
-    "nom": "Aleix",
-    "genere": "m"
+    "nom": "Aina",
+    "genere": "f"
    },
    {
     "id": "B",
@@ -2074,32 +2074,32 @@
    },
    {
     "id": "D",
-    "nom": "Dídac",
-    "genere": "m"
+    "nom": "Delfina",
+    "genere": "f"
    },
    {
     "id": "E",
-    "nom": "Eulàlia",
-    "genere": "f"
+    "nom": "Enric",
+    "genere": "m"
    },
    {
     "id": "F",
-    "nom": "Francesca",
-    "genere": "f"
+    "nom": "Felip",
+    "genere": "m"
    },
    {
     "id": "G",
-    "nom": "Guillem",
+    "nom": "Gerard",
     "genere": "m"
    },
    {
     "id": "H",
-    "nom": "Heura",
-    "genere": "f"
+    "nom": "Hug",
+    "genere": "m"
    },
    {
     "id": "V",
-    "nom": "Vera",
+    "nom": "Violant",
     "genere": "f"
    }
   ],
@@ -2182,38 +2182,38 @@
   ],
   "textos": {
    "ca": [
-    "Clara quedava a la seva esquerra.",
-    "Algú va jurar que no es va separar gaire d'un pou.",
-    "Un pou era a la seva columna.",
-    "Va entrar a la cuina i no en va sortir.",
-    "Diuen que la van veure al porxo.",
-    "L'inspector va anotar que era al corral.",
-    "Segons un testimoni, tenia un forn a la mateixa columna.",
-    "Al plànol, quedava a la dreta de Blai.",
-    "A la llibreta de l'inspector consta que compartia fila amb un carro.",
-    "La cuina només tenia una persona, comptant la víctima.",
-    "Vera quedava més avall que ella al plànol.",
-    "Un convidat recorda que tenia Vera al seu est.",
-    "Seguint la seva columna, es topava amb un armari.",
+    "Algú va jurar que estava més a l'est que Clara.",
+    "Un pou era el seu veí més proper.",
+    "Segons un testimoni, a la seva columna hi havia un pou.",
+    "Diuen que va passar l'estona a la cuina.",
+    "A la llibreta de l'inspector consta que el van veure al porxo.",
+    "Ningú no dubta que era al corral.",
+    "Seguint la seva columna, es topava amb un forn.",
+    "Un convidat recorda que tenia Blai al seu oest.",
+    "L'inspector va anotar que tenia un carro a la mateixa fila.",
+    "Només hi havia una persona a la cuina, víctima inclosa.",
+    "Diuen que al plànol, estava per sobre de Violant.",
+    "Al plànol, quedava a l'esquerra de Violant.",
+    "Un convidat recorda que compartia columna amb un armari.",
     "El celler era gairebé buida: una sola persona, víctima inclosa.",
-    "Respecte a Blai, estava a un moviment de cavall."
+    "L'inspector va anotar que respecte a Blai, estava a un moviment de cavall."
    ],
    "fr": [
-    "L'inspecteur a noté que sur le plan, il était à droite de Clara.",
-    "On dit qu'elle se tenait près d'un puits.",
-    "Un invité se souvient qu'elle partageait sa colonne avec un puits.",
-    "Elle avait sa place dans la cuisine.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle était dans le porche.",
-    "Il est entré dans la basse-cour et n'en est pas ressorti.",
-    "Un four se trouvait dans sa colonne.",
-    "Quelqu'un a juré qu'il était à l'est de Blai.",
-    "Selon un témoin, une charrette se remarquait sur sa ligne.",
-    "La cuisine ne comptait qu'une personne, victime comprise.",
-    "Vera était au sud d'elle.",
-    "Elle se trouvait plus à l'ouest que Vera.",
-    "En suivant sa colonne, on tombait sur une armoire.",
-    "Le cellier était presque vide : une seule personne, victime comprise.",
-    "Selon un témoin, il se trouvait à un saut de cavalier de Blai."
+    "Sur le plan, il était à droite de Clara.",
+    "Quelqu'un a juré qu'un puits était son plus proche voisin.",
+    "Elle partageait sa colonne avec un puits.",
+    "Dans le carnet de l'inspecteur, on lit qu'il n'a pas quitté la cuisine de la soirée.",
+    "Il avait sa place dans le porche.",
+    "On dit qu'elle a passé le temps dans la basse-cour.",
+    "Un invité se souvient qu'un four se trouvait dans sa colonne.",
+    "Blai se trouvait à sa gauche.",
+    "L'inspecteur a noté qu'une charrette se remarquait sur sa ligne.",
+    "Il n'y avait qu'une personne dans la cuisine, victime comprise.",
+    "Selon un témoin, il était au nord de Violant.",
+    "Elle se trouvait plus à l'ouest que Violant.",
+    "Quelqu'un a juré qu'une armoire se remarquait dans sa colonne.",
+    "Le cellier ne comptait qu'une personne, victime comprise.",
+    "Elle était à un saut de cavalier de Blai (comme aux échecs)."
    ]
   },
   "solucio": {

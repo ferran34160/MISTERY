@@ -78,7 +78,8 @@ def tria_casos(pool, n_total, fixos=()):
             agafats[l] = per_niv[l][:meta[l]]
             per_niv[l] = per_niv[l][meta[l]:]
         while sum(len(v) for v in agafats.values()) < k and any(per_niv.values()):
-            l = max((x for x in PER_NIVELL if per_niv[x]), key=lambda x: (meta[x] - len(agafats[x]), -abs(x - 3)))
+            # el que falta es reparteix entre els altres nivells segons el seu pes (PER_NIVELL)
+            l = min((x for x in PER_NIVELL if per_niv[x]), key=lambda x: (len(agafats[x]) / PER_NIVELL[x], -x))
             agafats[l].append(per_niv[l].pop(0))
         for v in agafats.values():
             triats += v
