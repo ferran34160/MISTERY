@@ -618,6 +618,7 @@ function peces(){
       const m=vs.filter(e=>e.w===vs[0].w&&e.h===vs[0].h),e=m[hash(r,c)%m.length];
       for(let i=0;i<e.h;i++)for(let j=0;j<e.w;j++){seen.add((r+i)+","+(c+j));info[(r+i)+","+(c+j)]=i===0&&j===0?{img:e.img,w:e.w,h:e.h,fill:o==="catifa"}:{skip:true}}
       continue}
+    if(o==="catifa"&&w*h<2){seen.add(r+","+c);info[r+","+c]={k:"rug",t:true,b:true,l:true,r:true,w:1,h:1,i:0,j:0};continue}   // catifa solta: una casella sencera, no una icona retallada
     if(!MG[o]||w*h<2){seen.add(r+","+c);continue}
     for(let i=0;i<h;i++)for(let j=0;j<w;j++){seen.add((r+i)+","+(c+j));
       info[(r+i)+","+(c+j)]={k:MG[o],t:i===0,b:i===h-1,l:j===0,r:j===w-1,w,h,i,j}}
