@@ -1,121 +1,4 @@
 {
-"taula": [
-{
-"img": "objectes/g_taula.png",
-"w": 2,
-"h": 1
-},
-{
-"img": "objectes/g_banquet.png",
-"w": 2,
-"h": 1
-},
-{
-"img": "objectes/g_taula_v.png",
-"w": 1,
-"h": 2
-},
-{
-"img": "objectes/g_taula_menjar.png",
-"w": 2,
-"h": 2
-},
-{
-"img": "objectes/g_taula_rodona.png",
-"w": 2,
-"h": 2
-}
-],
-"escriptori": [
-{
-"img": "objectes/g_escriptori.png",
-"w": 2,
-"h": 2
-}
-],
-"sofa": [
-{
-"img": "objectes/g_sofa.png",
-"w": 2,
-"h": 1
-}
-],
-"banc": [
-{
-"img": "objectes/g_banc.png",
-"w": 2,
-"h": 1
-},
-{
-"img": "objectes/g_bancllarg.png",
-"w": 3,
-"h": 1
-},
-{
-"img": "objectes/g_banc_v.png",
-"w": 1,
-"h": 2
-}
-],
-"llit": [
-{
-"img": "objectes/g_llit.png",
-"w": 2,
-"h": 2
-},
-{
-"img": "objectes/g_llit_v.png",
-"w": 1,
-"h": 2
-},
-{
-"img": "objectes/g_llit_doble.png",
-"w": 2,
-"h": 2
-}
-],
-"piano": [
-{
-"img": "objectes/g_piano.png",
-"w": 2,
-"h": 2
-}
-],
-"billar": [
-{
-"img": "objectes/g_billar.png",
-"w": 2,
-"h": 1
-}
-],
-"barra": [
-{
-"img": "objectes/g_barra.png",
-"w": 2,
-"h": 2
-}
-],
-"llibreria": [
-{
-"img": "objectes/g_llibreria.png",
-"w": 2,
-"h": 2
-}
-],
-"vitrina": [
-{
-"img": "objectes/g_vitrina_v.png",
-"w": 1,
-"h": 2
-}
-],
-"tarima": [
-{
-"img": "objectes/g_tarima.png",
-"w": 2,
-"h": 2
-}
-],
 "catifa": [
 {
 "img": "objectes/g_catifa_a.png",
@@ -161,6 +44,138 @@
 "img": "objectes/g_catifa_e.png",
 "w": 1,
 "h": 3
+}
+],
+"taula": [
+{
+"img": "objectes/g_taula.png",
+"w": 2,
+"h": 1
+},
+{
+"img": "objectes/g_banquet.png",
+"w": 2,
+"h": 1
+},
+{
+"img": "objectes/g_taula_v.png",
+"w": 2,
+"h": 2
+},
+{
+"img": "objectes/g_taula_v.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_taula_menjar.png",
+"w": 2,
+"h": 2
+},
+{
+"img": "objectes/g_taula_rodona.png",
+"w": 2,
+"h": 2
+}
+],
+"escriptori": [
+{
+"img": "objectes/g_escriptori.png",
+"w": 2,
+"h": 1
+}
+],
+"sofa": [
+{
+"img": "objectes/g_sofa.png",
+"w": 2,
+"h": 1
+}
+],
+"banc": [
+{
+"img": "objectes/g_banc.png",
+"w": 3,
+"h": 1
+},
+{
+"img": "objectes/g_banc.png",
+"w": 2,
+"h": 1
+},
+{
+"img": "objectes/g_bancllarg.png",
+"w": 2,
+"h": 1
+},
+{
+"img": "objectes/g_bancllarg.png",
+"w": 3,
+"h": 1
+},
+{
+"img": "objectes/g_banc_v.png",
+"w": 1,
+"h": 2
+}
+],
+"llit": [
+{
+"img": "objectes/g_llit.png",
+"w": 2,
+"h": 2
+},
+{
+"img": "objectes/g_llit_v.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_llit_doble.png",
+"w": 2,
+"h": 2
+}
+],
+"piano": [
+{
+"img": "objectes/g_piano.png",
+"w": 2,
+"h": 2
+}
+],
+"billar": [
+{
+"img": "objectes/g_billar.png",
+"w": 2,
+"h": 2
+}
+],
+"barra": [
+{
+"img": "objectes/g_barra.png",
+"w": 2,
+"h": 1
+}
+],
+"llibreria": [
+{
+"img": "objectes/g_llibreria.png",
+"w": 2,
+"h": 1
+}
+],
+"vitrina": [
+{
+"img": "objectes/g_vitrina_v.png",
+"w": 1,
+"h": 2
+}
+],
+"tarima": [
+{
+"img": "objectes/g_tarima.png",
+"w": 2,
+"h": 2
 }
 ]
 }

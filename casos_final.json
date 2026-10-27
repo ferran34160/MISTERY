@@ -5918,8 +5918,8 @@
    [
     null,
     "armari",
-    "planta",
-    "arxivador",
+    "llibreria",
+    "llibreria",
     null,
     null
    ],
@@ -5958,15 +5958,15 @@
     "ca": "escriptori",
     "fr": "bureau"
    },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
+   },
    "maleta": {
     "bloqueja": false,
     "ca": "maleta",
     "fr": "valise"
-   },
-   "planta": {
-    "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
    }
   },
   "persones": [
@@ -6050,26 +6050,26 @@
   ],
   "textos": {
    "ca": [
-    "No es trobava al magatzem.",
-    "L'inspector va anotar que era a l'oest d'Eudald.",
-    "Un convidat recorda que ningú no dubta que era al taller.",
-    "Algú va jurar que estava més a l'oest que Aina.",
-    "No va posar els peus al despatx.",
-    "Només hi havia una persona al despatx, víctima inclosa.",
-    "Diuen que al plànol, quedava a l'esquerra de Dolors.",
-    "Segons un testimoni, compartia fila amb un escriptori.",
-    "El taller era gairebé buida: una sola persona, víctima inclosa."
+    "No va posar els peus al magatzem.",
+    "Estava més a l'oest que Eudald.",
+    "Diuen que va passar l'estona al taller.",
+    "Aina quedava a la seva dreta.",
+    "Algú va jurar que va mantenir-se lluny del despatx.",
+    "El despatx era gairebé buida: una sola persona, víctima inclosa.",
+    "L'inspector va anotar que era a l'oest de Dolors.",
+    "Tenia un escriptori a la mateixa fila.",
+    "Només hi havia una persona al taller, víctima inclosa."
    ],
    "fr": [
-    "Elle n'était pas dans l'entrepôt.",
-    "On dit qu'il était à l'ouest d'Eudald.",
-    "Quelqu'un a juré qu'elle avait sa place dans l'atelier.",
-    "Aina se trouvait à sa droite.",
-    "Selon un témoin, personne ne l'a vu dans le bureau.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle est restée à l'écart de l'entrepôt.",
+    "Quelqu'un a juré qu'il se trouvait plus à l'ouest qu'Eudald.",
+    "Elle est entrée dans l'atelier et n'en est pas ressortie.",
+    "Elle était à l'ouest d'Aina.",
+    "L'inspecteur a noté qu'il a évité le bureau.",
     "Le bureau était presque vide : une seule personne, victime comprise.",
-    "Sur le plan, elle était à gauche de Dolors.",
-    "Un invité se souvient qu'elle partageait sa ligne avec un bureau.",
-    "L'atelier ne comptait qu'une personne, victime comprise."
+    "Selon un témoin, sur le plan, elle était à gauche de Dolors.",
+    "On dit qu'un bureau se trouvait sur sa ligne.",
+    "Il n'y avait qu'une personne dans l'atelier, victime comprise."
    ]
   },
   "solucio": {
@@ -10656,8 +10656,8 @@
     null,
     null,
     null,
-    "escriptori",
-    "escriptori",
+    "llibreria",
+    "llibreria",
     null
    ],
    [
@@ -10732,11 +10732,6 @@
     "ca": "tauler d'escacs",
     "fr": "échiquier"
    },
-   "escriptori": {
-    "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
-   },
    "estufa": {
     "bloqueja": true,
     "ca": "estufa",
@@ -10746,6 +10741,11 @@
     "bloqueja": true,
     "ca": "fogata",
     "fr": "feu de camp"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
    },
    "planta": {
     "bloqueja": true,
@@ -16089,8 +16089,8 @@
     null,
     null,
     null,
-    "escriptori",
-    "escriptori"
+    "llibreria",
+    "llibreria"
    ],
    [
     null,
@@ -16123,15 +16123,15 @@
     "ca": "cistell de fruita",
     "fr": "panier de fruits"
    },
-   "escriptori": {
-    "bloqueja": true,
-    "ca": "escriptori",
-    "fr": "bureau"
-   },
    "fanal": {
     "bloqueja": true,
     "ca": "fanal",
     "fr": "lampadaire"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
    },
    "planta": {
     "bloqueja": true,
@@ -20688,8 +20688,8 @@
     "escriptori",
     null,
     null,
-    "escriptori",
-    "escriptori",
+    "llibreria",
+    "llibreria",
     null,
     null,
     null
@@ -20730,6 +20730,11 @@
     "bloqueja": true,
     "ca": "fanal",
     "fr": "lampadaire"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
    },
    "maleta": {
     "bloqueja": false,
@@ -23099,8 +23104,8 @@
     null,
     null,
     null,
-    "llibreria",
-    "llibreria"
+    "escriptori",
+    "escriptori"
    ],
    [
     null,
@@ -23109,8 +23114,8 @@
     "escriptori",
     null,
     null,
-    "llibreria",
-    "llibreria"
+    "escriptori",
+    "escriptori"
    ],
    [
     "planta",
@@ -23213,11 +23218,6 @@
     "bloqueja": true,
     "ca": "fogata",
     "fr": "feu de camp"
-   },
-   "llibreria": {
-    "bloqueja": true,
-    "ca": "llibreria",
-    "fr": "bibliothèque"
    },
    "mirall": {
     "bloqueja": true,
@@ -50812,8 +50812,8 @@
    [
     "butaca",
     "quadre",
-    "escriptori",
-    "escriptori",
+    "llibreria",
+    "llibreria",
     null,
     null,
     null,
@@ -50905,6 +50905,11 @@
     "bloqueja": true,
     "ca": "gàbia",
     "fr": "cage"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
    },
    "maleta": {
     "bloqueja": false,
@@ -63180,7 +63185,7 @@
    [
     null,
     null,
-    "tractor",
+    "planta",
     "figuera",
     "cadira",
     "tamboret",
@@ -63195,7 +63200,7 @@
     null,
     null,
     null,
-    "maleta",
+    "carro",
     "caixa",
     "bagul"
    ],
@@ -63216,8 +63221,8 @@
     null,
     null,
     "vitrina",
-    "billar",
-    "billar",
+    "telefon",
+    "quadre",
     null,
     null
    ],
@@ -63257,9 +63262,9 @@
    [
     null,
     null,
-    "maleta",
     "carro",
     "bagul",
+    "tamboret",
     null,
     null,
     null,
@@ -63276,11 +63281,6 @@
     "bloqueja": false,
     "ca": "banc",
     "fr": "banc"
-   },
-   "billar": {
-    "bloqueja": true,
-    "ca": "billar",
-    "fr": "billard"
    },
    "cadira": {
     "bloqueja": false,
@@ -63307,11 +63307,6 @@
     "ca": "arbre",
     "fr": "arbre"
    },
-   "maleta": {
-    "bloqueja": false,
-    "ca": "maleta",
-    "fr": "valise"
-   },
    "pica": {
     "bloqueja": true,
     "ca": "pica",
@@ -63326,6 +63321,11 @@
     "bloqueja": true,
     "ca": "pou",
     "fr": "puits"
+   },
+   "quadre": {
+    "bloqueja": true,
+    "ca": "quadre",
+    "fr": "tableau"
    },
    "sofa": {
     "bloqueja": false,
@@ -63342,10 +63342,10 @@
     "ca": "taula",
     "fr": "table"
    },
-   "tractor": {
+   "telefon": {
     "bloqueja": true,
-    "ca": "tractor",
-    "fr": "tracteur"
+    "ca": "telèfon",
+    "fr": "téléphone"
    },
    "vitrina": {
     "bloqueja": true,
@@ -63474,35 +63474,35 @@
   ],
   "textos": {
    "ca": [
-    "Diuen que va entrar al taller i no en va sortir.",
-    "Un convidat recorda que estava més a l'oest que Hèctor.",
-    "A la llibreta de l'inspector consta que ningú no dubta que era a la cuina.",
-    "Algú va jurar que tenia una pica ben a prop.",
-    "Segons un testimoni, seguint la seva fila, es topava amb un carretó.",
-    "Al plànol, quedava a l'esquerra de Delfina.",
-    "Estava al magatzem.",
-    "Una taula era a la seva fila.",
-    "Hi havia exactament 2 persones al magatzem, víctima inclosa.",
-    "L'inspector va anotar que era a l'oest de Bruna.",
-    "Segons un testimoni, al plànol, estava per sota d'Hèctor.",
-    "Era a un salt de cavall de Fanny (com als escacs).",
-    "Si hi sumes la víctima, al taller hi havia 3 persones.",
-    "Fanny i ell formaven una diagonal."
+    "Segons un testimoni, tenia el seu lloc al taller.",
+    "A la llibreta de l'inspector consta que tenia Hèctor al seu est.",
+    "Diuen que va entrar a la cuina i no en va sortir.",
+    "No es va separar gaire d'una pica.",
+    "Tenia un carretó a la mateixa fila.",
+    "Algú va jurar que al plànol, quedava a l'esquerra de Delfina.",
+    "Era al magatzem.",
+    "Un convidat recorda que a la seva fila hi havia una taula.",
+    "Si hi sumes la víctima, al magatzem hi havia 2 persones.",
+    "Bruna quedava a la seva dreta.",
+    "L'inspector va anotar que estava més al sud que Hèctor.",
+    "Un convidat recorda que estava a un salt de cavall de Fanny.",
+    "El taller va tenir 3 persones aquell vespre, víctima inclosa.",
+    "Diuen que compartia diagonal amb Fanny."
    ],
    "fr": [
-    "Personne ne doute qu'il était dans l'atelier.",
-    "Sur le plan, elle était à gauche d'Hèctor.",
-    "L'inspecteur a noté qu'elle était dans la cuisine.",
+    "Il se trouvait dans l'atelier.",
+    "L'inspecteur a noté que sur le plan, elle était à gauche d'Hèctor.",
+    "Selon un témoin, elle était dans la cuisine.",
     "Il se tenait près d'un évier.",
-    "Quelqu'un a juré qu'un chariot se trouvait sur sa ligne.",
-    "Selon un témoin, elle était à l'ouest de Delfina.",
-    "Dans le carnet de l'inspecteur, on lit qu'il a passé le temps dans l'entrepôt.",
-    "On dit qu'en suivant sa ligne, on tombait sur une table.",
-    "Victime comprise, 2 personnes se trouvaient dans l'entrepôt.",
+    "Quelqu'un a juré que sur sa ligne se trouvait un chariot.",
+    "Delfina était à l'est d'elle.",
+    "Dans le carnet de l'inspecteur, on lit qu'il n'a pas quitté l'entrepôt de la soirée.",
+    "En suivant sa ligne, on tombait sur une table.",
+    "En ajoutant la victime, 2 personnes étaient dans l'entrepôt.",
     "Un invité se souvient qu'il se trouvait plus à l'ouest que Bruna.",
-    "Sur le plan, elle était au-dessous d'Hèctor.",
-    "Dans le carnet de l'inspecteur, on lit qu'il se trouvait à un saut de cavalier de Fanny.",
-    "L'atelier abritait 3 personnes ce soir-là, victime comprise.",
+    "On dit qu'elle se trouvait plus au sud qu'Hèctor.",
+    "On dit qu'un seul saut de cavalier séparait Fanny de lui.",
+    "Victime comprise, 3 personnes se trouvaient dans l'atelier.",
     "Fanny et lui formaient une diagonale."
    ]
   },
@@ -65642,8 +65642,8 @@
     null,
     null,
     null,
-    "billar",
-    "billar",
+    "barra",
+    "barra",
     null,
     null
    ],
@@ -65665,10 +65665,10 @@
     "ca": "arxivador",
     "fr": "classeur"
    },
-   "billar": {
+   "barra": {
     "bloqueja": true,
-    "ca": "billar",
-    "fr": "billard"
+    "ca": "barra",
+    "fr": "comptoir"
    },
    "butaca": {
     "bloqueja": false,
@@ -73337,8 +73337,8 @@
     null,
     null,
     null,
-    "taula",
-    "taula",
+    "escriptori",
+    "escriptori",
     null
    ],
    [
@@ -73396,6 +73396,11 @@
     "ca": "carretó",
     "fr": "chariot"
    },
+   "escriptori": {
+    "bloqueja": true,
+    "ca": "escriptori",
+    "fr": "bureau"
+   },
    "estatua": {
     "bloqueja": true,
     "ca": "estàtua",
@@ -73425,11 +73430,6 @@
     "bloqueja": false,
     "ca": "tamboret",
     "fr": "tabouret"
-   },
-   "taula": {
-    "bloqueja": true,
-    "ca": "taula",
-    "fr": "table"
    },
    "torxa": {
     "bloqueja": true,
@@ -88400,8 +88400,8 @@
     null
    ],
    [
-    "barra",
-    "barra",
+    "billar",
+    "billar",
     "pupitre",
     null,
     "llibreria",
@@ -88411,8 +88411,8 @@
     null
    ],
    [
-    "barra",
-    "barra",
+    "billar",
+    "billar",
     "planta",
     null,
     null,
@@ -88432,6 +88432,11 @@
     "bloqueja": true,
     "ca": "barra",
     "fr": "comptoir"
+   },
+   "billar": {
+    "bloqueja": true,
+    "ca": "billar",
+    "fr": "billard"
    },
    "butaca": {
     "bloqueja": false,

@@ -12,8 +12,9 @@ from collections import deque
 import numpy as np
 from PIL import Image, ImageFilter
 
-FOOT = [(2, 1), (3, 1), (2, 2), (1, 2), (1, 3), (2, 3), (3, 2)]   # (amplada, alçada) en caselles; mai 1x1 (ja hi ha l'objecte normal)
-MIN_FILL = 0.72
+FOOT = [(2, 1), (3, 1), (2, 2), (1, 2)]   # (amplada, alçada) en caselles, fins a 4 caselles; mai 1x1
+FOOT_CATIFA = FOOT + [(1, 3), (2, 3), (3, 2)]          # les catifes (planes) poden ser més grans
+MIN_FILL = 0.68
 
 
 def treu_fons(sub, bg, th=55):
@@ -87,7 +88,7 @@ def main():
         o = o.resize((max(1, round(o.size[0] * sc)), max(1, round(o.size[1] * sc))), Image.LANCZOS)
         o.save(f"objectes/g_{nom}.png")
         ajusts = []
-        for w, h in FOOT:
+        for w, h in (FOOT_CATIFA if classe == "catifa" else FOOT):
             r = asp / (w / h)
             fill = min(r, 1 / r)
             ajusts.append((fill, w, h))
