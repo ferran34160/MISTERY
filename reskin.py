@@ -17,7 +17,7 @@ import zlib
 
 from escenaris import ESCENARIS, _OBJ
 from textos import descriu
-from coherencia import KPOP, permesos
+from coherencia import KPOP, MERGE, permesos
 
 LLETRES = "ABCDEFGHIJ"
 PER_ESCENARI = 3
@@ -155,20 +155,30 @@ def aplica(c, clau, rng):
     # objectes de decorat (densitat.json): d'una classe que cap pista no cita, perquè no canviïn la solució
     refs = {mapa[cl["obj"]] for cl in c["pistes"] if "obj" in cl}
     perm = perm_de(triades)
-    for r, q, b in DENS.get(c["id"], {}).get("extra", []):
-        sala_i = c["sala"][r][q]
-        cand = [k for k in TOTS if k not in refs and _blk(k, oe) == bool(b) and k in perm[sala_i]]
+    peces = []
+    for cel, b in DENS.get(c["id"], {}).get("extra", []):
+        b = bool(b)
+        sala_i = c["sala"][cel[0][0]][cel[0][1]]
+        if len(cel) > 1:
+            gran = [k for k in TOTS if k in MERGE and k not in refs and _blk(k, oe) == b and k in perm[sala_i]]
+            if gran:
+                peces.append((cel, b, sala_i, gran))
+                continue
+        for x in cel:      # peça d'una sola casella (o no hi ha cap objecte gran adequat)
+            peces.append(([x], b, sala_i, None))
+    for cel, b, sala_i, gran in peces:
+        cand = gran or [k for k in TOTS if k not in refs and k not in MERGE and _blk(k, oe) == b and k in perm[sala_i]]
         if not cand:   # cap objecte del tipus de sala serveix: es prova amb uns de genèrics (mai un que citi una pista)
-            cand = [k for k in (("planta", "caixa", "barril", "armari", "taula") if b else ("banc", "cadira", "tamboret", "bagul"))
-                    if k not in refs and _blk(k, oe) == bool(b)]
+            cand = [k for k in (("planta", "caixa", "barril", "armari") if b else ("banc", "cadira", "tamboret", "bagul"))
+                    if k not in refs and _blk(k, oe) == b]
         if not cand:
             continue
-        # pesos: els objectes propis de la sala (de l'escenari) i els ja usats al plànol pesen més, per no repetir tot
         pes = [3 if k in triades[sala_i][1]["objs"] else 1 for k in cand]
         k = rng.choices(cand, weights=pes)[0]
         if k not in oe:
-            oe[k] = {"bloqueja": bool(b), "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
-        c["obj"][r][q] = k
+            oe[k] = {"bloqueja": b, "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
+        for r, q in cel:
+            c["obj"][r][q] = k
         usats.add(k)
     c["objectes"] = {k: {"bloqueja": oe[k]["bloqueja"],
                          "ca": oe[k]["nom"]["ca"][1],

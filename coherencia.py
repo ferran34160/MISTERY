@@ -27,19 +27,19 @@ POOL = {
     "cuina": "taula estufa forn pica nevera cafetera armari caixa barril tamboret cadira cistell planta rellotge",
     "bany": "banyera vater pica rentadora bascula mirall banc armari planta tamboret",
     "celler": "barril caixa celler escala bagul tamboret taula torxa",
-    "menjador": "taula cadira tamboret barra cafetera planta mirall quadre rellotge celler banc llar",
-    "dormitori": "llit armari cadira bagul mirall maleta escriptori butaca quadre planta rellotge telefon estufa",
-    "biblioteca": "llibreria escala butaca taula escriptori globus planta quadre rellotge pupitre arxivador tamboret",
-    "oficina": "escriptori arxivador cadira butaca maleta telefon planta globus quadre armari llibreria rellotge caixa",
+    "menjador": "catifa taula cadira tamboret barra cafetera planta mirall quadre rellotge celler banc llar",
+    "dormitori": "catifa llit armari cadira bagul mirall maleta escriptori butaca quadre planta rellotge telefon estufa",
+    "biblioteca": "catifa llibreria escala butaca taula escriptori globus planta quadre rellotge pupitre arxivador tamboret",
+    "oficina": "catifa escriptori arxivador cadira butaca maleta telefon planta globus quadre armari llibreria rellotge caixa",
     "escola": "pupitre pissarra pilota bola balanci banc escala planta armari cadira",
-    "teatre": "reflector tel tamboret piano butaca sofa maniqui mirall bola pilota balanci banc planta",
+    "teatre": "catifa reflector tel tamboret piano butaca sofa maniqui mirall bola pilota balanci banc planta",
     "antic": "torxa armadura tron banc bagul caixa barril escala estatua taula cadira vitrina quadre",
-    "museu": "vitrina estatua quadre banc maniqui escala mirall armadura planta",
+    "museu": "catifa vitrina estatua quadre banc maniqui escala mirall armadura planta",
     "botiga": "caixareg finestreta barra banc maleta carreto caixa rellotge bustia cadira tamboret bascula",
     "nautic": "timo ancora caiac barril caixa bagul escala fanal carreto banc",
     "exterior": "banc planta figuera fanal pou estatua torxa taula cadira tamboret bicicleta caiac fogata tenda motxilla carro tractor",
     "magatzem": "caixa barril bagul escala carreto carro armari taula tamboret estufa arxivador rentadora maleta",
-    "saló": "sofa butaca mirall quadre vitrina estatua planta rellotge piano taula cadira banc maleta bustia telefon escacs billar gabia",
+    "saló": "catifa sofa butaca mirall quadre vitrina estatua planta rellotge piano taula cadira banc maleta bustia telefon escacs billar gabia",
 }
 GENERIC = "planta caixa banc taula cadira armari quadre tamboret"
 _RE = [(t, re.compile(r)) for t, r in TIPUS]
@@ -61,3 +61,6 @@ def permesos(nom_ca, objs_sala):
 # objectes del mode K-pop (només s'usen als casos K-pop)
 KPOP = set("micro lightstick enceinte projecteur ampli synthe console miroirloge valise peluche ramen bubble photocards "
            "affiche camera canape cadeau lanterne eventail epee chapeau cerisier distributeur".split())
+
+# objectes que s'agrupen en una sola peça de diverses caselles (taules, escriptoris, barres, catifes…)
+MERGE = {"taula", "escriptori", "barra", "catifa"}

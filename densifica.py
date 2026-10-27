@@ -17,7 +17,7 @@ import zlib
 import motor
 from reskin import nivell_final
 
-FRAC = 0.50            # fracció de caselles del plànol amb objecte (Murdoku: ~45-50%)
+FRAC = 0.32            # fracció de caselles del plànol amb objecte (agrupades en peces grans)
 PART_BLOQ = 0.7        # part dels afegits que bloquegen
 ESCALES = [1.0, 0.75, 0.5, 0.3]
 LET = "ABCDEFGHIJ"
@@ -28,8 +28,9 @@ def plantilla(c, extra=()):
     obj = [row[:] for row in c["obj"]]
     bloq = {k: v["bloqueja"] for k, v in c["objectes"].items()}
     bloq["_b"], bloq["_o"] = True, False
-    for r, q, b in extra:
-        obj[r][q] = "_b" if b else "_o"
+    for cel, b in extra:
+        for r, q in cel:
+            obj[r][q] = "_b" if b else "_o"
     return motor.Plantilla(n, [[bool(x) for x in f] for f in c["pla"]], c["sala"], obj, bloq)
 
 
@@ -46,22 +47,35 @@ def pistes_motor(c):
     return out
 
 
+FORMES = [(1, 2), (2, 1), (1, 3), (3, 1), (2, 2), (2, 3), (3, 2)]
+
+
 def tria_extres(c, rng, escala):
+    """Llista de grups [[(r, q), ...], bloqueja]: peces d'1 a 6 caselles contigües de la mateixa sala (taules, catifes…)."""
     n = c["n"]
     pla = [(r, q) for r in range(n) for q in range(n) if c["pla"][r][q]]
-    lliures = [(r, q) for r, q in pla if not c["obj"][r][q]]
+    lliure = {(r, q) for r, q in pla if not c["obj"][r][q]}
     sol = {tuple(v) for v in c["solucio"].values()}
-    voler = int(FRAC * len(pla) * escala) - (len(pla) - len(lliures))
-    if voler <= 0:
-        return []
-    rng.shuffle(lliures)
-    out = []
-    for r, q in lliures:
-        if len(out) >= voler:
-            break
-        b = (r, q) not in sol and rng.random() < PART_BLOQ
-        out.append([r, q, 1 if b else 0])
-    return out
+    voler = int(FRAC * len(pla) * escala) - (len(pla) - len(lliure))
+    grups = []
+    intents = 0
+    while voler > 0 and lliure and intents < 400:
+        intents += 1
+        r, q = rng.choice(sorted(lliure))
+        h, w = (1, 1) if rng.random() < 0.35 else rng.choice(FORMES)
+        cel = [(r + i, q + j) for i in range(h) for j in range(w)]
+        if not all(x in lliure and c["sala"][x[0]][x[1]] == c["sala"][r][q] for x in cel):
+            continue
+        b = 0 if (len(cel) > 1 and rng.random() < 0.3) else 1       # les catifes (grans) no bloquegen
+        if len(cel) == 1:
+            b = 1 if rng.random() < PART_BLOQ else 0
+        if b and any(x in sol for x in cel):
+            continue
+        for x in cel:
+            lliure.discard(x)
+        voler -= len(cel)
+        grups.append([[list(x) for x in cel], b])
+    return grups
 
 
 def main():
