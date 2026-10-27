@@ -17,7 +17,7 @@ import zlib
 
 from escenaris import ESCENARIS, _OBJ
 from textos import descriu
-from coherencia import KPOP, MERGE, permesos
+from coherencia import KPOP, MERGE, permesos, pot_ser
 
 LLETRES = "ABCDEFGHIJ"
 PER_ESCENARI = 3
@@ -26,7 +26,7 @@ PER_ESCENARI = 3
 def carrega_pool(ids_ok):
     pool = {}
     for f in sorted(glob.glob("*.json")):
-        if f in ("noms.json", "casos_final.json", "assignacions.json", "dificultats.json", "densitat.json", "casos_kpop.json", "casos_meu.json"):
+        if f in ("noms.json", "casos_final.json", "assignacions.json", "dificultats.json", "densitat.json", "grans.json", "casos_kpop.json", "casos_meu.json"):
             continue
         for c in json.load(open(f, encoding="utf-8")):
             if c["id"] in ids_ok and c["id"] not in pool:
@@ -160,7 +160,10 @@ def aplica(c, clau, rng):
         b = bool(b)
         sala_i = c["sala"][cel[0][0]][cel[0][1]]
         if len(cel) > 1:
-            gran = [k for k in TOTS if k in MERGE and k not in refs and _blk(k, oe) == b and k in perm[sala_i]]
+            h_ = max(x[0] for x in cel) - min(x[0] for x in cel) + 1
+            w_ = max(x[1] for x in cel) - min(x[1] for x in cel) + 1
+            gran = [k for k in TOTS if k in MERGE and k not in refs and _blk(k, oe) == b and k in perm[sala_i]
+                    and pot_ser(k, h_, w_)]
             if gran:
                 peces.append((cel, b, sala_i, gran))
                 continue

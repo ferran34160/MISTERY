@@ -311,6 +311,10 @@ def main():
     with open("casos.js", "w", encoding="utf-8") as fh:
         fh.write("window.CASOS = " + json.dumps(casos, ensure_ascii=False) + ";\n")
         fh.write("window.SCEN_META = " + json.dumps(meta, ensure_ascii=False) + ";\n")
+        try:
+            fh.write("window.GRANS = " + json.dumps(json.load(open("grans.json", encoding="utf-8"))) + ";\n")
+        except OSError:
+            fh.write("window.GRANS = {};\n")
     print(len(casos), "casos a casos.js")
     # joc.html: tot en un sol fitxer (casos inclosos), per obrir-lo sense servidor
     with open("index.html", encoding="utf-8") as fh:
@@ -340,7 +344,7 @@ def main():
             im = im.convert("RGBA")
             # mides màximes (px) i colors segons la imatge
             grans = {"logo.png": (420, 128), "sobre.png": (260, 128), "paper.png": (240, 128)}
-            mida_max, colors = grans.get(ruta, (104, 96))
+            mida_max, colors = grans.get(ruta, (230, 160) if "/g_" in ruta else (104, 96))
             im.thumbnail((mida_max, mida_max), Image.LANCZOS)
             im = im.quantize(colors=colors, method=Image.FASTOCTREE, dither=Image.NONE)
             im.save(buf, "PNG", optimize=True)

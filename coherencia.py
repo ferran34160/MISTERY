@@ -62,5 +62,22 @@ def permesos(nom_ca, objs_sala):
 KPOP = set("micro lightstick enceinte projecteur ampli synthe console miroirloge valise peluche ramen bubble photocards "
            "affiche camera canape cadeau lanterne eventail epee chapeau cerisier distributeur".split())
 
-# objectes que s'agrupen en una sola peça de diverses caselles (taules, escriptoris, barres, catifes…)
-MERGE = {"taula", "escriptori", "barra", "catifa"}
+# objectes que s'agrupen en una sola peça de diverses caselles. Els de SLAB es dibuixen amb un dibuix senzill a
+# qualsevol mida (taules, escriptoris, barres, catifes); els de grans.json tenen imatge pròpia per a cada mida.
+import json as _json
+import os as _os
+
+SLAB = {"taula", "escriptori", "barra", "catifa"}
+try:
+    with open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "grans.json"), encoding="utf-8") as _f:
+        GRANS = _json.load(_f)
+except (OSError, ValueError):
+    GRANS = {}
+MERGE = SLAB | set(GRANS)
+
+
+def pot_ser(kind, h, w):
+    """Pot l'objecte `kind` ocupar un rectangle de h files per w columnes com a peça única?"""
+    if kind in SLAB:
+        return True
+    return any(e["w"] == w and e["h"] == h for e in GRANS.get(kind, []))

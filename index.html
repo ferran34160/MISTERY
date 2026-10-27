@@ -123,6 +123,8 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.blocked::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.08) 6px 7px);pointer-events:none}
 .cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
 .cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none;white-space:normal;right:2px;line-height:1.05;z-index:4;text-shadow:0 0 3px rgba(255,255,255,.85),0 0 2px rgba(255,255,255,.85)}
+.gran{position:absolute;left:0;top:0;object-fit:contain;object-position:center bottom;pointer-events:none;z-index:1}
+.cell .notes,.cell .mark{z-index:2}
 .slab{position:absolute;box-sizing:border-box;pointer-events:none}
 .sl-wood{background:repeating-linear-gradient(90deg,rgba(0,0,0,.05) 0 1px,transparent 1px 14px),linear-gradient(#c99560,#b4803f);border:0 solid #4a2f1a;box-shadow:0 2px 3px rgba(0,0,0,.25)}
 .sl-bar{background:repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 1px,transparent 1px 14px),linear-gradient(#78492a,#5a361c);border:0 solid #2f1b0e;box-shadow:0 2px 3px rgba(0,0,0,.3)}
@@ -603,14 +605,22 @@ function renderLegend(){
 let popKey=null,justSolved=null;
 const MG={taula:"wood",escriptori:"wood",barra:"bar",catifa:"rug"};
 function peces(){
-  const n=cur.n,seen=new Set(),info={};
+  const n=cur.n,seen=new Set(),info={},G=window.GRANS||{};
+  const hash=(r,c)=>{let x=0;for(const ch of cur.id+r+","+c)x=(Math.imul(x,31)+ch.charCodeAt(0))>>>0;return x};
   for(let r=0;r<n;r++)for(let c=0;c<n;c++){
-    const o=cur.obj[r][c];if(!MG[o]||!cur.pla[r][c]||seen.has(r+","+c))continue;
+    const o=cur.obj[r][c];if(!(MG[o]||G[o])||!cur.pla[r][c]||seen.has(r+","+c))continue;
     const ok=(rr,cc)=>rr<n&&cc<n&&cur.pla[rr][cc]&&cur.obj[rr][cc]===o&&cur.sala[rr][cc]===cur.sala[r][c]&&!seen.has(rr+","+cc);
     let w=1;while(ok(r,c+w))w++;
     let h=1;for(;;){let f=true;for(let j=0;j<w;j++)if(!ok(r+h,c+j)){f=false;break}if(!f)break;h++}
+    // imatge pròpia per a aquesta mida (la més gran que hi càpiga)?
+    const vs=(G[o]||[]).filter(e=>e.w<=w&&e.h<=h).sort((a,b)=>b.w*b.h-a.w*a.h);
+    if(vs.length){
+      const m=vs.filter(e=>e.w===vs[0].w&&e.h===vs[0].h),e=m[hash(r,c)%m.length];
+      for(let i=0;i<e.h;i++)for(let j=0;j<e.w;j++){seen.add((r+i)+","+(c+j));info[(r+i)+","+(c+j)]=i===0&&j===0?{img:e.img,w:e.w,h:e.h}:{skip:true}}
+      continue}
+    if(!MG[o]||w*h<2){seen.add(r+","+c);continue}
     for(let i=0;i<h;i++)for(let j=0;j<w;j++){seen.add((r+i)+","+(c+j));
-      if(w*h>1)info[(r+i)+","+(c+j)]={k:MG[o],t:i===0,b:i===h-1,l:j===0,r:j===w-1,w,h,i,j}}
+      info[(r+i)+","+(c+j)]={k:MG[o],t:i===0,b:i===h-1,l:j===0,r:j===w-1,w,h,i,j}}
   }
   return info}
 function slab(p){
@@ -646,7 +656,7 @@ function renderBoard(){
     let inner="";
     if(labelAt[s]===r+","+c)inner+=`<span class="rn">${cur.sales[s][lang]}</span>`;
     const pz=pc[r+","+c];
-    if(pz)inner+=slab(pz);else if(o)inner+=icon(o);
+    if(pz&&pz.skip){}else if(pz&&pz.img)inner+=`<img class="gran" src="${pz.img}" alt="" style="width:${pz.w*100}%;height:${pz.h*100}%">`;else if(pz)inner+=slab(pz);else if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes${cell.nt.length>4?" n5":cell.nt.length>1?" n3":""}">${cell.nt.join("")}</span>`;

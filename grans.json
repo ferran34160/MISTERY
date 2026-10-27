@@ -1,0 +1,75 @@
+{
+"taula": [
+{
+"img": "objectes/g_taula.png",
+"w": 2,
+"h": 1
+},
+{
+"img": "objectes/g_banquet.png",
+"w": 2,
+"h": 1
+}
+],
+"escriptori": [
+{
+"img": "objectes/g_escriptori.png",
+"w": 2,
+"h": 2
+}
+],
+"sofa": [
+{
+"img": "objectes/g_sofa.png",
+"w": 2,
+"h": 1
+}
+],
+"banc": [
+{
+"img": "objectes/g_banc.png",
+"w": 2,
+"h": 1
+},
+{
+"img": "objectes/g_bancllarg.png",
+"w": 3,
+"h": 1
+}
+],
+"llit": [
+{
+"img": "objectes/g_llit.png",
+"w": 2,
+"h": 2
+}
+],
+"piano": [
+{
+"img": "objectes/g_piano.png",
+"w": 2,
+"h": 2
+}
+],
+"billar": [
+{
+"img": "objectes/g_billar.png",
+"w": 2,
+"h": 1
+}
+],
+"barra": [
+{
+"img": "objectes/g_barra.png",
+"w": 2,
+"h": 2
+}
+],
+"llibreria": [
+{
+"img": "objectes/g_llibreria.png",
+"w": 2,
+"h": 2
+}
+]
+}

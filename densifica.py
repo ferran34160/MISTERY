@@ -90,7 +90,7 @@ def main():
     fet = 0
     for f in sorted(glob.glob("*.json")):
         if f in ("noms.json", "casos_final.json", "assignacions.json", "casos_kpop.json", "casos_meu.json",
-                 "dificultats.json", "densitat.json"):
+                 "dificultats.json", "densitat.json", "grans.json"):
             continue
         for c in json.load(open(f, encoding="utf-8")):
             i = c["id"]
