@@ -264,3 +264,22 @@ a small rounded pill label under each with its Catalan name and size ("catifa 2x
 ```
 
 Quan els tinguis, passa-me'ls (un full cada vegada). Els retallo, els poso a `objectes/` i canvio el joc perquè: (1) cada objecte gran sigui **una sola imatge** que ocupa la seva mida exacta, (2) el generador només crei peces de les mides que tinguem dibuixades, i (3) mai es posin dues peces iguals enganxades.
+
+---
+
+## 9. Estil «dibuix» (en lloc de realista) — prova pilot
+
+Objectiu: objectes de **dibuix pla tipus vectorial / joc de taula**: contorn gruixut i uniforme, colors plans amb una sola ombra, sense degradats ni textures, formes simples. Primer es fa **un sol full pilot** (12 objectes) per decidir l'estil; si agrada, es regeneren la resta amb el mateix estil (mateixos noms i mateix ordre que els fulls 1 i 2 de la secció 1 i 5, de la 8 i dels objectes K-pop).
+
+```
+A sprite sheet of 12 furniture and prop icons for a mystery board game, arranged in a grid of
+4 columns by 3 rows on a plain flat cream background (#F4ECDF). Flat vector cartoon style: thick
+uniform dark outline (near-black, about 5% of the object's height), flat solid colours with only
+ONE simple darker shade tone per colour, no gradients, no textures, no realistic details, no soft
+shadows, rounded simple geometric shapes, friendly and slightly chunky proportions, a saturated but
+slightly muted palette. Seen from the front and slightly from above like a board-game icon, centred,
+each object filling its cell, clearly separated. Under each item a small rounded pill label with its
+Catalan name. Items in order, row by row: table, chair, single bed, barrel / wooden crate, potted
+plant, sofa, wardrobe, marble statue on a plinth / grand piano, standing mirror, iron stove,
+refrigerator, treasure chest.
+```
