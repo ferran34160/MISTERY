@@ -25,7 +25,7 @@ PER_ESCENARI = 3
 def carrega_pool(ids_ok):
     pool = {}
     for f in sorted(glob.glob("*.json")):
-        if f in ("noms.json", "casos_final.json", "assignacions.json", "dificultats.json", "casos_kpop.json", "casos_meu.json"):
+        if f in ("noms.json", "casos_final.json", "assignacions.json", "dificultats.json", "densitat.json", "casos_kpop.json", "casos_meu.json"):
             continue
         for c in json.load(open(f, encoding="utf-8")):
             if c["id"] in ids_ok and c["id"] not in pool:
@@ -87,6 +87,12 @@ def tria_casos(pool, n_total, fixos=()):
     return triats[:n_total]
 
 
+try:
+    DENS = json.load(open("densitat.json"))
+except (OSError, ValueError):
+    DENS = {}
+
+
 def aplica(c, clau, rng):
     esc = ESCENARIS[clau]
     sales_e = list(esc["sales"].items())
@@ -143,6 +149,21 @@ def aplica(c, clau, rng):
     oe.update(afegits)
     usats = set(mapa.values())
     c["obj"] = [[mapa[o] if o else None for o in fila] for fila in c["obj"]]
+    # objectes de decorat (densitat.json): d'una classe que cap pista no cita, perquè no canviïn la solució
+    refs = {mapa[cl["obj"]] for cl in c["pistes"] if "obj" in cl}
+    for r, q, b in DENS.get(c["id"], {}).get("extra", []):
+        sala_i = c["sala"][r][q]
+        cand = [k for k in triades[sala_i][1]["objs"] if k in oe and oe[k]["bloqueja"] == bool(b) and k not in refs]
+        if not cand:
+            cand = [k for k in oe if oe[k]["bloqueja"] == bool(b) and k not in refs]
+        if not cand:
+            cand = [k for k in _OBJ if _OBJ[k][4] == bool(b) and k not in refs and k not in oe]
+            k = rng.choice(cand)
+            oe[k] = {"bloqueja": bool(b), "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
+        else:
+            k = rng.choice(cand)
+        c["obj"][r][q] = k
+        usats.add(k)
     c["objectes"] = {k: {"bloqueja": oe[k]["bloqueja"],
                          "ca": oe[k]["nom"]["ca"][1],
                          "fr": oe[k]["nom"]["fr"][1]} for k in sorted(usats)}
