@@ -657,7 +657,7 @@ function renderBoard(){
     let inner="";
     if(labelAt[s]===r+","+c)inner+=`<span class="rn">${cur.sales[s][lang]}</span>`;
     const pz=pc[r+","+c];
-    if(pz&&pz.skip){}else if(pz&&pz.img)inner+=`<img class="gran" src="${pz.img}" alt="" style="width:${pz.w*100}%;height:${pz.h*100}%${pz.fill?";object-fit:fill;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.3);z-index:0":""}">`;else if(pz)inner+=slab(pz);else if(o)inner+=icon(o);
+    if(pz&&pz.skip){}else if(pz&&pz.img)inner+=`<img class="gran" src="${pz.img}" alt="" style="width:${pz.w*100}%;height:${pz.h*100}%${pz.fill?";object-fit:fill;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.3)":""}">`;else if(pz)inner+=slab(pz);else if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes${cell.nt.length>4?" n5":cell.nt.length>1?" n3":""}">${cell.nt.join("")}</span>`;
