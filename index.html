@@ -100,6 +100,18 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .tx-sand{background-image:var(--lt),url("terres/sorra.jpg")}
 .tx-metal{background-image:var(--lt),url("terres/metall.jpg")}
 .tx-pavers{background-image:var(--lt),url("terres/llambordes.jpg")}
+.tx-marblew{background-image:var(--lt),url("terres/marbre_blanc.jpg")}
+.tx-marbleb{background-image:var(--lt),url("terres/marbre_negre.jpg")}
+.tx-walnut{background-image:var(--lt),url("terres/noguera.jpg")}
+.tx-herring{background-image:var(--lt),url("terres/espiga.jpg")}
+.tx-tcarpet{background-image:var(--lt),url("terres/catifa_teatre.jpg")}
+.tx-persian{background-image:var(--lt),url("terres/catifa_persa.jpg")}
+.tx-hexa{background-image:var(--lt),url("terres/hexagons.jpg")}
+.tx-concrete{background-image:var(--lt),url("terres/formigo.jpg")}
+.tx-deck{background-image:var(--lt),url("terres/coberta.jpg")}
+.tx-straw{background-image:var(--lt),url("terres/terra_palla.jpg")}
+.tx-brick{background-image:var(--lt),url("terres/mao.jpg")}
+.tx-snow{background-image:var(--lt),url("terres/neu.jpg")}
 
 /* tauler */
 .bar{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;padding:2px 2px 8px}
@@ -339,6 +351,17 @@ const scen=id=>(window.SCEN_META&&SCEN_META[id])||SCEN[id]||SCEN.mas;
 
 /* tipus de terra segons el nom de la sala (en català) */
 const TEX=[
+ ["snow",/\bneu\b|glaç|iglú|trineu|alpí/,"#cfe3f4",.3],
+ ["marbleb",/cripta|tresor|discoteca|cambra cuirassada|caixa forta/,"#9aa0ad",.3],
+ ["marblew",/vestíbul|galeria|estàtues|miralls|subhastes|saló de ball|recepció|sala principal|cambra reial|santuari/,null,0],
+ ["walnut",/despatx|biblioteca|arxiu|scriptorium|lectura|reunions|rectoria|sala d'estudi|redacció|oficina|\bestudi\b|sagristia/,null,0],
+ ["tcarpet",/platea|tribuna|golfa|camerino|plató|sala de joc|sala infantil|sala d'espera/,null,0],
+ ["persian",/saló|habitació|dormitori|sala comuna|sala privada|\bcasa\b|menjador|cambra|vagó llit|vagó saló/,null,0],
+ ["hexa",/vestuari|sauna|massatges|\bbany\b|lavabo|emprovador|vestidor/,null,0],
+ ["concrete",/garatge|hangar|soterrani|terminal|consigna|torre de control/,null,0],
+ ["deck",/coberta|passarel|\bmoll\b|camarot|cabina|plataforma|carrusel/,null,0],
+ ["straw",/corral|estable|quadra|graner|cobert|\bera\b|ranxo|parada de fruita/,null,0],
+ ["brick",/\bpati\b|plaça|\bforn\b|obrador|fleca|trull|sala de les moles|fossat|claustre|porxada/,null,0],
  ["water",/piscina|resclosa|dàrsena|\bfont\b/,"#6fb7e0",.5],
  ["metal",/màquines|locomotora|motors|torpedes|caldera|impremta|hangar|fossat|control|\btaller\b/,"#b8bdc6",.45],
  ["tiles",/cuina|galera|cafeteria|cafè|obrador|laboratori|fleca|\bforn\b|peixateria|vestuari|fruita|bany|lavabo|cambra freda/,null,0],
