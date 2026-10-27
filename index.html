@@ -616,7 +616,7 @@ function peces(){
     const vs=(G[o]||[]).filter(e=>e.w<=w&&e.h<=h).sort((a,b)=>b.w*b.h-a.w*a.h);
     if(vs.length){
       const m=vs.filter(e=>e.w===vs[0].w&&e.h===vs[0].h),e=m[hash(r,c)%m.length];
-      for(let i=0;i<e.h;i++)for(let j=0;j<e.w;j++){seen.add((r+i)+","+(c+j));info[(r+i)+","+(c+j)]=i===0&&j===0?{img:e.img,w:e.w,h:e.h}:{skip:true}}
+      for(let i=0;i<e.h;i++)for(let j=0;j<e.w;j++){seen.add((r+i)+","+(c+j));info[(r+i)+","+(c+j)]=i===0&&j===0?{img:e.img,w:e.w,h:e.h,fill:o==="catifa"}:{skip:true}}
       continue}
     if(!MG[o]||w*h<2){seen.add(r+","+c);continue}
     for(let i=0;i<h;i++)for(let j=0;j<w;j++){seen.add((r+i)+","+(c+j));
@@ -656,7 +656,7 @@ function renderBoard(){
     let inner="";
     if(labelAt[s]===r+","+c)inner+=`<span class="rn">${cur.sales[s][lang]}</span>`;
     const pz=pc[r+","+c];
-    if(pz&&pz.skip){}else if(pz&&pz.img)inner+=`<img class="gran" src="${pz.img}" alt="" style="width:${pz.w*100}%;height:${pz.h*100}%">`;else if(pz)inner+=slab(pz);else if(o)inner+=icon(o);
+    if(pz&&pz.skip){}else if(pz&&pz.img)inner+=`<img class="gran" src="${pz.img}" alt="" style="width:${pz.w*100}%;height:${pz.h*100}%${pz.fill?";object-fit:fill;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.3);z-index:0":""}">`;else if(pz)inner+=slab(pz);else if(o)inner+=icon(o);
     if(cell.x)inner+=`<span class="mark">✕</span>`;
     else if(auto&&!blk&&!cell.p&&(rowsU.has(r)||colsU.has(c)))inner+=`<span class="mark auto">✕</span>`;
     if(cell.nt.length)inner+=`<span class="notes${cell.nt.length>4?" n5":cell.nt.length>1?" n3":""}">${cell.nt.join("")}</span>`;

@@ -115,5 +115,52 @@
 "w": 2,
 "h": 2
 }
+],
+"catifa": [
+{
+"img": "objectes/g_catifa_a.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_catifa_a.png",
+"w": 2,
+"h": 3
+},
+{
+"img": "objectes/g_catifa_b.png",
+"w": 1,
+"h": 3
+},
+{
+"img": "objectes/g_catifa_c.png",
+"w": 2,
+"h": 2
+},
+{
+"img": "objectes/g_catifa_c.png",
+"w": 2,
+"h": 3
+},
+{
+"img": "objectes/g_catifa_d.png",
+"w": 2,
+"h": 3
+},
+{
+"img": "objectes/g_catifa_d.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_catifa_e.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_catifa_e.png",
+"w": 1,
+"h": 3
+}
 ]
 }
