@@ -106,6 +106,8 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 #board{display:grid;gap:0;width:100%;aspect-ratio:1;border-radius:6px;touch-action:none}
 .cell{position:relative;display:flex;align-items:center;justify-content:center;border:0 solid var(--line);outline:1px solid var(--cellgrid);outline-offset:-1px}
 .cell.hole{background:var(--hole);outline:none}
+.cell.fill{background-color:#b3a78e;outline-color:rgba(43,33,24,.12)}
+:root[data-theme="dark"] .cell.fill{background-color:#4a4338}
 .cell.blocked::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.08) 6px 7px);pointer-events:none}
 .cell.line{box-shadow:inset 0 0 0 100px rgba(43,33,24,.13)}
 .cell .rn{position:absolute;left:3px;top:1px;font-size:clamp(7px,2.2vw,10px);font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.75;pointer-events:none;white-space:normal;right:2px;line-height:1.05;z-index:4;text-shadow:0 0 3px rgba(255,255,255,.85),0 0 2px rgba(255,255,255,.85)}
@@ -307,6 +309,15 @@ const ICONS={
  reflector:'<path d="M15 9l6.5 12H9z" fill="#ffe27a" opacity=".75" stroke="none"/><path d="M4.5 3.5h8.5l3 5.5H7.5z" fill="#4c4f56"/><rect x="6.5" y="9" width="2" height="4" fill="#4c4f56"/><path d="M7.5 9l-1 4h9l-1.5-4" fill="#6b6e75"/><path d="M7.5 13l-3 8M14.5 13l3 8" fill="none" stroke-width="1.6"/>'
 };
 const OBJIMG={ancora:"objectes/ancora.png",armadura:"objectes/armadura.png",armari:"objectes/armari.png",arxivador:"objectes/arxivador.png",bagul:"objectes/bagul.png",balanci:"objectes/balanci.png",banc:"objectes/banc.png",barra:"objectes/barra.png",barril:"objectes/barril.png",bola:"objectes/bola.png",butaca:"objectes/butaca.png",cadira:"objectes/cadira.png",caixa:"objectes/caixa.png",carreto:"objectes/carreto.png",carro:"objectes/carro.png",escala:"objectes/escala.png",escriptori:"objectes/escriptori.png",estatua:"objectes/estatua.png",estufa:"objectes/estufa.png",fanal:"objectes/fanal.png",figuera:"objectes/figuera.png",finestreta:"objectes/finestreta.png",llar:"objectes/llar.png",llibreria:"objectes/llibreria.png",llit:"objectes/llit.png",maleta:"objectes/maleta.png",maniqui:"objectes/maniqui.png",mirall:"objectes/mirall.png",piano:"objectes/piano.png",pilota:"objectes/pilota.png",pissarra:"objectes/pissarra.png",planta:"objectes/planta.png",pou:"objectes/pou.png",pupitre:"objectes/pupitre.png",quadre:"objectes/quadre.png",reflector:"objectes/reflector.png",sofa:"objectes/sofa.png",tamboret:"objectes/tamboret.png",taula:"objectes/taula.png",tel:"objectes/tel.png",timo:"objectes/timo.png",torxa:"objectes/torxa.png",tron:"objectes/tron.png",vitrina:"objectes/vitrina.png",nevera:"objectes/nevera.png",forn:"objectes/forn.png",pica:"objectes/pica.png",banyera:"objectes/banyera.png",vater:"objectes/vater.png",rentadora:"objectes/rentadora.png",bascula:"objectes/bascula.png",cafetera:"objectes/cafetera.png",billar:"objectes/billar.png",escacs:"objectes/escacs.png",caixareg:"objectes/caixareg.png",celler:"objectes/celler.png",fogata:"objectes/fogata.png",tenda:"objectes/tenda.png",motxilla:"objectes/motxilla.png",caiac:"objectes/caiac.png",cistell:"objectes/cistell.png",bicicleta:"objectes/bicicleta.png",tractor:"objectes/tractor.png",bustia:"objectes/bustia.png",rellotge:"objectes/rellotge.png",gabia:"objectes/gabia.png",telefon:"objectes/telefon.png",globus:"objectes/globus.png"};
+/* els forats del plànol es dibuixen com a caselles plenes (amb un objecte decoratiu): el taulell sempre és quadrat.
+   Només és aspecte: per a la lògica (parets, pistes, solució) segueixen sent forats. */
+const DECOR=["planta","figuera","estatua","fanal","pou","torxa","armadura"],DECOR_K=["cerisier","lanterne","affiche"];
+function decor(c,r,q){
+  const L=(c.kpop?DECOR_K:DECOR).filter(k=>!(c.objectes&&k in c.objectes)&&OBJIMG[k]);
+  if(!L.length)return null;
+  let h=0;for(const ch of c.id+r+","+q)h=(Math.imul(h,31)+ch.charCodeAt(0))>>>0;
+  return L[h%L.length];
+}
 const icon=(o,cls)=>OBJIMG[o]?`<img class="${cls||"obj"}" src="${OBJIMG[o]}" alt="">`:icon_svg(o,cls);
 const icon_svg=(o,cls)=>`<svg class="${cls||"obj"}" viewBox="0 0 24 24" stroke="#2b2118" stroke-width="1" stroke-linejoin="round" stroke-linecap="round">${ICONS[o]||""}</svg>`;
 const SCEN={
@@ -374,7 +385,7 @@ function thumb(c,mode){
   const n=c.n,k=10,dk=dark(),sv=mode==="closed"?null:load("st:"+c.id,null);
   let o=`<svg viewBox="0 0 ${n*k} ${n*k}" aria-hidden="true">`;
   const dn=(r,q)=>r>=0&&q>=0&&r<n&&q<n&&c.pla[r][q];
-  for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q])continue;
+  for(let r=0;r<n;r++)for(let q=0;q<n;q++){if(!c.pla[r][q]){o+=`<rect x="${q*k}" y="${r*k}" width="${k}" height="${k}" fill="${dk?"#4a4338":"#b3a78e"}"/>`;continue}
     o+=`<rect x="${q*k}" y="${r*k}" width="${k}" height="${k}" fill="${COLORS(c.sala[r][q],dk,c.escenari)}"/>`;
     const ob=c.obj[r][q];if(ob&&c.objectes[ob].bloqueja)o+=`<rect x="${q*k+2.5}" y="${r*k+2.5}" width="5" height="5" rx="1" fill="${dk?"#f1e6d3":"#2b2118"}" opacity=".55"/>`;}
   const sol=mode==="solved";
@@ -572,7 +583,7 @@ function renderBoard(){
   }
   let h="";
   for(let r=0;r<n;r++)for(let c=0;c<n;c++){
-    if(!cur.pla[r][c]){h+=`<div class="cell hole"></div>`;continue}
+    if(!cur.pla[r][c]){const d=decor(cur,r,c);h+=`<div class="cell fill tx-pavers blocked">${d?icon(d):""}</div>`;continue}
     const s=cur.sala[r][c],cell=st.cells[r][c];
     const diff=(rr,cc)=>rr<0||cc<0||rr>=n||cc>=n||!cur.pla[rr][cc]||cur.sala[rr][cc]!==s;
     const w=(a)=>a?"3px":"0";
