@@ -12,7 +12,7 @@ from collections import deque
 import numpy as np
 from PIL import Image, ImageFilter
 
-FOOT = [(2, 1), (3, 1), (2, 2), (1, 2)]   # (amplada, alçada) en caselles, fins a 4 caselles; mai 1x1 (ja hi ha l'objecte normal)
+FOOT = [(2, 1), (3, 1), (2, 2), (1, 2), (1, 3), (2, 3), (3, 2)]   # (amplada, alçada) en caselles; mai 1x1 (ja hi ha l'objecte normal)
 MIN_FILL = 0.72
 
 
