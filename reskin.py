@@ -17,6 +17,7 @@ import zlib
 
 from escenaris import ESCENARIS, _OBJ
 from textos import descriu
+from coherencia import KPOP, permesos
 
 LLETRES = "ABCDEFGHIJ"
 PER_ESCENARI = 3
@@ -93,6 +94,10 @@ except (OSError, ValueError):
     DENS = {}
 
 
+def _blk(k, oe):
+    return oe[k]["bloqueja"] if k in oe else _OBJ[k][4]
+
+
 def aplica(c, clau, rng):
     esc = ESCENARIS[clau]
     sales_e = list(esc["sales"].items())
@@ -111,27 +116,25 @@ def aplica(c, clau, rng):
             if o:
                 ubic.setdefault(o, {}).setdefault(c["sala"][r][q], 0)
                 ubic[o][c["sala"][r][q]] += 1
-    GENERICS = ["taula", "cadira", "banc", "caixa", "bagul", "barril", "escala", "armari", "planta", "tamboret"]
+    TOTS = [k for k in _OBJ if k not in KPOP]
+
+    def perm_de(triades):
+        return [permesos(t[1]["nom"]["ca"][1], t[1]["objs"]) for t in triades]
 
     def prova(rg):
         """Una repartiment de sales i d'objectes; retorna (punts de coherència, triades, mapa, afegits)."""
         triades = rg.sample(sales_e, ks)
+        perm = perm_de(triades)
         usats, mapa, afegits, punts = set(), {}, {}, 0
         for old in sorted(ubic, key=lambda k: (-sum(ubic[k].values()), rg.random())):
             blk = antic[old]["bloqueja"]
 
             def sc(k):
-                return sum(nc for i, nc in ubic[old].items() if k in triades[i][1]["objs"])
-            cand = [k for k in oe if k not in usats and oe[k]["bloqueja"] == blk]
-            cand_ok = [k for k in cand if sc(k) > 0]
-            if cand_ok:
-                k = max(cand_ok, key=lambda k: (sc(k), rg.random()))
-            elif cand:
-                k = rg.choice(cand)
-            else:   # l'escenari no té prou objectes d'aquest tipus: es pren un de genèric
-                gen = [x for x in GENERICS if x not in usats and _OBJ[x][4] == blk]
-                pool = gen or [x for x in _OBJ if x not in usats and _OBJ[x][4] == blk]
-                k = rg.choice(pool)
+                return sum(nc for i, nc in ubic[old].items() if k in perm[i])
+            # qualsevol objecte (de l'escenari o del catàleg) que bloquegi igual, es prefereix el que encaixa a més caselles
+            cand = [k for k in TOTS if k not in usats and _blk(k, oe) == blk]
+            k = max(cand, key=lambda k: (sc(k), k in oe, rg.random()))
+            if k not in oe:
                 afegits[k] = {"bloqueja": blk, "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
             usats.add(k)
             mapa[old] = k
@@ -151,17 +154,20 @@ def aplica(c, clau, rng):
     c["obj"] = [[mapa[o] if o else None for o in fila] for fila in c["obj"]]
     # objectes de decorat (densitat.json): d'una classe que cap pista no cita, perquè no canviïn la solució
     refs = {mapa[cl["obj"]] for cl in c["pistes"] if "obj" in cl}
+    perm = perm_de(triades)
     for r, q, b in DENS.get(c["id"], {}).get("extra", []):
         sala_i = c["sala"][r][q]
-        cand = [k for k in triades[sala_i][1]["objs"] if k in oe and oe[k]["bloqueja"] == bool(b) and k not in refs]
+        cand = [k for k in TOTS if k not in refs and _blk(k, oe) == bool(b) and k in perm[sala_i]]
+        if not cand:   # cap objecte del tipus de sala serveix: es prova amb uns de genèrics (mai un que citi una pista)
+            cand = [k for k in (("planta", "caixa", "barril", "armari", "taula") if b else ("banc", "cadira", "tamboret", "bagul"))
+                    if k not in refs and _blk(k, oe) == bool(b)]
         if not cand:
-            cand = [k for k in oe if oe[k]["bloqueja"] == bool(b) and k not in refs]
-        if not cand:
-            cand = [k for k in _OBJ if _OBJ[k][4] == bool(b) and k not in refs and k not in oe]
-            k = rng.choice(cand)
+            continue
+        # pesos: els objectes propis de la sala (de l'escenari) i els ja usats al plànol pesen més, per no repetir tot
+        pes = [3 if k in triades[sala_i][1]["objs"] else 1 for k in cand]
+        k = rng.choices(cand, weights=pes)[0]
+        if k not in oe:
             oe[k] = {"bloqueja": bool(b), "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}
-        else:
-            k = rng.choice(cand)
         c["obj"][r][q] = k
         usats.add(k)
     c["objectes"] = {k: {"bloqueja": oe[k]["bloqueja"],
