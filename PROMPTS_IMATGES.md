@@ -187,3 +187,26 @@ snack vending machine. Consistent lighting from the top-left, same scale for all
 ```
 
 Quan les tinguis, passa-me-les i les retallo igual que els altres fulls.
+
+---
+
+## 7. Més textures de terra — 12 textures noves
+
+Per donar més varietat a les sales (ara n'hi ha 9). Mateix format que el full de terres: **4 × 3**, textures que es poden repetir (seamless), vistes de dalt, **sense objectes ni ombres**, colors **suaus i clars** perquè hi quedi bé al damunt el color de cada sala. Etiqueta sota cadascuna.
+
+Ordre: marbre blanc, marbre negre amb vetes, fusta fosca (noguera), parquet en espiga clar, catifa vermella de teatre, catifa persa, rajoles hexagonals blanques (bany), formigó llis, tarima de coberta de vaixell, terra batut amb palla, maó vermell, neu o gel.
+
+```
+A sheet of 12 seamless, tileable top-down floor textures for a board-game map, arranged in a
+4x3 grid on a plain cream background, each texture in a square tile with a thin gap between
+tiles. Soft, light, low-contrast colours so that a coloured tint can be placed on top. In
+order, row by row: polished white marble with faint grey veins, black marble with thin white
+veins, dark walnut wooden planks, light herringbone parquet, red theatre carpet with a subtle
+pattern, ornate Persian rug pattern in muted reds and blues, white hexagonal bathroom tiles
+with grey grout, smooth grey concrete, weathered ship-deck planks, packed earth with scattered
+straw, red brick paving, snow or ice. No objects, no shadows, no text inside the tiles. Under
+each tile a small rounded label with its Catalan name: marbre blanc, marbre negre, noguera,
+espiga, catifa de teatre, catifa persa, hexagons, formigó, coberta, terra i palla, maó, neu.
+```
+
+Quan les tinguis, passa-me-les: les retallo i les afegeixo a `terres/`, i `index.html` les tria sol segons el nom de la sala (vestíbul/saló → marbre, despatx/biblioteca → noguera, teatre/platea → catifa vermella, bany/vestuari → hexagons, garatge/hangar → formigó, coberta/camarot → tarima, corral/estable → terra i palla, etc.).

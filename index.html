@@ -123,6 +123,7 @@ main{max-width:520px;margin:0 auto;padding:0 12px 24px}
 .cell.bad{outline:3px solid var(--bad);outline-offset:-3px}
 
 /* eines */
+.story p{margin:2px 0 10px;font-size:.95rem;line-height:1.45;font-style:italic;color:var(--ink)}
 .lgd{margin:10px 0 0;border:1.5px solid var(--cellgrid);border-radius:12px;background:var(--panel);padding:2px 10px}.lgd summary{cursor:pointer;font-weight:700;font-size:.88rem;padding:7px 0;list-style:none}.lgd summary::-webkit-details-marker{display:none}.lgd summary:before{content:"▸ ";color:var(--muted)}.lgd[open] summary:before{content:"▾ "}.lgd summary em{font-style:normal;color:var(--muted);font-weight:400}.lgd .legend{margin:0 0 8px}
 .legend{display:flex;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0}.legend span{display:inline-flex;align-items:center;gap:5px;background:var(--panel);border:1.5px solid var(--cellgrid);border-radius:20px;padding:2px 9px 2px 4px;font-size:.78rem}.legend svg,.legend img{width:28px;height:28px;object-fit:contain}.legend em{font-style:normal;color:var(--muted);font-size:.7rem}
 .tools{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0}
@@ -224,6 +225,7 @@ button:active{box-shadow:0 0 0 var(--line)}
     <div class="bar"><span id="info"></span><span id="timer">0:00</span></div>
     <div id="board"></div>
     <div id="legend"></div>
+    <div id="story"></div>
     <div class="tools" id="tools"></div>
     <div id="msg"></div>
     <div class="cards" id="cards"></div>
@@ -559,8 +561,13 @@ function render(){
   document.documentElement.lang=lang;document.title=t("title");
   $("#title").innerHTML=`${caseName(cur)}<small>${cur.titol[lang]} · ${t("cas")} ${cur._i+1}</small>`;
   $("#info").innerHTML=`${t("lvl")} ${dots(cur.nivell)} · ${cur.n}×${cur.n}`;
-  renderBoard();renderLegend();renderTools();renderCards();
+  renderBoard();renderLegend();renderStory();renderTools();renderCards();
 }
+function renderStory(){
+  const el=$("#story"),tx=cur.intro&&cur.intro[lang];
+  if(!tx){el.innerHTML="";return}
+  el.innerHTML=`<details class="lgd story"${load("stopen",true)?" open":""}><summary>📜 ${lang==="fr"?"L'histoire":"La història"}</summary><p>${tx}</p></details>`;
+  el.querySelector("details").ontoggle=e=>save("stopen",e.target.open)}
 function renderLegend(){
   const f=lang==="fr",ks=Object.entries(cur.objectes);
   $("#legend").innerHTML=`<details class="lgd"${load("lgopen",false)?" open":""}><summary>${f?"Objets":"Objectes"} <em>(${ks.length})</em></summary><div class="legend">${ks.map(([k,o])=>`<span>${icon(k,"lg")}${o[lang]}<em>${o.bloqueja?(f?"bloque":"bloqueja"):(f?"occupable":"es pot ocupar")}</em></span>`).join("")}</div></details>`;

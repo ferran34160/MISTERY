@@ -380,3 +380,101 @@ def descriu(lang, esc, pistes, rng):
                 f = f[0].upper() + f[1:]
         out.append(f)
     return out
+
+
+# ----------------------------------------------------------------- història d'introducció de cada cas
+_INTRO = {
+    "ca": {
+        "s1": ["Una nit de tempesta {A}, {N} va ser {trobat} sense vida.",
+               "Era gairebé mitjanit {A} quan van trobar {N} sense vida.",
+               "Tot just havia sortit el sol {A} quan es va descobrir que {N} ja no respirava.",
+               "Després d'una llarga vetllada {A}, ningú no va tornar a veure {N} amb vida.",
+               "La festa acabava d'acabar-se {A} quan {N} va aparèixer {estes} a terra.",
+               "Una tarda qualsevol {A}, un crit va trencar el silenci: {N} era {mort}.",
+               "Les llums van parpellejar {A} i, quan van tornar, {N} ja era {mort}.",
+               "Ningú no havia sentit res {A}, però {N} va ser {trobat} sense vida.",
+               "L'endemà d'una nit sense lluna {A}, van descobrir {N} sense vida.",
+               "Va ser un matí ben estrany {A}: {N} no responia, i ja no ho faria mai més."],
+        "s2": ["Les portes eren tancades i només els sospitosos eren dins.",
+               "Tots tenien una excusa, però només un deia la veritat.",
+               "La policia va acordonar la zona i va prendre declaració a tothom.",
+               "Ningú no podia marxar fins que s'aclarís el misteri.",
+               "Cada testimoni recordava una cosa diferent, i les peces havien d'encaixar.",
+               "L'inspector va obrir la llibreta i va començar a fer preguntes.",
+               "Hi havia moltes declaracions, i cap de sola no ho explicava tot.",
+               "Els sospitosos van repetir la seva història, cadascú a la seva manera."],
+        "s3": ["Col·loca cada sospitós al seu lloc i descobreix qui era a la mateixa sala que {N}.",
+               "Qui era a la mateixa sala que {N}? Les pistes ho diuen tot.",
+               "Ordena les declaracions i troba l'assassí: l'únic que va quedar a la sala de {N}.",
+               "L'assassí és qui va quedar tancat amb {N}. Ho pots deduir?",
+               "Encaixa les pistes: només un sospitós era amb {N} quan va passar."],
+    },
+    "fr": {
+        "s1": ["Par une nuit d'orage {A}, {N} a été {trouve} sans vie.",
+               "Il était presque minuit {A} quand on a retrouvé {N} sans vie.",
+               "Le soleil venait à peine de se lever {A} quand on a découvert que {N} ne respirait plus.",
+               "Après une longue soirée {A}, personne n'a revu {N} en vie.",
+               "La fête venait de se terminer {A} quand {N} est apparu{e} {etendu} par terre.",
+               "Un après-midi tranquille {A}, un cri a déchiré le silence : {N} était {mort}.",
+               "Les lumières ont clignoté {A} et, quand elles sont revenues, {N} était {mort}.",
+               "Personne n'avait rien entendu {A}, mais {N} a été {trouve} sans vie.",
+               "Au lendemain d'une nuit sans lune {A}, on a découvert {N} sans vie.",
+               "Ce fut un matin étrange {A} : {N} ne répondait plus, et ne répondrait jamais plus."],
+        "s2": ["Les portes étaient fermées et seuls les suspects se trouvaient à l'intérieur.",
+               "Tous avaient une excuse, mais un seul disait la vérité.",
+               "La police a bouclé les lieux et pris la déposition de chacun.",
+               "Personne ne pouvait partir avant que le mystère ne soit éclairci.",
+               "Chaque témoin se souvenait d'une chose différente, et les pièces devaient s'emboîter.",
+               "L'inspecteur a ouvert son carnet et s'est mis à poser des questions.",
+               "Il y avait beaucoup de témoignages, et aucun ne disait tout.",
+               "Les suspects ont répété leur histoire, chacun à sa façon."],
+        "s3": ["Place chaque suspect et découvre qui se trouvait dans la même pièce que {N}.",
+               "Qui était dans la même pièce que {N} ? Les indices disent tout.",
+               "Remets les déclarations en ordre et trouve le coupable : le seul resté dans la pièce de {N}.",
+               "Le coupable est celui qui est resté enfermé avec {N}. Peux-tu le déduire ?",
+               "Assemble les indices : un seul suspect était avec {N} au moment des faits."],
+    },
+}
+_INTRO_K = {
+    "ca": {"s1": ["Just abans del concert, {N} va desaparèixer sense deixar rastre.",
+                  "A l'últim assaig, {N} va quedar-se sense veu i ningú no sabia per què.",
+                  "Les llums de l'escenari es van apagar de cop i {N} ja no hi era.",
+                  "Quan va acabar la cançó, {N} havia desaparegut entre bastidors."],
+           "s2": ["Les amigues i els amics van buscar a totes les sales.",
+                  "Tothom tenia una pista, i només una era la bona.",
+                  "El concert havia de començar aviat, i calia resoldre-ho ràpid."],
+           "s3": ["Col·loca cada amic al seu lloc i descobreix qui era a la mateixa sala que {N}.",
+                  "Qui era amb {N}? Mira bé les pistes!"]},
+    "fr": {"s1": ["Juste avant le concert, {N} a disparu sans laisser de trace.",
+                  "À la dernière répétition, {N} a perdu sa voix et personne ne savait pourquoi.",
+                  "Les lumières de la scène se sont éteintes d'un coup et {N} n'était plus là.",
+                  "Quand la chanson s'est terminée, {N} avait disparu dans les coulisses."],
+           "s2": ["Les amis ont cherché dans toutes les pièces.",
+                  "Chacun avait un indice, et un seul était le bon.",
+                  "Le concert allait bientôt commencer, il fallait vite résoudre l'énigme."],
+           "s3": ["Place chaque ami à sa place et découvre qui était dans la même pièce que {N}.",
+                  "Qui était avec {N} ? Regarde bien les indices !"]},
+}
+
+
+def intro(lang, titol, nom_v, genere_v, id_cas, kpop=False):
+    """Petita història de tres frases per a un cas (estable per id). `titol` és el títol de l'escenari
+    («Crim al far»); en treu el lloc («al far»)."""
+    import random
+    import zlib
+    rng = random.Random(zlib.crc32((id_cas + lang).encode()))
+    d = (_INTRO_K if kpop else _INTRO)[lang]
+    lloc = titol.split(" ", 1)[1] if " " in titol else titol
+    m = genere_v == "m"
+    if lang == "ca":
+        w = {"A": lloc, "N": nom_v, "trobat": "trobat" if m else "trobada", "estes": "estès" if m else "estesa",
+             "mort": "mort" if m else "morta"}
+    else:
+        w = {"A": lloc, "N": nom_v, "trouve": "retrouvé" if m else "retrouvée", "etendu": "étendu" if m else "étendue",
+             "mort": "mort" if m else "morte", "e": "" if m else "e"}
+        w["trouve"] = "trouvé" if m else "trouvée"
+    out = []
+    for k in ("s1", "s2", "s3"):
+        s = rng.choice(d[k]).format(**w)
+        out.append(s[0].upper() + s[1:])
+    return " ".join(out)

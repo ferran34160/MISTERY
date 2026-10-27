@@ -12,6 +12,7 @@ import sys
 
 from escenaris import ESCENARIS
 from generador import objectes_json
+from textos import intro
 
 
 # Noms propis dels casos: (nom ca, gènere ca, nom fr, gènere fr) i adjectius (m ca, f ca, m fr, f fr)
@@ -290,6 +291,9 @@ def main():
                 if "objectes" not in c:
                     c["objectes"] = objectes_json(ESCENARIS[c["escenari"]], c["obj"])
                 c["titol"] = ESCENARIS[c["escenari"]]["titol"]
+                v = next(p for p in c["persones"] if p["id"] == "V")
+                c["intro"] = {l: intro(l, c["titol"][l], v["nom"], v["genere"], c["id"], bool(c.get("kpop")))
+                              for l in ("ca", "fr")}
                 casos.append(c)
     casos.sort(key=lambda c: (c["n"], c["nivell"]))
     kp = [c for c in casos if c.get("kpop")]
