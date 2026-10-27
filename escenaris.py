@@ -281,6 +281,7 @@ _OBJ.update({
     "chapeau": ("barret gat", "m", "chapeau gat", "m", False), "cerisier": ("cirerer en flor", "m", "cerisier", "m", True),
     "distributeur": ("màquina de snacks", "f", "distributeur", "m", True),
 })
+_OBJ["tarima"] = ("tarima", "f", "estrade", "f", False)           # només com a peça gran (2x2)
 _OBJ["catifa"] = ("catifa", "f", "tapis", "m", False)   # es dibuixa com una catifa que ocupa diverses caselles
 _registra("kpop", ("Missió K-pop", "Mission K-pop"), ("l'escenari", "la scène"), [
     ("escena", ("f", "escena"), ("f", "scène"), ["projecteur", "micro", "enceinte"]),

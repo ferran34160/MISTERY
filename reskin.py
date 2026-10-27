@@ -17,7 +17,7 @@ import zlib
 
 from escenaris import ESCENARIS, _OBJ
 from textos import descriu
-from coherencia import KPOP, MERGE, permesos, pot_ser
+from coherencia import KPOP, MERGE, SOLO_GRAN, permesos, pot_ser
 
 LLETRES = "ABCDEFGHIJ"
 PER_ESCENARI = 3
@@ -117,6 +117,7 @@ def aplica(c, clau, rng):
                 ubic.setdefault(o, {}).setdefault(c["sala"][r][q], 0)
                 ubic[o][c["sala"][r][q]] += 1
     TOTS = [k for k in _OBJ if k not in KPOP]
+    TOTS_SOLS = [k for k in TOTS if k not in SOLO_GRAN]       # per als objectes d'una sola casella
 
     def perm_de(triades):
         return [permesos(t[1]["nom"]["ca"][1], t[1]["objs"]) for t in triades]
@@ -132,7 +133,7 @@ def aplica(c, clau, rng):
             def sc(k):
                 return sum(nc for i, nc in ubic[old].items() if k in perm[i])
             # qualsevol objecte (de l'escenari o del catàleg) que bloquegi igual, es prefereix el que encaixa a més caselles
-            cand = [k for k in TOTS if k not in usats and _blk(k, oe) == blk]
+            cand = [k for k in TOTS_SOLS if k not in usats and _blk(k, oe) == blk]
             k = max(cand, key=lambda k: (sc(k), k in oe, rg.random()))
             if k not in oe:
                 afegits[k] = {"bloqueja": blk, "nom": {"ca": (_OBJ[k][1], _OBJ[k][0]), "fr": (_OBJ[k][3], _OBJ[k][2])}}

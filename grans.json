@@ -9,6 +9,21 @@
 "img": "objectes/g_banquet.png",
 "w": 2,
 "h": 1
+},
+{
+"img": "objectes/g_taula_v.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_taula_menjar.png",
+"w": 2,
+"h": 2
+},
+{
+"img": "objectes/g_taula_rodona.png",
+"w": 2,
+"h": 2
 }
 ],
 "escriptori": [
@@ -35,11 +50,26 @@
 "img": "objectes/g_bancllarg.png",
 "w": 3,
 "h": 1
+},
+{
+"img": "objectes/g_banc_v.png",
+"w": 1,
+"h": 2
 }
 ],
 "llit": [
 {
 "img": "objectes/g_llit.png",
+"w": 2,
+"h": 2
+},
+{
+"img": "objectes/g_llit_v.png",
+"w": 1,
+"h": 2
+},
+{
+"img": "objectes/g_llit_doble.png",
 "w": 2,
 "h": 2
 }
@@ -68,6 +98,20 @@
 "llibreria": [
 {
 "img": "objectes/g_llibreria.png",
+"w": 2,
+"h": 2
+}
+],
+"vitrina": [
+{
+"img": "objectes/g_vitrina_v.png",
+"w": 1,
+"h": 2
+}
+],
+"tarima": [
+{
+"img": "objectes/g_tarima.png",
 "w": 2,
 "h": 2
 }

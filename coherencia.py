@@ -74,6 +74,7 @@ try:
 except (OSError, ValueError):
     GRANS = {}
 MERGE = SLAB | set(GRANS)
+SOLO_GRAN = {"tarima"}      # només tenen sentit com a peça gran
 
 
 def pot_ser(kind, h, w):
