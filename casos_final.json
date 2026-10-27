@@ -1502,7 +1502,7 @@
     null
    ],
    [
-    "pou",
+    "fogata",
     null,
     null,
     null,
@@ -1533,6 +1533,11 @@
     "bloqueja": true,
     "ca": "caixa registradora",
     "fr": "caisse enregistreuse"
+   },
+   "fogata": {
+    "bloqueja": true,
+    "ca": "fogata",
+    "fr": "feu de camp"
    },
    "llar": {
     "bloqueja": true,
@@ -1631,26 +1636,26 @@
   ],
   "textos": {
    "ca": [
-    "Un convidat recorda que un barril es feia notar a la seva fila.",
-    "L'inspector va anotar que el van veure a l'habitació.",
+    "Segons un testimoni, tenia un barril a la mateixa fila.",
+    "Algú va jurar que va passar l'estona a l'habitació.",
     "Va entrar a l'habitació i no en va sortir.",
-    "A la llibreta de l'inspector consta que estava a un salt de cavall de Carles.",
-    "La barra no era el seu lloc aquella nit.",
-    "Diuen que al plànol, quedava a l'esquerra de Carles.",
-    "Algú va jurar que no es trobava a la barra.",
-    "Segons un testimoni, a la seva columna hi havia un barril.",
-    "Tenia un llit a la mateixa fila."
+    "Només un salt de cavall el separava de Carles.",
+    "A la llibreta de l'inspector consta que la barra no era el seu lloc aquella nit.",
+    "Estava més a l'oest que Carles.",
+    "Diuen que no va posar els peus a la barra.",
+    "L'inspector va anotar que tenia un barril a la mateixa columna.",
+    "Un convidat recorda que un llit era a la seva fila."
    ],
    "fr": [
-    "Quelqu'un a juré qu'un tonneau se trouvait sur sa ligne.",
-    "Un invité se souvient qu'il se trouvait dans la chambre.",
-    "Selon un témoin, elle était dans la chambre.",
+    "Un tonneau se remarquait sur sa ligne.",
+    "Il n'a pas quitté la chambre de la soirée.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle a passé le temps dans la chambre.",
     "L'inspecteur a noté qu'un seul saut de cavalier séparait Carles de lui.",
-    "Dans le carnet de l'inspecteur, on lit qu'il n'était pas dans le comptoir.",
+    "Quelqu'un a juré qu'il n'était pas dans le comptoir.",
     "Carles se trouvait à sa droite.",
     "Le comptoir n'était pas sa place ce soir-là.",
-    "Un tonneau se trouvait dans sa colonne.",
-    "Il partageait sa ligne avec un lit."
+    "Un invité se souvient qu'un tonneau se trouvait dans sa colonne.",
+    "Selon un témoin, il partageait sa ligne avec un lit."
    ]
   },
   "solucio": {
@@ -5893,8 +5898,8 @@
    [
     null,
     "arxivador",
-    "arxivador",
-    "armari",
+    "planta",
+    "caixa",
     null,
     null
    ],
@@ -5908,11 +5913,6 @@
    ]
   ],
   "objectes": {
-   "armari": {
-    "bloqueja": true,
-    "ca": "armari",
-    "fr": "armoire"
-   },
    "arxivador": {
     "bloqueja": true,
     "ca": "arxivador",
@@ -5922,6 +5922,11 @@
     "bloqueja": false,
     "ca": "bagul",
     "fr": "malle"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
    },
    "escala": {
     "bloqueja": true,
@@ -5937,6 +5942,11 @@
     "bloqueja": false,
     "ca": "maleta",
     "fr": "valise"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
    }
   },
   "persones": [
@@ -7292,7 +7302,7 @@
    [
     null,
     null,
-    "escala",
+    "vitrina",
     "caixa",
     null,
     null,
@@ -7353,6 +7363,11 @@
     "bloqueja": true,
     "ca": "torxa",
     "fr": "torche"
+   },
+   "vitrina": {
+    "bloqueja": true,
+    "ca": "vitrina",
+    "fr": "vitrine"
    }
   },
   "persones": [
@@ -8110,7 +8125,7 @@
    ],
    [
     null,
-    "armari",
+    "estufa",
     null,
     "catifa",
     null,
@@ -8179,6 +8194,11 @@
     "bloqueja": false,
     "ca": "cistell de fruita",
     "fr": "panier de fruits"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
    },
    "llar": {
     "bloqueja": true,
@@ -8276,24 +8296,24 @@
   ],
   "textos": {
    "ca": [
-    "Era al costat d'un tractor.",
-    "Dídac quedava més avall que ell al plànol.",
-    "Algú va jurar que ningú no dubta que era a l'habitació.",
-    "Diuen que tenia un banc ben a prop.",
-    "L'inspector va anotar que no compartia habitació amb ningú, ni tan sols amb la víctima.",
-    "Un convidat recorda que es va deixar veure a la cuina.",
-    "L'habitació va tenir 2 persones aquell vespre, víctima inclosa.",
-    "Només un salt de cavall el separava de Bruna."
+    "Diuen que era al costat d'un tractor.",
+    "L'inspector va anotar que al plànol, estava per sobre de Dídac.",
+    "A la llibreta de l'inspector consta que era a l'habitació.",
+    "Un convidat recorda que un banc era el seu veí més proper.",
+    "Algú va jurar que ningú més, ni tan sols la víctima, no compartia la seva habitació.",
+    "Ningú no dubta que era a la cuina.",
+    "Si hi sumes la víctima, a l'habitació hi havia 2 persones.",
+    "Estava a un salt de cavall de Bruna."
    ],
    "fr": [
-    "À quelques pas se trouvait un tracteur.",
-    "Quelqu'un a juré qu'il se trouvait plus au nord que Dídac.",
-    "Il se trouvait dans la chambre.",
-    "On dit qu'elle ne s'est guère éloignée d'un banc.",
-    "Selon un témoin, dans sa pièce, il n'y avait personne d'autre, pas même la victime.",
-    "L'inspecteur a noté qu'on l'a vue dans la cuisine.",
+    "L'inspecteur a noté qu'un tracteur était son plus proche voisin.",
+    "Il était au nord de Dídac.",
+    "Dans le carnet de l'inspecteur, on lit qu'il n'a pas quitté la chambre de la soirée.",
+    "Elle avait un banc tout près.",
+    "Un invité se souvient que dans sa pièce, il n'y avait personne d'autre, pas même la victime.",
+    "Quelqu'un a juré qu'elle se trouvait dans la cuisine.",
     "Victime comprise, 2 personnes se trouvaient dans la chambre.",
-    "Dans le carnet de l'inspecteur, on lit qu'il se trouvait à un saut de cavalier de Bruna."
+    "On dit que par rapport à Bruna, il était à un mouvement de cavalier."
    ]
   },
   "solucio": {
@@ -9353,7 +9373,7 @@
     "bicicleta",
     null,
     "forn",
-    "caixa",
+    "armari",
     null,
     null,
     null
@@ -9383,7 +9403,7 @@
     null,
     null,
     "cadira",
-    "sofa"
+    "butaca"
    ],
    [
     null,
@@ -9415,6 +9435,11 @@
     "bloqueja": false,
     "ca": "bicicleta",
     "fr": "vélo"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
    },
    "cadira": {
     "bloqueja": false,
@@ -9548,28 +9573,28 @@
   ],
   "textos": {
    "ca": [
-    "Segons un testimoni, tenia un escriptori a la mateixa columna.",
-    "A la seva columna hi havia una bicicleta.",
-    "Diuen que tenia Fabiola al seu nord.",
-    "No es va separar gaire d'una bicicleta.",
-    "A la llibreta de l'inspector consta que ningú no dubta que era al saló.",
-    "Algú va jurar que un forn era el seu veí més proper.",
-    "Un convidat recorda que al plànol, estava per sota d'Enric.",
-    "L'inspector va anotar que estava més a l'est que Biel.",
-    "Compartia diagonal amb Anna.",
-    "A la llibreta de l'inspector consta que estava més al sud que Violant."
+    "Compartia columna amb un escriptori.",
+    "Algú va jurar que tenia una bicicleta a la mateixa columna.",
+    "Al plànol, estava per sota de Fabiola.",
+    "A la llibreta de l'inspector consta que no es va separar gaire d'una bicicleta.",
+    "Un convidat recorda que va entrar al saló i no en va sortir.",
+    "Segons un testimoni, prop seu hi havia un forn.",
+    "Tenia Enric al seu nord.",
+    "Diuen que al plànol, quedava a la dreta de Biel.",
+    "L'inspector va anotar que si traçaves una diagonal des d'Anna, hi arribaves a ell.",
+    "Violant quedava més amunt que ell al plànol."
    ],
    "fr": [
-    "On dit qu'un bureau se trouvait dans sa colonne.",
-    "Un invité se souvient qu'elle partageait sa colonne avec un vélo.",
-    "L'inspecteur a noté que sur le plan, il était au-dessous de Fabiola.",
+    "Un bureau se remarquait dans sa colonne.",
+    "Dans le carnet de l'inspecteur, on lit qu'un vélo se trouvait dans sa colonne.",
+    "Fabiola se trouvait plus haut que lui sur le plan.",
     "Elle ne s'est guère éloignée d'un vélo.",
     "Elle avait sa place dans le salon.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle avait un four tout près.",
-    "Enric se trouvait plus haut qu'elle sur le plan.",
-    "Biel était à l'ouest d'elle.",
-    "Il partageait une diagonale avec Anna.",
-    "Quelqu'un a juré qu'il se trouvait plus au sud que Violant."
+    "Quelqu'un a juré qu'elle avait un four tout près.",
+    "L'inspecteur a noté que sur le plan, elle était au-dessous d'Enric.",
+    "Selon un témoin, elle se trouvait plus à l'est que Biel.",
+    "Anna et lui étaient sur une même ligne diagonale.",
+    "Un invité se souvient qu'il se trouvait plus au sud que Violant."
    ]
   },
   "solucio": {
@@ -10231,7 +10256,7 @@
     null,
     null,
     null,
-    "bagul",
+    "tron",
     null,
     null
    ],
@@ -10269,11 +10294,6 @@
     "ca": "armari",
     "fr": "armoire"
    },
-   "bagul": {
-    "bloqueja": false,
-    "ca": "bagul",
-    "fr": "malle"
-   },
    "banc": {
     "bloqueja": false,
     "ca": "banc",
@@ -10308,6 +10328,11 @@
     "bloqueja": true,
     "ca": "tractor",
     "fr": "tracteur"
+   },
+   "tron": {
+    "bloqueja": false,
+    "ca": "tron",
+    "fr": "trône"
    }
   },
   "persones": [
@@ -11454,7 +11479,7 @@
    [
     null,
     null,
-    "banc",
+    "cadira",
     null,
     null,
     null,
@@ -11507,11 +11532,6 @@
    ]
   ],
   "objectes": {
-   "banc": {
-    "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
-   },
    "billar": {
     "bloqueja": true,
     "ca": "billar",
@@ -11870,7 +11890,7 @@
    ],
    [
     "barril",
-    "barril",
+    "torxa",
     null,
     "barril",
     null,
@@ -11878,8 +11898,8 @@
     null
    ],
    [
+    "celler",
     "barril",
-    "torxa",
     null,
     null,
     null,
@@ -11939,6 +11959,11 @@
     "bloqueja": true,
     "ca": "caixa",
     "fr": "caisse"
+   },
+   "celler": {
+    "bloqueja": true,
+    "ca": "rac de vins",
+    "fr": "casier à vins"
    },
    "escala": {
     "bloqueja": true,
@@ -12278,7 +12303,7 @@
    [
     "bagul",
     null,
-    "bagul",
+    "tamboret",
     "bagul",
     null,
     null,
@@ -12370,6 +12395,11 @@
     "bloqueja": true,
     "ca": "reflector",
     "fr": "projecteur"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    }
   },
   "persones": [
@@ -13953,7 +13983,7 @@
     null,
     "mirall",
     null,
-    "maniqui",
+    "planta",
     "arxivador"
    ],
    [
@@ -13995,11 +14025,6 @@
     "bloqueja": true,
     "ca": "globus terraqüi",
     "fr": "globe"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
    },
    "mirall": {
     "bloqueja": true,
@@ -14350,7 +14375,7 @@
    [
     null,
     null,
-    "tamboret",
+    "bicicleta",
     "tamboret",
     null,
     "butaca",
@@ -14403,6 +14428,11 @@
     "bloqueja": false,
     "ca": "bagul",
     "fr": "malle"
+   },
+   "bicicleta": {
+    "bloqueja": false,
+    "ca": "bicicleta",
+    "fr": "vélo"
    },
    "butaca": {
     "bloqueja": false,
@@ -14531,26 +14561,26 @@
   ],
   "textos": {
    "ca": [
-    "Tenia Delfina al seu est.",
-    "Segons un testimoni, prop seu hi havia un armari.",
-    "Algú va jurar que tenia el seu lloc al magatzem.",
-    "Es va deixar veure a la terrassa.",
-    "Estava més a l'est que Aina.",
-    "Ferran quedava més avall que ell al plànol.",
-    "Un convidat recorda que només un salt de cavall el separava d'Aina.",
-    "L'inspector va anotar que era a l'est d'Enric.",
-    "A la llibreta de l'inspector consta que era a un salt de cavall de Delfina (com als escacs)."
+    "Era a l'oest de Delfina.",
+    "Prop seu hi havia un armari.",
+    "Es trobava al magatzem.",
+    "Segons un testimoni, tenia el seu lloc a la terrassa.",
+    "L'inspector va anotar que era a l'est d'Aina.",
+    "Un convidat recorda que era al nord de Ferran.",
+    "Diuen que només un salt de cavall el separava d'Aina.",
+    "Algú va jurar que estava més a l'est que Enric.",
+    "A la llibreta de l'inspector consta que estava a un salt de cavall de Delfina."
    ],
    "fr": [
-    "Sur le plan, elle était à gauche de Delfina.",
-    "Quelqu'un a juré qu'elle avait une armoire tout près.",
-    "Selon un témoin, elle est entrée dans l'entrepôt et n'en est pas ressortie.",
-    "Il avait sa place sur la terrasse.",
-    "L'inspecteur a noté qu'il se trouvait plus à l'est qu'Aina.",
-    "Ferran se trouvait plus bas que lui sur le plan.",
-    "Un invité se souvient qu'il était à un saut de cavalier d'Aina (comme aux échecs).",
-    "On dit qu'elle était à l'est d'Enric.",
-    "Par rapport à Delfina, elle était à un mouvement de cavalier."
+    "Delfina était à l'est d'elle.",
+    "Elle avait une armoire tout près.",
+    "Elle est entrée dans l'entrepôt et n'en est pas ressortie.",
+    "Il se trouvait sur la terrasse.",
+    "Aina se trouvait à sa gauche.",
+    "Ferran était au sud de lui.",
+    "Selon un témoin, il était à un saut de cavalier d'Aina (comme aux échecs).",
+    "Enric était à l'ouest d'elle.",
+    "Un invité se souvient qu'elle se trouvait à un saut de cavalier de Delfina."
    ]
   },
   "solucio": {
@@ -14794,7 +14824,7 @@
     null,
     "piano",
     null,
-    "sofa",
+    "butaca",
     "sofa",
     null
    ],
@@ -14818,6 +14848,11 @@
     "bloqueja": true,
     "ca": "billar",
     "fr": "billard"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
    },
    "cadira": {
     "bloqueja": false,
@@ -15221,7 +15256,7 @@
    ],
    [
     null,
-    "reflector",
+    "piano",
     "fanal",
     null,
     "banc",
@@ -15284,10 +15319,10 @@
     "ca": "mirall",
     "fr": "miroir"
    },
-   "reflector": {
+   "piano": {
     "bloqueja": true,
-    "ca": "reflector",
-    "fr": "projecteur"
+    "ca": "piano",
+    "fr": "piano"
    },
    "tamboret": {
     "bloqueja": false,
@@ -16002,7 +16037,7 @@
     null,
     null,
     "cadira",
-    "cadira",
+    "tamboret",
     null,
     null
    ],
@@ -16010,7 +16045,7 @@
     null,
     null,
     null,
-    "cadira",
+    "tamboret",
     "cistell",
     null,
     null
@@ -16087,6 +16122,11 @@
     "bloqueja": true,
     "ca": "planta",
     "fr": "plante"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    },
    "taula": {
     "bloqueja": true,
@@ -16816,7 +16856,7 @@
     null
    ],
    [
-    "barril",
+    "timo",
     "barril",
     null,
     null,
@@ -16856,7 +16896,7 @@
     "planta",
     null,
     null,
-    "timo",
+    "fanal",
     null,
     "bicicleta"
    ],
@@ -16905,6 +16945,11 @@
     "bloqueja": false,
     "ca": "tauler d'escacs",
     "fr": "échiquier"
+   },
+   "fanal": {
+    "bloqueja": true,
+    "ca": "fanal",
+    "fr": "lampadaire"
    },
    "planta": {
     "bloqueja": true,
@@ -17008,24 +17053,24 @@
   ],
   "textos": {
    "ca": [
-    "Algú va jurar que era a l'oest de Bruna.",
-    "No va posar els peus al moll.",
-    "L'inspector va anotar que prop seu hi havia un tamboret.",
-    "Diuen que estava més a l'oest que Bruna.",
-    "Un convidat recorda que respecte a Delfina, estava a un moviment de cavall.",
-    "Segons un testimoni, si traçaves una diagonal des de Clara, hi arribaves a ella.",
-    "A la llibreta de l'inspector consta que era a un salt de cavall de Clara (com als escacs).",
-    "Al plànol, quedava a l'esquerra d'Aleix."
+    "Segons un testimoni, al plànol, quedava a l'esquerra de Bruna.",
+    "No era al moll.",
+    "A la llibreta de l'inspector consta que tenia un tamboret a tocar.",
+    "L'inspector va anotar que tenia Bruna al seu est.",
+    "Un convidat recorda que només un salt de cavall el separava de Delfina.",
+    "Algú va jurar que era a la mateixa diagonal que Clara.",
+    "Estava a un salt de cavall de Clara.",
+    "Aleix quedava a la seva dreta."
    ],
    "fr": [
-    "On dit que sur le plan, elle était à gauche de Bruna.",
-    "Personne ne l'a vu sur le quai.",
+    "Bruna était à l'est d'elle.",
+    "Le quai n'était pas sa place ce soir-là.",
     "Un tabouret était son plus proche voisin.",
     "Quelqu'un a juré qu'il était à l'ouest de Bruna.",
     "L'inspecteur a noté qu'il était à un saut de cavalier de Delfina (comme aux échecs).",
     "Clara et elle formaient une diagonale.",
     "Elle se trouvait à un saut de cavalier de Clara.",
-    "Un invité se souvient qu'elle se trouvait plus à l'ouest qu'Aleix."
+    "Dans le carnet de l'inspecteur, on lit qu'elle se trouvait plus à l'ouest qu'Aleix."
    ]
   },
   "solucio": {
@@ -17241,7 +17286,7 @@
     null,
     null,
     null,
-    "bagul",
+    "maleta",
     null,
     null,
     null
@@ -17308,6 +17353,11 @@
     "bloqueja": false,
     "ca": "carro",
     "fr": "charrette"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "nevera": {
     "bloqueja": true,
@@ -17428,20 +17478,20 @@
   ],
   "textos": {
    "ca": [
-    "Va quedar-se en un racó d'una habitació.",
-    "Algú va jurar que estava en una cantonada d'una habitació.",
-    "A la llibreta de l'inspector consta que un pou era a la seva columna.",
-    "Segons un testimoni, estava més al sud que Felip.",
-    "Felip quedava a la seva dreta.",
-    "Compartia columna amb una cadira.",
-    "Diuen que era al costat d'una paret exterior del molí.",
-    "Ningú no era a l'era, ni tan sols la víctima.",
-    "La cuina es va quedar sense ningú, víctima inclosa.",
-    "Un convidat recorda que respecte a Carla, estava a un moviment de cavall."
+    "L'inspector va anotar que ocupava un racó d'una habitació.",
+    "Tenia dues parets d'una habitació a l'esquena.",
+    "Diuen que tenia un pou a la mateixa columna.",
+    "Felip quedava més amunt que ella al plànol.",
+    "Estava més a l'oest que Felip.",
+    "Algú va jurar que a la seva columna hi havia una cadira.",
+    "Es va recolzar prop d'una paret exterior del molí.",
+    "No hi havia ànima a l'era, ni la víctima.",
+    "La cuina estava buida: ni un sol cos.",
+    "A la llibreta de l'inspector consta que era a un salt de cavall de Carla (com als escacs)."
    ],
    "fr": [
-    "Selon un témoin, elle était dans un coin d'une pièce.",
-    "Elle avait trouvé refuge dans un coin d'une pièce.",
+    "Selon un témoin, elle avait trouvé refuge dans un coin d'une pièce.",
+    "Elle avait deux murs d'une pièce dans le dos.",
     "L'inspecteur a noté qu'un puits se trouvait dans sa colonne.",
     "Sur le plan, elle était au-dessous de Felip.",
     "Un invité se souvient qu'il était à l'ouest de Felip.",
@@ -17668,7 +17718,7 @@
    [
     null,
     null,
-    "caixareg",
+    "bustia",
     null,
     "escala",
     null,
@@ -17721,6 +17771,11 @@
     "bloqueja": true,
     "ca": "arxivador",
     "fr": "classeur"
+   },
+   "bustia": {
+    "bloqueja": true,
+    "ca": "bústia",
+    "fr": "boîte aux lettres"
    },
    "butaca": {
     "bloqueja": false,
@@ -17854,26 +17909,26 @@
   ],
   "textos": {
    "ca": [
-    "Un tamboret es feia notar a la seva columna.",
-    "Un convidat recorda que una llibreria era a la seva columna.",
-    "Diuen que era a l'oest de David.",
-    "Era a la sala infantil.",
-    "Algú va jurar que només un salt de cavall el separava de David.",
-    "L'inspector va anotar que tenia Elna al seu est.",
-    "Estava a un salt de cavall de Carla.",
-    "A la llibreta de l'inspector consta que havia estat a la sala de lectura tota l'estona.",
-    "Segons un testimoni, compartia diagonal amb David."
+    "Diuen que un tamboret era a la seva columna.",
+    "Compartia columna amb una llibreria.",
+    "Era a l'oest de David.",
+    "L'inspector va anotar que va entrar a la sala infantil i no en va sortir.",
+    "Un convidat recorda que estava a un salt de cavall de David.",
+    "Elna quedava a la seva dreta.",
+    "Algú va jurar que era a un salt de cavall de Carla (com als escacs).",
+    "Va passar l'estona a la sala de lectura.",
+    "David i ella formaven una diagonal."
    ],
    "fr": [
-    "Dans sa colonne se trouvait un tabouret.",
-    "Une bibliothèque se trouvait dans sa colonne.",
-    "L'inspecteur a noté que sur le plan, elle était à gauche de David.",
-    "Elle avait sa place dans la salle des enfants.",
-    "Un invité se souvient que par rapport à David, il était à un mouvement de cavalier.",
-    "On dit qu'elle se trouvait plus à l'ouest qu'Elna.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle se trouvait à un saut de cavalier de Carla.",
-    "Quelqu'un a juré qu'elle est entrée dans la salle de lecture et n'en est pas ressortie.",
-    "David et elle formaient une diagonale."
+    "En suivant sa colonne, on tombait sur un tabouret.",
+    "Selon un témoin, il partageait sa colonne avec une bibliothèque.",
+    "L'inspecteur a noté qu'elle était à l'ouest de David.",
+    "On dit qu'elle avait sa place dans la salle des enfants.",
+    "Un seul saut de cavalier séparait David de lui.",
+    "Un invité se souvient que sur le plan, elle était à gauche d'Elna.",
+    "Par rapport à Carla, elle était à un mouvement de cavalier.",
+    "Dans le carnet de l'inspecteur, on lit que personne ne doute qu'elle était dans la salle de lecture.",
+    "David et elle étaient sur une même ligne diagonale."
    ]
   },
   "solucio": {
@@ -18083,7 +18138,7 @@
     "cistell",
     "caixa",
     null,
-    "quadre"
+    "planta"
    ],
    [
     null,
@@ -18119,16 +18174,16 @@
     "barril",
     "tamboret",
     "cistell",
-    "cistell"
+    "tamboret"
    ],
    [
     "barril",
     null,
     "cadira",
     "cadira",
-    "tamboret",
     "cistell",
-    "tamboret"
+    "tamboret",
+    "cistell"
    ]
   ],
   "objectes": {
@@ -18162,10 +18217,10 @@
     "ca": "cistell de fruita",
     "fr": "panier de fruits"
    },
-   "quadre": {
+   "planta": {
     "bloqueja": true,
-    "ca": "quadre",
-    "fr": "tableau"
+    "ca": "planta",
+    "fr": "plante"
    },
    "tamboret": {
     "bloqueja": false,
@@ -18870,7 +18925,7 @@
   },
   "obj": [
    [
-    "tractor",
+    "tenda",
     "planta",
     null,
     null,
@@ -18983,6 +19038,11 @@
     "bloqueja": true,
     "ca": "taula",
     "fr": "table"
+   },
+   "tenda": {
+    "bloqueja": true,
+    "ca": "tenda de campanya",
+    "fr": "tente"
    },
    "tractor": {
     "bloqueja": true,
@@ -19691,7 +19751,7 @@
    ],
    [
     null,
-    "sofa",
+    "butaca",
     null,
     null,
     null,
@@ -19751,6 +19811,11 @@
     "ca": "bústia",
     "fr": "boîte aux lettres"
    },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
+   },
    "cadira": {
     "bloqueja": false,
     "ca": "cadira",
@@ -19780,11 +19845,6 @@
     "bloqueja": true,
     "ca": "rellotge de peu",
     "fr": "horloge"
-   },
-   "sofa": {
-    "bloqueja": false,
-    "ca": "sofà",
-    "fr": "canapé"
    },
    "telefon": {
     "bloqueja": true,
@@ -21080,7 +21140,7 @@
     null,
     null,
     null,
-    "armari",
+    "caixa",
     null
    ],
    [
@@ -21105,11 +21165,6 @@
    ]
   ],
   "objectes": {
-   "armari": {
-    "bloqueja": true,
-    "ca": "armari",
-    "fr": "armoire"
-   },
    "bagul": {
     "bloqueja": false,
     "ca": "bagul",
@@ -21124,6 +21179,11 @@
     "bloqueja": false,
     "ca": "cadira",
     "fr": "chaise"
+   },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
    },
    "cistell": {
     "bloqueja": false,
@@ -21562,7 +21622,7 @@
    [
     null,
     "carro",
-    "carreto",
+    "tamboret",
     null,
     "escala",
     null,
@@ -21582,7 +21642,7 @@
    [
     null,
     null,
-    "carreto",
+    "tamboret",
     "rentadora",
     "escala",
     null,
@@ -21594,22 +21654,22 @@
     null,
     "taula",
     null,
-    "caixa",
+    "barril",
     null,
     null,
     null
    ]
   ],
   "objectes": {
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
+   },
    "cadira": {
     "bloqueja": false,
     "ca": "cadira",
     "fr": "chaise"
-   },
-   "caixa": {
-    "bloqueja": true,
-    "ca": "caixa",
-    "fr": "caisse"
    },
    "carreto": {
     "bloqueja": false,
@@ -21645,6 +21705,11 @@
     "bloqueja": true,
     "ca": "rentadora",
     "fr": "lave-linge"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    },
    "taula": {
     "bloqueja": true,
@@ -21751,28 +21816,28 @@
   ],
   "textos": {
    "ca": [
-    "L'inspector va anotar que tenia Aleix al seu oest.",
-    "Diuen que seguint la seva fila, es topava amb una taula.",
+    "A la llibreta de l'inspector consta que tenia Aleix al seu oest.",
+    "Una taula era a la seva fila.",
     "Bruna quedava a la seva esquerra.",
-    "Algú va jurar que se la podia trobar arraconada en una habitació.",
-    "Segons un testimoni, era a l'est de Gerard.",
     "Va quedar-se en un racó d'una habitació.",
-    "Gerard quedava a la seva dreta.",
-    "A la llibreta de l'inspector consta que el seu lloc era sobre la cadira.",
-    "Un convidat recorda que estava al despatx.",
-    "Només un salt de cavall la separava de Carla."
+    "Algú va jurar que al plànol, quedava a la dreta de Gerard.",
+    "L'inspector va anotar que va trobar refugi en un racó d'una habitació.",
+    "Al plànol, quedava a l'esquerra de Gerard.",
+    "Un convidat recorda que el seu lloc era sobre la cadira.",
+    "Diuen que la van veure al despatx.",
+    "Segons un testimoni, era a un salt de cavall de Carla (com als escacs)."
    ],
    "fr": [
-    "Un invité se souvient qu'elle se trouvait plus à l'est qu'Aleix.",
-    "Sur sa ligne se trouvait une table.",
-    "Sur le plan, elle était à droite de Bruna.",
-    "On dit qu'elle se tenait dans un angle d'une pièce.",
-    "Gerard se trouvait à sa gauche.",
-    "Selon un témoin, il occupait un coin d'une pièce.",
-    "Dans le carnet de l'inspecteur, on lit qu'il se trouvait plus à l'ouest que Gerard.",
-    "Elle était sur la chaise.",
-    "Quelqu'un a juré qu'elle a passé le temps dans le bureau.",
-    "L'inspecteur a noté que par rapport à Carla, elle était à un mouvement de cavalier."
+    "Aleix était à l'ouest d'elle.",
+    "L'inspecteur a noté que sur sa ligne se trouvait une table.",
+    "Elle se trouvait plus à l'est que Bruna.",
+    "Un invité se souvient qu'elle occupait un coin d'une pièce.",
+    "Il était à l'est de Gerard.",
+    "Dans le carnet de l'inspecteur, on lit qu'il se tenait dans un angle d'une pièce.",
+    "Gerard était à l'est de lui.",
+    "Elle était installée sur la chaise.",
+    "Selon un témoin, on l'a vue dans le bureau.",
+    "Quelqu'un a juré qu'un seul saut de cavalier séparait Carla d'elle."
    ]
   },
   "solucio": {
@@ -22036,7 +22101,7 @@
    ],
    [
     null,
-    "tamboret",
+    "escacs",
     null,
     null,
     null,
@@ -22110,6 +22175,11 @@
     "bloqueja": false,
     "ca": "cistell de fruita",
     "fr": "panier de fruits"
+   },
+   "escacs": {
+    "bloqueja": false,
+    "ca": "tauler d'escacs",
+    "fr": "échiquier"
    },
    "estufa": {
     "bloqueja": true,
@@ -22555,7 +22625,7 @@
     null
    ],
    [
-    "cafetera",
+    "celler",
     null,
     "pou",
     null,
@@ -24594,7 +24664,7 @@
     null,
     null,
     null,
-    "mirall",
+    "pica",
     "mirall",
     null,
     null
@@ -24635,6 +24705,11 @@
     "bloqueja": true,
     "ca": "mirall",
     "fr": "miroir"
+   },
+   "pica": {
+    "bloqueja": true,
+    "ca": "pica",
+    "fr": "évier"
    },
    "planta": {
     "bloqueja": true,
@@ -24758,16 +24833,16 @@
   ],
   "textos": {
    "ca": [
-    "Tenia una estufa ben a prop.",
-    "L'inspector va anotar que un banc era a la seva columna.",
-    "Al plànol, quedava a la dreta de Fina.",
-    "A la seva columna hi havia una barra.",
-    "Diuen que va entrar a la sauna i no en va sortir.",
-    "Un convidat recorda que el van veure a la sala de massatges.",
-    "Algú va jurar que estava a un salt de cavall d'Enric.",
-    "Segons un testimoni, estava damunt el tamboret.",
-    "A la llibreta de l'inspector consta que compartia fila amb un banc.",
-    "Respecte a Enric, estava a un moviment de cavall."
+    "Un convidat recorda que no es va separar gaire d'una estufa.",
+    "A la llibreta de l'inspector consta que un banc es feia notar a la seva columna.",
+    "Estava més a l'est que Fina.",
+    "L'inspector va anotar que a la seva columna hi havia una barra.",
+    "Tenia el seu lloc a la sauna.",
+    "Segons un testimoni, el van veure a la sala de massatges.",
+    "Respecte a Enric, estava a un moviment de cavall.",
+    "Algú va jurar que era sobre el tamboret.",
+    "Diuen que un banc es feia notar a la seva fila.",
+    "Estava a un salt de cavall d'Enric."
    ],
    "fr": [
     "Un invité se souvient qu'il se tenait près d'un poêle.",
@@ -25058,8 +25133,8 @@
     "sofa",
     null,
     "piano",
-    "reflector",
-    "piano"
+    "maniqui",
+    "reflector"
    ],
    [
     null,
@@ -25102,6 +25177,11 @@
     "bloqueja": false,
     "ca": "cadira",
     "fr": "chaise"
+   },
+   "maniqui": {
+    "bloqueja": true,
+    "ca": "maniquí",
+    "fr": "mannequin"
    },
    "piano": {
     "bloqueja": true,
@@ -25540,7 +25620,7 @@
     null
    ],
    [
-    "ancora",
+    "torxa",
     null,
     "caixa",
     null,
@@ -25571,11 +25651,6 @@
    ]
   ],
   "objectes": {
-   "ancora": {
-    "bloqueja": true,
-    "ca": "àncora",
-    "fr": "ancre"
-   },
    "armari": {
     "bloqueja": true,
     "ca": "armari",
@@ -25630,6 +25705,11 @@
     "bloqueja": true,
     "ca": "taula",
     "fr": "table"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
    }
   },
   "persones": [
@@ -26056,7 +26136,7 @@
     null,
     null,
     "banc",
-    "caiac",
+    "bicicleta",
     null,
     null,
     null
@@ -26083,15 +26163,15 @@
     "ca": "barril",
     "fr": "tonneau"
    },
+   "bicicleta": {
+    "bloqueja": false,
+    "ca": "bicicleta",
+    "fr": "vélo"
+   },
    "cadira": {
     "bloqueja": false,
     "ca": "cadira",
     "fr": "chaise"
-   },
-   "caiac": {
-    "bloqueja": false,
-    "ca": "canoa",
-    "fr": "canoë"
    },
    "caixa": {
     "bloqueja": true,
@@ -28487,7 +28567,7 @@
     null,
     "rentadora",
     "tamboret",
-    "nevera",
+    "forn",
     "estufa",
     null,
     null
@@ -28500,7 +28580,7 @@
     null,
     "bagul",
     null,
-    "cadira"
+    "llit"
    ],
    [
     null,
@@ -28609,15 +28689,20 @@
     "ca": "estufa",
     "fr": "poêle"
    },
+   "forn": {
+    "bloqueja": true,
+    "ca": "forn",
+    "fr": "four"
+   },
+   "llit": {
+    "bloqueja": false,
+    "ca": "llit",
+    "fr": "lit"
+   },
    "mirall": {
     "bloqueja": true,
     "ca": "mirall",
     "fr": "miroir"
-   },
-   "nevera": {
-    "bloqueja": true,
-    "ca": "nevera",
-    "fr": "frigo"
    },
    "rentadora": {
     "bloqueja": true,
@@ -28740,18 +28825,18 @@
   ],
   "textos": {
    "ca": [
-    "Una caixa es feia notar a la seva columna.",
-    "L'inspector va anotar que a la seva columna hi havia un barril.",
-    "Un convidat recorda que va entrar a la sala de control i no en va sortir.",
-    "Segons un testimoni, seguint la seva fila, es topava amb un telèfon.",
-    "Diuen que el van veure al magatzem.",
-    "Ningú no dubta que era al camarot.",
-    "Algú va jurar que no es va separar gaire d'un barril.",
-    "Seguint la seva columna, es topava amb un escriptori.",
-    "A la llibreta de l'inspector consta que estava a un salt de cavall de Carla.",
-    "Algú va jurar que un armari era a la seva fila.",
+    "Compartia columna amb una caixa.",
+    "A la llibreta de l'inspector consta que un barril era a la seva columna.",
+    "L'inspector va anotar que ningú no dubta que era a la sala de control.",
+    "Diuen que tenia un telèfon a la mateixa fila.",
+    "Algú va jurar que el van veure al magatzem.",
+    "Va entrar al camarot i no en va sortir.",
+    "Segons un testimoni, no es va separar gaire d'un barril.",
+    "Un escriptori es feia notar a la seva columna.",
+    "Un convidat recorda que estava a un salt de cavall de Carla.",
+    "Algú va jurar que seguint la seva fila, es topava amb un armari.",
     "Diuen que era en un racó d'una habitació.",
-    "L'inspector va anotar que tenia un tamboret a la mateixa fila."
+    "L'inspector va anotar que un tamboret era a la seva fila."
    ],
    "fr": [
     "Il partageait sa colonne avec une caisse.",
@@ -29056,7 +29141,7 @@
     null,
     null,
     null,
-    "planta",
+    "fanal",
     null,
     null,
     null
@@ -29117,6 +29202,11 @@
     "bloqueja": true,
     "ca": "estàtua",
     "fr": "statue"
+   },
+   "fanal": {
+    "bloqueja": true,
+    "ca": "fanal",
+    "fr": "lampadaire"
    },
    "maleta": {
     "bloqueja": false,
@@ -30010,7 +30100,7 @@
    ],
    [
     null,
-    "sofa",
+    "escacs",
     "sofa",
     null,
     null,
@@ -30074,6 +30164,11 @@
     "bloqueja": true,
     "ca": "rac de vins",
     "fr": "casier à vins"
+   },
+   "escacs": {
+    "bloqueja": false,
+    "ca": "tauler d'escacs",
+    "fr": "échiquier"
    },
    "escriptori": {
     "bloqueja": true,
@@ -30520,7 +30615,7 @@
     null,
     null,
     "planta",
-    "tamboret"
+    "bascula"
    ],
    [
     "taula",
@@ -30540,7 +30635,7 @@
     "caixa",
     "bagul",
     "carreto",
-    "maleta"
+    "bagul"
    ],
    [
     null,
@@ -30569,6 +30664,11 @@
     "ca": "barra",
     "fr": "comptoir"
    },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
    "butaca": {
     "bloqueja": false,
     "ca": "butaca",
@@ -30588,11 +30688,6 @@
     "bloqueja": false,
     "ca": "carretó",
     "fr": "chariot"
-   },
-   "maleta": {
-    "bloqueja": false,
-    "ca": "maleta",
-    "fr": "valise"
    },
    "planta": {
     "bloqueja": true,
@@ -30706,26 +30801,26 @@
   ],
   "textos": {
    "ca": [
-    "Anna quedava a la seva esquerra.",
-    "Va passar l'estona al magatzem.",
-    "Seguint la seva fila, es topava amb una taula.",
-    "L'inspector va anotar que tenia David al seu oest.",
+    "Tenia Anna al seu oest.",
+    "Tenia el seu lloc al magatzem.",
+    "Algú va jurar que seguint la seva fila, es topava amb una taula.",
+    "L'inspector va anotar que al plànol, quedava a la dreta de David.",
     "Un convidat recorda que prop seu hi havia una barra.",
     "Només hi havia una persona al magatzem, víctima inclosa.",
-    "Diuen que estava a un salt de cavall de Francesca.",
-    "Segons un testimoni, tenia una taula ben a prop.",
-    "Algú va jurar que una barra es feia notar a la seva fila."
+    "Segons un testimoni, estava a un salt de cavall de Francesca.",
+    "A la llibreta de l'inspector consta que una taula era el seu veí més proper.",
+    "Una barra era a la seva fila."
    ],
    "fr": [
-    "Sur le plan, il était à droite d'Anna.",
+    "Anna se trouvait à sa gauche.",
     "Personne ne doute qu'elle était dans l'entrepôt.",
-    "Selon un témoin, sur sa ligne se trouvait une table.",
-    "On dit qu'il se trouvait plus à l'est que David.",
-    "L'inspecteur a noté qu'à quelques pas se trouvait un comptoir.",
-    "L'entrepôt était presque vide : une seule personne, victime comprise.",
-    "Dans le carnet de l'inspecteur, on lit qu'un seul saut de cavalier séparait Francesca de lui.",
-    "Quelqu'un a juré qu'il ne s'est guère éloigné d'une table.",
-    "Un invité se souvient qu'un comptoir se trouvait sur sa ligne."
+    "Un invité se souvient que sur sa ligne se trouvait une table.",
+    "Dans le carnet de l'inspecteur, on lit qu'il se trouvait plus à l'est que David.",
+    "On dit qu'à quelques pas se trouvait un comptoir.",
+    "L'entrepôt ne comptait qu'une personne, victime comprise.",
+    "Quelqu'un a juré qu'un seul saut de cavalier séparait Francesca de lui.",
+    "Une table était son plus proche voisin.",
+    "Un comptoir se remarquait sur sa ligne."
    ]
   },
   "solucio": {
@@ -31008,7 +31103,7 @@
     null
    ],
    [
-    "tamboret",
+    "butaca",
     "tamboret",
     null,
     null,
@@ -31048,6 +31143,11 @@
     "bloqueja": true,
     "ca": "barril",
     "fr": "tonneau"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
    },
    "escacs": {
     "bloqueja": false,
@@ -31196,29 +31296,29 @@
   ],
   "textos": {
    "ca": [
-    "Diuen que la van veure a la cambra reial.",
-    "Seguint la seva fila, es topava amb un barril.",
-    "A la llibreta de l'inspector consta que un rellotge de peu era a la seva fila.",
-    "Segons un testimoni, era a l'oest de Violant.",
-    "Estava vora un rellotge de peu.",
-    "Algú va jurar que un barril es feia notar a la seva columna.",
-    "L'inspector va anotar que era al sud de Carles.",
-    "No hi havia ànima a la sala del tron, ni la víctima.",
-    "Un convidat recorda que respecte a David, estava a un moviment de cavall.",
-    "Seguint la seva columna, es topava amb un bagul.",
-    "Era a la mateixa diagonal que Aina."
+    "Es va deixar veure a la cambra reial.",
+    "Diuen que un barril es feia notar a la seva fila.",
+    "Segons un testimoni, a la seva fila hi havia un rellotge de peu.",
+    "Estava més a l'oest que Violant.",
+    "No es va separar gaire d'un rellotge de peu.",
+    "Algú va jurar que seguint la seva columna, es topava amb un barril.",
+    "L'inspector va anotar que tenia Carles al seu nord.",
+    "La sala del tron es va quedar sense ningú, víctima inclosa.",
+    "Un convidat recorda que era a un salt de cavall de David (com als escacs).",
+    "A la llibreta de l'inspector consta que un bagul es feia notar a la seva columna.",
+    "Segons un testimoni, compartia diagonal amb Aina."
    ],
    "fr": [
-    "Selon un témoin, personne ne doute qu'elle était dans la chambre royale.",
-    "Un invité se souvient qu'un tonneau se remarquait sur sa ligne.",
-    "En suivant sa ligne, on tombait sur une horloge.",
-    "Sur le plan, elle était à gauche de Violant.",
-    "Dans le carnet de l'inspecteur, on lit qu'il avait une horloge tout près.",
-    "Quelqu'un a juré qu'il partageait sa colonne avec un tonneau.",
+    "Personne ne doute qu'elle était dans la chambre royale.",
+    "Selon un témoin, en suivant sa ligne, on tombait sur un tonneau.",
+    "L'inspecteur a noté qu'elle partageait sa ligne avec une horloge.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle se trouvait plus à l'ouest que Violant.",
+    "Un invité se souvient qu'il ne s'est guère éloigné d'une horloge.",
+    "Un tonneau se remarquait dans sa colonne.",
     "Carles se trouvait plus haut qu'elle sur le plan.",
     "La salle du trône était vide : pas une âme.",
-    "L'inspecteur a noté qu'elle se trouvait à un saut de cavalier de David.",
-    "On dit qu'une malle se trouvait dans sa colonne.",
+    "On dit que par rapport à David, elle était à un mouvement de cavalier.",
+    "Quelqu'un a juré qu'elle partageait sa colonne avec une malle.",
     "Aina et lui formaient une diagonale."
    ]
   },
@@ -31474,7 +31574,7 @@
    [
     null,
     "mirall",
-    "mirall",
+    "piano",
     null,
     "sofa",
     null,
@@ -31484,7 +31584,7 @@
    [
     null,
     "reflector",
-    "piano",
+    "mirall",
     null,
     null,
     null,
@@ -31518,7 +31618,7 @@
     null,
     null,
     null,
-    "tamboret",
+    "banc",
     null
    ],
    [
@@ -31537,6 +31637,11 @@
     "bloqueja": true,
     "ca": "arxivador",
     "fr": "classeur"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
    },
    "butaca": {
     "bloqueja": false,
@@ -33433,7 +33538,7 @@
   "obj": [
    [
     null,
-    "mirall",
+    "tel",
     null,
     null,
     null,
@@ -33567,6 +33672,11 @@
     "bloqueja": false,
     "ca": "tamboret",
     "fr": "tabouret"
+   },
+   "tel": {
+    "bloqueja": true,
+    "ca": "teló",
+    "fr": "rideau"
    }
   },
   "persones": [
@@ -34001,7 +34111,7 @@
     null,
     null,
     "carreto",
-    "carreto",
+    "tamboret",
     "carreto"
    ]
   ],
@@ -34055,6 +34165,11 @@
     "bloqueja": true,
     "ca": "rellotge de peu",
     "fr": "horloge"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    },
    "telefon": {
     "bloqueja": true,
@@ -35427,7 +35542,7 @@
     null,
     null,
     null,
-    "cadira",
+    "tamboret",
     "cadira",
     "forn",
     null,
@@ -36923,7 +37038,7 @@
    ],
    [
     "figuera",
-    "estatua",
+    "torxa",
     null,
     "banc",
     "catifa",
@@ -37013,11 +37128,6 @@
     "ca": "escala",
     "fr": "échelle"
    },
-   "estatua": {
-    "bloqueja": true,
-    "ca": "estàtua",
-    "fr": "statue"
-   },
    "figuera": {
     "bloqueja": true,
     "ca": "arbre",
@@ -37052,6 +37162,11 @@
     "bloqueja": true,
     "ca": "taula",
     "fr": "table"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
    },
    "tractor": {
     "bloqueja": true,
@@ -38467,7 +38582,7 @@
     null,
     null,
     null,
-    "planta",
+    "armari",
     null
    ],
    [
@@ -38493,7 +38608,7 @@
    [
     "taula",
     null,
-    "tamboret",
+    "cadira",
     null,
     "estufa",
     "bagul",
@@ -38512,6 +38627,11 @@
    ]
   ],
   "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
    "bagul": {
     "bloqueja": false,
     "ca": "bagul",
@@ -38526,6 +38646,11 @@
     "bloqueja": true,
     "ca": "barril",
     "fr": "tonneau"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
    },
    "catifa": {
     "bloqueja": false,
@@ -38551,11 +38676,6 @@
     "bloqueja": true,
     "ca": "nevera",
     "fr": "frigo"
-   },
-   "planta": {
-    "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
    },
    "tamboret": {
     "bloqueja": false,
@@ -39436,7 +39556,7 @@
    ],
    [
     null,
-    "banc",
+    "maleta",
     "carreto",
     null,
     null,
@@ -39461,7 +39581,7 @@
     "cadira",
     null,
     "maniqui",
-    "escala",
+    "caixa",
     "telefon"
    ],
    [
@@ -39536,6 +39656,11 @@
     "ca": "cadira",
     "fr": "chaise"
    },
+   "caixa": {
+    "bloqueja": true,
+    "ca": "caixa",
+    "fr": "caisse"
+   },
    "caixareg": {
     "bloqueja": true,
     "ca": "caixa registradora",
@@ -39550,6 +39675,11 @@
     "bloqueja": true,
     "ca": "escala",
     "fr": "échelle"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "maniqui": {
     "bloqueja": true,
@@ -39982,7 +40112,7 @@
     null,
     "escriptori",
     "planta",
-    "vitrina",
+    "billar",
     null,
     "taula",
     null
@@ -40034,6 +40164,11 @@
     "ca": "barril",
     "fr": "tonneau"
    },
+   "billar": {
+    "bloqueja": true,
+    "ca": "billar",
+    "fr": "billard"
+   },
    "butaca": {
     "bloqueja": false,
     "ca": "butaca",
@@ -40078,11 +40213,6 @@
     "bloqueja": true,
     "ca": "taula",
     "fr": "table"
-   },
-   "vitrina": {
-    "bloqueja": true,
-    "ca": "vitrina",
-    "fr": "vitrine"
    }
   },
   "persones": [
@@ -40974,7 +41104,7 @@
     "bagul",
     null,
     "arxivador",
-    "caixa"
+    "barril"
    ],
    [
     null,
@@ -41017,6 +41147,11 @@
     "bloqueja": false,
     "ca": "bagul",
     "fr": "malle"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
    },
    "cadira": {
     "bloqueja": false,
@@ -41133,28 +41268,28 @@
   ],
   "textos": {
    "ca": [
-    "Diuen que era en un racó d'una habitació.",
-    "Tenia una cadira ben a prop.",
-    "L'inspector va anotar que tocava una paret exterior de l'establiment.",
-    "A la llibreta de l'inspector consta que estava al laboratori.",
-    "Segons un testimoni, estava més a l'est que Vera.",
-    "Es va deixar caure sobre el bagul.",
-    "Algú va jurar que tenia Berta al seu oest.",
-    "Un convidat recorda que era al nord de Delfina.",
-    "A la seva fila hi havia una rentadora.",
-    "Clara i ella formaven una diagonal."
+    "Estava en una cantonada d'una habitació.",
+    "Estava vora una cadira.",
+    "Un convidat recorda que tocava una paret exterior de l'establiment.",
+    "Diuen que es trobava al laboratori.",
+    "Vera quedava a la seva esquerra.",
+    "Segons un testimoni, es va deixar caure sobre el bagul.",
+    "A la llibreta de l'inspector consta que era a l'est de Berta.",
+    "Algú va jurar que era al nord de Delfina.",
+    "Tenia una rentadora a la mateixa fila.",
+    "L'inspector va anotar que compartia diagonal amb Clara."
    ],
    "fr": [
     "Selon un témoin, il occupait un coin d'une pièce.",
-    "Elle se tenait près d'une chaise.",
-    "Dans le carnet de l'inspecteur, on lit qu'il touchait un mur extérieur de l'établissement.",
-    "Il a passé le temps dans le laboratoire.",
-    "Elle se trouvait plus à l'est que Vera.",
-    "On dit qu'elle reposait sur la malle.",
-    "Quelqu'un a juré qu'elle était à l'est de Berta.",
-    "Delfina se trouvait plus bas qu'elle sur le plan.",
-    "L'inspecteur a noté qu'il partageait sa ligne avec un lave-linge.",
-    "Un invité se souvient qu'elle partageait une diagonale avec Clara."
+    "Un invité se souvient qu'elle ne s'est guère éloignée d'une chaise.",
+    "Il était contre un mur extérieur de l'établissement.",
+    "On dit qu'il était dans le laboratoire.",
+    "Sur le plan, elle était à droite de Vera.",
+    "L'inspecteur a noté qu'elle reposait sur la malle.",
+    "Berta se trouvait à sa gauche.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle se trouvait plus au nord que Delfina.",
+    "En suivant sa ligne, on tombait sur un lave-linge.",
+    "Clara et elle étaient sur une même ligne diagonale."
    ]
   },
   "solucio": {
@@ -41395,7 +41530,7 @@
     null,
     null,
     "catifa",
-    "billar",
+    "gabia",
     null,
     null,
     null
@@ -41506,6 +41641,11 @@
     "bloqueja": true,
     "ca": "rac de vins",
     "fr": "casier à vins"
+   },
+   "gabia": {
+    "bloqueja": true,
+    "ca": "gàbia",
+    "fr": "cage"
    },
    "maleta": {
     "bloqueja": false,
@@ -41618,16 +41758,16 @@
   ],
   "textos": {
    "ca": [
-    "Algú va jurar que va quedar-se en un racó d'una habitació.",
-    "Diuen que una cadira era a la seva fila.",
+    "A la llibreta de l'inspector consta que estava en una cantonada d'una habitació.",
+    "Diuen que una cadira es feia notar a la seva fila.",
     "Era a l'oest de Carla.",
-    "Seguint la seva fila, es topava amb una taula.",
+    "Una taula era a la seva fila.",
     "No es va separar gaire d'un bagul.",
     "Segons un testimoni, tenia Dolors al seu est.",
     "Carla quedava a la seva esquerra.",
     "Un convidat recorda que estava a un salt de cavall de Carla.",
     "L'inspector va anotar que era a la mateixa diagonal que Vicenç.",
-    "A la llibreta de l'inspector consta que compartia diagonal amb Blai."
+    "Algú va jurar que compartia diagonal amb Blai."
    ],
    "fr": [
     "Il occupait un coin d'une pièce.",
@@ -41889,7 +42029,7 @@
     "bicicleta",
     null,
     "carreto",
-    "carreto"
+    "bagul"
    ],
    [
     null,
@@ -41898,7 +42038,7 @@
     null,
     null,
     "bicicleta",
-    "carreto",
+    "bagul",
     null
    ],
    [
@@ -42935,7 +43075,7 @@
     null,
     "carreto",
     null,
-    "tamboret",
+    "carro",
     null,
     null,
     null
@@ -42945,7 +43085,7 @@
     null,
     null,
     null,
-    "tamboret",
+    "maleta",
     "tamboret",
     null,
     null
@@ -42977,10 +43117,20 @@
     "ca": "carretó",
     "fr": "chariot"
    },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
    "escala": {
     "bloqueja": true,
     "ca": "escala",
     "fr": "échelle"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "planta": {
     "bloqueja": true,
@@ -43102,28 +43252,28 @@
   ],
   "textos": {
    "ca": [
-    "A la llibreta de l'inspector consta que un barril era a la seva columna.",
-    "Segons un testimoni, tenia una taula a la mateixa fila.",
-    "Algú va jurar que a la seva columna hi havia una caixa.",
-    "L'inspector va anotar que era a l'oest d'Anna.",
-    "Tenia una paret exterior de l'edifici just al costat.",
-    "Un convidat recorda que tenia dues parets d'una habitació a l'esquena.",
+    "Segons un testimoni, tenia un barril a la mateixa columna.",
+    "Una taula es feia notar a la seva fila.",
+    "Diuen que a la seva columna hi havia una caixa.",
+    "Anna quedava a la seva dreta.",
+    "Un convidat recorda que tenia una paret exterior de l'edifici just al costat.",
+    "L'inspector va anotar que tenia dues parets d'una habitació a l'esquena.",
     "Va coincidir amb Biel a la mateixa habitació.",
-    "A la seva fila hi havia una planta.",
-    "Diuen que era a la mateixa habitació que Eulàlia.",
+    "A la llibreta de l'inspector consta que a la seva fila hi havia una planta.",
+    "Compartia habitació amb Eulàlia.",
     "Biel i ella eren en una mateixa línia diagonal."
    ],
    "fr": [
-    "Un invité se souvient qu'un tonneau se remarquait dans sa colonne.",
-    "Il partageait sa ligne avec une table.",
-    "Quelqu'un a juré qu'une caisse se trouvait dans sa colonne.",
+    "On dit qu'un tonneau se trouvait dans sa colonne.",
+    "Une table se trouvait sur sa ligne.",
+    "Selon un témoin, dans sa colonne se trouvait une caisse.",
     "Anna se trouvait à sa droite.",
-    "Selon un témoin, il s'est appuyé près d'un mur extérieur de l'édifice.",
-    "Elle se tenait dans un angle d'une pièce.",
-    "Biel et elle étaient dans la même pièce.",
-    "On dit qu'une plante se remarquait sur sa ligne.",
-    "L'inspecteur a noté qu'elle a croisé Eulàlia dans la même pièce.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle était sur la même diagonale que Biel."
+    "Quelqu'un a juré qu'il s'est appuyé près d'un mur extérieur de l'édifice.",
+    "Un invité se souvient qu'elle se tenait dans un angle d'une pièce.",
+    "L'inspecteur a noté qu'elle était dans la même pièce que Biel.",
+    "Dans le carnet de l'inspecteur, on lit qu'une plante se remarquait sur sa ligne.",
+    "Eulàlia et elle ont fini sous le même toit.",
+    "Biel et elle étaient sur une même ligne diagonale."
    ]
   },
   "solucio": {
@@ -44359,7 +44509,7 @@
    [
     null,
     null,
-    "llibreria",
+    "globus",
     "llibreria",
     null,
     "cadira",
@@ -44467,6 +44617,11 @@
     "bloqueja": true,
     "ca": "arbre",
     "fr": "arbre"
+   },
+   "globus": {
+    "bloqueja": true,
+    "ca": "globus terraqüi",
+    "fr": "globe"
    },
    "llibreria": {
     "bloqueja": true,
@@ -44589,30 +44744,30 @@
   ],
   "textos": {
    "ca": [
-    "Un convidat recorda que a la seva fila hi havia un barril.",
-    "Va quedar-se en un racó d'una habitació.",
-    "A la llibreta de l'inspector consta que un bagul es feia notar a la seva fila.",
-    "Diuen que a pocs passos hi havia un banc.",
-    "Segons un testimoni, un pou es feia notar a la seva columna.",
-    "Tenia Elna al seu sud.",
-    "Un tron era el seu veí més proper.",
-    "La capella només tenia una persona, comptant la víctima.",
-    "Fina i ell eren en una mateixa línia diagonal.",
-    "L'inspector va anotar que era en una altra habitació que Elna.",
-    "Algú va jurar que era al sud d'Elna."
+    "Tenia un barril a la mateixa fila.",
+    "L'inspector va anotar que era en un racó d'una habitació.",
+    "Segons un testimoni, un bagul era a la seva fila.",
+    "A la llibreta de l'inspector consta que era al costat d'un banc.",
+    "Un convidat recorda que compartia columna amb un pou.",
+    "Algú va jurar que tenia Elna al seu sud.",
+    "Tenia un tron ben a prop.",
+    "La capella era gairebé buida: una sola persona, víctima inclosa.",
+    "Diuen que era a la mateixa diagonal que Fina.",
+    "No era a la mateixa habitació que Elna.",
+    "Diuen que al plànol, estava per sota d'Elna."
    ],
    "fr": [
-    "Sur sa ligne se trouvait un tonneau.",
-    "On dit qu'il avait deux murs d'une pièce dans le dos.",
-    "Un invité se souvient qu'en suivant sa ligne, on tombait sur une malle.",
-    "Quelqu'un a juré qu'un banc était son plus proche voisin.",
-    "Un puits se remarquait dans sa colonne.",
-    "Elna était au sud d'elle.",
-    "Il avait un trône tout près.",
-    "La chapelle était presque vide : une seule personne, victime comprise.",
-    "Fina et lui formaient une diagonale.",
-    "Selon un témoin, il se trouvait dans une autre pièce qu'Elna.",
-    "Dans le carnet de l'inspecteur, on lit que sur le plan, il était au-dessous d'Elna."
+    "L'inspecteur a noté qu'en suivant sa ligne, on tombait sur un tonneau.",
+    "Selon un témoin, il avait deux murs d'une pièce dans le dos.",
+    "Une malle se trouvait sur sa ligne.",
+    "On dit qu'il était à côté d'un banc.",
+    "Un invité se souvient qu'un puits se remarquait dans sa colonne.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle était au nord d'Elna.",
+    "Un trône était son plus proche voisin.",
+    "La chapelle ne comptait qu'une personne, victime comprise.",
+    "Quelqu'un a juré qu'en traçant une diagonale depuis Fina, on arrivait à lui.",
+    "Entre lui et Elna, il y avait au moins un mur.",
+    "On dit qu'il se trouvait plus au sud qu'Elna."
    ]
   },
   "solucio": {
@@ -45376,7 +45531,7 @@
     "arxivador",
     null,
     null,
-    "tamboret",
+    "maleta",
     "carro",
     null
    ],
@@ -45456,6 +45611,11 @@
     "bloqueja": false,
     "ca": "carro",
     "fr": "charrette"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "planta": {
     "bloqueja": true,
@@ -45588,17 +45748,17 @@
   ],
   "textos": {
    "ca": [
-    "Tenia dues parets d'una habitació a l'esquena.",
-    "Un convidat recorda que tenia Aina al seu oest.",
-    "L'inspector va anotar que un arxivador es feia notar a la seva columna.",
-    "Segons un testimoni, estava a un salt de cavall de Vera.",
-    "Seguint la seva columna, es topava amb una planta.",
-    "Algú va jurar que a la seva columna hi havia un carretó.",
-    "Compartia habitació amb Glòria.",
-    "A la llibreta de l'inspector consta que al plànol, estava per sobre de Dolors.",
-    "Diuen que era a l'est de Glòria.",
+    "Un convidat recorda que va quedar-se en un racó d'una habitació.",
+    "Diuen que estava més a l'est que Aina.",
+    "Compartia columna amb un arxivador.",
+    "A la llibreta de l'inspector consta que estava a un salt de cavall de Vera.",
+    "Una planta es feia notar a la seva columna.",
+    "Segons un testimoni, tenia un carretó a la mateixa columna.",
+    "Algú va jurar que compartia habitació amb Glòria.",
+    "Al plànol, estava per sobre de Dolors.",
+    "L'inspector va anotar que era a l'est de Glòria.",
     "A la llibreta de l'inspector consta que va entrar al despatx i no en va sortir.",
-    "Estava més a l'est que Dolors.",
+    "Tenia Dolors al seu oest.",
     "Un convidat recorda que seguint la seva fila, es topava amb una planta.",
     "Segons un testimoni, era a un salt de cavall de Dolors (com als escacs)."
    ],
@@ -45852,7 +46012,7 @@
     "banc",
     null,
     null,
-    "escala",
+    "armari",
     null,
     "tenda",
     null
@@ -45885,7 +46045,7 @@
     null,
     null,
     "tamboret",
-    "bascula"
+    "motxilla"
    ],
    [
     "caixa",
@@ -45929,6 +46089,11 @@
    ]
   ],
   "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
    "banc": {
     "bloqueja": false,
     "ca": "banc",
@@ -46085,17 +46250,17 @@
   ],
   "textos": {
    "ca": [
-    "L'inspector va anotar que compartia fila amb un pupitre.",
-    "Delfina i ell eren en una mateixa línia diagonal.",
-    "Algú va jurar que només un salt de cavall el separava de Delfina.",
-    "Era al costat d'un pupitre.",
-    "Diuen que seguint la seva fila, es topava amb un tamboret.",
-    "Un convidat recorda que un banc era a la seva columna.",
-    "Tenia una taula a la mateixa columna.",
-    "Segons un testimoni, era a un salt de cavall de Carles (com als escacs).",
-    "A la llibreta de l'inspector consta que no compartia habitació amb Carles.",
-    "Tenia Eudald al seu est.",
-    "A la llibreta de l'inspector consta que tenia dues parets d'una habitació a l'esquena."
+    "L'inspector va anotar que tenia un pupitre a la mateixa fila.",
+    "Algú va jurar que si traçaves una diagonal des de Delfina, hi arribaves a ell.",
+    "Era a un salt de cavall de Delfina (com als escacs).",
+    "Diuen que tenia un pupitre ben a prop.",
+    "Un convidat recorda que seguint la seva fila, es topava amb un tamboret.",
+    "Tenia un banc a la mateixa columna.",
+    "Segons un testimoni, a la seva columna hi havia una taula.",
+    "A la llibreta de l'inspector consta que estava a un salt de cavall de Carles.",
+    "Era en una altra habitació que Carles.",
+    "Eudald quedava a la seva dreta.",
+    "A la llibreta de l'inspector consta que se'l podia trobar arraconat en una habitació."
    ],
    "fr": [
     "Dans le carnet de l'inspecteur, on lit qu'un pupitre se remarquait sur sa ligne.",
@@ -47014,7 +47179,7 @@
     null,
     "taula",
     null,
-    "caixa",
+    "escala",
     "barril",
     null,
     null,
@@ -47044,7 +47209,7 @@
    ],
    [
     "telefon",
-    "bustia",
+    "finestreta",
     null,
     null,
     null,
@@ -47074,11 +47239,6 @@
     "bloqueja": true,
     "ca": "barril",
     "fr": "tonneau"
-   },
-   "bustia": {
-    "bloqueja": true,
-    "ca": "bústia",
-    "fr": "boîte aux lettres"
    },
    "butaca": {
     "bloqueja": false,
@@ -47114,6 +47274,11 @@
     "bloqueja": true,
     "ca": "escala",
     "fr": "échelle"
+   },
+   "finestreta": {
+    "bloqueja": true,
+    "ca": "finestreta",
+    "fr": "guichet"
    },
    "maleta": {
     "bloqueja": false,
@@ -48186,10 +48351,10 @@
    ],
    [
     null,
-    "carreto",
+    "carro",
     "carreto",
     "butaca",
-    "fanal",
+    "barril",
     "planta",
     null,
     "forn",
@@ -48303,6 +48468,11 @@
     "ca": "carretó",
     "fr": "chariot"
    },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
    "cistell": {
     "bloqueja": false,
     "ca": "cistell de fruita",
@@ -48317,11 +48487,6 @@
     "bloqueja": true,
     "ca": "estufa",
     "fr": "poêle"
-   },
-   "fanal": {
-    "bloqueja": true,
-    "ca": "fanal",
-    "fr": "lampadaire"
    },
    "forn": {
     "bloqueja": true,
@@ -48792,7 +48957,7 @@
     null,
     null,
     null,
-    "cistell"
+    "tamboret"
    ],
    [
     null,
@@ -48819,7 +48984,7 @@
    [
     null,
     "mirall",
-    "piano",
+    "maniqui",
     null,
     null,
     "llar",
@@ -48922,6 +49087,11 @@
     "ca": "llar de foc",
     "fr": "cheminée"
    },
+   "maniqui": {
+    "bloqueja": true,
+    "ca": "maniquí",
+    "fr": "mannequin"
+   },
    "mirall": {
     "bloqueja": true,
     "ca": "mirall",
@@ -48931,11 +49101,6 @@
     "bloqueja": false,
     "ca": "motxilla",
     "fr": "sac à dos"
-   },
-   "piano": {
-    "bloqueja": true,
-    "ca": "piano",
-    "fr": "piano"
    },
    "pica": {
     "bloqueja": true,
@@ -49441,7 +49606,7 @@
     null,
     null,
     "escala",
-    "escala",
+    "estufa",
     null,
     null,
     "carreto"
@@ -49455,7 +49620,7 @@
     "fanal",
     null,
     "caixa",
-    "carreto"
+    "tamboret"
    ],
    [
     null,
@@ -49465,13 +49630,13 @@
     null,
     "planta",
     null,
-    "caixa",
+    "escala",
     null
    ],
    [
     null,
     null,
-    "motxilla",
+    "carro",
     null,
     null,
     null,
@@ -49516,6 +49681,11 @@
     "ca": "carretó",
     "fr": "chariot"
    },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
    "catifa": {
     "bloqueja": false,
     "ca": "catifa",
@@ -49525,6 +49695,11 @@
     "bloqueja": true,
     "ca": "escala",
     "fr": "échelle"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
    },
    "fanal": {
     "bloqueja": true,
@@ -49550,6 +49725,11 @@
     "bloqueja": true,
     "ca": "quadre",
     "fr": "tableau"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    },
    "taula": {
     "bloqueja": true,
@@ -50011,7 +50191,7 @@
     "banc",
     null,
     "planta",
-    "piano",
+    "mirall",
     "maniqui",
     null
    ],
@@ -50053,7 +50233,7 @@
     null,
     null,
     "tel",
-    "maniqui",
+    "reflector",
     "tel",
     null,
     null,
@@ -50068,7 +50248,7 @@
     "maniqui",
     null,
     null,
-    "reflector"
+    "maniqui"
    ],
    [
     null,
@@ -50122,11 +50302,6 @@
     "bloqueja": true,
     "ca": "mirall",
     "fr": "miroir"
-   },
-   "piano": {
-    "bloqueja": true,
-    "ca": "piano",
-    "fr": "piano"
    },
    "planta": {
     "bloqueja": true,
@@ -51754,7 +51929,7 @@
     null,
     "tamboret",
     "armari",
-    "estatua",
+    "torxa",
     null,
     "taula",
     "taula",
@@ -51764,7 +51939,7 @@
    [
     null,
     "vater",
-    "mirall",
+    "planta",
     "figuera",
     null,
     null,
@@ -51796,7 +51971,7 @@
    ],
    [
     "banc",
-    "banyera",
+    "pica",
     null,
     "cadira",
     null,
@@ -51806,13 +51981,13 @@
     null
    ],
    [
-    "tamboret",
+    "bascula",
     null,
     null,
     null,
     null,
     null,
-    "butaca",
+    "maleta",
     null,
     "carreto"
    ],
@@ -51833,7 +52008,7 @@
     null,
     null,
     null,
-    "banc",
+    "tamboret",
     null,
     null,
     "telefon"
@@ -51866,6 +52041,11 @@
     "ca": "banyera",
     "fr": "baignoire"
    },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
    "butaca": {
     "bloqueja": false,
     "ca": "butaca",
@@ -51881,11 +52061,6 @@
     "ca": "carretó",
     "fr": "chariot"
    },
-   "estatua": {
-    "bloqueja": true,
-    "ca": "estàtua",
-    "fr": "statue"
-   },
    "fanal": {
     "bloqueja": true,
     "ca": "fanal",
@@ -51896,10 +52071,25 @@
     "ca": "arbre",
     "fr": "arbre"
    },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
+   },
    "mirall": {
     "bloqueja": true,
     "ca": "mirall",
     "fr": "miroir"
+   },
+   "pica": {
+    "bloqueja": true,
+    "ca": "pica",
+    "fr": "évier"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
    },
    "tamboret": {
     "bloqueja": false,
@@ -51915,6 +52105,11 @@
     "bloqueja": true,
     "ca": "telèfon",
     "fr": "téléphone"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
    },
    "vater": {
     "bloqueja": true,
@@ -52047,38 +52242,38 @@
   ],
   "textos": {
    "ca": [
-    "Segons un testimoni, una cadira es feia notar a la seva fila.",
-    "L'inspector va anotar que tenia el seu lloc a la terrassa.",
-    "A la llibreta de l'inspector consta que era al vestuari.",
-    "Clara quedava més amunt que ell al plànol.",
-    "Estava al despatx.",
-    "Algú va jurar que estava més a l'oest que Biel.",
-    "Un convidat recorda que estava en una cantonada d'una habitació.",
-    "Comptant la víctima, 3 persones eren al vestuari.",
+    "Diuen que compartia fila amb una cadira.",
+    "Va passar l'estona a la terrassa.",
+    "Era al vestuari.",
+    "A la llibreta de l'inspector consta que estava més al sud que Clara.",
+    "L'inspector va anotar que tenia el seu lloc al despatx.",
+    "Un convidat recorda que tenia Biel al seu est.",
+    "Segons un testimoni, va trobar refugi en un racó d'una habitació.",
+    "El vestuari acollia 3 persones, comptant la víctima.",
     "No hi havia ànima al restaurant, ni la víctima.",
-    "Estava més al sud que Felip.",
-    "Diuen que respecte a Felip, estava a un moviment de cavall.",
-    "Un telèfon era el seu veí més proper.",
-    "L'inspector va anotar que era a un salt de cavall de Clara (com als escacs).",
-    "A la llibreta de l'inspector consta que tenia Glòria al seu oest.",
-    "Diuen que estava més al nord que Biel."
+    "Algú va jurar que al plànol, estava per sota de Felip.",
+    "Respecte a Felip, estava a un moviment de cavall.",
+    "L'inspector va anotar que tenia un telèfon a tocar.",
+    "A la llibreta de l'inspector consta que estava a un salt de cavall de Clara.",
+    "Diuen que estava més a l'est que Glòria.",
+    "Segons un testimoni, estava més al nord que Biel."
    ],
    "fr": [
-    "Dans le carnet de l'inspecteur, on lit qu'elle partageait sa ligne avec une chaise.",
-    "Elle se trouvait sur la terrasse.",
-    "L'inspecteur a noté qu'on l'a vu dans le vestiaire.",
+    "Sur sa ligne se trouvait une chaise.",
+    "Selon un témoin, on l'a vue sur la terrasse.",
+    "L'inspecteur a noté qu'il est entré dans le vestiaire et n'en est pas ressorti.",
     "Clara se trouvait plus haut que lui sur le plan.",
-    "Quelqu'un a juré qu'il a passé le temps dans le bureau.",
-    "On dit que sur le plan, elle était à gauche de Biel.",
-    "Selon un témoin, elle se tenait dans un angle d'une pièce.",
+    "Dans le carnet de l'inspecteur, on lit qu'il a passé le temps dans le bureau.",
+    "Biel était à l'est d'elle.",
+    "Un invité se souvient qu'elle était dans un coin d'une pièce.",
     "Il y avait exactement 3 personnes dans le vestiaire, victime comprise.",
-    "Pas âme qui vive dans le restaurant, la victime non plus.",
-    "Un invité se souvient qu'il était au sud de Felip.",
-    "Il se trouvait à un saut de cavalier de Felip.",
-    "Il avait un téléphone tout près.",
-    "Dans le carnet de l'inspecteur, on lit que par rapport à Clara, il était à un mouvement de cavalier.",
-    "Il se trouvait plus à l'est que Glòria.",
-    "Quelqu'un a juré qu'il se trouvait plus au nord que Biel."
+    "Le restaurant était vide : pas une âme.",
+    "Il se trouvait plus au sud que Felip.",
+    "Quelqu'un a juré qu'il se trouvait à un saut de cavalier de Felip.",
+    "On dit qu'il ne s'est guère éloigné d'un téléphone.",
+    "Il était à un saut de cavalier de Clara (comme aux échecs).",
+    "L'inspecteur a noté qu'il se trouvait plus à l'est que Glòria.",
+    "Biel était au sud de lui."
    ]
   },
   "solucio": {
@@ -52363,8 +52558,8 @@
     null,
     "mirall",
     "cadira",
-    "cadira",
     "tamboret",
+    "cadira",
     null
    ],
    [
@@ -52398,7 +52593,7 @@
     "rellotge",
     null,
     "cistell",
-    "cistell"
+    "tamboret"
    ],
    [
     null,
@@ -52450,10 +52645,10 @@
     "globus",
     null,
     "taula",
-    "butaca",
+    "tamboret",
     "butaca",
     null,
-    "tamboret"
+    "cadira"
    ]
   ],
   "objectes": {
@@ -52648,34 +52843,34 @@
   ],
   "textos": {
    "ca": [
-    "Diuen que es trobava al jardí.",
-    "Algú va jurar que seguint la seva columna, es topava amb una nevera.",
-    "L'inspector va anotar que era al costat d'un mirall.",
-    "Segons un testimoni, va passar l'estona al saló de ball.",
-    "Un convidat recorda que a la seva columna hi havia un armari.",
-    "Tenia Dídac al seu oest.",
-    "A la llibreta de l'inspector consta que un tron es feia notar a la seva fila.",
+    "Algú va jurar que tenia el seu lloc al jardí.",
+    "Segons un testimoni, a la seva columna hi havia una nevera.",
+    "No es va separar gaire d'un mirall.",
+    "Un convidat recorda que ningú no dubta que era al saló de ball.",
+    "Diuen que tenia un armari a la mateixa columna.",
+    "L'inspector va anotar que al plànol, quedava a la dreta de Dídac.",
+    "A la llibreta de l'inspector consta que tenia un tron a la mateixa fila.",
     "Un mirall era a la seva fila.",
     "La cuina només tenia una persona, comptant la víctima.",
-    "Eulàlia i ella es van trobar sota el mateix sostre.",
-    "Tenia Dídac al seu nord.",
-    "Fabiola i ell eren en una mateixa línia diagonal.",
-    "Se la podia trobar arraconada en una habitació."
+    "Compartia habitació amb Eulàlia.",
+    "Dídac quedava més amunt que ella al plànol.",
+    "A la llibreta de l'inspector consta que era a la mateixa diagonal que Fabiola.",
+    "Algú va jurar que tenia dues parets d'una habitació a l'esquena."
    ],
    "fr": [
-    "On dit que personne ne doute qu'elle était dans le jardin.",
-    "Dans le carnet de l'inspecteur, on lit que dans sa colonne se trouvait un frigo.",
-    "Selon un témoin, un miroir était son plus proche voisin.",
-    "Elle a passé le temps dans la salle de bal.",
-    "L'inspecteur a noté qu'une armoire se remarquait dans sa colonne.",
-    "Il était à l'est de Dídac.",
-    "Un invité se souvient que sur sa ligne se trouvait un trône.",
-    "Quelqu'un a juré qu'elle partageait sa ligne avec un miroir.",
-    "La cuisine ne comptait qu'une personne, victime comprise.",
+    "Personne ne doute qu'elle était dans le jardin.",
+    "Dans le carnet de l'inspecteur, on lit qu'en suivant sa colonne, on tombait sur un frigo.",
+    "On dit qu'elle était à côté d'un miroir.",
+    "Elle est entrée dans la salle de bal et n'en est pas ressortie.",
+    "Un invité se souvient que dans sa colonne se trouvait une armoire.",
+    "Quelqu'un a juré qu'il était à l'est de Dídac.",
+    "Selon un témoin, en suivant sa ligne, on tombait sur un trône.",
+    "Un miroir se trouvait sur sa ligne.",
+    "Il n'y avait qu'une personne dans la cuisine, victime comprise.",
     "Eulàlia et elle étaient dans la même pièce.",
-    "Dídac était au nord d'elle.",
+    "L'inspecteur a noté que sur le plan, elle était au-dessous de Dídac.",
     "Il était sur la même diagonale que Fabiola.",
-    "Quelqu'un a juré qu'elle se tenait dans un angle d'une pièce."
+    "Dans le carnet de l'inspecteur, on lit qu'elle se tenait dans un angle d'une pièce."
    ]
   },
   "solucio": {
@@ -53593,7 +53788,7 @@
     "gabia",
     null,
     null,
-    "maleta",
+    "banc",
     null,
     null,
     null
@@ -53613,9 +53808,9 @@
     "piano",
     null,
     null,
-    "quadre",
+    "vitrina",
     "piano",
-    "piano",
+    "mirall",
     null,
     "cadira",
     null
@@ -53636,6 +53831,11 @@
     "bloqueja": false,
     "ca": "bagul",
     "fr": "malle"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
    },
    "barril": {
     "bloqueja": true,
@@ -53687,15 +53887,15 @@
     "ca": "maleta",
     "fr": "valise"
    },
+   "mirall": {
+    "bloqueja": true,
+    "ca": "mirall",
+    "fr": "miroir"
+   },
    "piano": {
     "bloqueja": true,
     "ca": "piano",
     "fr": "piano"
-   },
-   "quadre": {
-    "bloqueja": true,
-    "ca": "quadre",
-    "fr": "tableau"
    },
    "rentadora": {
     "bloqueja": true,
@@ -53711,6 +53911,11 @@
     "bloqueja": true,
     "ca": "telèfon",
     "fr": "téléphone"
+   },
+   "vitrina": {
+    "bloqueja": true,
+    "ca": "vitrina",
+    "fr": "vitrine"
    }
   },
   "persones": [
@@ -54186,7 +54391,7 @@
     null,
     "planta",
     null,
-    "tamboret",
+    "motxilla",
     "banc"
    ],
    [
@@ -54272,6 +54477,11 @@
     "bloqueja": false,
     "ca": "maleta",
     "fr": "valise"
+   },
+   "motxilla": {
+    "bloqueja": false,
+    "ca": "motxilla",
+    "fr": "sac à dos"
    },
    "planta": {
     "bloqueja": true,
@@ -55327,7 +55537,7 @@
     "taula",
     "piano",
     "mirall",
-    "mirall",
+    "piano",
     null,
     null
    ],
@@ -55338,7 +55548,7 @@
     null,
     null,
     "tel",
-    "tel",
+    "mirall",
     null,
     null
    ],
@@ -55409,7 +55619,7 @@
     "caixa"
    ],
    [
-    "mirall",
+    "piano",
     "catifa",
     "catifa",
     null,
@@ -56528,7 +56738,7 @@
    ],
    [
     null,
-    "estatua",
+    "planta",
     null,
     "figuera",
     null,
@@ -56541,7 +56751,7 @@
     null,
     "tractor",
     "carro",
-    "estatua",
+    "torxa",
     "pou",
     null,
     null,
@@ -56617,11 +56827,6 @@
     "ca": "carro",
     "fr": "charrette"
    },
-   "estatua": {
-    "bloqueja": true,
-    "ca": "estàtua",
-    "fr": "statue"
-   },
    "estufa": {
     "bloqueja": true,
     "ca": "estufa",
@@ -56661,6 +56866,11 @@
     "bloqueja": true,
     "ca": "tenda de campanya",
     "fr": "tente"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
    },
    "tractor": {
     "bloqueja": true,
@@ -57114,8 +57324,8 @@
     "armari",
     null,
     null,
-    "carreto",
     "carro",
+    "carreto",
     null,
     null
    ],
@@ -57753,7 +57963,7 @@
    ],
    [
     null,
-    "bustia",
+    "caixareg",
     null,
     "bustia",
     null,
@@ -57826,6 +58036,11 @@
     "bloqueja": true,
     "ca": "caixa",
     "fr": "caisse"
+   },
+   "caixareg": {
+    "bloqueja": true,
+    "ca": "caixa registradora",
+    "fr": "caisse enregistreuse"
    },
    "fanal": {
     "bloqueja": true,
@@ -58296,7 +58511,7 @@
     null,
     null,
     "vater",
-    "banyera",
+    "pica",
     "armari",
     null,
     null,
@@ -58326,7 +58541,7 @@
     null
    ],
    [
-    "bagul",
+    "bascula",
     null,
     null,
     null,
@@ -58344,7 +58559,7 @@
     "taula",
     "taula",
     "escala",
-    "arxivador",
+    "rentadora",
     "barra"
    ],
    [
@@ -58363,7 +58578,7 @@
     null,
     null,
     "ancora",
-    "fanal",
+    "escala",
     null,
     null,
     null,
@@ -58403,25 +58618,20 @@
     "ca": "armari",
     "fr": "armoire"
    },
-   "arxivador": {
-    "bloqueja": true,
-    "ca": "arxivador",
-    "fr": "classeur"
-   },
    "bagul": {
     "bloqueja": false,
     "ca": "bagul",
     "fr": "malle"
    },
-   "banyera": {
-    "bloqueja": true,
-    "ca": "banyera",
-    "fr": "baignoire"
-   },
    "barra": {
     "bloqueja": true,
     "ca": "barra",
     "fr": "comptoir"
+   },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
    },
    "cadira": {
     "bloqueja": false,
@@ -58443,6 +58653,11 @@
     "ca": "fanal",
     "fr": "lampadaire"
    },
+   "pica": {
+    "bloqueja": true,
+    "ca": "pica",
+    "fr": "évier"
+   },
    "planta": {
     "bloqueja": true,
     "ca": "planta",
@@ -58452,6 +58667,11 @@
     "bloqueja": true,
     "ca": "pou",
     "fr": "puits"
+   },
+   "rentadora": {
+    "bloqueja": true,
+    "ca": "rentadora",
+    "fr": "lave-linge"
    },
    "tamboret": {
     "bloqueja": false,
@@ -59510,7 +59730,7 @@
     null,
     null,
     "cafetera",
-    "cafetera",
+    "quadre",
     null,
     null,
     null,
@@ -61854,7 +62074,7 @@
     null,
     null,
     "pica",
-    "pica",
+    "banyera",
     null,
     "mirall"
    ],
@@ -61924,6 +62144,11 @@
     "bloqueja": false,
     "ca": "banc",
     "fr": "banc"
+   },
+   "banyera": {
+    "bloqueja": true,
+    "ca": "banyera",
+    "fr": "baignoire"
    },
    "billar": {
     "bloqueja": true,
@@ -62993,7 +63218,7 @@
     "estatua",
     "tractor",
     "cistell",
-    "cistell",
+    "tamboret",
     "bagul",
     null,
     null
@@ -63005,7 +63230,7 @@
     null,
     null,
     null,
-    "bagul",
+    "tamboret",
     "caixa",
     "bagul"
    ],
@@ -63025,7 +63250,7 @@
     null,
     null,
     null,
-    "vitrina",
+    "estatua",
     "quadre",
     "rellotge",
     null,
@@ -63605,7 +63830,7 @@
     null,
     null,
     null,
-    "estufa"
+    "armari"
    ],
    [
     null,
@@ -63697,6 +63922,11 @@
    ]
   ],
   "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
    "arxivador": {
     "bloqueja": true,
     "ca": "arxivador",
@@ -63878,16 +64108,16 @@
   ],
   "textos": {
    "ca": [
-    "Segons un testimoni, compartia fila amb un reflector.",
-    "Tenia un fanal a la mateixa columna.",
-    "Algú va jurar que es va deixar veure al dormitori.",
-    "Diuen que una cadira es feia notar a la seva columna.",
-    "A la llibreta de l'inspector consta que prop seu hi havia una cadira.",
-    "Seguint la seva columna, es topava amb un reflector.",
+    "Diuen que tenia un reflector a la mateixa fila.",
+    "Seguint la seva columna, es topava amb un fanal.",
+    "L'inspector va anotar que es va deixar veure al dormitori.",
+    "A la llibreta de l'inspector consta que una cadira es feia notar a la seva columna.",
+    "Algú va jurar que prop seu hi havia una cadira.",
+    "Un reflector era a la seva columna.",
     "Anna i ell formaven una diagonal.",
-    "Un convidat recorda que compartia habitació amb David.",
+    "Segons un testimoni, compartia habitació amb David.",
     "Heura quedava més amunt que ell al plànol.",
-    "L'inspector va anotar que tenia l'exterior de l'edifici a tocar, només separat per una paret.",
+    "Un convidat recorda que tenia l'exterior de l'edifici a tocar, només separat per una paret.",
     "Estava més al sud que Griselda.",
     "Era a la mateixa diagonal que Eudald."
    ],
@@ -64864,7 +65094,7 @@
     null,
     null,
     "tamboret",
-    "barril",
+    "caixa",
     "barril",
     null,
     "caixa"
@@ -65075,16 +65305,16 @@
   ],
   "textos": {
    "ca": [
-    "Algú va jurar que a la seva fila hi havia un banc.",
-    "Un convidat recorda que un bagul era el seu veí més proper.",
-    "Una tenda de campanya era a la seva fila.",
-    "Diuen que tenia una fogata a la mateixa columna.",
+    "L'inspector va anotar que un banc era a la seva fila.",
+    "Algú va jurar que a pocs passos hi havia un bagul.",
+    "Diuen que compartia fila amb una tenda de campanya.",
+    "A la llibreta de l'inspector consta que tenia una fogata a la mateixa columna.",
     "Una cadira es feia notar a la seva fila.",
-    "L'inspector va anotar que prop seu hi havia un tamboret.",
-    "A la llibreta de l'inspector consta que si traçaves una diagonal des d'Arnau, hi arribaves a ella.",
-    "A pocs passos hi havia una tenda de campanya.",
+    "Segons un testimoni, prop seu hi havia un tamboret.",
+    "Un convidat recorda que si traçaves una diagonal des d'Arnau, hi arribaves a ella.",
+    "Una tenda de campanya era el seu veí més proper.",
     "Helena era l'única companyia en aquella habitació.",
-    "Segons un testimoni, compartia diagonal amb Carla."
+    "Compartia diagonal amb Carla."
    ],
    "fr": [
     "Un banc se remarquait sur sa ligne.",
@@ -65410,7 +65640,7 @@
    [
     null,
     null,
-    "pissarra",
+    "quadre",
     null,
     "cadira",
     null,
@@ -65529,11 +65759,6 @@
     "bloqueja": true,
     "ca": "llibreria",
     "fr": "bibliothèque"
-   },
-   "pissarra": {
-    "bloqueja": true,
-    "ca": "pissarra",
-    "fr": "tableau noir"
    },
    "quadre": {
     "bloqueja": true,
@@ -66556,7 +66781,7 @@
     null,
     null,
     null,
-    "cadira",
+    "maleta",
     "cadira",
     null,
     "telefon",
@@ -66591,7 +66816,7 @@
     null,
     "caixa",
     null,
-    "armari",
+    "finestreta",
     "armari",
     "barril"
    ],
@@ -66641,7 +66866,7 @@
    ],
    [
     "bagul",
-    "carro",
+    "carreto",
     null,
     null,
     null,
@@ -66687,10 +66912,25 @@
     "ca": "caixa",
     "fr": "caisse"
    },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
    "carro": {
     "bloqueja": false,
     "ca": "carro",
     "fr": "charrette"
+   },
+   "finestreta": {
+    "bloqueja": true,
+    "ca": "finestreta",
+    "fr": "guichet"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "tamboret": {
     "bloqueja": false,
@@ -67198,7 +67438,7 @@
    ],
    [
     null,
-    "torxa",
+    "fogata",
     null,
     null,
     "cadira",
@@ -67299,11 +67539,6 @@
     "bloqueja": true,
     "ca": "telèfon",
     "fr": "téléphone"
-   },
-   "torxa": {
-    "bloqueja": true,
-    "ca": "torxa",
-    "fr": "torche"
    }
   },
   "persones": [
@@ -67768,7 +68003,7 @@
    ],
    [
     "pupitre",
-    "pupitre",
+    "cadira",
     "pilota",
     "planta",
     null,
@@ -67778,14 +68013,14 @@
     null
    ],
    [
-    "pilota",
+    "bola",
     "pupitre",
     null,
     "planta",
     null,
     null,
     null,
-    "caixareg",
+    "rellotge",
     "caixareg"
    ],
    [
@@ -67797,7 +68032,7 @@
     null,
     null,
     null,
-    "bustia"
+    "rellotge"
    ],
    [
     null,
@@ -67828,10 +68063,20 @@
     "ca": "arxivador",
     "fr": "classeur"
    },
+   "bola": {
+    "bloqueja": false,
+    "ca": "bola d'equilibri",
+    "fr": "boule d'équilibre"
+   },
    "bustia": {
     "bloqueja": true,
     "ca": "bústia",
     "fr": "boîte aux lettres"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
    },
    "caixareg": {
     "bloqueja": true,
@@ -67969,11 +68214,11 @@
   ],
   "textos": {
    "ca": [
-    "L'inspector va anotar que compartia fila amb una taula.",
+    "L'inspector va anotar que una taula es feia notar a la seva fila.",
     "Un convidat recorda que tenia un arxivador ben a prop.",
     "Era a l'oest de Blai.",
     "Segons un testimoni, una taula era a la seva columna.",
-    "A la llibreta de l'inspector consta que una planta es feia notar a la seva fila.",
+    "A la llibreta de l'inspector consta que seguint la seva fila, es topava amb una planta.",
     "A la seva habitació només hi havia Heura amb ella.",
     "Algú va jurar que si traçaves una diagonal des de Blai, hi arribaves a ell.",
     "Vera quedava a la seva dreta.",
@@ -68308,7 +68553,7 @@
     "taula",
     "taula",
     null,
-    "banc"
+    "bagul"
    ],
    [
     null,
@@ -68334,7 +68579,7 @@
    ],
    [
     "bagul",
-    "bagul",
+    "tron",
     "barril",
     null,
     null,
@@ -69437,7 +69682,7 @@
    [
     "estatua",
     "banc",
-    "banc",
+    "tamboret",
     null,
     null,
     null,
@@ -69469,7 +69714,7 @@
    ],
    [
     "escala",
-    "pupitre",
+    "pilota",
     "escala",
     null,
     null,
@@ -69581,6 +69826,11 @@
     "bloqueja": false,
     "ca": "pupitre",
     "fr": "pupitre"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    }
   },
   "persones": [
@@ -70037,7 +70287,7 @@
     null,
     null,
     "pilota",
-    "maleta",
+    "bagul",
     null,
     null
    ],
@@ -70060,7 +70310,7 @@
     null,
     null,
     "pilota",
-    "pilota",
+    "carro",
     "maleta"
    ],
    [
@@ -70098,6 +70348,11 @@
    ]
   ],
   "objectes": {
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
+   },
    "banc": {
     "bloqueja": false,
     "ca": "banc",
@@ -71229,7 +71484,7 @@
     null,
     null,
     null,
-    "bustia"
+    "caixareg"
    ],
    [
     null,
@@ -71247,7 +71502,7 @@
     null,
     null,
     null,
-    "rellotge",
+    "bustia",
     null,
     "planta",
     null,
@@ -72415,7 +72670,7 @@
     null,
     null,
     "quadre",
-    "caixa",
+    "llibreria",
     "caixa",
     null
    ],
@@ -72449,7 +72704,7 @@
     null,
     null,
     null,
-    "armari",
+    "estufa",
     null
    ],
    [
@@ -72537,6 +72792,16 @@
     "bloqueja": false,
     "ca": "catifa",
     "fr": "tapis"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
+   },
+   "llibreria": {
+    "bloqueja": true,
+    "ca": "llibreria",
+    "fr": "bibliothèque"
    },
    "maleta": {
     "bloqueja": false,
@@ -72675,15 +72940,15 @@
   ],
   "textos": {
    "ca": [
-    "Segons un testimoni, va ocupar el tamboret.",
-    "Seguint la seva columna, es topava amb un banc.",
-    "Un arxivador es feia notar a la seva fila.",
-    "L'inspector va anotar que la van veure a l'emprovador.",
-    "A la llibreta de l'inspector consta que tenia un mirall a la mateixa columna.",
-    "Algú va jurar que es trobava al taller.",
+    "Diuen que va quedar-se sobre el tamboret.",
+    "A la seva columna hi havia un banc.",
+    "Algú va jurar que un arxivador es feia notar a la seva fila.",
+    "Segons un testimoni, la van veure a l'emprovador.",
+    "L'inspector va anotar que un mirall era a la seva columna.",
+    "Un convidat recorda que es trobava al taller.",
     "Una cadira es feia notar a la seva columna.",
-    "Un convidat recorda que si traçaves una diagonal des de Griselda, hi arribaves a ella.",
-    "Diuen que estava a un salt de cavall de Griselda.",
+    "Si traçaves una diagonal des de Griselda, hi arribaves a ella.",
+    "A la llibreta de l'inspector consta que estava a un salt de cavall de Griselda.",
     "Segons un testimoni, era a la mateixa diagonal que Carles."
    ],
    "fr": [
@@ -74232,7 +74497,7 @@
     null,
     null,
     "bola",
-    "bola",
+    "pilota",
     null,
     null
    ],
@@ -74256,7 +74521,7 @@
     "banc",
     null,
     null,
-    "mirall"
+    "maniqui"
    ],
    [
     null,
@@ -74316,15 +74581,15 @@
     "ca": "maniquí",
     "fr": "mannequin"
    },
-   "mirall": {
-    "bloqueja": true,
-    "ca": "mirall",
-    "fr": "miroir"
-   },
    "motxilla": {
     "bloqueja": false,
     "ca": "motxilla",
     "fr": "sac à dos"
+   },
+   "pilota": {
+    "bloqueja": false,
+    "ca": "pilota",
+    "fr": "ballon"
    },
    "rellotge": {
     "bloqueja": true,
@@ -74793,7 +75058,7 @@
     null,
     null,
     null,
-    "arxivador",
+    "estufa",
     "rentadora",
     null,
     null,
@@ -74845,11 +75110,6 @@
    ]
   ],
   "objectes": {
-   "arxivador": {
-    "bloqueja": true,
-    "ca": "arxivador",
-    "fr": "classeur"
-   },
    "barril": {
     "bloqueja": true,
     "ca": "barril",
@@ -74879,6 +75139,11 @@
     "bloqueja": true,
     "ca": "escriptori",
     "fr": "bureau"
+   },
+   "estufa": {
+    "bloqueja": true,
+    "ca": "estufa",
+    "fr": "poêle"
    },
    "llibreria": {
     "bloqueja": true,
@@ -75892,7 +76157,7 @@
     "catifa",
     null,
     null,
-    "tamboret",
+    "cistell",
     "taula",
     null,
     null
@@ -76010,6 +76275,11 @@
     "bloqueja": false,
     "ca": "catifa",
     "fr": "tapis"
+   },
+   "cistell": {
+    "bloqueja": false,
+    "ca": "cistell de fruita",
+    "fr": "panier de fruits"
    },
    "escacs": {
     "bloqueja": false,
@@ -76455,7 +76725,7 @@
     null,
     null,
     "cistell",
-    "cistell",
+    "tamboret",
     "cadira",
     null,
     null
@@ -76466,7 +76736,7 @@
     null,
     "cistell",
     "cadira",
-    "tamboret",
+    "cistell",
     null,
     null,
     "butaca"
@@ -77047,11 +77317,11 @@
     null,
     "banc",
     "carro",
-    "carro"
+    "tamboret"
    ],
    [
     null,
-    "cistell",
+    "cadira",
     "cistell",
     "armari",
     null,
@@ -77062,7 +77332,7 @@
    ],
    [
     null,
-    "cistell",
+    "tamboret",
     null,
     "nevera",
     null,
@@ -77080,7 +77350,7 @@
     "cistell",
     "maleta",
     null,
-    "tamboret"
+    "maleta"
    ],
    [
     null,
@@ -77131,6 +77401,11 @@
     "bloqueja": false,
     "ca": "banc",
     "fr": "banc"
+   },
+   "cadira": {
+    "bloqueja": false,
+    "ca": "cadira",
+    "fr": "chaise"
    },
    "carreto": {
     "bloqueja": false,
@@ -77288,30 +77563,30 @@
   ],
   "textos": {
    "ca": [
-    "Segons un testimoni, tenia un mirall ben a prop.",
-    "Algú va jurar que tenia un armari a la mateixa columna.",
-    "Diuen que era a l'hort.",
-    "Aleix i ell formaven una diagonal.",
-    "Un convidat recorda que es trobava a la cuina.",
+    "L'inspector va anotar que un mirall era el seu veí més proper.",
+    "A la seva columna hi havia un armari.",
+    "A la llibreta de l'inspector consta que va entrar a l'hort i no en va sortir.",
+    "Diuen que si traçaves una diagonal des d'Aleix, hi arribaves a ell.",
+    "Algú va jurar que tenia el seu lloc a la cuina.",
     "Fanny i ella no es van creuar: eren a habitacions diferents.",
-    "L'inspector va anotar que un carretó era el seu veí més proper.",
-    "A la llibreta de l'inspector consta que es va deixar veure al graner.",
+    "Segons un testimoni, estava vora un carretó.",
+    "Un convidat recorda que es trobava al graner.",
     "Va estar sola a la seva habitació: ni la víctima hi era.",
-    "Tenia Dolors al seu sud.",
-    "Compartia diagonal amb Fanny."
+    "Estava més al nord que Dolors.",
+    "Un convidat recorda que compartia diagonal amb Fanny."
    ],
    "fr": [
-    "Selon un témoin, il se tenait près d'un miroir.",
-    "L'inspecteur a noté qu'une armoire se remarquait dans sa colonne.",
-    "Un invité se souvient qu'il a passé le temps dans le potager.",
-    "Aleix et lui formaient une diagonale.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle était dans la cuisine.",
-    "Quelqu'un a juré qu'elle se trouvait dans une autre pièce que Fanny.",
-    "On dit qu'à quelques pas se trouvait un chariot.",
-    "Il avait sa place dans le grenier.",
-    "Elle était seule dans sa pièce.",
-    "Il était au nord de Dolors.",
-    "Fanny et lui étaient sur une même ligne diagonale."
+    "Selon un témoin, un miroir était son plus proche voisin.",
+    "En suivant sa colonne, on tombait sur une armoire.",
+    "L'inspecteur a noté qu'il est entré dans le potager et n'en est pas ressorti.",
+    "Aleix et lui étaient sur une même ligne diagonale.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle avait sa place dans la cuisine.",
+    "Quelqu'un a juré qu'entre elle et Fanny, il y avait au moins un mur.",
+    "Il se tenait près d'un chariot.",
+    "On l'a vu dans le grenier.",
+    "On dit que dans sa pièce, il n'y avait personne d'autre, pas même la victime.",
+    "Dolors était au sud de lui.",
+    "Fanny et lui formaient une diagonale."
    ]
   },
   "solucio": {
@@ -77644,7 +77919,7 @@
     "taula",
     null,
     null,
-    "llibreria",
+    "arxivador",
     "llibreria",
     null,
     null,
@@ -77690,6 +77965,11 @@
     "bloqueja": true,
     "ca": "armari",
     "fr": "armoire"
+   },
+   "arxivador": {
+    "bloqueja": true,
+    "ca": "arxivador",
+    "fr": "classeur"
    },
    "banc": {
     "bloqueja": false,
@@ -77833,7 +78113,7 @@
   ],
   "textos": {
    "ca": [
-    "Diuen que un telèfon era a la seva columna.",
+    "Diuen que un telèfon es feia notar a la seva columna.",
     "Un convidat recorda que era al jardí.",
     "Algú va jurar que a pocs passos hi havia una taula.",
     "Segons un testimoni, no es va separar gaire d'una planta.",
@@ -78770,7 +79050,7 @@
     null,
     null,
     "cistell",
-    "cistell",
+    "tamboret",
     null,
     null,
     "tenda",
@@ -79289,7 +79569,7 @@
    [
     null,
     null,
-    "tamboret",
+    "pupitre",
     null,
     "catifa",
     "maleta",
@@ -79315,7 +79595,7 @@
     null,
     "llibreria",
     null,
-    "escala",
+    "gabia",
     "bola",
     null
    ],
@@ -79589,19 +79869,19 @@
   ],
   "textos": {
    "ca": [
-    "Una planta es feia notar a la seva columna.",
-    "Tenia una maleta a la mateixa fila.",
-    "L'inspector va anotar que compartia columna amb una butaca.",
-    "Diuen que tenia un arxivador a tocar.",
-    "Segons un testimoni, a la seva columna hi havia una cadira.",
-    "A la llibreta de l'inspector consta que era a l'oest d'Hug.",
-    "Havia estat al taulell tota l'estona.",
-    "Un convidat recorda que estava més a l'est que Carla.",
-    "Algú va jurar que era a la mateixa habitació que Carla.",
-    "L'inspector va anotar que compartia habitació amb Carla.",
-    "Tenia Elna al seu oest.",
-    "Carla i ell eren en una mateixa línia diagonal.",
-    "Diuen que tenia Hug al seu nord."
+    "Tenia una planta a la mateixa columna.",
+    "A la llibreta de l'inspector consta que compartia fila amb una maleta.",
+    "Algú va jurar que a la seva columna hi havia una butaca.",
+    "Tenia un arxivador a tocar.",
+    "Diuen que compartia columna amb una cadira.",
+    "Un convidat recorda que al plànol, quedava a l'esquerra d'Hug.",
+    "Era al taulell.",
+    "Carla quedava a la seva esquerra.",
+    "Segons un testimoni, era a la mateixa habitació que Carla.",
+    "Carla i ella es van trobar sota el mateix sostre.",
+    "L'inspector va anotar que era a l'est d'Elna.",
+    "Compartia diagonal amb Carla.",
+    "Algú va jurar que tenia Hug al seu nord."
    ],
    "fr": [
     "Quelqu'un a juré que dans sa colonne se trouvait une plante.",
@@ -80518,7 +80798,7 @@
    [
     null,
     "butaca",
-    "maleta",
+    "banc",
     null,
     null,
     "catifa",
@@ -80610,11 +80890,6 @@
     "bloqueja": true,
     "ca": "escala",
     "fr": "échelle"
-   },
-   "maleta": {
-    "bloqueja": false,
-    "ca": "maleta",
-    "fr": "valise"
    },
    "maniqui": {
     "bloqueja": true,
@@ -81143,13 +81418,13 @@
     null,
     null,
     null,
-    "banc",
+    "bascula",
     "banc",
     "maleta"
    ],
    [
     null,
-    "carro",
+    "carreto",
     "bagul",
     "pilota",
     null,
@@ -81185,6 +81460,11 @@
     "ca": "barra",
     "fr": "comptoir"
    },
+   "bascula": {
+    "bloqueja": false,
+    "ca": "bàscula",
+    "fr": "balance"
+   },
    "cadira": {
     "bloqueja": false,
     "ca": "cadira",
@@ -81200,10 +81480,10 @@
     "ca": "caixa registradora",
     "fr": "caisse enregistreuse"
    },
-   "carro": {
+   "carreto": {
     "bloqueja": false,
-    "ca": "carro",
-    "fr": "charrette"
+    "ca": "carretó",
+    "fr": "chariot"
    },
    "catifa": {
     "bloqueja": false,
@@ -81361,17 +81641,17 @@
   ],
   "textos": {
    "ca": [
-    "Algú va jurar que era al costat d'una paret exterior de l'edifici.",
-    "L'inspector va anotar que un arxivador era el seu veí més proper.",
-    "Diuen que una cadira es feia notar a la seva columna.",
-    "A la seva fila hi havia un tamboret.",
-    "A la llibreta de l'inspector consta que era al nord de Fanny.",
-    "Un convidat recorda que estava a un salt de cavall de Fanny.",
-    "Segons un testimoni, tenia Hug al seu est.",
-    "Era a un salt de cavall de Guillem (com als escacs).",
-    "Era a l'est de Clara.",
-    "Un convidat recorda que respecte a Violant, estava a un moviment de cavall.",
-    "Algú va jurar que entre ell i Biel hi havia almenys una paret."
+    "L'inspector va anotar que tenia l'exterior de l'edifici a tocar, només separat per una paret.",
+    "Un arxivador era el seu veí més proper.",
+    "A la seva columna hi havia una cadira.",
+    "A la llibreta de l'inspector consta que seguint la seva fila, es topava amb un tamboret.",
+    "Algú va jurar que estava més al nord que Fanny.",
+    "Segons un testimoni, respecte a Fanny, estava a un moviment de cavall.",
+    "Hug quedava a la seva dreta.",
+    "Diuen que estava a un salt de cavall de Guillem.",
+    "Un convidat recorda que era a l'est de Clara.",
+    "Era a un salt de cavall de Violant (com als escacs).",
+    "L'inspector va anotar que entre ell i Biel hi havia almenys una paret."
    ],
    "fr": [
     "Elle s'est appuyée près d'un mur extérieur de l'édifice.",
@@ -81682,7 +81962,7 @@
    ],
    [
     null,
-    "bustia",
+    "rellotge",
     "bustia",
     null,
     "bustia",
@@ -81818,6 +82098,11 @@
     "bloqueja": true,
     "ca": "planta",
     "fr": "plante"
+   },
+   "rellotge": {
+    "bloqueja": true,
+    "ca": "rellotge de peu",
+    "fr": "horloge"
    },
    "telefon": {
     "bloqueja": true,
@@ -82238,7 +82523,7 @@
     null,
     null,
     null,
-    "quadre",
+    "cafetera",
     "llar",
     null,
     null
@@ -82259,7 +82544,7 @@
     null,
     null,
     null,
-    "piano",
+    "maniqui",
     null,
     null,
     null,
@@ -82324,7 +82609,7 @@
     null,
     null,
     "telefon",
-    "telefon",
+    "gabia",
     "catifa",
     "catifa",
     "catifa",
@@ -82343,6 +82628,11 @@
     "ca": "butaca",
     "fr": "fauteuil"
    },
+   "cafetera": {
+    "bloqueja": true,
+    "ca": "cafetera",
+    "fr": "machine à café"
+   },
    "caixa": {
     "bloqueja": true,
     "ca": "caixa",
@@ -82358,20 +82648,25 @@
     "ca": "escriptori",
     "fr": "bureau"
    },
+   "gabia": {
+    "bloqueja": true,
+    "ca": "gàbia",
+    "fr": "cage"
+   },
    "llar": {
     "bloqueja": true,
     "ca": "llar de foc",
     "fr": "cheminée"
    },
+   "maniqui": {
+    "bloqueja": true,
+    "ca": "maniquí",
+    "fr": "mannequin"
+   },
    "piano": {
     "bloqueja": true,
     "ca": "piano",
     "fr": "piano"
-   },
-   "quadre": {
-    "bloqueja": true,
-    "ca": "quadre",
-    "fr": "tableau"
    },
    "reflector": {
     "bloqueja": true,
@@ -82860,7 +83155,7 @@
    ],
    [
     "escriptori",
-    "estatua",
+    "bustia",
     "planta",
     null,
     "sofa",
@@ -82926,6 +83221,11 @@
    ]
   ],
   "objectes": {
+   "bustia": {
+    "bloqueja": true,
+    "ca": "bústia",
+    "fr": "boîte aux lettres"
+   },
    "butaca": {
     "bloqueja": false,
     "ca": "butaca",
@@ -82955,11 +83255,6 @@
     "bloqueja": true,
     "ca": "escriptori",
     "fr": "bureau"
-   },
-   "estatua": {
-    "bloqueja": true,
-    "ca": "estàtua",
-    "fr": "statue"
    },
    "planta": {
     "bloqueja": true,
@@ -83421,7 +83716,7 @@
    ],
    [
     "cadira",
-    "tamboret",
+    "cistell",
     "tamboret",
     "cadira",
     null,
@@ -83470,7 +83765,7 @@
     null,
     "motxilla",
     "cadira",
-    "cadira",
+    "banc",
     null,
     null
    ],
@@ -83480,8 +83775,8 @@
     null,
     "planta",
     "banc",
+    "carro",
     "cadira",
-    "banc",
     null,
     "taula"
    ],
@@ -83527,6 +83822,16 @@
     "bloqueja": false,
     "ca": "carretó",
     "fr": "chariot"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
+   },
+   "cistell": {
+    "bloqueja": false,
+    "ca": "cistell de fruita",
+    "fr": "panier de fruits"
    },
    "motxilla": {
     "bloqueja": false,
@@ -83664,19 +83969,19 @@
   ],
   "textos": {
    "ca": [
-    "Va passar l'estona a la terrassa.",
-    "L'inspector va anotar que estava més a l'oest que Enric.",
-    "Diuen que no es va separar gaire d'un carretó.",
+    "Estava a la terrassa.",
+    "Enric quedava a la seva dreta.",
+    "Diuen que a pocs passos hi havia un carretó.",
     "Estava a un salt de cavall de Vicenç.",
-    "A la llibreta de l'inspector consta que respecte a Berta, estava a un moviment de cavall.",
+    "Algú va jurar que respecte a Berta, estava a un moviment de cavall.",
     "Una planta es feia notar a la seva fila.",
-    "Algú va jurar que tenia Fanny al seu est.",
+    "A la llibreta de l'inspector consta que estava més a l'oest que Fanny.",
     "Un convidat recorda que al plànol, estava per sota de Vicenç.",
     "Segons un testimoni, tenia l'exterior de l'establiment a tocar, només separat per una paret.",
-    "Un convidat recorda que era a l'oest de Dídac.",
+    "L'inspector va anotar que al plànol, quedava a l'esquerra de Dídac.",
     "Arnau quedava més avall que ella al plànol.",
-    "Algú va jurar que al plànol, quedava a la dreta de Berta.",
-    "Segons un testimoni, va coincidir amb Dídac a la mateixa habitació."
+    "L'inspector va anotar que al plànol, quedava a la dreta de Berta.",
+    "Diuen que va coincidir amb Dídac a la mateixa habitació."
    ],
    "fr": [
     "Il n'a pas quitté la terrasse de la soirée.",
@@ -84599,7 +84904,7 @@
     "catifa",
     "planta",
     "reflector",
-    "maniqui",
+    "tel",
     "banc"
    ],
    [
@@ -84694,11 +84999,6 @@
     "bloqueja": false,
     "ca": "maleta",
     "fr": "valise"
-   },
-   "maniqui": {
-    "bloqueja": true,
-    "ca": "maniquí",
-    "fr": "mannequin"
    },
    "mirall": {
     "bloqueja": true,
@@ -85198,7 +85498,7 @@
     null,
     null,
     null,
-    "sofa",
+    "bagul",
     "sofa",
     null
    ],
@@ -85419,14 +85719,14 @@
   ],
   "textos": {
    "ca": [
-    "L'inspector va anotar que un reflector era a la seva fila.",
+    "L'inspector va anotar que seguint la seva fila, es topava amb un reflector.",
     "Es va deixar veure a la tramoia.",
     "Algú va jurar que estava més al sud que Felip.",
     "Segons un testimoni, tenia Elna al seu sud.",
     "Tenia una butaca a la mateixa fila.",
     "Tenia un tamboret a la mateixa columna.",
     "Diuen que tocava una paret exterior de l'edifici.",
-    "Un convidat recorda que seguint la seva fila, es topava amb un reflector.",
+    "Un convidat recorda que un reflector era a la seva fila.",
     "A la llibreta de l'inspector consta que a la seva fila hi havia una bústia.",
     "A la llibreta de l'inspector consta que un mirall es feia notar a la seva columna.",
     "Va entrar a la tramoia i no en va sortir.",
@@ -86894,7 +87194,7 @@
    [
     null,
     "taula",
-    "motxilla",
+    "caiac",
     null,
     null,
     null,
@@ -87006,6 +87306,11 @@
     "ca": "cadira",
     "fr": "chaise"
    },
+   "caiac": {
+    "bloqueja": false,
+    "ca": "canoa",
+    "fr": "canoë"
+   },
    "caixareg": {
     "bloqueja": true,
     "ca": "caixa registradora",
@@ -87030,11 +87335,6 @@
     "bloqueja": true,
     "ca": "mirall",
     "fr": "miroir"
-   },
-   "motxilla": {
-    "bloqueja": false,
-    "ca": "motxilla",
-    "fr": "sac à dos"
    },
    "tamboret": {
     "bloqueja": false,
@@ -87484,7 +87784,7 @@
    ],
    [
     null,
-    "banc",
+    "maleta",
     null,
     null,
     null,
@@ -87577,11 +87877,6 @@
     "ca": "bagul",
     "fr": "malle"
    },
-   "banc": {
-    "bloqueja": false,
-    "ca": "banc",
-    "fr": "banc"
-   },
    "cadira": {
     "bloqueja": false,
     "ca": "cadira",
@@ -87611,6 +87906,11 @@
     "bloqueja": false,
     "ca": "llit",
     "fr": "lit"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "mirall": {
     "bloqueja": true,
@@ -88089,7 +88389,7 @@
    [
     "carro",
     "carreto",
-    "tamboret",
+    "maleta",
     "cadira",
     null,
     null,
@@ -88100,7 +88400,7 @@
    [
     null,
     "quadre",
-    "quadre",
+    "planta",
     null,
     null,
     null,
@@ -88197,6 +88497,11 @@
     "bloqueja": false,
     "ca": "maleta",
     "fr": "valise"
+   },
+   "planta": {
+    "bloqueja": true,
+    "ca": "planta",
+    "fr": "plante"
    },
    "pupitre": {
     "bloqueja": false,
@@ -88718,7 +89023,7 @@
     null,
     null,
     "piano",
-    "piano",
+    "mirall",
     null,
     null,
     null
@@ -88729,7 +89034,7 @@
     "catifa",
     null,
     "mirall",
-    "piano",
+    "planta",
     null,
     null,
     null
@@ -89270,7 +89575,7 @@
    ],
    [
     null,
-    "caixareg",
+    "bustia",
     null,
     "rellotge",
     "tamboret",
@@ -89316,11 +89621,11 @@
     null,
     null,
     "tamboret",
-    "tamboret",
+    "butaca",
     null,
     null,
     null,
-    "caiac",
+    "bicicleta",
     null
    ]
   ],
@@ -89335,6 +89640,21 @@
     "ca": "banc",
     "fr": "banc"
    },
+   "bicicleta": {
+    "bloqueja": false,
+    "ca": "bicicleta",
+    "fr": "vélo"
+   },
+   "bustia": {
+    "bloqueja": true,
+    "ca": "bústia",
+    "fr": "boîte aux lettres"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
+   },
    "cadira": {
     "bloqueja": false,
     "ca": "cadira",
@@ -89344,11 +89664,6 @@
     "bloqueja": true,
     "ca": "cafetera",
     "fr": "machine à café"
-   },
-   "caiac": {
-    "bloqueja": false,
-    "ca": "canoa",
-    "fr": "canoë"
    },
    "caixareg": {
     "bloqueja": true,
@@ -89880,7 +90195,7 @@
     null,
     null,
     null,
-    "maleta",
+    "banc",
     "caixareg",
     null
    ],
@@ -89911,6 +90226,11 @@
     "bloqueja": false,
     "ca": "bagul",
     "fr": "malle"
+   },
+   "banc": {
+    "bloqueja": false,
+    "ca": "banc",
+    "fr": "banc"
    },
    "bascula": {
     "bloqueja": false,
@@ -90357,7 +90677,7 @@
     null,
     null,
     null,
-    "telefon",
+    "globus",
     "telefon",
     null,
     null,
@@ -90517,6 +90837,11 @@
     "bloqueja": true,
     "ca": "fogata",
     "fr": "feu de camp"
+   },
+   "globus": {
+    "bloqueja": true,
+    "ca": "globus terraqüi",
+    "fr": "globe"
    },
    "taula": {
     "bloqueja": true,
@@ -90962,7 +91287,7 @@
     null,
     "catifa",
     "rellotge",
-    "armari",
+    "caixa",
     null,
     null,
     null,
@@ -90974,7 +91299,7 @@
     null,
     null,
     null,
-    "rellotge",
+    "globus",
     "escala",
     null,
     null
@@ -91016,7 +91341,7 @@
     null,
     null,
     "banc",
-    "estatua",
+    "barril",
     null,
     null,
     "banc",
@@ -91026,7 +91351,7 @@
    [
     null,
     null,
-    "carro",
+    "bascula",
     "estatua",
     null,
     null,
@@ -91058,15 +91383,15 @@
    ]
   ],
   "objectes": {
-   "armari": {
-    "bloqueja": true,
-    "ca": "armari",
-    "fr": "armoire"
-   },
    "banc": {
     "bloqueja": false,
     "ca": "banc",
     "fr": "banc"
+   },
+   "barril": {
+    "bloqueja": true,
+    "ca": "barril",
+    "fr": "tonneau"
    },
    "bascula": {
     "bloqueja": false,
@@ -91093,11 +91418,6 @@
     "ca": "caixa",
     "fr": "caisse"
    },
-   "carro": {
-    "bloqueja": false,
-    "ca": "carro",
-    "fr": "charrette"
-   },
    "catifa": {
     "bloqueja": false,
     "ca": "catifa",
@@ -91117,6 +91437,11 @@
     "bloqueja": true,
     "ca": "estufa",
     "fr": "poêle"
+   },
+   "globus": {
+    "bloqueja": true,
+    "ca": "globus terraqüi",
+    "fr": "globe"
    },
    "mirall": {
     "bloqueja": true,
@@ -91265,33 +91590,33 @@
   ],
   "textos": {
    "ca": [
-    "Un convidat recorda que a la seva fila hi havia una vitrina.",
-    "El van veure al santuari.",
-    "A la llibreta de l'inspector consta que compartia habitació amb Berta.",
-    "Diuen que va coincidir amb Delfina a la mateixa habitació.",
-    "Tenia Guerau al seu nord.",
-    "Segons un testimoni, es trobava a la cambra del tresor.",
-    "Era al pati.",
-    "El santuari acollia 2 persones, comptant la víctima.",
+    "Segons un testimoni, tenia una vitrina a la mateixa fila.",
+    "Estava al santuari.",
+    "Berta i ella eren a la mateixa habitació.",
+    "Va coincidir amb Delfina a la mateixa habitació.",
+    "Diuen que estava més al sud que Guerau.",
+    "El van veure a la cambra del tresor.",
+    "L'inspector va anotar que es trobava al pati.",
+    "Comptant la víctima, 2 persones eren al santuari.",
     "Ferran i ell eren en una mateixa línia diagonal.",
-    "Algú va jurar que al plànol, estava per sota de Vicenç.",
-    "L'inspector va anotar que no era a la mateixa habitació que Ferran.",
-    "Segons un testimoni, era a la mateixa diagonal que Delfina.",
+    "Un convidat recorda que al plànol, estava per sota de Vicenç.",
+    "Algú va jurar que era en una altra habitació que Ferran.",
+    "A la llibreta de l'inspector consta que compartia diagonal amb Delfina.",
     "Carles i ella formaven una diagonal."
    ],
    "fr": [
     "On dit qu'en suivant sa ligne, on tombait sur une vitrine.",
-    "Selon un témoin, personne ne doute qu'il était dans le sanctuaire.",
-    "Elle a croisé Berta dans la même pièce.",
+    "Quelqu'un a juré qu'il a passé le temps dans le sanctuaire.",
+    "Berta et elle étaient dans la même pièce.",
     "Il était dans la même pièce que Delfina.",
     "Guerau était au nord de lui.",
-    "L'inspecteur a noté qu'il se trouvait dans la chambre du trésor.",
-    "Quelqu'un a juré qu'elle n'a pas quitté la cour de la soirée.",
+    "Selon un témoin, il se trouvait dans la chambre du trésor.",
+    "Un invité se souvient qu'elle est entrée dans la cour et n'en est pas ressortie.",
     "En ajoutant la victime, 2 personnes étaient dans le sanctuaire.",
     "Il était sur la même diagonale que Ferran.",
     "Dans le carnet de l'inspecteur, on lit qu'elle se trouvait plus au sud que Vicenç.",
-    "Un invité se souvient qu'il ne partageait pas sa pièce avec Ferran.",
-    "Il partageait une diagonale avec Delfina.",
+    "Il se trouvait dans une autre pièce que Ferran.",
+    "L'inspecteur a noté qu'il partageait une diagonale avec Delfina.",
     "Carles et elle étaient sur une même ligne diagonale."
    ]
   },
@@ -91586,7 +91911,7 @@
     null,
     null,
     "figuera",
-    "figuera",
+    "planta",
     "figuera",
     "pou",
     "cadira",
@@ -91617,10 +91942,10 @@
    [
     "figuera",
     null,
-    "carro",
+    "motxilla",
     null,
     null,
-    "forn",
+    "nevera",
     "forn",
     null,
     "armari"
@@ -91715,6 +92040,16 @@
     "bloqueja": true,
     "ca": "forn",
     "fr": "four"
+   },
+   "motxilla": {
+    "bloqueja": false,
+    "ca": "motxilla",
+    "fr": "sac à dos"
+   },
+   "nevera": {
+    "bloqueja": true,
+    "ca": "nevera",
+    "fr": "frigo"
    },
    "planta": {
     "bloqueja": true,
@@ -92203,7 +92538,7 @@
     "barril",
     null,
     null,
-    "banc",
+    "butaca",
     null,
     null,
     "catifa",
@@ -92252,6 +92587,11 @@
     "bloqueja": false,
     "ca": "bola d'equilibri",
     "fr": "boule d'équilibre"
+   },
+   "butaca": {
+    "bloqueja": false,
+    "ca": "butaca",
+    "fr": "fauteuil"
    },
    "cafetera": {
     "bloqueja": true,
@@ -92765,7 +93105,7 @@
    [
     null,
     null,
-    "nevera",
+    "forn",
     null,
     null,
     "rellotge",
@@ -92848,6 +93188,11 @@
     "ca": "carro",
     "fr": "charrette"
    },
+   "forn": {
+    "bloqueja": true,
+    "ca": "forn",
+    "fr": "four"
+   },
    "gabia": {
     "bloqueja": true,
     "ca": "gàbia",
@@ -92857,11 +93202,6 @@
     "bloqueja": true,
     "ca": "mirall",
     "fr": "miroir"
-   },
-   "nevera": {
-    "bloqueja": true,
-    "ca": "nevera",
-    "fr": "frigo"
    },
    "planta": {
     "bloqueja": true,
@@ -94469,7 +94809,7 @@
     null,
     "caixareg",
     null,
-    "sofa",
+    "banc",
     null,
     null,
     null
@@ -94493,7 +94833,7 @@
     null,
     null,
     "armadura",
-    "planta",
+    "maniqui",
     "estatua"
    ],
    [
@@ -94603,10 +94943,10 @@
     "ca": "estufa",
     "fr": "poêle"
    },
-   "planta": {
+   "maniqui": {
     "bloqueja": true,
-    "ca": "planta",
-    "fr": "plante"
+    "ca": "maniquí",
+    "fr": "mannequin"
    },
    "sofa": {
     "bloqueja": false,
@@ -95641,7 +95981,7 @@
     null,
     null,
     null,
-    "globus"
+    "rellotge"
    ],
    [
     null,
@@ -95772,6 +96112,11 @@
     "bloqueja": true,
     "ca": "piano",
     "fr": "piano"
+   },
+   "rellotge": {
+    "bloqueja": true,
+    "ca": "rellotge de peu",
+    "fr": "horloge"
    },
    "sofa": {
     "bloqueja": false,
@@ -96243,7 +96588,7 @@
     null,
     null,
     "escriptori",
-    "caixa",
+    "telefon",
     null,
     null,
     null,
@@ -96264,7 +96609,7 @@
    [
     null,
     "bicicleta",
-    "fogata",
+    "torxa",
     null,
     null,
     null,
@@ -96352,11 +96697,6 @@
     "ca": "escriptori",
     "fr": "bureau"
    },
-   "fogata": {
-    "bloqueja": true,
-    "ca": "fogata",
-    "fr": "feu de camp"
-   },
    "motxilla": {
     "bloqueja": false,
     "ca": "motxilla",
@@ -96376,6 +96716,16 @@
     "bloqueja": false,
     "ca": "tamboret",
     "fr": "tabouret"
+   },
+   "telefon": {
+    "bloqueja": true,
+    "ca": "telèfon",
+    "fr": "téléphone"
+   },
+   "torxa": {
+    "bloqueja": true,
+    "ca": "torxa",
+    "fr": "torche"
    },
    "tractor": {
     "bloqueja": true,
@@ -96492,17 +96842,17 @@
   ],
   "textos": {
    "ca": [
-    "L'inspector va anotar que es va recolzar prop d'una paret exterior del ranxo.",
-    "Diuen que tenia una planta a la mateixa columna.",
-    "Seguint la seva fila, es topava amb una cadira.",
-    "Segons un testimoni, era a la mateixa habitació que Fina.",
-    "Algú va jurar que tenia el seu lloc al corral.",
-    "A la llibreta de l'inspector consta que era al sud de Guillem.",
-    "El van veure a la porxada.",
-    "Es va deixar veure a la porxada.",
-    "Un convidat recorda que era al costat d'un rellotge de peu.",
-    "Aleix i ell es van trobar sota el mateix sostre.",
-    "A la llibreta de l'inspector consta que al plànol, quedava a l'esquerra de Carles.",
+    "A la llibreta de l'inspector consta que tenia una paret exterior del ranxo just al costat.",
+    "Un convidat recorda que seguint la seva columna, es topava amb una planta.",
+    "A la seva fila hi havia una cadira.",
+    "Fina i ell es van trobar sota el mateix sostre.",
+    "Ningú no dubta que era al corral.",
+    "Guillem quedava més amunt que ell al plànol.",
+    "Segons un testimoni, tenia el seu lloc a la porxada.",
+    "Diuen que es trobava a la porxada.",
+    "Era al costat d'un rellotge de peu.",
+    "Algú va jurar que era a la mateixa habitació que Aleix.",
+    "L'inspector va anotar que al plànol, quedava a l'esquerra de Carles.",
     "Va quedar-se en un racó d'una habitació."
    ],
    "fr": [
@@ -96886,7 +97236,7 @@
     null,
     null,
     "planta",
-    "celler",
+    "cafetera",
     "mirall",
     null
    ]
@@ -96912,10 +97262,10 @@
     "ca": "cadira",
     "fr": "chaise"
    },
-   "celler": {
+   "cafetera": {
     "bloqueja": true,
-    "ca": "rac de vins",
-    "fr": "casier à vins"
+    "ca": "cafetera",
+    "fr": "machine à café"
    },
    "escriptori": {
     "bloqueja": true,
@@ -97462,7 +97812,7 @@
     null,
     "barra",
     null,
-    "tamboret",
+    "carreto",
     null,
     null,
     null,
@@ -97974,7 +98324,7 @@
     null,
     "maleta",
     "carreto",
-    "carreto",
+    "carro",
     null,
     null
    ],
@@ -98097,6 +98447,11 @@
     "bloqueja": false,
     "ca": "carretó",
     "fr": "chariot"
+   },
+   "carro": {
+    "bloqueja": false,
+    "ca": "carro",
+    "fr": "charrette"
    },
    "escala": {
     "bloqueja": true,
@@ -99191,9 +99546,9 @@
     null,
     null,
     "maleta",
-    "maleta",
+    "tamboret",
     "carreto",
-    "carreto",
+    "carro",
     null,
     null
    ],
@@ -99204,7 +99559,7 @@
     "tamboret",
     "bagul",
     "maleta",
-    "maleta",
+    "bagul",
     null,
     null
    ],
@@ -99722,7 +100077,7 @@
     null,
     null,
     "tamboret",
-    "tamboret",
+    "maleta",
     null,
     "vitrina",
     null,
@@ -99785,7 +100140,7 @@
    ],
    [
     "carro",
-    "tamboret",
+    "maleta",
     null,
     "estufa",
     null,
@@ -99867,6 +100222,11 @@
     "bloqueja": true,
     "ca": "estufa",
     "fr": "poêle"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "maniqui": {
     "bloqueja": true,
@@ -102050,7 +102410,7 @@
    ],
    [
     "banc",
-    "banc",
+    "tamboret",
     null,
     null,
     "bascula",
@@ -102066,7 +102426,7 @@
     null,
     null,
     null,
-    "tractor",
+    "figuera",
     "tractor",
     null
    ],
@@ -102148,6 +102508,11 @@
     "bloqueja": true,
     "ca": "pou",
     "fr": "puits"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    },
    "taula": {
     "bloqueja": true,
@@ -102279,34 +102644,34 @@
   ],
   "textos": {
    "ca": [
-    "Algú va jurar que a pocs passos hi havia un pou.",
-    "Un barril es feia notar a la seva fila.",
-    "Un convidat recorda que compartia habitació amb Glòria.",
+    "Prop seu hi havia un pou.",
+    "L'inspector va anotar que un barril era a la seva fila.",
+    "Compartia habitació amb Glòria.",
     "Segons un testimoni, seguint la seva columna, es topava amb un armari.",
-    "Es trobava a la cuina.",
-    "A la llibreta de l'inspector consta que va passar l'estona a la cuina.",
-    "L'inspector va anotar que una cadira era el seu veí més proper.",
-    "Diuen que era a la mateixa diagonal que Helena.",
-    "Tenia dues parets d'una habitació a l'esquena.",
-    "Berta quedava a la seva dreta.",
-    "A la llibreta de l'inspector consta que va quedar-se en un racó d'una habitació.",
-    "Algú va jurar que estava a un salt de cavall de Violant.",
-    "Aina i ella eren en una mateixa línia diagonal."
+    "Diuen que va passar l'estona a la cuina.",
+    "Havia estat a la cuina tota l'estona.",
+    "A la llibreta de l'inspector consta que una cadira era el seu veí més proper.",
+    "Un convidat recorda que si traçaves una diagonal des d'Helena, hi arribaves a ella.",
+    "Algú va jurar que tenia dues parets d'una habitació a l'esquena.",
+    "Al plànol, quedava a l'esquerra de Berta.",
+    "Segons un testimoni, estava en una cantonada d'una habitació.",
+    "Diuen que només un salt de cavall la separava de Violant.",
+    "Aina i ella formaven una diagonal."
    ],
    "fr": [
-    "Dans le carnet de l'inspecteur, on lit qu'un puits était son plus proche voisin.",
-    "Quelqu'un a juré qu'en suivant sa ligne, on tombait sur un tonneau.",
-    "Selon un témoin, elle a croisé Glòria dans la même pièce.",
-    "On dit que dans sa colonne se trouvait une armoire.",
-    "Elle n'a pas quitté la cuisine de la soirée.",
-    "Un invité se souvient qu'elle se trouvait dans la cuisine.",
+    "Quelqu'un a juré qu'à quelques pas se trouvait un puits.",
+    "En suivant sa ligne, on tombait sur un tonneau.",
+    "Glòria et elle ont fini sous le même toit.",
+    "Une armoire se trouvait dans sa colonne.",
+    "Dans le carnet de l'inspecteur, on lit qu'on l'a vue dans la cuisine.",
+    "Un invité se souvient qu'elle avait sa place dans la cuisine.",
     "Elle était à côté d'une chaise.",
     "Helena et elle étaient sur une même ligne diagonale.",
-    "Elle avait deux murs d'une pièce dans le dos.",
-    "L'inspecteur a noté qu'elle était à l'ouest de Berta.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle se tenait dans un angle d'une pièce.",
-    "Elle était à un saut de cavalier de Violant (comme aux échecs).",
-    "Un invité se souvient qu'elle était sur la même diagonale qu'Aina."
+    "On dit qu'elle avait deux murs d'une pièce dans le dos.",
+    "Selon un témoin, elle se trouvait plus à l'ouest que Berta.",
+    "L'inspecteur a noté qu'elle avait trouvé refuge dans un coin d'une pièce.",
+    "Un seul saut de cavalier séparait Violant d'elle.",
+    "Elle était sur la même diagonale qu'Aina."
    ]
   },
   "solucio": {
@@ -102596,7 +102961,7 @@
     null,
     null,
     "banc",
-    "maleta",
+    "tamboret",
     "celler",
     "tamboret",
     "banc",
@@ -102661,7 +103026,7 @@
     null,
     null,
     null,
-    "tamboret",
+    "carreto",
     "taula",
     null,
     null,
@@ -102672,7 +103037,7 @@
     null,
     null,
     null,
-    "tamboret",
+    "maleta",
     null,
     null,
     null,
@@ -102705,6 +103070,11 @@
     "bloqueja": true,
     "ca": "caixa",
     "fr": "caisse"
+   },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
    },
    "carro": {
     "bloqueja": false,
@@ -103210,7 +103580,7 @@
     null,
     null,
     null,
-    "bagul",
+    "maleta",
     null,
     null,
     null
@@ -103342,6 +103712,11 @@
     "bloqueja": true,
     "ca": "fanal",
     "fr": "lampadaire"
+   },
+   "maleta": {
+    "bloqueja": false,
+    "ca": "maleta",
+    "fr": "valise"
    },
    "tamboret": {
     "bloqueja": false,
@@ -104396,7 +104771,7 @@
    [
     "banyera",
     "mirall",
-    "mirall",
+    "banyera",
     null,
     "planta",
     null,
@@ -104408,7 +104783,7 @@
     null,
     null,
     null,
-    "bascula",
+    "llit",
     "bascula",
     null,
     "bascula",
@@ -104484,6 +104859,11 @@
     "bloqueja": true,
     "ca": "cafetera",
     "fr": "machine à café"
+   },
+   "llit": {
+    "bloqueja": false,
+    "ca": "llit",
+    "fr": "lit"
    },
    "mirall": {
     "bloqueja": true,
@@ -105498,7 +105878,7 @@
     "sofa",
     null,
     "caiac",
-    "caiac"
+    "bagul"
    ],
    [
     null,
@@ -105509,7 +105889,7 @@
     null,
     null,
     null,
-    "bagul"
+    "carreto"
    ],
    [
     "cadira",
@@ -105560,7 +105940,7 @@
     null,
     null,
     "maleta",
-    "bagul",
+    "tamboret",
     "taula",
     null,
     null,
@@ -105615,6 +105995,11 @@
     "ca": "caixa",
     "fr": "caisse"
    },
+   "carreto": {
+    "bloqueja": false,
+    "ca": "carretó",
+    "fr": "chariot"
+   },
    "catifa": {
     "bloqueja": false,
     "ca": "catifa",
@@ -105634,6 +106019,11 @@
     "bloqueja": false,
     "ca": "sofà",
     "fr": "canapé"
+   },
+   "tamboret": {
+    "bloqueja": false,
+    "ca": "tamboret",
+    "fr": "tabouret"
    },
    "taula": {
     "bloqueja": true,
@@ -106079,7 +106469,7 @@
     "barra",
     null,
     "tamboret",
-    "llit",
+    "carro",
     "bagul",
     null,
     null
@@ -106099,7 +106489,7 @@
     null,
     null,
     "barril",
-    "barril",
+    "caixa",
     "carro",
     null,
     null,
@@ -106147,7 +106537,7 @@
     null,
     null,
     null,
-    "planta",
+    "caixa",
     "planta"
    ]
   ],
@@ -106324,27 +106714,27 @@
   ],
   "textos": {
    "ca": [
-    "Segons un testimoni, a la seva fila hi havia una estufa.",
+    "L'inspector va anotar que una estufa era a la seva fila.",
     "Algú va jurar que va entrar al trull i no en va sortir.",
-    "Un tamboret era a la seva columna.",
-    "Diuen que es va deixar veure al celler.",
-    "Tenia el seu lloc a la sala de tast.",
-    "Fabiola quedava a la seva esquerra.",
-    "Es trobava a la casa.",
-    "L'inspector va anotar que el seu lloc era sobre el tamboret.",
-    "Dolors i ella formaven una diagonal.",
-    "A la llibreta de l'inspector consta que només un salt de cavall la separava de Valentí."
+    "A la llibreta de l'inspector consta que seguint la seva columna, es topava amb un tamboret.",
+    "Tenia el seu lloc al celler.",
+    "Diuen que va passar l'estona a la sala de tast.",
+    "Un convidat recorda que era a l'est de Fabiola.",
+    "Segons un testimoni, es trobava a la casa.",
+    "Reposava sobre el tamboret.",
+    "Si traçaves una diagonal des de Dolors, hi arribaves a ella.",
+    "Respecte a Valentí, estava a un moviment de cavall."
    ],
    "fr": [
-    "En suivant sa ligne, on tombait sur un poêle.",
-    "Il est entré dans le pressoir et n'en est pas ressorti.",
-    "Dans le carnet de l'inspecteur, on lit qu'elle partageait sa colonne avec un tabouret.",
-    "Selon un témoin, personne ne doute qu'elle était dans le chai.",
-    "On dit qu'on l'a vu dans la salle de dégustation.",
-    "Sur le plan, elle était à droite de Fabiola.",
-    "L'inspecteur a noté qu'elle était dans la maison.",
-    "Un invité se souvient qu'il était sur le tabouret.",
-    "Quelqu'un a juré qu'en traçant une diagonale depuis Dolors, on arrivait à elle.",
+    "Selon un témoin, il partageait sa ligne avec un poêle.",
+    "On dit qu'il est entré dans le pressoir et n'en est pas ressorti.",
+    "Quelqu'un a juré que dans sa colonne se trouvait un tabouret.",
+    "Personne ne doute qu'elle était dans le chai.",
+    "Il a passé le temps dans la salle de dégustation.",
+    "Dans le carnet de l'inspecteur, on lit qu'elle était à l'est de Fabiola.",
+    "Elle se trouvait dans la maison.",
+    "L'inspecteur a noté qu'il reposait sur le tabouret.",
+    "Un invité se souvient qu'en traçant une diagonale depuis Dolors, on arrivait à elle.",
     "Dans le carnet de l'inspecteur, on lit qu'elle était à un saut de cavalier de Valentí (comme aux échecs)."
    ]
   },
@@ -106689,7 +107079,7 @@
     null,
     null,
     "estufa",
-    "planta",
+    "armari",
     null,
     null,
     null,
@@ -106720,6 +107110,11 @@
    ]
   ],
   "objectes": {
+   "armari": {
+    "bloqueja": true,
+    "ca": "armari",
+    "fr": "armoire"
+   },
    "bagul": {
     "bloqueja": false,
     "ca": "bagul",
@@ -107253,7 +107648,7 @@
     null,
     "celler",
     "carro",
-    "carro",
+    "bagul",
     null,
     null,
     null,
@@ -107325,6 +107720,11 @@
     "bloqueja": true,
     "ca": "arxivador",
     "fr": "classeur"
+   },
+   "bagul": {
+    "bloqueja": false,
+    "ca": "bagul",
+    "fr": "malle"
    },
    "barra": {
     "bloqueja": true,

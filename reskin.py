@@ -173,6 +173,11 @@ def aplica(c, clau, rng):
                     if k not in refs and _blk(k, oe) == b]
         if not cand:
             continue
+        if not gran:     # una peça d'una casella no es posa al costat d'una altra de la mateixa classe (quedaria com dos iguals enganxats)
+            veins = {c["obj"][r + dr][q + dq] for r, q in cel for dr, dq in ((1, 0), (-1, 0), (0, 1), (0, -1))
+                     if 0 <= r + dr < n and 0 <= q + dq < n}
+            lliures_k = [k for k in cand if k not in veins]
+            cand = lliures_k or cand
         pes = [3 if k in triades[sala_i][1]["objs"] else 1 for k in cand]
         k = rng.choices(cand, weights=pes)[0]
         if k not in oe:
@@ -180,6 +185,26 @@ def aplica(c, clau, rng):
         for r, q in cel:
             c["obj"][r][q] = k
         usats.add(k)
+    # cap objecte (que no sigui una peça gran ni citat per una pista) al costat d'un altre igual: es canvia per un altre que encaixi
+    for r in range(n):
+        for q in range(n):
+            k = c["obj"][r][q]
+            if not k or k in MERGE or k in refs:
+                continue
+            veins = [c["obj"][r + dr][q + dq] for dr, dq in ((1, 0), (-1, 0), (0, 1), (0, -1))
+                     if 0 <= r + dr < n and 0 <= q + dq < n]
+            if k not in veins:
+                continue
+            sala_i = c["sala"][r][q]
+            b = _blk(k, oe)
+            cand = [x for x in TOTS if x not in refs and x not in MERGE and _blk(x, oe) == b
+                    and x in perm[sala_i] and x not in veins]
+            if cand:
+                x = rng.choices(cand, weights=[3 if y in triades[sala_i][1]["objs"] else 1 for y in cand])[0]
+                if x not in oe:
+                    oe[x] = {"bloqueja": b, "nom": {"ca": (_OBJ[x][1], _OBJ[x][0]), "fr": (_OBJ[x][3], _OBJ[x][2])}}
+                c["obj"][r][q] = x
+    usats = {x for fila in c["obj"] for x in fila if x}
     c["objectes"] = {k: {"bloqueja": oe[k]["bloqueja"],
                          "ca": oe[k]["nom"]["ca"][1],
                          "fr": oe[k]["nom"]["fr"][1]} for k in sorted(usats)}

@@ -210,3 +210,57 @@ espiga, catifa de teatre, catifa persa, hexagons, formigó, coberta, terra i pal
 ```
 
 Quan les tinguis, passa-me-les: les retallo i les afegeixo a `terres/`, i `index.html` les tria sol segons el nom de la sala (vestíbul/saló → marbre, despatx/biblioteca → noguera, teatre/platea → catifa vermella, bany/vestuari → hexagons, garatge/hangar → formigó, coberta/camarot → tarima, corral/estable → terra i palla, etc.).
+
+---
+
+## 8. Objectes grans (de 2, 3 o 4 caselles) — 3 fulls
+
+Perquè una taula, una barra o una catifa que ocupa diverses caselles sigui **una sola imatge**, no la mateixa repetida. Mateix estil i mateixa vista que els altres fulls d'objectes (il·lustració polida, contorn marró fosc, vista de davant i una mica des de dalt, llum des de dalt a l'esquerra, ombra suau). **Fons crema llis (#F4ECDF)**, un objecte per casella de la graella, **separats**, amb una etiqueta a sota amb el nom i la mida (p. ex. «taula 2×1»). **Les proporcions són importants**: cada objecte ha d'omplir quasi tota la seva caixa i tenir la proporció indicada (amplada × alçada, en caselles).
+
+### Full 1 — apaïsats (2×1 i 3×1)
+Fila 1 (2×1, proporció 2:1): taula de fusta, escriptori, sofà, banc, llit doble (vist de costat), piano, taula de billar
+Fila 2 (3×1, proporció 3:1): barra de bar, llibreria, taula de banquet llarga, banc llarg
+
+```
+A clean sprite sheet of large furniture illustrations for a cozy detective puzzle game on a plain
+flat cream background (#F4ECDF). Same polished semi-realistic illustration style as a previous sheet
+(soft shading, rich wood, metal and fabric colours, clean dark-brown outline), seen from the front
+and slightly from above, light from the top-left, soft contact shadow, no text inside the drawings.
+Row 1: seven WIDE objects each exactly twice as wide as tall (2:1 aspect ratio): wooden table,
+writing desk, sofa, wooden bench, double bed seen from the side, upright piano, billiard table.
+Row 2: four VERY WIDE objects each exactly three times as wide as tall (3:1 aspect ratio): bar
+counter, tall bookcase full of books, long banquet table, long bench. Each object fills its box,
+objects clearly separated, a small rounded pill label under each with its Catalan name and size
+(for example "taula 2x1", "barra 3x1").
+```
+
+### Full 2 — alts i grans (1×2 i 2×2)
+Fila 1 (1×2, proporció 1:2, més alts que amples): taula (vista amb el costat llarg cap endins), llit individual (capçal a dalt), banc (costat llarg cap endins), vitrina alta de museu
+Fila 2 (2×2, proporció 1:1, molt grans): taula quadrada gran amb quatre cadires, taula rodona gran amb quatre cadires, llit doble amb capçal, escenari petit de fusta amb un micròfon
+
+```
+A clean sprite sheet of large furniture illustrations for a cozy detective puzzle game on a plain
+flat cream background (#F4ECDF), same polished semi-realistic illustration style (soft shading,
+clean dark-brown outline), seen from the front and slightly from above, light from the top-left,
+soft contact shadow, no text inside the drawings. Row 1: four TALL objects each exactly twice as
+tall as wide (1:2 aspect ratio): a wooden table with its long side going away from the viewer,
+a single bed with the headboard at the top, a wooden bench with its long side going away from the
+viewer, a tall museum display case. Row 2: four LARGE SQUARE objects (1:1 aspect ratio) that fill
+their box: a large square dining table with four chairs, a large round table with four chairs, a
+double bed with headboard, a small wooden stage with a microphone stand. Objects clearly
+separated, a small rounded pill label under each with its Catalan name and size.
+```
+
+### Full 3 — catifes (vistes de dalt)
+Cinc catifes de formes diferents, **planes i vistes directament de dalt** (sense perspectiva), amb serrells i una vora ornamentada: 2×1 (vermella persa), 3×1 (corredor blau), 2×2 (verda amb medalló), 3×2 (granat i crema), 1×2 (corredor vertical vermell i daurat).
+
+```
+A clean sprite sheet of five rugs seen directly from above (flat top-down, no perspective) on a
+plain flat cream background (#F4ECDF), ornate woven patterns with a decorative border and small
+fringes at the short ends, soft shadow under each, no text inside the drawings. Exact proportions
+(width x height): a red Persian rug 2:1, a long blue runner 3:1, a green rug with a central medallion
+2:2 (square), a burgundy and cream rug 3:2, a tall red and gold runner 1:2. Rugs clearly separated,
+a small rounded pill label under each with its Catalan name and size ("catifa 2x1", etc.).
+```
+
+Quan els tinguis, passa-me'ls (un full cada vegada). Els retallo, els poso a `objectes/` i canvio el joc perquè: (1) cada objecte gran sigui **una sola imatge** que ocupa la seva mida exacta, (2) el generador només crei peces de les mides que tinguem dibuixades, i (3) mai es posin dues peces iguals enganxades.
